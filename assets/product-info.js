@@ -13,11 +13,21 @@ if (!customElements.get('product-info')) {
 
       constructor() {
         super();
+        this.input = this.querySelector('.quantity__input');
+        this.currentVariant = this.querySelector('.product-variant-id');
+        this.submitButton = this.querySelector('[type="submit"]');
 
         this.quantityInput = this.querySelector('.quantity__input');
       }
 
+
+      cartUpdateUnsubscriber = undefined;
+      variantChangeUnsubscriber = undefined;
+
+
       connectedCallback() {
+        if (!this.input) return;
+
         this.initializeProductSwapUtility();
 
         this.onVariantChangeUnsubscriber = subscribe(
@@ -44,8 +54,22 @@ if (!customElements.get('product-info')) {
           this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, this.fetchQuantityRules.bind(this));
         }
       }
+      this.variantChangeUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
+          const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
+          if (event.data.sectionId !== sectionId) return;
+          this.updateQuantityRules(event.data.sectionId, event.data.html);
+          this.setQuantityBoundries();
+        });
+
 
       disconnectedCallback() {
+        if (this.cartUpdateUnsubscriber) {
+          this.cartUpdateUnsubscriber();
+        }
+        if (this.variantChangeUnsubscriber) {
+          this.variantChangeUnsubscriber();
+        }
+
         this.onVariantChangeUnsubscriber();
         this.cartUpdateUnsubscriber?.();
       }
@@ -312,6 +336,10 @@ if (!customElements.get('product-info')) {
 
       setQuantityBoundries() {
         const data = {
+          cartQuantity: this.input.dataset.cartQuantity ? parseInt(this.input.dataset.cartQuantity) : 0,
+          min: this.input.dataset.min ? parseInt(this.input.dataset.min) : 1,
+          max: this.input.dataset.max ? parseInt(this.input.dataset.max) : null,
+          step: this.input.step ? parseInt(this.input.step) : 1,
           cartQuantity: this.quantityInput.dataset.cartQuantity ? parseInt(this.quantityInput.dataset.cartQuantity) : 0,
           min: this.quantityInput.dataset.min ? parseInt(this.quantityInput.dataset.min) : 1,
           max: this.quantityInput.dataset.max ? parseInt(this.quantityInput.dataset.max) : null,
@@ -322,6 +350,10 @@ if (!customElements.get('product-info')) {
         const max = data.max === null ? data.max : data.max - data.cartQuantity;
         if (max !== null) min = Math.min(min, max);
         if (data.cartQuantity >= data.min) min = Math.min(min, data.step);
+        
+        this.input.min = min;
+        this.input.max = max;
+        this.input.value = min;
 
         this.quantityInput.min = min;
 
@@ -336,6 +368,8 @@ if (!customElements.get('product-info')) {
       }
 
       fetchQuantityRules() {
+        if (!this.currentVariant || !this.currentVariant.value) return;
+
         const currentVariantId = this.productForm?.variantIdInput?.value;
         if (!currentVariantId) return;
 
