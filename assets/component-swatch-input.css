@@ -1,5 +1,7 @@
 /* swatch-input lives in its own file for reusability of the swatch in other areas than the product form context */
 .swatch-input__input + .swatch-input__label {
+  --swatch-input--size: 4.4rem;
+
   --swatch-input--border-radius: 50%;
   display: inline-block;
   max-width: 100%;
@@ -32,9 +34,17 @@
 
 /* Focus visible */
 .swatch-input__input:focus-visible + .swatch-input__label {
+  box-shadow: 0 0 0 0.5rem rgb(var(--color-background)), 0 0 0 0.7rem rgba(var(--color-foreground), 0.55);
+
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   box-shadow: 0 0 0 0.2rem rgb(var(--color-background)), 0 0 0.1rem 0.5rem rgba(var(--color-foreground), 0.25);
 }
+
+.swatch-input__input + .swatch-input__label:hover {
+  outline: 0.2rem solid rgba(var(--color-foreground), 0.4);
+}
+
+
 
 /* Active and focused */
 .swatch-input__input:active:focus-visible + .swatch-input__label,
@@ -44,7 +54,9 @@
 }
 
 /* Visually disabled */
-.swatch-input__input.visually-disabled:not(:active):not(:checked) + .swatch-input__label {
+.swatch-input__input.disabled:not(:active):not(:checked) + .swatch-input__label:hover {
+  outline: none;
+
   transition: none;
 }
 .swatch-input__input.visually-disabled:not(:active):not(:checked) + .swatch-input__label:hover {
@@ -75,13 +87,17 @@
   /* Diagonal of a square = length of the side * sqrt(2)  */
   --diagonal--size: calc(var(--swatch-input--size) * 1.414);
   --crossed-line--size: 0.1rem;
+  --crossed-line--color: rgb(0, 0, 0);
+
+
   content: '';
   position: absolute;
   bottom: calc(var(--crossed-line--size) * -0.5);
   left: 0;
   width: var(--diagonal--size);
   height: var(--crossed-line--size);
-  background-color: rgb(var(--color-foreground));
+  background-color: var(--crossed-line--color);
+
   transform: rotate(-45deg);
   transform-origin: left;
 }
