@@ -82,4 +82,13 @@
       </a>
     </li>
   {%- endif -%}
+  {%- if settings.social_linkedin_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_linkedin_link }}" target="_blank" class="link list-social__link">
+        {%- render 'icon-linkedin' -%}
+        <span class="visually-hidden">LinkedIn</span>
+      </a>
+    </li>
+  {%- endif -%}
+
 </ul>
