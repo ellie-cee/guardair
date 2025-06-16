@@ -5,29 +5,14 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
-{% unless menu_type_desktop %}
-  {% assign menu_type_desktop = section.settings.menu_type_desktop %}
-{% endunless %}
-
-<header-drawer data-breakpoint="{% if menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
       class="header__icon header__icon--menu header__icon--summary link focus-inset"
       aria-label="{{ 'sections.header.menu' | t }}"
     >
       <span>
-        {% if block %}
-          <span class="v2-header__drawer-nav-icon header__icon icon-hamburger">
-            {{ block.settings.icon }}
-          </span>
-          {% if block.settings.text != blank %}
-            <span class="v2-header__drawer-nav-text">
-              {{ block.settings.text }}
-            </span>
-          {% endif %}
-        {% else %}
-          {% render 'icon-hamburger' %}
-        {% endif %}
+        {% render 'icon-hamburger' %}
         {% render 'icon-close' %}
       </span>
     </summary>
@@ -36,11 +21,7 @@
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-              {% unless menu %}
-                {% assign menu = section.settings.menu %}
-              {% endunless %}
-
-              {%- for link in menu.links -%}
+              {%- for link in section.settings.menu.links -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
@@ -66,39 +47,23 @@
                             {%- for childlink in link.links -%}
                               <li>
                                 {%- if childlink.links == blank -%}
-                                  {% assign sublink_title = childlink.title %}
-                                  {% assign is_highlighted = false %}
-                                  {% # If the link title starts (and only starts) with _ then it is a highlighted link %}
-                                  {% assign first_char = sublink_title | slice: 0 %}
-                                  {% if first_char == '_' %}
-                                    {% assign is_highlighted = true %}
-                                    {% assign sublink_title = sublink_title | slice: 1, sublink_title.size %}
-                                  {% endif %}
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
                                     href="{{ childlink.url }}"
-                                    class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}{% if is_highlighted %} menu-drawer__menu-item--highlighted{% endif %}"
+                                    class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"
                                     {% if childlink.current %}
                                       aria-current="page"
                                     {% endif %}
                                   >
-                                    {{ sublink_title | escape }}
+                                    {{ childlink.title | escape }}
                                   </a>
                                 {%- else -%}
                                   <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
-                                    {% assign sublink_title = childlink.title %}
-                                    {% assign is_highlighted = false %}
-                                    {% # If the link title starts (and only starts) with _ then it is a highlighted link %}
-                                    {% assign first_char = sublink_title | slice: 0 %}
-                                    {% if first_char == '_' %}
-                                      {% assign is_highlighted = true %}
-                                      {% assign sublink_title = sublink_title | slice: 1, sublink_title.size %}
-                                    {% endif %}
                                     <summary
                                       id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
-                                      class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if is_highlighted %} menu-drawer__menu-item--highlighted{% endif %}"
+                                      class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                     >
-                                      {{ sublink_title | escape }}
+                                      {{ childlink.title | escape }}
                                       {% render 'icon-arrow' %}
                                       {% render 'icon-caret' %}
                                     </summary>
@@ -111,7 +76,7 @@
                                         aria-expanded="true"
                                       >
                                         {% render 'icon-arrow' %}
-                                        {{ sublink_title | escape }}
+                                        {{ childlink.title | escape }}
                                       </button>
                                       <ul
                                         class="menu-drawer__menu list-menu"
@@ -120,24 +85,15 @@
                                       >
                                         {%- for grandchildlink in childlink.links -%}
                                           <li>
-                                            {% assign grandchildlink_title = grandchildlink.title %}
-                                            {% assign is_highlighted = false %}
-                                            {% # If the link title starts (and only starts) with _ then it is a highlighted link %}
-                                            {% assign first_char = grandchildlink_title | slice: 0 %}
-                                            {% if first_char == '_' %}
-                                              {% assign is_highlighted = true %}
-                                              {% assign grandchildlink_title = grandchildlink_title | slice: 1, grandchildlink_title.size %}
-                                            {% endif %}
                                             <a
                                               id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                               href="{{ grandchildlink.url }}"
-                                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}
-                                              {% if is_highlighted %} menu-drawer__menu-item--highlighted{% endif %}"
+                                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"
                                               {% if grandchildlink.current %}
                                                 aria-current="page"
                                               {% endif %}
                                             >
-                                            {{ grandchildlink_title | escape }}
+                                              {{ grandchildlink.title | escape }}
                                             </a>
                                           </li>
                                         {%- endfor -%}
@@ -167,41 +123,23 @@
               {%- endfor -%}
             </ul>
           </nav>
-          {% if secondary_menu %}
-            <nav class="menu-drawer__secondary-navigation">
-              <ul class="menu-drawer__menu list-menu" role="list">
-                {%- for link in secondary_menu.links -%}
-                  <li>
-                    {% assign split_link_title = link.title | split: '::' %}
-                    <a
-                      id="HeaderDrawer-{{ link.handle }}"
-                      {% if split_link_title.size > 1 %}
-                        href="javascript:void(0)"
-                      {% else %}
-                        href="{{ link.url }}"
-                      {% endif %}
-                      class="menu-drawer__menu-item list-menu__item h5 link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                      {% if link.current %}
-                        aria-current="page"
-                      {% endif %}
-                      {% if split_link_title.size > 1 %}
-                        onClick="{{ split_link_title[1] }}"
-                      {% endif %}
-                    >
-                      {{ split_link_title[0] | escape }}
-                    </a>
-                  </li>
-                {%- endfor -%}
-              </ul>
-            </nav>
-          {% endif %}
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
                 class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
               >
-                {% render 'icon-account' %}
+                {%- if section.settings.enable_customer_avatar -%}
+                  <account-icon>
+                    {%- if customer and customer.has_avatar? -%}
+                      {{ customer | avatar }}
+                    {%- else -%}
+                      {% render 'icon-account' %}
+                    {%- endif -%}
+                  </account-icon>
+                {%- else -%}
+                  {% render 'icon-account' %}
+                {%- endif -%}
                 {%- liquid
                   if customer
                     echo 'customer.account_fallback' | t
@@ -211,172 +149,109 @@
                 -%}
               </a>
             {%- endif -%}
-            {% comment %}
-              {%- if localization.available_countries or localization.available_languages -%}
-                <div class="menu-drawer__localization header-localization">
-                  {%- if localization.available_countries and localization.available_countries.size > 1 -%}
-                    <noscript>
-                      {%- form 'localization', id: 'HeaderCountryMobileFormNoScriptDrawer', class: 'localization-form' -%}
-                        <div class="localization-form__select">
-                          <h2 class="visually-hidden" id="HeaderCountryMobileLabelNoScriptDrawer">
-                            {{ 'localization.country_label' | t }}
-                          </h2>
-                          <select
-                            class="localization-selector link"
-                            name="country_code"
-                            aria-labelledby="HeaderCountryMobileLabelNoScriptDrawer"
-                          >
-                            {%- for country in localization.available_countries -%}
-                              <option
-                                value="{{ country.iso_code }}"
-                                {%- if country.iso_code == localization.country.iso_code %}
-                                  selected
-                                {% endif %}
-                              >
-                                {{ country.name }} ({{ country.currency.iso_code }}
-                                {{ country.currency.symbol }})
-                              </option>
-                            {%- endfor -%}
-                          </select>
-                          {% render 'icon-caret' %}
-                        </div>
-                        <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
-                      {%- endform -%}
-                    </noscript>
+            {%- if localization.available_countries or localization.available_languages -%}
+              <div class="menu-drawer__localization header-localization">
+                {%- if localization.available_countries and localization.available_countries.size > 1 -%}
+                  <localization-form>
+                    {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
+                      <div>
+                        <h2 class="visually-hidden" id="HeaderCountryMobileLabel">
+                          {{ 'localization.country_label' | t }}
+                        </h2>
+                        {%- render 'country-localization', localPosition: 'HeaderCountryMobile' -%}
+                      </div>
+                    {%- endform -%}
+                  </localization-form>
+                {% endif %}
 
-                    <localization-form class="no-js-hidden">
-                      {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
-                        <div>
-                          <h2 class="visually-hidden" id="HeaderCountryMobileLabel">
-                            {{ 'localization.country_label' | t }}
-                          </h2>
-                          {%- render 'country-localization', localPosition: 'HeaderCountryMobile' -%}
-                        </div>
-                      {%- endform -%}
-                    </localization-form>
-                  {% endif %}
-
-                  {%- if localization.available_languages and localization.available_languages.size > 1 -%}
-                    <noscript>
-                      {%- form 'localization',
-                        id: 'HeaderLanguageMobileFormNoScriptDrawer',
-                        class: 'localization-form'
-                      -%}
-                        <div class="localization-form__select">
-                          <h2 class="visually-hidden" id="HeaderLanguageMobileLabelNoScriptDrawer">
-                            {{ 'localization.language_label' | t }}
-                          </h2>
-                          <select
-                            class="localization-selector link"
-                            name="locale_code"
-                            aria-labelledby="HeaderLanguageMobileLabelNoScriptDrawer"
-                          >
-                            {%- for language in localization.available_languages -%}
-                              <option
-                                value="{{ language.iso_code }}"
-                                lang="{{ language.iso_code }}"
-                                {%- if language.iso_code == localization.language.iso_code %}
-                                  selected
-                                {% endif %}
-                              >
-                                {{ language.endonym_name | capitalize }}
-                              </option>
-                            {%- endfor -%}
-                          </select>
-                          {% render 'icon-caret' %}
-                        </div>
-                        <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
-                      {%- endform -%}
-                    </noscript>
-
-                    <localization-form class="no-js-hidden">
-                      {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
-                        <div>
-                          <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">
-                            {{ 'localization.language_label' | t }}
-                          </h2>
-                          {%- render 'language-localization', localPosition: 'HeaderLanguageMobile' -%}
-                        </div>
-                      {%- endform -%}
-                    </localization-form>
-                  {%- endif -%}
-                </div>
+                {%- if localization.available_languages and localization.available_languages.size > 1 -%}
+                  <localization-form>
+                    {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
+                      <div>
+                        <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">
+                          {{ 'localization.language_label' | t }}
+                        </h2>
+                        {%- render 'language-localization', localPosition: 'HeaderLanguageMobile' -%}
+                      </div>
+                    {%- endform -%}
+                  </localization-form>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            <ul class="list list-social list-unstyled" role="list">
+              {%- if settings.social_twitter_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
+                    {%- render 'icon-twitter' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                  </a>
+                </li>
               {%- endif -%}
-              <ul class="list list-social list-unstyled" role="list">
-                {%- if settings.social_twitter_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
-                      {%- render 'icon-twitter' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_facebook_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
-                      {%- render 'icon-facebook' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_pinterest_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
-                      {%- render 'icon-pinterest' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_instagram_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
-                      {%- render 'icon-instagram' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_tiktok_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
-                      {%- render 'icon-tiktok' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_tumblr_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_tumblr_link }}" class="list-social__link link">
-                      {%- render 'icon-tumblr' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_snapchat_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_snapchat_link }}" class="list-social__link link">
-                      {%- render 'icon-snapchat' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_youtube_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_youtube_link }}" class="list-social__link link">
-                      {%- render 'icon-youtube' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-                {%- if settings.social_vimeo_link != blank -%}
-                  <li class="list-social__item">
-                    <a href="{{ settings.social_vimeo_link }}" class="list-social__link link">
-                      {%- render 'icon-vimeo' -%}
-                      <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
-                    </a>
-                  </li>
-                {%- endif -%}
-              </ul>
-            {% endcomment %}
+              {%- if settings.social_facebook_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
+                    {%- render 'icon-facebook' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_pinterest_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
+                    {%- render 'icon-pinterest' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_instagram_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
+                    {%- render 'icon-instagram' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_tiktok_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
+                    {%- render 'icon-tiktok' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_tumblr_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_tumblr_link }}" class="list-social__link link">
+                    {%- render 'icon-tumblr' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_snapchat_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_snapchat_link }}" class="list-social__link link">
+                    {%- render 'icon-snapchat' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_youtube_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_youtube_link }}" class="list-social__link link">
+                    {%- render 'icon-youtube' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_vimeo_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_vimeo_link }}" class="list-social__link link">
+                    {%- render 'icon-vimeo' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
           </div>
         </div>
       </div>

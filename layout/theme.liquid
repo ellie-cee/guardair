@@ -1,50 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}">
+<html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-
-    <!-- Google Consent Mode V2 Consentmo -->
-    {% render 'gcm-integration-script' %}
-    <!-- End Google Consent Mode V2 Consentmo -->
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5NN3G5M3');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Hotjar Tracking Code -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5127166,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <meta name="robots" content="follow, index">
-    <meta name="format-detection" content="telephone=no">
-
-    {% if request.path == '/collections/pneumatic-vacuums/single' %}
-      <link rel="canonical" href="https://guardair.com/pages/pneumatic-vacuums">
-    {% elsif request.path == '/collections/dollies' %}
-      <link rel="canonical" href="https://guardair.com/products/drum-dollies">
-    {% elsif request.path == '/products/12-pvc-crevice-tool' or request.path == '/products/plastic-crevice-tool-1-x-11' or request.path == '/products/crevice-tool' %}
-      <link rel="canonical" href="https://guardair.com/products/crevice-tool-1-x-9">
-    {% elsif request.path == '/products/nylon-hose-3-8' or request.path == '/pages/air-hose-assemblies' or request.path == '/products/nylon-hose-1-2' %}
-      <link rel="canonical" href="https://guardair.com/products/nylon-hose-1-4">
-    {% else %}
-      <link rel="canonical" href="{{ canonical_url }}">
-    {% endif %}
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -54,25 +15,26 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if request.path == '/blogs/news' %}
-      <meta name="description" content="Discover innovative air solutions at Guardair – leading the way in industrial air tools and safety. Stay informed with our latest news updates!">
-    {% elsif page_description %}
+    {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
     {% render 'meta-tags' %}
-    {{ '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' | stylesheet_tag }}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
+
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -294,18 +256,25 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    <link
-      rel="stylesheet"
-      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
-    >
-    {{ 'custom.css' | asset_url | stylesheet_tag }}
-    {{ 'responsive.css' | asset_url | stylesheet_tag }}
+    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+
+    {%- if settings.cart_type == 'drawer' -%}
+      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+      {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+      {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+      {{ 'component-price.css' | asset_url | stylesheet_tag }}
+      {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
+      {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+      {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
+      {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+      {% comment %}theme-check-enable AssetPreload{% endcomment %}
     {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
@@ -323,29 +292,14 @@
     {%- endif -%}
 
     <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+  </head>
 
-    {% render 'shogun-head' %}
-
-    <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    {% render 'microsoft-ad' %}
-    {% render 'filter-menu-settings' %}
-</head>
-
-  <body class="gradient {{ template.name }} {{ page.handle }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-      
-      <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NN3G5M3"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
@@ -360,7 +314,6 @@
     </main>
 
     {% sections 'footer-group' %}
-    {% comment %}{% section 'custom-footer' %}{% endcomment %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -368,8 +321,6 @@
     </ul>
 
     <script>
-      
-      
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
@@ -398,6 +349,9 @@
         itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
         viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
         each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`,
+        min_error: `{{- 'sections.quick_order_list.min_error' | t: min: '[min]' }}`,
+        max_error: `{{- 'sections.quick_order_list.max_error' | t: max: '[max]' }}`,
+        step_error: `{{- 'sections.quick_order_list.step_error' | t: step: '[step]' }}`,
       };
 
       window.accessibilityStrings = {
@@ -414,55 +368,9 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
-    ></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <script src="{{ 'ajaxinate.min.js' | asset_url }}"></script>
-    <script src="{{ 'custom.js' | asset_url }}"></script>
-    <script src="{{ 'breadcrumbs.js' | asset_url }}" async></script>
 
-    <!-- Klaviyo Back in Stock Begins -->
-    <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
-<script>
-    var klaviyo = klaviyo || [];
-    klaviyo.init({
-      account: "TmGxUJ",
-      list: "UUszjC",
-      platform: "shopify"
-    });
-    klaviyo.enable("backinstock",{ 
-    trigger: {
-      product_page_text: "Notify Me When Available",
-      product_page_class: "button",
-      product_page_text_align: "center",
-      product_page_margin: "0px",
-      replace_anchor: false
-    },
-    modal: {
-     headline: "{product_name}",
-     body_content: "Register to receive a notification when this item comes back in stock.",
-     email_field_label: "Email",
-     button_label: "NOTIFY ME WHEN AVAILABLE",
-     subscription_success_label: "You're in! We'll let you know when this item is back in stock.",
-     footer_content: '',
-     additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
-     drop_background_color: "#000",
-     background_color: "#fff",
-     text_color: "#222",
-     button_text_color: "#fff",
-     button_background_color: "#002395",
-     close_button_color: "#ccc",
-     error_background_color: "#fcd6d7",
-     error_text_color: "#C72E2F",
-     success_background_color: "#d3efcd",
-     success_text_color: "#1B9500"
-    }
-  });
-</script>
-    <!-- Klaviyo Back in Stock Ends -->
-    
+    {%- if settings.cart_type == 'drawer' -%}
+      <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
   </body>
 </html>
