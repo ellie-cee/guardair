@@ -10,6 +10,8 @@ if (!customElements.get('quantity-popover')) {
         this.infoButtonMobile = this.querySelector('.quantity-popover__info-button--icon-with-label');
         this.popoverInfo = this.querySelector('.quantity-popover__info');
         this.closeButton = this.querySelector('.button-close');
+        this.variantInfo = this.querySelector('.quantity-popover-container');
+
         this.eventMouseEnterHappened = false;
 
         if (this.closeButton) {
@@ -27,9 +29,14 @@ if (!customElements.get('quantity-popover')) {
 
         if (this.infoButtonMobile) {
           this.infoButtonMobile.addEventListener('click', this.togglePopover.bind(this));
+          this.infoButtonMobile.addEventListener('focusout', this.closePopover.bind(this));
+
         }
 
         if (this.infoButtonDesktop && this.mqlTablet.matches) {
+          this.variantInfo.addEventListener('mouseenter', this.togglePopover.bind(this));
+          this.variantInfo.addEventListener('mouseleave', this.closePopover.bind(this));
+
           this.infoButtonDesktop.addEventListener('mouseenter', this.togglePopover.bind(this));
           this.infoButtonDesktop.addEventListener('mouseleave', this.closePopover.bind(this));
         }
@@ -70,6 +77,8 @@ if (!customElements.get('quantity-popover')) {
 
       closePopover(event) {
         event.preventDefault();
+        const isChild = this.variantInfo.contains(event.relatedTarget);
+
         const isButtonChild = this.infoButtonDesktop.contains(event.relatedTarget);
         const isPopoverChild = this.popoverInfo.contains(event.relatedTarget);
 
