@@ -116,7 +116,7 @@
   },
   "collection":{
     "filter_menu":{
-      "refine":"filter"
+      "refine":"Filter"
     }
   },
   "products": {
