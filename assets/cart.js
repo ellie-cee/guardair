@@ -83,7 +83,11 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    this.validateQuantity(event);
+    this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'), event.target.dataset.quantityVariantId);
+    /*
+      possible compatibility issue
+      this.validateQuantity(event);
+    */
   }
 
   onCartUpdate() {
@@ -208,6 +212,48 @@ class CartItems extends HTMLElement {
         }
 
         publish(PUB_SUB_EVENTS.cartUpdate, { source: 'cart-items', cartData: parsedState, variantId: variantId });
+                
+       // ------------- BUBBLE CODE UPDATE -------------
+
+       const mobileBubbleEl = document.querySelector('#cart-icon-bubble');
+       if (mobileBubbleEl) {
+         if (parsedState.item_count === 0) {
+           mobileBubbleEl.style.display = 'none';
+         } else {
+           mobileBubbleEl.style.display = 'flex';
+           let bubbleCountEl = mobileBubbleEl.querySelector('.header__icon__bubble-count');
+           if (!bubbleCountEl) {
+             bubbleCountEl = document.createElement('span');
+             bubbleCountEl.classList.add('header__icon__bubble-count','v2-color','v2-color--accent');
+             bubbleCountEl.setAttribute('aria-hidden', 'true');
+             mobileBubbleEl.appendChild(bubbleCountEl);
+           }
+           bubbleCountEl.textContent = parsedState.item_count;
+         }
+       }
+
+        const desktopBubbleSpan = document.querySelector('.cart-item-count-span');
+       
+         if (desktopBubbleSpan) {
+           const desktopBubbleContainer = desktopBubbleSpan.closest('#cart-icon-bubble') 
+             || desktopBubbleSpan.parentElement;
+         
+           if (parsedState.item_count === 0) {
+             desktopBubbleContainer.style.display = 'none';
+             desktopBubbleSpan.classList.add('hide');
+           } else {
+             
+             setTimeout(() => {
+                 desktopBubbleSpan.innerText = parsedState.item_count;
+               }, 100);
+             desktopBubbleContainer.style.display = 'flex';
+             desktopBubbleSpan.classList.remove('hide');
+           }
+         }
+      
+   
+       // ----------------------------------------------
+
       })
       .catch(() => {
         this.querySelectorAll('.loading__spinner').forEach((overlay) => overlay.classList.add('hidden'));
@@ -222,7 +268,10 @@ class CartItems extends HTMLElement {
   updateLiveRegions(line, message) {
     const lineItemError =
       document.getElementById(`Line-item-error-${line}`) || document.getElementById(`CartDrawer-LineItemError-${line}`);
-    if (lineItemError) lineItemError.querySelector('.cart-item__error-text').textContent = message;
+    
+
+    if (lineItemError) lineItemError.querySelector('.cart-item__error-text').innerHTML = message;
+
 
     this.lineItemStatusElement.setAttribute('aria-hidden', true);
 
