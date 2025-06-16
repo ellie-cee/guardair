@@ -353,8 +353,11 @@ class PriceRange extends HTMLElement {
 
   adjustToValidValues(input) {
     const value = Number(input.value);
-    const min = Number(input.getAttribute('data-min'));
-    const max = Number(input.getAttribute('data-max'));
+    const min = Number(input.getAttribute('min'));
+    const max = Number(input.getAttribute('max'));
+
+//    const min = Number(input.getAttribute('data-min'));
+//    const max = Number(input.getAttribute('data-max'));
 
     if (value < min) input.value = min;
     if (value > max) input.value = max;
