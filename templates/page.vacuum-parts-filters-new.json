@@ -1,0 +1,268 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_9ty4kK": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".button-container {display: flex; justify-content: space-between; width: 100%; gap: 20px;}",
+        ".link-button {flex: 1;}",
+        ".column-button {background-color: #002395; color: #ffffff; cursor: pointer; border: none; padding: 20px 40px !important; font-size: 20px; font-family: Eurostile-Bol, sans-serif; width: 100%; text-align: center; box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);}",
+        ".line-2 {font-family: Eurostile-Reg, sans-serif; font-size: 17px;}",
+        "@media (max-width: 768px) {.button-container {flex-direction: column; gap: 8px; } .link-button {flex: none; width: auto; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"page-width button-container\">\n\n<div class=\"link-button\"><a title=\"PowerQUAD Vacuum Filters\" href=\"#powerquad-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">PowerQUAD™ Vacuum Filters<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Vertical Mount Vac & Contain-It Kit Filters\" href=\"#vertical-mount-contain-kit-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Vertical Mount & Contain-It Kit Filters<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Legacy Standard & NED Vacuum Filters\" href=\"#legacy-standard-ned-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Legacy Standard & NED Vacuum Filters<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Legacy ATEX Vacuum Filters\" href=\"#legacy-atex-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Legacy ATEX Vacuum Filters<\/span>\n<\/button><\/a><\/div>\n\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 16
+      }
+    },
+    "four_table_product_zeNfDE": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_qPHV3c": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-standard-filter"
+          }
+        },
+        "block_8pEPGG": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-standard-filter-6-pack"
+          }
+        },
+        "block_ciBrNM": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-hepa-filter-w-pre-filter-bag"
+          }
+        },
+        "block_XFBW8W": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-ulpa-filter-w-pre-filter-bag"
+          }
+        },
+        "block_xwT6eM": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-55-gallon-wire-cage-coalescing-filter"
+          }
+        },
+        "block_JBg7Xj": {
+          "type": "block",
+          "settings": {
+            "itg_product": "small-standard-cartridge-filter"
+          }
+        },
+        "block_FYcNaH": {
+          "type": "block",
+          "settings": {
+            "itg_product": "small-hepa-cartridge-filter"
+          }
+        },
+        "block_8wV9t6": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-10-gallon-wire-cage-coalescing-filter"
+          }
+        }
+      },
+      "block_order": [
+        "block_qPHV3c",
+        "block_8pEPGG",
+        "block_ciBrNM",
+        "block_XFBW8W",
+        "block_xwT6eM",
+        "block_JBg7Xj",
+        "block_FYcNaH",
+        "block_8wV9t6"
+      ],
+      "settings": {
+        "heading": "PowerQUAD™ Vacuum Filters",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "powerquad-filters"
+      }
+    },
+    "four_table_product_jUq9BQ": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_8NXRNb": {
+          "type": "block",
+          "settings": {
+            "itg_product": "small-standard-cartridge-filter"
+          }
+        },
+        "block_4DLW7B": {
+          "type": "block",
+          "settings": {
+            "itg_product": "small-hepa-cartridge-filter"
+          }
+        }
+      },
+      "block_order": [
+        "block_8NXRNb",
+        "block_4DLW7B"
+      ],
+      "settings": {
+        "heading": "Vertical Mount & Contain-It Kit Vacuum Filters",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "vertical-mount-contain-kit-filters"
+      }
+    },
+    "four_table_product_aB87Fc": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_tenLj8": {
+          "type": "block",
+          "settings": {
+            "itg_product": "standard-cartridge-filter"
+          }
+        },
+        "block_wbnR9F": {
+          "type": "block",
+          "settings": {
+            "itg_product": "standard-cartridge-filter-6-pack"
+          }
+        },
+        "block_dtgaqW": {
+          "type": "block",
+          "settings": {
+            "itg_product": "hepa-cartridge-filter-w-pre-filter-bag"
+          }
+        },
+        "block_qc3F9J": {
+          "type": "block",
+          "settings": {
+            "itg_product": "ulpa-cartridge-filter-w-pre-filter-bag"
+          }
+        },
+        "block_E8CQ4t": {
+          "type": "block",
+          "settings": {
+            "itg_product": "cloth-pre-filter-bag-20-30-55-gallon-vacuums"
+          }
+        },
+        "block_mzeLGw": {
+          "type": "block",
+          "settings": {
+            "itg_product": "cartridge-filter-retaining-springs-3-pack"
+          }
+        },
+        "block_LLMwzt": {
+          "type": "block",
+          "settings": {
+            "itg_product": "small-standard-cartridge-filter"
+          }
+        },
+        "block_pMmGbg": {
+          "type": "block",
+          "settings": {
+            "itg_product": "small-hepa-cartridge-filter"
+          }
+        }
+      },
+      "block_order": [
+        "block_tenLj8",
+        "block_wbnR9F",
+        "block_dtgaqW",
+        "block_qc3F9J",
+        "block_E8CQ4t",
+        "block_mzeLGw",
+        "block_LLMwzt",
+        "block_pMmGbg"
+      ],
+      "settings": {
+        "heading": "Legacy Standard & NED Vacuum Filters",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "legacy-standard-ned-filters"
+      }
+    },
+    "four_table_product_RwfPh3": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_8eDYzC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "atex-bonded-cartridge-filter"
+          }
+        },
+        "block_m4wJLD": {
+          "type": "block",
+          "settings": {
+            "itg_product": "atex-hepa-cartridge-filter-w-pre-filter-bag"
+          }
+        },
+        "block_9EMYTM": {
+          "type": "block",
+          "settings": {
+            "itg_product": "atex-ulpa-cartridge-filter-w-pre-filter-bag"
+          }
+        },
+        "block_GNnhCU": {
+          "type": "block",
+          "settings": {
+            "itg_product": "cloth-pre-filter-bag-20-30-55-gallon-vacuums"
+          }
+        },
+        "block_BkGTRV": {
+          "type": "block",
+          "settings": {
+            "itg_product": "cartridge-filter-retaining-springs-3-pack"
+          }
+        }
+      },
+      "block_order": [
+        "block_8eDYzC",
+        "block_m4wJLD",
+        "block_9EMYTM",
+        "block_GNnhCU",
+        "block_BkGTRV"
+      ],
+      "settings": {
+        "heading": "Legacy ATEX Vacuum Filters",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": "legacy-atex-filters"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_9ty4kK",
+    "four_table_product_zeNfDE",
+    "four_table_product_jUq9BQ",
+    "four_table_product_aB87Fc",
+    "four_table_product_RwfPh3"
+  ]
+}

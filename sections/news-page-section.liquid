@@ -1,0 +1,316 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+
+
+<div class="newstextWrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="news_main_div">
+      <div class="news_textimg_main">
+        {% for block in section.blocks %}
+          <div {% if block.settings.anchor_id != blank %}id="{{ block.settings.anchor_id }}"{% endif %} class="news_text_blocks"}>
+          {% if block.settings.top_text %}
+          {{ block.settings.top_text }}
+          {% endif %}
+          <div class="news_textimg  {{ block.settings.image_alignment }}">
+            <div class="news_sec_img">
+            {% if block.settings.img_link!=blank %}<a href="{{ block.settings.img_link }}" target="_blank">{% endif %}
+              {% if block.settings.img_logo!=blank %}
+              <img src ="{{ block.settings.img_logo | img_url : "master" }}">
+              {% endif %}
+              {% if block.settings.img_link!=blank %}</a>{% endif %}
+            </div>
+            {% if block.settings.texts %}
+            <div class="news_right_text">
+              {{ block.settings.texts }}
+            </div>
+            {% endif %}
+          </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="news_calender">
+        {% if section.settings.heads!=blank %}
+        <div class="news_calender_main">
+        {% if section.settings.heads!=blank %}
+        <h2>{{ section.settings.heads }}</h2>
+        {% endif %}
+         {% if section.settings.text_link!=blank %}
+          <a href="{{ section.settings.text_url }}">
+            {{ section.settings.text_link }}
+          </a>
+        {% endif %}
+       {% if section.settings.img_calender!=blank %}
+          <img src="{{ section.settings.img_calender | img_url : "master" }}">
+        {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+   "name":"News Multicolumn",
+    "settings": [
+        {
+          "type":"text",
+          "id":"heads",
+          "label":"Heading"
+        },
+        {
+          "type":"text",
+          "id":"text_link",
+          "label":"Title"
+        },
+        {
+          "type":"url",
+          "id":"text_url",
+          "label":"Title Link"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_calender",
+          "label":"Select Image"
+        },
+       {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+       "type":"Image-Text",
+       "name":"Image-Text",
+          "settings":[
+            {
+              "type":"richtext",
+              "id":"top_text",
+              "label":"Title"
+            },
+            {
+              "type":"image_picker",
+              "id":"img_logo",
+              "label":"Select Image"
+            },
+            {
+              "type": "select",
+              "id": "image_alignment",
+              "label": "Image Alignment",
+              "options": [
+                
+                {
+                  "value": "left",
+                  "label": "Left"
+                },
+                {
+                  "value": "center",
+                  "label": "Center"
+                },
+                {
+                  "value": "right",
+                  "label": "Right"
+                },
+                {
+                  "value": "default",
+                  "label": "Default"
+                }
+            ],
+            "default": "default"
+          },
+            {
+              "type":"url",
+              "id":"img_link",
+              "label":"Image Link"
+            },
+             {
+              "type":"richtext",
+              "id":"texts",
+              "label":"Description"
+            },
+            {
+              "type": "text",
+              "id": "anchor_id",
+              "label": "Anchor ID"
+            }
+          ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"News Multicolumn"
+      }
+    ]
+  }
+{% endschema %}
+
+
+<style>
+
+.newstextWrapper{
+  width:100%;
+}
+  
+.newstextWrapper .news_main_div {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.newstextWrapper .news_textimg_main {
+    width: 78%;
+}
+
+.newstextWrapper .news_calender {
+    width: 22%;
+}
+.newstextWrapper .news_textimg {
+    display: flex;
+    width: 100%;
+    column-gap: 40px;
+}
+  
+.newstextWrapper .news_textimg h2 {
+    width: 100%;
+    display: grid;
+     columns-gap: 40px;
+}
+.newstextWrapper .news_sec_img {
+    width: 25%;
+}
+
+.newstextWrapper .news_right_text {
+    width: 75%;
+}
+.newstextWrapper .news_sec_img img {
+    max-width: 100%;
+}
+.newstextWrapper .news_calender_main {
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    padding: 20px 15px;
+    width: 100%;
+}
+.newstextWrapper .news_calender_main h2 {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.newstextWrapper .news_calender_main a {
+    text-decoration: none;
+    color: #002395;
+    font-family: Eurostile-Bol,sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    transition: 0.3s all linear;
+}  
+.newstextWrapper .news_calender_main a:hover {
+    color: #4b92db;
+}
+  
+.newstextWrapper .news_right_text p {
+    margin-top: 0;
+}
+
+.newstextWrapper .news_textimg_main h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.67;
+}
+.newstextWrapper .news_text_blocks {
+    padding: 22px 0px;
+    border-bottom: 2px solid #d9d9d9;
+}
+.newstextWrapper .news_text_blocks:first-child {
+    padding-top: 22px;
+    border-top: 2px solid #d9d9d9;
+    margin-top: 22px;
+}
+.news_textimg.left {
+    display: block;
+    width: 100%;
+    justify-content: center;
+}
+.news_textimg.left .news_sec_img {
+    width: 100%;
+    text-align: left;
+}  
+.news_textimg.left .news_right_text {
+    width: 100%;
+}
+.news_textimg.center {
+    display: block;
+    width: 100%;
+}
+  
+.news_textimg.center .news_sec_img {
+    width: 100%;
+    text-align: center;
+}  
+.news_textimg.center .news_right_text {
+    width: 100%;
+    text-align: left;
+}
+.news_textimg.right {
+    display: block;
+    width: 100%;
+}
+  
+.news_textimg.right .news_sec_img {
+    width: 100%;
+    text-align: right;
+}  
+.news_textimg.right .news_right_text {
+    width: 100%;
+    text-align: left;
+}
+body.gradient.page.news-new p strong {
+    font-family: Eurostile-Bol,sans-serif;
+    display: unset;
+    margin: 0;
+}  
+  
+  
+  
+</style>
+
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

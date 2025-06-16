@@ -1,0 +1,279 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "fb3dccab-7b41-44c0-9b7b-91eb16a8f829": {
+      "type": "vacuum-Hoses-six-table",
+      "blocks": {
+        "01763816-c3c0-43b2-b419-9f419db66bee": {
+          "type": "Product",
+          "settings": {
+            "texts": "Non-Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Standard Duty Vacuum Hose with 1-1\/4\" OD To 1-1\/4\" OD Adaptor 1-1\/2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/download_3_72eac5b8-af66-4dbd-b01a-ae3159075b90.png",
+            "img_urls_link": "",
+            "third_product": "standard-duty-vinyl-vacuum-hose-1-1-4-x-10",
+            "third_text": "N12510",
+            "four_product": "",
+            "fourth_text": "",
+            "five_product": "",
+            "five_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "01763816-c3c0-43b2-b419-9f419db66bee"
+      ],
+      "custom_css": [
+        ".vacuum_product_text {padding-left: 0px; padding-right: 0px;}"
+      ],
+      "settings": {
+        "heading": "1-1\/4\" ID",
+        "vaccumeheading": "Type",
+        "firstheading": "Description",
+        "secondheading": "Product",
+        "thirdheading": "10' Length",
+        "fourheading": "20' Length",
+        "fiveheading": "50' Length",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3f94212a-40cb-4325-8b2d-aa51daed5b92": {
+      "type": "vacuum-Hoses-six-table",
+      "blocks": {
+        "a9abb00d-603c-4d06-82c3-a5bfc247ac0f": {
+          "type": "Product",
+          "settings": {
+            "texts": "Non-Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Standard Duty<br\/>Vacuum Hose<br\/>with<br\/>1-1\/2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/i.shgcdn_4996a26b-0e00-45eb-ac8c-3be954c841d7.png",
+            "img_urls_link": "",
+            "third_product": "standard-duty-vinyl-vacuum-hose-1-1-2-x-10",
+            "third_text": "N69110",
+            "four_product": "standard-duty-vinyl-vacuum-hose-1-1-2-x-20",
+            "fourth_text": "N69120",
+            "five_product": "standard-duty-vinyl-vacuum-hose-1-1-2-x-50",
+            "five_text": "N69150"
+          }
+        },
+        "c90342bb-b37b-4358-9b35-e90f4fafc4f8": {
+          "type": "Product",
+          "settings": {
+            "texts": "Non-Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Heavy Duty<br\/>Vacuum Hose<br\/>with<br\/>1-1\/2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/download_119d44bb-9316-4d95-860c-48673662da1e.png",
+            "img_urls_link": "",
+            "third_product": "",
+            "third_text": "",
+            "four_product": "heavy-duty-polyurethane-vacuum-hose-1-1-2-x-20",
+            "fourth_text": "N690",
+            "five_product": "",
+            "five_text": ""
+          }
+        },
+        "5829e700-bebb-491e-8454-034fa4c3cde4": {
+          "type": "Product",
+          "settings": {
+            "texts": "Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Standard Duty<br\/>Vacuum Hose<br\/>with<br\/>1-1\/2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/download_1_6c7c73f5-2e0e-471c-9721-c1c253349ddf.png",
+            "img_urls_link": "",
+            "third_product": "standard-duty-static-conductive-vinyl-vacuum-hose-1-1-2-x-10",
+            "third_text": "2100A02NED",
+            "four_product": "standard-duty-static-conductive-vinyl-vacuum-hose-1-1-2-x-20",
+            "fourth_text": "N653",
+            "five_product": "",
+            "five_text": ""
+          }
+        },
+        "8539b784-2a26-443d-a617-43d60b048bd6": {
+          "type": "Product",
+          "settings": {
+            "texts": "Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Heavy Duty<br\/>Vacuum Hose<br\/>with<br\/>1-1\/2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/download_2_35960665-334e-432f-be4c-ced5bb47e563.png",
+            "img_urls_link": "",
+            "third_product": "",
+            "third_text": "",
+            "four_product": "heavy-duty-static-conductive-neoprene-vacuum-hose-1-1-2-x-20",
+            "fourth_text": "N661",
+            "five_product": "",
+            "five_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "a9abb00d-603c-4d06-82c3-a5bfc247ac0f",
+        "c90342bb-b37b-4358-9b35-e90f4fafc4f8",
+        "5829e700-bebb-491e-8454-034fa4c3cde4",
+        "8539b784-2a26-443d-a617-43d60b048bd6"
+      ],
+      "custom_css": [
+        ".vacuum_product_text {padding-left: 0px; padding-right: 0px;}"
+      ],
+      "settings": {
+        "heading": "1-1\/2\" ID",
+        "vaccumeheading": "Type",
+        "firstheading": "Description",
+        "secondheading": "Product",
+        "thirdheading": "10' Length",
+        "fourheading": "20' Length",
+        "fiveheading": "50' Length",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "914bea1b-4eec-4f44-85b6-efd47145547d": {
+      "type": "vacuum-Hoses-six-table",
+      "blocks": {
+        "99f93c3e-8e88-4bcb-a4cc-0eb65d5df118": {
+          "type": "Product",
+          "settings": {
+            "texts": "Non-Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Standard Duty<br\/>Vacuum Hose<br\/>with<br\/>2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/i.shgcdn_3d189950-c9f0-4aea-8201-3932d5f56fa0.png",
+            "img_urls_link": "",
+            "third_product": "standard-duty-vinyl-vacuum-hose-2-x-10",
+            "third_text": "N67010",
+            "four_product": "standard-duty-vinyl-vacuum-hose-2-x-20",
+            "fourth_text": "N67020",
+            "five_product": "standard-duty-vinyl-vacuum-hose-2-x-50",
+            "five_text": "N67050"
+          }
+        },
+        "502d6261-76c8-49f1-819b-4f2e927c357a": {
+          "type": "Product",
+          "settings": {
+            "texts": "Non-Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Heavy Duty<br\/>Vacuum Hose<br\/>with<br\/>2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/download_119d44bb-9316-4d95-860c-48673662da1e.png",
+            "img_urls_link": "",
+            "third_product": "",
+            "third_text": "",
+            "four_product": "heavy-duty-polyurethane-vacuum-hose-2-x-20",
+            "fourth_text": "N669",
+            "five_product": "",
+            "five_text": ""
+          }
+        },
+        "8e106de1-8328-43db-a5c2-bc39996928b5": {
+          "type": "Product",
+          "settings": {
+            "texts": "Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Standard Duty<br\/>Vacuum Hose<br\/>with<br\/>2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/download_1_6c7c73f5-2e0e-471c-9721-c1c253349ddf.png",
+            "img_urls_link": "",
+            "third_product": "standard-duty-static-conductive-vinyl-vacuum-hose-2-x-10",
+            "third_text": "N652",
+            "four_product": "standard-duty-static-conductive-vinyl-vacuum-hose-2-x-20",
+            "fourth_text": "N654",
+            "five_product": "",
+            "five_text": ""
+          }
+        },
+        "27a48ca6-1691-45ab-8394-054b43d8c9f6": {
+          "type": "Product",
+          "settings": {
+            "texts": "Static Conductive",
+            "text_url": "",
+            "discriptions": "<p>Heavy Duty<br\/>Vacuum Hose<br\/>with<br\/>2\" ID Hose Cuffs<\/p>",
+            "discriptions_url": "",
+            "img_urls": "shopify:\/\/shop_images\/download_2_35960665-334e-432f-be4c-ced5bb47e563.png",
+            "img_urls_link": "",
+            "third_product": "",
+            "third_text": "",
+            "four_product": "heavy-duty-static-conductive-neoprene-vacuum-hose-2-x-20",
+            "fourth_text": "N662",
+            "five_product": "",
+            "five_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "99f93c3e-8e88-4bcb-a4cc-0eb65d5df118",
+        "502d6261-76c8-49f1-819b-4f2e927c357a",
+        "8e106de1-8328-43db-a5c2-bc39996928b5",
+        "27a48ca6-1691-45ab-8394-054b43d8c9f6"
+      ],
+      "custom_css": [
+        ".vacuum_product_text {padding-left: 0px; padding-right: 0px;}"
+      ],
+      "settings": {
+        "heading": "2\" ID",
+        "vaccumeheading": "Type",
+        "firstheading": "Description",
+        "secondheading": "Product",
+        "thirdheading": "10' Length",
+        "fourheading": "20' Length",
+        "fiveheading": "50' Length",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "20e15e5c-d269-4534-a341-664818699b19": {
+      "type": "table-five_hoses",
+      "blocks": {
+        "6b3c3e2a-f40a-49fb-839b-24eddb77b7a8": {
+          "type": "block",
+          "settings": {
+            "itg_product_vaccume": "personnel-cleaning-station-5-5-gallon-vacuum",
+            "itg_product": "vacuum-hose-air-supply-assembly-1-1-4-x-6",
+            "hose_cuffs": "<p>1-1\/2\" ID<\/p>"
+          }
+        },
+        "26e85163-1a73-4186-b03b-f991293e15bc": {
+          "type": "block",
+          "settings": {
+            "itg_product_vaccume": "personnel-cleaning-station-ned-5-5-gallon-vacuum",
+            "itg_product": "static-conductive-vacuum-hose-air-supply-assembly-1-1-4-x-6",
+            "hose_cuffs": "<p>1-1\/2\" ID<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6b3c3e2a-f40a-49fb-839b-24eddb77b7a8",
+        "26e85163-1a73-4186-b03b-f991293e15bc"
+      ],
+      "settings": {
+        "heading": "Vertical Mount Vacuums 1-1\/2\" ID",
+        "link": "",
+        "f_head": "Vacuum Model",
+        "s_head": "Description",
+        "variants_head": "Product",
+        "t_head": "Part Number",
+        "last_head": "Hose Cuffs",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fb3dccab-7b41-44c0-9b7b-91eb16a8f829",
+    "3f94212a-40cb-4325-8b2d-aa51daed5b92",
+    "914bea1b-4eec-4f44-85b6-efd47145547d",
+    "20e15e5c-d269-4534-a341-664818699b19"
+  ]
+}

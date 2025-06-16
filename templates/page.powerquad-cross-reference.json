@@ -1,0 +1,564 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_no_links_ptmgxL": {
+      "type": "multicolumn-no-links",
+      "blocks": {
+        "column_TFVP6k": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li><a href=\"#standard-vacuums\" title=\"Standard Vacuums\"><strong>Standard Vacuums<\/strong><\/a><\/li><li><a href=\"#ned-vacuums\" title=\"NED Vacuums\"><strong>NED Vacuums<\/strong><\/a><\/li><li><a href=\"#atex-vacuums\" title=\"ATEX-Certified Vacuums\"><strong>ATEX-Certified Vacuums<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PMawfC": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li><a href=\"#pulseair-vacuums\" title=\"PulseAir Vacuums\"><strong>PulseAir™ Vacuums<\/strong><\/a><\/li><li><a href=\"#pulseair-dust-extractors\" title=\"PulseAir Dust Extractors\"><strong>PulseAir™ Dust Extractors<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AhnBwb": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li><a href=\"#generating-heads\" title=\"Generating Heads & Engine\"><strong>Generating Heads & Engine<\/strong><\/a><\/li><li><a href=\"#parts-accessories\" title=\"Parts & Accessories\"><strong>Parts & Accessories<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TFVP6k",
+        "column_PMawfC",
+        "column_AhnBwb"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
+        "h2 {font-size: 24px;}",
+        "h3 {font-size: 18px; color: #002395;}",
+        "a {color: #002395; text-decoration: none; font-size: 21px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "cross_reference_table_a9rpme": {
+      "type": "cross-reference-table",
+      "blocks": {
+        "block_rQiwfz": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-gallon-vacuum-kit-w-1-25-inlet"
+          }
+        },
+        "block_faN8g6": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-10-gallon-vacuum-kit-w-1-25-inlet"
+          }
+        },
+        "block_zQfaMW": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-10-gallon-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_CcUJGQ": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_eMLz6N": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-vacuum-kit-w-2-inlet"
+          }
+        },
+        "block_EweykH": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_fdaeME": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-vacuum-kit-w-2-inlet"
+          }
+        },
+        "block_Yth7BP": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_FpjCNG": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-vacuum-kit-w-2-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "block_rQiwfz",
+        "block_faN8g6",
+        "block_zQfaMW",
+        "block_CcUJGQ",
+        "block_eMLz6N",
+        "block_EweykH",
+        "block_fdaeME",
+        "block_Yth7BP",
+        "block_FpjCNG"
+      ],
+      "settings": {
+        "heading": "Standard Vacuums",
+        "link": "",
+        "f_head": "Legacy Part Number",
+        "s_head": "New Part Number",
+        "t_head": "Description",
+        "variants_shead": "Product",
+        "padding_top": 28,
+        "padding_bottom": 36,
+        "anchor_id": "standard-vacuums"
+      }
+    },
+    "cross_reference_table_t7KFqA": {
+      "type": "cross-reference-table",
+      "blocks": {
+        "block_kXARKJ": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-ned-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_kTYjUC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-ned-vacuum-kit-w-2-inlet"
+          }
+        },
+        "block_xc89z9": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-ned-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_b8RA6E": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-ned-vacuum-kit-w-2-inlet"
+          }
+        },
+        "block_C6HNTE": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-ned-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_BTK363": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-ned-vacuum-kit-w-2-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "block_kXARKJ",
+        "block_kTYjUC",
+        "block_xc89z9",
+        "block_b8RA6E",
+        "block_C6HNTE",
+        "block_BTK363"
+      ],
+      "settings": {
+        "heading": "NED Vacuums",
+        "link": "",
+        "f_head": "Legacy Part Number",
+        "s_head": "New Part Number",
+        "t_head": "Description",
+        "variants_shead": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "ned-vacuums"
+      }
+    },
+    "cross_reference_table_qNm6cE": {
+      "type": "cross-reference-table",
+      "blocks": {
+        "block_h3adbt": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-atex-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_X4z9x7": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-atex-vacuum-kit-w-2-inlet"
+          }
+        },
+        "block_N9xdtp": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_XxLMMw": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-atex-vacuum-kit-w-2-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "block_h3adbt",
+        "block_X4z9x7",
+        "block_N9xdtp",
+        "block_XxLMMw"
+      ],
+      "settings": {
+        "heading": "ATEX-Certified Vacuums",
+        "link": "",
+        "f_head": "Legacy Part Number",
+        "s_head": "New Part Number",
+        "t_head": "Description",
+        "variants_shead": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "atex-vacuums"
+      }
+    },
+    "cross_reference_table_B6DEkg": {
+      "type": "cross-reference-table",
+      "blocks": {
+        "block_aJRqhA": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-pulseair-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_TqYxdA": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-pulseair-vacuum-kit-w-2-inlet"
+          }
+        },
+        "block_kgJpaG": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-pulseair-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_eRkTXH": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-pulseair-vacuum-kit-w-2-inlet"
+          }
+        },
+        "block_83CzRC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-pulseair-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "block_fDgAte": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-pulseair-vacuum-kit-w-2-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "block_aJRqhA",
+        "block_TqYxdA",
+        "block_kgJpaG",
+        "block_eRkTXH",
+        "block_83CzRC",
+        "block_fDgAte"
+      ],
+      "settings": {
+        "heading": "PulseAir™ Vacuums",
+        "link": "",
+        "f_head": "Legacy Part Number",
+        "s_head": "New Part Number",
+        "t_head": "Description",
+        "variants_shead": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "pulseair-vacuums"
+      }
+    },
+    "cross_reference_table_ChDQwj": {
+      "type": "cross-reference-table",
+      "blocks": {
+        "block_eXY3HG": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-pulseair-dust-extractor-kit-w-1-5-inlet"
+          }
+        },
+        "block_g9cLwi": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-gallon-pulseair-dust-extractor-kit-w-2-inlet"
+          }
+        },
+        "block_XTYUxf": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-pulseair-dust-extractor-kit-w-1-5-inlet"
+          }
+        },
+        "block_fQGycF": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-30-gallon-pulseair-dust-extractor-kit-w-2-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "block_eXY3HG",
+        "block_g9cLwi",
+        "block_XTYUxf",
+        "block_fQGycF"
+      ],
+      "settings": {
+        "heading": "PulseAir™ Dust Extractors",
+        "link": "",
+        "f_head": "Legacy Part Number",
+        "s_head": "New Part Number",
+        "t_head": "Description",
+        "variants_shead": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "pulseair-dust-extractors"
+      }
+    },
+    "cross_reference_table_DdKiab": {
+      "type": "cross-reference-table",
+      "blocks": {
+        "block_m9cjUr": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-gallon-vacuum-generating-head-w-1-25-inlet"
+          }
+        },
+        "block_7AUmRy": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-gallon-vacuum-generating-head-kit-w-1-25-inlet"
+          }
+        },
+        "block_xQpXk3": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-10-gallon-vacuum-generating-head-w-1-5-inlet"
+          }
+        },
+        "block_8pfepy": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-10-gallon-vacuum-generating-head-kit-w-1-5-inlet"
+          }
+        },
+        "block_drLmrC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-vacuum-generating-head-w-1-5-inlet"
+          }
+        },
+        "block_PPwUWQ": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-vacuum-generating-head-kit-w-1-5-inlet"
+          }
+        },
+        "block_exwJTe": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet"
+          }
+        },
+        "block_dG3Any": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-vacuum-generating-head-kit-w-2-inlet"
+          }
+        },
+        "block_ekpfqC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-vacuum-generating-head-w-1-5-inlet"
+          }
+        },
+        "block_VPkazD": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-vacuum-generating-head-kit-w-1-5-inlet"
+          }
+        },
+        "block_Xhkndr": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-vacuum-generating-head-w-2-inlet"
+          }
+        },
+        "block_EPyhyy": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-vacuum-generating-head-kit-w-2-inlet"
+          }
+        },
+        "block_fn897K": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-vacuum-generating-engine"
+          }
+        }
+      },
+      "block_order": [
+        "block_m9cjUr",
+        "block_7AUmRy",
+        "block_xQpXk3",
+        "block_8pfepy",
+        "block_drLmrC",
+        "block_PPwUWQ",
+        "block_exwJTe",
+        "block_dG3Any",
+        "block_ekpfqC",
+        "block_VPkazD",
+        "block_Xhkndr",
+        "block_EPyhyy",
+        "block_fn897K"
+      ],
+      "settings": {
+        "heading": "Generating Heads & Engine",
+        "link": "",
+        "f_head": "Legacy Part Number",
+        "s_head": "New Part Number",
+        "t_head": "Description",
+        "variants_shead": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "generating-heads"
+      }
+    },
+    "cross_reference_table_PkgN86": {
+      "type": "cross-reference-table",
+      "blocks": {
+        "block_ELnmik": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-standard-filter"
+          }
+        },
+        "block_JcRyEb": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-standard-filter-6-pack"
+          }
+        },
+        "block_4PKF6M": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-hepa-filter-w-pre-filter-bag"
+          }
+        },
+        "block_bqCVmP": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-ulpa-filter-w-pre-filter-bag"
+          }
+        },
+        "block_iQpXGY": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-silencer-foam"
+          }
+        },
+        "block_Na8GzC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-exhaust-housing-w-silencer-foam"
+          }
+        },
+        "block_iC9yrA": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-55-gallon-liquid-shut-off-assembly"
+          }
+        },
+        "block_LEfdYt": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-maintenance-kit"
+          }
+        },
+        "block_rRcfni": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-maintenance-kit"
+          }
+        }
+      },
+      "block_order": [
+        "block_ELnmik",
+        "block_JcRyEb",
+        "block_4PKF6M",
+        "block_bqCVmP",
+        "block_iQpXGY",
+        "block_Na8GzC",
+        "block_iC9yrA",
+        "block_LEfdYt",
+        "block_rRcfni"
+      ],
+      "settings": {
+        "heading": "Parts & Accessories",
+        "link": "",
+        "f_head": "Legacy Part Number",
+        "s_head": "New Part Number",
+        "t_head": "Description",
+        "variants_shead": "Product",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": "parts-accessories"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_no_links_ptmgxL",
+    "cross_reference_table_a9rpme",
+    "cross_reference_table_t7KFqA",
+    "cross_reference_table_qNm6cE",
+    "cross_reference_table_B6DEkg",
+    "cross_reference_table_ChDQwj",
+    "cross_reference_table_DdKiab",
+    "cross_reference_table_PkgN86"
+  ]
+}

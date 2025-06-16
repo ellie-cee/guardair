@@ -1,0 +1,294 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_dqKHfC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jFBtib": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#drum-dollies\" title=\"Drum Dollies\"><strong>Drum Dollies<\/strong><\/a><\/li><li><a href=\"#liquid-drain-valves\" title=\"Liquid Drain Valves\"><strong>Liquid Drain Valves<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6fjATz": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#liquid-shut-off-accessories\" title=\"Liquid Shut-Off Accessories\"><strong>Liquid Shut-Off Accessories<\/strong><\/a><\/li><li><a href=\"#grounding-clamps\" title=\"Grounding Clamps\"><strong>Grounding Clamps<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pHmrCA": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#maintenance-kits\" title=\"Maintenance Kits\"><strong>Maintenance Kits<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jFBtib",
+        "column_6fjATz",
+        "column_pHmrCA"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
+        "h2 {font-size: 24px;}",
+        "h3 {font-size: 18px; color: #002395;}",
+        "a {color: #002395; text-decoration: none; font-size: 20px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 16,
+        "anchor_id": ""
+      }
+    },
+    "e90c3c41-4135-4e3a-b80e-c411022c187f": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_MCfH3g": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-drum-dolly"
+          }
+        },
+        "block_x4eHe8": {
+          "type": "block",
+          "settings": {
+            "itg_product": "30-gallon-drum-dolly"
+          }
+        },
+        "81674b4c-5fc2-4df8-bfdf-06b21af7a0f7": {
+          "type": "block",
+          "settings": {
+            "itg_product": "dolly-assembly-20-30-gallon"
+          }
+        },
+        "block_XXTkzq": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-push-dolly"
+          }
+        },
+        "block_tU7z4N": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-push-dolly"
+          }
+        }
+      },
+      "block_order": [
+        "block_MCfH3g",
+        "block_x4eHe8",
+        "81674b4c-5fc2-4df8-bfdf-06b21af7a0f7",
+        "block_XXTkzq",
+        "block_tU7z4N"
+      ],
+      "settings": {
+        "heading": "Drum Dollies",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "drum-dollies"
+      }
+    },
+    "drums_three_section_JdVyTA": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_4cxAak": {
+          "type": "block",
+          "settings": {
+            "itg_product": "20-30-55-gallon-liquid-drain-valve"
+          }
+        },
+        "block_jwDpbE": {
+          "type": "block",
+          "settings": {
+            "itg_product": "20-30-55-gallon-liquid-drain-valve-w-strainer"
+          }
+        }
+      },
+      "block_order": [
+        "block_4cxAak",
+        "block_jwDpbE"
+      ],
+      "settings": {
+        "heading": "Liquid Drain Valves",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "liquid-drain-valves"
+      }
+    },
+    "drums_three_section_AKCabf": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_YrMByi": {
+          "type": "block",
+          "settings": {
+            "itg_product": "20-30-55-gallon-liquid-shut-off-assembly"
+          }
+        },
+        "block_KtpWUa": {
+          "type": "block",
+          "settings": {
+            "itg_product": "cartridge-filter-retaining-springs-3-pack"
+          }
+        },
+        "block_MXiwP7": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-55-gallon-liquid-shut-off-assembly"
+          }
+        },
+        "block_XbQVDj": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-10-gallon-liquid-shut-off-assembly"
+          }
+        }
+      },
+      "block_order": [
+        "block_YrMByi",
+        "block_KtpWUa",
+        "block_MXiwP7",
+        "block_XbQVDj"
+      ],
+      "settings": {
+        "heading": "Liquid Shut-Off Accessories",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "liquid-shut-off-accessories"
+      }
+    },
+    "drums_three_section_LxyX9h": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_96t4Ur": {
+          "type": "block",
+          "settings": {
+            "itg_product": "grounding-clamp-1-8-x-10"
+          }
+        },
+        "block_6LqVtz": {
+          "type": "block",
+          "settings": {
+            "itg_product": "grounding-clamp-1-8-x-20"
+          }
+        }
+      },
+      "block_order": [
+        "block_96t4Ur",
+        "block_6LqVtz"
+      ],
+      "settings": {
+        "heading": "Grounding Clamps",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "grounding-clamps"
+      }
+    },
+    "drums_three_section_FC7QgL": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_WXjWqp": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-vacuum-maintenance-kit"
+          }
+        },
+        "block_VgG7U4": {
+          "type": "block",
+          "settings": {
+            "itg_product": "20-30-gallon-vacuum-maintenance-kit"
+          }
+        },
+        "block_tw8xTb": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-maintenance-kit"
+          }
+        },
+        "block_3pyVwX": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-maintenance-kit"
+          }
+        },
+        "block_rcAFWC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-10-gallon-maintenance-kit"
+          }
+        }
+      },
+      "block_order": [
+        "block_WXjWqp",
+        "block_VgG7U4",
+        "block_tw8xTb",
+        "block_3pyVwX",
+        "block_rcAFWC"
+      ],
+      "settings": {
+        "heading": "Maintenance Kits",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": "maintenance-kits"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_dqKHfC",
+    "e90c3c41-4135-4e3a-b80e-c411022c187f",
+    "drums_three_section_JdVyTA",
+    "drums_three_section_AKCabf",
+    "drums_three_section_LxyX9h",
+    "drums_three_section_FC7QgL"
+  ]
+}

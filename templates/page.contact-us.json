@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "58579b15-981b-4b4e-8a3f-d4572d6367b8": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "img_picker": "shopify:\/\/shop_images\/downloadppp.png",
+        "image_alignment": "left",
+        "content": "<p>Guardair Corporation<br\/>47 Veterans Drive<br\/>Chicopee, MA<\/p><p>Phone: 413-594-4400<br\/>Toll-Free: 800-482-7324<br\/>Fax: 413-594-4884<br\/>General Inquiries & Sales Requests: <a href=\"mailto:info@guardair.com\">Info@guardair.com<\/a><br\/>Technical Questions: <a href=\"mailto:productsupport@guardair.com\">ProductSupport@guardair.com<\/a> <br\/>Product Returns: <a href=\"mailto:Returns@guardair.com\">Returns@guardair.com<\/a><\/p>",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "58579b15-981b-4b4e-8a3f-d4572d6367b8"
+  ]
+}

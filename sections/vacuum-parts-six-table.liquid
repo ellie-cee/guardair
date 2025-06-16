@@ -1,0 +1,208 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+
+<div class="sixtableswrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+     <div class="six_tablemain">
+       {% if section.settings.heading!=blank %}
+       <div class="six_headings">
+        <h2>{{ section.settings.heading }}</h2>
+       </div>
+      {% endif %}
+      <div class ="horizontal-scroll">
+        <table>
+          {% if section.settings.vaccumeheading!=blank %}
+          <thead class = "main_table_heads">
+          <tr class="main_table_Class">
+            <th class="vacuum_product">{{ section.settings.vaccumeheading }}</th>
+            <th class="tables_all_product" >{{ section.settings.firstheading }}</th>
+            <th class="tables_all_product">{{ section.settings.secondheading }}</th>
+            <th class="tables_all_product">{{ section.settings.thirdheading }}</th>
+            <th class="tables_all_product_last">{{ section.settings.fourheading }}</th>
+            <th class="tables_all_product_last">{{ section.settings.fiveheading }}</th>
+          </tr> 
+          </thead>
+          {% endif %}
+          {% for block in section.blocks %}
+          {% assign productvacuume = block.settings.vacuum_product %}
+          {% assign productfirst = block.settings.first_product %}
+          {% assign productsecond = block.settings.second_product %}
+          {% assign productthird = block.settings.third_product %}
+          {% assign productfour = block.settings.four_product %}
+          {% assign productfive = block.settings.five_product %}
+          {% assign current_variant_vacuume = productvacuume.selected_or_first_available_variant %}
+          {% assign current_variant_first = productfirst.selected_or_first_available_variant %}
+          {% assign current_variant_second = productsecond.selected_or_first_available_variant %}
+          {% assign current_variant_third = productthird.selected_or_first_available_variant %}
+          {% assign current_variant_forth = productfour.selected_or_first_available_variant %}
+          {% assign current_variant_five = productfive.selected_or_first_available_variant %}
+          <tr class="main_table_Class">
+            <td class="vacuum_product">
+            <a href="{% if block.settings.vacuum_product_link!=blank %}{{ block.settings.vacuum_product_link }}{% else %}{{ current_variant_vacuume.url }}{% endif %}">  
+            <img src="{{productvacuume | img_url: "260x240"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+            <p>{{ productvacuume.title }}</p>
+            </a>
+            </td>
+            <td class="tables_all_product">
+            <a href="{{ current_variant_first.url }}">
+            <img src="{{productfirst | img_url: "174x122"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+             <p>{{ current_variant_first.sku }}</p>
+             </a>
+             </td>
+            <td class="tables_all_product">
+         <a href="{{ current_variant_second.url }}">
+          <img src="{{productsecond | img_url: "174x122"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+           <p>{{ current_variant_second.sku }}</p>
+             </a>
+            </td>
+            <td class="tables_all_product">
+           <a href="{{ current_variant_third.url }}">
+            <img src="{{productthird | img_url: "174x122"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+            <p>{{ current_variant_third.sku }}</p>
+             </a>
+            </td>
+            <td class="tables_all_product_last">
+           <a href="{{ current_variant_forthcurrent_variant_forth.url }}">
+          <img src="{{productfour | img_url: "174x122"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+           <p>{{ current_variant_forth.sku }}</p>
+             </a>
+            </td>
+            <td class="tables_all_product_last">
+            <a href="{{ current_variant_five.url }}">
+             <img src="{{productfive | img_url: "200X100"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+             <p>{{ current_variant_five.sku }}</p>
+             </a>
+            </td>
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Six Column Filter Table",
+    "settings": [
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+      },
+      {
+      "type": "text",
+      "id": "vaccumeheading",
+      "label": "Vacuum Heading"
+      },
+      {
+      "type": "text",
+      "id": "firstheading",
+      "label": "First Heading"
+      },
+      {
+      "type": "text",
+      "id": "secondheading",
+      "label": "Second Heading"
+      },
+      {
+      "type": "text",
+      "id": "thirdheading",
+      "label": "Third Heading"
+      },
+      {
+      "type": "text",
+      "id": "fourheading",
+      "label": "Fourth Heading"
+      },
+      {
+      "type": "text",
+      "id": "fiveheading",
+      "label": "Fifth Heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Product-Add",
+        "name":"Product-Add",
+         "settings":[
+            {
+              "type": "product",
+              "id": "vacuum_product",
+              "label": "Vacuum Model Select"
+            },
+            {
+              "type": "url",
+              "id": "vacuum_product_link",
+              "label": "Vacuum Model Link"
+            },
+            {
+              "type": "product",
+              "id": "first_product",
+              "label": "First Product Select"
+            },
+             {
+              "type": "product",
+              "id": "second_product",
+              "label": "Second Product Select"
+            },
+            {
+              "type": "product",
+              "id": "third_product",
+              "label": "Third Product Select"
+            },
+           {
+              "type": "product",
+              "id": "four_product",
+              "label": "Fourth Product Select"
+            },
+           {
+              "type": "product",
+              "id": "five_product",
+              "label": "Fifth Product Select"
+            }
+         ]
+      }
+    ],
+    "presets":[
+      {
+            "name": "Six Column Filter Table"
+
+      }
+    ]
+  }
+{% endschema %}
+

@@ -1,0 +1,88 @@
+<div class="incorporating_noise_suppression_nozzles_section">
+  <div class="page-width">
+    <div class="incorporating_table">
+      <h3>{{ section.settings.heading }}</h3>
+      <table>
+        <tr>
+          {% if section.settings.heading1 != blank %}<th>{{ section.settings.heading1 }}</th>{% endif %}
+          {% if section.settings.heading2 != blank %}<th>{{ section.settings.heading2 }}</th>{% endif %}
+          {% if section.settings.heading3 != blank %}<th>{{ section.settings.heading3 }}</th>{% endif %}
+        </tr>
+        {% for block in section.blocks %}
+        <tr>
+          {% if block.settings.part_number != blank %}<td>{{ block.settings.part_number }}</td>{% endif %}
+          {% if block.settings.description != blank %}<td>{{ block.settings.description }}</td>{% endif %}
+          {% if block.settings.noise_level != blank %}<td>{{ block.settings.noise_level }}</td>{% endif %}
+        </tr>
+        {% endfor %}
+      </table>
+      {{ section.settings.pera }}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Incorporating Noise",
+    "settings": [
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "id":"heading1",
+        "label":"Table Heading1"
+      },
+      {
+        "type":"text",
+        "id":"heading2",
+        "label":"Table Heading2"
+      },
+      {
+        "type":"text",
+        "id":"heading3",
+        "label":"Table Heading3"
+      },
+      {
+        "type":"html",
+        "id":"pera",
+        "label":"Content"
+      }
+    ],
+    "blocks":[
+      {
+        "name": "Block",
+        "type":"block",
+        "settings":[
+          {
+            "type":"text",
+            "id":"part_number",
+            "label":"Part Number"
+          },
+          {
+            "type":"text",
+            "id":"description",
+            "label":"Description"
+          },
+          {
+            "type":"text",
+            "id":"noise_level",
+            "label":"Noise Level"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Incorporating Noise"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

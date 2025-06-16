@@ -1,0 +1,114 @@
+<style>
+  .video-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.85);
+      align-items: center;
+      justify-content: center;
+  }
+
+  .close-video-modal {
+      position: absolute;
+      top: -20px;
+      right: 0px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+      .video-modal {
+          padding: 15vh 10vw;
+      }
+  }
+
+  #videoIframe {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 8px rgba(0,0,0,0.6);
+      background: #000;
+      overflow: hidden;
+  }
+
+  #videoIframe iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  .iframGroup {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 1045;
+    line-height: 0;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .iframeScaler {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+</style>
+<!-- Video Modal -->
+<div id="videoModal" class="video-modal">
+  <div class="iframGroup">
+    <div class="iframeScaler">
+      <span class="close-video-modal">&times;</span>
+      <iframe id="videoIframe" width="560" height="315" frameborder="0" allowfullscreen> </iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var modal = document.getElementById("videoModal");
+      var videoIframe = document.getElementById("videoIframe");
+      var closeBtn = document.querySelector(".close-video-modal");
+
+      // Open the modal
+      document.querySelector(".popup-youtube").addEventListener("click", function(e) {
+          e.preventDefault();
+
+          // Extract the video URL from the clicked element and set it in the iframe
+          var videoURL = e.currentTarget.getAttribute("href");
+          var videoId = videoURL.split("v=")[1];
+          videoIframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+
+          modal.style.display = "flex";
+      });
+
+      // Close the modal
+      closeBtn.addEventListener("click", function() {
+          modal.style.display = "none";
+          videoIframe.src = ""; // Stop the video from playing
+      });
+
+      // Clicking outside of the modal will close it
+      window.addEventListener("click", function(event) {
+          if (event.target === modal) {
+              modal.style.display = "none";
+              videoIframe.src = ""; // Stop the video from playing
+          }
+      });
+  });
+</script>

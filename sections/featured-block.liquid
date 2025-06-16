@@ -1,0 +1,381 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+  
+<div class="featured-wrap-settings gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="featured-title">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+{%- if section.blocks.size > 0 -%}
+  <!-- featured-container begins -->
+  <section class="featured-container" data-section-id="{{ section.id }}" data-section-type="featured-block">
+    {%- for block in section.blocks -%}
+      <!-- featured-box begins -->
+      {% comment %}<div class="featured-box" {%- if block.settings.image -%} style="background-image: url('{{ block.settings.image | img_url: '800x' }}');"{%- endif -%}>{% endcomment %}
+      <div class="featured-box vk--text-{{ block.settings.text_alignment }} {% if block.settings.text_background %}itg--text-bg{% endif %} {% if block.settings.border %}itg--border_main{% endif %}" {%- if block.settings.image -%} style="background-image: url('{{ block.settings.image | img_url: '800x' }}');"{%- endif -%}>
+        <!-- container begins -->
+        <div class="container">
+          <!-- box-panel begins -->
+          <div class="box-panel">
+            <div class="vk--box-main">
+            <!-- box-title begins -->
+            <div class="box-title"><h3>{{ block.settings.title }}</h3></div>
+            <!-- box-title ends -->
+            <!-- box-desc begins -->
+            <div class="box-desc">
+              {{ block.settings.body }}
+            </div>
+            <!-- box-desc ends -->
+            <div class="banner__buttons_group">
+            {%- if block.settings.show_button -%}
+              <!-- box-link begins -->
+              <div class="box-link">
+                <a href="{{ block.settings.button_link }}" class="itg_btn">{{ block.settings.button_text }}</a>
+              </div>
+              <!-- box-link ends -->
+            {%- endif -%}
+              {%- if block.settings.show_button_second -%}
+                <!-- box-link begins -->
+                <div class="box-link banner__buttons">
+                  <a href="{{ block.settings.button_link_second }}" class="btn {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}">{{ block.settings.button_text_second }}</a>
+                </div>
+                <!-- box-link ends -->
+              {%- endif -%}
+            </div>
+            </div>
+          </div>
+          <!-- box-panel begins -->
+        </div>
+        <!-- container ends -->
+      </div>
+      <!-- featured-item ends -->
+    {%- endfor -%}
+  </section>
+  <!-- featured-container ends -->
+{%- endif -%}
+</div>
+</div>
+
+<style>
+
+  #shopify-section-{{ section.id }} {
+    background: {{ section.settings.background_color }};
+  }
+
+  #shopify-section-{{ section.id }} .featured-box {
+    background-color: {{ section.settings.box_color }};
+  }
+
+  #shopify-section-{{ section.id }} .box-title h3, #shopify-section-{{ section.id }} .box-desc p {
+    color: {{ section.settings.text_color }} !important;
+  }
+
+  #shopify-section-{{ section.id }} .featured-title h2 {
+    color: {{ section.settings.heading_text_color }} !important;
+  }
+
+  .featured-title h2 {
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+  
+  .featured-container .featured-box>.container {
+    padding: 20px;
+}
+  .banner__buttons_group>.banner__buttons>.button--secondary {
+    background-color: transparent;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    min-width: 150px;
+    border-radius: 0;
+    font-size: 18px;
+    font-family: "Eurostile-Bol", "Eurostile-Reg", "Calibri", "Trebuchet MS", Helvetica, Arial, Sans-serif;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    outline: 0 !important;
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: none;
+}
+  /*.banner__buttons_group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 35px !important;
+}*/
+  .banner__buttons_group {
+    gap: 10px;
+    margin-top: 20px !important;
+}
+  .featured-container .featured-box .box-link {
+    padding-top: 10px;
+}
+
+
+  
+  .featured-container .featured-box .box-desc p {
+    font-size: 20px;
+    font-family: Eurostile-Reg, Calibri, "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+    .featured-box.vk--text-top .box-panel {
+    vertical-align: middle;
+}
+.featured-box.vk--text-middle .box-panel {
+    vertical-align: middle;
+}
+.featured-box.vk--text-bottom .box-panel {
+    vertical-align: middle;
+}
+.featured-container .featured-box.itg--border_main .box-panel {
+    border: 1px solid #fff;
+    padding: 30px 20px;
+}
+
+  
+ @media screen and (min-width: 768px) {
+  .featured-container {
+      display: table;
+      width: 100%;
+  }
+  .featured-container .featured-box {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+ }
+ .featured-box.itg--text-bg .vk--box-main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+  }
+    .featured-box.vk--text-top .box-panel {
+    vertical-align: top;
+  }
+.featured-box.vk--text-middle .box-panel {
+    vertical-align: middle;
+  }
+  .featured-box.vk--text-bottom .box-panel {
+    vertical-align: bottom;
+  }
+  
+   .featured-box.itg--text-bg .vk--box-main .box-desc {
+    color: #414753;
+  }
+   /*.featured-box.itg--text-bg .vk--box-main .box-title h3 {
+    color: #000;
+  }*/
+}
+
+@media screen and (max-width: 640px){
+  .popular-panel>h3 {
+    padding-bottom: 22px;
+    font-size: 26px;
+    line-height: 1;
+  }
+  .featured-container .featured-box>.container {
+    padding: 20px 15px !important;
+}
+  .featured-container .featured-box.itg--border_main .box-panel {
+    padding: 20px 5px;
+}
+}
+  
+
+</style>
+
+{% schema %}
+  {
+    "name": "Featured block",
+    "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_text_color",
+      "label": "Heading Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Background Color",
+      "default": "rgba(0,0,0,0)",
+      "info": "When not full width"
+    },
+    {
+      "type": "color",
+      "id": "box_color",
+      "label": "Box Background Color",
+      "default": "rgba(0,0,0,0)",
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+       {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }  
+    ],
+    "blocks": [
+      {
+        "type": "featured_block",
+        "name": "Featured block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "For Arborists"
+          },
+          {
+            "type": "richtext",
+            "id": "body",
+            "label": "Body",
+            "default": "<p>Learn how AirSpade saves time and helps you deliver the best results from your work.</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_button",
+            "label": "Show button"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button text",
+            "default": "Learn More"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_primary",
+            "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "show_button_second",
+            "label": "Show Second button"
+          },
+          {
+            "type": "url",
+            "id": "button_link_second",
+            "label": "Second Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_text_second",
+            "label": "Second Button text",
+            "default": "Learn More"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary",
+            "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "middle",
+                "label": "Middle"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "middle",
+            "label": "Content Position"
+          },
+          {
+            "type": "checkbox",
+            "id": "text_background",
+            "label": "Content Background"
+          },
+          {
+            "type": "checkbox",
+            "id": "border",
+            "label": "Show Border"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured block",
+        "category": "Image",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "featured_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

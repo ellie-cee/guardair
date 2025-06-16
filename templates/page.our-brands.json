@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "6cdfaca2-07db-4977-9514-60d415b13b63": {
+      "type": "custom-logo-with-text",
+      "settings": {
+        "img_logo": "shopify:\/\/shop_images\/download_7.png",
+        "logo_url": "",
+        "content": "<p><strong>SAFETY AIR GUNS, SYPHON GUNS, PNEUMATIC VACUUMS AND ACCESSORIES<\/strong> <br\/>With a rich history dating back to 1942, Guardair Corporation is a leading manufacturer of best-in-class pneumatic tools and gasket cutters. Headquartered in Chicopee, Massachusetts, the company features three distinct brands: <a href=\"https:\/\/guardair.com\/\" target=\"_blank\" title=\"https:\/\/guardair.com\/\">Guardair<\/a>, <a href=\"http:\/\/www.airspade.com\/\" target=\"_blank\">AirSpade<\/a>, and <a href=\"http:\/\/www.allpaxcorp.com\/\" target=\"_blank\">Allpax<\/a>.<\/p><p>Guardair safety air guns feature exceptional performance including protection from chip fly-back, noise suppression, and syphon capabilities. Designed for safe, and effective cleaning, the line includes a wide-range of specialty air guns for a multitude of industrial applications. All meet OSHA Standards for cleaning with compressed air.<\/p><p>Guardair pneumatic vacuums offer significant advantages in performance, dependability, safety, and life-cycle cost over conventional electric-powered vacuums. Operating on compressed air, with no moving parts or electric motors to burn out, these powerful, versatile and low-noise vacuums are ideal for the toughest industrial environments.<\/p>",
+        "top_border": true,
+        "padding_top": 22,
+        "padding_bottom": 0,
+        "logo-padding_top": 36,
+        "logo-padding_bottom": 36
+      }
+    },
+    "253c808b-3774-4418-a7d8-8ef171bfd659": {
+      "type": "custom-logo-with-text",
+      "settings": {
+        "img_logo": "shopify:\/\/shop_images\/download_8.png",
+        "logo_url": "https:\/\/www.airspade.com\/",
+        "content": "<p><strong>AIR EXCAVATION TOOLS<\/strong> <br\/>Displacing traditional digging methods, <a href=\"http:\/\/www.airspade.com\/\" target=\"_self\">AirSpade <\/a>is widely recognized as the tool of choice for safe, non-destructive, and efficient soil excavation. With thousands in use, AirSpade is the premier manufacturer of air-powered, soil excavation tools for arboreal, landscaping, and utility applications around the world.<\/p>",
+        "top_border": true,
+        "padding_top": 22,
+        "padding_bottom": 0,
+        "logo-padding_top": 36,
+        "logo-padding_bottom": 36
+      }
+    },
+    "012e30de-af95-48b4-9b00-453f677bfc57": {
+      "type": "custom-logo-with-text",
+      "settings": {
+        "img_logo": "shopify:\/\/shop_images\/download_9.png",
+        "logo_url": "https:\/\/allpaxcorp.com\/",
+        "content": "<p><strong>GASKET CUTTERS AND ACCESSORIES<\/strong> <br\/>Widely used throughout industry, <a href=\"http:\/\/www.allpaxcorp.com\/\" target=\"_blank\">Allpax <\/a>gasket-cutting tools have a well-earned reputation for high quality and performance. Today, Allpax is the largest global manufacturer of gasket cutters, punches, and related accessories used in the fabrication of custom flange gaskets.<\/p>",
+        "top_border": true,
+        "padding_top": 22,
+        "padding_bottom": 62,
+        "logo-padding_top": 36,
+        "logo-padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6cdfaca2-07db-4977-9514-60d415b13b63",
+    "253c808b-3774-4418-a7d8-8ef171bfd659",
+    "012e30de-af95-48b4-9b00-453f677bfc57"
+  ]
+}

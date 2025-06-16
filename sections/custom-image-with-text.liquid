@@ -1,0 +1,92 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="itg_contact_page_wrapper section-{{ section.id }}-padding">
+<div class="page-width">
+<div class="itg_image_with_text {{ section.settings.image_alignment }}">
+  {% if section.settings.img_picker != blank %}
+    <div class="itg_img_box">
+      <img src="{{ section.settings.img_picker | img_url:'master' }}" alt="image">
+    </div>
+   <div class="itg_content_box">
+     {{ section.settings.content }}
+   </div>
+  {% endif %}
+</div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Custom Image With Text",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"img_picker",
+        "label":"Image"
+      },
+      {
+          "type": "select",
+          "id": "image_alignment",
+          "label": "Image Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+      },
+      {
+        "type":"richtext",
+        "id":"content",
+        "label":"Content"
+      },
+       {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "presets":[
+      {
+        "name":"Custom Image With Text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

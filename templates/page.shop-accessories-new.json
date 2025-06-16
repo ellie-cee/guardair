@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_xezMVG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7dazHw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-osha-kit.png",
+            "image_link": "https:\/\/guardair.com\/products\/osha-compliance-kit",
+            "title": "<a href=\"\/products\/osha-compliance-kit\" title=\"OSHA Compliance Kit\">OSHA Compliance Kit<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G4UAWG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-on-guard-chip-shield.png",
+            "image_link": "https:\/\/guardair.com\/products\/on-guard-chip-shield-palmjet-ga44-models",
+            "title": "<a href=\"\/products\/on-guard-chip-shield-palmjet-ga44-models\" title=\"On-Guard® Chip Shield - PalmJet® GA44 Models\">On-Guard Chip Shield<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cCawkH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-sidekick.png",
+            "image_link": "https:\/\/guardair.com\/products\/sidekick-auxiliary-air-gun-support-handle",
+            "title": "<a href=\"\/products\/sidekick-auxiliary-support-handle\" title=\"Sidekick\">Sidekick<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iF4tK4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-quickselect.png",
+            "image_link": "https:\/\/guardair.com\/products\/quickselect-tool-rack-magnetic",
+            "title": "<a href=\"\/products\/quickselect-tool-rack-magnetic\" title=\"QuickSelect™ Tool Rack - Magnetic\">QuickSelect Tool Rack<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_C7thbA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-gunslinger.png",
+            "image_link": "https:\/\/guardair.com\/products\/gunslinger-magnetic-air-gun-holder",
+            "title": "<a href=\"\/products\/gunslinger-magnetic-air-gun-holder\" title=\"Gunslinger® Magnetic Air Gun Holder\">Gunslinger<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VpyJwr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-magloop.png",
+            "image_link": "https:\/\/guardair.com\/products\/magloop-magnetic-air-gun-hanging-loop",
+            "title": "<a href=\"\/products\/magloop-magnetic-air-gun-hanging-loop\" title=\"MagLoop Magnetic Air Gun Hanging Loop\">Magnetic Hanging Loop<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xHfP3n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-maghook.png",
+            "image_link": "https:\/\/guardair.com\/products\/maghook-magnetic-air-gun-hanging-hook",
+            "title": "<a href=\"\/products\/maghook-magnetic-air-gun-hanging-hook\" title=\"MagHook Magnetic Air Gun Hanging Hook\">Magnetic Hanging Hook<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xN93GU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-chip-collector-lid.png",
+            "image_link": "https:\/\/guardair.com\/products\/chip-collector-lid",
+            "title": "<a href=\"\/products\/chip-collector-lid\" title=\"Chip Collector Lid™\">Chip Collector Lid<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7dazHw",
+        "column_G4UAWG",
+        "column_cCawkH",
+        "column_iF4tK4",
+        "column_C7thbA",
+        "column_VpyJwr",
+        "column_xHfP3n",
+        "column_xN93GU"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_xezMVG"
+  ]
+}

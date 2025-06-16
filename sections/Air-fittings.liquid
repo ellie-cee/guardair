@@ -1,0 +1,645 @@
+<div class="itg_fitting_container">
+  <div class="page-width">
+    <div class="itg_tab_content_wrpr">
+      <div class="itg_tab_list">      
+          <span data-id="Plugs and Couplers" class="itg_tab_head active_tabs">Quick Disconnect Plugs and Couplers</span>
+          <span data-id="Plug and Coupler Kits" class="itg_tab_head">Quick Disconnect Plug and Coupler Kits</span> 
+          <span data-id="Universal" class="itg_tab_head">Universal Couplings & Accessories</span>
+      </div> 
+      <div class="itg_tab_details">
+          <div class="itg_tab_content itg_active_content" data-id="Plugs and Couplers">
+          <div class="mainTabContent">
+            <div class="table1">
+              <table border="1">
+                {% assign tab1 = section.blocks | where: 'type', 'tab1' %}
+                {% assign tab1-heading = section.blocks | where: 'type', 'tab1-heading' %}
+                {% for block in tab1-heading  %}
+                    <tr> 
+                      <th>{{ block.settings.heading1 }}</th>
+                      <th>{{ block.settings.heading2 }}</th>
+                      <th>{{ block.settings.heading3 }}</th>
+                      <th>{{ block.settings.heading4 }}</th>
+                    </tr>
+                {% endfor %}
+                {% for block in tab1  %}
+                  {% assign product = block.settings.product %}
+                  {% assign product2 = block.settings.product2 %}
+                   <tr> 
+                    <td><p>{{ product.title |split:'-'| last }}</p></td>
+                    <td><p>{{ product.title |split:'"'| first }}"</p></td>
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'150x' }}">
+                        <span>{{ product.selected_or_first_available_variant.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                   
+                     <td>
+                      {% if product2 != blank %}
+                       <a href="{{ product2.url }}"><img src="{{ product2.featured_image |img_url:'100x' }}">
+                         <span>{{ product2.selected_or_first_available_variant.sku }}</span></a>
+                     {% else %}
+                      <span>N/A</span>
+                      {% endif %}
+                    </td>
+                   </tr>
+                {% endfor %}
+              </table>
+              <table border="1">
+                {% assign tab1_table3 = section.blocks | where: 'type', 'tab1_table3' %}
+                {% assign tab1-table3heading = section.blocks | where: 'type', 'tab1-table3heading' %}
+                {% for block in tab1-table3heading  %}
+                    <tr> 
+                      <th>{{ block.settings.table3_heading1 }}</th>
+                      <th>{{ block.settings.table3_heading2 }}</th>
+                      <th>{{ block.settings.table3_heading3 }}</th>
+                      <th>{{ block.settings.table3_heading4 }}</th>
+                    </tr>
+                {% endfor %}
+                {% for block in tab1_table3  %}
+                  {% assign product = block.settings.product %}
+                  {% assign product2 = block.settings.product2 %}
+                   <tr> 
+                    <td><p>{{ product.title |split:'-'| last }}</p></td>
+                    <td><p>{{ product.title |split:'"'| first }}"</p></td>
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'150x' }}">
+                        <span>{{ product.selected_or_first_available_variant.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                   
+                     <td>
+                      {% if product2 != blank %}
+                       <a href="{{ product2.url }}"><img src="{{ product2.featured_image |img_url:'100x' }}">
+                         <span>{{ product2.selected_or_first_available_variant.sku }}</span></a>
+                     {% else %}
+                      <span>N/A</span>
+                      {% endif %}
+                    </td>
+                   </tr>
+                {% endfor %}
+              </table>
+              <table border="1">
+                {% assign tab1_table5 = section.blocks | where: 'type', 'tab1_table5' %}
+                {% assign tab1-table5heading = section.blocks | where: 'type', 'tab1-table5heading' %}
+                {% for block in tab1-table5heading  %}
+                    <tr> 
+                      <th>{{ block.settings.table5_heading1 }}</th>
+                      <th>{{ block.settings.table5_heading2 }}</th>
+                      <th>{{ block.settings.table5_heading3 }}</th>
+                      <th>{{ block.settings.table5_heading4 }}</th>
+                    </tr>
+                {% endfor %}
+                {% for block in tab1_table5  %}
+                  {% assign product = block.settings.product %}
+                  {% assign product2 = block.settings.product2 %}
+                   <tr> 
+                  {% if product != blank %}
+                    <td><p>{{ product.title |split:'-'| last }}</p></td>
+                    <td><p>{{ product.title |split:'"'| first }}"</p></td>
+                     {% elsif product2 != blank %}
+                    <td><p>{{ product2.title |split:'-'| last }}</p></td>
+                    <td><p>{{ product2.title |split:'"'| first }}"</p></td>
+                     {% endif %}
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'150x' }}">
+                        <span>{{ product.selected_or_first_available_variant.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                   
+                     <td>
+                      {% if product2 != blank %}
+                       <a href="{{ product2.url }}"><img src="{{ product2.featured_image |img_url:'100x' }}">
+                         <span>{{ product2.selected_or_first_available_variant.sku }}</span></a>
+                     {% else %}
+                      <span>N/A</span>
+                      {% endif %}
+                    </td>
+                   </tr>
+                {% endfor %}
+              </table>
+            </div>
+            <div class="table2">
+               <table border="1">
+                {% assign tab1table2 = section.blocks | where: 'type', 'tab1table2' %}
+               {% assign tab1table2-heading = section.blocks | where: 'type', 'tab1table2-heading' %}
+                {% for block in tab1table2-heading  %}
+                  <tr> 
+                    <th>{{ block.settings.heading1 }}</th>
+                    <th>{{ block.settings.heading2 }}</th>
+                    <th>{{ block.settings.heading3 }}</th>
+                  </tr>
+                {% endfor %}
+                {% for block in tab1table2  %}
+                  {% assign product = block.settings.product %}
+                   <tr> 
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'100x' }}">
+                        <span>{{ product.selected_or_first_available_variant.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                      <td><p>{{ product.title |split:'"'| first }}"</p></td>
+                      <td><p>{{ product.title |split:'-'| last }}</p></td>
+                   </tr>
+                {% endfor %}
+               </table>
+               <table border="1">
+                {% assign tab1table4 = section.blocks | where: 'type', 'tab1table4' %}
+               {% assign tab1table4-heading = section.blocks | where: 'type', 'tab1table4-heading' %}
+                {% for block in tab1table4-heading  %}
+                  <tr> 
+                    <th>{{ block.settings.table4_heading1 }}</th>
+                    <th>{{ block.settings.table4_heading2 }}</th>
+                    <th>{{ block.settings.table4_heading3 }}</th>
+                  </tr>
+                {% endfor %}
+                {% for block in tab1table4  %}
+                  {% assign product = block.settings.product %}
+                   <tr> 
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'100x' }}">
+                        <span>{{ product.selected_or_first_available_variant.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                      <td><p>{{ product.title |split:'"'| first }}"</p></td>
+                      <td><p>{{ product.title |split:'-'| last }}</p></td>
+                   </tr>
+                {% endfor %}
+               </table>
+               <table border="1">
+                {% assign tab1table6 = section.blocks | where: 'type', 'tab1table6' %}
+               {% assign tab1table6-heading = section.blocks | where: 'type', 'tab1table6-heading' %}
+                {% for block in tab1table6-heading  %}
+                  <tr> 
+                    <th>{{ block.settings.table6_heading1 }}</th>
+                    <th>{{ block.settings.table6_heading2 }}</th>
+                    <th>{{ block.settings.table6_heading3 }}</th>
+                  </tr>
+                {% endfor %}
+                {% for block in tab1table6  %}
+                  {% assign product = block.settings.product %}
+                   <tr> 
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'100x' }}">
+                        <span>{{ product.selected_or_first_available_variant.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                      <td><p>{{ product.title |split:'"'| first }}"</p></td>
+                      <td><p>{{ product.title |split:'-'| last }}</p></td>
+                   </tr>
+                {% endfor %}
+               </table>
+            </div>            
+          </div>
+            <p class="x_MsoPlainText"><span style="font-size: 16px;">* <strong>Industrial Interchange</strong> also known as M-Style, I/M-Style, Type-D.</span><br><span style="font-size: 16px;">** <strong>High Flow</strong> also known as V-Style, Megaflow, European Interchange.</span><br><span style="font-size: 16px;">*** <strong>Universal Coupler</strong> accepts Industrial Interchange and High Flow plugs. Plug size and coupler body size must match.</span></p>
+          </div>
+          <div class="itg_tab_content" data-id="Plug and Coupler Kits">
+              {% assign tab2 = section.blocks | where: 'type', 'tab2' %}
+              {% assign tab2-heading = section.blocks | where: 'type', 'tab2-heading' %}
+               <table border="1">
+                  {% for block in tab2-heading   %}
+                   <tr> 
+                      <th>{{ block.settings.heading1 }}</th>
+                      <th>{{ block.settings.heading2 }}</th>
+                      <th>{{ block.settings.heading3 }}</th>
+                    </tr>
+                   {% endfor %}
+                   {% for block in tab2  %}
+                   {% assign product = block.settings.product %}
+                   <tr> 
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'' }}"><span>{{ product.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                     <td>  <a href="{{ product.url }}"> <span>{{ product.selected_or_first_available_variant.sku }}</span></a></td>
+                    <td><p> <a href="{{ product.url }}">{{ product.title}}</a></p>
+                    <p>{{ product.selected_or_first_available_variant.metafields.custom.includes.value }}</p>
+                    </td>
+                   </tr>
+                {% endfor %}
+               </table>
+               <p class="x_MsoPlainText"><span style="font-size: 16px;">* <strong>Industrial Interchange</strong> also known as M-Style, I/M-Style, Type-D.</span><br><span style="font-size: 16px;">** <strong>High Flow</strong> also known as V-Style, Megaflow, European Interchange.</span><br><span style="font-size: 16px;">*** <strong>Universal Coupler</strong> accepts Industrial Interchange and High Flow plugs. Plug size and coupler body size must match.</span></p>
+          </div>  
+          <div class="itg_tab_content" data-id="Universal">
+            <div class="itg_tab3_table1">
+              <h3>UNIVERSAL COUPLINGS</h3>
+              {% assign tab3 = section.blocks | where: 'type', 'tab3' %}
+              {% assign tab3-heading = section.blocks | where: 'type', 'tab3-heading' %}
+                 <table border="1" align="center">
+              {% for block in tab3-heading  %}
+               <tr> 
+                  <th>{{ block.settings.heading1 }}</th>
+                  <th>{{ block.settings.heading2 }}</th>
+                  <th>{{ block.settings.heading3 }}</th>
+                </tr>
+             {% endfor %}
+               {% for block in tab3  %}
+                  {% assign product = block.settings.product %}
+                  {% assign product2 = block.settings.product2 %}
+                   <tr> 
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'150x' }}"><span>{{ product.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                    <td>  <a href="{{ product.url }}"> <span>{{ product.selected_or_first_available_variant.sku }}</span></a></td>
+                    <td><p>{{ product.title |split:'-'| last }}</p></td>
+                    
+                   </tr>
+                {% endfor %}
+                 </table>
+            </div>
+            <div class="itg_tab3_table2">
+              <h3>ACCESSORIES</h3>
+            {% assign tab3_table2 = section.blocks | where: 'type', 'tab3_table2' %}
+              {% assign tab3-table2heading = section.blocks | where: 'type', 'tab3-table2heading' %}
+                 <table border="1" align="center">
+              {% for block in tab3-table2heading  %}
+               <tr> 
+                  <th>{{ block.settings.table2_heading1 }}</th>
+                  <th>{{ block.settings.table2_heading2 }}</th>
+                  <th>{{ block.settings.table2_heading3 }}</th>
+                </tr>
+             {% endfor %}
+               {% for block in tab3_table2  %}
+                  {% assign product = block.settings.product %}
+                  {% assign product2 = block.settings.product2 %}
+                   <tr> 
+                    <td>
+                      {% if product != blank %}
+                      <a href="{{ product.url }}"><img src="{{ product.featured_image |img_url:'150x' }}"><span>{{ product.sku }}</span></a>
+                      {% else %}
+                      <span>N/A</span>
+                      {% endif %}  
+                    </td>
+                    <td>  <a href="{{ product.url }}"> <span>{{ product.selected_or_first_available_variant.sku }}</span></a></td>
+                    <td><p>{{ product.title |split:'-'| last }}</p></td>                    
+                   </tr>
+                {% endfor %}
+                 </table>
+            </div>
+         </div>
+      </div> 
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Air Fitting",
+    "settings": [],
+    "blocks":[
+     {
+       "type":"tab1",
+       "name":"tab1",
+       "settings":[
+         {
+           "type":"product",
+           "id":"product",
+           "label":"Select Product"
+         },
+         {
+           "type":"product",
+           "id":"product2",
+           "label":"Select Product"
+         }
+       ]
+     },
+     {
+       "type":"tab1-heading",
+       "name":"tab1 heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading3",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading4",
+           "label":"heading"
+         }
+       ]
+     },
+    {
+       "type":"tab1_table3",
+       "name":"tab1_table3",
+       "settings":[
+         {
+           "type":"product",
+           "id":"product",
+           "label":"Select Product"
+         },
+         {
+           "type":"product",
+           "id":"product2",
+           "label":"Select Product"
+         }
+       ]
+     },
+     {
+       "type":"tab1-table3heading",
+       "name":"tab1 table3heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"table3_heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table3_heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table3_heading3",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table3_heading4",
+           "label":"heading"
+         }
+       ]
+     },
+     {
+       "type":"tab1_table5",
+       "name":"tab1_table5",
+       "settings":[
+         {
+           "type":"product",
+           "id":"product",
+           "label":"Select Product"
+         },
+         {
+           "type":"product",
+           "id":"product2",
+           "label":"Select Product"
+         }
+       ]
+     },
+     {
+       "type":"tab1-table5heading",
+       "name":"tab1 table5heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"table5_heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table5_heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table5_heading3",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table5_heading4",
+           "label":"heading"
+         }
+       ]
+     },
+     {
+       "type":"tab1table2",
+       "name":"tab1table2",
+       "settings":[
+         {
+           "type":"product",
+           "id":"product",
+           "label":"Select Product"
+         }
+       ]
+     },
+     {
+       "type":"tab1table2-heading",
+       "name":"tab1table2-heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading3",
+           "label":"heading"
+         }
+       ]
+     },
+     {
+       "type":"tab1table4",
+       "name":"tab1table4",
+       "settings":[
+         {
+           "type":"product",
+           "id":"product",
+           "label":"Select Product"
+         }
+       ]
+     },
+     {
+       "type":"tab1table4-heading",
+       "name":"tab1table4-heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"table4_heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table4_heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table4_heading3",
+           "label":"heading"
+         }
+       ]
+     },
+     {
+       "type":"tab1table6",
+       "name":"tab1table6",
+       "settings":[
+         {
+           "type":"product",
+           "id":"product",
+           "label":"Select Product"
+         }
+       ]
+     },
+     {
+       "type":"tab1table6-heading",
+       "name":"tab1table6-heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"table6_heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table6_heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table6_heading3",
+           "label":"heading"
+         }
+       ]
+     },
+     {
+        "type":"tab2",
+        "name":"tab2",
+        "settings":[
+          {
+            "type":"product",
+            "id":"product",
+            "label":"Product"
+          }
+        ]
+      },
+       {
+       "type":"tab2-heading",
+       "name":"tab2 heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading3",
+           "label":"heading"
+         }
+       ]
+     },
+    {
+       "type":"tab3",
+        "name":"tab3",
+        "settings":[
+          {
+            "type":"product",
+            "id":"product",
+            "label":"Product"
+          }
+        ]
+    },
+    {
+       "type":"tab3-heading",
+       "name":"tab3 heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"heading3",
+           "label":"heading"
+         }
+       ]
+     },
+    {
+       "type":"tab3_table2",
+        "name":"tab3_table2",
+        "settings":[
+          {
+            "type":"product",
+            "id":"product",
+            "label":"Product"
+          }
+        ]
+      },
+      {
+       "type":"tab3-table2heading",
+       "name":"tab3 table2 heading",
+       "settings":[
+         {
+           "type":"text",
+           "id":"table2_heading1",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table2_heading2",
+           "label":"heading"
+         },
+          {
+           "type":"text",
+           "id":"table2_heading3",
+           "label":"heading"
+         }
+       ]
+     }
+    ],
+    "presets":[
+      {
+        "name": "Air Fitting"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+ 
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

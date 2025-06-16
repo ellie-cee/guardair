@@ -1,0 +1,325 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_X8E7Dn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9nqTki": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#drum-accessories\" title=\"Drum Accessories\"><strong>Drum Accessories<\/strong><\/a><\/li><li><a href=\"#filters\" title=\"#Filters\"><strong>Filters<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EjngHN": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#maintenance-retrofit-kits\" title=\"Maintenance & Retrofit Kits\"><strong>Maintenance & Retrofit Kits<\/strong><\/a><\/li><li><a href=\"#replacement-parts\" title=\"Replacement Parts\"><strong>Replacement Parts<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eYDhQP": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#silencer-foam\" title=\"Silencer Foam\"><strong>Silencer Foam<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9nqTki",
+        "column_EjngHN",
+        "column_eYDhQP"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
+        "h2 {font-size: 24px;}",
+        "h3 {font-size: 18px; color: #002395;}",
+        "a {color: #002395; text-decoration: none; font-size: 20px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 16,
+        "anchor_id": ""
+      }
+    },
+    "four_table_product_jyYWYe": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_4myP3z": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-55-gallon-liquid-shut-off-assembly"
+          }
+        },
+        "block_jCNkCG": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-10-gallon-liquid-shut-off-assembly"
+          }
+        },
+        "block_kDH93e": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-push-dolly"
+          }
+        },
+        "block_79YXmw": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-push-dolly"
+          }
+        }
+      },
+      "block_order": [
+        "block_4myP3z",
+        "block_jCNkCG",
+        "block_kDH93e",
+        "block_79YXmw"
+      ],
+      "settings": {
+        "heading": "Drum Accessories",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "drum-accessories"
+      }
+    },
+    "four_table_product_zeNfDE": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_qPHV3c": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-standard-filter"
+          }
+        },
+        "block_8pEPGG": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-standard-filter-6-pack"
+          }
+        },
+        "block_ciBrNM": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-hepa-filter-w-pre-filter-bag"
+          }
+        },
+        "block_XFBW8W": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-ulpa-filter-w-pre-filter-bag"
+          }
+        },
+        "block_xwT6eM": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-55-gallon-wire-cage-coalescing-filter"
+          }
+        },
+        "block_8wV9t6": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-10-gallon-wire-cage-coalescing-filter"
+          }
+        }
+      },
+      "block_order": [
+        "block_qPHV3c",
+        "block_8pEPGG",
+        "block_ciBrNM",
+        "block_XFBW8W",
+        "block_xwT6eM",
+        "block_8wV9t6"
+      ],
+      "settings": {
+        "heading": "Filters",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "filters"
+      }
+    },
+    "four_table_product_dFCFNj": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_7XQHAA": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-55-gallon-maintenance-kit"
+          }
+        },
+        "block_RYwpLy": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-gallon-maintenance-kit"
+          }
+        },
+        "block_dpYXct": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-10-gallon-maintenance-kit"
+          }
+        },
+        "block_WTpCaW": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-55-gallon-upgrade-retrofit-kit"
+          }
+        },
+        "block_n9paVh": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-20-30-55-gallon-liquid-shut-off-assembly-upgrade-retrofit-kit"
+          }
+        },
+        "block_TfmMQ9": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-5-10-gallon-upgrade-retrofit-kit"
+          }
+        }
+      },
+      "block_order": [
+        "block_7XQHAA",
+        "block_RYwpLy",
+        "block_dpYXct",
+        "block_WTpCaW",
+        "block_n9paVh",
+        "block_TfmMQ9"
+      ],
+      "settings": {
+        "heading": "Maintenance & Retrofit Kits",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "maintenance-retrofit-kits"
+      }
+    },
+    "drums_three_section_wMXVVz": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_CURtfK": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-air-pressure-gauge"
+          }
+        },
+        "block_3h7RjB": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-injector-nozzle-set-3-sets-of-4-nozzles"
+          }
+        },
+        "block_tCVnXN": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-second-stage-venturi-shut-off-valve"
+          }
+        },
+        "block_ppMRw3": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-vacuum-generating-engine"
+          }
+        }
+      },
+      "block_order": [
+        "block_CURtfK",
+        "block_3h7RjB",
+        "block_tCVnXN",
+        "block_ppMRw3"
+      ],
+      "settings": {
+        "heading": "Replacement Parts",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "replacement-parts"
+      }
+    },
+    "drums_three_section_q3tLAC": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_JtBqQi": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-silencer-foam"
+          }
+        },
+        "block_n6Q9Te": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-exhaust-housing-w-silencer-foam"
+          }
+        }
+      },
+      "block_order": [
+        "block_JtBqQi",
+        "block_n6Q9Te"
+      ],
+      "settings": {
+        "heading": "Silencer Foam",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": "silencer-foam"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_X8E7Dn",
+    "four_table_product_jyYWYe",
+    "four_table_product_zeNfDE",
+    "four_table_product_dFCFNj",
+    "drums_three_section_wMXVVz",
+    "drums_three_section_q3tLAC"
+  ]
+}

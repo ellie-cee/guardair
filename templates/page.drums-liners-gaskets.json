@@ -1,0 +1,308 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_BXf4UH": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WT7GDT": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#standard-vacuum-drums\" title=\"Standard Vacuum Drums\"><strong>Standard Vacuum Drums<\/strong><\/a><\/li><li><a href=\"#atex-vacuum-drums\" title=\"ATEX Vacuum Drums\"><strong>ATEX Vacuum Drums<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_maxCzi": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#disposable-drum-liners\" title=\"Disposable Drum Liners\"><strong>Disposable Drum Liners<\/strong><\/a><\/li><li><a href=\"#reusable-drum-liners\" title=\"Reusable Drum Liners\"><strong>Reusable Drum Liners<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_q47tcz": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#vacuum-lid-gaskets\" title=\"Vacuum Lid Gaskets\"><strong>Vacuum Lid Gaskets<\/strong><\/a><\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WT7GDT",
+        "column_maxCzi",
+        "column_q47tcz"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
+        "h2 {font-size: 24px;}",
+        "h3 {font-size: 18px; color: #002395;}",
+        "a {color: #002395; text-decoration: none; font-size: 20px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "anchor_id": ""
+      }
+    },
+    "7262c84d-f362-4977-8d90-59ade53f2df6": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_Hxnm9V": {
+          "type": "block",
+          "settings": {
+            "itg_product": "5-gallon-steel-drum"
+          }
+        },
+        "block_G4ghhX": {
+          "type": "block",
+          "settings": {
+            "itg_product": "10-gallon-steel-drum"
+          }
+        },
+        "block_CbRC3M": {
+          "type": "block",
+          "settings": {
+            "itg_product": "20-gallon-steel-drum"
+          }
+        },
+        "block_GfGkGc": {
+          "type": "block",
+          "settings": {
+            "itg_product": "30-gallon-steel-drum"
+          }
+        },
+        "block_Ce4LDC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-steel-drum"
+          }
+        }
+      },
+      "block_order": [
+        "block_Hxnm9V",
+        "block_G4ghhX",
+        "block_CbRC3M",
+        "block_GfGkGc",
+        "block_Ce4LDC"
+      ],
+      "settings": {
+        "heading": "Standard Vacuum Drums",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "standard-vacuum-drums"
+      }
+    },
+    "2d86d457-3cdc-47f4-be13-8986689d0282": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_yn6CWx": {
+          "type": "block",
+          "settings": {
+            "itg_product": "30-gallon-atex-steel-drum"
+          }
+        },
+        "block_F3JFnk": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-atex-steel-drum"
+          }
+        }
+      },
+      "block_order": [
+        "block_yn6CWx",
+        "block_F3JFnk"
+      ],
+      "settings": {
+        "heading": "ATEX Vacuum Drums",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "atex-vacuum-drums"
+      }
+    },
+    "e03db847-2fbf-4f99-abb1-8b8401d38a87": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_NGGfHM": {
+          "type": "block",
+          "settings": {
+            "itg_product": "5-gallon-disposable-drum-liners-5-pack"
+          }
+        },
+        "block_YkbkmW": {
+          "type": "block",
+          "settings": {
+            "itg_product": "10-gallon-disposable-drum-liners-5-pack"
+          }
+        },
+        "block_PwzVct": {
+          "type": "block",
+          "settings": {
+            "itg_product": "20-gallon-disposable-drum-liners-5-pack"
+          }
+        },
+        "block_Q7cmkC": {
+          "type": "block",
+          "settings": {
+            "itg_product": "30-gallon-disposable-drum-liners-10-pack"
+          }
+        },
+        "block_ChTwzM": {
+          "type": "block",
+          "settings": {
+            "itg_product": "30-gallon-disposable-atex-ned-drum-liners-10-pack"
+          }
+        },
+        "block_zFhjY7": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-disposable-drum-liners-10-pack"
+          }
+        },
+        "block_9Xhjn6": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-disposable-atex-ned-drum-liners-10-pack"
+          }
+        }
+      },
+      "block_order": [
+        "block_NGGfHM",
+        "block_YkbkmW",
+        "block_PwzVct",
+        "block_Q7cmkC",
+        "block_ChTwzM",
+        "block_zFhjY7",
+        "block_9Xhjn6"
+      ],
+      "settings": {
+        "heading": "Disposable Drum Liners",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "disposable-drum-liners"
+      }
+    },
+    "f3aa3894-0498-4d96-b9ac-8f3f20dd3b72": {
+      "type": "drums-three-section",
+      "blocks": {
+        "block_rfigUN": {
+          "type": "block",
+          "settings": {
+            "itg_product": "30-gallon-reusable-drum-liner"
+          }
+        },
+        "block_PwjNVz": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-reusable-drum-liner"
+          }
+        }
+      },
+      "block_order": [
+        "block_rfigUN",
+        "block_PwjNVz"
+      ],
+      "settings": {
+        "heading": "Reusable Drum Liners",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "reusable-drum-liners"
+      }
+    },
+    "de87c53b-8ce9-4740-a953-ced631946aa9": {
+      "type": "drums-three-section",
+      "blocks": {
+        "2058bdfb-69b5-46be-81be-400a96ebf999": {
+          "type": "block",
+          "settings": {
+            "itg_product": "5-10-gallon-drum-lid-gasket"
+          }
+        },
+        "block_GfkBFB": {
+          "type": "block",
+          "settings": {
+            "itg_product": "20-30-gallon-drum-lid-gasket"
+          }
+        },
+        "block_ipA3qq": {
+          "type": "block",
+          "settings": {
+            "itg_product": "55-gallon-drum-lid-gasket"
+          }
+        },
+        "block_jmGkje": {
+          "type": "block",
+          "settings": {
+            "itg_product": "single-venturi-box-gasket"
+          }
+        }
+      },
+      "block_order": [
+        "2058bdfb-69b5-46be-81be-400a96ebf999",
+        "block_GfkBFB",
+        "block_ipA3qq",
+        "block_jmGkje"
+      ],
+      "settings": {
+        "heading": "Vacuum Lid Gaskets",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": "vacuum-lid-gaskets"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_BXf4UH",
+    "7262c84d-f362-4977-8d90-59ade53f2df6",
+    "2d86d457-3cdc-47f4-be13-8986689d0282",
+    "e03db847-2fbf-4f99-abb1-8b8401d38a87",
+    "f3aa3894-0498-4d96-b9ac-8f3f20dd3b72",
+    "de87c53b-8ce9-4740-a953-ced631946aa9"
+  ]
+}

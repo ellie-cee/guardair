@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "7860dda1-1b55-4349-a5fe-10b8497c9f8e": {
+      "type": "five-table-product-column",
+      "blocks": {
+        "block_zpVh6A": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-cuff-1-1-4-to-1-1-4"
+          }
+        },
+        "block_mX4q7F": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-cuff-1-1-2-to-1-1-4"
+          }
+        },
+        "block_dVq8DJ": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-cuff-1-1-2-to-1-1-2"
+          }
+        },
+        "block_9w8677": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-cuff-1-1-4-to-1-1-2"
+          }
+        },
+        "block_FJ3grz": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-cuff-1-1-2-to-2"
+          }
+        },
+        "block_mVHkcT": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-cuff-2-to-2"
+          }
+        }
+      },
+      "block_order": [
+        "block_zpVh6A",
+        "block_mX4q7F",
+        "block_dVq8DJ",
+        "block_9w8677",
+        "block_FJ3grz",
+        "block_mVHkcT"
+      ],
+      "settings": {
+        "heading": "Hose Cuffs",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "variants_head": "Inlet (Cuff) ID",
+        "t_head": "Product",
+        "variants_shead": "Outlet (Vacuum Hose) ID",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "40e3b4ae-c923-4959-b80c-6d07de336f3e": {
+      "type": "five-table-product-column",
+      "blocks": {
+        "8502fe8b-5443-4091-a41a-a9366561648f": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-angled-tool-coupler-1-1-4-to-1-1-2"
+          }
+        },
+        "block_gGEMFx": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-coupler-1-1-2-to-1-1-2"
+          }
+        },
+        "block_NbPdEE": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-coupler-2-to-2"
+          }
+        }
+      },
+      "block_order": [
+        "8502fe8b-5443-4091-a41a-a9366561648f",
+        "block_gGEMFx",
+        "block_NbPdEE"
+      ],
+      "settings": {
+        "heading": "Couplers",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "variants_head": "Inlet OD",
+        "t_head": "Product",
+        "variants_shead": "Outlet OD",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9d12f9db-a64b-4518-a611-c89d87317de4": {
+      "type": "five-table-product-column",
+      "blocks": {
+        "050b439c-f91b-4ed6-bfa1-9c5733bc6322": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-accessory-adaptor-1-1-2-to-2"
+          }
+        },
+        "8108a08e-907e-4e5f-b711-6c63f92f18f2": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-inlet-adapter-1-1-2"
+          }
+        },
+        "block_xtwqTL": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-inlet-adapter-2"
+          }
+        }
+      },
+      "block_order": [
+        "050b439c-f91b-4ed6-bfa1-9c5733bc6322",
+        "8108a08e-907e-4e5f-b711-6c63f92f18f2",
+        "block_xtwqTL"
+      ],
+      "settings": {
+        "heading": "Adaptors",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "variants_head": "Inlet OD",
+        "t_head": "Product",
+        "variants_shead": "Outlet OD",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7860dda1-1b55-4349-a5fe-10b8497c9f8e",
+    "40e3b4ae-c923-4959-b80c-6d07de336f3e",
+    "9d12f9db-a64b-4518-a611-c89d87317de4"
+  ]
+}

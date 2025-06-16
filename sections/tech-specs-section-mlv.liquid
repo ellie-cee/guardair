@@ -1,0 +1,868 @@
+<div class="itg_tech_specs_section">
+  <div class="page-width">
+    <div class="itg_flex_wrpr">
+      <div class="itg_table_wrpr">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'block_heading' -%}
+              {% if block.settings.main_heading != blank %}
+                <h2>{{ block.settings.main_heading }}</h2>
+              {% endif %}
+          {%- endcase -%}
+        {% endfor %}
+
+        <table>
+          {% for block in section.blocks %}
+            {%- case block.type -%}
+              {%- when 'block_heading' -%}
+                <tr>
+                  {% if block.settings.heading1 != blank %}
+                    <th>{{ block.settings.heading1 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading2 != blank %}
+                    <th>{{ block.settings.heading2 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading3 != blank %}
+                    <th>{{ block.settings.heading3 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading4 != blank %}
+                    <th>{{ block.settings.heading4 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading5 != blank %}
+                    <th>{{ block.settings.heading5 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading6 != blank %}
+                    <th>{{ block.settings.heading6 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading7 != blank %}
+                    <th>{{ block.settings.heading7 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading8 != blank %}
+                    <th>{{ block.settings.heading8 }}</th>
+                  {% endif %}
+                </tr>
+              {%- when 'block_data' -%}
+                <tr>
+                  {% if block.settings.data1 != blank %}
+                    <td data-label="{{ block.settings.heading1 }}">
+                      <a
+                        href="javascript:void(0);"
+                        class="sku-link"
+                        data-sku="{{ block.settings.data1 }}"
+                        data-product-url="{% if block.settings.product_url != blank %}{{ block.settings.product_url | product_url }}{% endif %}"
+                      >
+                        {{ block.settings.data1 }}
+                      </a>
+                    </td>
+                  {% endif %}
+                  {% if block.settings.data2 != blank %}
+                    <td data-label="{{ block.settings.heading2 }}">{{ block.settings.data2 }}</td>
+                  {% endif %}
+                  {% if block.settings.data3 != blank %}
+                    <td data-label="{{ block.settings.heading3 }}">{{ block.settings.data3 }}</td>
+                  {% endif %}
+                  {% if block.settings.data4 != blank %}
+                    <td data-label="{{ block.settings.heading4 }}">{{ block.settings.data4 }}</td>
+                  {% endif %}
+                  {% if block.settings.data5 != blank %}
+                    <td data-label="{{ block.settings.heading5 }}">{{ block.settings.data5 }}</td>
+                  {% endif %}
+                  {% if block.settings.data6 != blank %}
+                    <td data-label="{{ block.settings.heading6 }}">{{ block.settings.data6 }}</td>
+                  {% endif %}
+                  {% if block.settings.data7 != blank %}
+                    <td data-label="{{ block.settings.heading7 }}">{{ block.settings.data7 }}</td>
+                  {% endif %}
+                  {% if block.settings.data8 != blank %}
+                    <td data-label="{{ block.settings.heading8 }}">{{ block.settings.data8 }}</td>
+                  {% endif %}
+                </tr>
+            {%- endcase -%}
+          {% endfor %}
+        </table>
+        {% if section.settings.richtext1 != blank %}
+          <div class="itg_content_wrpr1">
+            {{ section.settings.richtext1 }}
+          </div>
+        {% endif %}
+
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'block_heading1' -%}
+              {% if block.settings.main_heading != blank %}
+                <h2>{{ block.settings.main_heading }}</h2>
+              {% endif %}
+          {%- endcase -%}
+        {% endfor %}
+
+        <table>
+          {% for block in section.blocks %}
+            {%- case block.type -%}
+              {%- when 'block_heading1' -%}
+                <tr>
+                  {% if block.settings.heading1 != blank %}
+                    <th>{{ block.settings.heading1 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading2 != blank %}
+                    <th>{{ block.settings.heading2 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading3 != blank %}
+                    <th>{{ block.settings.heading3 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading4 != blank %}
+                    <th>{{ block.settings.heading4 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading5 != blank %}
+                    <th>{{ block.settings.heading5 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading6 != blank %}
+                    <th>{{ block.settings.heading6 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading7 != blank %}
+                    <th>{{ block.settings.heading7 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading8 != blank %}
+                    <th>{{ block.settings.heading8 }}</th>
+                  {% endif %}
+                </tr>
+              {%- when 'block_data1' -%}
+                <tr>
+                  {% if block.settings.data1 != blank %}
+                    <td data-label="{{ block.settings.heading1 }}">
+                      <a
+                        href="javascript:void(0);"
+                        class="sku-link"
+                        data-sku="{{ block.settings.data1 }}"
+                        data-product-url="{% if block.settings.product_url != blank %}{{ block.settings.product_url | product_url }}{% endif %}"
+                      >
+                        {{ block.settings.data1 }}
+                      </a>
+                    </td>
+                  {% endif %}
+                  {% if block.settings.data2 != blank %}
+                    <td data-label="{{ block.settings.heading2 }}">{{ block.settings.data2 }}</td>
+                  {% endif %}
+                  {% if block.settings.data3 != blank %}
+                    <td data-label="{{ block.settings.heading3 }}">{{ block.settings.data3 }}</td>
+                  {% endif %}
+                  {% if block.settings.data4 != blank %}
+                    <td data-label="{{ block.settings.heading4 }}">{{ block.settings.data4 }}</td>
+                  {% endif %}
+                  {% if block.settings.data5 != blank %}
+                    <td data-label="{{ block.settings.heading5 }}">{{ block.settings.data5 }}</td>
+                  {% endif %}
+                  {% if block.settings.data6 != blank %}
+                    <td data-label="{{ block.settings.heading6 }}">{{ block.settings.data6 }}</td>
+                  {% endif %}
+                  {% if block.settings.data7 != blank %}
+                    <td data-label="{{ block.settings.heading7 }}">{{ block.settings.data7 }}</td>
+                  {% endif %}
+                  {% if block.settings.data8 != blank %}
+                    <td data-label="{{ block.settings.heading8 }}">{{ block.settings.data8 }}</td>
+                  {% endif %}
+                </tr>
+            {%- endcase -%}
+          {% endfor %}
+        </table>
+        {% if section.settings.richtext2 != blank %}
+          <div class="itg_content_wrpr2">
+            {{ section.settings.richtext2 }}
+          </div>
+        {% endif %}
+
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'block_heading2' -%}
+              {% if block.settings.main_heading != blank %}
+                <h2>{{ block.settings.main_heading }}</h2>
+              {% endif %}
+          {%- endcase -%}
+        {% endfor %}
+
+        <table>
+          {% for block in section.blocks %}
+            {%- case block.type -%}
+              {%- when 'block_heading2' -%}
+                <tr>
+                  {% if block.settings.heading1 != blank %}
+                    <th>{{ block.settings.heading1 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading2 != blank %}
+                    <th>{{ block.settings.heading2 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading3 != blank %}
+                    <th>{{ block.settings.heading3 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading4 != blank %}
+                    <th>{{ block.settings.heading4 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading5 != blank %}
+                    <th>{{ block.settings.heading5 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading6 != blank %}
+                    <th>{{ block.settings.heading6 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading7 != blank %}
+                    <th>{{ block.settings.heading7 }}</th>
+                  {% endif %}
+                  {% if block.settings.heading8 != blank %}
+                    <th>{{ block.settings.heading8 }}</th>
+                  {% endif %}
+                </tr>
+              {%- when 'block_data2' -%}
+                <tr>
+                  {% if block.settings.data1 != blank %}
+                    <td data-label="{{ block.settings.heading1 }}">
+                      <a
+                        href="javascript:void(0);"
+                        class="sku-link"
+                        data-sku="{{ block.settings.data1 }}"
+                        data-product-url="{% if block.settings.product_url != blank %}{{ block.settings.product_url | product_url }}{% endif %}"
+                      >
+                        {{ block.settings.data1 }}
+                      </a>
+                    </td>
+                  {% endif %}
+                  {% if block.settings.data2 != blank %}
+                    <td data-label="{{ block.settings.heading2 }}">{{ block.settings.data2 }}</td>
+                  {% endif %}
+                  {% if block.settings.data3 != blank %}
+                    <td data-label="{{ block.settings.heading3 }}">{{ block.settings.data3 }}</td>
+                  {% endif %}
+                  {% if block.settings.data4 != blank %}
+                    <td data-label="{{ block.settings.heading4 }}">{{ block.settings.data4 }}</td>
+                  {% endif %}
+                  {% if block.settings.data5 != blank %}
+                    <td data-label="{{ block.settings.heading5 }}">{{ block.settings.data5 }}</td>
+                  {% endif %}
+                  {% if block.settings.data6 != blank %}
+                    <td data-label="{{ block.settings.heading6 }}">{{ block.settings.data6 }}</td>
+                  {% endif %}
+                  {% if block.settings.data7 != blank %}
+                    <td data-label="{{ block.settings.heading7 }}">{{ block.settings.data7 }}</td>
+                  {% endif %}
+                  {% if block.settings.data8 != blank %}
+                    <td data-label="{{ block.settings.heading8 }}">{{ block.settings.data8 }}</td>
+                  {% endif %}
+                </tr>
+            {%- endcase -%}
+          {% endfor %}
+        </table>
+        {% if section.settings.richtext3 != blank %}
+          <div class="itg_content_wrpr3">
+            {{ section.settings.richtext3 }}
+          </div>
+        {% endif %}
+      </div>
+      <div class="itg_product_wrpr">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'product_blocks' -%}
+              {% if block.settings.product_heading != blank %}
+                <h3>{{ block.settings.product_heading }}</h3>
+              {% endif %}
+          {%- endcase -%}
+        {% endfor %}
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'product_blocks' -%}
+              {% assign product = block.settings.product1 %}
+              {% if block.settings.product1 != blank %}
+                <div class="itg_product_data">
+                  <a href="{{product.url}}">
+                    <h2>{{ product.title }}</h2>
+                    <img src="{{product.featured_image | img_url :"208x162"}}">
+                  </a>
+                </div>
+              {% endif %}
+              {% assign product2 = block.settings.product2 %}
+              {% if block.settings.product2 != blank %}
+                <div class="itg_product_data">
+                  <a href="{{product2.url}}">
+                    <h2>{{ product2.title }}</h2>
+                    <img src="{{product2.featured_image | img_url :"208x162"}}">
+                  </a>
+                </div>
+              {% endif %}
+              {% assign product3 = block.settings.product3 %}
+              {% if block.settings.product3 != blank %}
+                <div class="itg_product_data">
+                  <a href="{{product3.url}}">
+                    <h2>{{ product3.title }}</h2>
+                    <img src="{{product3.featured_image | img_url :"208x162"}}">
+                  </a>
+                </div>
+              {% endif %}
+              {% assign product4 = block.settings.product4 %}
+              {% if block.settings.product4 != blank %}
+                <div class="itg_product_data">
+                  <a href="{{product4.url}}">
+                    <h2>{{ product4.title }}</h2>
+                    <img src="{{product4.featured_image | img_url :"208x162"}}">
+                  </a>
+                </div>
+              {% endif %}
+              {% assign product5 = block.settings.product5 %}
+              {% if block.settings.product5 != blank %}
+                <div class="itg_product_data">
+                  <a href="{{product5.url}}">
+                    <h2>{{ product5.title }}</h2>
+                    <img src="{{product5.featured_image | img_url :"208x162"}}">
+                  </a>
+                </div>
+              {% endif %}
+          {%- endcase -%}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+document.addEventListener('DOMContentLoaded', function () {
+    const tables = document.querySelectorAll('.itg_table_wrpr table');
+
+    tables.forEach((table) => {
+        const headers = Array.from(table.querySelectorAll('th'));
+        const rows = table.querySelectorAll('tr');
+
+        rows.forEach((row) => {
+            const cells = row.querySelectorAll('td');
+            cells.forEach((cell, index) => {
+                if (headers[index]) {
+                    const label = headers[index].innerText;
+                    cell.setAttribute('data-label', label);
+                }
+            });
+        });
+    });
+
+    // Loader element
+    const loader = document.createElement('div');
+    loader.id = 'loader';
+    loader.style.display = 'none';
+    loader.style.position = 'fixed';
+    loader.style.top = '50%';
+    loader.style.left = '50%';
+    loader.style.transform = 'translate(-50%, -50%)';
+    loader.style.padding = '20px';
+    loader.style.backgroundColor = '#fff';
+    loader.style.border = '1px solid #ccc';
+    loader.style.zIndex = '1000';
+    loader.innerText = 'Loading...';
+
+    document.body.appendChild(loader);
+ 
+    // Event listener for SKU links
+    const skuLinks = document.querySelectorAll('.sku-link');
+
+    skuLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const sku = link.getAttribute('data-sku');
+            const productHandle = link.getAttribute('data-product-url');
+
+            // Reset loader text and show loader
+            loader.innerText = 'Loading...';
+            loader.style.display = 'block';
+            skuLinks.forEach(link => link.style.pointerEvents = 'none');
+
+            // Check if product handle is provided via the section setting
+            if (productHandle) {
+                window.location.href = `/products/${productHandle}`;
+            } else {
+                fetchProductData(sku);
+            }
+        });
+    });
+
+    function fetchProductData(sku, page = 1) {
+        fetch(`/products.json?limit=250&page=${page}`)
+            .then(response => response.json())
+            .then(data => {
+                let matched = false;
+
+                data.products.forEach(product => {
+                    product.variants.forEach(variant => {
+                        if (variant.sku === sku) {
+                            window.location.href = `/products/${product.handle}?variant=${variant.id}`;
+                            matched = true;
+                        }
+                    });
+                });
+
+                if (!matched && data.products.length === 250) {
+                    fetchProductData(sku, page + 1);
+                } else if (!matched) {
+                    loader.innerText = "Part Number wasn't found";
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                        skuLinks.forEach(link => link.style.pointerEvents = 'auto');
+                    }, 3000);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching product data:', error);
+                loader.innerText = "An error occurred. Please try again.";
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                    skuLinks.forEach(link => link.style.pointerEvents = 'auto');
+                }, 3000);
+            });
+    }
+});
+{% endjavascript %}
+
+{% stylesheet %}
+  .itg_flex_wrpr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .itg_table_wrpr {
+    width: calc(75% - 10px);
+  }
+  .itg_product_wrpr {
+    width: calc(25% - 10px);
+  }
+  .itg_table_wrpr table {
+    box-shadow: none;
+    width: 100%;
+  }
+  .itg_table_wrpr h2 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background: #666666;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .itg_table_wrpr table tr th {
+    vertical-align: bottom;
+    border-bottom: 0;
+    background: #666666;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    border-color: #fff;
+  }
+  .itg_table_wrpr table tr td {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f0f1f2;
+    color: #000;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px;
+    border-left: 0;
+    border-right: 0;
+  }
+  .itg_product_wrpr {
+    padding: 20px;
+    text-align: center;
+    border: solid 1px #d9d9d9;
+    height: 100%;
+    min-height: fit-content;
+  }
+  .itg_product_wrpr h3 {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .itg_product_data a {
+    text-decoration: none;
+  }
+  .itg_product_data a h1 {
+    color: #002395;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .itg_product_data a h2 {
+    color: #002395;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .sku-link {
+    text-decoration: none;
+    color: #3838EF;
+  }
+  @media screen and (max-width: 989px) {
+    .itg_table_wrpr {
+      width: 100%;
+    }
+    .itg_product_wrpr {
+      width: 100%;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Tech Specs Section",
+  "settings": [
+    {
+      "type":"richtext",
+      "id":"richtext1",
+      "label":"tab content1"
+    },
+    {
+      "type":"richtext",
+      "id":"richtext2",
+      "label":"tab content2"
+    },
+    {
+      "type":"richtext",
+      "id":"richtext3",
+      "label":"tab content3"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"block_heading",
+      "name":"block_heading",
+      "settings":[
+        {
+          "type":"text",
+          "id":"main_heading",
+          "label":"Table Main Heading"
+        },
+        {
+          "type":"text",
+          "id":"heading1",
+          "label":"Tab Heading1"
+        },
+        {
+          "type":"text",
+          "id":"heading2",
+          "label":"Tab Heading2"
+        },
+        {
+          "type":"text",
+          "id":"heading3",
+          "label":"Tab Heading3"
+        },
+        {
+          "type":"text",
+          "id":"heading4",
+          "label":"Tab Heading4"
+        },
+        {
+          "type":"text",
+          "id":"heading5",
+          "label":"Tab Heading5"
+        },
+        {
+          "type":"text",
+          "id":"heading6",
+          "label":"Tab Heading6"
+        },
+        {
+          "type":"text",
+          "id":"heading7",
+          "label":"Tab Heading7"
+        },
+        {
+          "type":"text",
+          "id":"heading8",
+          "label":"Tab Heading8"
+        }
+      ]
+    },
+    {
+       "type":"block_data",
+      "name":"block_data",
+      "settings":[
+        {
+          "type":"text",
+          "id":"data1",
+          "label":"Tab Data1"
+        },
+         {
+          "type":"text",
+          "id":"data2",
+          "label":"Tab Data2"
+        },
+         {
+          "type":"text",
+          "id":"data3",
+          "label":"Tab Data3"
+        },
+         {
+          "type":"text",
+          "id":"data4",
+          "label":"Tab Data4"
+        },
+        {
+          "type":"text",
+          "id":"data5",
+          "label":"Tab Data5"
+        },
+         {
+          "type":"text",
+          "id":"data6",
+          "label":"Tab Data6"
+        },
+         {
+          "type":"text",
+          "id":"data7",
+          "label":"Tab Data7"
+        },
+        {
+          "type":"text",
+          "id":"data8",
+          "label":"Tab Data8"
+        },
+        {
+          "type":"product",
+          "id":"product_url",
+          "label":"Select Product"
+        }
+      ]
+    },
+     {
+      "type":"block_heading1",
+      "name":"block_heading1",
+      "settings":[
+        {
+          "type":"text",
+          "id":"main_heading",
+          "label":"Table Main Heading"
+        },
+        {
+          "type":"text",
+          "id":"heading1",
+          "label":"Tab Heading1"
+        },
+        {
+          "type":"text",
+          "id":"heading2",
+          "label":"Tab Heading2"
+        },
+        {
+          "type":"text",
+          "id":"heading3",
+          "label":"Tab Heading3"
+        },
+        {
+          "type":"text",
+          "id":"heading4",
+          "label":"Tab Heading4"
+        },
+        {
+          "type":"text",
+          "id":"heading5",
+          "label":"Tab Heading5"
+        },
+        {
+          "type":"text",
+          "id":"heading6",
+          "label":"Tab Heading6"
+        },
+        {
+          "type":"text",
+          "id":"heading7",
+          "label":"Tab Heading7"
+        },
+        {
+          "type":"text",
+          "id":"heading8",
+          "label":"Tab Heading8"
+        }
+      ]
+    },
+    {
+       "type":"block_data1",
+      "name":"block_data1",
+      "settings":[
+        {
+          "type":"text",
+          "id":"data1",
+          "label":"Tab Data1"
+        },
+         {
+          "type":"text",
+          "id":"data2",
+          "label":"Tab Data2"
+        },
+         {
+          "type":"text",
+          "id":"data3",
+          "label":"Tab Data3"
+        },
+         {
+          "type":"text",
+          "id":"data4",
+          "label":"Tab Data4"
+        },
+        {
+          "type":"text",
+          "id":"data5",
+          "label":"Tab Data5"
+        },
+         {
+          "type":"text",
+          "id":"data6",
+          "label":"Tab Data6"
+        },
+         {
+          "type":"text",
+          "id":"data7",
+          "label":"Tab Data7"
+        },
+        {
+          "type":"text",
+          "id":"data8",
+          "label":"Tab Data8"
+        },
+        {
+          "type":"product",
+          "id":"product_url",
+          "label":"Select Product"
+        }
+      ]
+    },
+    {
+      "type":"block_heading2",
+      "name":"block_heading2",
+      "settings":[
+        {
+          "type":"text",
+          "id":"main_heading",
+          "label":"Table Main Heading"
+        },
+        {
+          "type":"text",
+          "id":"heading1",
+          "label":"Tab Heading1"
+        },
+        {
+          "type":"text",
+          "id":"heading2",
+          "label":"Tab Heading2"
+        },
+        {
+          "type":"text",
+          "id":"heading3",
+          "label":"Tab Heading3"
+        },
+        {
+          "type":"text",
+          "id":"heading4",
+          "label":"Tab Heading4"
+        },
+        {
+          "type":"text",
+          "id":"heading5",
+          "label":"Tab Heading5"
+        },
+        {
+          "type":"text",
+          "id":"heading6",
+          "label":"Tab Heading6"
+        },
+        {
+          "type":"text",
+          "id":"heading7",
+          "label":"Tab Heading7"
+        },
+        {
+          "type":"text",
+          "id":"heading8",
+          "label":"Tab Heading8"
+        }
+      ]
+    },
+    {
+       "type":"block_data2",
+      "name":"block_data2",
+      "settings":[
+        {
+          "type":"text",
+          "id":"data1",
+          "label":"Tab Data1"
+        },
+         {
+          "type":"text",
+          "id":"data2",
+          "label":"Tab Data2"
+        },
+         {
+          "type":"text",
+          "id":"data3",
+          "label":"Tab Data3"
+        },
+         {
+          "type":"text",
+          "id":"data4",
+          "label":"Tab Data4"
+        },
+        {
+          "type":"text",
+          "id":"data5",
+          "label":"Tab Data5"
+        },
+         {
+          "type":"text",
+          "id":"data6",
+          "label":"Tab Data6"
+        },
+         {
+          "type":"text",
+          "id":"data7",
+          "label":"Tab Data7"
+        },
+        {
+          "type":"text",
+          "id":"data8",
+          "label":"Tab Data8"
+        },
+        {
+          "type":"product",
+          "id":"product_url",
+          "label":"Select Product"
+        }
+      ]
+    },
+    {
+      "type":"product_blocks",
+      "name":"product_blocks",
+      "settings":[
+        {
+          "type":"text",
+          "id":"product_heading",
+          "label":"Product Heading"
+        },
+        {
+          "type":"product",
+          "id":"product1",
+          "label":"Product 1"
+        },
+        {
+          "type":"product",
+          "id":"product2",
+          "label":"Product 2"
+        },
+         {
+          "type":"product",
+          "id":"product3",
+          "label":"Product 3"
+        },
+         {
+          "type":"product",
+          "id":"product4",
+          "label":"Product 4"
+        },
+        {
+          "type":"product",
+          "id":"product5",
+          "label":"Product 5"
+        }
+      ]
+    }
+  ],
+  "presets":[
+    {
+       "name": "Tech Specs Section"
+    }
+  ]
+}
+{% endschema %}

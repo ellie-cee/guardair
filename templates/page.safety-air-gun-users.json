@@ -1,0 +1,158 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "c55e681b-41fa-4675-bd81-9dfa80068687": {
+      "type": "custom-text-and-image-blocks",
+      "blocks": {
+        "2ce49c4b-8b0d-4003-8ec3-6af86893b4d9": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/i.shgcdn_24.png",
+            "img_position": "right",
+            "head": "AUTOMOTIVE",
+            "content": "<ul><li>Chrysler<\/li><li>Ford Motor<\/li><li>General Motors<\/li><li>Honda<\/li><li>Toyota<\/li><li>Volkswagen<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "83cce21d-5e26-419d-a2c4-9ec1e9adb8b9": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_13.png",
+            "img_position": "right",
+            "head": "BUILDING PRODUCTS",
+            "content": "<ul><li>CertainTeed<\/li><li>Formica<\/li><li>Johns Manville<\/li><li>National Gypsum<\/li><li>Oldcastle<\/li><li>Owens Corning<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "c5f56b1f-ed0d-45df-a7ab-a31137f34271": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_14.png",
+            "img_position": "right",
+            "head": "FOOD PROCESSING",
+            "content": "<ul><li>Archer Daniels Midland<\/li><li>Cargill<\/li><li>ConAgra Foods<\/li><li>Dole Food<\/li><li>HJ Heinz<\/li><li>Kraft Foods<\/li><li>Tyson Foods<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "76abaa4d-326d-4b59-a9a4-576e1acc7e7b": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_15.png",
+            "img_position": "right",
+            "head": "GOVERNMENT & MILITARY",
+            "content": "<ul><li>Lockheed Martin<\/li><li>NASA<\/li><li>Sikorsky Aircraft<\/li><li>US Army<\/li><li>US Coast Guard<\/li><li>US Marine Corps<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "40fd8a2f-7d3e-419a-9041-f7755acd0a7d": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_16.png",
+            "img_position": "right",
+            "head": "MANUFACTURING",
+            "content": "<ul><li>BorgWarner<\/li><li>Caterpillar<\/li><li>Dana<\/li><li>Dresser-Rand<\/li><li>General Electric<\/li><li>John Deere<\/li><li>Mitsubishi Power Systems<\/li><li>Pratt & Whitney<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "75123b25-75c6-4b0d-b67c-8e0dee698ec1": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_17.png",
+            "img_position": "right",
+            "head": "PETROCHEMICAL",
+            "content": "<ul><li>Chevron<\/li><li>ConocoPhillips<\/li><li>DuPont<\/li><li>ExxonMobil<\/li><li>Sherwin-Williams<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "ffc68fdb-d0a1-40da-8da2-a89f41c69696": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_18.png",
+            "img_position": "right",
+            "head": "PRIMARY METALS",
+            "content": "<ul><li>Alcan<\/li><li>ALCOA<\/li><li>Carpenter Technology<\/li><li>Kaiser Aluminum<\/li><li>Nucor<\/li><li>US Steel<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "e8b1f286-5a94-44d5-b3e2-1c72290c09fa": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_19.png",
+            "img_position": "right",
+            "head": "PRINTING",
+            "content": "<ul><li>Dow Jones<\/li><li>RR Donnelley<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "f4e36c1a-b868-4563-bf9c-4187e71b42c1": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_20.png",
+            "img_position": "right",
+            "head": "PULP & PAPER",
+            "content": "<ul><li>Bemis<\/li><li>Boise Cascade<\/li><li>Georgia-Pacific<\/li><li>International Paper<\/li><li>Kimberly-Clark<\/li><li>Rock-Tenn<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "59435bf1-32de-4445-9a3a-c37ad5f7146c": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_21.png",
+            "img_position": "right",
+            "head": "RUBBER & PLASTICS",
+            "content": "<ul><li>BF Goodrich<\/li><li>Dart Container<\/li><li>Goodyear<\/li><li>Oral-B<\/li><li>Tupperware Brands<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "fa480619-7461-47bb-a1cd-dc5c20b2f6fb": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_22.png",
+            "img_position": "right",
+            "head": "TRANSPORTATION",
+            "content": "<ul><li>American Airlines<\/li><li>BNSF Railway<\/li><li>Canadian National Railway<\/li><li>Federal Express<\/li><li>Norfolk Southern Railway<\/li><li>United Airlines<\/li><li>United Parcel Service<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        },
+        "3eb7c616-190f-44e5-a372-ab3d9a61eb0d": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/download_24.png",
+            "img_position": "right",
+            "head": "WOOD & FOREST PRODUCTS",
+            "content": "<ul><li>Louisiana-Pacific<\/li><li>Marvin Windows & Doors<\/li><li>Pella<\/li><li>Roseburg Forest Products<\/li><li>Thomasville Furniture Industries<\/li><li>Weyerhaeuser<\/li><\/ul>",
+            "img_alignment": "seventy"
+          }
+        }
+      },
+      "block_order": [
+        "2ce49c4b-8b0d-4003-8ec3-6af86893b4d9",
+        "83cce21d-5e26-419d-a2c4-9ec1e9adb8b9",
+        "c5f56b1f-ed0d-45df-a7ab-a31137f34271",
+        "76abaa4d-326d-4b59-a9a4-576e1acc7e7b",
+        "40fd8a2f-7d3e-419a-9041-f7755acd0a7d",
+        "75123b25-75c6-4b0d-b67c-8e0dee698ec1",
+        "ffc68fdb-d0a1-40da-8da2-a89f41c69696",
+        "e8b1f286-5a94-44d5-b3e2-1c72290c09fa",
+        "f4e36c1a-b868-4563-bf9c-4187e71b42c1",
+        "59435bf1-32de-4445-9a3a-c37ad5f7146c",
+        "fa480619-7461-47bb-a1cd-dc5c20b2f6fb",
+        "3eb7c616-190f-44e5-a372-ab3d9a61eb0d"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 25
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c55e681b-41fa-4675-bd81-9dfa80068687"
+  ]
+}

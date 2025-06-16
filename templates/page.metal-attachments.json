@@ -1,0 +1,215 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "1f6dac2b-2029-4ee7-8bfd-bc4e933867d3": {
+      "type": "drums-three-section",
+      "blocks": {
+        "a6cd78b4-170a-4ac8-b31a-e3fa326b8eab": {
+          "type": "block",
+          "settings": {
+            "itg_product": "steel-telescoping-extension-1-1-4"
+          }
+        }
+      },
+      "block_order": [
+        "a6cd78b4-170a-4ac8-b31a-e3fa326b8eab"
+      ],
+      "settings": {
+        "heading": "1-1\/4\" OD Outlet",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
+    "3a651174-a06b-4fd8-9625-50a55d98cfc5": {
+      "type": "drums-three-section",
+      "blocks": {
+        "1c6288c1-f947-4bdb-87be-0d5852c0a427": {
+          "type": "block",
+          "settings": {
+            "itg_product": "aluminum-crevice-tool-1-1-2-x-11"
+          }
+        },
+        "block_tx494E": {
+          "type": "block",
+          "settings": {
+            "itg_product": "aluminum-crevice-tool-1-1-2-x-24"
+          }
+        },
+        "block_tLzgqj": {
+          "type": "block",
+          "settings": {
+            "itg_product": "aluminum-gulper-wand-1-1-2-x-18"
+          }
+        },
+        "c2b207c4-9cfb-4374-900f-c2b0f528a878": {
+          "type": "block",
+          "settings": {
+            "itg_product": "bulk-material-pick-up-tool-1-1-2-x-22"
+          }
+        },
+        "block_i9r9G6": {
+          "type": "block",
+          "settings": {
+            "itg_product": "round-metal-brush-tool-1-1-2-x-5"
+          }
+        },
+        "88b72f2e-78e3-4642-a134-dbfc09483036": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-utility-tool-w-brush-1-1-2-x-6"
+          }
+        },
+        "471cc285-2b5b-4c74-b2ec-264e72bb7867": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-floor-tool-w-bristles-1-1-4-x-14"
+          }
+        },
+        "b0612cc3-ea42-4ff7-a0ed-2b0f8903cd00": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-squeegee-tool-1-1-2-x-14"
+          }
+        },
+        "fc48a7f2-1bf3-477c-8deb-1a75a5fdc99d": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-wet-dry-floor-tool-w-wand-1-1-2-x-12"
+          }
+        },
+        "d0a38301-5c0c-428d-900c-5db62efff618": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-squeegee-tool-w-wand-1-1-2-x-12"
+          }
+        },
+        "65518cdc-1fa6-4017-84d7-5bd308ff06dd": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-attachment-kit-1-1-2"
+          }
+        }
+      },
+      "block_order": [
+        "1c6288c1-f947-4bdb-87be-0d5852c0a427",
+        "block_tx494E",
+        "block_tLzgqj",
+        "c2b207c4-9cfb-4374-900f-c2b0f528a878",
+        "block_i9r9G6",
+        "88b72f2e-78e3-4642-a134-dbfc09483036",
+        "471cc285-2b5b-4c74-b2ec-264e72bb7867",
+        "b0612cc3-ea42-4ff7-a0ed-2b0f8903cd00",
+        "fc48a7f2-1bf3-477c-8deb-1a75a5fdc99d",
+        "d0a38301-5c0c-428d-900c-5db62efff618",
+        "65518cdc-1fa6-4017-84d7-5bd308ff06dd"
+      ],
+      "settings": {
+        "heading": "1-1\/2\" OD Outlet",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
+    "ea1293e6-4f06-47c1-87dc-d4d55d544740": {
+      "type": "drums-three-section",
+      "blocks": {
+        "a47c7864-6eb3-41ba-bdcb-bec60c688831": {
+          "type": "block",
+          "settings": {
+            "itg_product": "steel-crevice-tool-2-x-24"
+          }
+        },
+        "29165ebe-a6e2-416c-af3e-5fe47b9e3a49": {
+          "type": "block",
+          "settings": {
+            "itg_product": "aluminum-gulper-wand-2-x-18"
+          }
+        },
+        "98d36caa-def3-4ab1-90b6-a7151659824c": {
+          "type": "block",
+          "settings": {
+            "itg_product": "bulk-material-pick-up-tool-2-x-22"
+          }
+        },
+        "block_UGEkcG": {
+          "type": "block",
+          "settings": {
+            "itg_product": "round-metal-brush-tool-2-x-5"
+          }
+        },
+        "block_chTGzx": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-floor-tool-2-x-12"
+          }
+        },
+        "e87f153b-e365-43d9-8852-697c9365c64d": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-utility-tool-w-brush-set-2-x-6"
+          }
+        },
+        "7f53a768-3dab-4aba-ac6b-6c1bff7e9422": {
+          "type": "block",
+          "settings": {
+            "itg_product": "metal-wet-dry-floor-tool-w-wand-2-x-12"
+          }
+        },
+        "block_WDa6ND": {
+          "type": "block",
+          "settings": {
+            "itg_product": "steel-curved-wand-2-x-4"
+          }
+        },
+        "5c4e187b-c2ab-42c4-a029-4878d0f22faf": {
+          "type": "block",
+          "settings": {
+            "itg_product": "vacuum-hose-attachment-kit-2"
+          }
+        }
+      },
+      "block_order": [
+        "a47c7864-6eb3-41ba-bdcb-bec60c688831",
+        "29165ebe-a6e2-416c-af3e-5fe47b9e3a49",
+        "98d36caa-def3-4ab1-90b6-a7151659824c",
+        "block_UGEkcG",
+        "block_chTGzx",
+        "e87f153b-e365-43d9-8852-697c9365c64d",
+        "7f53a768-3dab-4aba-ac6b-6c1bff7e9422",
+        "block_WDa6ND",
+        "5c4e187b-c2ab-42c4-a029-4878d0f22faf"
+      ],
+      "settings": {
+        "heading": "2\" OD Outlet",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1f6dac2b-2029-4ee7-8bfd-bc4e933867d3",
+    "3a651174-a06b-4fd8-9625-50a55d98cfc5",
+    "ea1293e6-4f06-47c1-87dc-d4d55d544740"
+  ]
+}

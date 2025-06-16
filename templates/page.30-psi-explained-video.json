@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "78d360f5-82ce-4183-872e-b958b21b436f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14516235796598__78d360f5-82ce-4183-872e-b958b21b436f-1681293603a516e531-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>OSHA Standard 1910.242(b) governs the safe use of compressed air for cleaning and states that <em>“compressed air shall not be used for cleaning purposes except where reduced to less than 30 psi…”<\/em><\/p><p>The 30 psi requirement is often misunderstood and misinterpreted, even by OSHA inspectors! Watch this 2-minute video to learn how to ensure all the air guns in your facility are OSHA compliant.  <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14516235796598__78d360f5-82ce-4183-872e-b958b21b436f-1681293603a516e531-1"
+      ],
+      "custom_css": [
+        ".rich-text__blocks {max-width: 100%;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "59457f3e-7692-47ad-885b-e30828f20465": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video_url": "https:\/\/youtu.be\/ra7j8GwEXhk?list=TLGGehX_rEhBxvExMjA0MjAyMw",
+        "cover_image": "shopify:\/\/shop_images\/download.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "78d360f5-82ce-4183-872e-b958b21b436f",
+    "59457f3e-7692-47ad-885b-e30828f20465"
+  ]
+}

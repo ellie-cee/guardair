@@ -1,0 +1,91 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="itg_faqwrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="main_faq_div">
+       <h2>{{ section.settings.main_head }}</h2>
+      {% for block in section.blocks %}
+        <div class="main_faq_box">
+            <h3>{{ block.settings.head }}</h3>
+             <div class="faq_titles">{{ block.settings.content }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Faq Section",
+    "settings": [
+      {
+        "type":"text",
+        "id":"main_head",
+        "label":"Heading"
+      },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+    ],
+    "blocks":[
+      {
+        "type":"Faq",
+        "name":"Faq",
+          "settings":[
+            {
+              "type":"text",
+              "id":"head",
+              "label":"Title"
+            },
+            {
+              "type":"richtext",
+              "id":"content",
+              "label":"Description"
+            }
+          ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Faq Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

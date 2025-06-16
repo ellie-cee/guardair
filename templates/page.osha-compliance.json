@@ -1,0 +1,564 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "864d6054-509d-441a-a14c-3b7a4b1050ee": {
+      "type": "osha-compliance-img-text",
+      "blocks": {
+        "a373cffe-4301-47f0-970d-708ffe18bab5": {
+          "type": "block",
+          "settings": {
+            "pro_title": "QUIETFORCE NOZZLE",
+            "pro_link": "https:\/\/guardair.com\/products\/force-5-f5-inforcer-inf5-quietforce-aluminum-extension-nozzle-24",
+            "pro_img": "shopify:\/\/shop_images\/1_36de0e78-7c0a-48da-90dc-e7f5f69f6c0e.webp"
+          }
+        },
+        "2d81c1e8-b369-4eb4-89ee-5173f5e9af75": {
+          "type": "block",
+          "settings": {
+            "pro_title": "WHISPERJET NOZZLE",
+            "pro_link": "https:\/\/guardair.com\/products\/whisperjet-80lj-aluminum-extension-w-aluminum-nozzle-6",
+            "pro_img": "shopify:\/\/shop_images\/whisperjet-nozzle.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "a373cffe-4301-47f0-970d-708ffe18bab5",
+        "2d81c1e8-b369-4eb4-89ee-5173f5e9af75"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/download_eba4a867-c12d-4bce-9262-1055565c4182.webp",
+        "pera": "<p>All air guns operate on compressed air—compressed air that can be extremely dangerous if misused, or if horse-play in the workplace occurs. Not only can workers be severely injured from the use of non-compliant, illegal air guns, but compliance failures can mean steep fines for violators. Although OSHA Standards pertaining to air guns can be confusing, OSHA's three primary concerns are Noise, Output Pressure and Chip-Guarding.<\/p><p>To address excessive noise in the workplace OSHA has developed permissible daily noise exposure specifications. Since air guns can potentially contribute to high levels of occupational noise, Guardair safety air guns incorporating noise suppression nozzles can be an important component in moving towards noise level compliance.<\/p>",
+        "sidebar_data": "<p><strong>OSHA Standard Related to Noise<\/strong><em>Occupational Noise Exposure<\/em><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=STANDARDS&p_id=9735\" target=\"_blank\">OSHA Standard 1910.95<\/a><\/p>"
+      }
+    },
+    "53396d03-6a0f-440a-aa70-6c172bd7be36": {
+      "type": "incorporating-noise-suppression-nozzles",
+      "blocks": {
+        "b52de8e4-809b-47a3-aaf4-da5a018c3d93": {
+          "type": "block",
+          "settings": {
+            "part_number": "80\/80WJ",
+            "description": "WhisperJet",
+            "noise_level": "93"
+          }
+        },
+        "2ac1922c-025d-4a97-af92-821e301b197c": {
+          "type": "block",
+          "settings": {
+            "part_number": "80LJ Series",
+            "description": "WhisperJet Extended Reach",
+            "noise_level": "99"
+          }
+        },
+        "18ff25a4-7722-4d50-b7fe-2f0ee841db42": {
+          "type": "block",
+          "settings": {
+            "part_number": "84CNA",
+            "description": "WhisperJet Nozzle",
+            "noise_level": "93"
+          }
+        },
+        "5d5b1bf9-331b-4740-adee-dbce1118eeaf": {
+          "type": "block",
+          "settings": {
+            "part_number": "86FLX",
+            "description": "Flextension",
+            "noise_level": "93"
+          }
+        },
+        "1478ae8d-1de1-4dc7-9696-5341ea7f8cbe": {
+          "type": "block",
+          "settings": {
+            "part_number": "980",
+            "description": "Thumbswitch Whisper Jet",
+            "noise_level": "89"
+          }
+        },
+        "0dc27d26-42b0-434e-b104-2ec9121bfb66": {
+          "type": "block",
+          "settings": {
+            "part_number": "F5 QuietForce Series",
+            "description": "Force 5 QuietForce Extended Reach",
+            "noise_level": "101"
+          }
+        },
+        "3378590a-9393-4e60-98b1-87c032571422": {
+          "type": "block",
+          "settings": {
+            "part_number": "INF QuietForce Series",
+            "description": "Inforcer QuietForce Extended Reach",
+            "noise_level": "101"
+          }
+        }
+      },
+      "block_order": [
+        "b52de8e4-809b-47a3-aaf4-da5a018c3d93",
+        "2ac1922c-025d-4a97-af92-821e301b197c",
+        "18ff25a4-7722-4d50-b7fe-2f0ee841db42",
+        "5d5b1bf9-331b-4740-adee-dbce1118eeaf",
+        "1478ae8d-1de1-4dc7-9696-5341ea7f8cbe",
+        "0dc27d26-42b0-434e-b104-2ec9121bfb66",
+        "3378590a-9393-4e60-98b1-87c032571422"
+      ],
+      "settings": {
+        "heading": "Guardair Safety Air Guns Incorporating Noise Suppression Nozzles",
+        "heading1": "Part Number",
+        "heading2": "Model \/ Descripton",
+        "heading3": "Noise Level (db)*",
+        "pera": "<p><em>* Measured at 100 psi inlet pressure.<\/em><\/p>\n\n<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/7.webp?v=1685797710\">  Guardair recommends the use of noise suppression nozzles and\/or hearing protection equipment as part of a comprehensive noise control program.<\/p>"
+      }
+    },
+    "d7940c21-ec59-4b17-ac33-aa3064e8cbc3": {
+      "type": "osha-compliance-img-text",
+      "blocks": {
+        "3ce5c816-d6d9-4040-9a6f-f2921a709e6f": {
+          "type": "block",
+          "settings": {
+            "pro_title": "AIR SHIELD NOZZLE",
+            "pro_link": "shopify:\/\/products\/the-original-57s30xb-safety-air-gun",
+            "pro_img": "shopify:\/\/shop_images\/3_02088dbc-a62e-4359-a0f2-d023d316d896.webp"
+          }
+        },
+        "f9dc4e4a-6630-4d06-8130-1b226d8e270b": {
+          "type": "block",
+          "settings": {
+            "pro_title": "AIR MISER NOZZLE",
+            "pro_link": "shopify:\/\/products\/airmiser-74h-safety-air-gun",
+            "pro_img": "shopify:\/\/shop_images\/4.webp"
+          }
+        },
+        "9815aad0-3c57-4e17-b0a7-3a5854c0f5c9": {
+          "type": "block",
+          "settings": {
+            "pro_title": "QUIETFORCE NOZZLE",
+            "pro_link": "https:\/\/guardair.com\/products\/force-5-f5-inforcer-inf5-quietforce-aluminum-extension-nozzle-24",
+            "pro_img": "shopify:\/\/shop_images\/1_36de0e78-7c0a-48da-90dc-e7f5f69f6c0e.webp"
+          }
+        },
+        "a155b15a-9acf-4192-82ee-ad31cbb9691f": {
+          "type": "block",
+          "settings": {
+            "pro_title": "VENTURI NOZZLE",
+            "pro_link": "https:\/\/guardair.com\/products\/long-john-75lj-aluminum-extension-w-aluminum-nozzle-6",
+            "pro_img": "shopify:\/\/shop_images\/5.webp"
+          }
+        },
+        "5cc8e776-35b8-4395-92de-bddb4f7f1a60": {
+          "type": "block",
+          "settings": {
+            "pro_title": "WHISPERJET NOZZLE",
+            "pro_link": "https:\/\/guardair.com\/products\/ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet",
+            "pro_img": "shopify:\/\/shop_images\/whisperjet-nozzle.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "3ce5c816-d6d9-4040-9a6f-f2921a709e6f",
+        "f9dc4e4a-6630-4d06-8130-1b226d8e270b",
+        "9815aad0-3c57-4e17-b0a7-3a5854c0f5c9",
+        "a155b15a-9acf-4192-82ee-ad31cbb9691f",
+        "5cc8e776-35b8-4395-92de-bddb4f7f1a60"
+      ],
+      "settings": {
+        "pera": "<p>Factory air compressors and air lines nominally operate at pressures between 80 and 120 psi (pounds per square inch). Most pneumatic tools, including air guns, require such high pressures to operate effectively. However, OSHA Standards requires that in the event such air lines are dead-ended (i.e. if the tip of an air gun is blocked) the static output pressure at the point of the blockage may not exceed 30 psi. All Guardair safety air guns incorporate nozzle designs which are engineered to meet, or exceed, this 30 psi requirement.<\/p>",
+        "sidebar_data": "<p><strong>OSHA Standard and Instruction Related to Output Pressure<\/strong><\/p><p><em>Compressed Air Used for Cleaning<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">OSHA Standard 1910.242(b)<\/a><br\/> <\/p><p><em>Reduction of Air Pressure Below 30 psi for Cleaning Purposes<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">STD 01-13-001<\/a><\/p>"
+      }
+    },
+    "71e2bd2a-2303-41d4-8867-b7413c8e6cc9": {
+      "type": "incorporating-noise-suppression-nozzles",
+      "blocks": {
+        "5a7d758b-dcb8-416d-b7eb-45988b302310": {
+          "type": "block",
+          "settings": {
+            "part_number": "57S30XB",
+            "description": "Original",
+            "noise_level": "16"
+          }
+        },
+        "d97ecab4-bedf-4f88-b1ea-2fc83bd7f43b": {
+          "type": "block",
+          "settings": {
+            "part_number": "74BH Series",
+            "description": "Blind Hole",
+            "noise_level": "13"
+          }
+        },
+        "bb22e5ff-0435-4c5e-a50c-0e1e40ed555c": {
+          "type": "block",
+          "settings": {
+            "part_number": "74H",
+            "description": "AirMiser",
+            "noise_level": "N\/A"
+          }
+        },
+        "f3eec335-9e9a-43f1-917c-3b204b3d004a": {
+          "type": "block",
+          "settings": {
+            "part_number": "75LJ Series",
+            "description": "Long John Extended Reach",
+            "noise_level": "17"
+          }
+        },
+        "22eafc68-2154-42d0-a4c3-5f3854ab2b5a": {
+          "type": "block",
+          "settings": {
+            "part_number": "74S\/SK",
+            "description": "JetGuard",
+            "noise_level": "13"
+          }
+        },
+        "23c2b138-dc20-4621-902b-cb00a227ab16": {
+          "type": "block",
+          "settings": {
+            "part_number": "75XT Series",
+            "description": "XtraThrust Extended Reach",
+            "noise_level": "18"
+          }
+        },
+        "0c42b880-6f2a-46fc-8874-2312d72c0a85": {
+          "type": "block",
+          "settings": {
+            "part_number": "75XXT",
+            "description": "XtraThrust",
+            "noise_level": "23"
+          }
+        },
+        "ac9b5e17-658f-4603-a86a-06daa4899e5f": {
+          "type": "block",
+          "settings": {
+            "part_number": "76S006",
+            "description": "Booster",
+            "noise_level": "13"
+          }
+        },
+        "295cfed5-ef70-48b7-aa0f-a6968fe3c211": {
+          "type": "block",
+          "settings": {
+            "part_number": "80\/80WJ",
+            "description": "WhisperJet",
+            "noise_level": "N\/A"
+          }
+        },
+        "8328a16e-4907-4cc2-a8b4-75498f70e48a": {
+          "type": "block",
+          "settings": {
+            "part_number": "80LJ Series",
+            "description": "WhisperJet Extended Reach",
+            "noise_level": "N\/A"
+          }
+        },
+        "69cdbf82-8d97-4412-80f8-14e73d49ea63": {
+          "type": "block",
+          "settings": {
+            "part_number": "84CNA",
+            "description": "WhisperJet Nozzle",
+            "noise_level": "N\/A"
+          }
+        },
+        "56f3c642-2235-4e3b-885e-0322fa586186": {
+          "type": "block",
+          "settings": {
+            "part_number": "86FLX",
+            "description": "Flextension",
+            "noise_level": "N\/A"
+          }
+        },
+        "1c42b9a6-3702-4221-9704-3c512d42cd06": {
+          "type": "block",
+          "settings": {
+            "part_number": "900",
+            "description": "Thumbswitch",
+            "noise_level": "16"
+          }
+        },
+        "6d75bbae-13dd-48f6-8e25-6003ef322164": {
+          "type": "block",
+          "settings": {
+            "part_number": "86FLX",
+            "description": "Flextension",
+            "noise_level": "N\/A"
+          }
+        },
+        "8c05adfc-e80a-4149-9550-6b3a2f38b1a3": {
+          "type": "block",
+          "settings": {
+            "part_number": "900",
+            "description": "Thumbswitch",
+            "noise_level": "16"
+          }
+        },
+        "5a639c02-a035-4b2c-b7e6-c81c5b5ec15e": {
+          "type": "block",
+          "settings": {
+            "part_number": "900LJ Series",
+            "description": "Thumbswitch Extended Reach",
+            "noise_level": "13"
+          }
+        },
+        "05bb4d43-6135-4ec6-850b-547832e21d23": {
+          "type": "block",
+          "settings": {
+            "part_number": "900S",
+            "description": "Thumbswitch",
+            "noise_level": "3"
+          }
+        },
+        "1910705b-28e1-405d-9231-1f4564ef8a2b": {
+          "type": "block",
+          "settings": {
+            "part_number": "970",
+            "description": "Thumbswitch",
+            "noise_level": "11"
+          }
+        },
+        "40482cdb-3cce-451b-a3b5-dbc4fccaed1e": {
+          "type": "block",
+          "settings": {
+            "part_number": "980",
+            "description": "Thumbswitch Whisper Jet",
+            "noise_level": "N\/A"
+          }
+        },
+        "0b1285ad-6323-4130-8e8c-4e622720f555": {
+          "type": "block",
+          "settings": {
+            "part_number": "F5 Venturi Series",
+            "description": "Force 5 Venturi Extended Reach",
+            "noise_level": "16"
+          }
+        },
+        "99f6ed29-444d-4814-b1ff-0c086c13d957": {
+          "type": "block",
+          "settings": {
+            "part_number": "F5 QuietForce Series",
+            "description": "Force 5 QuietForce Extended Reach",
+            "noise_level": "7"
+          }
+        },
+        "9bc66ee6-6e5f-41a0-b3d5-c15cda90cde0": {
+          "type": "block",
+          "settings": {
+            "part_number": "HYD Series",
+            "description": "HydroForce Extended Reach",
+            "noise_level": "10"
+          }
+        },
+        "ef025fad-1a8f-4d14-9abc-7bc72e2065db": {
+          "type": "block",
+          "settings": {
+            "part_number": "INF Venturi Series",
+            "description": "Inforcer Venturi Extended Reach",
+            "noise_level": "16"
+          }
+        },
+        "20169e6a-cbdc-4e9d-ae0b-d705f245afbb": {
+          "type": "block",
+          "settings": {
+            "part_number": "INF Steel Series",
+            "description": "Inforcer Steel Extended Series",
+            "noise_level": "16"
+          }
+        },
+        "2e8457e5-3aad-4a67-b90a-704e372cec4e": {
+          "type": "block",
+          "settings": {
+            "part_number": "INF QuietForce Series",
+            "description": "Inforcer QuietForce Extended Reach",
+            "noise_level": "7"
+          }
+        },
+        "8a5e4527-1463-41aa-a4cd-6f2175236029": {
+          "type": "block",
+          "settings": {
+            "part_number": "LZR600",
+            "description": "Lazer Palm Switch",
+            "noise_level": "14"
+          }
+        },
+        "36655259-e6dc-408e-bac4-5015a8439fa1": {
+          "type": "block",
+          "settings": {
+            "part_number": "LZR650",
+            "description": "Lazer Pistol Grip",
+            "noise_level": "14"
+          }
+        },
+        "bfbd8989-36df-4822-aab4-13d5eb9c4f9b": {
+          "type": "block",
+          "settings": {
+            "part_number": "LZR600 Series",
+            "description": "Lazer PalmSwitch Extended Reach",
+            "noise_level": "16"
+          }
+        },
+        "c37b734b-9a08-40e3-8153-5b88502c9433": {
+          "type": "block",
+          "settings": {
+            "part_number": "LZR650 Series",
+            "description": "Lazer Pistol Grip Extended Reach",
+            "noise_level": "19"
+          }
+        },
+        "0536c917-2aee-4c64-a0d4-3ee84d3cb228": {
+          "type": "block",
+          "settings": {
+            "part_number": "U75LJ Series",
+            "description": "ULTRA Venturi Extended Reach",
+            "noise_level": "18"
+          }
+        },
+        "499e0e8b-5085-4aad-a799-9e16e4c46d57": {
+          "type": "block",
+          "settings": {
+            "part_number": "U75XT Series",
+            "description": "ULTRA XtraThrust Extended Reach",
+            "noise_level": "20"
+          }
+        },
+        "6031aa30-c15f-41fa-92a6-5e7252923315": {
+          "type": "block",
+          "settings": {
+            "part_number": "U80WJ2",
+            "description": "ULTRA WhisperJet",
+            "noise_level": "N\/A"
+          }
+        },
+        "4984265f-6034-42ce-994e-ac878d7b5faf": {
+          "type": "block",
+          "settings": {
+            "part_number": "U80WJ Series",
+            "description": "ULTRA WhisperJet Extended Reach",
+            "noise_level": "N\/A"
+          }
+        }
+      },
+      "block_order": [
+        "5a7d758b-dcb8-416d-b7eb-45988b302310",
+        "d97ecab4-bedf-4f88-b1ea-2fc83bd7f43b",
+        "bb22e5ff-0435-4c5e-a50c-0e1e40ed555c",
+        "f3eec335-9e9a-43f1-917c-3b204b3d004a",
+        "22eafc68-2154-42d0-a4c3-5f3854ab2b5a",
+        "23c2b138-dc20-4621-902b-cb00a227ab16",
+        "0c42b880-6f2a-46fc-8874-2312d72c0a85",
+        "ac9b5e17-658f-4603-a86a-06daa4899e5f",
+        "295cfed5-ef70-48b7-aa0f-a6968fe3c211",
+        "8328a16e-4907-4cc2-a8b4-75498f70e48a",
+        "69cdbf82-8d97-4412-80f8-14e73d49ea63",
+        "56f3c642-2235-4e3b-885e-0322fa586186",
+        "1c42b9a6-3702-4221-9704-3c512d42cd06",
+        "6d75bbae-13dd-48f6-8e25-6003ef322164",
+        "8c05adfc-e80a-4149-9550-6b3a2f38b1a3",
+        "5a639c02-a035-4b2c-b7e6-c81c5b5ec15e",
+        "05bb4d43-6135-4ec6-850b-547832e21d23",
+        "1910705b-28e1-405d-9231-1f4564ef8a2b",
+        "40482cdb-3cce-451b-a3b5-dbc4fccaed1e",
+        "0b1285ad-6323-4130-8e8c-4e622720f555",
+        "99f6ed29-444d-4814-b1ff-0c086c13d957",
+        "9bc66ee6-6e5f-41a0-b3d5-c15cda90cde0",
+        "ef025fad-1a8f-4d14-9abc-7bc72e2065db",
+        "20169e6a-cbdc-4e9d-ae0b-d705f245afbb",
+        "2e8457e5-3aad-4a67-b90a-704e372cec4e",
+        "8a5e4527-1463-41aa-a4cd-6f2175236029",
+        "36655259-e6dc-408e-bac4-5015a8439fa1",
+        "bfbd8989-36df-4822-aab4-13d5eb9c4f9b",
+        "c37b734b-9a08-40e3-8153-5b88502c9433",
+        "0536c917-2aee-4c64-a0d4-3ee84d3cb228",
+        "499e0e8b-5085-4aad-a799-9e16e4c46d57",
+        "6031aa30-c15f-41fa-92a6-5e7252923315",
+        "4984265f-6034-42ce-994e-ac878d7b5faf"
+      ],
+      "settings": {
+        "heading": "Static Output Pressure for Guardair Safety Air Guns*",
+        "heading1": "Part Number",
+        "heading2": "Product \/ Description",
+        "heading3": "Static Output Pressure (psi)",
+        "pera": "<p><em>* Measured at 100 psi inlet pressure.<\/em><\/p>\n<p><em>** Static Output Pressure measured at nozzle tip when dead-ended. N\/A indicates nozzle tip cannot physically be blocked.<\/em><\/p>\n<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/7.webp?v=1685797710\">Guardair recommends the use of OSHA compliant safety air guns to insure that static output pressure does not exceed 30 psi.<\/p>"
+      }
+    },
+    "b6bd2c42-5756-4260-a08b-e57f70120782": {
+      "type": "osha-compliance-img-text",
+      "blocks": {
+        "7a1b8625-b1e3-463a-aedc-896fb9118b90": {
+          "type": "block",
+          "settings": {
+            "pro_title": "AIR SHIELD NOZZLE",
+            "pro_link": "shopify:\/\/products\/the-original-57s30xb-safety-air-gun",
+            "pro_img": "shopify:\/\/shop_images\/8.webp"
+          }
+        }
+      },
+      "block_order": [
+        "7a1b8625-b1e3-463a-aedc-896fb9118b90"
+      ],
+      "settings": {
+        "pera": "<p>When blowing off debris with an air gun in close quarters, workers may be subject to \"chip fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes or skin. For operations that require close-in work, OSHA mandates that \"effective chip guarding\" be incorporated into the workplace. Effective chip guarding means methods or equipment that will prevent chips or particles from flying back at the operator. Guardair offers several safety air gun models incorporating the Air Shield nozzle, which protects the operator from chip fly-back.<\/p>",
+        "sidebar_data": "<p><strong>OSHA Standard and Instruction Related to Chip-Guarding<\/strong><\/p><p><em>Compressed Air Used for Cleaning<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">OSHA Standard 1910.242(b)<\/a><br\/> <\/p><p><em>Reduction of Air Pressure Below 30 psi for Cleaning Purposes<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">STD 01-13-001<\/a><\/p>"
+      }
+    },
+    "9b43de79-fcb6-4f98-aec2-2a47aca463b1": {
+      "type": "incorporating-noise-suppression-nozzles",
+      "blocks": {
+        "e951ccb1-7330-45e3-a786-aa8ff1491ead": {
+          "type": "block",
+          "settings": {
+            "part_number": "57S30XB",
+            "description": "Original",
+            "noise_level": ""
+          }
+        },
+        "44f23dc1-c7a8-4a61-bcb1-0551dc2ab5b7": {
+          "type": "block",
+          "settings": {
+            "part_number": "74BH",
+            "description": "Blind Hole",
+            "noise_level": ""
+          }
+        },
+        "128e52dd-aa77-4c8d-a144-4a3ca591749b": {
+          "type": "block",
+          "settings": {
+            "part_number": "74S\/SK",
+            "description": "JetGuard",
+            "noise_level": ""
+          }
+        },
+        "6dabe801-6587-4b65-9770-a13dfdbc7cb4": {
+          "type": "block",
+          "settings": {
+            "part_number": "76S006",
+            "description": "Booster",
+            "noise_level": ""
+          }
+        }
+      },
+      "block_order": [
+        "e951ccb1-7330-45e3-a786-aa8ff1491ead",
+        "44f23dc1-c7a8-4a61-bcb1-0551dc2ab5b7",
+        "128e52dd-aa77-4c8d-a144-4a3ca591749b",
+        "6dabe801-6587-4b65-9770-a13dfdbc7cb4"
+      ],
+      "settings": {
+        "heading": "Guardair Safety Air Guns Incorporating Air Shield Nozzles",
+        "heading1": "Part Number",
+        "heading2": "Model \/ Description",
+        "heading3": "",
+        "pera": "<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/7.webp?v=1685797710\">Guardair recommends the use of air shield nozzles as well as barriers, screens, and\/or personal protective clothing for effective chip-guarding.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "864d6054-509d-441a-a14c-3b7a4b1050ee",
+    "53396d03-6a0f-440a-aa70-6c172bd7be36",
+    "d7940c21-ec59-4b17-ac33-aa3064e8cbc3",
+    "71e2bd2a-2303-41d4-8867-b7413c8e6cc9",
+    "b6bd2c42-5756-4260-a08b-e57f70120782",
+    "9b43de79-fcb6-4f98-aec2-2a47aca463b1"
+  ]
+}

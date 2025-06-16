@@ -1,0 +1,170 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="product-literatureWrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="literature_maindiv">
+      <div class="literature_image">
+        {% if section.settings.texts!=blank %}
+        <div class="literature_texttop">
+            {{ section.settings.texts }}
+        </div>
+        {% endif %}
+        {% if section.settings.img_logos!=blank %}
+         {% if section.settings.img_url!=blank %}<a href="{{ section.settings.img_url }}" target="_blank">{% endif %}
+        <img src="{{ section.settings.img_logos | img_url :"master"}}">
+        {% if section.settings.img_url!=blank %} </a> {% endif %}
+        {% endif %}
+      </div>
+      <div class="literature_text">
+      {% if section.settings.textsec!=blank %}
+        <div class="literature_texttop">
+            {{ section.settings.textsec }}
+        </div>
+      {% endif %}
+        <div class="literature_btns">
+        {% if section.settings.text_btn!=blank %}
+         {% if section.settings.text_url!=blank %}<a href="{{ section.settings.text_url }}">{% endif %}
+        <p>{{ section.settings.text_btn }}</p>
+         {% if section.settings.text_url!=blank %}</a>{% endif %}
+        {% endif %}
+       {% if section.settings.text_btnsec!=blank %}
+         {% if section.settings.text_urlsec!=blank %}<a href="{{ section.settings.text_urlsec }}">{% endif %}
+         <p>{{ section.settings.text_btnsec }}</p>
+         {% if section.settings.text_urlsec!=blank %}</a>{% endif %}
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Literature",
+    "settings": [
+            {
+              "type":"richtext",
+              "id":"texts",
+              "label":"Title"
+            },
+            {
+              "type":"image_picker",
+              "id":"img_logos",
+              "label":"Select Image"
+            },
+            {
+              "type":"url",
+              "id":"img_url",
+              "label":"Image Link"
+            },
+             {
+              "type":"richtext",
+              "id":"textsec",
+              "label":"Text"
+            },
+            {
+              "type":"text",
+              "id":"text_btn",
+              "label":"First Text"
+            },
+            {
+              "type":"url",
+              "id":"text_url",
+              "label":"First Text Link"
+            },
+            {
+              "type":"text",
+              "id":"text_btnsec",
+              "label":"Second Text"
+            },
+            {
+              "type":"url",
+              "id":"text_urlsec",
+              "label":"Second Text Link"
+            },
+            {
+              "type": "range",
+              "id": "padding_top",
+              "min": 0,
+              "max": 100,
+              "step": 4,
+              "unit": "px",
+              "label": "t:sections.all.padding.padding_top",
+              "default": 36
+             },
+            {
+              "type": "range",
+              "id": "padding_bottom",
+              "min": 0,
+              "max": 100,
+              "step": 4,
+              "unit": "px",
+              "label": "t:sections.all.padding.padding_bottom",
+              "default": 36
+            }
+       ],
+    "presets":[
+      {
+       "name": "Product Literature"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+
+.product-literatureWrapper .literature_maindiv {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.product-literatureWrapper .literature_image {
+    width: 35%;
+}
+
+.product-literatureWrapper .literature_text {
+    width: 65%;
+}
+
+.product-literatureWrapper .literature_texttop {
+    display: flex;
+}
+.product-literatureWrapper .literature_texttop p {
+    margin-top: 0;
+}
+.product-literatureWrapper .literature_btns {
+    display: inline-block;
+}
+
+.product-literatureWrapper .literature_btns a {
+  text-decoration: none;
+}
+
+.product-literatureWrapper .literature_btns a p {
+    margin-top: 0;
+    color: #002395!important;
+    font-family: Eurostile-Bol,sans-serif;
+     transition: 0.3s all linear;
+}
+.product-literatureWrapper .literature_btns a p:hover {
+    color: #4b92db !important;
+} 
+.product-literatureWrapper .literature_image img {
+    border: 1px solid #95949a;
+}  
+  
+</style>

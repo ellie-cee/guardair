@@ -1,0 +1,290 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+
+<div class="atexwrapper  section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="atexwrapper_divs">
+    <div class="atexmains_divs">
+      {% if section.settings.first_text!=blank %}
+        <div class="atexmains_text">
+          {{ section.settings.first_text }}
+        </div>
+      {% endif %}
+        <div class="atexmains_content">
+           <div class="atexmains_first_content">
+          {% if section.settings.f_img!=blank %}
+            <img src="{{ section.settings.f_img | img_url : "110X30" }}">
+          {% endif %}
+         {% if section.settings.texts!=blank %}
+            <div class="atex-marking"><p>{{ section.settings.texts }}</p></div>
+          {% endif %}
+          </div>
+          {% if section.settings.text_bottoms!=blank %}
+           <div class="atexmains_second_content">
+            {{ section.settings.text_bottoms }}
+          </div>
+        {% endif %}
+        </div>
+         <div class="atexmains_imgs_div">
+          <div class="atexmains_imgs">
+          {% if section.settings.first_link!=blank %} <a href="{{ section.settings.first_link }}">{% endif %}
+            {% if section.settings.first_img!=blank %}<img src="{{ section.settings.first_img | img_url : "master" }}">{% endif %}
+          {% if section.settings.first_link!=blank %} </a>{% endif %}
+         
+          {% if section.settings.se_link!=blank %} <a href="{{ section.settings.se_link }}">{% endif %}
+              {% if section.settings.se_img!=blank %}<img src="{{ section.settings.se_img | img_url : "master" }}">{% endif %}
+           {% if section.settings.se_link!=blank %} </a>{% endif %}
+           
+           {% if section.settings.thrd_link!=blank %}<a href="{{ section.settings.thrd_link }}">{% endif %}
+             {% if section.settings.thrd_img!=blank %}<img src="{{ section.settings.thrd_img | img_url : "master" }}">{% endif %}
+          {% if section.settings.thrd_link!=blank %} </a>{% endif %}
+          </div>
+        </div>
+    </div>
+    <div class="atex_products">
+       <div class="nozzle_products">
+            {% if section.settings.product_head!=blank %}
+             <h4>{{ section.settings.product_head }}</h4>
+            {% endif %}
+             <ul>
+            {% for block in section.blocks %}
+            {% assign product=block.settings.product %}
+            {% if block.type == 'Product' %}
+               <li>
+                 <a href="{{product.url}}">
+                 {% assign product_title = product.title %}
+                  {% assign clean_title = product_title | split: "PowerQUAD™ " | last %}
+                  {% assign clean_title = clean_title | split: " w/" | first %}
+                  {% assign clean_title = clean_title | split: " -" | first %}
+                <h2>{{ clean_title }}</h2>
+                  <img src="{{product.featured_image | img_url :"208x162"}}"/>
+                </a>
+               </li>
+            {% endif %}
+          {% endfor %}
+            </ul>
+         </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "ATEX Certification",
+    "settings": [
+      {
+        "type":"richtext",
+        "id":"first_text",
+        "label":"Text"
+      },
+      {
+        "type":"header",
+        "content":"Right Logo & Text"
+      },
+      {
+        "type":"image_picker",
+        "id":"f_img",
+        "label":"Select Logo"
+      },
+      {
+        "type":"richtext",
+        "id":"texts",
+        "label":"Text"
+      },
+      {
+        "type":"richtext",
+        "id":"text_bottoms",
+        "label":"Bottom Text"
+      },
+      {
+        "type":"header",
+        "content":"Image Select"
+      },
+      {
+        "type":"image_picker",
+        "id":"first_img",
+        "label":"First Image Select"
+      },
+      {
+        "type":"url",
+        "id":"first_link",
+        "label":"First Image Link"
+      },
+      {
+        "type":"image_picker",
+        "id":"se_img",
+        "label":"Second Image Select"
+      },
+      {
+        "type":"url",
+        "id":"se_link",
+        "label":"Second Image Link"
+      },
+      {
+        "type":"image_picker",
+        "id":"thrd_img",
+        "label":"Third Image Select"
+      },
+      {
+        "type":"url",
+        "id":"thrd_link",
+        "label":"Third Image Link"
+      },
+      {
+        "type":"header",
+        "content":"Side Bar Heading"
+      },
+      {
+        "type":"text",
+        "id":"product_head",
+        "label":"Product Heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+      "type": "Product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:sections.collage.blocks.product.settings.product.label"
+        }
+      ]
+    }
+    ],
+    "presets":[
+      {
+       "name": "ATEX Certification"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+
+.atexwrapper_divs {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 4fr 1fr;
+    gap: 40px;
+}
+
+.atexmains_divs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #e1e1e1;
+    padding: 20px;
+    height: max-content;
+}
+
+.atexmains_text {
+    width: calc(37% - 25px);
+    margin-right: 25px;
+}
+.atexmains_content {
+    width: 63%;
+}
+
+.atexmains_imgs_div {
+    width: 100%;
+}
+
+.atexmains_first_content {
+    display: flex;
+    gap: 20px;
+    background: #000;
+    padding: 20px 10px;
+}
+
+.atexmains_first_content img {
+    max-width: 100%;
+    max-height: 30px;
+}
+
+.atexmains_first_content p {
+    color: #fff !important;
+    font-size: 24px !important;
+    font-family: Eurostile-Bol, sans-serif;
+    margin: 0;
+    margin-bottom: 0px !important;
+}
+
+.atexmains_second_content {
+    background: #c5c5c5;
+    padding: 20px 20px 50px;
+    margin-top: 10px;
+}
+.atexmains_second_content p {
+    margin: 0;
+}
+.atexmains_text p {
+    margin: 0;
+}
+
+.atexmains_imgs {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.atexmains_imgs img {
+    width: 100%;
+}
+.atexmains_second_content p {
+    margin: 0 !important;
+}
+
+  
+</style>
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_xezMVG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7dazHw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-xtrathrust-75xxt.png",
+            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xxt-safety-air-gun",
+            "title": "<a href=\"\/products\/xtrathrust-75xxt-safety-air-gun\" title=\"XtraThrust® 75XXT Safety Air Gun\">XtraThrust 75XXT Safety Air Gun<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cCawkH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-xtrathrust.png",
+            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-safety-air-gun-6",
+            "title": "<a href=\"\/products\/xtrathrust-75xt-safety-air-gun-6\" title=\"XtraThrust® 75XT Safety Air Gun - 6&quot;\">XtraThrust 75XT Safety Air Gun<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_C7thbA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-xtrathrust-us-flag.png",
+            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-safety-air-gun-12-w-us-flag-markings",
+            "title": "<a href=\"\/products\/xtrathrust-75xt-safety-air-gun-12-w-us-flag-markings\" title=\"XtraThrust® 75XT Safety Air Gun - 12&quot; w\/ US Flag Markings\">XtraThrust Safety Air Gun w\/ US Flag Markings<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G4UAWG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-xtrathrust-nylon.png",
+            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-nylon-safety-air-gun-18",
+            "title": "<a href=\"\/products\/xtrathrust-75xt-nylon-safety-air-gun-18\" title=\"XtraThrust® 75XT Nylon Safety Air Gun - 18&quot;\">XtraThrust Nylon Safety Air Gun<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_azwKMH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-xtrathrust-steel.png",
+            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-steel-safety-air-gun-6",
+            "title": "<a href=\"\/products\/xtrathrust-75xt-steel-safety-air-gun-6\" title=\"XtraThrust® 75XT Steel Safety Air Gun - 6&quot;\">XtraThrust Steel Safety Air Gun<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VpyJwr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-xtrathrust-steel-nozzle2.png",
+            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-steel-nozzle-safety-air-gun-12",
+            "title": "<a href=\"\/products\/xtrathrust-75xt-steel-nozzle-safety-air-gun-12\" title=\"XtraThrust® 75XT Steel Nozzle Safety Air Gun - 12&quot;\">XtraThrust Steel Nozzle Safety Air Gun<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xHfP3n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-xtrathrust-steel-extension3.png",
+            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-steel-extension-safety-air-gun-6",
+            "title": "<a href=\"\/products\/xtrathrust-75xt-steel-extension-safety-air-gun-6\" title=\"XtraThrust® 75XT Steel Extension Safety Air Gun - 6&quot;\">XtraThrust Steel Extension Safety Air Gun<\/a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7dazHw",
+        "column_cCawkH",
+        "column_C7thbA",
+        "column_G4UAWG",
+        "column_azwKMH",
+        "column_VpyJwr",
+        "column_xHfP3n"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_xezMVG"
+  ]
+}

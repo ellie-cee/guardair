@@ -1,0 +1,73 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "4c8cf68d-b71d-4fe2-828c-8d6184f31ac1": {
+      "type": "custom-text-with-block",
+      "blocks": {
+        "b75965a4-88c3-42d1-9a5c-ab8560990040": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/i.shgcdn_8.png",
+            "img_url": "",
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "b75965a4-88c3-42d1-9a5c-ab8560990040"
+      ],
+      "settings": {
+        "content": "<p>Guardair Corporation is a leading Industrial MRO (Maintenance, Repair and Operations) product manufacturer located in the beautiful Pioneer Valley of Western Massachusetts. We offer exciting, growth-oriented opportunities with a competitive salary and excellent benefits.<\/p>",
+        "text": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "00640386-c8ef-44d4-bab6-352adc88731f": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--14515211829366__00640386-c8ef-44d4-bab6-352adc88731f-16811246016d93c990-1": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "<strong>Shipper<\/strong>",
+            "text": "<p><strong>Reports To:<br\/><\/strong>Materials Supervisor<\/p><p><strong>Role and Responsibilities:<br\/><\/strong>Perform packing, labeling, palletizing, and computer transactions to ship the correct product to its destination in a fast-paced production environment.<\/p><ul><li>Pick and verify products and quantities for a given order<\/li><li>Use barcode technology on products and packing slip<\/li><li>Economically package products for shipment, selecting proper box and dunnage<\/li><li>Accurately preform computer transactions to generate shipping documents<\/li><li>Attach documents and if necessary, palletize the shipment<\/li><li>Maintain a clean and organized work area<\/li><\/ul><p><strong> Skill and Knowledge Requirements:<\/strong><\/p><ul><li>Shipping experience (2 years preferred)<\/li><li>Basic computer skills<\/li><li>Strong time management skills<\/li><li>Maintain high individual productivity and quality standards<\/li><li>Focus and remain on task in a fast-paced environment<\/li><li>Excellent safety and attendance record<\/li><li>Ability to read, write, and understand English<\/li><li>Perform basic math with or without a calculator<\/li><li>Accurately follow written and verbal instructions<\/li><li>Ability to work independently and as a team member<\/li><li>Be capable of lifting and moving up to 60 lbs<\/li><\/ul><p><strong>Job Classification:<br\/><\/strong>Full-time, hourly non-exempt<\/p><p><strong> To Apply:<br\/><\/strong>Email cover letter and resume to: <a href=\"mailto:careers@guardaircorp.com\">careers@guardair.com<\/a><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14515211829366__00640386-c8ef-44d4-bab6-352adc88731f-16811246016d93c990-1"
+      ],
+      "settings": {
+        "title": "CURRENT JOB OPENINGS",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4c8cf68d-b71d-4fe2-828c-8d6184f31ac1",
+    "00640386-c8ef-44d4-bab6-352adc88731f"
+  ]
+}

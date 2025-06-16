@@ -1,0 +1,128 @@
+<div class="itg_osha_imgtext_wrapper">
+  <div class="page-width">
+     <div class="itg_osha_page_firstdiv">
+       <div class="style-div">
+       <div class="itg_left_div">
+        <div class="itg_img_text_div">
+          {% if section.settings.img != blank %}
+            <div class="itg_img">
+              <img src="{{ section.settings.img | img_url:'master' }}" alt="image">
+            </div>
+            {% endif %}
+          <div class="itg_text{% if section.settings.img == blank %} itg_reverse {% endif %}">
+             {{ section.settings.pera }}
+          </div>
+        </div>
+         <div class="itg_custom_show_product">
+           {% for block in section.blocks %}
+            <div class="itg_custom_product">
+              <h3><a href="{{ block.settings.pro_link }}">{{ block.settings.pro_title }}</a></h3>
+             <img src="{{ block.settings.pro_img | img_url:'master' }}" alt="{{ block.settings.pro_title }}">
+            </div>
+           {% endfor %}
+         </div>
+       </div>
+       <div class="itg_sidebar_content">
+         <div class="itg_sidebar_inner_data">
+           {{ section.settings.sidebar_data }}
+         </div>
+       </div>
+     </div>
+    </div>  
+  </div>
+</div>
+
+<style>
+  .style-div {
+    display: flex;
+    width: 100%
+    padding: 30px 0;
+    column-gap: 30px;
+    }
+  @media screen and (max-width: 679px) {
+    .style-div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .itg_sidebar_content {
+      width: 100% !important;
+    }
+    .itg_sidebar_inner_data {
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .itg_img_text_div {
+      flex-direction: column;
+      align-items: center;
+    }
+    .itg_left_div, .itg_text {
+      width: 100% !important;
+    }
+    .itg_img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+    .itg_text {
+      padding: 0px 10px !important;
+    }
+}
+</style>
+
+{% schema %}
+  {
+    "name": "OSHA Compliance ImageText",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id": "img",
+        "label":"Image"
+      },
+      {
+        "type":"richtext",
+        "id": "pera",
+        "label": "Content"
+      },
+      {
+        "type":"richtext",
+        "id": "sidebar_data",
+        "label": "Sidebar Content"
+      }
+    ],
+    "blocks":[
+      {
+        "name":"Block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "pro_title",
+            "label": "Product Title"
+          },
+          {
+            "type": "url",
+            "id":"pro_link",
+            "label": "Product Url"
+          },
+          {
+            "type":"image_picker",
+            "id": "pro_img",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "OSHA Compliance ImageText"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "85a44bbf-afc3-4539-922a-38a1c672aee0": {
+      "type": "custom-product-blocks",
+      "blocks": {
+        "e10165f4-41d2-4034-a933-0140a745db34": {
+          "type": "Product",
+          "settings": {
+            "product": "safety-excess-flow-check-valve-1-2-fnpt"
+          }
+        },
+        "92806b63-a2dc-45f0-8fa8-fd6d62d5a7cd": {
+          "type": "Product",
+          "disabled": true,
+          "settings": {
+            "product": "safety-excess-flow-check-valve-1-2-fnpt"
+          }
+        },
+        "da860992-b7bf-456c-9740-d52f18bd13cf": {
+          "type": "Product",
+          "disabled": true,
+          "settings": {
+            "product": "safety-excess-flow-check-valve-1-2-fnpt"
+          }
+        }
+      },
+      "block_order": [
+        "e10165f4-41d2-4034-a933-0140a745db34",
+        "92806b63-a2dc-45f0-8fa8-fd6d62d5a7cd",
+        "da860992-b7bf-456c-9740-d52f18bd13cf"
+      ],
+      "settings": {
+        "product_head": "",
+        "content": "",
+        "columns_desktop": 4,
+        "padding_top": 12,
+        "padding_bottom": 25
+      }
+    }
+  },
+  "order": [
+    "main",
+    "85a44bbf-afc3-4539-922a-38a1c672aee0"
+  ]
+}

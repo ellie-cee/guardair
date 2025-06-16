@@ -1,0 +1,137 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "d11b66cb-ed64-4ee0-827e-42d129bdc9f9": {
+      "type": "nozzle-diagrams-section",
+      "blocks": {
+        "5d20ff5d-f625-4193-99bc-1cc96079b2c4": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Air Cone Nozzle",
+            "text": "<p>During normal operation, the main flow air exits from the nozzle tip providing power for cleaning. Simultaneously, a portion of air exits from slots around the periphery of the nozzle forming a protective air cone. This cone helps prevent chips and other debris from \"flying back\" towards the operator.<\/p>",
+            "first_img": "shopify:\/\/shop_images\/i.shgcdn_f7db1d6c-82f0-4da4-a1e4-ca67697a388a.webp",
+            "first_img_link": "",
+            "first_img_text": "Unblocked State (Normal Operation)",
+            "second_img": "shopify:\/\/shop_images\/i.shgcdn_682a138d-ca16-4c39-9e3f-5f1dd89ebd6a.webp",
+            "second_img_link": "",
+            "second_img_text": "Blocked State",
+            "text_bottom": "<p>Should the nozzle tip become dead-ended, an internal mechanism diverts nearly 100% of the air flow through the slots. This lowers the static pressure at the nozzle tip to less than 30 psi, thereby satisfying OSHA Standards pertaining to <strong>Output Pressure<\/strong>.<\/p>"
+          }
+        },
+        "85e858bc-a395-4961-b281-bdbc7d5f185a": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "AirMiser Nozzle",
+            "text": "<p>Based upon a proprietary design, the AirMiser nozzle consists of a main orifice with the primary air flow exiting from the center of the nozzle tip. Arranged symmetrically around this main orifice are six, smaller orifices providing secondary air flow. This secondary flow forms a circular pattern surrounding and parallel to the main flow. The net result is efficient cleaning power with reduced air consumption.<\/p>",
+            "first_img": "shopify:\/\/shop_images\/i.shgcdn_f4e56f26-60cc-4722-94e0-4e789c1ab9bc.webp",
+            "first_img_link": "",
+            "first_img_text": "Unblocked State (Normal Operation)",
+            "second_img": "shopify:\/\/shop_images\/i.shgcdn_6cb396bd-2836-4986-b7b4-42327462ebf7.webp",
+            "second_img_link": "",
+            "second_img_text": "Blocked State",
+            "text_bottom": "<p>Should the nozzle tip become dead-ended, an internal mechanism diverts nearly 100% of the air flow through the slots. This lowers the static pressure at the nozzle tip to less than 30 psi, thereby satisfying OSHA Standards pertaining to <strong>Output Pressure<\/strong>.<\/p>"
+          }
+        },
+        "3450afdf-5aa1-449b-b218-e59e53b47492": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "QuietForce Nozzle",
+            "text": "<p>Originally developed and patented by Boeing engineers, the QuietForce nozzle consists of a circular array of 93 raised, miniature nozzles surrounded by a safety shroud. Spacing and geometry of these \"nozzlettes\" has been optimized to maximize air flow and reduce noise-inducing turbulence. The result is a column of high flow air that delivers superior thrust at greatly reduced noise levels.<\/p>",
+            "first_img": "shopify:\/\/shop_images\/i.shgcdn_8361d1d6-94f9-4bd6-99b7-f2fdd5b013d6.webp",
+            "first_img_link": "",
+            "first_img_text": "Unblocked State (Normal Operation)",
+            "second_img": "shopify:\/\/shop_images\/i.shgcdn_87e62b97-17a3-4638-9fbc-8f96bfe2a4d4.webp",
+            "second_img_link": "",
+            "second_img_text": "Blocked State",
+            "text_bottom": "<p>Should the tip of the nozzle become blocked, 100% of the air flow is diverted through the side ports of the safety shroud. Under these conditions, static pressure at the nozzle tip measures less than 30 psi, thereby satisfying OSHA Standards pertaining to <strong>Output Pressure<\/strong>. In addition with this low noise design, the QuietForce nozzle helps meet OSHA standards pertaining to <strong>Noise<\/strong>.<\/p>"
+          }
+        },
+        "02017641-e122-4959-95a9-3edd48ac35cc": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Venturi Nozzle",
+            "text": "<p>During normal operation, the main air flow speeds up as it passes through the body of the nozzle, drawing in surrounding air through the two side ports. The increased velocity and increased volume of air exiting the nozzle boosts the available thrust up to 250%.<\/p>",
+            "first_img": "shopify:\/\/shop_images\/i.shgcdn_f1278a7f-13db-4c80-969a-06d6dc0a26d3.webp",
+            "first_img_link": "",
+            "first_img_text": "Unblocked State (Normal Operation)",
+            "second_img": "shopify:\/\/shop_images\/i.shgcdn_1e9f50c2-8ec4-4ff7-973c-6f5cf5703d27.webp",
+            "second_img_link": "",
+            "second_img_text": "Blocked State",
+            "text_bottom": "<p>Should the nozzle tip become blocked, 100% of the main air flow is diverted through the side ports. Under these conditions, static pressure at the nozzle tip measures less than 30 psi, thereby satisfying OSHA Standards pertaining to <strong>Output Pressure<\/strong>.<\/p>"
+          }
+        },
+        "38484cd1-cae5-43bd-b836-aa1b5a6532cc": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "WhisperJet Nozzle",
+            "text": "<p>High-speed jets of air exit from narrow slots around the periphery of the nozzle. Air flow from these jets adheres to the conical nozzle tip surface, drawing in surrounding air, thereby producing high thrust at very low noise levels.<\/p>",
+            "first_img": "shopify:\/\/shop_images\/whisperjet-nozzle-diagram-unblocked.png",
+            "first_img_link": "",
+            "first_img_text": "Unblocked State (Normal Operation)",
+            "second_img": "shopify:\/\/shop_images\/whisperjet-nozzle-diagram-blocked-state.png",
+            "second_img_link": "",
+            "second_img_text": "Blocked State",
+            "text_bottom": "<p>The geometry of the solid conical tip prevents blockage thereby satisfying OSHA Standards pertaining to <strong>Output Pressure<\/strong>. In addition, with this low noise design, the WhisperJet nozzle helps meet OSHA Standards pertaining to <strong>Noise<\/strong>.<\/p>"
+          }
+        },
+        "d894f0c4-d420-4095-906a-e984e1080db5": {
+          "type": "Product",
+          "settings": {
+            "product": "long-john-75lj-alloy-nozzle"
+          }
+        },
+        "f9697cd2-d610-4671-8626-fd6850c7b47f": {
+          "type": "Product",
+          "settings": {
+            "product": "thumbswitch-900-aluminum-nozzle"
+          }
+        },
+        "8496b90e-4806-4bb6-8347-3b689969fa63": {
+          "type": "Product",
+          "settings": {
+            "product": "quietforce-74g-u74-nozzle-adjustable-air-79-dba"
+          }
+        },
+        "2ca2a7ba-41ee-482e-b87c-fba566c58072": {
+          "type": "Product",
+          "settings": {
+            "product": "whisperjet-80lj-aluminum-nozzle"
+          }
+        },
+        "cd1a4d2c-a6bb-4c80-8c57-dbbea9246879": {
+          "type": "Product",
+          "settings": {
+            "product": "lazer-600-650-brass-venturi-nozzle"
+          }
+        }
+      },
+      "block_order": [
+        "5d20ff5d-f625-4193-99bc-1cc96079b2c4",
+        "85e858bc-a395-4961-b281-bdbc7d5f185a",
+        "3450afdf-5aa1-449b-b218-e59e53b47492",
+        "02017641-e122-4959-95a9-3edd48ac35cc",
+        "38484cd1-cae5-43bd-b836-aa1b5a6532cc",
+        "d894f0c4-d420-4095-906a-e984e1080db5",
+        "f9697cd2-d610-4671-8626-fd6850c7b47f",
+        "8496b90e-4806-4bb6-8347-3b689969fa63",
+        "2ca2a7ba-41ee-482e-b87c-fba566c58072",
+        "cd1a4d2c-a6bb-4c80-8c57-dbbea9246879"
+      ],
+      "settings": {
+        "product_head": "CHECK OUT OUR NOZZLES:",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d11b66cb-ed64-4ee0-827e-42d129bdc9f9"
+  ]
+}

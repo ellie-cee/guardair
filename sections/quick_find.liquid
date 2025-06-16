@@ -1,0 +1,89 @@
+<div class="itg_quick_find_wrapper" style="background: {{ section.settings.bgcolor }}">
+  <div class="page-width">
+    <div class="itg_quick_find_div">
+      <div class="itg_quick_find_img">
+        <img src="{{ section.settings.img | img_url:'84x' }}" alt="img">
+        <div class="itg_quick_find_data">
+          <h3>{{ section.settings.heading }}</h3>
+          {{ section.settings.text }}
+        </div>
+      </div>
+      <div class="itg_quick_find_menu">
+        <ul>
+          <li><a href="{{ section.settings.page1_link }}">{{ section.settings.page1_title }}</a></li>
+          <li><a href="{{ section.settings.page2_link }}">{{ section.settings.page2_title }}</a></li>
+          <li><a href="{{ section.settings.page3_link }}">{{ section.settings.page3_title }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Quick Find",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bgcolor",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Content"
+      },
+      {
+        "type": "text",
+        "id":"page1_title",
+        "label": "Link1 Title"
+      },
+      {
+        "type": "url",
+        "id": "page1_link",
+        "label": "Link1"
+      },
+      {
+        "type": "text",
+        "id":"page2_title",
+        "label": "Link2 Title"
+      },
+      {
+        "type": "url",
+        "id": "page2_link",
+        "label": "Link2"
+      },
+      {
+        "type": "text",
+        "id":"page3_title",
+        "label": "Link3 Title"
+      },
+      {
+        "type": "url",
+        "id": "page3_link",
+        "label": "Link3"
+      }
+    ],
+    "presets":[
+      {
+        "name": "Quick Find"  
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

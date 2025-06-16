@@ -1,0 +1,45 @@
+{% assign firstvideo_image = product.selected_or_first_available_variant.metafields.custom.video_image.value %}
+{% assign firstVideo = product.selected_or_first_available_variant.metafields.custom.video %}
+<li
+  class="thumbnail-list__itemx ProductVidDoNotHide"
+  id="ProductVidDoNotHide"
+  {% if firstVideo == blank %}
+    style="display: none;"
+  {% endif %}
+>
+  <div
+    class="productVariantVideo {% if firstVideo == blank  %}hideMePlease{% endif %}"
+    data-id="{{ media.id }}"
+    id="productVariantVideoGA"
+  >
+    <span class="popup-youtube" href="{{ firstVideo }}">
+      {% if firstvideo_image %}
+        <img src="{{ firstvideo_image }}" alt="" width="" height="" loading="lazy">
+      {% else %}
+        <img
+          src="https://img.youtube.com/vi/{{ firstVideo | split: '?v=' | last }}/hqdefault.jpg"
+          alt=""
+          width="100%"
+          height=""
+          loading="lazy"
+        >
+      {% endif %}
+    </span>
+  </div>
+</li>
+
+<div id="hidden-variant-metafields-container" style="display: none;">
+  [
+  {% for variant in product.variants %}
+    { "variant_id": {{ variant.id }}, "video_image": "
+    {%- if variant.metafields.custom.video_image != blank -%}
+      {{- variant.metafields.custom.video_image -}}
+    {%- else -%}
+      https://img.youtube.com/vi/{{ firstVideo | split: '?v=' | last }}/hqdefault.jpg
+    {%- endif -%}
+    ", "video": "
+    {%- if variant.metafields.custom.video != blank %}{{ variant.metafields.custom.video }}{% else %}{% endif -%}
+    " }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ]
+</div>

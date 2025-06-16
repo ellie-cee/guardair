@@ -1,0 +1,237 @@
+<!-- breadcrumbs begins -->
+<div id="breadcrumbs" class="breadcrumbs" style="opacity: 0; transition: opacity 0.3s ease;">
+  <div class="page-width">
+    <ul class="breadcrumb">
+      <!-- 1. Home Link -->
+      <li><a href="{{ shop.url }}">Home</a></li>
+
+      {%- assign menu = linklists['main-menu'] -%}
+      {%- assign active = false -%}
+
+      {%- if template contains 'page' and menu.links.size > 0 -%}
+        {%- assign referrer_url = request.headers.Referrer -%}
+
+        {%- comment %}
+          If this page has a parent_page metafield
+        {% endcomment -%}
+        {%- if page.metafields.custom.page_parent and page.handle != page.metafields.custom.page_parent -%}
+          {%- assign parent_page_handle = page.metafields.custom.page_parent -%}
+          {%- assign parent_page = pages[parent_page_handle] -%}
+          {% capture safe_parent_page_title %}
+            {% if parent_page.title contains " | Guardair" %}
+              {{ parent_page.title | replace: " | Guardair", "" | strip }}
+            {% else %}
+              {{ parent_page.title }}
+            {% endif %}
+          {% endcapture %}
+          <li>
+            <a href="{{ parent_page.url }}">{{ safe_parent_page_title }}</a>
+          </li>
+        {%- endif -%}
+
+        {%- comment %}
+          Main Menu Links
+        {% endcomment -%}
+        {%- for link in menu.links -%}
+          {%- if link.active or link.child_active -%}
+            {%- assign active = true -%}
+            {%- if link.handle != page.handle -%}
+              {% capture safe_link_title %}
+                {% if link.title contains " | Guardair" %}
+                  {{ link.title | replace: " | Guardair", "" | strip }}
+                {% else %}
+                  {{ link.title }}
+                {% endif %}
+              {% endcapture %}
+              <li>
+                <a href="{{ link.url }}">{{ safe_link_title }}</a>
+              </li>
+            {%- endif -%}
+          {%- endif -%}
+
+          {%- comment %}
+            Sub-links
+          {% endcomment -%}
+          {%- for sub_link in link.links -%}
+            {%- if sub_link.active -%}
+              {% capture safe_sub_link_title %}
+                {% if sub_link.title contains " | Guardair" %}
+                  {{ sub_link.title | replace: " | Guardair", "" | strip }}
+                {% else %}
+                  {{ sub_link.title }}
+                {% endif %}
+              {% endcapture %}
+              <li>{{ safe_sub_link_title }}</li>
+            {%- elsif sub_link.links != blank -%}
+              {%- for grandchild_link in sub_link.links -%}
+                {%- if grandchild_link.active -%}
+                  {% capture safe_grandchild_link_title %}
+                    {% if grandchild_link.title contains " | Guardair" %}
+                      {{ grandchild_link.title | replace: " | Guardair", "" | strip }}
+                    {% else %}
+                      {{ grandchild_link.title }}
+                    {% endif %}
+                  {% endcapture %}
+                  <li>{{ safe_grandchild_link_title }}</li>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+
+        {%- comment %}
+          If no menu items were marked active, just show page_title
+        {% endcomment -%}
+        {%- unless active -%}
+          {% capture safe_page_title %}
+            {% if page_title contains " | Guardair" %}
+              {{ page_title | replace: " | Guardair", "" | strip }}
+            {% else %}
+              {{ page_title }}
+            {% endif %}
+          {% endcapture %}
+          <li>{{ safe_page_title }}</li>
+        {%- endunless -%}
+
+      {%- elsif template contains 'product' -%}
+        {%- assign referrer_url = request.headers.Referrer -%}
+        {%- if referrer_url and referrer_url contains '/pages/' -%}
+          <li><a href="{{ referrer_url }}" class="custom-referrer">Back to List</a></li>
+        {%- elsif collection.url -%}
+          <li>
+            <a href="javascript:void(0);">{{ 'collections.general.products' | t }}</a>
+          </li>
+          {% capture safe_collection_title %}
+            {% if collection.title contains " | Guardair" %}
+              {{ collection.title | replace: " | Guardair", "" | strip }}
+            {% else %}
+              {{ collection.title }}
+            {% endif %}
+          {% endcapture %}
+          <li>
+            <a href="{{ collection.url }}">{{ safe_collection_title }}</a>
+          </li>
+        {%- else -%}
+          <li><a href="/collections/all">Products</a></li>
+        {%- endif -%}
+        {% capture safe_product_title %}
+          {% if product.title contains " | Guardair" %}
+            {{ product.title | replace: " | Guardair", "" | strip }}
+          {% else %}
+            {{ product.title }}
+          {% endif %}
+        {% endcapture %}
+        <li>{{ safe_product_title }}</li>
+
+      {%- elsif template contains 'collection' and collection.handle -%}
+        {% capture safe_collection_title %}
+          {% if collection.title contains " | Guardair" %}
+            {{ collection.title | replace: " | Guardair", "" | strip }}
+          {% else %}
+            {{ collection.title }}
+          {% endif %}
+        {% endcapture %}
+        <li>
+          <a href="/collections/{{ collection.handle }}">{{ safe_collection_title }}</a>
+        </li>
+        {%- if current_tags -%}
+          {%- assign joined_tags = current_tags | join: ' + ' -%}
+          {% capture safe_joined_tags %}
+            {% if joined_tags contains " | Guardair" %}
+              {{ joined_tags | replace: " | Guardair", "" | strip }}
+            {% else %}
+              {{ joined_tags }}
+            {% endif %}
+          {% endcapture %}
+          <li>{{ safe_joined_tags }}</li>
+        {%- endif -%}
+
+      {%- elsif template == 'blog' -%}
+        {% capture safe_blog_title %}
+          {% if blog.title contains " | Guardair" %}
+            {{ blog.title | replace: " | Guardair", "" | strip }}
+          {% else %}
+            {{ blog.title }}
+          {% endif %}
+        {% endcapture %}
+        <li>
+          <a href="{{ blog.url }}">{{ safe_blog_title }}</a>
+        </li>
+        {%- if current_tags -%}
+          {%- assign joined_tags = current_tags | join: ' + ' -%}
+          {% capture safe_joined_tags %}
+            {% if joined_tags contains " | Guardair" %}
+              {{ joined_tags | replace: " | Guardair", "" | strip }}
+            {% else %}
+              {{ joined_tags }}
+            {% endif %}
+          {% endcapture %}
+          <li>{{ safe_joined_tags }}</li>
+        {%- endif -%}
+
+      {%- elsif template == 'article' -%}
+        {% capture safe_blog_title %}
+          {% if blog.title contains " | Guardair" %}
+            {{ blog.title | replace: " | Guardair", "" | strip }}
+          {% else %}
+            {{ blog.title }}
+          {% endif %}
+        {% endcapture %}
+        <li>
+          <a href="{{ blog.url }}">{{ safe_blog_title }}</a>
+        </li>
+        {% capture safe_article_title %}
+          {% if article.title contains " | Guardair" %}
+            {{ article.title | replace: " | Guardair", "" | strip }}
+          {% else %}
+            {{ article.title }}
+          {% endif %}
+        {% endcapture %}
+        <li>{{ safe_article_title }}</li>
+
+      {%- elsif template == 'cart' -%}
+        <li>{{ 'layout.cart.title' | t }}</li>
+
+      {%- elsif template == 'search' -%}
+        <li>{{ 'templates.search.title' | t }}</li>
+      {%- endif -%}
+    </ul>
+  </div>
+</div>
+<!-- breadcrumbs ends -->
+
+
+
+<!-- JS Cleanup -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var breadcrumbsContainer = document.getElementById('breadcrumbs');
+    if (!breadcrumbsContainer) return;
+
+    var guardairRegex = /\s*\|\s*Guardair/g;
+
+    function removeGuardairText(node) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        node.textContent = node.textContent.replace(guardairRegex, '');
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        for (var i = 0; i < node.childNodes.length; i++) {
+          removeGuardairText(node.childNodes[i]);
+        }
+      }
+    }
+
+    // First cleanup pass on page load
+    removeGuardairText(breadcrumbsContainer);
+
+    // Small follow-up passes if any scripts re-inject the text
+    setTimeout(function() {
+      removeGuardairText(breadcrumbsContainer);
+    }, 50);
+
+    setTimeout(function() {
+      removeGuardairText(breadcrumbsContainer);
+      // Now that we've done our final cleanup, fade the breadcrumbs in
+      breadcrumbsContainer.style.opacity = 1;
+    }, 100);
+  });
+</script>

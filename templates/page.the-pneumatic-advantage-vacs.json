@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "custom_video_products_section_VidGWJ": {
+      "type": "custom-video-products-section",
+      "blocks": {
+        "product_WLHnwM": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-55-gallon-vacuum-kit-w-2-inlet"
+          }
+        },
+        "product_FxdBTx": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-30-gallon-vacuum-kit-w-2-inlet"
+          }
+        },
+        "product_8FtTiR": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-20-gallon-vacuum-kit-w-2-inlet"
+          }
+        },
+        "product_xNVdfn": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-10-gallon-vacuum-kit-w-1-5-inlet"
+          }
+        },
+        "product_AWYhxx": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-5-gallon-vacuum-kit-w-1-25-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "product_WLHnwM",
+        "product_FxdBTx",
+        "product_8FtTiR",
+        "product_xNVdfn",
+        "product_AWYhxx"
+      ],
+      "settings": {
+        "main_head": "",
+        "text": "",
+        "enable_video_looping": true,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=c3Ca5lwAU24",
+        "cover_image": "shopify:\/\/shop_images\/opening_screen.png",
+        "text_bottom": "<p><strong>Advantages vs Electric Vacuums<\/strong><\/p><ul><li><strong>No electric motor to wear out or burnout. <\/strong>Motor failure most often occurs in high-demand applications where a motor is strained for long periods of time, such as vacuuming heavy liquids or operating with a clogged filter.<\/li><li><strong>With no electric motor, sparking at the brushes is eliminated<\/strong>, and no electric fields are present. Important in hazardous locations when combustible dust or fumes are present.<\/li><li><strong>No dangerous, high voltage electric cords<\/strong> that become frayed over time as they are dragged across shop floors or run over by carts or forklift trucks. Important safety feature particularly on steel surfaces or where floors are wet.<\/li><li><strong>Generate significantly more vacuum lift than electric vacs<\/strong> to suck up heavier materials a higher vertical distance.<\/li><li><strong>Compressed air is often more readily available than electricity <\/strong>in many<\/li><li>in-plant or mobile locations.<\/li><li>With an unlimited lifespan, <strong>Total Cost of Ownership (TCO) can be lower <\/strong>than equivalent electric vacs.<\/li><\/ul>",
+        "product_head": "FIND THE SIZE YOU NEED: ",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "9a2c0e1c-0845-4b17-b738-8b24e3c5ba6a": {
+      "type": "custom-video-products-section",
+      "blocks": {
+        "12f6019b-9431-4198-aa4e-1954138d7112": {
+          "type": "Product",
+          "settings": {
+            "product": "55-gallon-hazardous-location-dual-venturi-drum-vacuum-kits-dual-b-venturi-w-11-2-vac-hose-tools-atex-certified"
+          }
+        },
+        "fdfb444a-abb6-4b5b-a117-af681441e9b5": {
+          "type": "Product",
+          "settings": {
+            "product": "30-gallon-drum-vacuum-kits-b-venturi-w-11-2-vac-hose-tools"
+          }
+        },
+        "23bfb63c-5e2c-4a7e-aa47-95ca9cbc9544": {
+          "type": "Product",
+          "settings": {
+            "product": "20-gallon-single-venturi-static-conductive-drum-vacuums-d-venturi-w-11-2-vac-hose-tools"
+          }
+        },
+        "e65888a2-744d-4709-bb7a-08f6437a0f38": {
+          "type": "Product",
+          "settings": {
+            "product": "10-gallon-vacuum-kit-d-venturi-w-11-2-vac-hose-tools"
+          }
+        },
+        "56b936d4-18e9-4a09-8b21-637b71c0684d": {
+          "type": "Product",
+          "settings": {
+            "product": "5-gallon-complete-vacuum"
+          }
+        }
+      },
+      "block_order": [
+        "12f6019b-9431-4198-aa4e-1954138d7112",
+        "fdfb444a-abb6-4b5b-a117-af681441e9b5",
+        "23bfb63c-5e2c-4a7e-aa47-95ca9cbc9544",
+        "e65888a2-744d-4709-bb7a-08f6437a0f38",
+        "56b936d4-18e9-4a09-8b21-637b71c0684d"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_head": "",
+        "text": "",
+        "enable_video_looping": true,
+        "video_url": "https:\/\/youtu.be\/U5ZbQbRLKQs",
+        "cover_image": "shopify:\/\/shop_images\/download_12.png",
+        "text_bottom": "<p>Guardair compressed air-powered vacuums offer significant advantages in performance, dependability, safety, and life-cycle cost over conventional electric-powered vacuums.<\/p><ul><li>No electricity required—operate strictly on compressed air<\/li><li>Dramatically more powerful—up to 213 inches of water lift<\/li><li>Always dependable—no moving parts<\/li><li>Trouble free—no electric motors to burn out<\/li><li>No dangerous power cords—safe in almost any wet environment<\/li><li>Extremely versatile—vacuum chips, dust, powders, and most liquids<\/li><li>Quiet operation—inherently low-noise; extra silent option available<\/li><li>Filtration options—standard or HEPA filtration available<\/li><\/ul>",
+        "product_head": "FIND THE SIZE YOU NEED: ",
+        "padding_top": 0,
+        "padding_bottom": 25
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_video_products_section_VidGWJ",
+    "9a2c0e1c-0845-4b17-b738-8b24e3c5ba6a"
+  ]
+}

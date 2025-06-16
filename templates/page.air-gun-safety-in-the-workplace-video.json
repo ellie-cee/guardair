@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "553e42d3-acb6-4eee-95a1-7feaff703543": {
+      "type": "custom-video-products-section",
+      "blocks": {
+        "be17eb54-b24c-45d2-81ce-4c8d5701f9d9": {
+          "type": "Product",
+          "settings": {
+            "product": "ultra-xtrathrust-u75xt-safety-air-gun-6-w-long-trigger"
+          }
+        },
+        "96609b6d-e47d-4734-80c8-6a486573735b": {
+          "type": "Product",
+          "settings": {
+            "product": "palmjet-ga44-safety-air-gun-4-straight"
+          }
+        },
+        "c52f5ac0-fd2d-4c45-945d-acb2af3d0ce2": {
+          "type": "Product",
+          "settings": {
+            "product": "thumbswitch-900-safety-air-gun"
+          }
+        },
+        "6e705940-42c5-4623-b928-b0044145b10b": {
+          "type": "Product",
+          "settings": {
+            "product": "force-5-f5-safety-air-gun-24"
+          }
+        },
+        "1fb8f6b7-fc3a-4011-8441-31ebe8eed764": {
+          "type": "Product",
+          "settings": {
+            "product": "syphon-spray-gun-79sg-6"
+          }
+        }
+      },
+      "block_order": [
+        "be17eb54-b24c-45d2-81ce-4c8d5701f9d9",
+        "96609b6d-e47d-4734-80c8-6a486573735b",
+        "c52f5ac0-fd2d-4c45-945d-acb2af3d0ce2",
+        "6e705940-42c5-4623-b928-b0044145b10b",
+        "1fb8f6b7-fc3a-4011-8441-31ebe8eed764"
+      ],
+      "settings": {
+        "main_head": "",
+        "text": "",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=nvVEpaj_3Ko&list=TLGGy9ZwGAnJVFkxNDA0MjAyMw",
+        "cover_image": "shopify:\/\/shop_images\/maxresdefault.png",
+        "text_bottom": "<p>Produced by Guardair Corporation, this 8-minute safety video identifies potentially dangerous workplace practices related to air gun usage, outlines corrective actions, and covers steps to ensure OSHA compliance. Includes the following important topics:<\/p><ul><li>OSHA Regulations governing the use of air guns:<br\/><em>  OHSA Standard 29 CFR 1910.242(b) - Compressed Air Used For Cleaning<br\/>  OSHA Standard 29 CFR 1910.95 – Occupational Noise Exposure<\/em><\/li><li>Meeting the 30 psi requirement<\/li><li>Incorporating effective “chip-guarding”<\/li><li>Limiting excessive noise<\/li><li>Selecting the right safety air gun<\/li><li>Reinforcing safe operating practices<\/li><\/ul><h2><em><strong>Ideal for your next plant safety meeting!<\/strong><\/em><\/h2>",
+        "product_head": "SEE OUR SAFETY AIR GUNS:",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "553e42d3-acb6-4eee-95a1-7feaff703543"
+  ]
+}

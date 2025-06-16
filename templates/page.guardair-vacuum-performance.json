@@ -1,0 +1,210 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "5be06d1f-e6e4-4b38-8784-90bf1400ab2b": {
+      "type": "ga-vacuum-performance",
+      "blocks": {
+        "8e5a7df0-7f52-4942-84ea-c5a8ff39d7fc": {
+          "type": "block_heading",
+          "settings": {
+            "main_heading": "Expected Vacuum Rates",
+            "heading1": "Venturi Type",
+            "heading2": "Vacuum Hose Size",
+            "heading3": "Gravel(lbs\/min)",
+            "heading4": "Aluminum Chips(lbs\/min)",
+            "heading5": "Sand(lbs\/min)",
+            "heading6": "Water(gal\/min)"
+          }
+        },
+        "b9130bbd-6216-4e1b-9123-9e5af69e3132": {
+          "type": "block_data",
+          "settings": {
+            "data1": "M",
+            "data2": "1¼\"",
+            "data3": "20",
+            "data4": "22",
+            "data5": "17",
+            "data6": "24"
+          }
+        },
+        "dbae59df-d2bc-4044-94d2-64c5f59be072": {
+          "type": "block_data",
+          "settings": {
+            "data1": "S",
+            "data2": "1½\"",
+            "data3": "22",
+            "data4": "22",
+            "data5": "17",
+            "data6": "25"
+          }
+        },
+        "7747f514-a063-43b0-942a-d9a483f1993f": {
+          "type": "block_data",
+          "settings": {
+            "data1": "D",
+            "data2": "1½\"",
+            "data3": "35",
+            "data4": "32",
+            "data5": "35",
+            "data6": "48"
+          }
+        },
+        "72b46b94-ff8f-425f-8900-ec895fafcf91": {
+          "type": "block_data",
+          "settings": {
+            "data1": "B",
+            "data2": "1½\"",
+            "data3": "33",
+            "data4": "28",
+            "data5": "29",
+            "data6": "47"
+          }
+        },
+        "8eb58a64-c285-4f27-9644-4acd9a4ec0fa": {
+          "type": "block_data",
+          "settings": {
+            "data1": "2B",
+            "data2": "1½\"",
+            "data3": "34",
+            "data4": "29",
+            "data5": "25",
+            "data6": "32"
+          }
+        },
+        "f24d5869-1531-429c-9203-15191ff8a154": {
+          "type": "block_data",
+          "settings": {
+            "data1": "B",
+            "data2": "2\"",
+            "data3": "39",
+            "data4": "32",
+            "data5": "29",
+            "data6": "81"
+          }
+        },
+        "23e74ff6-4a69-4141-a49e-af86efe16be3": {
+          "type": "block_data",
+          "settings": {
+            "data1": "2B",
+            "data2": "2\"",
+            "data3": "53",
+            "data4": "35",
+            "data5": "32",
+            "data6": "63"
+          }
+        },
+        "41ad2d41-0239-4bed-baf7-eb8de9840bad": {
+          "type": "block_heading1",
+          "settings": {
+            "main_heading": "Vacuum Noise Levels",
+            "heading1": "Vacuum Generating Headwith Venturi Type",
+            "heading2": "Standard Exhaust Noise Level(dB)",
+            "heading3": "Extra Silent Exhaust Noise Level(dB)",
+            "heading4": "",
+            "heading5": "",
+            "heading6": ""
+          }
+        },
+        "814d1b41-eaba-44e2-8327-512ad7d99300": {
+          "type": "block_data1",
+          "settings": {
+            "data1": "M",
+            "data2": "95",
+            "data3": "88",
+            "data4": "",
+            "data5": "",
+            "data6": ""
+          }
+        },
+        "cdc4e43d-66f7-47d7-a629-8ae482fc64bf": {
+          "type": "block_data1",
+          "settings": {
+            "data1": "S",
+            "data2": "96",
+            "data3": "85",
+            "data4": "",
+            "data5": "",
+            "data6": ""
+          }
+        },
+        "baf32ab3-d07c-46b0-9881-807e7222d702": {
+          "type": "block_data1",
+          "settings": {
+            "data1": "D",
+            "data2": "101",
+            "data3": "87",
+            "data4": "",
+            "data5": "",
+            "data6": ""
+          }
+        },
+        "3070a1ba-aec1-42cd-a99d-a72f3de538ad": {
+          "type": "block_data1",
+          "settings": {
+            "data1": "B",
+            "data2": "101",
+            "data3": "94",
+            "data4": "",
+            "data5": "",
+            "data6": ""
+          }
+        },
+        "1f75a792-3fd7-4fda-b5d3-93b4ae3915a5": {
+          "type": "block_data1",
+          "settings": {
+            "data1": "2B",
+            "data2": "103",
+            "data3": "90",
+            "data4": "",
+            "data5": "",
+            "data6": ""
+          }
+        },
+        "dd732845-ee11-47ae-bca2-b0c545d58f81": {
+          "type": "product_blocks",
+          "settings": {
+            "product_heading": "SHOP PNEUMATIC VACUUMS:",
+            "product1": "55-gallon-hazardous-location-dual-venturi-drum-vacuum-kits-dual-b-venturi-w-11-2-vac-hose-tools-atex-certified",
+            "product2": "30-gallon-drum-vacuum-kits-b-venturi-w-11-2-vac-hose-tools",
+            "product3": "20-gallon-single-venturi-static-conductive-drum-vacuums-d-venturi-w-11-2-vac-hose-tools",
+            "product4": "10-gallon-vacuum-kit-d-venturi-w-11-2-vac-hose-tools",
+            "product5": "5-gallon-complete-vacuum"
+          }
+        }
+      },
+      "block_order": [
+        "8e5a7df0-7f52-4942-84ea-c5a8ff39d7fc",
+        "b9130bbd-6216-4e1b-9123-9e5af69e3132",
+        "dbae59df-d2bc-4044-94d2-64c5f59be072",
+        "7747f514-a063-43b0-942a-d9a483f1993f",
+        "72b46b94-ff8f-425f-8900-ec895fafcf91",
+        "8eb58a64-c285-4f27-9644-4acd9a4ec0fa",
+        "f24d5869-1531-429c-9203-15191ff8a154",
+        "23e74ff6-4a69-4141-a49e-af86efe16be3",
+        "41ad2d41-0239-4bed-baf7-eb8de9840bad",
+        "814d1b41-eaba-44e2-8327-512ad7d99300",
+        "cdc4e43d-66f7-47d7-a629-8ae482fc64bf",
+        "baf32ab3-d07c-46b0-9881-807e7222d702",
+        "3070a1ba-aec1-42cd-a99d-a72f3de538ad",
+        "1f75a792-3fd7-4fda-b5d3-93b4ae3915a5",
+        "dd732845-ee11-47ae-bca2-b0c545d58f81"
+      ],
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/vacuum-lift-vs-vacuum-flow-single-venturi_large_01c4e3d1-a91e-4b46-ab0d-a946aa9e6692.webp",
+        "img2": "shopify:\/\/shop_images\/vacuum-lift-vs-vacuum-flow-dual-venturi_large_05858993-cffc-4e67-a859-e15303246386.webp",
+        "richtext1": "<p><em><strong>Operating at 100 psi with recommended air line hose.<\/strong><\/em><\/p>",
+        "richtext2": "<p><em><strong>Operating at 100 psi with recommended air line hose.<\/strong><\/em><\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5be06d1f-e6e4-4b38-8784-90bf1400ab2b"
+  ]
+}

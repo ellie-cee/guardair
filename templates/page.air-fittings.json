@@ -1,0 +1,360 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "e2106819-9390-4116-af30-1e7b3f419aa9": {
+      "type": "Air-fittings",
+      "blocks": {
+        "11681ee7-a39e-450d-8162-157560344f49": {
+          "type": "tab1",
+          "settings": {
+            "product": "1-4-quick-disconnect-industrial-interchange-plug-1-4-mnpt",
+            "product2": "1-4-quick-disconnect-high-flow-plug-1-4-mnpt"
+          }
+        },
+        "f02bddd4-a0e3-4b3e-9ca0-cdd153cafc34": {
+          "type": "tab1-heading",
+          "settings": {
+            "heading1": "Male Thread",
+            "heading2": "Plug Size",
+            "heading3": "Industrial Interchange*",
+            "heading4": "High Flow**"
+          }
+        },
+        "2f3a64fe-a284-4904-a818-909ea306d1dd": {
+          "type": "tab1table2-heading",
+          "settings": {
+            "heading1": "Universal Coupler***",
+            "heading2": "Body Size",
+            "heading3": "Male Thread"
+          }
+        },
+        "25efd198-5091-4f9c-a062-28c7639e46e5": {
+          "type": "tab1table2",
+          "settings": {
+            "product": "1-4-quick-disconnect-universal-brass-coupler-1-4-mnpt"
+          }
+        },
+        "0bd790e2-55eb-48dc-acb3-ee7b6f50ca3f": {
+          "type": "tab1",
+          "settings": {
+            "product": "1-4-quick-disconnect-industrial-interchange-plug-3-8-mnpt",
+            "product2": "1-4-quick-disconnect-high-flow-plug-3-8-mnpt"
+          }
+        },
+        "b7a155ce-0829-456e-934f-7af1741cb2c0": {
+          "type": "tab1",
+          "settings": {
+            "product": "3-8-quick-disconnect-industrial-interchange-plug-3-8-mnpt",
+            "product2": ""
+          }
+        },
+        "8dac834a-1fde-4e6a-87ee-972e7f1f65f0": {
+          "type": "tab1table2",
+          "disabled": true,
+          "settings": {
+            "product": "1-4-quick-disconnect-universal-brass-coupler-1-4-fnpt"
+          }
+        },
+        "98cf2837-60ed-4869-9005-639374984ca2": {
+          "type": "tab1table2",
+          "settings": {
+            "product": "1-4-quick-disconnect-universal-brass-coupler-3-8-mnpt"
+          }
+        },
+        "055e8b7e-bda9-43c1-a4c6-0a8c87b172aa": {
+          "type": "tab1table2",
+          "settings": {
+            "product": "3-8-quick-disconnect-universal-brass-coupler-3-8-mnpt"
+          }
+        },
+        "8ad8efd2-2023-4521-b79e-9feba93cde2d": {
+          "type": "tab1-heading",
+          "disabled": true,
+          "settings": {
+            "heading1": "",
+            "heading2": "",
+            "heading3": "",
+            "heading4": ""
+          }
+        },
+        "0abcfb3b-e4a8-4a5d-bdf1-8063a4117302": {
+          "type": "tab1-table3heading",
+          "settings": {
+            "table3_heading1": "Female Thread",
+            "table3_heading2": "Plug Size",
+            "table3_heading3": "Industrial Interchange*",
+            "table3_heading4": "High Flow**"
+          }
+        },
+        "90e86058-1b70-4317-ac9c-93453bd0bbb9": {
+          "type": "tab1_table3",
+          "settings": {
+            "product": "1-4-quick-disconnect-industrial-interchange-plug-1-4-fnpt",
+            "product2": "1-4-quick-disconnect-high-flow-plug-1-4-fnpt"
+          }
+        },
+        "8c00d93a-5810-4b63-8574-f9102761e97b": {
+          "type": "tab1_table3",
+          "settings": {
+            "product": "1-4-quick-disconnect-industrial-interchange-plug-3-8-fnpt",
+            "product2": "1-4-quick-disconnect-high-flow-plug-3-8-fnpt"
+          }
+        },
+        "424d2503-508d-401a-b56b-0a224257e132": {
+          "type": "tab1_table3",
+          "settings": {
+            "product": "3-8-quick-disconnect-industrial-interchange-plug-3-8-fnpt",
+            "product2": ""
+          }
+        },
+        "e875aefe-e355-41e4-936b-191dd3477382": {
+          "type": "tab1-table5heading",
+          "settings": {
+            "table5_heading1": "Hose Barb",
+            "table5_heading2": "Plug Size",
+            "table5_heading3": "Industrial Interchange*",
+            "table5_heading4": "High Flow**"
+          }
+        },
+        "55ea78e8-8e93-4466-bfac-dd7126252019": {
+          "type": "tab1_table5",
+          "settings": {
+            "product": "1-4-quick-disconnect-industrial-interchange-plug-1-4-hose-barb",
+            "product2": "1-4-quick-disconnect-high-flow-plug-1-4-hose-barb"
+          }
+        },
+        "1daab2c7-288e-434e-8d6d-d92a319d4342": {
+          "type": "tab1_table5",
+          "settings": {
+            "product": "",
+            "product2": "1-4-quick-disconnect-high-flow-plug-3-8-hose-barb"
+          }
+        },
+        "8570ac44-c18a-41e7-9253-844908341713": {
+          "type": "tab1_table5",
+          "settings": {
+            "product": "3-8-quick-disconnect-industrial-interchange-plug-3-8-hose-barb",
+            "product2": ""
+          }
+        },
+        "727dcdef-0df0-4332-b578-585e2e390ca6": {
+          "type": "tab1table4-heading",
+          "settings": {
+            "table4_heading1": "Female Thread",
+            "table4_heading2": "Body Size",
+            "table4_heading3": "Female Thread"
+          }
+        },
+        "c53c4c1f-c5b1-4776-8bda-302a4ecef062": {
+          "type": "tab1table4",
+          "settings": {
+            "product": "1-4-quick-disconnect-universal-brass-coupler-1-4-fnpt"
+          }
+        },
+        "d4d03b71-fa98-416e-bf88-92fca565b076": {
+          "type": "tab1table4",
+          "settings": {
+            "product": "1-4-quick-disconnect-universal-brass-coupler-3-8-fnpt"
+          }
+        },
+        "ec8bc5cd-5d7e-43a5-b830-6bb8b7dea198": {
+          "type": "tab1table4",
+          "settings": {
+            "product": "3-8-quick-disconnect-universal-brass-coupler-3-8-fnpt"
+          }
+        },
+        "0980e191-d67f-479a-a23d-095076aaba2f": {
+          "type": "tab1table6-heading",
+          "settings": {
+            "table6_heading1": "Universal Coupler***",
+            "table6_heading2": "Body Size",
+            "table6_heading3": "Hose Barb"
+          }
+        },
+        "aa4a2a25-f682-4604-85d3-d82aa6e2bb60": {
+          "type": "tab1table6",
+          "settings": {
+            "product": "1-4-quick-disconnect-universal-brass-coupler-1-4-hose-barb"
+          }
+        },
+        "5e1ef8be-f0ea-4b6e-aaf8-39a0322fc975": {
+          "type": "tab1table6",
+          "settings": {
+            "product": "1-4-quick-disconnect-universal-brass-coupler-3-8-hose-barb"
+          }
+        },
+        "e3657bc6-1d91-4043-8f27-0888abd1d64b": {
+          "type": "tab2-heading",
+          "settings": {
+            "heading1": "",
+            "heading2": "Part #",
+            "heading3": "Description"
+          }
+        },
+        "4b2d403a-d10c-4cb9-83d5-d3cb0d5d2f2d": {
+          "type": "tab2",
+          "settings": {
+            "product": "1-4-quick-disconnect-industrial-interchange-plug-1-4-mnpt-10-pack"
+          }
+        },
+        "b75b0b8e-2667-484b-a8eb-af05f1752834": {
+          "type": "tab2",
+          "settings": {
+            "product": "1-4-quick-disconnect-high-flow-plug-1-4-mnpt-10-pack"
+          }
+        },
+        "d58647c9-29fe-4bcd-83e7-e2b25d22158f": {
+          "type": "tab2",
+          "settings": {
+            "product": "1-4-industrial-interchange-5-piece-plug-coupler-starter-kit"
+          }
+        },
+        "6efb9a5f-f8e9-402b-9cce-651dfb14f4b9": {
+          "type": "tab2",
+          "settings": {
+            "product": "1-4-high-flow-5-piece-plug-coupler-starter-kit"
+          }
+        },
+        "69ee687e-7bfe-4f57-9443-7d05fe585468": {
+          "type": "tab3-heading",
+          "settings": {
+            "heading1": "",
+            "heading2": "Part #",
+            "heading3": "Male Thread"
+          }
+        },
+        "88098db9-13a0-4e04-a84e-1b996e4ed72a": {
+          "type": "tab3",
+          "settings": {
+            "product": "universal-chicago-style-coupler-1-2-mnpt"
+          }
+        },
+        "9cc6d446-e88b-41d5-9137-85347a803a68": {
+          "type": "tab3",
+          "settings": {
+            "product": "universal-chicago-style-coupler-3-4-mnpt"
+          }
+        },
+        "ac1b46e9-a618-4185-bf29-aebcf7384139": {
+          "type": "tab3",
+          "settings": {
+            "product": "universal-chicago-style-coupler-3-4-mnpt-w-swivel"
+          }
+        },
+        "e341089f-3183-4d28-903e-d032e52d0533": {
+          "type": "tab3-table2heading",
+          "settings": {
+            "table2_heading1": "",
+            "table2_heading2": "Part #",
+            "table2_heading3": "Description"
+          }
+        },
+        "05695e96-c1e7-4ed9-8d9b-a27590dc9537": {
+          "type": "tab3_table2",
+          "settings": {
+            "product": "safety-pins-for-universal-chicago-style-coupler"
+          }
+        },
+        "7972b31b-4af6-4f2b-9f74-e95061f8e7bc": {
+          "type": "tab3_table2",
+          "settings": {
+            "product": "safety-cable-for-universal-chicago-style-coupler"
+          }
+        }
+      },
+      "block_order": [
+        "11681ee7-a39e-450d-8162-157560344f49",
+        "f02bddd4-a0e3-4b3e-9ca0-cdd153cafc34",
+        "2f3a64fe-a284-4904-a818-909ea306d1dd",
+        "25efd198-5091-4f9c-a062-28c7639e46e5",
+        "0bd790e2-55eb-48dc-acb3-ee7b6f50ca3f",
+        "b7a155ce-0829-456e-934f-7af1741cb2c0",
+        "8dac834a-1fde-4e6a-87ee-972e7f1f65f0",
+        "98cf2837-60ed-4869-9005-639374984ca2",
+        "055e8b7e-bda9-43c1-a4c6-0a8c87b172aa",
+        "8ad8efd2-2023-4521-b79e-9feba93cde2d",
+        "0abcfb3b-e4a8-4a5d-bdf1-8063a4117302",
+        "90e86058-1b70-4317-ac9c-93453bd0bbb9",
+        "8c00d93a-5810-4b63-8574-f9102761e97b",
+        "424d2503-508d-401a-b56b-0a224257e132",
+        "e875aefe-e355-41e4-936b-191dd3477382",
+        "55ea78e8-8e93-4466-bfac-dd7126252019",
+        "1daab2c7-288e-434e-8d6d-d92a319d4342",
+        "8570ac44-c18a-41e7-9253-844908341713",
+        "727dcdef-0df0-4332-b578-585e2e390ca6",
+        "c53c4c1f-c5b1-4776-8bda-302a4ecef062",
+        "d4d03b71-fa98-416e-bf88-92fca565b076",
+        "ec8bc5cd-5d7e-43a5-b830-6bb8b7dea198",
+        "0980e191-d67f-479a-a23d-095076aaba2f",
+        "aa4a2a25-f682-4604-85d3-d82aa6e2bb60",
+        "5e1ef8be-f0ea-4b6e-aaf8-39a0322fc975",
+        "e3657bc6-1d91-4043-8f27-0888abd1d64b",
+        "4b2d403a-d10c-4cb9-83d5-d3cb0d5d2f2d",
+        "b75b0b8e-2667-484b-a8eb-af05f1752834",
+        "d58647c9-29fe-4bcd-83e7-e2b25d22158f",
+        "6efb9a5f-f8e9-402b-9cce-651dfb14f4b9",
+        "69ee687e-7bfe-4f57-9443-7d05fe585468",
+        "88098db9-13a0-4e04-a84e-1b996e4ed72a",
+        "9cc6d446-e88b-41d5-9137-85347a803a68",
+        "ac1b46e9-a618-4185-bf29-aebcf7384139",
+        "e341089f-3183-4d28-903e-d032e52d0533",
+        "05695e96-c1e7-4ed9-8d9b-a27590dc9537",
+        "7972b31b-4af6-4f2b-9f74-e95061f8e7bc"
+      ],
+      "settings": {}
+    },
+    "five_table_product_column_yRqWXq": {
+      "type": "five-table-product-column",
+      "blocks": {
+        "block_JzAArg": {
+          "type": "block",
+          "settings": {
+            "itg_product": "flex-angle-swivel-fitting-3-8-npt-inlet-3-8-fnpt-outlet"
+          }
+        },
+        "block_t3FcCf": {
+          "type": "block",
+          "settings": {
+            "itg_product": "flex-angle-swivel-fitting-1-4-npt-inlet-1-4-fnpt-outlet"
+          }
+        },
+        "block_Gp4gFL": {
+          "type": "block",
+          "settings": {
+            "itg_product": "flex-angle-swivel-fitting-1-4-npt-inlet-1-4-industrial-interchange-plug"
+          }
+        }
+      },
+      "block_order": [
+        "block_JzAArg",
+        "block_t3FcCf",
+        "block_Gp4gFL"
+      ],
+      "custom_css": [
+        ".itg_product_table ul li:first-child .itg_part_accessories {font-family: Eurostile-Bol, sans-serif;}"
+      ],
+      "settings": {
+        "heading": "Flex-Angle Swivel Fittings",
+        "link": "",
+        "f_head": "Part #",
+        "s_head": "Description",
+        "variants_head": "Inlet",
+        "t_head": "Product",
+        "variants_shead": "Outlet",
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e2106819-9390-4116-af30-1e7b3f419aa9",
+    "five_table_product_column_yRqWXq"
+  ]
+}

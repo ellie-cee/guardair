@@ -1,0 +1,412 @@
+{%- if section.blocks.size > 0 -%}
+  <!-- support-container begins -->
+  <section class="support-container" data-section-id="{{ section.id }}" data-section-type="shield-block">
+    <!-- container begins -->
+    <div class="page-width">
+      <div class="row">
+        {%- for block in section.blocks -%}
+          <div class="col-sm-12">
+            <!-- support-box begins -->
+            <div class="support-box">
+              <!-- box-title begins -->
+              <div class="box-title"><h3>{{ block.settings.title }}</h3></div>
+              <!-- box-title begins -->
+              <!-- box-desc begins -->
+              <div class="box-desc">{{ block.settings.body }}</div>
+              <!-- box-desc ends -->
+
+              <!-- contact_icons begins -->
+               {% if block.settings.contact_icon_1 != blank %}
+              <div class="contact_container">
+                <div class="contact_single">
+                  {% if block.settings.contact_icon_1 != blank %}
+                    {{ block.settings.contact_icon_1 }}
+                  {% endif %}
+                  <div>{{  block.settings.contact_text_1 }}</div>
+                </div>
+                <div class="contact_single">
+                  {% if block.settings.contact_icon_2 != blank %}
+                    {{ block.settings.contact_icon_2 }}
+                  {% endif %}
+                  <div>{{  block.settings.contact_text_2 }}</div>
+                </div>
+                <div class="contact_single">
+                  {% if block.settings.contact_icon_3 != blank %}
+                  {{ block.settings.contact_icon_3 }}
+                  {% endif %}
+                  <div><a href="javascript:void(0);" onclick="openLiveChat()">{{  block.settings.contact_text_3 }}</a></div>
+                </div>
+              </div>
+              {% endif %}
+              <!-- contact_icons ends -->
+              
+              <!-- box-links begins -->
+              <div class="box-links">
+                {{ block.settings.links }}
+              </div>
+              <!-- box-links ends -->
+
+              <!-- faq begins -->
+              {% if block.settings.faq_title != blank %}
+              <div class="faq_container">
+                {% if block.settings.faq_title != blank %}
+                  <div class="box-title">
+                    <h3>{{ block.settings.faq_title }}</h3>
+                  </div>
+                {% endif %}
+
+                {% if block.settings.faq_question_1 != blank %}
+                  <div class="faq_single">
+                    <input type="checkbox" id="faq_question_1" name="faq_question_1">
+                    <label for="faq_question_1" class="faq_question">
+                      <span>{{ block.settings.faq_question_1 }}</span>
+                      <span class="icon_expand">{% render 'plus-expand' %}</span><span class="icon_expand_minus">{% render 'minus-expand' %}</span>
+                    </label>
+                    <div class="faq_answer">
+                      {{ block.settings.faq_answer_1 }}
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.faq_question_2 != blank %}
+                  <div class="faq_single">
+                    <input type="checkbox" id="faq_question_2" name="faq_question_2">
+                    <label for="faq_question_2" class="faq_question">
+                      <span>{{ block.settings.faq_question_2 }}</span>
+                      <span class="icon_expand">{% render 'plus-expand' %}</span><span class="icon_expand_minus">{% render 'minus-expand' %}</span>
+                    </label>
+                    <div class="faq_answer">
+                      {{ block.settings.faq_answer_2 }}
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.faq_question_3 != blank %}
+                  <div class="faq_single">
+                    <input type="checkbox" id="faq_question_3" name="faq_question_3">
+                    <label for="faq_question_3" class="faq_question">
+                      <span>{{ block.settings.faq_question_3 }}</span>
+                      <span class="icon_expand">{% render 'plus-expand' %}</span><span class="icon_expand_minus">{% render 'minus-expand' %}</span>
+                    </label>
+                    <div class="faq_answer">
+                      {{ block.settings.faq_answer_3 }}
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.faq_question_4 != blank %}
+                  <div class="faq_single">
+                    <input type="checkbox" id="faq_question_4" name="faq_question_4">
+                    <label for="faq_question_4" class="faq_question">
+                      <span>{{ block.settings.faq_question_4 }}</span>
+                      <span class="icon_expand">{% render 'plus-expand' %}</span><span class="icon_expand_minus">{% render 'minus-expand' %}</span>
+                    </label>
+                    <div class="faq_answer">
+                      {{ block.settings.faq_answer_4 }}
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.faq_question_5 != blank %}
+                  <div class="faq_single">
+                    <input type="checkbox" id="faq_question_5" name="faq_question_5">
+                    <label for="faq_question_5" class="faq_question">
+                      <span>{{ block.settings.faq_question_5 }}</span>
+                      <span class="icon_expand">{% render 'plus-expand' %}</span><span class="icon_expand_minus">{% render 'minus-expand' %}</span>
+                    </label>
+                    <div class="faq_answer">
+                      {{ block.settings.faq_answer_5 }}
+                    </div>
+                  </div>
+                {% endif %}
+                <!-- faq bottom text begins -->
+                  <div class="faq-bottom-text">{{ block.settings.faq_bottom }}</div>
+                <!-- faq bottom text ends -->
+              </div>
+              {% endif %}
+              <!-- faq ends -->
+              
+            </div>
+            <!-- support-box ends -->
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    <!-- container ends -->
+  </section>
+  <!-- support-container ends -->
+{%- endif -%}
+{% schema %}
+  {
+    "name": "Shield block",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "shield_block",
+        "name": "Shield block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Legendary Support"
+          },
+          {
+            "type": "richtext",
+            "id": "body",
+            "label": "Body",
+            "default": "<p>Learn how AirSpade saves time and helps you deliver the best results from your work.</p>"
+          },
+          {
+            "type": "richtext",
+            "id": "links",
+            "label": "Quick Links"
+          },
+          {
+            "type": "html",
+            "id": "contact_icon_1",
+            "label": "Contact icon 1"
+          },
+          {
+            "type": "richtext",
+            "id": "contact_text_1",
+            "label": "Contact text 1"
+          },
+          {
+            "type": "html",
+            "id": "contact_icon_2",
+            "label": "Contact icon 2"
+          },
+          {
+            "type": "richtext",
+            "id": "contact_text_2",
+            "label": "Contact text 2"
+          },
+          {
+            "type": "html",
+            "id": "contact_icon_3",
+            "label": "Contact icon 3"
+          },
+          {
+            "type": "richtext",
+            "id": "contact_text_3",
+            "label": "Contact text 3"
+          },
+          {
+            "type": "text",
+            "id": "faq_title",
+            "label": "Faq title"
+          },
+          {
+            "type": "text",
+            "id": "faq_question_1",
+            "label": "Faq question 1"
+          },
+          {
+            "type": "richtext",
+            "id": "faq_answer_1",
+            "label": "Faq answer 1"
+          },
+          {
+            "type": "text",
+            "id": "faq_question_2",
+            "label": "Faq question 2"
+          },
+          {
+            "type": "richtext",
+            "id": "faq_answer_2",
+            "label": "Faq answer 2"
+          },
+          {
+            "type": "text",
+            "id": "faq_question_3",
+            "label": "Faq question 3"
+          },
+          {
+            "type": "richtext",
+            "id": "faq_answer_3",
+            "label": "Faq answer 3"
+          },
+          {
+            "type": "text",
+            "id": "faq_question_4",
+            "label": "Faq question 4"
+          },
+          {
+            "type": "richtext",
+            "id": "faq_answer_4",
+            "label": "Faq answer 4"
+          },
+          {
+            "type": "text",
+            "id": "faq_question_5",
+            "label": "Faq question 5"
+          },
+          {
+            "type": "richtext",
+            "id": "faq_answer_5",
+            "label": "Faq answer 5"
+          },
+        {
+          "type": "richtext",
+          "id": "faq_bottom",
+          "label": "FAQ Bottom Text"
+        }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shield block",
+        "category": "Information",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "shield_block"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+
+<style>
+  .contact_single a {
+    text-decoration: none;
+    color: #121212;
+  }
+  .contact_single {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact_single p {
+    margin: 0;
+   }
+   .contact_single > * {
+     color: #000000;
+   }
+   .contact_single em {
+     font-style: normal;
+     opacity: 60%;
+     margin-left: 10px;
+   }
+  .box-desc {
+    margin-bottom: 18px !important;
+  }
+  .box-links {
+    margin-top: 20px;
+  }
+  .box-desc p {
+    margin-bottom: 16px !important;
+  }
+  .box-title {
+    margin-bottom: 18px;
+  }
+  
+  <!-- faq style beings -->
+
+  .icon_expand_minus {
+    display: none;
+  }
+  .faq_container input {
+    display: none;
+  }
+  .faq_answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 200ms all ease;
+  }
+  #faq_question_1:checked ~ .faq_answer {
+    max-height: 280px;
+    opacity: 1;
+  }
+  #faq_question_1:checked ~ .faq_question .icon_expand {
+    display: none;
+  }
+  #faq_question_1:checked ~ .faq_question .icon_expand_minus {
+    display: block;
+  }
+  #faq_question_2:checked ~ .faq_answer {
+    max-height: 280px;
+    opacity: 1;
+  }
+  #faq_question_2:checked ~ .faq_question .icon_expand {
+    display: none;
+  }
+  #faq_question_2:checked ~ .faq_question .icon_expand_minus {
+    display: block;
+  }
+  #faq_question_3:checked ~ .faq_answer {
+    max-height: 280px;
+    opacity: 1;
+  }
+  #faq_question_3:checked ~ .faq_question .icon_expand {
+    display: none;
+  }
+  #faq_question_3:checked ~ .faq_question .icon_expand_minus {
+    display: block;
+  }
+  #faq_question_4:checked ~ .faq_answer {
+    max-height: 280px;
+    opacity: 1;
+  }
+  #faq_question_4:checked ~ .faq_question .icon_expand {
+    display: none;
+  }
+  #faq_question_4:checked ~ .faq_question .icon_expand_minus {
+    display: block;
+  }
+  #faq_question_5:checked ~ .faq_answer {
+    max-height: 280px;
+    opacity: 1;
+  }
+  #faq_question_5:checked ~ .faq_question .icon_expand {
+    display: none;
+  }
+  #faq_question_5:checked ~ .faq_question .icon_expand_minus {
+    display: block;
+  }
+  .faq_question {
+    display: flex;
+    justify-content: space-between;
+    color: #002395;
+    font-family: Eurostile-Bol, sans-serif;
+    font-size: 18px;
+  }
+  .faq_question svg {
+    max-width: 12px;
+    width: 100%;
+    height: auto;
+    margin-right: 4px;
+    min-width: 10px;
+  }
+  .faq_single {
+    border-bottom: 1px solid #cbccce;
+    padding: 12px 0px 12px 0px;
+  }
+  .faq_container {
+    margin-top: 40px;
+  }
+  @media only screen and (max-width: 480px) {
+    .faq_single {
+      padding-bottom: 10px;
+      padding-top: 16px!important;
+    }
+  }
+  .faq_single:last-child {
+    border-bottom: none;
+  }
+  .faq_question {
+    cursor: pointer;
+  }
+  .faq_answer a {
+    text-decoration: none;
+    color: #002395;
+    font-family: Eurostile-Bol, sans-serif;
+  }
+  .faq_container .box-title {
+    margin-bottom: 12px !important;
+  }
+<!-- faq style ends -->
+
+  
+  </style>

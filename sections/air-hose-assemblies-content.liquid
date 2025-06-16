@@ -1,0 +1,160 @@
+{%- style -%}
+    #{{ section.settings.sectionid | downcase | replace:' ', '' }} .itg_air_page_content {
+      padding-top: {{ section.settings.content-padding_top | times: 0.75 | round: 0 }}px;
+    }
+    
+{%- endstyle -%}
+
+
+<div id="{{ section.settings.sectionid | downcase | replace:' ', '' }}" class="itg_air_hose_content_wrapper">
+  <div class="page-width">
+    <div class="itg_air_page_content">
+      <h3>{{ section.settings.heading }}</h3>
+      {{ section.settings.text }}
+      <div class="itg_imgbig"><img src="{{ section.settings.img | img_url: 'master' }}" alt="{{ section.settings.heading }}"></div>
+      <div class="itg_tabel_content">
+        <ul>
+        <li>
+           <div class="itg_tabel_heading">
+              Part Number
+          </div>
+          <div class="itg_tabel_heading">
+            Hose ID
+          </div>
+          <div class="itg_tabel_heading">
+            Hose Length
+          </div>
+           <div class="itg_tabel_heading">
+            Max Pressure
+          </div>
+          <div class="itg_tabel_heading">
+            Fittings
+          </div>
+        </li>
+         {% for block in section.blocks %}
+          {% assign product = block.settings.productid %}
+     {% comment %}  {% assign current_variant = product.selected_or_first_available_variant %}
+<span class="variant-sku">{{ current_variant.sku }}</span>{% endcomment %}
+        {%- assign var_title = product.title -%}
+          {% assign vax = product.title | split: '"' %}
+          {% assign modd-title = vax[0] | split: ' - ' %}
+          {% assign modd-title-fu = modd-title[1] %}
+        
+
+      
+       {%- for variant in product.variants -%}
+         {%- assign var_sku = variant.sku -%}
+         {%- assign var_id = variant.id -%}
+         {% if variant.title != blank %}
+           {%- assign var_title = variant.title -%}
+          {% endif %}
+         {% if variant.metafields.custom.hose_length != blank %} 
+           {% assign hoseLength = variant.metafields.custom.hose_length %}
+           {% endif %}
+         {%- assign show_overview = false -%}
+         {%- assign overview = '' -%}
+          {%- for i in (1..12) -%}
+            {%- capture include_id -%}Includes-{{ i }}{%- endcapture -%}
+              {%- if variant.metafields['global'][include_id] != blank -%}
+                {%- assign show_overview = true -%}
+                {%- capture overview -%}{{ overview | strip  }}{{ variant.metafields['global'][include_id] }}{%- endcapture -%}
+            {%- endif -%}
+        {%- endfor -%}
+        {%- if overview != blank -%}
+            {%- capture overview %}{{ overview | strip }}{%- endcapture -%}
+        {%- endif -%}
+        <li>
+           <div class="itg_tabel_heading itg_current_sku"><a href="{{ shop.url }}{{ product.url }}?variant={{ var_id }}/">	{{ var_sku }} </a></div>
+          <div class="itg_tabel_heading itg_hose_id">
+           {% if var_title == 'Default Title' %} {{ modd-title-fu }}" {% else %}{{ var_title | split:'"' | first }}"{% endif %}
+          </div>
+          <div class="itg_tabel_heading itg_hose_length">
+          {% if var_title == 'Default Title' %} {{ hoseLength }} {% else %}{{ var_title | split:'x' | last }}{% endif %}
+          </div>
+          <div class="itg_tabel_heading itg_max_pressure">
+           {{ block.settings.pressure_text }}
+           </div>
+         
+          <div class="itg_tabel_heading itg_description">
+            {{ block.settings.fittings }}
+          </div>
+          
+        </li>
+        {% endfor %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Air hose content",
+    "settings": [
+      {
+        "type": "text",
+        "id": "sectionid",
+        "label": "Toplink Name"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "range",
+        "id": "content-padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Content Top Padding",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "name": "Block",
+        "type": "block",
+        "settings": [
+          {
+            "type": "product",
+            "id": "productid",
+            "label": "Product"
+          },
+          {
+            "type":"text",
+            "id": "pressure_text",
+            "label": "Pressure Text"
+          },
+          {
+            "type": "text",
+            "id": "fittings",
+            "label": "Fittings Text"
+          }
+        ]
+      }      
+    ],
+    "presets": [
+      {
+        "name": "Air hose content"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,245 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="imgtext_bloksWrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="blocks_images_texts">
+      {% for block in section.blocks %}
+        <div class="blocks_images_textsmain {{ block.settings.img_position }} {{ block.settings.img_alignment }}">
+        <div class="block_textdiv">
+          {% if block.settings.head!=blank %}
+          <h2>{{ block.settings.head }}</h2>
+          {% endif %}
+          {% if block.settings.content!=blank %}
+            <div class="blocksdiv_contents">
+              {{ block.settings.content }}
+            </div>
+          {% endif %}
+            <div class="blocksdiv_button">
+            {%- if block.settings.button_label != blank -%}
+              <a
+                {% if block.settings.button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.button_link }}"
+                {% endif %}
+                class="button button--primary"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.button_label | escape }}
+              </a>
+            {%- endif -%}
+            </div>
+        </div>
+        {% if block.settings.img_logo!=blank %}
+        <div class="block_imgdiv">
+          <img src="{{ block.settings.img_logo | img_url : "master" }}">
+        </div>
+      {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Text Image Blocks",
+    "settings": [
+       {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Image-Text",
+        "name":"Image-Text",
+          "settings":[
+            {
+              "type":"image_picker",
+              "id":"img_logo",
+              "label":"Select Image"
+            },
+            {
+            "type": "select",
+            "id": "img_position",
+            "label": "Image Alignment ",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "right"
+           },
+            {
+              "type":"text",
+              "id":"head",
+              "label":"Title"
+            },
+            {
+              "type":"richtext",
+              "id":"content",
+              "label":"Content"
+            },
+            {
+            "type": "select",
+            "id": "img_alignment",
+            "label": "Image Width",
+            "options": [
+              {
+                "value": "thirty",
+                "label": "30%"
+              },
+              {
+                "value": "fifty",
+                "label": "50%"
+              },
+              {
+                "value": "seventy",
+                "label": "70%"
+              }
+            ],
+            "default": "seventy"
+          },
+            {
+              "type": "text",
+              "id": "button_label",
+              "label": "Button label"
+            },
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "Button link"
+            }
+          ]
+      }
+    ],
+    "presets":[
+      {
+       "name": "Text Image Blocks"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+
+.imgtext_bloksWrapper .blocks_images_textsmain {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgtext_bloksWrapper .blocks_images_textsmain.seventy .block_textdiv {
+    width: 30%;
+}
+
+.imgtext_bloksWrapper .blocks_images_textsmain.seventy .block_imgdiv {
+    width: 70%;
+}
+.imgtext_bloksWrapper .blocks_images_textsmain.fifty .block_textdiv {
+    width: 50%;
+}
+.imgtext_bloksWrapper .blocks_images_textsmain.fifty .block_imgdiv {
+    width: 50%;
+}  
+.imgtext_bloksWrapper .blocks_images_textsmain.thirty .block_textdiv {
+    width: 70%;
+}
+.imgtext_bloksWrapper .blocks_images_textsmain.thirty .block_imgdiv {
+    width: 30%;
+}  
+.imgtext_bloksWrapper .block_textdiv h2 {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.imgtext_bloksWrapper .blocksdiv_contents ul {
+    margin: 0;
+}
+
+.imgtext_bloksWrapper .blocks_images_textsmain {
+    border-bottom: 2px solid #ddd;
+    padding-top: 22px;
+    padding-bottom: 44px;
+}
+
+.imgtext_bloksWrapper .blocks_images_textsmain:last-child {
+    border: navajowhite;
+    padding-bottom: 0;
+}
+
+.imgtext_bloksWrapper .blocks_images_textsmain:first-child {
+    padding-top: 0;
+}
+  
+.imgtext_bloksWrapper .blocks_images_textsmain.right {
+    text-align: left;
+}
+.imgtext_bloksWrapper .blocks_images_textsmain.left {
+    flex-direction: row-reverse;
+}
+.imgtext_bloksWrapper .blocks_images_textsmain.left .block_textdiv {
+    display: grid;
+    justify-content: flex-end;
+}  
+  
+.imgtext_bloksWrapper .block_imgdiv img {
+    width: 100%;
+}
+  
+.button {
+  opacity: 1;
+  background-color: #002395;
+  text-transform: uppercase;
+  font-family: Eurostile-Bol, sans-serif;
+  font-size: 18px;
+  margin-top: 0px;
+}
+  
+</style>
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

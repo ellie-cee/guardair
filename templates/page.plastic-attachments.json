@@ -1,0 +1,208 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "c619e152-183d-4304-babb-5a160e74f63f": {
+      "type": "drums-three-section",
+      "blocks": {
+        "4e5ac0dd-1b0c-4230-bc99-e3cb2962a992": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-extension-wand-1-1-4-x-19"
+          }
+        },
+        "block_7Yjw4A": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-extension-wand-1-1-4-x-20"
+          }
+        },
+        "f192481b-151d-40d2-996b-30a392b74794": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-crevice-tool-1-1-4-x-9"
+          }
+        },
+        "d2d0c891-a540-4f09-95c5-16741ea61772": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-crevice-tool-1-1-4-x-12"
+          }
+        },
+        "5df0b0ce-a9b6-4f90-961a-a84b7ab93218": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-bristle-brush-tip-1-1-4"
+          }
+        },
+        "58357c54-10af-43f8-87ba-fa8a01445cdc": {
+          "type": "block",
+          "settings": {
+            "itg_product": "round-plastic-brush-1-1-4-x-3"
+          }
+        },
+        "ee39030b-0948-4900-959e-3ab55a6edfdd": {
+          "type": "block",
+          "settings": {
+            "itg_product": "round-plastic-bristle-brush-1-1-4-x-2-1-2"
+          }
+        },
+        "dbde12e1-bada-431e-b1ae-59b4e07dfb49": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-utility-tool-w-brush-1-1-4-x-6"
+          }
+        },
+        "block_WEfRi3": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-floor-brush-1-1-4-x-12"
+          }
+        },
+        "73791f4b-faf2-4dd1-88f4-e6d536fd5301": {
+          "type": "block",
+          "settings": {
+            "itg_product": "elongated-plastic-brush-1-1-4-x-5"
+          }
+        },
+        "ef2e412e-d3cc-4ff3-b32b-083459711ddc": {
+          "type": "block",
+          "settings": {
+            "itg_product": "oversized-plastic-poly-bristle-brush-1-1-4"
+          }
+        },
+        "block_MXUBKH": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-handheld-turbo-brush-1-1-4-x-6-3-8"
+          }
+        },
+        "16daf71a-bec8-426f-9d13-0a484ef5f302": {
+          "type": "block",
+          "settings": {
+            "itg_product": "gunvac-mini-vacuum-attachment-kit"
+          }
+        }
+      },
+      "block_order": [
+        "4e5ac0dd-1b0c-4230-bc99-e3cb2962a992",
+        "block_7Yjw4A",
+        "f192481b-151d-40d2-996b-30a392b74794",
+        "d2d0c891-a540-4f09-95c5-16741ea61772",
+        "5df0b0ce-a9b6-4f90-961a-a84b7ab93218",
+        "58357c54-10af-43f8-87ba-fa8a01445cdc",
+        "ee39030b-0948-4900-959e-3ab55a6edfdd",
+        "dbde12e1-bada-431e-b1ae-59b4e07dfb49",
+        "block_WEfRi3",
+        "73791f4b-faf2-4dd1-88f4-e6d536fd5301",
+        "ef2e412e-d3cc-4ff3-b32b-083459711ddc",
+        "block_MXUBKH",
+        "16daf71a-bec8-426f-9d13-0a484ef5f302"
+      ],
+      "settings": {
+        "heading": "1-1\/4\" ID Outlet",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
+    "8228c5a7-5976-4ef4-a74a-c9282715d689": {
+      "type": "drums-three-section",
+      "blocks": {
+        "d5ae8a1a-1074-4535-95c4-ed25f3bc70d8": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-crevice-tool-1-1-2-x-11"
+          }
+        },
+        "38d547e4-972a-4b8c-8fef-f94d0937b346": {
+          "type": "block",
+          "settings": {
+            "itg_product": "round-plastic-brush-tool-1-1-2-x-2"
+          }
+        }
+      },
+      "block_order": [
+        "d5ae8a1a-1074-4535-95c4-ed25f3bc70d8",
+        "38d547e4-972a-4b8c-8fef-f94d0937b346"
+      ],
+      "settings": {
+        "heading": "1–1\/2\" ID Outlet",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
+    "25edfb4d-84c9-4c6f-8bdb-bc661f992bc1": {
+      "type": "drums-three-section",
+      "blocks": {
+        "65d21866-afea-4127-b2c4-cbbe0760480c": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-pipe-cleaning-tool-1-1-4-1-1-2"
+          }
+        },
+        "e3af60ef-eb1e-4a1d-8047-04f148c84bea": {
+          "type": "block",
+          "settings": {
+            "itg_product": "flat-plastic-utility-tool-1-1-4-1-1-2"
+          }
+        },
+        "136194ab-f8db-4e4c-8941-0d48fd5cd955": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-combination-floor-brush-1-1-4-1-1-2"
+          }
+        },
+        "4b59ffb3-b862-47d5-b235-7564fc764d48": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-upholstery-clothes-tool-1-1-4-1-1-2"
+          }
+        },
+        "4134aa50-3a10-4044-84c1-af1433ee31a1": {
+          "type": "block",
+          "settings": {
+            "itg_product": "plastic-swivel-brush-1-1-4-1-1-2"
+          }
+        }
+      },
+      "block_order": [
+        "65d21866-afea-4127-b2c4-cbbe0760480c",
+        "e3af60ef-eb1e-4a1d-8047-04f148c84bea",
+        "136194ab-f8db-4e4c-8941-0d48fd5cd955",
+        "4b59ffb3-b862-47d5-b235-7564fc764d48",
+        "4134aa50-3a10-4044-84c1-af1433ee31a1"
+      ],
+      "settings": {
+        "heading": "Dual (1-1\/4\" ID & 1-1\/2\" OD) Outlets",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c619e152-183d-4304-babb-5a160e74f63f",
+    "8228c5a7-5976-4ef4-a74a-c9282715d689",
+    "25edfb4d-84c9-4c6f-8bdb-bc661f992bc1"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "053b28ea-8ce1-4a2e-835c-87f9f220834b": {
+      "type": "product-literature-section",
+      "settings": {
+        "texts": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868\" target=\"_blank\" title=\"Guardair Product Catalog\">View<\/a> our digital product catalog online.<\/p>",
+        "img_logos": "shopify:\/\/shop_images\/GA_catalog_2024_cover_v3_300px.png",
+        "img_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868",
+        "textsec": "<p>Would you like information on air guns or vacuums?<\/p>",
+        "text_btn": "Air Guns",
+        "text_url": "shopify:\/\/pages\/air-gun-literature",
+        "text_btnsec": "Vacuums",
+        "text_urlsec": "shopify:\/\/pages\/vacuum-literature",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "053b28ea-8ce1-4a2e-835c-87f9f220834b"
+  ]
+}

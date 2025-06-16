@@ -1,0 +1,155 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="nozzleWrapper section-{{ section.id }}-padding">
+    <div class="page-width">
+        <div class="nozzle_main_div">
+          <div class="text_blocks">
+          {% for block in section.blocks %}
+           {% if block.type == 'Text-And-Image' %}
+            <div class="nozzle_main_text">
+              {% if block.settings.main_head!=blank %}
+               <h2>{{ block.settings.main_head }}</h2> 
+              {% endif %}
+              {% if block.settings.text!=blank %}
+                <div class="nozzle_content">
+                  {{ block.settings.text }}
+                </div>
+              {% endif %}
+                <div class="nozzle_imgs {% if block.settings.second_img ==blank %}hh{% endif %}">
+                 {% if block.settings.first_img!=blank %}
+                  <div class="nozzle_first_img" >
+                  <img src="{{ block.settings.first_img | img_url : "master" }}">
+                  <p>{{ block.settings.first_img_text }}</p>
+                  </div>
+               {% endif %}
+                 {% if block.settings.second_img!=blank %}
+                  <div class="nozzle_second_img">
+                  <img src="{{ block.settings.second_img | img_url : "master" }}">
+                  <p>{{ block.settings.second_img_text }}</p>
+                  </div>
+                  {% endif %} 
+                </div>
+               {% if block.settings.text_bottom!=blank %}
+                <div class="nozzle_content">
+                  {{ block.settings.text_bottom }}
+                </div>
+               {% endif %}
+             </div>
+             {% endif %}
+            {% endfor %}
+          </div>
+             <div class="nozzle_product">
+            <div class="nozzle_products">
+            {% if section.settings.product_head!=blank %}
+             <h4>{{ section.settings.product_head }}</h4>
+            {% endif %}
+             <ul>
+            {% for block in section.blocks %}
+            {% assign product=block.settings.product %}
+            {% if block.type == 'Product' %}
+               <li>
+                 <a href="{{product.url}}">
+                 {% assign product_title = product.title %}
+                  {% assign clean_title = product_title | split: "PowerQUAD™ " | last %}
+                  {% assign clean_title = clean_title | split: " w/" | first %}
+                  {% assign clean_title = clean_title | split: " -" | first %}
+                <h2>{{ clean_title }}</h2>
+
+                  <img src="{{product.featured_image | img_url :"208x162"}}"/>
+                </a>
+               </li>
+            {% endif %}
+          {% endfor %}
+            </ul>
+                </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Custom Testimonial",
+    "settings": [
+      {
+      "type":"text",
+      "id":"product_head",
+      "label":"Side-Bar Heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Text-And-Image",
+        "name":"Text-And-Image",
+          "settings":[
+            {
+              "type":"text",
+              "id":"main_head",
+              "label":"Heading"
+            },
+            {
+              "type":"richtext",
+              "id":"text",
+              "label":"Text"
+            }
+          ]
+      },
+      {
+      "type": "Product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:sections.collage.blocks.product.settings.product.label"
+        }
+      ]
+    }
+    ],
+    "presets":[
+      {
+     "name": "Custom Testimonial"
+      }
+    ]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

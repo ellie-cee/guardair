@@ -1,0 +1,200 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="itg_custom_text_with_block section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="itg_flex_section">
+      <div class="itg_custom_block_section">
+        {% if section.settings.content !=blank %}
+          <div class="itg_content">
+            {{ section.settings.content }}
+          </div>
+        {% endif %}
+        <div class="itg_image_div">
+        {% if section.settings.img !=blank %}
+          <div class="itg_image_content">
+            <span><img src="{{ section.settings.img | img_url:'master'}}" alt="image"></span>
+          </div> 
+          {% endif %}
+           {% if section.settings.second_img !=blank %}
+          <div class="itg_image_second">
+            <span><img src="{{ section.settings.second_img | img_url:'master'}}" alt="image"></span>
+          </div>
+          {% endif %}
+        </div>
+        {% if section.settings.text !=blank %}
+          <div class="itg_content">
+           {{ section.settings.text }}
+          </div>
+        {% endif %}
+     </div>
+     
+      <div class="itg_block_div">
+          {% for block in section.blocks %}      
+               {% if block.settings.img_select !=blank %}
+                <div class="itg_block_img">
+                   {% if block.settings.img_url !=blank %}<a class="itg_block_link" href="{{ block.settings.img_url }}" target="_blank">{% endif %}<span><img src="{{ block.settings.img_select | img_url:'master' }}" alt="logo"></span> {% if block.settings.img_url !=blank %}</a>{% endif %}
+                </div>
+                {% endif %}
+               {% if block.settings.heading !=blank %}
+                  <div class="itg_heading_content">
+                     <span>{{ block.settings.heading }}</span>
+                  </div>
+               {% endif %}
+          {% endfor %}
+      </div>    
+    </div>   
+  </div>
+</div>
+<style>
+.itg_flex_section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.itg_custom_block_section {
+/*     width: calc(66.66666666666667% - 15px); */
+    width: calc(75% - 15px);
+} 
+.itg_image_div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.itg_block_div {
+/*     width: calc(33.333333333333336% - 15px);    */
+    width: calc(25% - 15px);
+    text-align: center;
+} 
+.itg_block_img img {
+    max-width: 100%;
+}
+.itg_heading_content span {
+    font-size: 14px;
+}
+.itg_heading_content span p {
+    line-height: 1.67;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.itg_image_content img {
+    max-width: 100%;
+}  
+.itg_heading_content span p strong {
+    font-weight: 400;
+    font-family: "Eurostile-Bol","Eurostile-Reg","Calibri","Trebuchet MS",Helvetica,Arial,Sans-serif;
+    color: #000;
+    letter-spacing: normal;
+}
+.itg_content p {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: "Eurostile-Reg","Calibri","Trebuchet MS",Helvetica,Arial,Sans-serif;
+    letter-spacing: normal;
+    color: #000;
+}
+  .itg_image_second img {
+    width: 100%;
+}
+.itg_custom_text_with_block .itg_block_img {
+    margin-bottom: 21px;
+}  
+
+</style>
+{% schema %}
+  {
+    "name": "Custom Text With Block",
+    "settings": [
+      {
+        "type":"richtext",
+        "id":"content",
+        "label":"Add Content"
+      },
+      {
+        "type":"image_picker",
+        "id":"img",
+        "label":"Image"
+      },
+       {
+        "type":"image_picker",
+        "id":"second_img",
+        "label":"Second Image"
+      },
+      {
+        "type":"richtext",
+        "id":"text",
+        "label":"Add Another Content"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"blocks",
+        "name":"block",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"img_select",
+            "label":"Image Select"
+          },
+          {
+            "type":"url",
+            "id":"img_url",
+            "label":"Image URL"
+          },
+          {
+            "type":"richtext",
+            "id":"heading",
+            "label":"Image Text"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Custom Text With Block"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

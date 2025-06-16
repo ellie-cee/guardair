@@ -1,0 +1,266 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+
+<div class="sixtableswrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+     <div class="six_tablemain">
+       {% if section.settings.heading!=blank %}
+       <div class="six_headings">
+        <h2>{{ section.settings.heading }}</h2>
+       </div>
+      {% endif %}
+        <table>
+          <thead class = "houseWrpper">
+          <tr class="main_table_Class_house">
+            <th class="vacuum_product_text">{{ section.settings.vaccumeheading }}</th>
+            <th class="tables_all_product_discription" >{{ section.settings.firstheading }}</th>
+            <th class="tables_all_product_Image">{{ section.settings.secondheading }}</th>
+            <th class="tables_all_product_lenth">{{ section.settings.thirdheading }}</th>
+            <th class="tables_all_product_lenth">{{ section.settings.fourheading }}</th>
+            <th class="tables_all_product_lenth">{{ section.settings.fiveheading }}</th>
+          </tr>
+          </thead>
+          {% for block in section.blocks %}
+
+          {% assign productthird = block.settings.third_product %}
+          {% assign productfour = block.settings.four_product %}
+          {% assign productfive = block.settings.five_product %}
+
+
+          {% assign current_variant_third = productthird.selected_or_first_available_variant %}
+          {% assign current_variant_forth = productfour.selected_or_first_available_variant %}
+          {% assign current_variant_five = productfive.selected_or_first_available_variant %}
+
+            
+          <tr class="main_table_Class_house">
+            {% if block.settings.texts!=blank %}
+             <td class="vacuum_product_text">
+             {% if block.settings.text_url!=blank %} <a href="{{ block.settings.text_url }}">{% endif %}
+             <p>{{ block.settings.texts }}</p>
+              {% if block.settings.text_url!=blank %}</a>{% endif %}
+            </a>
+            </td>
+            {% endif %}
+
+           {% if block.settings.discriptions!=blank %}
+            <td class="tables_all_product_discription">
+            {% if block.settings.discriptions_url!=blank %} <a href="{{ block.settings.discriptions_url }}">{% endif %}
+             {{ block.settings.discriptions }}
+            {% if block.settings.discriptions_url!=blank %} </a>{% endif %}
+             </td>
+             {% endif %}
+
+           {% if block.settings.img_urls!=blank %}
+            <td class="tables_all_product_Image">
+           {% if block.settings.img_urls_link!=blank %}  <a href="{{ block.settings.img_urls_link }}">{% endif %}
+            <img src="{{ block.settings.img_urls | img_url: "master"}}"/>
+            {% if block.settings.img_urls_link!=blank %}</a>{% endif %}
+            </td>
+           {% endif %}
+            
+            <td class="tables_all_product_lenth">
+            {% for variant in productthird.variants %}
+            {% if current_variant_third.available %}
+            {% assign var_id = variant.id %}
+              {% assign show_sku = block.settings.third_text %}
+             {% assign var_sku = variant.sku %}  
+              {% if show_sku == var_sku %}
+            <a href="{{ productthird.url }}?variant={{ var_id }}">
+            <p>{{ var_sku }}</p>
+             </a>
+                {% else %}
+                {% endif %}
+              {% endif %}
+              {% endfor %}
+              <p class="hidden">{{ block.settings.third_text }}</p>
+            </td>
+          
+         <td class="tables_all_product_lenth fours">
+            {% for variant in productfour.variants %}
+            {% if current_variant_forth.available %}
+            {% assign var_id = variant.id %}
+              {% assign show_sku = block.settings.fourth_text %}
+             {% assign var_sku = variant.sku %}  
+               {% if show_sku == var_sku %}
+                <a href="{{ productfour.url }}?variant={{ var_id }}">
+                 <p>{{ var_sku }}</p>
+                </a>
+                  {% else %}
+                {% endif %}
+               {% endif %}
+              {% endfor %}
+            <p class="hidden">{{ block.settings.fourth_text }}</p>
+            </td>
+          
+            <td class="tables_all_product_lenth">
+            {% for variant in productfive.variants %}
+            {% if current_variant_five.available %}
+            {% assign var_id = variant.id %}
+              {% assign show_sku = block.settings.five_text%}
+             {% assign var_sku = variant.sku %} 
+              {% if show_sku == var_sku %}
+            <a href="{{ productfive.url }}?variant={{ var_id }}">
+             <p>{{ var_sku }}</p>
+             </a>
+              {% else %}
+                {% endif %}
+              {% endif %}
+              {% endfor %}
+                <p class="hidden">{{ block.settings.five_text }}</p>
+            </td>
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Six Column Hoses Table",
+    "settings": [
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+      },
+      {
+      "type": "text",
+      "id": "vaccumeheading",
+      "label": "First Heading"
+      },
+      {
+      "type": "text",
+      "id": "firstheading",
+      "label": "Second Heading"
+      },
+      {
+      "type": "text",
+      "id": "secondheading",
+      "label": "Third Heading"
+      },
+      {
+      "type": "text",
+      "id": "thirdheading",
+      "label": "Fourth Heading"
+      },
+      {
+      "type": "text",
+      "id": "fourheading",
+      "label": "Fifth Heading"
+      },
+      {
+      "type": "text",
+      "id": "fiveheading",
+      "label": "Six Heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Product",
+        "name":"Product",
+         "settings":[
+            {
+              "type": "text",
+              "id": "texts",
+              "label": "Type Text"
+            },
+            {
+              "type": "url",
+              "id": "text_url",
+              "label": "Type Text Link"
+            },
+            {
+              "type": "richtext",
+              "id": "discriptions",
+              "label": "Description Text"
+            },
+            {
+              "type": "url",
+              "id": "discriptions_url",
+              "label": "Description Text Link"
+            },
+           {
+              "type": "image_picker",
+              "id": "img_urls",
+              "label": "Select Product Image"
+            },
+           {
+              "type": "url",
+              "id": "img_urls_link",
+              "label": "Product Image Link"
+            },
+            {
+              "type": "product",
+              "id": "third_product",
+              "label": "First Product Select"
+            },
+           {
+              "type": "text",
+              "id": "third_text",
+              "label": "First Product Sku"
+            },
+           {
+              "type": "product",
+              "id": "four_product",
+              "label": "Second Product Select"
+            },
+           {
+              "type": "text",
+              "id": "fourth_text",
+              "label": "Second Product Sku"
+            },
+           {
+              "type": "product",
+              "id": "five_product",
+              "label": "Third Product Select"
+            },
+           {
+              "type": "text",
+              "id": "five_text",
+              "label": "Third Product Sku"
+            }
+         ]
+      }
+    ],
+    "presets":[
+      {
+            "name": "Six Column Hoses Table"
+
+      }
+    ]
+  }
+{% endschema %}

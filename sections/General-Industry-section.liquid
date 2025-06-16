@@ -1,0 +1,155 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="itg_industrywrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="industrywrapper_maindiv ">
+    {% for block in section.blocks %}
+    <div class="industry_alldiv">
+      {% if block.settings.main_head!=blank %}
+        <div class="industry_maindiv">
+        <h2>{{ block.settings.main_head }}</h2>
+        </div>
+      {% endif %}
+      {% if block.settings.image!=blank %}
+      <div class="industry_firstdiv">
+        {% if block.settings.text_url!=blank %} <a href="{{ block.settings.text_url }}" target="_blank" >{% endif %}<img src="{{ block.settings.image | img_url :"125x125" }}">{% if block.settings.text_url!=blank %}</a>{% endif %}
+      </div>
+      {% endif %}  
+
+      <div class="industry_seconddiv">
+      {% if block.settings.text_link!=blank %} 
+          {% if block.settings.text_url!=blank %} <a href="{{ block.settings.text_url }}" target="_blank" >{% endif %}
+         <h2>{{ block.settings.text_link }}</h2>
+          {% if block.settings.text_url!=blank %}</a>{% endif %}
+       {% endif %} 
+     {% if block.settings.text_btm!=blank %} 
+      <div class="industry_textbtm">
+        {{ block.settings.text_btm }}
+      </div>
+      {% endif %}
+      </div>
+      
+      <div class="industry_thirddiv">
+        <div class="industry_buttons">
+        {% if block.settings.view_url!=blank %} 
+         <a href="{{ block.settings.view_url }}" target="_blank">{{ block.settings.view_text}}</a>
+        {% endif %}
+        {% if block.settings.pdf_url!=blank %} 
+         <a href="{{ block.settings.pdf_url }}" target="_blank">{{ block.settings.pdf_text}}</a>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+<style>
+  .itg_industrywrapper .industry_buttons a {
+    border-radius: 0px;
+    font-family: Eurostile-Bol, sans-serif;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Image Button Text ",
+    "settings": [
+       {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Image-Text-Button",
+        "name":"Image-Text-Button",
+          "settings":[
+            {
+              "type":"text",
+              "id":"main_head",
+              "label":"Heading"
+            },
+            {
+              "type":"image_picker",
+              "id":"image",
+              "label":"Select Image"
+            },
+            {
+              "type":"text",
+              "id":"text_link",
+              "label":"Title"
+            },
+            {
+              "type":"url",
+              "id":"text_url",
+              "label":"Title Link"
+            },
+            {
+              "type":"richtext",
+              "id":"text_btm",
+              "label":"Text"
+            },
+             {
+              "type":"text",
+              "id":"view_text",
+              "label":"Button1 label",
+              "default":"View Link"
+            },
+            {
+              "type":"url",
+              "id":"view_url",
+              "label":"Button1 Link"
+            },
+             {
+              "type":"text",
+              "id":"pdf_text",
+              "label":"Button2 label",
+              "default":"Download PDF"
+            },
+            {
+              "type":"url",
+              "id":"pdf_url",
+              "label":"Button2 Link"
+            }
+          ]
+      }
+    ],
+    "presets":[
+      {
+       "name": "Image Button Text "
+      }
+    ]
+  }
+{% endschema %}

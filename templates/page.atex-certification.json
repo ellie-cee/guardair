@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "c3403736-6564-4d04-b8f8-66b24c8c9d1a": {
+      "type": "atex-certification-section",
+      "blocks": {
+        "b9b1fa54-c50d-4650-a536-0c10d4f52b01": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-55-gallon-atex-vacuum-kit-w-2-inlet"
+          }
+        },
+        "940e05a4-0cf0-461f-b5f0-1134d320c495": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-30-gallon-atex-vacuum-kit-w-2-inlet"
+          }
+        },
+        "474879eb-dc43-4cc0-b749-076541da8548": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-55-gallon-ned-vacuum-kit-w-2-inlet"
+          }
+        },
+        "664e5104-7438-466a-9f85-c67468356772": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-30-gallon-ned-vacuum-kit-w-2-inlet"
+          }
+        },
+        "69dc3014-9b41-4db5-b7bb-16034536aaa7": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-20-gallon-ned-vacuum-kit-w-2-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "b9b1fa54-c50d-4650-a536-0c10d4f52b01",
+        "940e05a4-0cf0-461f-b5f0-1134d320c495",
+        "474879eb-dc43-4cc0-b749-076541da8548",
+        "664e5104-7438-466a-9f85-c67468356772",
+        "69dc3014-9b41-4db5-b7bb-16034536aaa7"
+      ],
+      "settings": {
+        "first_text": "<p>Currently, no US standards exist to certify pneumatic vacuums for safe use in hazardous locations. However, Europe has developed standards known as ATEX Directives for such certification. Guardair engaged a UK-based, nationally recognized testing laboratory to certify our Hazardous Location Pneumatic Vacuums to the following ATEX standards:<\/p>",
+        "f_img": "shopify:\/\/shop_images\/i.shgcdn_cb230ea0-b295-4a63-a336-ba34b54b41b3.png",
+        "texts": "<p>II 2GD<\/p><p>Ex h IIC T6 Gb<\/p><p>Ex h IIIC T85°C Db<\/p>",
+        "text_bottoms": "<p><strong>* Equivalent to National Fire Protection Association 70: NEC Rating:<\/strong><\/p><p>Class I   Division 1**   Groups A, B, C, D T6<br\/>Class II   Division 1     Groups E, F, G T6<br\/>Class III<br\/><em>** Zone 1 only<\/em><\/p>",
+        "first_img": "shopify:\/\/shop_images\/i.shgcdn_1_dee233b2-ce7a-4584-b500-2f20def97e69.png",
+        "first_link": "",
+        "se_img": "shopify:\/\/shop_images\/i.shgcdn_2_84f38458-e60c-4682-97ae-a88faec3f69f.png",
+        "se_link": "",
+        "thrd_img": "shopify:\/\/shop_images\/i.shgcdn_3_f0ed83fc-2ef9-4301-b53e-57a7c2ac6157.png",
+        "thrd_link": "",
+        "product_head": "SHOP PNEUMATIC VACUUMS:",
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c3403736-6564-4d04-b8f8-66b24c8c9d1a"
+  ]
+}

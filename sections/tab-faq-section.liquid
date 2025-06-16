@@ -1,0 +1,215 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="tab_faq_wrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+      <div class="tab_faq-main_div">
+        {% if block.settings.main_head != blank %}
+          <h1>{{ block.settings.main_head }}</h1>
+        {% endif %}
+        <div class="tab_faq_btn">
+        <button data-id="air_gun_data" class="itg_tab_faqbtn active_btn">{{ section.settings.fq_btn_first }}</button>
+        <button data-id="vacuums_data" class="itg_tab_faqbtn ">{{ section.settings.fq_btn_second }}</button>
+        </div>
+        <div class="tab_faq_alldata">
+          {% for block in section.blocks %}
+          <div class="fqs_div itg_active_content" data-id="air_gun_data" >  
+          {% if block.type == 'Air-Guns-Heading' %}
+          <div class="tab_faq_head {% if block.settings.top_border %}tap_top_bdr {% endif %}"  style="padding-top:{{ block.settings.padding_top }}px;padding-bottom:{{ block.settings.padding_bottom }}px;">
+            <h2>{{ block.settings.head_top }}</h3>
+          </div>  
+         {% elsif block.type == 'Air-Gun-Faq' %}
+          <div class="tab_faq_contant">
+            <h2>{{ block.settings.head }}</h3>
+            <div class="faq_titles">{{ block.settings.content }}</div>
+          </div>
+            {% endif %}
+          </div>
+          <div class="fqs_div" data-id="vacuums_data">
+          {% if block.type == 'Vacuums-Heading' %}
+          <div class="tab_faq_head {% if block.settings.top_border %}tap_top_bdr {% endif %}"  style="padding-top:{{ block.settings.padding_top }}px;padding-bottom:{{ block.settings.padding_bottom }}px;">
+            <h2>{{ block.settings.head_top }}</h3>
+          </div>  
+         {% elsif block.type == 'Vacuums-Faq' %}
+          <div class="tab_faq_contant">
+            <h2>{{ block.settings.head }}</h3>
+            <div class="faq_titles">{{ block.settings.content }}</div>
+          </div>
+          {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Tab Faq Section",
+    "settings": [
+      {
+        "type":"text",
+        "id":"main_head",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "id":"fq_btn_first",
+        "label":"Button First"
+      },
+      {
+        "type":"text",
+        "id":"fq_btn_second",
+        "label":"Button Second"
+      },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+    ],
+     "blocks":[
+        {
+        "type":"Air-Guns-Heading",
+        "name":"Air-Guns-Heading",
+          "settings":[
+            {
+              "type":"text",
+              "id":"head_top",
+              "label":"Heading"
+            }, 
+            {
+            "type": "checkbox",
+            "id": "top_border",
+            "default": false,
+            "label": "Top Border"
+            },
+             {
+              "type": "range",
+              "id": "padding_top",
+              "min": 0,
+              "max": 50,
+              "step": 1,
+              "unit": "px",
+              "label": "t:sections.all.padding.padding_top",
+              "default": 0
+            },
+            {
+              "type": "range",
+              "id": "padding_bottom",
+              "min": 0,
+              "max": 50,
+              "step": 2,
+              "unit": "px",
+              "label": "t:sections.all.padding.padding_bottom",
+              "default": 0
+            }
+          ]
+      },
+      {
+        "type":"Air-Gun-Faq",
+        "name":"Air-Gun-Faq",
+          "settings":[
+            {
+              "type":"text",
+              "id":"head",
+              "label":"Title"
+            },
+            {
+              "type":"richtext",
+              "id":"content",
+              "label":"Description"
+            }
+          ]
+      },
+        {
+        "type":"Vacuums-Heading",
+        "name":"Vacuums-Heading",
+          "settings":[
+            {
+              "type":"text",
+              "id":"head_top",
+              "label":"Heading"
+            },
+            {
+            "type": "checkbox",
+            "id": "top_border",
+            "default": false,
+            "label": "Top Border"
+            },
+             {
+              "type": "range",
+              "id": "padding_top",
+              "min": 0,
+              "max": 50,
+              "step": 1,
+              "unit": "px",
+              "label": "t:sections.all.padding.padding_top",
+              "default": 0
+            },
+            {
+              "type": "range",
+              "id": "padding_bottom",
+              "min": 0,
+              "max": 50,
+              "step": 2,
+              "unit": "px",
+              "label": "t:sections.all.padding.padding_bottom",
+              "default": 0
+            }
+          ]
+      },
+      {
+        "type":"Vacuums-Faq",
+        "name":"Vacuums-Faq",
+          "settings":[
+            {
+              "type":"text",
+              "id":"head",
+              "label":"Title"
+            },
+            {
+              "type":"richtext",
+              "id":"content",
+              "label":"Description"
+            }
+          ]
+      }
+    ],
+    "presets":[
+      {
+      "name": "Tab Faq Section"
+      }
+    ]
+  }
+{% endschema %}
+

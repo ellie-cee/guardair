@@ -1,0 +1,60 @@
+v2-nav-drawer {
+  --primary-background-color: #fff;
+  position: fixed;
+  height: 100vh;
+  width: min(90vw, 400px);
+  background-color: var(--primary-background-color);
+  z-index: 1000;
+  /** Use a very smooth cubic-bezier for the transition */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+v2-nav-drawer.nav-drawer--left {
+  left: 0;
+  top: 0;
+  border-right: 2px solid var(--shadow-color, #d6d6d6);
+}
+
+v2-nav-drawer.nav-drawer--right {
+  right: 0;
+  top: 0;
+  border-left: 2px solid var(--shadow-color, #d6d6d6);
+}
+
+v2-nav-drawer :where(ul) {
+  list-style: none;
+  padding: unset;
+}
+
+.v2-nav-drawer__sub-menu {
+  padding-left: 16px;
+}
+
+.v2-nav-drawer__item a {
+  font-size: 24px;
+  padding-inline: 24px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2;
+  padding-block: 12px;
+}
+
+.v2-nav-drawer__sub-item a {
+  font-size: 20px;
+}
+
+.v2-nav-drawer__content {
+  max-height: 80vh;
+  overflow: auto;
+  position: relative;
+  border-bottom: 2px solid var(--shadow-color, #d6d6d6);
+}
+
+.v2-nav-drawer__sub-sub-item a {
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+v2-nav-drawer.nav-drawer--open {
+    transform: translate(0) !important;
+}

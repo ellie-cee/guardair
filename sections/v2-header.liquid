@@ -1,0 +1,1207 @@
+{{ 'v2-components-header.css' | asset_url | stylesheet_tag }} 
+{{ 'v2-components-header-patch.css' | asset_url | stylesheet_tag }}
+{{ 'v2-components-nav-drawer.css' | asset_url | stylesheet_tag }}
+{% unless section.settings.disable_predictive_search %}
+<script src="{{ 'v2-components-predictive-search.js' | asset_url }}" defer></script>
+{% endunless %}
+<link
+  rel="stylesheet"
+  href="{{ 'v2-components-predictive-search.css' | asset_url }}"
+>
+<script src="{{ 'v2-components-accordion.js' | asset_url }}" defer></script>
+<script src="{{ 'v2-components-nav-drawer.js' | asset_url }}" defer></script>
+<link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{% liquid
+  assign number_of_rows = section.settings.number_of_rows
+%}
+
+{% capture vertical_separator %}
+  <span class="header__separator"></span>
+{% endcapture %}
+
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="v2-header-wrapper">
+<header
+class="v2-header v2-color--primary
+{% if section.settings.scroll_when_larger_height %}
+v2-header--scroll-when-larger-height
+{% endif %}
+v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% else %}v2-header--use-click{% endif %}"
+  style="
+    --shadow-color: {{ section.settings.primary_color.settings.shadow }};
+    --padding-block: {{ section.settings.padding_block | default: 20 }}px;
+    --primary-background-color: {{ section.settings.primary_color.settings.background }};
+    --primary-text-color: {{ section.settings.primary_color.settings.text }};
+    --secondary-background-color: {{ section.settings.secondary_color.settings.background }};
+    --secondary-text-color: {{ section.settings.secondary_color.settings.text }};
+    --accent-background-color: {{ section.settings.accent_color.settings.background }};
+    --accent-text-color: {{ section.settings.accent_color.settings.text }};
+    --menu-min-height: {{ section.settings.menu_min_height | default: 4 }};
+  "
+>
+  {% for i in (1..number_of_rows) %}
+    <div class="v2-header__row page-width">
+      <div class="v2-header__row-inner v2-color v2-color--primary">
+        {% for block in section.blocks %}
+          {% if block.settings.row == i %}
+            {% case block.type %}
+              {% when 'logo' %}
+                <a
+                  href="{{ routes.root_url }}"
+                  class="
+                    header__heading-link link link--text focus-inset
+                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
+                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
+                  "
+                  style="
+                    --flex-grow: {{ block.settings.flex_grow }};
+                    --flex-shrink: {{ block.settings.flex_shrink }};
+                    --flex-basis: {{ block.settings.flex_basis }};
+                  "
+                  {{ block.shopify_attributes }}
+                >
+                  {% if block.settings.logo != blank %}
+                    {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
+                    {%- assign logo_width = block.settings.flex_basis | divided_by: 1 | default: 100 %}
+                    {%- assign logo_height = logo_width | divided_by: settings.logo.aspect_ratio -%}
+                    {% capture sizes %}(max-width: {{ logo_width | times: 2 }}px) 50vw, {{ logo_width }}px{% endcapture %}
+                    {% capture widths %}{{ logo_width }}, {{ logo_width | times: 1.5 | round }}, {{ logo_width | times: 2 }}{% endcapture %}
+                    {{
+                      block.settings.logo
+                      | image_url: width: 600
+                      | image_tag:
+                        class: 'header__heading-logo motion-reduce',
+                        widths: widths,
+                        height: logo_height,
+                        width: settings.logo_width,
+                        alt: logo_alt,
+                        sizes: sizes,
+                        preload: true
+                    }}
+                  {% else %}
+                    {{ shop.name }}
+                  {% endif %}
+                </a>
+              {% when 'spacer' %}
+                <span class="header__spacer" {{ block.shopify_attributes }}></span>
+              {% when 'text' %}
+                <div
+                  class="
+                    header__text-wrapper
+                    {% if block.settings.show_on_desktop != true %}hide-on-desktop{% endif %}
+                    {% if block.settings.show_on_mobile != true %}hide-on-mobile{% endif %}
+                  "
+                  style="
+                    --flex-grow: {{ block.settings.flex_grow }};
+                    --flex-shrink: {{ block.settings.flex_shrink }};
+                    --flex-basis: {{ block.settings.flex_basis }};
+                  "
+                >
+                  {% if block.settings.show_left_separator %}
+                    {{ vertical_separator }}
+                  {% endif %}
+                  {% capture content %}
+                    {% if block.settings.icon != blank %}
+                      <span class="header__icon">
+                        {{ block.settings.icon }}
+                      </span>
+                    {% endif %}
+                    {% if block.settings.text != blank %}
+                      <span class="header__text">{{ block.settings.text }}</span>
+                    {% endif %}
+                  {% endcapture %}
+                  {% if block.settings.link != blank %}
+                    <a
+                      href="{{ block.settings.link }}"
+                      class="link link--text focus-inset"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ content }}
+                    </a>
+                  {% else %}
+                    <div class="header__text">
+                      {{ content }}
+                    </div>
+                  {% endif %}
+                  {% if block.settings.show_right_separator %}
+                    {{ vertical_separator }}
+                  {% endif %}
+                </div>
+              {% when 'menu' %}
+                {% assign menu = block.settings.menu %}
+                {% if menu.links.size > 0 %}
+                  <nav
+                    class="
+                      header__menu
+                      {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
+                      {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
+                    "
+                    style="
+                      --flex-grow: {{ block.settings.flex_grow }};
+                      --flex-shrink: {{ block.settings.flex_shrink }};
+                      --flex-basis: {{ block.settings.flex_basis }};
+                    "
+                    {{ block.shopify_attributes }}
+                  >
+                    {% for link in menu.links %}
+                      {% assign split_link_title = link.title | split: '::' %}
+                      <a
+                        {% if split_link_title.size > 1 %}
+                          href="javascript:void(0)"
+                        {% else %}
+                        href="{{ link.url }}"
+                        {% endif %}
+                        class="link link--text focus-inset anti-stupidity"
+                        {{ block.shopify_attributes }}
+                        {% if split_link_title.size > 1 %}
+                        onClick="{{ split_link_title[1] }}"
+                        {% endif %}
+                      >
+                        <span class="header__text">
+                          {{ split_link_title[0] }}
+                        </span>
+                      </a>
+                      {% unless forloop.last %}
+                        {{ vertical_separator }}
+                      {% endunless %}
+                    {% endfor %}
+                  </nav>
+                {% endif %}
+              {% when 'account' %}
+                <a
+                  href="
+                    {% if customer %}
+                      {{ routes.account_url }}
+                    {% else %}
+                      {{ routes.account_login_url }}
+                    {% endif %}
+                  "
+                  class="
+                    header__icon-wrapper
+                    header__account
+                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
+                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
+                  "
+                  style="
+                    --flex-grow: {{ block.settings.flex_grow }};
+                    --flex-shrink: {{ block.settings.flex_shrink }};
+                    --flex-basis: {{ block.settings.flex_basis }};
+                  "
+                  {{ block.shopify_attributes }}
+                >
+                  {% if block.settings.icon != blank %}
+                    <span class="header__icon">
+                      {{ block.settings.icon }}
+                    </span>
+                  {% endif %}
+                  <div class="header__icon-title hide-on-mobile">
+                    <span class="header__text">{{ 'customer.account.title' | t }}</span>
+                    {% if block.settings.show_name %}
+                      <span class="header__text header__accent_text">
+                        {% if customer %}
+                          Hi, {{ customer.name }}
+                        {% endif %}
+                      </span>
+                    {% endif %}
+                  </div>
+                </a>
+              {% when 'cart' %}
+                <a
+                  href="{{ routes.cart_url }}"
+                  class="
+                    header__icon-wrapper
+                    header__icon--cart link focus-inset
+                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
+                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
+                  "
+                  style="
+                    --flex-grow: {{ block.settings.flex_grow }};
+                    --flex-shrink: {{ block.settings.flex_shrink }};
+                    --flex-basis: {{ block.settings.flex_basis }};
+                  "
+                  {{ block.shopify_attributes }}
+                >
+                  <span class="header__icon">
+                    {{ block.settings.icon }}
+                    {% if cart.item_count > 0 %}<span 
+                      id="cart-icon-bubble">
+                      <span
+                        class="header__icon__bubble-count {% if cart.item_count == 0 %}hide{% endif %} v2-color v2-color--accent" aria-hidden="true">
+                        <span class="cart-item-count-span">{{- cart.item_count -}}</span>
+                      </span>
+                    </span>{% endif %}
+                  </span>
+                  <div class="header__icon-title hide-on-mobile">
+                    <span class="header__text">{{ 'templates.cart.cart' | t }}</span>
+                    <span class="header__text header__accent_text"></span>
+                  </div>
+                  <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+                </a>
+              {% when 'search' %}
+                <div
+                  class="
+                    header__search-wrapper
+                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
+                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
+                  "
+                  style="
+                    --flex-grow: {{ block.settings.flex_grow }};
+                    --flex-shrink: {{ block.settings.flex_shrink }};
+                    --flex-basis: {{ block.settings.flex_basis }};
+                  "
+                  {{ block.shopify_attributes }}
+                >
+                  <v2-predictive-search
+                    title-classes="v2-color v2-color--accent"
+                    results-classes="color-{{ section.settings.predictive_color_scheme }} gradient"
+                    view-all-classes="link header__heading-link"
+                    title="{{ 'general.search.top_matches' | t }}"
+                    view-all-text="{{ 'general.search.view_all_results' | t }}"
+                  >
+                    <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                      <input
+                        type="search"
+                        name="q"
+                        class="header__search-input"
+                        placeholder="{{ 'general.search.placeholder' | t }}"
+                        aria-label="{{ 'general.search.placeholder' | t }}"
+                      >
+                      <button
+                        type="submit"
+                        class="header__search-button"
+                        aria-label="{{ 'general.search.placeholder' | t }}"
+                      >
+                        {% if block.settings.icon != blank %}
+                          <div
+                            class="header__icon"
+                          />
+                          {{ block.settings.icon }}
+                        {% endif %}
+                      </button>
+                    </form>
+                  </v2-predictive-search>
+                </div>
+              {% when 'drawer_nav' %}
+
+                <div
+                  class="
+                    header__icon-wrapper
+                    v2-header__drawer-nav
+                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
+                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
+                  "
+                  style="
+                    --flex-grow: {{ block.settings.flex_grow }};
+                    --flex-shrink: {{ block.settings.flex_shrink }};
+                    --flex-basis: {{ block.settings.flex_basis }};
+                  "
+                >
+                  {% render 'header-drawer', block: block, menu: section.settings.nav_menu, menu_type_desktop: 'tablet', secondary_menu: section.settings.secondary_menu %}
+                </div>
+            {% endcase %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+  <nav class="hide-on-mobile v2-header__nav-menu
+    {% if section.settings.nav_color_scheme != blank %}gradient color-{{ section.settings.nav_color_scheme }}{% endif %}
+    ">
+    <div class=" page-width">
+      <ul class="v2-header__nav-menu-list">
+        {% for link in section.settings.nav_menu.links %}
+          <li
+            class="
+              v2-header__nav-menu-item
+              {% liquid
+                assign midpoint = section.settings.nav_menu.links.size | divided_by: 2
+                if forloop.index > midpoint
+                  echo 'v2-header__nav-menu-item--inverted-submenu'
+                endif
+              %}
+            "
+          >
+            <a href="{{ link.url }}" class="v2-header__nav-menu-link">
+              {{ link.title }}
+              {% if section.settings.show_link_arrow %}
+                {% render 'icon-arrow-alt' %}
+              {% endif %}
+            </a>
+            {% if link.links.size > 0 %}
+              <ul 
+                style="--border-color: {{ section.settings.sub_menu_border_color }};"
+              class="v2-header__nav-menu-submenu 
+                {% if section.settings.secondary_color != blank %}gradient color-{{ section.settings.secondary_color }}{% endif %}
+              ">
+                {% for sublink in link.links %}
+                  {% assign is_highlighted = false %}
+                  {% # If the link title starts (and only starts) with _ then it is a highlighted link %}
+                  {% assign first_char = sublink.title | slice: 0 %}
+                  {% if first_char == '_' %}
+                    {% assign is_highlighted = true %}
+                    {% assign sublink_title = sublink.title | slice: 1, sublink.title.size %}
+                  {% endif %}
+                  {% if is_highlighted %}<li class="spacer"></li>{% endif %}
+                  <li class="v2-header__nav-menu-submenu-item {% if is_highlighted %}v2-header__nav-menu-submenu-item--highlighted{% endif %}">
+                    {% if is_highlighted %}
+                    <a href="{{ sublink.url }}" class="v2-header__nav-menu-submenu-link v2-header__nav-menu-submenu-link--highlighted">
+                      {{ sublink_title }}
+                      {% if section.settings.show_sublink_arrow %}
+                        {% render 'icon-arrow-alt' %}
+                      {% endif %}
+                    </a>
+                    {% else %}
+                    <a href="{{ sublink.url }}" class="v2-header__nav-menu-submenu-link">
+                      {{ sublink.title }}
+                      {% if section.settings.show_sublink_arrow %}
+                        {% render 'icon-arrow-alt' %}
+                      {% endif %}
+                    </a>
+                    {% endif %}
+                    {% if sublink.links.size > 0 %}
+                      <ul class="v2-header__nav-menu-submenu v2-color v2-color--accent">
+                        {% for subsublink in sublink.links %}
+                          {% assign is_highlighted = false %}
+                          {% # If the link title starts (and only starts) with _ then it is a highlighted link %}
+                          {% assign first_char = subsublink.title | slice: 0 %}
+                          {% if first_char == '_' %}
+                            {% assign is_highlighted = true %}
+                            {% assign subsublink_title = subsublink.title | slice: 1, subsublink.title.size %}
+                          {% endif %}
+                          {% if is_highlighted %}<li class="spacer"></li>{% endif %}
+                          <li class="v2-header__nav-menu-submenu-item {% if is_highlighted %}v2-header__nav-menu-submenu-item--highlighted{% endif %}">
+                            {% if is_highlighted %}
+                              <a href="{{ subsublink.url }}" class="v2-header__nav-menu-submenu-link v2-header__nav-menu-submenu-link--highlighted">
+                                {{ subsublink_title }}
+                              </a>
+                            {% else %}
+                              <a href="{{ subsublink.url }}" class="v2-header__nav-menu-submenu-link">
+                                {{ subsublink.title }}
+                              </a>
+                            {% endif %}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
+</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
+
+<script>
+  document
+    .querySelector('.header__search-wrapper form input[type="search"]')
+    .addEventListener('focus', function (event) {
+      const searchWrapper = event.target.closest('.header__search-wrapper');
+      searchWrapper.classList.add('header__search-wrapper--focused');
+    });
+  document
+    .querySelector('.header__search-wrapper form input[type="search"]')
+    .addEventListener('blur', function (event) {
+      const searchWrapper = event.target.closest('.header__search-wrapper');
+      searchWrapper.classList.remove('header__search-wrapper--focused');
+    });
+</script>
+
+{% javascript %}
+  class StickyHeader extends HTMLElement {
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      this.header = this.querySelector('header').closest('.shopify-section');
+      this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
+      this.headerBounds = {};
+
+      this.setHeaderHeight();
+
+      window.matchMedia('(max-width: 990px)').addEventListener('change', this.setHeaderHeight.bind(this));
+
+      if (this.headerIsAlwaysSticky) {
+        this.header.classList.add('shopify-section-header-sticky');
+      };
+
+      this.currentScrollTop = 0;
+      this.preventReveal = false;
+
+      this.onScrollHandler = this.onScroll.bind(this);
+      this.hideHeaderOnScrollUp = () => this.preventReveal = true;
+
+      this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+      window.addEventListener('scroll', this.onScrollHandler, false);
+
+      this.createObserver();
+    }
+
+    setHeaderHeight() {
+      document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
+    }
+
+    disconnectedCallback() {
+      this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+      window.removeEventListener('scroll', this.onScrollHandler);
+    }
+
+    createObserver() {
+      let observer = new IntersectionObserver((entries, observer) => {
+        this.headerBounds = entries[0].intersectionRect;
+        observer.disconnect();
+      });
+
+      observer.observe(this.header);
+    }
+
+    onScroll() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        this.header.classList.add('scrolled-past-header');
+        if (this.preventHide) return;
+        requestAnimationFrame(this.hide.bind(this));
+      } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        this.header.classList.add('scrolled-past-header');
+        if (!this.preventReveal) {
+          requestAnimationFrame(this.reveal.bind(this));
+        } else {
+          window.clearTimeout(this.isScrolling);
+
+          this.isScrolling = setTimeout(() => {
+            this.preventReveal = false;
+          }, 66);
+
+          requestAnimationFrame(this.hide.bind(this));
+        }
+      } else if (scrollTop <= this.headerBounds.top) {
+        this.header.classList.remove('scrolled-past-header');
+        requestAnimationFrame(this.reset.bind(this));
+      }
+
+      this.currentScrollTop = scrollTop;
+    }
+
+    hide() {
+      if (this.headerIsAlwaysSticky) return;
+      this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+      this.closeMenuDisclosure();
+      this.closeSearchModal();
+    }
+
+    reveal() {
+      if (this.headerIsAlwaysSticky) return;
+      this.header.classList.add('shopify-section-header-sticky', 'animate');
+      this.header.classList.remove('shopify-section-header-hidden');
+    }
+
+    reset() {
+      if (this.headerIsAlwaysSticky) return;
+      this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
+    }
+
+    closeMenuDisclosure() {
+      this.disclosures = this.disclosures || this.header.querySelectorAll('header-menu');
+      this.disclosures.forEach(disclosure => disclosure.close());
+    }
+
+    closeSearchModal() {
+      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
+      this.searchModal.close(false);
+    }
+  }
+
+  customElements.define('sticky-header', StickyHeader);
+
+  const listenToCloseAllActiveMenus = () => {
+    const closeAllActiveMenus = () => {
+      const submenuItem = event.target.closest('.v2-header__nav-menu-submenu-item')
+      const menuItem = event.target.closest('.v2-header__nav-menu-item');
+      if (menuItem || submenuItem) return;
+      const activeMenus = document.querySelectorAll('.v2-header--is-active');
+      for (const activeMenu of activeMenus) {
+        activeMenu.classList.remove('v2-header--is-active');
+      }
+      document.body.removeEventListener('click', closeAllActiveMenus);
+    }
+    document.body.addEventListener('click', closeAllActiveMenus);
+  }
+
+  document.body.addEventListener('click', function (event) {
+    const header = event.target.closest('.v2-header');
+    if (!header) return;
+
+    const isUsingClick = header.classList.contains('v2-header--use-click');
+    if (!isUsingClick) return;
+
+    // If it doesn't have a nested menu, return
+    if (!event.target.closest('li').querySelector('ul')) return;
+
+    const submenuItem = event.target.closest('.v2-header__nav-menu-submenu-item')
+    const menuItem = event.target.closest('.v2-header__nav-menu-item');
+    if (!menuItem && !submenuItem) return;
+    listenToCloseAllActiveMenus();
+
+    if (submenuItem) {
+      const activeSubmenus = header.querySelectorAll('.v2-header__nav-menu-submenu-item.v2-header--is-active');
+      for (const activeSubmenu of activeSubmenus) {
+        if (activeSubmenu !== submenuItem) {
+          activeSubmenu.classList.remove('v2-header--is-active');
+        }
+      }
+      submenuItem.classList.toggle('v2-header--is-active');
+      event.preventDefault();
+      return;
+    }
+
+    const activeMenus = header.querySelectorAll('.v2-header--is-active');
+    for (const activeMenu of activeMenus) {
+      if (activeMenu !== menuItem) {
+        activeMenu.classList.remove('v2-header--is-active');
+      }
+    }
+    menuItem.classList.toggle('v2-header--is-active');
+    event.preventDefault();
+  });
+{% endjavascript %}
+
+{% style %}
+.v2-header__nav-menu-submenu {
+  --accent-background-color: {{ section.settings.nav_submenu_bg | default: "#d52b1e" }};
+}
+.v2-predictive-search__wrapper {
+  --accent-background-color: {{ section.settings.predictive_search_border | default: '#000' }};
+}
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "section-v2-header",
+  "settings": [
+    {
+      "id": "disable_predictive_search",
+      "type": "checkbox",
+      "label": "Disable predictive search",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Menu"
+    },
+    {
+      "id": "event_type",
+      "type": "select",
+      "label": "Event type",
+      "default": "hover",
+      "options": [
+        {
+          "value": "hover",
+          "label": "Hover"
+        },
+        {
+          "value": "click",
+          "label": "Click"
+        }
+      ],
+      "info": "Open dropdowns on hover or click"
+    },
+    {
+      "id": "show_link_arrow",
+      "type": "checkbox",
+      "label": "Show link arrow",
+      "default": true
+    },
+    {
+      "id": "show_sublink_arrow",
+      "type": "checkbox",
+      "label": "Show sublink arrow",
+      "default": true
+    },
+    {
+      "id": "scroll_when_larger_height",
+      "type": "checkbox",
+      "label": "Scroll Second Submenu",
+      "info": "Scroll the second submenu when it's taller than its parent",
+      "default": false
+    },
+    {
+      "id": "menu_min_height",
+      "type": "range",
+      "label": "Submenu min height",
+      "info": "Minimum height of the submenu in rows",
+      "default": 4,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "id": "nav_menu",
+      "type": "link_list",
+      "label": "Navigation menu"
+    },
+    {
+      "id": "secondary_menu",
+      "type": "link_list",
+      "label": "Mobile drawer bottom menu"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "id": "number_of_rows",
+      "type": "range",
+      "label": "Number of rows",
+      "min": 1,
+      "max": 3,
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "sticky_header_type",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.header.settings.sticky_header_type.options__1.label"
+        },
+        {
+          "value": "on-scroll-up",
+          "label": "t:sections.header.settings.sticky_header_type.options__2.label"
+        },
+        {
+          "value": "always",
+          "label": "t:sections.header.settings.sticky_header_type.options__3.label"
+        },
+        {
+          "value": "reduce-logo-size",
+          "label": "t:sections.header.settings.sticky_header_type.options__4.label"
+        }
+      ],
+      "default": "on-scroll-up",
+      "label": "t:sections.header.settings.sticky_header_type.label"
+    },
+    {
+      "id": "padding_block",
+      "type": "number",
+      "label": "Padding",
+      "default": 20,
+      "info": "Top & bottom padding in pixels"
+    },
+    {
+      "type": "color_scheme",
+      "id": "primary_color",
+      "label": "Primary color",
+      "info": "Color for header background, and text"
+    },
+    {
+      "type": "color_scheme",
+      "id": "secondary_color",
+      "label": "Secondary color",
+      "info": "Color for navigation and icons"
+    },
+    {
+      "type": "color_scheme",
+      "id": "nav_color_scheme",
+      "label": "Desktop menu color scheme",
+      "info": "Color scheme for the desktop menu"
+    },
+    {
+      "type": "color",
+      "id": "sub_menu_border_color",
+      "label": "Submenu border color",
+      "default": "#000000"
+    },
+    {
+      "type": "color_scheme",
+      "id": "accent_color",
+      "label": "Accent color"
+    },
+    {
+      "id": "menu_color_scheme",
+      "type": "color_scheme",
+      "label": "Drawer menu color scheme",
+      "info": "Color scheme for the drawer menu"
+    },
+    {
+      "id": "predictive_color_scheme",
+      "type": "color_scheme",
+      "label": "Predictive search color scheme",
+      "info": "Color scheme for the predictive search panel"
+    },
+    {
+      "id": "nav_submenu_bg",
+      "type": "color",
+      "label": "Submenu Accent color",
+      "default": "#d52b1e"
+    },
+    {
+      "id": "predictive_search_border",
+      "type": "color",
+      "label": "Predictive search border color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "flex_grow",
+          "type": "number",
+          "label": "Flex grow",
+          "default": 0
+        },
+        {
+          "id": "flex_shrink",
+          "type": "number",
+          "label": "Flex shrink",
+          "default": 0
+        },
+        {
+          "id": "flex_basis",
+          "type": "text",
+          "label": "Width",
+          "default": "300"
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "logo",
+          "type": "image_picker",
+          "label": "Logo",
+          "info": "Recommended size: 600x100"
+        }
+      ]
+    },
+    {
+      "type": "spacer",
+      "name": "Spacer",
+      "settings": [
+        {
+          "type": "number",
+          "id": "row",
+          "label": "Row",
+          "default": 1
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text or Icon",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "flex_grow",
+          "type": "number",
+          "label": "Flex grow",
+          "default": 1
+        },
+        {
+          "id": "flex_shrink",
+          "type": "number",
+          "label": "Flex shrink",
+          "default": 1
+        },
+        {
+          "id": "flex_basis",
+          "type": "text",
+          "label": "Width",
+          "default": "300"
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "text",
+          "type": "text",
+          "label": "Text",
+          "default": "Text"
+        },
+        {
+          "id": "icon",
+          "type": "html",
+          "label": "Icon"
+        },
+        {
+          "id": "link",
+          "type": "url",
+          "label": "Link"
+        },
+        {
+          "id": "show_left_separator",
+          "type": "checkbox",
+          "label": "Show left separator",
+          "default": false
+        },
+        {
+          "id": "show_right_separator",
+          "type": "checkbox",
+          "label": "Show right separator",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "flex_grow",
+          "type": "number",
+          "label": "Flex grow",
+          "default": 1
+        },
+        {
+          "id": "flex_shrink",
+          "type": "number",
+          "label": "Flex shrink",
+          "default": 1
+        },
+        {
+          "id": "flex_basis",
+          "type": "text",
+          "label": "Width",
+          "default": "300"
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "menu",
+          "type": "link_list",
+          "label": "Menu"
+        }
+      ]
+    },
+    {
+      "type": "account",
+      "name": "Account",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "flex_grow",
+          "type": "number",
+          "label": "Flex grow",
+          "default": 1
+        },
+        {
+          "id": "flex_shrink",
+          "type": "number",
+          "label": "Flex shrink",
+          "default": 1
+        },
+        {
+          "id": "flex_basis",
+          "type": "text",
+          "label": "Width",
+          "default": "300"
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "icon",
+          "type": "html",
+          "label": "Icon"
+        },
+        {
+          "id": "show_name",
+          "type": "checkbox",
+          "label": "Show name",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "cart",
+      "name": "Cart",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "flex_grow",
+          "type": "number",
+          "label": "Flex grow",
+          "default": 1
+        },
+        {
+          "id": "flex_shrink",
+          "type": "number",
+          "label": "Flex shrink",
+          "default": 1
+        },
+        {
+          "id": "flex_basis",
+          "type": "text",
+          "label": "Width",
+          "default": "300"
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "icon",
+          "type": "html",
+          "label": "Icon"
+        },
+        {
+          "id": "show_quantity",
+          "type": "checkbox",
+          "label": "Show quantity",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "search",
+      "name": "Search",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "flex_grow",
+          "type": "number",
+          "label": "Flex grow",
+          "default": 1
+        },
+        {
+          "id": "flex_shrink",
+          "type": "number",
+          "label": "Flex shrink",
+          "default": 1
+        },
+        {
+          "id": "flex_basis",
+          "type": "text",
+          "label": "Width",
+          "default": "300"
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "icon",
+          "type": "html",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "type": "drawer_nav",
+      "name": "Drawer Navigation",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "flex_grow",
+          "type": "number",
+          "label": "Flex grow",
+          "default": 1
+        },
+        {
+          "id": "flex_shrink",
+          "type": "number",
+          "label": "Flex shrink",
+          "default": 1
+        },
+        {
+          "id": "flex_basis",
+          "type": "text",
+          "label": "Width",
+          "default": "300"
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "text",
+          "type": "text",
+          "label": "Text",
+          "default": "Text"
+        },
+        {
+          "id": "icon",
+          "type": "html",
+          "label": "Icon"
+        },
+        {
+          "id": "direction",
+          "type": "select",
+          "label": "Direction",
+          "default": "right",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

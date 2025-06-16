@@ -1,0 +1,161 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "6d2cfd5e-e8e8-4ff1-a558-07e4db4ca366": {
+      "type": "custom-testimonials",
+      "blocks": {
+        "8ef8b022-1b8a-40e6-9e8a-5597609838f7": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Classic Series",
+            "text": "<p>\"The 75LJ meets our corporate safety standards, a paramount requirement.\"<br\/><em><strong>Team Leader<\/strong><\/em><em><br\/>Covanta Kent, Inc.<br\/>Grand Rapids, MI<\/em><\/p><p>\"Trust me, our Guardair guns see a fair share of abuse. They are tough and very well built.\"<br\/><em><strong>Machine Operator<\/strong><\/em><em><br\/>Felters of South Carolina<br\/>Roebuck, SC<\/em><\/p><p>\"We have tried other safety air guns but found Guardair to be the most reliable and last the longest. Simple construction, tough, and durable. They meet our needs.\"<br\/><em><strong>Owner<\/strong><\/em><em><br\/>Andritz, Inc.<br\/>Muncy, PA<\/em><\/p><p>\"The fact that Guardair air guns meet OSHA requirements is the key in our production facility.\"<br\/><em><strong>Mechanic<\/strong><\/em><em><br\/>B&G Foods<br\/>Roseland, NJ<\/em><\/p><p>\"One of the best safety air guns I have ever used. The Long John is powerful and safe. Thank you for making my job easier!\"<br\/><em><strong>Electrician<\/strong><\/em><em><br\/>Quad\/Graphics<br\/>Jonesboro, AR<\/em><\/p>"
+          }
+        },
+        "3e13140a-f5c2-43b1-acf2-70a0d125671c": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Ultra Series",
+            "text": "<p>\"Extremely comfortable and well-made.\"<br\/><em><strong>Maintenance Technician<\/strong><\/em><em><br\/>Ocean Spray<br\/>Aberdeen, WA<\/em><\/p><p>\"Our staff likes the feel of the Ultras, their performance and durability.\"<br\/><em><strong>Mechanic<\/strong><\/em><em><br\/>Ralcorp Frozen Bakery Products<br\/>Wyoming, MI<\/em><\/p><p>\"Works better than any other OSHA compliant air guns. The extra air volume and pressure really shortens clean up time. Great product.\"<br\/><em><strong>Manager<\/strong><\/em><em><br\/>Longview Fibre Paper & Packaging<br\/>Yakima, WA<\/em><\/p><p>\"I really like the Ultra. It's tough, comfortable, and really puts out a lot of air. That helps to get the job done in a short amount of time.\"<br\/><em><strong>Sheet Metal Mechanic<\/strong><\/em><em><br\/>LGB Repair Shops<br\/>Peoria, AZ<\/em><\/p>"
+          }
+        },
+        "eed58e6e-c93d-464e-83e6-706f84ccb75b": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Lazer Series",
+            "text": "<p>\"Awesome Product! We had ergo problems with other air guns. This gun is great! I highly recommend it!\"<br\/><em><strong>Health & Safety Manager<\/strong><\/em><em><br\/>Cross Manufacturing<br\/>Lewis, KS<\/em><\/p><p>\"WOW! I can't say enough about the Lazer 600. The ergonomics are superior…..Thanks Guardair.\"<br\/><em><strong>Press Shift Leader<\/strong><\/em><em><br\/>Vertis Communications<br\/>Portland, OR<\/em><\/p><p>\"Very well built and sturdy. The Lazer 650 handles lots of abuse in our corrosive environment.\"<br\/><em><strong>Machinist<\/strong><\/em><em><br\/>Mosaic Potash<br\/>Colonsay, SK<\/em><\/p><p>\"Love the ergonomic design of the Lazer 600. It’s so comfortable.\"<br\/>Machinist<br\/>Federal-Mogul Powertrain Systems<br\/>South Bend, IN<\/p>"
+          }
+        },
+        "389605ca-9586-4a23-b705-9c66facaa238": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "900 Series",
+            "text": "<p>\"Used the 900 in our shop for years and they have always performed well.\"<br\/><em><strong>Mechanic<\/strong><\/em><em><br\/>Baughman Enterprises<br\/>Suffolk, VA<\/em><\/p><p>\"900LJ is a great product. One of the best on the market.\"<br\/><em><strong>Maintence Manager<\/strong><\/em><em><br\/>Hubbell Power Systems<br\/>Leeds, AL<\/em><\/p><p>\"Long lasting and affordable.\"<br\/><em><strong>Chemical Engineer<\/strong><\/em><em><br\/>John Deere Waterloo Works<br\/>Waterloo, IA<\/em><\/p><p>\"Best compact air gun we’ve found!\"<br\/><em><strong>Maintenance<\/strong><\/em><em><br\/>Diamond Manufacturing<br\/>Michigan City, IN<\/em><\/p>"
+          }
+        },
+        "b1aeb384-626c-4d55-aefd-d50d5e8fcaab": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Force 5 Series",
+            "text": "<p>\"OSHA compliance and incredible power...we love 'em.\"<br\/><em><strong>Safety Manager<\/strong><\/em><em><br\/>Wyman & Simpson<br\/>Richmond, ME<\/em><\/p><p>\"The Force 5 works way beyond my expectations. GREAT PRODUCT, KUDOS!\"<br\/><em><strong>Manager<\/strong><\/em><em><br\/>Apply-A-Line Inc.<br\/>Pacific, WA<\/em><\/p><p>\"Again Guardair has developed a great, user-friendly, safe product.\"<br\/><em><strong>Engineer<\/strong><\/em><em><br\/>Mount Vernon Mills<br\/>Williamston, SC<\/em><\/p><p>\"Well-made tools that stand up to everything we put them through.\"<br\/><em><strong>Owner<\/strong><\/em><em><br\/>Ringer Metal Supply<br\/>Kimbolton, OR<\/em><\/p>"
+          }
+        },
+        "3f408845-e53b-47cf-b2e7-6ce0073f7e6b": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Inforcer Series",
+            "text": "<p>\"We were formerly using a pipe with a ball valve before discovering the Inforcer. The pipe was heavy, unsafe with no \"deadman\" lever. The Inforcer is FAR superior! Thank you!\"<br\/><em><strong>Fleet Manager<\/strong><\/em><em><br\/>International Paper<br\/>Plant City, FL<\/em><\/p><p>\"This is a very helpful tool for cleaning hard-to-reach places and having enough volume to get the job done!\"<br\/><em><strong>Safety Supervisor<\/strong><\/em><em><br\/>Roseburg Forest Products<br\/>Dillard, OR<\/em><\/p><p>\"Nice light unit. The venturi nozzle effectively directs more air to where we need it.\"<br\/><em><strong>Highway Maintenance Supervisor<\/strong><\/em><em><br\/>Sacramento County Transportation Authority<br\/>Sacramento, CA<\/em><\/p><p>\"Picture did not do this product justice. It looked heavy duty but was surprised to see just how heavy duty.\"<br\/><em><strong>Operations Superintendent<\/strong><\/em><em><br\/>Bridger Coal Company<br\/>Point of Rocks, WY<\/em><\/p>"
+          }
+        },
+        "91e48ee8-2b4e-42d3-9400-33745e97806f": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Gun Vacs",
+            "text": "<p>\"Great for cleaning near machines. Light-weight and easy to use.\"<br\/><em><strong>Proprietor<\/strong><\/em><em><br\/>Moonlight Machining<br\/>Berlin, NH<\/em><\/p><p>\"The Guardair GunVac allows us to get into spaces that shop vacs will not. Response on the production floor has been outstanding and we keep buying more. Great product!\"<br\/><em><strong>Manufacturing Engineer<\/strong><\/em><em><br\/>Powell Industries<br\/>Houston, TX<\/em><\/p><p>\"Very useful product. Simple and durable. We have 3 in service at all times. Keep up the good work, Guardair.\"<br\/><em><strong>Maintenance Supervisor<\/strong><\/em><em><br\/>Castalloy Corp.<br\/>Waukesha, WI<\/em><\/p><p>\"We are really pleased with the 1500 GunVac. It exceeds our expectations.\"<br\/><em><strong>Tech Supervisor<\/strong><\/em><em><br\/>BorgWarner Automotive<br\/>Muncie, IN<\/em><\/p>"
+          }
+        },
+        "bb03cdda-35e9-4999-af26-9b5c1d4e7165": {
+          "type": "Text-And-Image",
+          "settings": {
+            "main_head": "Vacuums",
+            "text": "<p>\"Our Guardair vacuum outperforms other vacs we've owned in the past.\"<br\/><em><strong>Machine Operator<\/strong><\/em><em><br\/>Stryker Instruments<br\/>Portage, MI<\/em><\/p><p>\"You guys offer a great product with an awesome warranty.\"<br\/><em><strong>Warehouse Associate<\/strong><\/em><em><br\/>Elk Hills Power Plant<br\/>Tupman, CA<\/em><\/p><p>\"Normal wet\/dry electric vacs are no match for the Guardair vacuum.\"<br\/><em><strong>Maintenance Manager<\/strong><\/em><em><br\/>Gulf Coast Laundry Services<br\/>Gulfport, MS<\/em><\/p><p>\"I plan to recommend Guardair vacs to our other 68 branches around the nation.\"<br\/><em><strong>Service Technician<\/strong><\/em><em><br\/>Siemens Water Technologies<br\/>Nashville, TN<\/em><\/p><p>\"Our Guardair vacuum takes a lot of abuse yet is very dependable.\"<br\/><em><strong>Senior Mechanic<\/strong><\/em><em><br\/>GKN Sinter Metals<br\/>Emporium, PA<\/em><\/p><p>\"Over the years I've purchased a number of Guardair vacs and been very happy with their performance.\"<br\/><em><strong>Western District Project Manager<\/strong><\/em><em><br\/>Safety-Kleen<br\/>Vacaville, CA<\/em><\/p><p>\"Anyone needing the ultimate in vacuuming power needs to order one.\"<br\/><em><strong>Lead Line Support<\/strong><\/em><em><br\/>Gates Rubber<br\/>Versailles, MO<\/em><\/p><p>\"I won't buy any other brand!\"<br\/><em><strong>Maintenance Manager<\/strong><\/em><em><br\/>Freeport-McMoran<br\/>Green Valley, AZ<\/em><\/p><p>\"We love our Model N551BC!\"<br\/><em><strong>Mechanic<\/strong><\/em><em><br\/>Anderson Copper & Brass<br\/>Oak Forest, IL<\/em><\/p><p>\"Owned one for years and still providing good service.\"<br\/><em><strong>Operator<\/strong><\/em><em><br\/>Spectra Energy<br\/>Owingsville, KY<\/em><\/p><p>\"Durable, powerful, but best of all it works well!\"<br\/><em><strong>Maintenance Technician<\/strong><\/em><em><br\/>Alstom Power Air Preheater<br\/>Wellsville, NY<\/em><\/p><p>\"This vacuum is awesome….provides fantastic performance for what we need it to do.\"<br\/><em><strong>Maintenance Supervisor<\/strong><\/em><em><br\/>Barry Controls<br\/>Vestaburg, MI<\/em><\/p><p>\"Excellent product quality and service from Guardair.\"<br\/><em><strong>Vice President<\/strong><\/em><em><br\/>Intricate Metal Forming<br\/>Roanoke, VA<\/em><\/p><p>\"Simply a durable product that performs well.\"<br\/><em><strong>Engineering\/Maintenance Manager<\/strong><\/em><em><br\/>Uptown Bakeries Bridgeport, NJ<\/em><\/p><p>\"Reliable, sturdy, heavy-duty. We are very impressed with this vacuum.\"<br\/><em><strong>Shipping Coordinator\/Purchasing Agent<\/strong><\/em><em><br\/>Dow-Key Microwave<br\/>Tucson, AZ<\/em><\/p><p>\"Great product with amazing quality and durability.\"<br\/><em><strong>Operations Specialist<\/strong><\/em><em><br\/>Pfiizer<br\/>Portage, MI<\/em><\/p><p>\"Thank you, Guardair, for manufacturing such a high quality product in the USA.\"<br\/><em><strong>Inventory Control Manager<\/strong><\/em><em><br\/>Alcore<br\/>Edgewood, MD<\/em><\/p>"
+          }
+        },
+        "917bd30e-7a02-4ffc-9d87-12e36472c4ba": {
+          "type": "Product",
+          "settings": {
+            "product": "long-john-75lj-safety-air-gun-6"
+          }
+        },
+        "55694fd3-997d-4699-bf64-ceabd0165a07": {
+          "type": "Product",
+          "settings": {
+            "product": "ultra-xtrathrust-u75xt-safety-air-gun-6-w-long-trigger"
+          }
+        },
+        "45b1f8b8-a16f-4808-a7ec-f0cbe558dd37": {
+          "type": "Product",
+          "settings": {
+            "product": "palmjet-ga44-safety-air-gun-4-straight"
+          }
+        },
+        "9055b137-f9de-40b7-b648-37151ebb65f8": {
+          "type": "Product",
+          "settings": {
+            "product": "thumbswitch-900-safety-air-gun"
+          }
+        },
+        "232e288f-bb04-4ed8-a6b7-91ef862e3421": {
+          "type": "Product",
+          "settings": {
+            "product": "force-5-f5-safety-air-gun-24"
+          }
+        },
+        "4ac6654c-6d22-4e0a-a0a8-9f8571095f8b": {
+          "type": "Product",
+          "settings": {
+            "product": "syphon-spray-gun-79sg-6"
+          }
+        },
+        "5cf6973e-7864-43d0-b282-3f57e61df088": {
+          "type": "Product",
+          "settings": {
+            "product": "gunvac-handheld-vacuum-kit"
+          }
+        },
+        "ac44b26f-8820-4a37-bc0f-ffb95f4c8544": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-55-gallon-atex-vacuum-kit-w-2-inlet"
+          }
+        },
+        "8cfe7899-e263-4ebc-8d82-c1ebe5a03372": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-30-gallon-vacuum-kit-w-2-inlet"
+          }
+        },
+        "a44f82ad-e40c-4a6e-96cd-85ec0b95e92a": {
+          "type": "Product",
+          "settings": {
+            "product": "powerquad-10-gallon-vacuum-kit-w-1-5-inlet"
+          }
+        }
+      },
+      "block_order": [
+        "8ef8b022-1b8a-40e6-9e8a-5597609838f7",
+        "3e13140a-f5c2-43b1-acf2-70a0d125671c",
+        "eed58e6e-c93d-464e-83e6-706f84ccb75b",
+        "389605ca-9586-4a23-b705-9c66facaa238",
+        "b1aeb384-626c-4d55-aefd-d50d5e8fcaab",
+        "3f408845-e53b-47cf-b2e7-6ce0073f7e6b",
+        "91e48ee8-2b4e-42d3-9400-33745e97806f",
+        "bb03cdda-35e9-4999-af26-9b5c1d4e7165",
+        "917bd30e-7a02-4ffc-9d87-12e36472c4ba",
+        "55694fd3-997d-4699-bf64-ceabd0165a07",
+        "45b1f8b8-a16f-4808-a7ec-f0cbe558dd37",
+        "9055b137-f9de-40b7-b648-37151ebb65f8",
+        "232e288f-bb04-4ed8-a6b7-91ef862e3421",
+        "4ac6654c-6d22-4e0a-a0a8-9f8571095f8b",
+        "5cf6973e-7864-43d0-b282-3f57e61df088",
+        "ac44b26f-8820-4a37-bc0f-ffb95f4c8544",
+        "8cfe7899-e263-4ebc-8d82-c1ebe5a03372",
+        "a44f82ad-e40c-4a6e-96cd-85ec0b95e92a"
+      ],
+      "settings": {
+        "product_head": "EXPERIENCE GUARDAIR PRODUCTS:",
+        "padding_top": 22,
+        "padding_bottom": 75
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6d2cfd5e-e8e8-4ff1-a558-07e4db4ca366"
+  ]
+}

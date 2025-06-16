@@ -1,0 +1,189 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="nozzleWrapper section-{{ section.id }}-padding">
+    <div class="page-width">
+        <div class="nozzle_main_div">
+          <div class="text_blocks">
+          {% for block in section.blocks %}
+           {% if block.type == 'Text-And-Image' %}
+            <div class="nozzle_main_text">
+              {% if block.settings.main_head!=blank %}
+               <h2>{{ block.settings.main_head }}</h2> 
+              {% endif %}
+              {% if block.settings.text!=blank %}
+                <div class="nozzle_content">
+                  {{ block.settings.text }}
+                </div>
+              {% endif %}
+                <div class="nozzle_imgs {% if block.settings.second_img ==blank %}hh{% endif %}">
+                 {% if block.settings.first_img!=blank %}
+                  <div class="nozzle_first_img" >
+                  {% if block.settings.first_img_link!=blank %} <a href="{{ block.settings.first_img_link }}">{% endif %}     
+                  <img src="{{ block.settings.first_img | img_url : "360X232" }}">
+                  {% if block.settings.first_img_link!=blank %}</a>{% endif %}
+                  <p>{{ block.settings.first_img_text }}</p>
+                  </div>
+               {% endif %}
+                 {% if block.settings.second_img!=blank %}
+                  <div class="nozzle_second_img">
+                 {% if block.settings.second_img_link!=blank %} <a href="{{ block.settings.second_img_link }}">{% endif %}     
+                  <img src="{{ block.settings.second_img | img_url : "360X232" }}">
+                {% if block.settings.second_img_link!=blank %}</a>{% endif %} 
+                  <p>{{ block.settings.second_img_text }}</p>
+                  </div>
+                  {% endif %} 
+                </div>
+               {% if block.settings.text_bottom!=blank %}
+                <div class="nozzle_content">
+                  {{ block.settings.text_bottom }}
+                </div>
+               {% endif %}
+             </div>
+             {% endif %}
+            {% endfor %}
+          </div>
+           {% if section.settings.product_head!=blank %}
+            <div class="nozzle_product">
+            <div class="nozzle_products">
+             <h4>{{ section.settings.product_head }}</h4>
+             <ul>
+            {% for block in section.blocks %}
+            {% assign product=block.settings.product %}
+            {% if block.type == 'Product' %}
+               <li>
+                 <a href="{{product.url}}">
+                 <h2>{{product.title}}</h2>
+                  <img src="{{product.featured_image | img_url :"208x162"}}"/>
+                </a>
+               </li>
+            {% endif %}
+          {% endfor %}
+            </ul>
+                </div>
+          </div>
+         {% endif %}
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Nozzle Text And Image",
+    "settings": [
+      {
+      "type":"text",
+      "id":"product_head",
+      "label":"Side-Bar Heading"
+      },
+       {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Text-And-Image",
+        "name":"Text-And-Image",
+          "settings":[
+            {
+              "type":"text",
+              "id":"main_head",
+              "label":"Heading"
+            },
+            {
+              "type":"richtext",
+              "id":"text",
+              "label":"Top Text"
+            },
+            {
+              "type":"image_picker",
+              "id":"first_img",
+              "label":"Select First Image"
+            },
+            {
+              "type":"url",
+              "id":"first_img_link",
+              "label":"First Image Link"
+            },
+            {
+              "type":"text",
+              "id":"first_img_text",
+              "label":"First Image Title"
+            },
+            {
+              "type":"image_picker",
+              "id":"second_img",
+              "label":"Select Second Image"
+            },
+            {
+              "type":"url",
+              "id":"second_img_link",
+              "label":"Second Image Link"
+            },
+            {
+              "type":"text",
+              "id":"second_img_text",
+              "label":"Second Image Title"
+            },
+             {
+              "type":"richtext",
+              "id":"text_bottom",
+              "label":"Bottom Text"
+            }
+          ]
+      },
+      {
+      "type": "Product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:sections.collage.blocks.product.settings.product.label"
+        }
+      ]
+    }
+    ],
+    "presets":[
+      {
+     "name": "Nozzle Text And Image"
+      }
+    ]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

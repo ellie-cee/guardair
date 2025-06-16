@@ -1,0 +1,226 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "04fbc4b1-8ff0-4948-993e-87835370c47c": {
+      "type": "custom-text-with-block",
+      "blocks": {
+        "d37cda6b-aeb3-4180-89ab-6eca31e1b929": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/download_b7988dac-dda0-491e-92da-e6cf2830f2c2.png",
+            "img_url": "",
+            "heading": ""
+          }
+        },
+        "4550d4e0-279e-462f-a972-9f9f8717886c": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/download_1.png",
+            "img_url": "",
+            "heading": ""
+          }
+        },
+        "3343d5a2-1d44-4a67-b965-1299d6e92098": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/download_2.png",
+            "img_url": "",
+            "heading": ""
+          }
+        },
+        "fd0d3ac3-1238-4f37-b5be-355e0084e561": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/download_3.png",
+            "img_url": "",
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "d37cda6b-aeb3-4180-89ab-6eca31e1b929",
+        "4550d4e0-279e-462f-a972-9f9f8717886c",
+        "3343d5a2-1d44-4a67-b965-1299d6e92098",
+        "fd0d3ac3-1238-4f37-b5be-355e0084e561"
+      ],
+      "settings": {
+        "content": "<p>Originally founded in Bridgeport, Connecticut in 1942, Guardair Manufacturing Corporation developed the very first \"safety air gun\" incorporating a safety air shield to protect the operator from \"chip fly-back.\" This feature was patented, as were further technical innovations which followed. Incorporating these advancements into its products, Guardair Manufacturing thrived throughout the 1940s and 1950s.<\/p><p>In 1959, the assets of Guardair Manufacturing were purchased by Union Engineering, Inc. of South Hadley, Massachusetts. Several additional patents were awarded to the company as sales continued to expand.<\/p><p>Responding to the growing concern over safety in the manufacturing workplace, in 1970, Congress authorized the US Department of Labor to create the Occupational Safety and Health Administration (OSHA). One workplace hazard targeted by OSHA was the use of compressed air for cleaning purposes. In the early days of OSHA, Union Engineering worked closely with OSHA officials to craft the standards and consequently was in a unique position to introduce the first safety air gun designed to meet these newly minted regulations.<\/p><p>With a relentless focus on worker safety, Union Engineering introduced a number of new, innovative products throughout the 1970s and 1980s. In 1994, the assets of Union Engineering were sold and the name changed back to Guardair Corporation—to more closely reflect the roots of the company and its mission.<\/p><p>Since then, Guardair has grown significantly. To keep pace with our growing market presence and customer requirements, Guardair moved to a state-of-the-art manufacturing facility in Chicopee, Massachusetts. Augmenting our organic growth, Guardair expanded its product line by purchasing the assets of Allpax Gasket Cutter Systems (1999), Nortech Vacuum Products (2004), and Air-Spade (2008).<\/p>",
+        "img": "shopify:\/\/shop_images\/download_4.png",
+        "second_img": "shopify:\/\/shop_images\/download_6.png",
+        "text": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_Btm4xT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Jw6e3w": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_Jw6e3w"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": true,
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "anchor_id": ""
+      }
+    },
+    "rich_text_78QTDz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fCiPAz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nortech Vacuum History",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fCiPAz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "custom_text_with_block_T8PVrT": {
+      "type": "custom-text-with-block",
+      "blocks": {
+        "blocks_6LhiBz": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/nortech-old-logo.jpg",
+            "img_url": "",
+            "heading": ""
+          }
+        },
+        "blocks_9YWMB6": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/nortech-old-factory.png",
+            "img_url": "",
+            "heading": ""
+          }
+        },
+        "blocks_6imTKN": {
+          "type": "blocks",
+          "settings": {
+            "img_select": "shopify:\/\/shop_images\/nortech-30-gallon-b-vacuum-unit-kit-n301bcx.jpg",
+            "img_url": "",
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "blocks_6LhiBz",
+        "blocks_9YWMB6",
+        "blocks_6imTKN"
+      ],
+      "settings": {
+        "content": "<p>Nortech's roots reach back to 1958 when, following a stint as a pilot for Pan American World Airways, Richard Marlow founded Northeast Industries in Midland Park, New Jersey. The new company was just up the street from Marlow Pumps, the highly-respected manufacturer (now part of ITT) founded by Richard's father, Alfred Marlow, in the 1920s.<br\/><br\/>Northeast Industries began manufacturing the \"Vapor-Jet\" line of steam cleaners and soon added additional products for industrial cleaning, including pressure washers, sand blasters, and compressed air-powered vacuums.<br\/><br\/>When a Pennsylvania-based company acquired Northeast Industries in 1967, Richard Marlow elected to retain the rights to the air-powered vacuums and the Nortech name was born. Soon the company was offering a more complete line of vacuums and enjoying dramatic growth. In 1978 Nortech purchased its first production facility and in 1988 completed construction of the company's first from-the-ground-up factory. By this time Nortech's end-user list read more like the Fortune 500—listing customers such as General Motors, Boeing, and Bethlehem Steel.<br\/><br\/>In 2004 Nortech was acquired by Guardair Corporation of Chicopee, Massachusetts. With the goal of uniting Guardair's core industrial safety air gun and pneumatic product lines under a single cohesive brand message & sales approach, all Nortech Vacuum Products were transitioned to the Guardair brand in 2016.<\/p>",
+        "text": "",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_no_links_8YRhJ4": {
+      "type": "multicolumn-no-links",
+      "blocks": {
+        "column_jtKc4E": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nortech-sandblaster-richard-marlow-c1967.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8KNbjz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nortech-tool-cleaner-vic-quick-c1967.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ciXadJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nortech-pressure-washer-c1969.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VKgFgT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nortech-vacuum-c1969.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jtKc4E",
+        "column_8KNbjz",
+        "column_ciXadJ",
+        "column_VKgFgT"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "04fbc4b1-8ff0-4948-993e-87835370c47c",
+    "rich_text_Btm4xT",
+    "rich_text_78QTDz",
+    "custom_text_with_block_T8PVrT",
+    "multicolumn_no_links_8YRhJ4"
+  ]
+}

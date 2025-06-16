@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_hCd7bP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XkyQqy": {
+          "type": "heading",
+          "settings": {
+            "heading": "PowerQUAD™ Pneumatic Vacuum Operation",
+            "heading_size": "h2"
+          }
+        },
+        "text_T4XckY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With no motor or rotating parts to wear out or burn out, PowerQUAD™ Pneumatic Vacuums are powered by compressed air and offer years of dependable, trouble-free operation. Utilizing the \"Venturi Effect\", they generate exceptional vacuum lift and more vacuum flow than conventional pneumatic or electric vacuums.<\/p>"
+          }
+        },
+        "text_t7rKHt": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Here's how they work:<\/p><ul><li>(A) Compressed air from air supply hose<\/li><li>(B) Passes through ball valve(<\/li><li>C) Into the manifold<\/li><li>(D) Through four (4) air injector nozzles<\/li><li>(E) Into the first set of four (4) venturi<\/li><li>(F) Then through the second set of four (4) venturi<\/li><li>(G) Passes by the silencer foam<\/li><li>(H) Exits through exhaust housing to atmosphere.<\/li><li>(I) Expanding compressed air within the venturi box induces a low-pressure area<\/li><li>(J) Drawing air via the vacuum hose<\/li><li>(K) Into vacuum drum<\/li><li>(L) Through the internal filter<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XkyQqy",
+        "text_T4XckY",
+        "text_t7rKHt"
+      ],
+      "custom_css": [
+        "h2 {font-size: 18px;}",
+        "li {font-size: 16px;}",
+        "a {font-size: 16px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "custom_text_and_image_blocks_AHbJbF": {
+      "type": "custom-text-and-image-blocks",
+      "blocks": {
+        "image_text_7en8Vx": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/PQ_AIRFL-OW_STATIC_DIAGRAM.png",
+            "img_position": "right",
+            "head": "",
+            "content": "<p>Here's how they work:<\/p><ul><li>(A) Compressed air from air supply hose<\/li><li>(B) Passes through ball valve<\/li><li>(C) Into the manifold<\/li><li>(D) Through four (4) air injector nozzles<\/li><li>(E) Into the first set of four (4) venturi<\/li><li>(F) Then through the second set of four (4) venturi<\/li><li>(G) Passes by the silencer foam<\/li><li>(H) Exits through exhaust housing to atmosphere.<\/li><li>(I) Expanding compressed air induces low-pressure<\/li><li>(J) Drawing air via the vacuum hose<\/li><li>(K) Into vacuum drum<\/li><li>(L) Through the internal filter<\/li><\/ul>",
+            "img_alignment": "fifty"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_7en8Vx"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "img {padding-left: 45px;}"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "custom_text_and_image_blocks_3EKVVp": {
+      "type": "custom-text-and-image-blocks",
+      "blocks": {
+        "image_text_bPDTCJ": {
+          "type": "Image-Text",
+          "settings": {
+            "img_logo": "shopify:\/\/shop_images\/PQ_ANIMATION-v5c.gif",
+            "img_position": "right",
+            "head": "",
+            "content": "<p>Here's how they work:<\/p><ul><li>(A) Compressed air from air supply hose<\/li><li>(B) Passes through ball valve<\/li><li>(C) Into the manifold<\/li><li>(D) Through four (4) air injector nozzles<\/li><li>(E) Into the first set of four (4) venturi<\/li><li>(F) Then through the second set of four (4) venturi<\/li><li>(G) Passes by the silencer foam<\/li><li>(H) Exits through exhaust housing to atmosphere<\/li><li>(I) Expanding compressed air induces low-pressure<\/li><li>(J) Drawing air through the internal filter<\/li><li>(K) Into vacuum drum<\/li><li>(L) From the vacuum hose<\/li><\/ul>",
+            "img_alignment": "fifty"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_bPDTCJ"
+      ],
+      "custom_css": [
+        "img {padding-left: 45px;}"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_hCd7bP",
+    "custom_text_and_image_blocks_AHbJbF",
+    "custom_text_and_image_blocks_3EKVVp"
+  ]
+}

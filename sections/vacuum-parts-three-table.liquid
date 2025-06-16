@@ -1,0 +1,147 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+
+<div class="sixtableswrapper section-{{ section.id }}-padding">
+  <div class="page-width">
+     <div class="six_tablemain">
+       {% if section.settings.heading!=blank %}
+       <div class="six_headings">
+        <h2>{{ section.settings.heading }}</h2>
+       </div>
+      {% endif %}
+        <table>
+          <thead class = "main_table_heads">
+          <tr class="main_table_Class three_blocks">
+            <th class="vacuum_product_three">{{ section.settings.vaccumeheading }}</th>
+            <th class="tables_all_product" >{{ section.settings.firstheading }}</th>
+            <th class="tables_all_product">{{ section.settings.secondheading }}</th>
+          </tr>
+          </thead>
+          {% for block in section.blocks %}
+          {% assign productvacuume = block.settings.vacuum_product %}
+          {% assign productfirst = block.settings.first_product %}
+          {% assign productsecond = block.settings.second_product %}
+          {% assign current_variant_vacuume = productvacuume.selected_or_first_available_variant %}
+          {% assign current_variant_first = productfirst.selected_or_first_available_variant %}
+          {% assign current_variant_second = productsecond.selected_or_first_available_variant %}
+          <tr class="main_table_Class three_blocks">
+            <td class="vacuum_product_three">
+            <a href="{% if block.settings.vacuum_product_link!=blank %}{{ block.settings.vacuum_product_link }}{% else %}{{ current_variant_vacuume.url }}{% endif %}">  
+            <img src="{{productvacuume | img_url: "master"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+            <p>{{ productvacuume.title }}</p>
+            </a>
+            </td>
+            <td class="tables_all_product">
+            <a href="{{ current_variant_first.url }}">
+            <img src="{{productfirst | img_url: "120X120"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+             <p>{{ current_variant_first.sku }}</p>
+             </a>
+             </td>
+            <td class="tables_all_product">
+         <a href="{{ current_variant_second.url }}">
+          <img src="{{productsecond | img_url: "120X120"}}" alt="{{ image.alt }}" data-image-id="{{image.id}}"/>
+           <p>{{ current_variant_second.sku }}</p>
+             </a>
+            </td>
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Three Column Filter Table",
+    "settings": [
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+      },
+      {
+      "type": "text",
+      "id": "vaccumeheading",
+      "label": "Vacuum Heading"
+      },
+      {
+      "type": "text",
+      "id": "firstheading",
+      "label": "First Heading"
+      },
+      {
+      "type": "text",
+      "id": "secondheading",
+      "label": "Second Heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Product",
+        "name":"Product",
+         "settings":[
+            {
+              "type": "product",
+              "id": "vacuum_product",
+              "label": "Vacuum Model Select"
+            },
+            {
+              "type": "url",
+              "id": "vacuum_product_link",
+              "label": "Vacuum Model Link"
+            },
+            {
+              "type": "product",
+              "id": "first_product",
+              "label": "First Product Select"
+            },
+             {
+              "type": "product",
+              "id": "second_product",
+              "label": "Second Product Select"
+            }
+         ]
+      }
+    ],
+    "presets":[
+      {
+            "name": "Three Column Filter Table"
+
+      }
+    ]
+  }
+{% endschema %}
+

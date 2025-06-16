@@ -1,0 +1,176 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="image_with_from section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="image-with_formimage">
+        <div class="image-with-text__media-item">
+          <div class="image_form_head">
+            {{ section.settings.description }}
+          </div>
+        {% if section.settings.video_url!=blank %}
+        <div class="itg_video_form">
+         {%- if section.settings.video_url.type == 'youtube' -%}
+          <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1&autoplay=0&controls=1&mute=1&loop=1"  width="100%"  height="400px" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+        {%- else -%}
+          <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}" class="js-vimeo" width="100%"  height="500px" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+        {%- endif -%}
+        </div>
+        {% endif %}
+        
+        <div class="video_form_bottom">
+          <h2>Kit Contents:</h2>
+        {% for block in section.blocks %}
+         {% if block.type == 'Text-Link' %}
+          <ul>
+          <li>
+         {% if block.settings.f_url!=blank %}<a href="{{ block.settings.f_url }}"> {% endif %}{{ block.settings.f_head }}{% if block.settings.f_url!=blank %}</a> {% endif %}
+          </li>
+          </ul>
+           {% endif %}
+        {% endfor %}
+        </div>
+        </div>
+        <div class="image_with_formstext">
+          {% if section.settings.tophead!=blank %}
+          <div class="image_form_tophead">
+            {{ section.settings.tophead }}
+          </div>
+          {% endif %}
+           {% if section.settings.custom_liquid!=blank %}
+              {{ section.settings.custom_liquid }}
+             {% endif %}
+          {% if section.settings.bottomhead!=blank %}
+           <div class="image_form_bottomhead">
+            {{ section.settings.bottomhead }}
+          </div>
+          {% endif %}
+        </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Video with Form",
+    "settings": [
+      {
+        "type":"richtext",
+        "id":"description",
+        "label":"Video Description"
+      },
+    {
+     "type": "video_url",
+     "id": "video_url",
+            "accept": [
+              "youtube",
+              "vimeo"
+              
+            ],
+      "label":"Video Link"
+      },
+      {
+        "type":"richtext",
+        "id":"tophead",
+        "label":"Form Top Content"
+      },
+      {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+     },
+      {
+        "type":"richtext",
+        "id":"bottomhead",
+        "label":"Form Bottom Content"
+      },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+    ],
+    "blocks":[
+      {
+        "type":"Text-Link",
+        "name":"Text-Link",
+          "settings":[
+            {
+              "type":"text",
+              "id":"f_head",
+              "label":"Text"
+            },
+            {
+              "type":"url",
+              "id":"f_url",
+              "label":"Text Link"
+            }
+          ]
+      }
+    ],
+    "presets":[
+      {
+      "name": "Video with Form"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+
+.image-with_formimage {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.image-with-text__media-item img {
+    width: 100%;
+}
+.image_form_head p, .image_form_head li {
+    font-size: 16px !important;
+}
+.video_form_bottom a {
+    text-decoration: none;
+    color: #002395;
+    font-size: 21px;
+    font-family: Eurostile-Bol,sans-serif;
+    font-style: italic;
+}
+.video_form_bottom ul {
+    margin: 0;
+}
+.video_form_bottom h2 {
+    margin: 0;
+}
+  
+  
+</style>

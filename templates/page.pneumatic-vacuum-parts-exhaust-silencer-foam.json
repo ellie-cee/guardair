@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "b3b403a6-a9f0-416a-a328-7ea154abc8e8": {
+      "type": "four-table-product",
+      "blocks": {
+        "block_i8rYke": {
+          "type": "block",
+          "settings": {
+            "itg_product": "exhaust-silencer-foam-insert-b-d-s-venturi"
+          }
+        },
+        "block_CqnXNi": {
+          "type": "block",
+          "settings": {
+            "itg_product": "exhaust-silencer-foam-insert-m-venturi"
+          }
+        },
+        "8dc088a8-5af8-49cc-a095-22350b642bfb": {
+          "type": "block",
+          "settings": {
+            "itg_product": "extra-silent-exhaust-foam-insert-set"
+          }
+        },
+        "block_Ee6Afk": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-silencer-foam"
+          }
+        },
+        "block_6rgbqV": {
+          "type": "block",
+          "settings": {
+            "itg_product": "powerquad-exhaust-housing-w-silencer-foam"
+          }
+        }
+      },
+      "block_order": [
+        "block_i8rYke",
+        "block_CqnXNi",
+        "8dc088a8-5af8-49cc-a095-22350b642bfb",
+        "block_Ee6Afk",
+        "block_6rgbqV"
+      ],
+      "settings": {
+        "heading": "",
+        "link": "",
+        "f_head": "Part Number",
+        "s_head": "Description",
+        "t_head": "Product",
+        "variants_shead": "Fits",
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b3b403a6-a9f0-416a-a328-7ea154abc8e8"
+  ]
+}

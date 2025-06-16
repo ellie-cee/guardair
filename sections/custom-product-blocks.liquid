@@ -1,0 +1,182 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+{% assign grid_column ="" %}
+{% if section.settings.columns_desktop == 1 %}
+{% assign grid_column = "one_product" %}
+{% elsif section.settings.columns_desktop == 2 %}
+{% assign grid_column = "two_product" %}
+{% elsif section.settings.columns_desktop == 3 %}
+{% assign grid_column = "three_product" %}  
+{% elsif section.settings.columns_desktop == 4 %}
+{% assign grid_column = "four_product" %}    
+{% elsif section.settings.columns_desktop == 5 %}
+{% assign grid_column = "five_product" %}   
+{% endif %}
+  
+
+<div class="customproductwrapper section-{{ section.id }}-padding">
+   <div class="page-width">
+        <div class="blocks_products">
+            {% if section.settings.product_head!=blank %}
+             <h1>{{ section.settings.product_head }}</h1>
+            {% endif %}
+            <div class="blocks_headproduct">
+                {{ section.settings.content }}
+            </div>
+             <ul class="products_block_div {{ grid_column }}">
+            {% for block in section.blocks %}
+            {% assign product=block.settings.product %}
+            {% for variant in product.variants %}
+            {% if block.type == 'Product' %}
+            {% if variant.available %}
+               <li>
+                 <a href="{{product.url}}">
+                  <img src="{{product.featured_image | img_url :"250x175"}}"/>
+                 <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                  <h4>{{ variant.title }}</h4>
+                </option>
+               </a>   
+               </li>
+               {% endif %}
+            {% endif %}
+             {%- endfor -%}
+          {% endfor %}
+            </ul>
+        </div>
+   </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Featured Product Block",
+    "settings": [
+      {
+        "type":"text",
+        "id":"product_head",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "id":"content",
+        "label":"Content"
+      },
+      {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.columns_desktop.label"
+     },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks":[
+       {
+      "type": "Product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:sections.collage.blocks.product.settings.product.label"
+        }
+      ]
+     }
+    ],
+    "presets":[
+      {
+      "name": "Featured Product Block"
+      }
+    ]
+  }
+{% endschema %}
+
+
+<style>
+.blocks_products .products_block_div {
+    display: grid;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.blocks_products .products_block_div li option {
+    text-align: center;
+    color: #002395;
+    font-size: 16px;
+    line-height: 1.67;
+    transition: 0.3s all linear;
+    font-family: Eurostile-Bol,sans-serif;
+}
+
+.blocks_products .products_block_div li option:hover {
+    color: #4c92dd;
+}
+
+.blocks_products .products_block_div li img {
+    width: 100%;
+    max-width: 100%;
+}
+ul.products_block_div.two_product {
+    grid-template-columns: 1fr 1fr;
+}
+ul.products_block_div.one_product {
+    grid-template-columns: 1fr 1fr;
+}  
+ul.products_block_div.three_product {
+    grid-template-columns: 1fr 1fr 1fr;
+}  
+ul.products_block_div.five_product {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}  
+.blocks_products h1 {
+    margin: 0;
+}
+  
+  
+</style>
+
+
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
