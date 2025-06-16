@@ -29,6 +29,18 @@ if (!customElements.get('quick-add-modal')) {
           .then((response) => response.text())
           .then((responseText) => {
             const responseHTML = new DOMParser().parseFromString(responseText, 'text/html');
+
+            this.productElement = responseHTML.querySelector('section[id^="MainProduct-"]');
+            this.productElement.classList.forEach((classApplied) => {
+              if (classApplied.startsWith('color-') || classApplied === 'gradient')
+                this.modalContent.classList.add(classApplied);
+            });
+            this.preventDuplicatedIDs();
+            this.removeDOMElements();
+            this.setInnerHTML(this.modalContent, this.productElement.innerHTML);
+
+  
+            
             const productElement = responseHTML.querySelector('product-info');
 
             this.preprocessHTML(productElement);
@@ -38,6 +50,9 @@ if (!customElements.get('quick-add-modal')) {
               Shopify.PaymentButton.init();
             }
             if (window.ProductModel) window.ProductModel.loadShopifyXR();
+            this.removeGalleryListSemantic();
+            this.updateImageSizes();
+            this.preventVariantURLSwitching();
 
             super.show(opener);
           })
@@ -46,6 +61,19 @@ if (!customElements.get('quick-add-modal')) {
             opener.classList.remove('loading');
             opener.querySelector('.loading__spinner').classList.add('hidden');
           });
+      }
+      setInnerHTML(element, html) {
+        element.innerHTML = html;
+
+        // Reinjects the script tags to allow execution. By default, scripts are disabled when using element.innerHTML.
+        element.querySelectorAll('script').forEach((oldScriptTag) => {
+          const newScriptTag = document.createElement('script');
+          Array.from(oldScriptTag.attributes).forEach((attribute) => {
+            newScriptTag.setAttribute(attribute.name, attribute.value);
+          });
+          newScriptTag.appendChild(document.createTextNode(oldScriptTag.innerHTML));
+          oldScriptTag.parentNode.replaceChild(newScriptTag, oldScriptTag);
+        });
       }
 
       preprocessHTML(productElement) {
