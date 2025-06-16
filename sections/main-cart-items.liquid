@@ -24,12 +24,12 @@
 {%- endunless -%}
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
-
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="underlined-link continueShopping-link">
+      <a href="{{ routes.all_products_collection_url }}" class="underlined-link">
         {{- 'general.continue_shopping' | t -}}
       </a>
     </div>
@@ -56,7 +56,7 @@
               <caption class="visually-hidden">
                 {{ 'sections.cart.title' | t }}
               </caption>
-              <thead class="cart-heading-table">
+              <thead>
                 <tr>
                   <th class="caption-with-letter-spacing" colspan="2" scope="col">
                     {{ 'sections.cart.headings.product' | t }}
@@ -71,7 +71,7 @@
                   >
                     {{ 'sections.cart.headings.quantity' | t }}
                   </th>
-                  <th class="small-hide {% comment %}right{% endcomment %} caption-with-letter-spacing" colspan="1" scope="col">
+                  <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
                 </tr>
@@ -103,9 +103,8 @@
                       {%- endif -%}
 
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
-                       <div class="itg_cart_sku">{{ item.variant.sku }}</div>
-                      <p>{{ item.product.description | strip_html | truncate: 150 }}</p>
-                    {% comment %}{%- if item.original_price != item.final_price -%}
+
+                      {%- if item.original_price != item.final_price -%}
                         <div class="cart-item__discounted-prices">
                           <span class="visually-hidden">
                             {{ 'products.product.price.regular_price' | t }}
@@ -124,7 +123,7 @@
                         <div class="product-option">
                           {{ item.original_price | money }}
                         </div>
-                      {%- endif -%}{% endcomment %}
+                      {%- endif -%}
 
                       {%- if item.product.has_only_default_variant == false
                         or item.properties.size != 0
@@ -133,20 +132,13 @@
                         <dl>
                           {%- if item.product.has_only_default_variant == false -%}
                             {%- for option in item.options_with_values -%}
-                            {% if option.value != 'Default Title' %}
                               <div class="product-option">
                                 <dt>{{ option.name }}:</dt>
                                 <dd>{{ option.value }}</dd>
                               </div>
-                            {% endif %}
                             {%- endfor -%}
                           {%- endif -%}
-                          {% comment %}
-                        <div class="item-warning visible-xs">
-                              {{ 'cart.general.warning_html' | t  }}
-                            <strong>California Residents</strong> – <a href="https://www.p65warnings.ca.gov/" target="_blank">Click here</a> for Proposition 65 Warning
-                        </div>
-                          {% endcomment %}
+
                           {%- for property in item.properties -%}
                             {%- assign property_first_char = property.first | slice: 0 -%}
                             {%- if property.last != blank and property_first_char != '_' -%}

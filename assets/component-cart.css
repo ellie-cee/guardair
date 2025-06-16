@@ -83,7 +83,7 @@ cart-items {
 
 .cart__note {
   height: fit-content;
-  /* top: 2.5rem; */
+  top: 2.5rem;
 }
 
 .cart__note label {
@@ -223,16 +223,4 @@ cart-items {
     display: flex;
     gap: 1rem;
   }
-}
-.secure_icon_container {
-  display: flex;
-  gap: 8px;
-  max-width: 25rem;
-  margin-right: 0;
-  margin-left: auto;
-  justify-content: center;
-  color: #666;
-}
-.secure_icon_container svg {
-  max-width: 18px;
 }

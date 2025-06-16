@@ -38,7 +38,7 @@
   {%- endif %}
 {%- endcapture -%}
 
-<div {% if section.settings.anchor_id != blank %}id="{{ section.settings.anchor_id }}"{% endif %} class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div
       {% if section.settings.full_width %}
@@ -51,81 +51,102 @@
         </div>
       {%- endunless -%}
     </div>
-    <div
-      class="video-section__media"
+    <noscript>
+      <div
+        class="video-section__media"
+        {% if poster != null %}
+          style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+        {% endif %}
+      >
+        {%- if section.settings.video == null and section.settings.video_url != null -%}
+          <a
+            href="{{ section.settings.video_url }}"
+            class="video-section__poster media media--transparent{% if poster == null %} video-section__placeholder{% endif %}"
+          >
+            {%- if poster != null -%}
+              {{
+                poster
+                | image_url: width: 3840
+                | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+              }}
+            {%- else -%}
+              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+            {%- endif -%}
+          </a>
+        {%- else -%}
+          {{
+            section.settings.video
+            | video_tag: image_size: '1100x', loop: section.settings.enable_video_looping, controls: true, muted: false
+          }}
+        {%- endif -%}
+      </div>
+    </noscript>
+    <deferred-media
+      class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      data-media-id="{{ video_id }}"
       {% if poster != null %}
         style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
       {% endif %}
     >
-      <div class="video-container" data-video-id="{{ video_id }}" id="youtube-video-{{ section.id }}">
-        <button
-          id="Deferred-Poster-Modal-{{ video_id }}"
-          class="video-section__poster media deferred-media__poster media--landscape"
-          type="button"
-          aria-label="{{ alt }}"
-          onclick="playVideo('{{ video_id }}', '{{ section.id }}')"
-        >
-          {%- if poster != null -%}
-            {{
-              poster
-              | image_url: width: 3840
-              | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
-            }}
+      <button
+        id="Deferred-Poster-Modal-{{ video_id }}"
+        class="video-section__poster media deferred-media__poster media--landscape"
+        type="button"
+        aria-label="{{ alt }}"
+      >
+        {%- if poster != null -%}
+          {{
+            poster
+            | image_url: width: 3840
+            | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+          }}
+        {%- else -%}
+          {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {%- endif -%}
+        <span class="deferred-media__poster-button motion-reduce">
+          {%- render 'icon-play' -%}
+        </span>
+      </button>
+      <template>
+        {%- if section.settings.video == null and section.settings.video_url != null -%}
+          {%- liquid
+            assign loop = ''
+            if section.settings.enable_video_looping
+              assign loop = '&loop=1&playlist=' | append: video_id
+            endif
+          -%}
+          {%- if section.settings.video_url.type == 'youtube' -%}
+            <iframe
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+              class="js-youtube"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
           {%- else -%}
-            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+            <iframe
+              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+              class="js-vimeo"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ section.settings.description | escape }}"
+            ></iframe>
           {%- endif -%}
-          <span class="deferred-media__poster-button motion-reduce">
-            {%- render 'icon-play' -%}
-          </span>
-        </button>
-      </div>
-    </div>
+        {%- else -%}
+          {{
+            section.settings.video
+            | video_tag:
+              image_size: '1100x',
+              autoplay: true,
+              loop: section.settings.enable_video_looping,
+              controls: true,
+              muted: false
+          }}
+        {%- endif -%}
+      </template>
+    </deferred-media>
   </div>
 </div>
-
-<script>
-  function loadYouTubeAPI() {
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-}
-
-function playVideo(videoId, sectionId) {
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('youtube-video-' + sectionId, {
-      videoId: videoId,
-      events: {
-        'onReady': onPlayerReady
-      }
-    });
-  }
-  
-  function onPlayerReady(event) {
-    event.target.playVideo();
-  }
-  
-  if (typeof YT == 'undefined' || typeof YT.Player == 'undefined') {
-    window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
-    loadYouTubeAPI();
-  } else {
-    onYouTubeIframeAPIReady();
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  var playButtons = document.querySelectorAll('.video-section__poster-button');
-  playButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      var videoId = this.closest('.video-container').getAttribute('data-video-id');
-      var sectionId = this.closest('.video-container').getAttribute('id').replace('youtube-video-', '');
-      playVideo(videoId, sectionId);
-    });
-  });
-});
-
-</script>
 
 {% schema %}
 {
@@ -243,12 +264,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-      {
-        "type": "text",
-        "id": "anchor_id",
-        "label": "Anchor ID"
-      }
+    }
   ],
   "presets": [
     {
@@ -257,4 +273,3 @@ document.addEventListener("DOMContentLoaded", function() {
   ]
 }
 {% endschema %}
-
