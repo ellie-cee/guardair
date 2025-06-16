@@ -11,6 +11,10 @@ quick-order-list .quantity__button {
   width: calc(3.5rem / var(--font-body-scale));
 }
 
+.quick-order-list__contents {
+  position: relative;
+}
+
 .quick-order-list__container {
   padding-bottom: 4rem;
 }
@@ -32,19 +36,15 @@ quick-order-list .quantity__button {
   z-index: 1;
 }
 
-.variant-item__quantity .quantity:before {
-  z-index: 0;
-}
-
-.variant-item__quantity .quantity__button {
-  z-index: 1;
+.variant-item__image-container.global-media-settings::after {
+  content: none;
 }
 
 @media screen and (min-width: 990px) {
   .quick-order-list__total {
     position: sticky;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: rgb(var(--color-background));
   }
 
@@ -309,6 +309,10 @@ quick-order-list-remove-button .icon-remove {
     left: 2rem;
     top: 1.2rem;
   }
+
+ .variant-remove-total--empty .loading__spinner {
+    top: -1rem;
+  }
 }
 
 quick-order-list-remove-button:hover .icon-remove {
@@ -446,6 +450,10 @@ quick-order-list-remove-button:hover .icon-remove {
   }
 }
 
+.quick-order-list__button-text {
+  text-align: center;
+}
+
 .quick-order-list-total__confirmation {
   display: flex;
   justify-content: center;
@@ -477,10 +485,6 @@ quick-order-list-remove-button:hover .icon-remove {
 
   .quick-order-list__table td {
     padding-top: 1.6rem;
-  }
-
-  .quick-order-list__table .desktop-row-error td {
-    padding-top: 0;
   }
 
   .quick-order-list__table .desktop-row-error td {
