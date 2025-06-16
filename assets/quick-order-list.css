@@ -35,7 +35,13 @@ quick-order-list .quantity__button {
 .variant-item__quantity .quantity__button {
   z-index: 1;
 }
+.variant-item__quantity .quantity:before {
+  z-index: 0;
+}
 
+.variant-item__quantity .quantity__button {
+  z-index: 1;
+}
 .variant-item__image-container.global-media-settings::after {
   content: none;
 }
@@ -44,7 +50,7 @@ quick-order-list .quantity__button {
   .quick-order-list__total {
     position: sticky;
     bottom: 0;
-    z-index: 2;
+    z-index: 1;
     background-color: rgb(var(--color-background));
   }
 
@@ -486,6 +492,7 @@ quick-order-list-remove-button:hover .icon-remove {
   .quick-order-list__table td {
     padding-top: 1.6rem;
   }
+
 
   .quick-order-list__table .desktop-row-error td {
     padding-top: 0;
