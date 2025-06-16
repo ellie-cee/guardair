@@ -114,6 +114,11 @@
     "product_title": "Example product title",
     "collection_title": "Your collection's name"
   },
+  "collection":{
+    "filter_menu":{
+      "refine":"filter"
+    }
+  },
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
