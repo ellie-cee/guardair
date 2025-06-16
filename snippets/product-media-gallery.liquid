@@ -184,7 +184,8 @@
     or section.settings.mobile_thumbnails == 'show'
   -%}
     <slider-component
-      id="GalleryThumbnails-{{ section.id }}"
+      id="GalleryThumbnails-{{ section.id }}{{ id_append }}"
+
       class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
     >
       <button
@@ -198,8 +199,8 @@
         {% render 'icon-caret' %}
       </button>
       <ul
-        id="Slider-Thumbnails-{{ section.id }}"
-        class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
+        id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
+        class="itg_thumbnail thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
       >
         {%- capture sizes -%}
           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
