@@ -2,52 +2,190 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "footer": {
-      "type": "footer",
+    "custom_liquid_aiPi7w": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script>\nfunction openLiveChat() {\ndocument.querySelector('inbox-online-store-chat').shadowRoot.querySelector('.chat-toggle').click()\n}\n<\/script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "v2-footer": {
+      "type": "v2-footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "paragraph_xxdELJ": {
+          "type": "paragraph",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "show_on_mobile": false,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "image": "shopify:\/\/shop_images\/logo.png",
+            "image_height": 39,
+            "heading": "",
+            "content": "<p>Guardair Corporation<br\/>47 Veterans Drive<br\/>Chicopee, MA 01022-1062<\/p>",
+            "button_link": "",
+            "button_text": ""
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "paragraph_RqVQzp": {
+          "type": "paragraph",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 2,
+            "row_mobile": 0,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 4,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "image_height": 54,
+            "heading": "PRODUCT CATALOG",
+            "content": "<p>See our latest catalog full of products, accessories and replacement parts:<\/p>",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868",
+            "button_text": "DOWNLOAD"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "contact_96cXPU": {
+          "type": "contact",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 2,
+            "column": 1,
+            "row_mobile": 0,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "HELP",
+            "content": "",
+            "contact_us_link": "shopify:\/\/pages\/contact-us",
+            "contact_us_text": "Contact Us",
+            "phone_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license\/free Copyright 2024 Fonticons, Inc.--><path d=\"M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z\"><\/path><\/svg>",
+            "phone_number": "800-482-7324",
+            "phone_hours": "Mon - Fri 8AM ET - 5PM ET",
+            "email_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license\/free Copyright 2024 Fonticons, Inc.--><path d=\"M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z\"><\/path><\/svg>",
+            "email_address": "info@guardair.com",
+            "live_chat_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https:\/\/fontawesome.com License - https:\/\/fontawesome.com\/license\/free Copyright 2024 Fonticons, Inc.--><path d=\"M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3 0 0 0 0 0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9zM128 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm96 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z\"><\/path><\/svg>",
+            "live_chat_text": "Live Chat",
+            "live_chat_onclick": "openLiveChat()"
+          }
+        },
+        "linklist_ht3rzQ": {
+          "type": "linklist",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 2,
+            "column": 2,
+            "row_mobile": 0,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "ABOUT",
+            "links": "about"
+          }
+        },
+        "linklist_m6BjEt": {
+          "type": "linklist",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 2,
+            "column": 3,
+            "row_mobile": 0,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "INFORMATION",
+            "links": "info"
+          }
+        },
+        "linklist_b8ALRM": {
+          "type": "linklist",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 2,
+            "column": 4,
+            "row_mobile": 0,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "USEFUL LINKS",
+            "links": "useful-link"
+          }
+        },
+        "divisions_Hfb8ti": {
+          "type": "divisions",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 3,
+            "column": 1,
+            "row_mobile": 0,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 4,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "OTHER DIVISIONS",
+            "image_height": 22,
+            "division_link_1": "https:\/\/www.airspade.com\/",
+            "division_image_1": "shopify:\/\/shop_images\/AS_logo.png",
+            "division_link_2": "https:\/\/allpaxcorp.com\/",
+            "division_image_2": "shopify:\/\/shop_images\/AP_logo_RGB_b7edfa12-2be3-4277-9759-6f549af08ca5.png"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "paragraph_xxdELJ",
+        "paragraph_RqVQzp",
+        "contact_96cXPU",
+        "linklist_ht3rzQ",
+        "linklist_m6BjEt",
+        "linklist_b8ALRM",
+        "divisions_Hfb8ti"
+      ],
+      "custom_css": [
+        ".footer__top__content {margin-bottom: 12px;}",
+        ".footer__bottom {background-color: #666;}"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "footer_text": "<p>© {Year} Guardair Corporation<\/p>",
+        "footer_text_mobile": "<p><strong>© {Year} Guardair Corporation<br\/>47 Veterans Drive<br\/>Chicopee, MA 01022-1062<\/strong><\/p>",
+        "color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
+        "footer_links": "footer-1",
+        "enable_connect_panel": true,
+        "connect_heading": "CONNECT WITH US",
+        "connect_text": "<p>Get 10% off when you sign up for our Newsletter:<\/p>",
+        "connect_button_link": "",
+        "connect_button_onclick": "window._klOnsite = window._klOnsite || []; window._klOnsite.push(['openForm', 'TsMBgR']);",
+        "connect_button_text": "SUBSCRIBE NOW",
+        "social_heading": "FOLLOW US",
+        "social_text": "<p>Stay updated on the latest from Guardair:<\/p>"
       }
     }
   },
   "order": [
-    "footer"
+    "custom_liquid_aiPi7w",
+    "v2-footer"
   ]
 }

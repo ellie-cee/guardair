@@ -134,7 +134,9 @@
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
-.mobile-facets__sort .select__select.focused {
+.mobile-facets__sort .select__select.focused,
+.no-js .mobile-facets__sort .select__select:focus {
+
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
@@ -146,11 +148,21 @@
   box-shadow: 0 0 0 1rem rgb(var(--color-background)), 0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
 }
 
-.facet-filters__sort.focused {
+.facet-filters__sort.focused,
+.no-js .facet-filters__sort:focus {
+
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 1rem;
   box-shadow: 0 0 0 1rem rgb(var(--color-background)), 0 0 0.2rem 1.2rem rgba(var(--color-foreground), 0.3);
 }
+
+
+.no-js .facet-filters__sort:focus:not(:focus-visible),
+.no-js .mobile-facets__sort .select__select:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
 
 .facets {
   display: block;
@@ -293,9 +305,13 @@
 
 .facets-layout-grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  */
   text-align: center;
   padding: 2rem 2.4rem;
+  gap: 3rem 1rem;
 }
 
 .facets-layout-list--swatch {
