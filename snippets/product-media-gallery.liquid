@@ -43,7 +43,6 @@
   endif
 -%}
 
-{%- assign current_variant = product.selected_or_first_available_variant -%}
 <media-gallery
   id="MediaGallery-{{ section.id }}{{ id_append }}"
   role="region"
@@ -62,16 +61,10 @@
     {%- endunless -%}
     <ul
       id="Slider-Gallery-{{ section.id }}{{ id_append }}"
-      class="itg_slider_desktop product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
+      class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
       role="list"
     >
       {%- if product.selected_or_first_available_variant.featured_media != null -%}
-        {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
-        {%- assign alts = featured_media.preview_image.alt | split: ',' -%}
-        {%- assign alt_classes = '' -%}
-        {%- for alt in alts -%}
-          {%- capture alt_classes -%}{{ alt_classes }} alt_{{ alt | handleize }}{%- endcapture -%}
-        {%- endfor -%}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <li
           id="Slide-{{ section.id }}-{{ featured_media.id }}{{ id_append }}"
@@ -79,7 +72,7 @@
           data-media-id="{{ section.id }}-{{ featured_media.id }}"
         >
           {%- assign media_position = 1 -%}
-          {%- render 'product-thumbnail',
+          {% render 'product-thumbnail',
             media: featured_media,
             media_count: media_count,
             position: media_position,
@@ -89,14 +82,10 @@
             modal_id: section.id,
             xr_button: true,
             media_width: media_width,
-            itg_img_zoom_percent: itg_img_zoom_percent,
             media_fit: section.settings.media_fit,
             constrain_to_viewport: section.settings.constrain_to_viewport,
             lazy_load: false
           %}
-          <div class="itg_variant_sku">
-            <p>{{ current_variant.sku }}</p>
-          </div>
         </li>
       {%- endif -%}
       {%- for media in product.media -%}
@@ -127,9 +116,6 @@
               constrain_to_viewport: section.settings.constrain_to_viewport,
               lazy_load: lazy_load
             %}
-            <div class="itg_variant_sku">
-              <p>{{ current_variant.sku }}</p>
-            </div>
           </li>
         {%- endunless -%}
       {%- endfor -%}
@@ -195,7 +181,7 @@
       </button>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
-        class="itg_thumbnail thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
+        class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
       >
         {%- capture sizes -%}
           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
@@ -249,34 +235,34 @@
         {%- endif -%}
         {%- for media in product.media -%}
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          {%- liquid
-            capture media_index
-              if media.media_type == 'model'
-                increment model_index
-              elsif media.media_type == 'video' or media.media_type == 'external_video'
-                increment video_index
-              elsif media.media_type == 'image'
-                increment image_index
-              endif
-            endcapture
-            assign media_index = media_index | plus: 1
-          -%}
-          <li
-            id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}{{ id_append }}"
-            class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
-            data-target="{{ section.id }}-{{ media.id }}"
-            data-media-position="{{ media_index }}"
-          >
-            {%- if media.media_type == 'model' -%}
-              <span class="thumbnail__badge" aria-hidden="true">
-                {%- render 'icon-3d-model' -%}
-              </span>
-            {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
-              <span class="thumbnail__badge" aria-hidden="true">
-                {%- render 'icon-play' -%}
-              </span>
-            {%- endif -%}
-            {%- capture thumbnail_id -%}
+            {%- liquid
+              capture media_index
+                if media.media_type == 'model'
+                  increment model_index
+                elsif media.media_type == 'video' or media.media_type == 'external_video'
+                  increment video_index
+                elsif media.media_type == 'image'
+                  increment image_index
+                endif
+              endcapture
+              assign media_index = media_index | plus: 1
+            -%}
+            <li
+              id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}{{ id_append }}"
+              class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
+              data-target="{{ section.id }}-{{ media.id }}"
+              data-media-position="{{ media_index }}"
+            >
+              {%- if media.media_type == 'model' -%}
+                <span class="thumbnail__badge" aria-hidden="true">
+                  {%- render 'icon-3d-model' -%}
+                </span>
+              {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
+                <span class="thumbnail__badge" aria-hidden="true">
+                  {%- render 'icon-play' -%}
+                </span>
+              {%- endif -%}
+              {%- capture thumbnail_id -%}
                 Thumbnail-{{ section.id }}-{{ forloop.index }}{{ id_append }}
               {%- endcapture -%}
               <button
@@ -306,9 +292,6 @@
             </li>
           {%- endunless -%}
         {%- endfor -%}
-        {% assign firstvideo_image = product.selected_or_first_available_variant.metafields.custom.video_image %}
-        {% assign firstVideo = product.selected_or_first_available_variant.metafields.custom.video %}
-        {% render 'productVidThumbnail' %}
       </ul>
       <button
         type="button"

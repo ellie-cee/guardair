@@ -487,8 +487,9 @@ class HeaderDrawer extends MenuDrawer {
   }
 
   openMenuDrawer(summaryElement) {
-    this.header = this.header || document.querySelector('.section-v2-header');
-    this.borderOffset = 1
+    this.header = this.header || document.querySelector('.section-header');
+    this.borderOffset =
+      this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
     document.documentElement.style.setProperty(
       '--header-bottom-position',
       `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`
@@ -956,9 +957,6 @@ class VariantSelects extends HTMLElement {
   constructor() {
     super();
     this.addEventListener('change', this.onVariantChange);
-    document.addEventListener("DOMContentLoaded", () => {
-        this.updateProductThumbnailVideo();
-    });
   }
 
   onVariantChange(event) {
@@ -975,7 +973,6 @@ class VariantSelects extends HTMLElement {
       this.setUnavailable();
     } else {
       this.updateMedia();
-      this.updateProductThumbnailVideo()
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
@@ -1002,11 +999,6 @@ class VariantSelects extends HTMLElement {
         })
         .includes(false);
     });
-
-    if (this.currentVariant) {
-        this.currentVideo = this.currentVariant.metafields ? this.currentVariant.metafields.custom.video : null;
-        this.currentVideoImage = this.currentVariant.metafields ? this.currentVariant.metafields.custom.video_image : null;
-    }
   }
 
   updateSelectedSwatchValue({ target }) {
@@ -1048,79 +1040,6 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant || this.dataset.updateUrl === 'false') return;
     window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
   }
-
-  updateProductThumbnailVideo() {
-    if (!this.currentVariant || !this.currentVariant.id) return; 
-
-    const container = document.getElementById('hidden-variant-metafields-container');
-    const imgContainer = document.getElementById('productVariantVideoGA');
-    const mainiImgContainer = document.getElementById('ProductVidDoNotHide');
-    const sliderItems = document.querySelectorAll(".itg_slider_desktop .product__media-item.ProductVidDoNotHide");
-    const thumbnailItems = document.querySelectorAll(".itg_thumbnail li.thumbnail-list__item.ProductVidDoNotHide");
-    const variantMetafields = container ? JSON.parse(container.textContent) : [];
-    const variantMeta = variantMetafields.find(metafield => metafield.variant_id == this.currentVariant.id);
-
-    const videoElem = document.querySelector(".productVariantVideo .popup-youtube");
-    const imgElem = videoElem ? videoElem.querySelector("img") : null;
-    const imageUrl = imgElem ? imgElem.getAttribute('src') : null;
-
-    console.log("Image url: ", this.containsNoImage(imageUrl))
-
-    // If there's no matching metafield, or if it lacks valid video and video_image data, hide the thumbnail
-    if (!variantMeta || !variantMeta.video || (!variantMeta.video_image && !this.isYouTubeURL(variantMeta.video))) {
-        if (videoElem) {
-            imgContainer.setAttribute("style", "display: none !important; border: none !important;");
-            mainiImgContainer.setAttribute("style", "display: none !important; border: none !important;");
-            videoElem.setAttribute("href", '');
-        }
-        return;
-    } else {
-
-    // If we have valid data, ensure the video element is displayed
-   if (videoElem) {
-       sliderItems.forEach(function(item) {
-            item.classList.remove("hide");
-        });
-       thumbnailItems.forEach(function(item) {
-            item.classList.remove("hide");
-        });
-       if (videoElem && imgElem) {
-          if (variantMeta.video_image) {
-            if (variantMeta.video_image.startsWith("//")) {
-                variantMeta.video_image = "https:" + variantMeta.video_image;
-            }
-            imgElem.setAttribute("src", variantMeta.video_image);
-          } else {
-              const youtubeThumbnail = `https://img.youtube.com/vi/${this.extractYouTubeId(variantMeta.video)}/hqdefault.jpg`;
-              imgElem.setAttribute("src", youtubeThumbnail);
-          }
-      }
-        imgContainer.setAttribute("style", "display: flex !important;");
-        mainiImgContainer.setAttribute("style", "display: flex !important; border: 1px solid #f2f2f2 !important;");
-       videoElem.setAttribute("href", variantMeta.video);
-    }
-
-    }
-    
-    
-}
-
-// Utility function to check if a URL is a valid YouTube URL
-isYouTubeURL(url) {
-    const regex = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-    return url.match(regex) && url.match(regex)[2].length == 11;
-}
-
-// Utility function to extract the YouTube video ID from a URL
-extractYouTubeId(url) {
-    const regex = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-    return url.match(regex)[2];
-}
-// checks image url
-containsNoImage(url) {
-    return url.includes("no-image");
-}
-
 
   updateShareUrl() {
     const shareButton = document.getElementById(`Share-${this.dataset.section}`);
@@ -1339,23 +1258,6 @@ class ProductRecommendations extends HTMLElement {
 
           if (recommendations && recommendations.innerHTML.trim().length) {
             this.innerHTML = recommendations.innerHTML;
-            // recommendation section slider
-              $('product-recommendations .grid.owl-carousel').owlCarousel({
-                  loop:false,
-                  margin:20,
-                  nav:true,
-                  responsive:{
-                      0:{
-                          items:1
-                      },
-                      600:{
-                          items:2
-                      },
-                      1000:{
-                          items:4
-                      }
-                  }
-              });
           }
 
           if (!this.querySelector('slideshow-component') && this.classList.contains('complementary-products')) {

@@ -547,7 +547,6 @@ a.product__text {
   .product:not(.product--columns) .product__media-list .product__media-item--full {
     width: 100%;
     max-width: 100%;
-    position: relative;
   }
 
   .product__modal-opener .product__media-icon {
@@ -1497,9 +1496,3 @@ a.product__text {
     border: none;
   }
 }
-
-.less-than-four-thumbnails {
-  width: calc(20% - .8rem) !important;
-  height: 100% !important;
-}
-

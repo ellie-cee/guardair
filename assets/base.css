@@ -438,14 +438,6 @@ table:not([class]) th {
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
 
-.tabs .tab-content table th,
-.tabs .tab-content table td {
-    width: 50%; /* Adjust the width percentage as needed */
-    max-width: none; /* Ensure the columns can expand */
-
-}
-
-
 @media screen and (max-width: 749px) {
   .small-hide {
     display: none !important;
@@ -1073,7 +1065,6 @@ summary::-webkit-details-marker {
 
   .grid--peek.slider .grid__item:first-of-type {
     margin-left: 1.5rem;
-    position: relative;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
@@ -2330,25 +2321,13 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 @keyframes translateAnnouncementSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(var(--announcement-translate-from));
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  0% {opacity: 0; transform: translateX(var(--announcement-translate-from))}
+  100% {opacity: 1; transform: translateX(0)}
 }
 
 @keyframes translateAnnouncementSlideOut {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(var(--announcement-translate-to));
-  }
+  0% {opacity: 1; transform: translateX(0)}
+  100% {opacity: 0; transform: translateX(var(--announcement-translate-to))}
 }
 
 /* section-header */
@@ -2549,7 +2528,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  /* padding-right: 0.8rem; */
+  padding-right: 0.8rem;
 }
 
 .header__icons .shopify-app-block {
@@ -2587,6 +2566,18 @@ product-info .loading__spinner:not(.hidden) ~ *,
   width: 2rem;
   fill: none;
   vertical-align: middle;
+}
+
+.header__icon,
+.header__icon--cart .icon {
+  height: 4.4rem;
+  width: 4.4rem;
+  padding: 0;
+}
+
+.header__icon--cart {
+  position: relative;
+  margin-right: -1.2rem;
 }
 
 .header__icon--menu[aria-expanded='true']::before {
@@ -3153,11 +3144,9 @@ details-disclosure > details {
   margin-top: 0;
 }
 
-/*
- *.rte > *:last-child {
- *  margin-bottom: 0;
- *}
- */
+.rte > *:last-child {
+  margin-bottom: 0;
+}
 
 .rte table {
   table-layout: fixed;
@@ -3515,33 +3504,4 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
-}
-
-hc-accordion .icon {
-  margin-right: 16px;
-  height: 12px;
-  transition: 0.3s ease;
-  opacity: 0.6;
-}
-
-hc-accordion [hc-accordion-header] {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-hc-accordion.hc--opened > [hc-accordion-header] .icon {
-  transform: rotateX(180deg);
-}
-
-
-.button--round {
-  /*border-radius: 8px;*/
-  padding-inline: 18px;
-  min-height: unset;
-  padding-block: 12px;
-  font-size: 18px;
-  font-family: Eurostile-Bol,sans-serif;
-  font-weight: 400;
-  line-height: 1.2;
 }

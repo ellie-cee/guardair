@@ -168,50 +168,6 @@ class CartItems extends HTMLElement {
         }
 
         publish(PUB_SUB_EVENTS.cartUpdate, { source: 'cart-items', cartData: parsedState, variantId: variantId });
-        
-       // ------------- BUBBLE CODE UPDATE -------------
-
-        const mobileBubbleEl = document.querySelector('#cart-icon-bubble');
-        if (mobileBubbleEl) {
-          if (parsedState.item_count === 0) {
-            mobileBubbleEl.style.display = 'none';
-          } else {
-            mobileBubbleEl.style.display = 'flex';
-            let bubbleCountEl = mobileBubbleEl.querySelector('.header__icon__bubble-count');
-            if (!bubbleCountEl) {
-              bubbleCountEl = document.createElement('span');
-              bubbleCountEl.classList.add('header__icon__bubble-count','v2-color','v2-color--accent');
-              bubbleCountEl.setAttribute('aria-hidden', 'true');
-              mobileBubbleEl.appendChild(bubbleCountEl);
-            }
-            bubbleCountEl.textContent = parsedState.item_count;
-          }
-        }
-
-         const desktopBubbleSpan = document.querySelector('.cart-item-count-span');
-        
-          if (desktopBubbleSpan) {
-            const desktopBubbleContainer = desktopBubbleSpan.closest('#cart-icon-bubble') 
-              || desktopBubbleSpan.parentElement;
-          
-            if (parsedState.item_count === 0) {
-              desktopBubbleContainer.style.display = 'none';
-              desktopBubbleSpan.classList.add('hide');
-            } else {
-              
-              setTimeout(() => {
-                  desktopBubbleSpan.innerText = parsedState.item_count;
-                }, 100);
-              desktopBubbleContainer.style.display = 'flex';
-              desktopBubbleSpan.classList.remove('hide');
-            }
-          }
-       
-    
-        // ----------------------------------------------
-
-
-
       })
       .catch(() => {
         this.querySelectorAll('.loading__spinner').forEach((overlay) => overlay.classList.add('hidden'));
