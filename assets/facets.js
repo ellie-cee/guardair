@@ -12,6 +12,15 @@ class FacetFiltersForm extends HTMLElement {
 
     const facetWrapper = this.querySelector('#FacetsWrapperDesktop');
     if (facetWrapper) facetWrapper.addEventListener('keyup', onKeyUpEscape);
+
+    const sortSelects = this.querySelectorAll(
+      'select[name="sort_by"], select[name="sort_by_mob"]'
+    );
+    sortSelects.forEach((select) =>
+      select.addEventListener('change', this.onSubmitHandler.bind(this))
+    );
+
+
   }
 
   static setListeners() {
@@ -168,6 +177,8 @@ class FacetFiltersForm extends HTMLElement {
           ? `.mobile-facets__close-button`
           : `.facets__summary`;
         const newElementToActivate = newFacetDetailsElement.querySelector(newElementSelector);
+        if (newElementToActivate) newElementToActivate.focus();
+
 
         const isTextInput = event.target.getAttribute('type') === 'text';
 
@@ -252,7 +263,16 @@ class FacetFiltersForm extends HTMLElement {
 
   createSearchParams(form) {
     const formData = new FormData(form);
-    return new URLSearchParams(formData).toString();
+    const params = new URLSearchParams(formData);
+  
+    if (formData.has('sort_by_mob')) {
+      params.set('sort_by', formData.get('sort_by_mob'));
+      params.delete('sort_by_mob');
+    }
+  
+    return params.toString();
+
+//    return new URLSearchParams(formData).toString();
   }
 
   onSubmitForm(searchParams, event) {
