@@ -46,7 +46,8 @@
     },
     "search": {
       "search": "Search",
-      "reset": "Clear search term"
+      "reset": "Clear search term",
+      "placeholder":"Search by keyword or part number"
     },
     "cart": {
       "view": "View cart ({{ count }})",
