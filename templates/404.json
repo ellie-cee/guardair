@@ -1,12 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-404",
-      "custom_css": [
-        ".button {background-color: #002395; color: #fff; font-size: 18px; font-family: \"Eurostile-Bol\", \"Eurostile-Reg\", \"Calibri\", \"Trebuchet MS\", \"Helvetica\", \"Arial\", \"Sans-serif\"; text-transform: uppercase;}",
-        "button::after {box-shadow: none !important;}"
-      ],
-      "settings": {}
+      "type": "main-404"
     }
   },
   "order": [
