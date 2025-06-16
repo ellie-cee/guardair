@@ -508,3 +508,10 @@
     }
   }
 }
+
+@media screen and (max-width: 989px) {
+  .footer__localization noscript {
+    width: 100%;
+  }
+}
+
