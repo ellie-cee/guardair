@@ -47,7 +47,9 @@
     "search": {
       "search": "Search",
       "reset": "Clear search term",
-      "placeholder":"Search by keyword or part number"
+      "placeholder":"Search by keyword or part number",
+      "top_matches":"Top Product Matches"
+      
     },
     "cart": {
       "view": "View cart ({{ count }})",
