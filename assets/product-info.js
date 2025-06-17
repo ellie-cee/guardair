@@ -53,13 +53,14 @@ if (!customElements.get('product-info')) {
         if (!this.dataset.originalSection) {
           this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, this.fetchQuantityRules.bind(this));
         }
-      }
-      this.variantChangeUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
+        this.variantChangeUnsubscriber = subscribe(PUB_SUB_EVENTS.variantChange, (event) => {
           const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
           if (event.data.sectionId !== sectionId) return;
           this.updateQuantityRules(event.data.sectionId, event.data.html);
           this.setQuantityBoundries();
         });
+      }
+      
 
 
       disconnectedCallback() {
