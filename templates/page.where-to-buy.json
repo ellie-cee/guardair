@@ -1,1 +1,482 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":0}},"custom_liquid_7jQEYW":{"type":"custom-liquid","custom_css":[".button-container {display: flex; justify-content: space-between; width: 100%; gap: 20px;}",".link-button {flex: 1;}",".column-button {background-color: #002395; color: #ffffff; cursor: pointer; border: none; padding: 20px 40px !important; font-size: 20px; font-family: Eurostile-Bol, sans-serif; width: 100%; text-align: center; box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);}",".line-2 {font-family: Eurostile-Reg, sans-serif; font-size: 17px;}","@media (max-width: 768px) {.button-container {flex-direction: column; gap: 8px; } .link-button {flex: none; width: auto; }}"],"settings":{"custom_liquid":"<div class=\"page-width button-container\">\n\n<div class=\"link-button\"><a title=\"Buy Online\" href=\"#buy-online\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Buy Online<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Find Nearby\" href=\"#find-nearby\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Find Nearby<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Shop International\" href=\"#shop-international\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Shop International<\/span>\n<\/button><\/a><\/div>\n\n<\/div>","color_scheme":"","padding_top":40,"padding_bottom":20}},"rich_text_HYbU9W":{"type":"rich-text","blocks":{"text_Qmj9dN":{"type":"text","settings":{"text":""}}},"block_order":["text_Qmj9dN"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-1","full_width":true,"bdr_btm":true,"padding_top":0,"padding_bottom":20,"anchor_id":""}},"rich_text_medEWD":{"type":"rich-text","blocks":{"heading_RzCNEa":{"type":"heading","settings":{"heading":"Buy Online","heading_size":"h2"}},"text_mngady":{"type":"text","settings":{"text":"<p>Shop our comprehensive product selection right <a href=\"\/pages\/all-products\" title=\"All Products\">here on our website<\/a> or from one of our reputable online distributors.<\/p>"}}},"block_order":["heading_RzCNEa","text_mngady"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"center","content_alignment":"left","color_scheme":"scheme-1","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":0,"anchor_id":"buy-online"}},"multicolumn_g83fyr":{"type":"multicolumn","blocks":{"column_RnC8Fc":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/grainger-250x150.png","image_link":"https:\/\/www.grainger.com\/","title":"","text":"","link_label":"","link":""}},"column_8tkbTj":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/fastenal-250x150.png","image_link":"https:\/\/www.fastenal.com\/","title":"","text":"","link_label":"","link":""}},"column_eqUE9r":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/global-industries-250x150.png","image_link":"https:\/\/www.globalindustrial.com\/","title":"","text":"","link_label":"","link":""}},"column_qpL6qa":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/mcmaster-carr-250x150.png","image_link":"https:\/\/www.mcmaster.com\/","title":"","text":"","link_label":"","link":""}},"column_QUNryx":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/msc-250x150.png","image_link":"https:\/\/www.mscdirect.com\/","title":"","text":"","link_label":"","link":""}},"column_qew7TA":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/mro-supply-250x150.png","image_link":"https:\/\/www.mrosupply.com\/","title":"","text":"","link_label":"","link":""}},"column_L6Vzmj":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/zoro-250x150.png","image_link":"https:\/\/www.zoro.com\/","title":"","text":"","link_label":"","link":""}},"column_JAg3bx":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/amazon-250x150.png","image_link":"https:\/\/www.amazon.com\/s?k=Guardair","title":"","text":"","link_label":"","link":""}}},"block_order":["column_RnC8Fc","column_8tkbTj","column_eqUE9r","column_qpL6qa","column_QUNryx","column_qew7TA","column_L6Vzmj","column_JAg3bx"],"settings":{"title":"","heading_size":"h2","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-1","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":0,"anchor_id":""}},"rich_text_8ffdJH":{"type":"rich-text","blocks":{"text_A3YcWN":{"type":"text","settings":{"text":""}}},"block_order":["text_A3YcWN"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-1","full_width":true,"bdr_btm":true,"padding_top":24,"padding_bottom":0,"anchor_id":""}},"rich_text_wLqLnW":{"type":"rich-text","blocks":{"heading_G683E9":{"type":"heading","settings":{"heading":"Find Nearby","heading_size":"h2"}},"text_4WhgYj":{"type":"text","settings":{"text":"<p>Can't wait for shipping? Find local retailers using our distributor locator and enjoy quick access to our products at a store near you.<\/p>"}}},"block_order":["heading_G683E9","text_4WhgYj"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"center","content_alignment":"left","color_scheme":"scheme-1","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":0,"anchor_id":"find-nearby"}},"17098326335b320caf":{"type":"apps","blocks":{"sc_store_locator_map_fka_bold_map_EafhbK":{"type":"shopify:\/\/apps\/sc-store-locator-map\/blocks\/map\/4ca379c6-722c-49d3-b6ec-a7fe7c1061a5","settings":{"distance_unit":"MI","display_title":false,"display_header_html":false,"display_search":true,"display_footer_html":false,"search_text":"#121212","search_background":"linear-gradient(180deg, rgba(245, 245, 245, 1), rgba(243, 243, 243, 1) 100%)","display_addresses_sidebar":true,"map_theme":"default","google_maps_language":"en"}}},"block_order":["sc_store_locator_map_fka_bold_map_EafhbK"],"settings":{"include_margins":true}},"rich_text_XHtDPp":{"type":"rich-text","blocks":{"text_JiUFyF":{"type":"text","settings":{"text":""}}},"block_order":["text_JiUFyF"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-1","full_width":true,"bdr_btm":true,"padding_top":0,"padding_bottom":0,"anchor_id":""}},"rich_text_intern":{"type":"rich-text","blocks":{"heading_6PWReN":{"type":"heading","settings":{"heading":"Shop International","heading_size":"h2"}},"text_cA3JrQ":{"type":"text","settings":{"text":"<p>Explore our international presence and find trusted distributors in select countries.<\/p>"}}},"block_order":["heading_6PWReN","text_cA3JrQ"],"custom_css":["p {margin-bottom: 0px;}","h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"center","content_alignment":"left","color_scheme":"scheme-1","full_width":true,"bdr_btm":false,"padding_top":52,"padding_bottom":0,"anchor_id":"shop-international"}},"multicolumn_no_links_HCUmFz":{"type":"multicolumn-no-links","blocks":{"column_bAEPtW":{"type":"column","settings":{"title":"Austrailia","text":"<ul><li><a href=\"https:\/\/www.airquippipetool.com.au\/\" target=\"_blank\" title=\"Airquip and Pipetool Pty Ltd\">Airquip and Pipetool Pty Ltd<\/a><\/li><li><a href=\"http:\/\/www.knightpneumatics.com.au\/\" target=\"_blank\" title=\"Knight Pneumatics\">Knight Pneumatics<\/a><\/li><li><a href=\"https:\/\/pneutech.com.au\/\" target=\"_blank\" title=\"Pneutech\">Pneutech<\/a><\/li><\/ul>","link_label":"","link":""}},"column_Fq9Ce3":{"type":"column","settings":{"title":"Canada","text":"<ul><li><a href=\"https:\/\/www.dgisupply.ca\/\" target=\"_blank\" title=\"DJI Supply\">DJI Supply<\/a><\/li><li><a href=\"https:\/\/www.kbctools.com\/\" target=\"_blank\" title=\"KBC Tools & Machinery\">KBC Tools & Machinery<\/a><\/li><li><a href=\"https:\/\/www.tenaquip.com\/\" target=\"_blank\" title=\"Tenaquip\">Tenaquip<\/a><\/li><li><a href=\"https:\/\/www.wfsltd.com\/en\/\" target=\"_blank\" title=\"Windsor Factory Supply Ltd\">Windsor Factory Supply Ltd<\/a><\/li><\/ul>","link_label":"","link":""}},"column_twRRFg":{"type":"column","settings":{"title":"Chile","text":"<ul><li><a href=\"http:\/\/www.sinsef.cl\/\" target=\"_blank\" title=\"Comercial Sinef\">Comercial Sinef<\/a><\/li><\/ul>","link_label":"","link":""}},"column_LxwpkG":{"type":"column","settings":{"title":"India","text":"<ul><li><a href=\"https:\/\/sauryahse.com\/\" target=\"_blank\" title=\"Saurya\">Saurya<\/a><\/li><\/ul>","link_label":"","link":""}},"column_tEtKBc":{"type":"column","settings":{"title":"Mexico","text":"<ul><li><a href=\"https:\/\/www.travers.com\/\" target=\"_blank\" title=\"Travers\">Travers<\/a><\/li><\/ul>","link_label":"","link":""}},"column_V47g6L":{"type":"column","settings":{"title":"The Netherlands","text":"<ul><li><a href=\"https:\/\/en.raptorsupplies.nl\/\" target=\"_blank\" title=\"Raptor Supplies\">Raptor Supplies<\/a><\/li><\/ul>","link_label":"","link":""}},"column_C67yYb":{"type":"column","settings":{"title":"United Arab Emirates","text":"<ul><li><a href=\"https:\/\/sealmech.com\/\" target=\"_blank\" title=\"Sealmech Trading L.L.C.\">Sealmech Trading L.L.C.<\/a><\/li><\/ul>","link_label":"","link":""}},"column_PAt9hA":{"type":"column","settings":{"title":"United Kingdom","text":"<ul><li><a href=\"https:\/\/www.ibhs.co.uk\/\" target=\"_blank\" title=\"Industrial Boilerhouse Supplies LTD\">Industrial Boilerhouse Supplies LTD<\/a><\/li><li><a href=\"https:\/\/www.raptorsupplies.co.uk\/\" target=\"_blank\" title=\"Raptor Supplies\">Raptor Supplies<\/a><\/li><\/ul>","link_label":"","link":""}}},"block_order":["column_bAEPtW","column_Fq9Ce3","column_twRRFg","column_LxwpkG","column_tEtKBc","column_V47g6L","column_C67yYb","column_PAt9hA"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}","h2 {font-size: 24px;}","h3 {font-size: 22px;}","a {color: #002395; font-size: 18px;}"],"settings":{"title":"","heading_size":"h2","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":0,"padding_bottom":100}}},"order":["main","custom_liquid_7jQEYW","rich_text_HYbU9W","rich_text_medEWD","multicolumn_g83fyr","rich_text_8ffdJH","rich_text_wLqLnW","17098326335b320caf","rich_text_XHtDPp","rich_text_intern","multicolumn_no_links_HCUmFz"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_7jQEYW": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".button-container {display: flex; justify-content: space-between; width: 100%; gap: 20px;}",
+        ".link-button {flex: 1;}",
+        ".column-button {background-color: #002395; color: #ffffff; cursor: pointer; border: none; padding: 20px 40px !important; font-size: 20px; font-family: Eurostile-Bol, sans-serif; width: 100%; text-align: center; box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);}",
+        ".line-2 {font-family: Eurostile-Reg, sans-serif; font-size: 17px;}",
+        "@media (max-width: 768px) {.button-container {flex-direction: column; gap: 8px; } .link-button {flex: none; width: auto; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"page-width button-container\">\n\n<div class=\"link-button\"><a title=\"Buy Online\" href=\"#buy-online\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Buy Online</span>\n</button></a></div>\n\n<div class=\"link-button\"><a title=\"Find Nearby\" href=\"#find-nearby\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Find Nearby</span>\n</button></a></div>\n\n<div class=\"link-button\"><a title=\"Shop International\" href=\"#shop-international\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Shop International</span>\n</button></a></div>\n\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_HYbU9W": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Qmj9dN": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_Qmj9dN"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 0,
+        "padding_bottom": 20,
+        "anchor_id": ""
+      }
+    },
+    "rich_text_medEWD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RzCNEa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Buy Online",
+            "heading_size": "h2"
+          }
+        },
+        "text_mngady": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop our comprehensive product selection right <a href=\"/pages/all-products\" title=\"All Products\">here on our website</a> or from one of our reputable online distributors.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RzCNEa",
+        "text_mngady"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "anchor_id": "buy-online"
+      }
+    },
+    "multicolumn_g83fyr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RnC8Fc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/grainger-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8tkbTj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fastenal-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eqUE9r": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/global-industries-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qpL6qa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mcmaster-carr-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QUNryx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/msc-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qew7TA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mro-supply-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_L6Vzmj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/zoro-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JAg3bx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/amazon-250x150.png",
+            "image_link": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RnC8Fc",
+        "column_8tkbTj",
+        "column_eqUE9r",
+        "column_qpL6qa",
+        "column_QUNryx",
+        "column_qew7TA",
+        "column_L6Vzmj",
+        "column_JAg3bx"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "rich_text_8ffdJH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_A3YcWN": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_A3YcWN"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 24,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "rich_text_wLqLnW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_G683E9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find Nearby",
+            "heading_size": "h2"
+          }
+        },
+        "text_4WhgYj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Can't wait for shipping? Find local retailers using our distributor locator and enjoy quick access to our products at a store near you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_G683E9",
+        "text_4WhgYj"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "17098326335b320caf": {
+      "type": "apps",
+      "blocks": {
+        "sc_store_locator_map_fka_bold_map_EafhbK": {
+          "type": "shopify://apps/sc-store-locator-map/blocks/map/4ca379c6-722c-49d3-b6ec-a7fe7c1061a5",
+          "settings": {
+            "distance_unit": "MI",
+            "display_title": false,
+            "display_header_html": false,
+            "display_search": true,
+            "display_footer_html": false,
+            "search_text": "#121212",
+            "search_background": "linear-gradient(180deg, rgba(245, 245, 245, 1), rgba(243, 243, 243, 1) 100%)",
+            "display_addresses_sidebar": true,
+            "map_theme": "default",
+            "google_maps_language": "en"
+          }
+        }
+      },
+      "block_order": [
+        "sc_store_locator_map_fka_bold_map_EafhbK"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "rich_text_XHtDPp": {
+      "type": "rich-text",
+      "blocks": {
+        "text_JiUFyF": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_JiUFyF"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "rich_text_intern": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6PWReN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop International",
+            "heading_size": "h2"
+          }
+        },
+        "text_cA3JrQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore our international presence and find trusted distributors in select countries.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6PWReN",
+        "text_cA3JrQ"
+      ],
+      "custom_css": [
+        "p {margin-bottom: 0px;}",
+        "h2 {font-size: 28px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 52,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_no_links_HCUmFz": {
+      "type": "multicolumn-no-links",
+      "blocks": {
+        "column_bAEPtW": {
+          "type": "column",
+          "settings": {
+            "title": "Austrailia",
+            "text": "<ul><li><a href=\"https://www.airquippipetool.com.au/\" target=\"_blank\" title=\"Airquip and Pipetool Pty Ltd\">Airquip and Pipetool Pty Ltd</a></li><li><a href=\"http://www.knightpneumatics.com.au/\" target=\"_blank\" title=\"Knight Pneumatics\">Knight Pneumatics</a></li><li><a href=\"https://pneutech.com.au/\" target=\"_blank\" title=\"Pneutech\">Pneutech</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Fq9Ce3": {
+          "type": "column",
+          "settings": {
+            "title": "Canada",
+            "text": "<ul><li><a href=\"https://www.dgisupply.ca/\" target=\"_blank\" title=\"DJI Supply\">DJI Supply</a></li><li><a href=\"https://www.kbctools.com/\" target=\"_blank\" title=\"KBC Tools & Machinery\">KBC Tools & Machinery</a></li><li><a href=\"https://www.tenaquip.com/\" target=\"_blank\" title=\"Tenaquip\">Tenaquip</a></li><li><a href=\"https://www.wfsltd.com/en/\" target=\"_blank\" title=\"Windsor Factory Supply Ltd\">Windsor Factory Supply Ltd</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_twRRFg": {
+          "type": "column",
+          "settings": {
+            "title": "Chile",
+            "text": "<ul><li><a href=\"http://www.sinsef.cl/\" target=\"_blank\" title=\"Comercial Sinef\">Comercial Sinef</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LxwpkG": {
+          "type": "column",
+          "settings": {
+            "title": "India",
+            "text": "<ul><li><a href=\"https://sauryahse.com/\" target=\"_blank\" title=\"Saurya\">Saurya</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tEtKBc": {
+          "type": "column",
+          "settings": {
+            "title": "Mexico",
+            "text": "<ul><li><a href=\"https://www.travers.com/\" target=\"_blank\" title=\"Travers\">Travers</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_V47g6L": {
+          "type": "column",
+          "settings": {
+            "title": "The Netherlands",
+            "text": "<ul><li><a href=\"https://en.raptorsupplies.nl/\" target=\"_blank\" title=\"Raptor Supplies\">Raptor Supplies</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_C67yYb": {
+          "type": "column",
+          "settings": {
+            "title": "United Arab Emirates",
+            "text": "<ul><li><a href=\"https://sealmech.com/\" target=\"_blank\" title=\"Sealmech Trading L.L.C.\">Sealmech Trading L.L.C.</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PAt9hA": {
+          "type": "column",
+          "settings": {
+            "title": "United Kingdom",
+            "text": "<ul><li><a href=\"https://www.ibhs.co.uk/\" target=\"_blank\" title=\"Industrial Boilerhouse Supplies LTD\">Industrial Boilerhouse Supplies LTD</a></li><li><a href=\"https://www.raptorsupplies.co.uk/\" target=\"_blank\" title=\"Raptor Supplies\">Raptor Supplies</a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bAEPtW",
+        "column_Fq9Ce3",
+        "column_twRRFg",
+        "column_LxwpkG",
+        "column_tEtKBc",
+        "column_V47g6L",
+        "column_C67yYb",
+        "column_PAt9hA"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
+        "h2 {font-size: 24px;}",
+        "h3 {font-size: 22px;}",
+        "a {color: #002395; font-size: 18px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_7jQEYW",
+    "rich_text_HYbU9W",
+    "rich_text_medEWD",
+    "multicolumn_g83fyr",
+    "rich_text_8ffdJH",
+    "rich_text_wLqLnW",
+    "17098326335b320caf",
+    "rich_text_XHtDPp",
+    "rich_text_intern",
+    "multicolumn_no_links_HCUmFz"
+  ]
+}
