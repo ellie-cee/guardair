@@ -1,0 +1,67 @@
+{% assign processed_title = title %}
+
+{% comment %} Rule 1: If there is a dash, do not show anything after that dash {% endcomment %}
+{% if processed_title contains '-' and processed_title contains '"' %}
+  {% assign start = processed_title | split: '-' | first %}
+  {% assign end = processed_title | split: '"' | last %}  
+  {% assign size = processed_title | remove: start | remove: end %}
+{% endif %}
+ 
+{% comment %} Rule 2: Remove special characters like registered or trademarks {% endcomment %}
+{% assign processed_title = processed_title | replace: '®', '' %}
+{% assign processed_title = processed_title | replace: '™', '' %}
+{% assign processed_title = processed_title | replace: '©', '' %}
+
+{% comment %} Rule 3: Remove specific words {% endcomment %}
+{% assign words_to_remove = 'The,Classic+' | split: ',' %}
+{% for word in words_to_remove %}
+  {% assign processed_title = processed_title | replace: word, '' %}
+{% endfor %}
+
+{% comment %} Rule 4: If any parts are numeric like 80J, then that part is moved to the end of the title {% endcomment %}
+{% assign parts = processed_title | split: ' ' %}
+{% assign numeric_parts = '' %}
+{% assign non_numeric_parts = '' %}
+
+{% for part in parts %}
+  {% comment %} Check if the part contains both letters and numbers {% endcomment %}
+  {% assign contains_number = false %}
+  {% for i in (0..9) %}
+    {% assign num_string = i | append: '' %}
+    {% if part contains num_string %}
+      {% assign contains_number = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} Check if the part contains letters {% endcomment %}
+  {% assign contains_letter = false %}
+  {% assign letters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z' | split: ',' %}
+  {% for letter in letters %}
+    {% assign upletter = letter | upcase %}
+    {% if part contains letter or part contains upletter %}
+      {% assign contains_letter = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if contains_number and contains_letter %}
+    {% assign numeric_parts = numeric_parts | append: part | append: ' ' %}
+  {% else %}
+    {% assign non_numeric_parts = non_numeric_parts | append: part | append: ' ' %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}
+{% assign final_title = non_numeric_parts | append: numeric_parts %}
+{% assign final_title = final_title | remove: numeric_parts %}
+{% endcomment %}
+{% assign final_title = non_numeric_parts %}
+{% assign final_title = final_title | remove: size %}
+{% assign final_title = final_title | strip %} {% comment %} Remove leading/trailing spaces {% endcomment %}
+{% assign final_title = final_title | replace: '  ', ' ' %} {% comment %} Replace double spaces with single spaces {% endcomment %}
+{% comment %}
+<br/><p> Start: {{ start }}<br/>
+Size: {{ size }}<br/>
+Numeric: {{ numeric_parts }}<br/></p><br/><br/>  {% endcomment %}
+{{ final_title }}
