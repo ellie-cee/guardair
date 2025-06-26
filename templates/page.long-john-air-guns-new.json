@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -8,14 +17,13 @@
       }
     },
     "multicolumn_xezMVG": {
-      "type": "multicolumn",
+      "type": "gua-multicolumn",
       "blocks": {
         "column_7dazHw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-safety-air-gun-6",
-            "title": "<a href=\"\/products\/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John Safety Air Gun<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john.png",
+            "title": "<a href=\"/products/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John Safety Air Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -24,9 +32,8 @@
         "column_cCawkH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john-us-markings.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-safety-air-gun-12-w-us-flag-markings",
-            "title": "<a href=\"\/products\/long-john-75lj-safety-air-gun-12-w-us-flag-markings\" title=\"Long John® 75LJ Safety Air Gun - 12&quot; w\/ US Flag Markings\">Long John Safety Air Gun w\/ US Flag Markings<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john-us-markings.png",
+            "title": "<a href=\"/products/long-john-75lj-safety-air-gun-12-w-us-flag-markings\" title=\"Long John® 75LJ Safety Air Gun - 12&quot; w/ US Flag Markings\">Long John Safety Air Gun w/ US Flag Markings</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -35,9 +42,8 @@
         "column_C7thbA": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john-nylon.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-nylon-safety-air-gun-12",
-            "title": "<a href=\"\/products\/long-john-75lj-nylon-safety-air-gun-12\" title=\"Long John® 75LJ Nylon Safety Air Gun - 12&quot;\">Long John Nylon Safety Air Gun<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john-nylon.png",
+            "title": "<a href=\"/products/long-john-75lj-nylon-safety-air-gun-12\" title=\"Long John® 75LJ Nylon Safety Air Gun - 12&quot;\">Long John Nylon Safety Air Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -46,9 +52,8 @@
         "column_G4UAWG": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john-nylon-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-nylon-nozzle-safety-air-gun-6",
-            "title": "<a href=\"\/products\/long-john-75lj-nylon-nozzle-safety-air-gun-6\" title=\"Long John® 75LJ Nylon Nozzle Safety Air Gun - 6&quot;\">Long John Nylon Nozzle Safety Air Gun<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john-nylon-nozzle.png",
+            "title": "<a href=\"/products/long-john-75lj-nylon-nozzle-safety-air-gun-6\" title=\"Long John® 75LJ Nylon Nozzle Safety Air Gun - 6&quot;\">Long John Nylon Nozzle Safety Air Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -57,9 +62,8 @@
         "column_azwKMH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john-steel-alloy.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-steel-safety-air-gun-6",
-            "title": "<a href=\"\/products\/long-john-75lj-steel-safety-air-gun-6\" title=\"Long John® 75LJ Steel Safety Air Gun - 6&quot;\">Long John Steel Safety Air Gun<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john-steel-alloy.png",
+            "title": "<a href=\"/products/long-john-75lj-steel-safety-air-gun-6\" title=\"Long John® 75LJ Steel Safety Air Gun - 6&quot;\">Long John Steel Safety Air Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -68,9 +72,8 @@
         "column_VpyJwr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john-aluminum-steel.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-steel-nozzle-safety-air-gun-12",
-            "title": "<a href=\"\/products\/long-john-75lj-steel-nozzle-safety-air-gun-12\" title=\"Long John® 75LJ Steel Nozzle Safety Air Gun - 12&quot;\">Long John Steel Nozzle Safety Air Gun<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john-aluminum-steel.png",
+            "title": "<a href=\"/products/long-john-75lj-steel-nozzle-safety-air-gun-12\" title=\"Long John® 75LJ Steel Nozzle Safety Air Gun - 12&quot;\">Long John Steel Nozzle Safety Air Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -79,9 +82,8 @@
         "column_xHfP3n": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john-steel-alloy.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-steel-extension-safety-air-gun-12",
-            "title": "<a href=\"\/products\/long-john-75lj-steel-extension-safety-air-gun-12\" title=\"Long John® 75LJ Steel Extension Safety Air Gun - 12&quot;\">Long John Steel Extension Safety Air Gun<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john-steel-alloy.png",
+            "title": "<a href=\"/products/long-john-75lj-steel-extension-safety-air-gun-12\" title=\"Long John® 75LJ Steel Extension Safety Air Gun - 12&quot;\">Long John Steel Extension Safety Air Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -90,9 +92,8 @@
         "column_iF4tK4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-safety-air-guns-long-john_722aecf4-2e3f-4eb2-b072-1dcdfc4e936a.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-safety-air-gun-12-w-nylon-air-hose",
-            "title": "<a href=\"\/products\/long-john-75lj-safety-air-gun-12-w-nylon-air-hose\" title=\"Long John® 75LJ Safety Air Gun - 12&quot; w\/ Nylon Air Hose\">Long John Safety Air Gun w\/ Nylon Air Hose<\/a>",
+            "image": "shopify://shop_images/guardair-safety-air-guns-long-john_722aecf4-2e3f-4eb2-b072-1dcdfc4e936a.png",
+            "title": "<a href=\"/products/long-john-75lj-safety-air-gun-12-w-nylon-air-hose\" title=\"Long John® 75LJ Safety Air Gun - 12&quot; w/ Nylon Air Hose\">Long John Safety Air Gun w/ Nylon Air Hose</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -129,13 +130,9 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 100,
-        "anchor_id": ""
+        "padding_bottom": 100
       }
     }
   },
-  "order": [
-    "main",
-    "multicolumn_xezMVG"
-  ]
+  "order": ["main", "multicolumn_xezMVG"]
 }
