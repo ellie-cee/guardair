@@ -1,1 +1,150 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":0}},"multicolumn_xezMVG":{"type":"multicolumn","blocks":{"column_7dazHw":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-xtrathrust-safety-air-gun-2.png","image_link":"https:\/\/guardair.com\/pages\/safety-air-guns","title":"<a href=\"\/pages\/safety-air-guns\" title=\"Safety Air Guns\">Safety Air Guns<\/a>","text":"<p>Our Safety Air Guns provide exceptional performance, maximize operator comfort, and meet OSHA Standards.<\/p>","link_label":"","link":""}},"column_C7thbA":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-powerquad-pneumatic-vacuums-family.png","image_link":"https:\/\/guardair.com\/pages\/pneumatic-vacuums","title":"<a href=\"\/pages\/pneumatic-vacuums\" title=\"Pneumatic Vacuums\">Pneumatic Vacuums<\/a>","text":"<p>Our Pneumatic Vacuums offer significant advantages in performance, dependability, safety, and life-cycle cost.<\/p>","link_label":"","link":""}},"column_G4UAWG":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-syphon-spray-gun-2.png","image_link":"https:\/\/guardair.com\/pages\/syphon-spray-guns","title":"<a href=\"\/pages\/syphon-spray-guns\" title=\"Syphon Spray Guns\">Syphon Spray Guns<\/a>","text":"<p>Our Pneumatic Syphon Spray Guns are designed to spray a wide variety of liquids.<\/p>","link_label":"","link":""}},"column_cCawkH":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-gun-rebuild-kit-ultra-with-short-trigger.png","image_link":"https:\/\/guardair.com\/pages\/safety-air-gun-parts","title":"<a href=\"\/pages\/safety-air-gun-parts\" title=\"Safety Air Gun Parts\">Safety Air Gun Parts & Accessories<\/a>","text":"<p>Upgrade your air guns with nozzles and extensions or accessorize with chip shields and grips.<\/p>","link_label":"","link":""}},"column_iF4tK4":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-powerquad-upgrade-retrofit-kit.png","image_link":"https:\/\/guardair.com\/pages\/pneumatic-vacuum-parts-accessories","title":"<a href=\"\/pages\/pneumatic-vacuum-parts-accessories\" title=\"Pneumatic Vacuum Parts & Accessories\">Pneumatic Vacuum Parts & Accessories<\/a>","text":"<p>Replace filters, drums, and hoses or add-on special attachments to your vacuums.<\/p>","link_label":"","link":""}},"column_VpyJwr":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-quickselect-tool-rack-magnetic.png","image_link":"https:\/\/guardair.com\/pages\/shop-accessories","title":"<a href=\"\/pages\/shop-accessories\" title=\"Shop Accessories\">Workshop Accessories<\/a>","text":"<p>Organize your workstation, promote shop cleanliness, and improve worker safety with our shop accessories.<\/p>","link_label":"","link":""}},"column_xHfP3n":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-general-purpose-air-hose-assembly.png","image_link":"https:\/\/guardair.com\/pages\/air-hose-assemblies","title":"<a href=\"\/pages\/air-hose-assemblies\" title=\"Air Hose Assemblies\">Air Hose Assemblies<\/a>","text":"<p>Air hose assemblies available in various lengths and materials like nylon, polyurethane, and heavy-duty rubber.<\/p>","link_label":"","link":""}},"column_9iMXeA":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-corporation-high-flow-plug.png","image_link":"https:\/\/guardair.com\/pages\/air-fittings-chart","title":"<a href=\"\/pages\/air-fittings-chart\" title=\"Air Fittings\">Air Fittings & Couplers<\/a>","text":"<p>Find the right thread and plug or body size quick disconnect plugs and couplers.<\/p>","link_label":"","link":""}},"column_biUe4F":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/nortech-pancake-filter-assembly.png","image_link":"https:\/\/guardair.com\/pages\/closeouts","title":"<a href=\"\/pages\/closeouts\" title=\"Closeouts\">Closeouts<\/a>","text":"<p>Last chance replacement parts and accessories for Nortech Vacuums.<\/p>","link_label":"","link":""}}},"block_order":["column_7dazHw","column_C7thbA","column_G4UAWG","column_cCawkH","column_iF4tK4","column_VpyJwr","column_xHfP3n","column_9iMXeA","column_biUe4F"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}","h2 {font-size: 28px;}","h3 {color: #002395; font-size: 22px;}","a {text-decoration: none;}",".button {background-color: #002395; font-family: Eurostile-Bol, sans-serif; font-size: 18px;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"left","background_style":"none","button_label":"SHOP ALL PRODUCTS","button_link":"shopify:\/\/collections\/all","color_scheme":"scheme-1","columns_mobile":"1","swipe_on_mobile":false,"padding_top":40,"padding_bottom":100,"anchor_id":""}}},"order":["main","multicolumn_xezMVG"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_xezMVG": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_7dazHw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-xtrathrust-safety-air-gun-2.png",
+            "title": "<a href=\"/pages/safety-air-guns\" title=\"Safety Air Guns\">Safety Air Guns</a>",
+            "text": "<p>Our Safety Air Guns provide exceptional performance, maximize operator comfort, and meet OSHA Standards.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_C7thbA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-powerquad-pneumatic-vacuums-family.png",
+            "title": "<a href=\"/pages/pneumatic-vacuums\" title=\"Pneumatic Vacuums\">Pneumatic Vacuums</a>",
+            "text": "<p>Our Pneumatic Vacuums offer significant advantages in performance, dependability, safety, and life-cycle cost.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G4UAWG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-syphon-spray-gun-2.png",
+            "title": "<a href=\"/pages/syphon-spray-guns\" title=\"Syphon Spray Guns\">Syphon Spray Guns</a>",
+            "text": "<p>Our Pneumatic Syphon Spray Guns are designed to spray a wide variety of liquids.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cCawkH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-gun-rebuild-kit-ultra-with-short-trigger.png",
+            "title": "<a href=\"/pages/safety-air-gun-parts\" title=\"Safety Air Gun Parts\">Safety Air Gun Parts & Accessories</a>",
+            "text": "<p>Upgrade your air guns with nozzles and extensions or accessorize with chip shields and grips.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iF4tK4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-powerquad-upgrade-retrofit-kit.png",
+            "title": "<a href=\"/pages/pneumatic-vacuum-parts-accessories\" title=\"Pneumatic Vacuum Parts & Accessories\">Pneumatic Vacuum Parts & Accessories</a>",
+            "text": "<p>Replace filters, drums, and hoses or add-on special attachments to your vacuums.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VpyJwr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-quickselect-tool-rack-magnetic.png",
+            "title": "<a href=\"/pages/shop-accessories\" title=\"Shop Accessories\">Workshop Accessories</a>",
+            "text": "<p>Organize your workstation, promote shop cleanliness, and improve worker safety with our shop accessories.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xHfP3n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-general-purpose-air-hose-assembly.png",
+            "title": "<a href=\"/pages/air-hose-assemblies\" title=\"Air Hose Assemblies\">Air Hose Assemblies</a>",
+            "text": "<p>Air hose assemblies available in various lengths and materials like nylon, polyurethane, and heavy-duty rubber.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9iMXeA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-high-flow-plug.png",
+            "title": "<a href=\"/pages/air-fittings-chart\" title=\"Air Fittings\">Air Fittings & Couplers</a>",
+            "text": "<p>Find the right thread and plug or body size quick disconnect plugs and couplers.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_biUe4F": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/nortech-pancake-filter-assembly.png",
+            "title": "<a href=\"/pages/closeouts\" title=\"Closeouts\">Closeouts</a>",
+            "text": "<p>Last chance replacement parts and accessories for Nortech Vacuums.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7dazHw",
+        "column_C7thbA",
+        "column_G4UAWG",
+        "column_cCawkH",
+        "column_iF4tK4",
+        "column_VpyJwr",
+        "column_xHfP3n",
+        "column_9iMXeA",
+        "column_biUe4F"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {color: #002395; font-size: 22px;}",
+        "a {text-decoration: none;}",
+        ".button {background-color: #002395; font-family: Eurostile-Bol, sans-serif; font-size: 18px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "SHOP ALL PRODUCTS",
+        "button_link": "shopify://collections/all",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": ["main", "multicolumn_xezMVG"]
+}
