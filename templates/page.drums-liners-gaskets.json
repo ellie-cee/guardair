@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -8,14 +17,13 @@
       }
     },
     "multicolumn_BXf4UH": {
-      "type": "multicolumn",
+      "type": "gua-multicolumn",
       "blocks": {
         "column_WT7GDT": {
           "type": "column",
           "settings": {
-            "image_link": "",
             "title": "",
-            "text": "<ul><li><a href=\"#standard-vacuum-drums\" title=\"Standard Vacuum Drums\"><strong>Standard Vacuum Drums<\/strong><\/a><\/li><li><a href=\"#atex-vacuum-drums\" title=\"ATEX Vacuum Drums\"><strong>ATEX Vacuum Drums<\/strong><\/a><\/li><\/ul>",
+            "text": "<ul><li><a href=\"#standard-vacuum-drums\" title=\"Standard Vacuum Drums\"><strong>Standard Vacuum Drums</strong></a></li><li><a href=\"#atex-vacuum-drums\" title=\"ATEX Vacuum Drums\"><strong>ATEX Vacuum Drums</strong></a></li></ul>",
             "link_label": "",
             "link": ""
           }
@@ -23,9 +31,8 @@
         "column_maxCzi": {
           "type": "column",
           "settings": {
-            "image_link": "",
             "title": "",
-            "text": "<ul><li><a href=\"#disposable-drum-liners\" title=\"Disposable Drum Liners\"><strong>Disposable Drum Liners<\/strong><\/a><\/li><li><a href=\"#reusable-drum-liners\" title=\"Reusable Drum Liners\"><strong>Reusable Drum Liners<\/strong><\/a><\/li><\/ul>",
+            "text": "<ul><li><a href=\"#disposable-drum-liners\" title=\"Disposable Drum Liners\"><strong>Disposable Drum Liners</strong></a></li><li><a href=\"#reusable-drum-liners\" title=\"Reusable Drum Liners\"><strong>Reusable Drum Liners</strong></a></li></ul>",
             "link_label": "",
             "link": ""
           }
@@ -33,19 +40,14 @@
         "column_q47tcz": {
           "type": "column",
           "settings": {
-            "image_link": "",
             "title": "",
-            "text": "<ul><li><a href=\"#vacuum-lid-gaskets\" title=\"Vacuum Lid Gaskets\"><strong>Vacuum Lid Gaskets<\/strong><\/a><\/li><\/ul>",
+            "text": "<ul><li><a href=\"#vacuum-lid-gaskets\" title=\"Vacuum Lid Gaskets\"><strong>Vacuum Lid Gaskets</strong></a></li></ul>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column_WT7GDT",
-        "column_maxCzi",
-        "column_q47tcz"
-      ],
+      "block_order": ["column_WT7GDT", "column_maxCzi", "column_q47tcz"],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
         "h2 {font-size: 24px;}",
@@ -66,8 +68,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 12,
-        "padding_bottom": 12,
-        "anchor_id": ""
+        "padding_bottom": 12
       }
     },
     "7262c84d-f362-4977-8d90-59ade53f2df6": {
@@ -138,10 +139,7 @@
           }
         }
       },
-      "block_order": [
-        "block_yn6CWx",
-        "block_F3JFnk"
-      ],
+      "block_order": ["block_yn6CWx", "block_F3JFnk"],
       "settings": {
         "heading": "ATEX Vacuum Drums",
         "link": "",
@@ -235,10 +233,7 @@
           }
         }
       },
-      "block_order": [
-        "block_rfigUN",
-        "block_PwjNVz"
-      ],
+      "block_order": ["block_rfigUN", "block_PwjNVz"],
       "settings": {
         "heading": "Reusable Drum Liners",
         "link": "",
