@@ -1,0 +1,22 @@
+{% assign filters_applied = false %}
+{% for filter in collection.filters %}
+  {% if filter.type == 'price_range' %}
+    {% if filter.active_values != empty %}
+      {% assign current_min_price = filter.min_value.value | default: filter.range_min.value %}
+      {% assign current_max_price = filter.max_value.value | default: filter.range_max.value %}
+      {% if current_min_price > filter.range_min.value or current_max_price < filter.range_max.value %}
+        {% assign filters_applied = true %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% elsif filter.type == 'list' or filter.type == 'boolean' %}
+    {% if filter.active_values != empty %}
+      {% assign filters_applied = true %}
+      {% break %}
+    {% endif %}
+  {% elsif filter.active_values != empty %}
+    {% assign filters_applied = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{{- filters_applied | strip -}}
