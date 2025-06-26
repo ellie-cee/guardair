@@ -1,0 +1,52 @@
+{% comment %} TO DO
+1. Manually add new page template in code: https://share.zight.com/nOurZJkv 
+2. Make a page and set to that template
+3. Only make visible when using
+{% endcomment %}
+
+
+{% style %}
+table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
+  th,td {color:#000;background:#fff;}
+    th {background:#eee;}
+  {% endstyle %}
+
+<div class="page-width">
+ 
+<table style="max-width:1200px;margin-top:2rem;">
+  <thead>
+    <tr>
+      {% comment %}<th>GID</th>{% endcomment %}
+      <th>Original Title</th> 
+      {% comment %}<th>Handle</th>{% endcomment %}
+      <th>New Title</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+{% paginate collections.all.products by 10000 %}
+    {% assign sorted_products = collections.all.products | sort: 'title' %}
+  
+{% for product in sorted_products %}
+      <tr>
+        <td>{{ product.title }}</td>
+        {% comment %} <td>{{ product.handle }}</td>{% endcomment %} 
+        <td>{% render 'gua-title',title:product.title %}</td>
+       {% comment %} <td>
+          {% if product.tags.size > 0 %}
+            {% for tag in product.tags %}
+              {{ tag }}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          {% else %}
+            -
+          {% endif %}
+      {% endcomment %}
+        </td>
+      </tr>
+  {% endfor %}
+
+{% endpaginate %}
+  </tbody>
+</table>
+</div>
