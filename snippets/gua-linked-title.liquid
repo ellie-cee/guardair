@@ -1,0 +1,20 @@
+{% assign processed_title = product.title %}
+{% assign meta = product.metafields.custom.linked_product_value %}
+  {% assign product_metaobject_type_handle = 'linked_products' %}
+  {% assign linked_products = shop.metaobjects.linked_products.values %}
+ 
+ {% assign group_name = '' %}
+
+ size:{{ linked_products.size }}
+      {% for entry in linked_products %}
+{% assign group = entry.group_name %}
+{% assign linked = entry.products %} 
+{% if linked contains product.id %}TRUE --- {{ linked }}{{ group }}{% endif %}
+
+
+      {% endfor %}
+{% assign final_title = meta %}
+{% assign final_title = final_title | strip %} {% comment %} Remove leading/trailing spaces {% endcomment %}
+{% assign final_title = final_title | replace: '  ', ' ' %} {% comment %} Replace double spaces with single spaces {% endcomment %}
+
+{{ final_title }}
