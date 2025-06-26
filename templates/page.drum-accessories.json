@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -8,14 +17,13 @@
       }
     },
     "multicolumn_dqKHfC": {
-      "type": "multicolumn",
+      "type": "gua-multicolumn",
       "blocks": {
         "column_jFBtib": {
           "type": "column",
           "settings": {
-            "image_link": "",
             "title": "",
-            "text": "<ul><li><a href=\"#drum-dollies\" title=\"Drum Dollies\"><strong>Drum Dollies<\/strong><\/a><\/li><li><a href=\"#liquid-drain-valves\" title=\"Liquid Drain Valves\"><strong>Liquid Drain Valves<\/strong><\/a><\/li><\/ul>",
+            "text": "<ul><li><a href=\"#drum-dollies\" title=\"Drum Dollies\"><strong>Drum Dollies</strong></a></li><li><a href=\"#liquid-drain-valves\" title=\"Liquid Drain Valves\"><strong>Liquid Drain Valves</strong></a></li></ul>",
             "link_label": "",
             "link": ""
           }
@@ -23,9 +31,8 @@
         "column_6fjATz": {
           "type": "column",
           "settings": {
-            "image_link": "",
             "title": "",
-            "text": "<ul><li><a href=\"#liquid-shut-off-accessories\" title=\"Liquid Shut-Off Accessories\"><strong>Liquid Shut-Off Accessories<\/strong><\/a><\/li><li><a href=\"#grounding-clamps\" title=\"Grounding Clamps\"><strong>Grounding Clamps<\/strong><\/a><\/li><\/ul>",
+            "text": "<ul><li><a href=\"#liquid-shut-off-accessories\" title=\"Liquid Shut-Off Accessories\"><strong>Liquid Shut-Off Accessories</strong></a></li><li><a href=\"#grounding-clamps\" title=\"Grounding Clamps\"><strong>Grounding Clamps</strong></a></li></ul>",
             "link_label": "",
             "link": ""
           }
@@ -33,19 +40,14 @@
         "column_pHmrCA": {
           "type": "column",
           "settings": {
-            "image_link": "",
             "title": "",
-            "text": "<ul><li><a href=\"#maintenance-kits\" title=\"Maintenance Kits\"><strong>Maintenance Kits<\/strong><\/a><\/li><\/ul>",
+            "text": "<ul><li><a href=\"#maintenance-kits\" title=\"Maintenance Kits\"><strong>Maintenance Kits</strong></a></li></ul>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column_jFBtib",
-        "column_6fjATz",
-        "column_pHmrCA"
-      ],
+      "block_order": ["column_jFBtib", "column_6fjATz", "column_pHmrCA"],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
         "h2 {font-size: 24px;}",
@@ -66,8 +68,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 12,
-        "padding_bottom": 16,
-        "anchor_id": ""
+        "padding_bottom": 16
       }
     },
     "e90c3c41-4135-4e3a-b80e-c411022c187f": {
@@ -138,10 +139,7 @@
           }
         }
       },
-      "block_order": [
-        "block_4cxAak",
-        "block_jwDpbE"
-      ],
+      "block_order": ["block_4cxAak", "block_jwDpbE"],
       "settings": {
         "heading": "Liquid Drain Valves",
         "link": "",
@@ -214,10 +212,7 @@
           }
         }
       },
-      "block_order": [
-        "block_96t4Ur",
-        "block_6LqVtz"
-      ],
+      "block_order": ["block_96t4Ur", "block_6LqVtz"],
       "settings": {
         "heading": "Grounding Clamps",
         "link": "",
