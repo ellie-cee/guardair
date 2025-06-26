@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -8,15 +17,14 @@
       }
     },
     "multicolumn_xezMVG": {
-      "type": "multicolumn",
+      "type": "gua-multicolumn",
       "blocks": {
         "column_7dazHw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/75LJ006AA_MAIN.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-safety-air-gun-6",
-            "title": "<a href=\"\/products\/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John® Safety Air Gun<\/a>",
-            "text": "<p>The perfect tool for cleaning inaccessible and hard-to-reach areas. It's venturi nozzle boosts thrust up to 200% over conventional air guns.<\/p>",
+            "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
+            "title": "<a href=\"/products/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John® Safety Air Gun</a>",
+            "text": "<p>The perfect tool for cleaning inaccessible and hard-to-reach areas. It's venturi nozzle boosts thrust up to 200% over conventional air guns.</p>",
             "link_label": "",
             "link": ""
           }
@@ -24,10 +32,9 @@
         "column_Cr38dW": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/U75LJ006AA2_MAIN_IMAGE.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/palmjet-ga44-safety-air-gun-4-straight",
-            "title": "<a href=\"\/products\/ultra-u75lj-safety-air-gun-6-w-short-trigger\" title=\"Ultra® U75LJ Safety Air Gun - 6&quot; w\/ Short Trigger\">Ultra® Safety Air Gun<\/a>",
-            "text": "<p>Ultra® is the ultimate in air gun performance and comfort. It's venturi nozzle boosts thrust up to 300% over conventional air guns.<\/p>",
+            "image": "shopify://shop_images/U75LJ006AA2_MAIN_IMAGE.jpg",
+            "title": "<a href=\"/products/ultra-u75lj-safety-air-gun-6-w-short-trigger\" title=\"Ultra® U75LJ Safety Air Gun - 6&quot; w/ Short Trigger\">Ultra® Safety Air Gun</a>",
+            "text": "<p>Ultra® is the ultimate in air gun performance and comfort. It's venturi nozzle boosts thrust up to 300% over conventional air guns.</p>",
             "link_label": "",
             "link": ""
           }
@@ -35,10 +42,9 @@
         "column_C7thbA": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/GA4404S_MAIN_IMAGE.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/palmjet-ga44-safety-air-gun-4-straight",
-            "title": "<a href=\"\/products\/palmjet-ga44-safety-air-gun-4-straight\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Straight\">PalmJet® Safety Air Gun<\/a>",
-            "text": "<p>The most advanced, thumb-switch style air gun on the market, the PalmJet® features an ergonomic handle and precision volume control.<\/p>",
+            "image": "shopify://shop_images/GA4404S_MAIN_IMAGE.jpg",
+            "title": "<a href=\"/products/palmjet-ga44-safety-air-gun-4-straight\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Straight\">PalmJet® Safety Air Gun</a>",
+            "text": "<p>The most advanced, thumb-switch style air gun on the market, the PalmJet® features an ergonomic handle and precision volume control.</p>",
             "link_label": "",
             "link": ""
           }
@@ -46,10 +52,9 @@
         "column_cCawkH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-corporation-force-5-safety-air-gun-24-inch-with-venturi-nozzle-f5024aa_f891c3f0-74da-4ba6-bedb-a74fddcefd15.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/force-5-f5-safety-air-gun-24",
-            "title": "<a href=\"\/products\/force-5-f5-safety-air-gun-24\" title=\"Force 5® F5 Safety Air Gun - 24&quot;\">Force 5® Safety Air Gun<\/a>",
-            "text": "<p>The most powerful air gun on the planet, the Force 5® is designed for heavy-duty industrial and construction cleaning applications.<\/p>",
+            "image": "shopify://shop_images/guardair-corporation-force-5-safety-air-gun-24-inch-with-venturi-nozzle-f5024aa_f891c3f0-74da-4ba6-bedb-a74fddcefd15.jpg",
+            "title": "<a href=\"/products/force-5-f5-safety-air-gun-24\" title=\"Force 5® F5 Safety Air Gun - 24&quot;\">Force 5® Safety Air Gun</a>",
+            "text": "<p>The most powerful air gun on the planet, the Force 5® is designed for heavy-duty industrial and construction cleaning applications.</p>",
             "link_label": "",
             "link": ""
           }
@@ -57,10 +62,9 @@
         "column_iF4tK4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/INF5AA_SERIES_MAIN_IMAGE.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/inforcer-inf5-safety-air-gun-24",
-            "title": "<a href=\"\/products\/inforcer-inf5-safety-air-gun-24\" title=\"Inforcer® INF5 Safety Air Gun - 24&quot;\">Inforcer® Safety Air Gun<\/a>",
-            "text": "<p>Designed as the \"in-line\" version of the Force 5®, the Inforcer® excels in heavy-duty cleaning applications.<\/p>",
+            "image": "shopify://shop_images/INF5AA_SERIES_MAIN_IMAGE.jpg",
+            "title": "<a href=\"/products/inforcer-inf5-safety-air-gun-24\" title=\"Inforcer® INF5 Safety Air Gun - 24&quot;\">Inforcer® Safety Air Gun</a>",
+            "text": "<p>Designed as the \"in-line\" version of the Force 5®, the Inforcer® excels in heavy-duty cleaning applications.</p>",
             "link_label": "",
             "link": ""
           }
@@ -68,10 +72,9 @@
         "column_VpyJwr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/79SG_SERIES_MAIN_IMAGE.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/syphon-spray-gun-79sg-6",
-            "title": "<a href=\"\/products\/syphon-spray-gun-79sg-6\" title=\"Syphon Spray Gun 79SG - 6&quot;\">Syphon Spray Gun<\/a>",
-            "text": "<p>The versatile Syphon Gun is ideal for spraying oils, solvents, insecticides, and coatings. Adjustable nozzle tip controls flow and spray pattern.<\/p>",
+            "image": "shopify://shop_images/79SG_SERIES_MAIN_IMAGE.jpg",
+            "title": "<a href=\"/products/syphon-spray-gun-79sg-6\" title=\"Syphon Spray Gun 79SG - 6&quot;\">Syphon Spray Gun</a>",
+            "text": "<p>The versatile Syphon Gun is ideal for spraying oils, solvents, insecticides, and coatings. Adjustable nozzle tip controls flow and spray pattern.</p>",
             "link_label": "",
             "link": ""
           }
@@ -79,10 +82,9 @@
         "column_9iMXeA": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-corporation-gunvac-hand-held-pneumatic-vacuum-kit-1500.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/gunvac-kit",
-            "title": "<a href=\"\/products\/gunvac-kit\" title=\"GunVac - Kit\">GunVac - Kit<\/a>",
-            "text": "<p>Twice the power of a standard shop vacuum in the palm of your hand. GunVac is lightweight and has no electric motors to burn out.<\/p>",
+            "image": "shopify://shop_images/guardair-corporation-gunvac-hand-held-pneumatic-vacuum-kit-1500.jpg",
+            "title": "<a href=\"/products/gunvac-kit\" title=\"GunVac - Kit\">GunVac - Kit</a>",
+            "text": "<p>Twice the power of a standard shop vacuum in the palm of your hand. GunVac is lightweight and has no electric motors to burn out.</p>",
             "link_label": "",
             "link": ""
           }
@@ -90,10 +92,9 @@
         "column_biUe4F": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PQ55C200.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/powerquad-55-gallon-vacuum-kit-w-2-inlet",
-            "title": "<a href=\"\/products\/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w\/ 2&quot; Inlet\">55 Gallon Vacuum Kit<\/a>",
-            "text": "<p>PowerQUAD™ Vacuums are ideal for vacuuming up chips, dust, debris, liquids, or sludge in industrial and commercial applications.<\/p>",
+            "image": "shopify://shop_images/PQ55C200.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Vacuum Kit</a>",
+            "text": "<p>PowerQUAD™ Vacuums are ideal for vacuuming up chips, dust, debris, liquids, or sludge in industrial and commercial applications.</p>",
             "link_label": "",
             "link": ""
           }
@@ -101,10 +102,9 @@
         "column_PxUrTm": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PQ55C200NED.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet",
-            "title": "<a href=\"\/products\/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon NED Vacuum Kit w\/ 2&quot; Inlet\">55 Gallon NED Vacuum Kit<\/a>",
-            "text": "<p>Electrically bonded components, multiple grounding options, and static conductive attachments eliminate static electricity and shocks at the source.<\/p>",
+            "image": "shopify://shop_images/PQ55C200NED.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon NED Vacuum Kit w/ 2&quot; Inlet\">55 Gallon NED Vacuum Kit</a>",
+            "text": "<p>Electrically bonded components, multiple grounding options, and static conductive attachments eliminate static electricity and shocks at the source.</p>",
             "link_label": "",
             "link": ""
           }
@@ -112,10 +112,9 @@
         "column_9qki4D": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PQ55C150ATEX.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet",
-            "title": "<a href=\"\/products\/powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet\" title=\"PowerQUAD™ 55 Gallon ATEX Vacuum Kit w\/ 1.5&quot; Inlet\">55 Gallon ATEX Vacuum Kit<\/a>",
-            "text": "<p>ATEX-Certified Vacuums are ideal for vacuuming debris and sludge in hazardous locations. Static conductive attachments are included.<\/p>",
+            "image": "shopify://shop_images/PQ55C150ATEX.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet\" title=\"PowerQUAD™ 55 Gallon ATEX Vacuum Kit w/ 1.5&quot; Inlet\">55 Gallon ATEX Vacuum Kit</a>",
+            "text": "<p>ATEX-Certified Vacuums are ideal for vacuuming debris and sludge in hazardous locations. Static conductive attachments are included.</p>",
             "link_label": "",
             "link": ""
           }
@@ -123,10 +122,9 @@
         "column_xHfP3n": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CS3000_MAIN_IMAGE.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/personnel-cleaning-station-5-5-gallon-vacuum",
-            "title": "<a href=\"\/products\/personnel-cleaning-station-5-5-gallon-vacuum\" title=\"Personnel Cleaning Station 5.5 Gallon Vacuum\">Personnel Cleaning Station<\/a>",
-            "text": "<p>The Personnel Cleaning Station pairs an on-demand air-agitator brush attachment with a high-efficiency pneumatic vacuum<\/p>",
+            "image": "shopify://shop_images/CS3000_MAIN_IMAGE.jpg",
+            "title": "<a href=\"/products/personnel-cleaning-station-5-5-gallon-vacuum\" title=\"Personnel Cleaning Station 5.5 Gallon Vacuum\">Personnel Cleaning Station</a>",
+            "text": "<p>The Personnel Cleaning Station pairs an on-demand air-agitator brush attachment with a high-efficiency pneumatic vacuum</p>",
             "link_label": "",
             "link": ""
           }
@@ -134,10 +132,9 @@
         "column_G4UAWG": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-corporation-osha-compliance-kit.jpg",
-            "image_link": "https:\/\/guardair.com\/products\/osha-compliance-kit",
-            "title": "<a href=\"\/products\/osha-compliance-kit\" title=\"OSHA Compliance Safety Kit\">OSHA Compliance Kit<\/a>",
-            "text": "<p>With this compliance kit, you’ll be well on your way towards meeting OSHA Standards when cleaning with compressed air in your facility.<\/p>",
+            "image": "shopify://shop_images/guardair-corporation-osha-compliance-kit.jpg",
+            "title": "<a href=\"/products/osha-compliance-kit\" title=\"OSHA Compliance Safety Kit\">OSHA Compliance Kit</a>",
+            "text": "<p>With this compliance kit, you’ll be well on your way towards meeting OSHA Standards when cleaning with compressed air in your facility.</p>",
             "link_label": "",
             "link": ""
           }
@@ -179,13 +176,9 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 100,
-        "anchor_id": ""
+        "padding_bottom": 100
       }
     }
   },
-  "order": [
-    "main",
-    "multicolumn_xezMVG"
-  ]
+  "order": ["main", "multicolumn_xezMVG"]
 }
