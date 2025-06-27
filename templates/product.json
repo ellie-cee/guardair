@@ -86,7 +86,7 @@
         "enable_sticky_info": true,
         "color_scheme": "",
         "itg_zoom_percent": true,
-        "media_size": "small",
+        "media_size": "xsmall",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
