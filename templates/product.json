@@ -12,14 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -34,15 +26,15 @@
           "type": "price",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "feature_Kzx6UN": {
-          "type": "feature",
+        "features_JCcDdi": {
+          "type": "features",
           "settings": {
             "features_heading": "Features"
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         },
         "linked_products_picker_Qq9Ayh": {
           "type": "linked_products_picker",
@@ -72,12 +64,11 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "klaviyo_reviews_average_rating_KHihtJ",
         "price",
+        "features_JCcDdi",
         "description",
-        "feature_Kzx6UN",
         "linked_products_picker_Qq9Ayh",
         "variant_picker",
         "quantity_selector",
