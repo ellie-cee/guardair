@@ -12,19 +12,25 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
         "part_number_CKpjqq": {
           "type": "part_number",
           "settings": {
             "part_number_heading": "Part Number"
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "klaviyo_reviews_average_rating_KHihtJ": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
         },
         "features_JCcDdi": {
           "type": "features",
@@ -51,12 +57,6 @@
           "type": "price",
           "settings": {}
         },
-        "klaviyo_reviews_average_rating_KHihtJ": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -70,14 +70,14 @@
         }
       },
       "block_order": [
-        "part_number_CKpjqq",
         "title",
+        "part_number_CKpjqq",
         "description",
+        "klaviyo_reviews_average_rating_KHihtJ",
         "features_JCcDdi",
         "linked_products_picker_Qq9Ayh",
         "variant_picker",
         "price",
-        "klaviyo_reviews_average_rating_KHihtJ",
         "quantity_selector",
         "buy_buttons"
       ],
