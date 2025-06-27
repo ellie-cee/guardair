@@ -321,7 +321,7 @@
     {% render 'filter-menu-settings' %}
 </head>
 
-  <body class="gradient {{ template.name }} {{ page.handle }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="gradient template-{{ request.page_type }} {{ template.name }} {{ page.handle }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}"{% if handle %} id="{{ handle }}"{% endif %}>
       
       <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NN3G5M3"
