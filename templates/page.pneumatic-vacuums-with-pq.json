@@ -1,1 +1,889 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":0}},"multicolumn_kdFQtg":{"type":"multicolumn","blocks":{"column_UnxNhb":{"type":"column","settings":{"image_link":"","title":"","text":"<ul><li><a href=\"#standard\" title=\"Standard Pneumatic Vacuums\"><strong>Standard Pneumatic Vacuums<\/strong><\/a><\/li><li><a href=\"#ned\" title=\"Non-Electrical Discharge Pneumatic Vacuums\"><strong>NED Pneumatic Vacuums<\/strong><\/a><\/li><\/ul>","link_label":"","link":""}},"column_7kEj7E":{"type":"column","settings":{"image_link":"","title":"","text":"<ul><li><a href=\"#atex\" title=\"ATEX Certified Pneumatic Vacuums\"><strong>ATEX Certified Vacuums<\/strong><\/a><\/li><li><a href=\"#pulseair\" title=\"PulseAir™ Pneumatic Vacuums & Dust Extractors\"><strong>PulseAir™ Vacs & Extractors<\/strong><\/a><\/li><\/ul>","link_label":"","link":""}},"column_cUyfp8":{"type":"column","settings":{"image_link":"","title":"","text":"<ul><li><a href=\"#hand-held\" title=\"Handheld Pneumatic Vacuums\"><strong>Handheld Pneumatic Vacuums<\/strong><\/a><\/li><li><a href=\"#specialty\" title=\"Specialty Vacuum Systems\"><strong>Specialty Vacuum Systems<\/strong><\/a><\/li><\/ul><p><\/p>","link_label":"","link":""}}},"block_order":["column_UnxNhb","column_7kEj7E","column_cUyfp8"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}","h2 {font-size: 24px;}","h3 {font-size: 18px; color: #002395;}","a {color: #002395; text-decoration: none; font-size: 20px;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"","columns_mobile":"1","swipe_on_mobile":true,"padding_top":12,"padding_bottom":16,"anchor_id":""}},"general_industry_section_mPQmH7":{"type":"General-Industry-section","blocks":{"image_text_button_7xQ6aG":{"type":"Image-Text-Button","settings":{"main_head":"","image":"shopify:\/\/shop_images\/checklist-icon-blue-400x400.png","text_link":"Need Help Picking the Right Vacuum?","text_url":"","text_btm":"<p>Answer a few questions to find out which vacuum is best for your specific needs.<\/p>","view_text":"TAKE QUIZ","view_url":"#quiz-zMH9Yyo","pdf_text":"","pdf_url":""}}},"block_order":["image_text_button_7xQ6aG"],"custom_css":[".industry_alldiv {border: 2px solid #ddd; padding: 22px; align-items: flex-end;}",".industry_buttons {flex-direction: row-reverse;}","a {background-color: #002395; font-family: Eurostile-Bol, sans-serif; font-size: 18px; border-radius: 0px;}","h2 {font-size: 22px;}",".itg_industrywrapper .industry_buttons a:hover {background: #002395 !important;}"],"settings":{"padding_top":16,"padding_bottom":40}},"rich_text_Kc4nMk":{"type":"rich-text","blocks":{"heading_XwdxkB":{"type":"heading","settings":{"heading":"PowerQUAD™ Standard Pneumatic Vacuums","heading_size":"h1"}},"text_hWmUyd":{"type":"text","settings":{"text":"<p>Our Standard Pneumatic Vacuums provide powerful, versatile solutions for heavy-duty industrial cleaning. Available in complete kits or as generating heads for use with your own drum, these vacuums handle everything from powders to dense debris or liquids with ease.<\/p>"}}},"block_order":["heading_XwdxkB","text_hWmUyd"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":12,"anchor_id":"standard"}},"multicolumn_xezMVG":{"type":"multicolumn","blocks":{"column_7dazHw":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ55C200_e00ca3ac-2ff6-4188-9696-f096001394eb.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-55-gallon-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w\/ 2&quot; Inlet\">55 Gallon Drum Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_G4UAWG":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ55H200.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-55-gallon-vacuum-generating-head-w-2-inlet","title":"<a href=\"\/products\/powerquad-55-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Generating Head w\/ 2&quot; Inlet\">55 Gallon Vacuum Generating Head<\/a>","text":"","link_label":"","link":""}},"column_mCNFLc":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ30C200.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-30-gallon-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-30-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon Vacuum Kit w\/ 2&quot; Inlet\">30 Gallon Drum Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_qYRj7z":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ30H200.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet","title":"<a href=\"\/products\/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 20\/30 Gallon Vacuum Generating Head w\/ 2&quot; Inlet\">30 Gallon Vacuum Generating Head<\/a>","text":"","link_label":"","link":""}},"column_Ccp9jY":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ20C200_Main.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-20-gallon-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-20-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon Vacuum Kit w\/ 2&quot; Inlet\">20 Gallon Drum Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_Vd6gE3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ30H200.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet","title":"<a href=\"\/products\/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 20\/30 Gallon Vacuum Generating Head w\/ 2&quot; Inlet\">20 Gallon Vacuum Generating Head<\/a>","text":"","link_label":"","link":""}},"column_PNhQEY":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ10C150_Main1.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-10-gallon-vacuum-kit-w-1-5-inlet","title":"<a href=\"\/products\/powerquad-10-gallon-vacuum-kit-w-1-5-inlet\" title=\"PowerQUAD™ 10 Gallon Vacuum Kit w\/ 1.5&quot; Inlet\">10 Gallon Drum Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_KRikdd":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ10H150_Main1.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-10-gallon-vacuum-generating-head-w-1-5-inlet","title":"<a href=\"\/products\/powerquad-10-gallon-vacuum-generating-head-w-1-5-inlet\" title=\"PowerQUAD™ 10 Gallon Vacuum Generating Head w\/ 1.5&quot; Inlet\">10 Gallon Vacuum Generating Head<\/a>","text":"","link_label":"","link":""}},"column_PGjeUT":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ05C125_Main1.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-5-gallon-vacuum-kit-w-1-25-inlet","title":"<a href=\"\/products\/powerquad-5-gallon-vacuum-kit-w-1-25-inlet\" title=\"PowerQUAD™ 5 Gallon Vacuum Kit w\/ 1.25&quot; Inlet\">5 Gallon Carry Vacuum Kit<\/a>","text":"","link_label":"","link":""}},"column_WnHYPG":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ05H125_Main2.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-5-gallon-vacuum-generating-head-w-1-25-inlet","title":"<a href=\"\/products\/powerquad-5-gallon-vacuum-generating-head-w-1-25-inlet\" title=\"PowerQUAD™ 5 Gallon Vacuum Generating Head w\/ 1.25&quot; Inlet\">5 Gallon Vacuum Generating Head<\/a>","text":"","link_label":"","link":""}}},"block_order":["column_7dazHw","column_G4UAWG","column_mCNFLc","column_qYRj7z","column_Ccp9jY","column_Vd6gE3","column_PNhQEY","column_KRikdd","column_PGjeUT","column_WnHYPG"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}","h2 {font-size: 28px;}","h3 {font-size: 16px; text-align: center; color: #002395;}","a {text-decoration: none;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"square","columns_desktop":4,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-1","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":0,"anchor_id":""}},"rich_text_i7yrjL":{"type":"rich-text","blocks":{"text_Ymgpnq":{"type":"text","settings":{"text":""}}},"block_order":["text_Ymgpnq"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":true,"padding_top":0,"padding_bottom":12,"anchor_id":""}},"rich_text_yeLVqe":{"type":"rich-text","blocks":{"heading_MUQFGE":{"type":"heading","settings":{"heading":"PowerQUAD™ Non-Electrical Discharge (NED) Pneumatic Vacuums","heading_size":"h1"}},"text_A4gEDB":{"type":"text","settings":{"text":"<p>NED Pneumatic Vacuums eliminate static electricity, making them ideal for static-sensitive environments. Designed for safety and reliability, they operate with no moving parts, ensuring consistent performance in areas where static control is essential.<\/p>"}}},"block_order":["heading_MUQFGE","text_A4gEDB"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":12,"anchor_id":"ned"}},"multicolumn_7Ge9GP":{"type":"multicolumn","blocks":{"column_x7TdXK":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ55C200NED.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon NED Vacuum Kit w\/ 2&quot; Inlet\">55 Gallon Static Conductive Drum Vacuums<\/a>","text":"","link_label":"","link":""}},"column_HUC7qy":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ30C200NED_Main.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-30-gallon-ned-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-30-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon NED Vacuum Kit w\/ 2&quot; Inlet\">30 Gallon Static Conductive Drum Vacuums<\/a>","text":"","link_label":"","link":""}},"column_Pnaidm":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ20C200NED.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-20-gallon-ned-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-20-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon NED Vacuum Kit w\/ 2&quot; Inlet\">20 Gallon Static Conductive Drum Vacuums<\/a>","text":"","link_label":"","link":""}}},"block_order":["column_x7TdXK","column_HUC7qy","column_Pnaidm"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}","h2 {font-size: 28px;}","h3 {font-size: 16px; text-align: center; color: #002395;}","a {text-decoration: none;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"square","columns_desktop":4,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-1","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":0,"anchor_id":""}},"rich_text_dkgGi7":{"type":"rich-text","blocks":{"text_d7aGNm":{"type":"text","settings":{"text":""}}},"block_order":["text_d7aGNm"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":true,"padding_top":0,"padding_bottom":12,"anchor_id":""}},"rich_text_LMKtza":{"type":"rich-text","blocks":{"heading_kEmKEn":{"type":"heading","settings":{"heading":"PowerQUAD™ ATEX Certified Pneumatic Vacuums","heading_size":"h1"}},"text_ztYDWQ":{"type":"text","settings":{"text":"<p>ATEX Pneumatic Vacuums are certified for safe use in hazardous environments with flammable dust or gases. Built to meet strict ATEX standards, they ensure compliance and safety in explosive settings while delivering reliable, powerful cleaning performance.<\/p>"}}},"block_order":["heading_kEmKEn","text_ztYDWQ"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":12,"anchor_id":"atex"}},"multicolumn_Cz9xRa":{"type":"multicolumn","blocks":{"column_ibaRDn":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ55C200ATEX.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-55-gallon-atex-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-55-gallon-atex-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon ATEX Vacuum Kit w\/ 2&quot; Inlet\">55 Gallon Hazardous Location Drum Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_azjf7A":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ30C200ATEX_Main.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-30-gallon-atex-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-30-gallon-atex-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon ATEX Vacuum Kit w\/ 2&quot; Inlet\">30 Gallon Hazardous Location Drum Vacuum Kits<\/a>","text":"","link_label":"","link":""}}},"block_order":["column_ibaRDn","column_azjf7A"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}","h2 {font-size: 28px;}","h3 {font-size: 16px; text-align: center; color: #002395;}","a {text-decoration: none;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"square","columns_desktop":4,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-1","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":0,"anchor_id":""}},"rich_text_KEJqiG":{"type":"rich-text","blocks":{"text_ta7DNB":{"type":"text","settings":{"text":""}}},"block_order":["text_ta7DNB"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":true,"padding_top":0,"padding_bottom":12,"anchor_id":""}},"rich_text_EdVHeU":{"type":"rich-text","blocks":{"heading_6G4zBp":{"type":"heading","settings":{"heading":"<strong>PowerQUAD™ <\/strong>PulseAir™ Pneumatic Vacuums & Dust Extractors","heading_size":"h1"}},"text_q9ekF6":{"type":"text","settings":{"text":"<p>PulseAir™ Vacuums and Dust Extractors are powerful industrial vacuums incorporating a proprietary, button-activated system engineered to clean the vacuum filter without opening the unit. PulseAir™ Dust Extractors are designed for source capture tools.<\/p>"}}},"block_order":["heading_6G4zBp","text_q9ekF6"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":12,"anchor_id":"pulseair"}},"multicolumn_iB8Cjb":{"type":"multicolumn","blocks":{"column_pYmxV4":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ55C200NEDPA.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-55-gallon-pulseair-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-55-gallon-pulseair-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon PulseAir™ Vacuum Kit w\/ 2&quot; Inlet\">PulseAir™ 55 Gallon Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_zd9PJ8":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ30C200NEDPA.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-30-gallon-pulseair-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-30-gallon-pulseair-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon PulseAir™ Vacuum Kit w\/ 2&quot; Inlet\">PulseAir™ 30 Gallon Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_DT3eU8":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ20C200NEDPA.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-20-gallon-pulseair-vacuum-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-20-gallon-pulseair-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon PulseAir™ Vacuum Kit w\/ 2&quot; Inlet\">PulseAir™ 20 Gallon Vacuum Kits<\/a>","text":"","link_label":"","link":""}},"column_6UULbi":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ30C200NEDPAD.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-30-gallon-pulseair-dust-extractor-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-30-gallon-pulseair-dust-extractor-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon PulseAir™ Dust Extractor Kit w\/ 2&quot; Inlet\">PulseAir™ 30 Gallon Dust Extractor<\/a>","text":"","link_label":"","link":""}},"column_BkkhUK":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PQ20C200NEDPAD.jpg","image_link":"https:\/\/guardair.com\/products\/powerquad-20-gallon-pulseair-dust-extractor-kit-w-2-inlet","title":"<a href=\"\/products\/powerquad-20-gallon-pulseair-dust-extractor-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon PulseAir™ Dust Extractor Kit w\/ 2&quot; Inlet\">PulseAir™ 20 Gallon Dust Extractor<\/a>","text":"","link_label":"","link":""}}},"block_order":["column_pYmxV4","column_zd9PJ8","column_DT3eU8","column_6UULbi","column_BkkhUK"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}","h2 {font-size: 28px;}","h3 {font-size: 16px; text-align: center; color: #002395;}","a {text-decoration: none;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"square","columns_desktop":4,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-1","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":0,"anchor_id":""}},"rich_text_4LhbKH":{"type":"rich-text","blocks":{"text_RQLMeF":{"type":"text","settings":{"text":""}}},"block_order":["text_RQLMeF"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":true,"padding_top":0,"padding_bottom":12,"anchor_id":""}},"rich_text_YXK7Fj":{"type":"rich-text","blocks":{"heading_iYFnzH":{"type":"heading","settings":{"heading":"Handheld Pneumatic Vacuums","heading_size":"h1"}},"text_3baGAW":{"type":"text","settings":{"text":"<p>GunVac® Handheld Vacuums deliver twice the power of a standard shop vacuum for quick, efficient cleanups in industrial settings. Compact and lightweight, they easily tackle dust and debris in tight spaces, making them ideal for maintenance and production environments.<\/p>"}}},"block_order":["heading_iYFnzH","text_3baGAW"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":12,"anchor_id":"hand-held"}},"multicolumn_y3RJDU":{"type":"multicolumn","blocks":{"column_zT4wVd":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-gunvac.png","image_link":"https:\/\/guardair.com\/products\/gunvac-kit","title":"<a href=\"\/products\/gunvac-kit\" title=\"GunVac - Kit\">GunVac Kit<\/a>","text":"","link_label":"","link":""}},"column_MNGbjG":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-flexible-gunvac.png","image_link":"https:\/\/guardair.com\/products\/flexible-gunvac","title":"<a href=\"\/products\/flexible-gunvac\" title=\"Flexible GunVac - Kit\">Flexible GunVac Kit<\/a>","text":"","link_label":"","link":""}},"column_6k8TxL":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-contain-it-kit.png","image_link":"https:\/\/guardair.com\/products\/contain-it-kits-contain-it-kit-with-gunvac","title":"<a href=\"\/products\/contain-it-kits-contain-it-kit-with-gunvac\" title=\"Contain-It Kits - Contain-It Kit with GunVac\">Contain-It Kits<\/a>","text":"","link_label":"","link":""}}},"block_order":["column_zT4wVd","column_MNGbjG","column_6k8TxL"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}","h2 {font-size: 28px;}","h3 {font-size: 16px; text-align: center; color: #002395;}","a {text-decoration: none;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-1","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":0,"anchor_id":""}},"rich_text_hbwgwC":{"type":"rich-text","blocks":{"text_gqBR3J":{"type":"text","settings":{"text":""}}},"block_order":["text_gqBR3J"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":true,"padding_top":0,"padding_bottom":12,"anchor_id":""}},"rich_text_yFmRQU":{"type":"rich-text","blocks":{"heading_dEhKGU":{"type":"heading","settings":{"heading":"Specialty Vacuum Systems","heading_size":"h1"}},"text_Nr4HQY":{"type":"text","settings":{"text":"<p>Our Specialty Vacuum Systems are tailored for unique tasks such as material handling, debris removal, and cleaning in confined spaces. With features like air-agitators, portability, and vertical mounting, these vacuums ensure efficient, effective performance in specialized environments.<\/p>"}}},"block_order":["heading_dEhKGU","text_Nr4HQY"],"custom_css":["h2 {font-size: 28px;}"],"settings":{"desktop_content_position":"left","content_alignment":"left","color_scheme":"","full_width":true,"bdr_btm":false,"padding_top":40,"padding_bottom":12,"anchor_id":"specialty"}},"multicolumn_QhMXfn":{"type":"multicolumn","blocks":{"column_KFQXLx":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-personnel-cleaning-station.png","image_link":"https:\/\/guardair.com\/products\/personnel-cleaning-station","title":"<a href=\"\/products\/personnel-cleaning-station\" title=\"Personnel Cleaning Station\">Personnel Cleaning Station<\/a>","text":"","link_label":"","link":""}},"column_4B7VLp":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-machinevac.png","image_link":"https:\/\/guardair.com\/products\/machine-vac","title":"<a href=\"\/products\/machine-vac\" title=\"MachineVac\">MachineVac<\/a>","text":"","link_label":"","link":""}},"column_3tEHy4":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-material-mover.png","image_link":"https:\/\/guardair.com\/products\/material-mover-4-nozzle-vacuum-unit","title":"<a href=\"\/products\/material-mover-4-nozzle-vacuum-unit\" title=\"Material Mover® - 4 Nozzle Vacuum Unit\">Material Mover<\/a>","text":"","link_label":"","link":""}},"column_jctXBn":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-blind-hole-vacuum.png","image_link":"https:\/\/guardair.com\/products\/blind-hole-vacuum","title":"<a href=\"\/products\/blind-hole-vacuum\" title=\"Blind Hole Vacuum\">Blind Hole Vacuum<\/a>","text":"","link_label":"","link":""}},"column_xYRUzc":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-personnel-cleaning-station-ned.png","image_link":"https:\/\/guardair.com\/products\/personnel-cleaning-station-ned","title":"<a href=\"\/products\/personnel-cleaning-station-ned\" title=\"Personnel Cleaning Station NED\">Personnel Cleaning Station NED<\/a>","text":"","link_label":"","link":""}},"column_FhGY8J":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-guardair-vacuums-machinevac-ned.png","image_link":"https:\/\/guardair.com\/products\/machine-vac-ned","title":"<a href=\"\/products\/machine-vac-ned\" title=\"MachineVac NED\">MachineVac NED<\/a>","text":"","link_label":"","link":""}},"column_fViW9w":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/guardair-vacuums-guardair-vacuums-material-mover-ned.png","image_link":"https:\/\/guardair.com\/products\/material-mover-static-conductive-4-nozzle-basic-kit","title":"<a href=\"\/products\/material-mover-static-conductive-4-nozzle-basic-kit\" title=\"Material Mover® Static Conductive - 4 Nozzle Basic Kit\">Material Mover Static Conductive<\/a>","text":"","link_label":"","link":""}}},"block_order":["column_KFQXLx","column_4B7VLp","column_3tEHy4","column_jctXBn","column_xYRUzc","column_FhGY8J","column_fViW9w"],"custom_css":[".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}","h2 {font-size: 28px;}","h3 {font-size: 16px; text-align: center; color: #002395;}","a {text-decoration: none;}"],"settings":{"title":"","heading_size":"h1","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"left","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-1","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":100,"anchor_id":""}}},"order":["main","multicolumn_kdFQtg","general_industry_section_mPQmH7","rich_text_Kc4nMk","multicolumn_xezMVG","rich_text_i7yrjL","rich_text_yeLVqe","multicolumn_7Ge9GP","rich_text_dkgGi7","rich_text_LMKtza","multicolumn_Cz9xRa","rich_text_KEJqiG","rich_text_EdVHeU","multicolumn_iB8Cjb","rich_text_4LhbKH","rich_text_YXK7Fj","multicolumn_y3RJDU","rich_text_hbwgwC","rich_text_yFmRQU","multicolumn_QhMXfn"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_kdFQtg": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_UnxNhb": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li><a href=\"#standard\" title=\"Standard Pneumatic Vacuums\"><strong>Standard Pneumatic Vacuums</strong></a></li><li><a href=\"#ned\" title=\"Non-Electrical Discharge Pneumatic Vacuums\"><strong>NED Pneumatic Vacuums</strong></a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7kEj7E": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li><a href=\"#atex\" title=\"ATEX Certified Pneumatic Vacuums\"><strong>ATEX Certified Vacuums</strong></a></li><li><a href=\"#pulseair\" title=\"PulseAir™ Pneumatic Vacuums & Dust Extractors\"><strong>PulseAir™ Vacs & Extractors</strong></a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cUyfp8": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li><a href=\"#hand-held\" title=\"Handheld Pneumatic Vacuums\"><strong>Handheld Pneumatic Vacuums</strong></a></li><li><a href=\"#specialty\" title=\"Specialty Vacuum Systems\"><strong>Specialty Vacuum Systems</strong></a></li></ul><p></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["column_UnxNhb", "column_7kEj7E", "column_cUyfp8"],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
+        "h2 {font-size: 24px;}",
+        "h3 {font-size: 18px; color: #002395;}",
+        "a {color: #002395; text-decoration: none; font-size: 20px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 16
+      }
+    },
+    "general_industry_section_mPQmH7": {
+      "type": "General-Industry-section",
+      "blocks": {
+        "image_text_button_7xQ6aG": {
+          "type": "Image-Text-Button",
+          "settings": {
+            "main_head": "",
+            "image": "shopify://shop_images/checklist-icon-blue-400x400.png",
+            "text_link": "Need Help Picking the Right Vacuum?",
+            "text_url": "",
+            "text_btm": "<p>Answer a few questions to find out which vacuum is best for your specific needs.</p>",
+            "view_text": "TAKE QUIZ",
+            "view_url": "#quiz-zMH9Yyo",
+            "pdf_text": "",
+            "pdf_url": ""
+          }
+        }
+      },
+      "block_order": ["image_text_button_7xQ6aG"],
+      "custom_css": [
+        ".industry_alldiv {border: 2px solid #ddd; padding: 22px; align-items: flex-end;}",
+        ".industry_buttons {flex-direction: row-reverse;}",
+        "a {background-color: #002395; font-family: Eurostile-Bol, sans-serif; font-size: 18px; border-radius: 0px;}",
+        "h2 {font-size: 22px;}",
+        ".itg_industrywrapper .industry_buttons a:hover {background: #002395 !important;}"
+      ],
+      "settings": {
+        "padding_top": 16,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_Kc4nMk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XwdxkB": {
+          "type": "heading",
+          "settings": {
+            "heading": "PowerQUAD™ Standard Pneumatic Vacuums",
+            "heading_size": "h1"
+          }
+        },
+        "text_hWmUyd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Standard Pneumatic Vacuums provide powerful, versatile solutions for heavy-duty industrial cleaning. Available in complete kits or as generating heads for use with your own drum, these vacuums handle everything from powders to dense debris or liquids with ease.</p>"
+          }
+        }
+      },
+      "block_order": ["heading_XwdxkB", "text_hWmUyd"],
+      "custom_css": ["h2 {font-size: 28px;}"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_xezMVG": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_7dazHw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200_e00ca3ac-2ff6-4188-9696-f096001394eb.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Drum Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G4UAWG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55H200.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Generating Head w/ 2&quot; Inlet\">55 Gallon Vacuum Generating Head</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mCNFLc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30C200.jpg",
+            "title": "<a href=\"/products/powerquad-30-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon Vacuum Kit w/ 2&quot; Inlet\">30 Gallon Drum Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qYRj7z": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30H200.jpg",
+            "title": "<a href=\"/products/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 20/30 Gallon Vacuum Generating Head w/ 2&quot; Inlet\">30 Gallon Vacuum Generating Head</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Ccp9jY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ20C200_Main.jpg",
+            "title": "<a href=\"/products/powerquad-20-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon Vacuum Kit w/ 2&quot; Inlet\">20 Gallon Drum Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Vd6gE3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30H200.jpg",
+            "title": "<a href=\"/products/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 20/30 Gallon Vacuum Generating Head w/ 2&quot; Inlet\">20 Gallon Vacuum Generating Head</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PNhQEY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ10C150_Main1.jpg",
+            "title": "<a href=\"/products/powerquad-10-gallon-vacuum-kit-w-1-5-inlet\" title=\"PowerQUAD™ 10 Gallon Vacuum Kit w/ 1.5&quot; Inlet\">10 Gallon Drum Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KRikdd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ10H150_Main1.jpg",
+            "title": "<a href=\"/products/powerquad-10-gallon-vacuum-generating-head-w-1-5-inlet\" title=\"PowerQUAD™ 10 Gallon Vacuum Generating Head w/ 1.5&quot; Inlet\">10 Gallon Vacuum Generating Head</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PGjeUT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ05C125_Main1.jpg",
+            "title": "<a href=\"/products/powerquad-5-gallon-vacuum-kit-w-1-25-inlet\" title=\"PowerQUAD™ 5 Gallon Vacuum Kit w/ 1.25&quot; Inlet\">5 Gallon Carry Vacuum Kit</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WnHYPG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ05H125_Main2.jpg",
+            "title": "<a href=\"/products/powerquad-5-gallon-vacuum-generating-head-w-1-25-inlet\" title=\"PowerQUAD™ 5 Gallon Vacuum Generating Head w/ 1.25&quot; Inlet\">5 Gallon Vacuum Generating Head</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7dazHw",
+        "column_G4UAWG",
+        "column_mCNFLc",
+        "column_qYRj7z",
+        "column_Ccp9jY",
+        "column_Vd6gE3",
+        "column_PNhQEY",
+        "column_KRikdd",
+        "column_PGjeUT",
+        "column_WnHYPG"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 16px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_i7yrjL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Ymgpnq": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": ["text_Ymgpnq"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_yeLVqe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MUQFGE": {
+          "type": "heading",
+          "settings": {
+            "heading": "PowerQUAD™ Non-Electrical Discharge (NED) Pneumatic Vacuums",
+            "heading_size": "h1"
+          }
+        },
+        "text_A4gEDB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>NED Pneumatic Vacuums eliminate static electricity, making them ideal for static-sensitive environments. Designed for safety and reliability, they operate with no moving parts, ensuring consistent performance in areas where static control is essential.</p>"
+          }
+        }
+      },
+      "block_order": ["heading_MUQFGE", "text_A4gEDB"],
+      "custom_css": ["h2 {font-size: 28px;}"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_7Ge9GP": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_x7TdXK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200NED.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon NED Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Static Conductive Drum Vacuums</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HUC7qy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30C200NED_Main.jpg",
+            "title": "<a href=\"/products/powerquad-30-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon NED Vacuum Kit w/ 2&quot; Inlet\">30 Gallon Static Conductive Drum Vacuums</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Pnaidm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ20C200NED.jpg",
+            "title": "<a href=\"/products/powerquad-20-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon NED Vacuum Kit w/ 2&quot; Inlet\">20 Gallon Static Conductive Drum Vacuums</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["column_x7TdXK", "column_HUC7qy", "column_Pnaidm"],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 16px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_dkgGi7": {
+      "type": "rich-text",
+      "blocks": {
+        "text_d7aGNm": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": ["text_d7aGNm"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_LMKtza": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kEmKEn": {
+          "type": "heading",
+          "settings": {
+            "heading": "PowerQUAD™ ATEX Certified Pneumatic Vacuums",
+            "heading_size": "h1"
+          }
+        },
+        "text_ztYDWQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ATEX Pneumatic Vacuums are certified for safe use in hazardous environments with flammable dust or gases. Built to meet strict ATEX standards, they ensure compliance and safety in explosive settings while delivering reliable, powerful cleaning performance.</p>"
+          }
+        }
+      },
+      "block_order": ["heading_kEmKEn", "text_ztYDWQ"],
+      "custom_css": ["h2 {font-size: 28px;}"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_Cz9xRa": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_ibaRDn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200ATEX.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-atex-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon ATEX Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Hazardous Location Drum Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_azjf7A": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30C200ATEX_Main.jpg",
+            "title": "<a href=\"/products/powerquad-30-gallon-atex-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon ATEX Vacuum Kit w/ 2&quot; Inlet\">30 Gallon Hazardous Location Drum Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["column_ibaRDn", "column_azjf7A"],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 16px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_KEJqiG": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ta7DNB": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": ["text_ta7DNB"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_EdVHeU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6G4zBp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>PowerQUAD™ </strong>PulseAir™ Pneumatic Vacuums & Dust Extractors",
+            "heading_size": "h1"
+          }
+        },
+        "text_q9ekF6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PulseAir™ Vacuums and Dust Extractors are powerful industrial vacuums incorporating a proprietary, button-activated system engineered to clean the vacuum filter without opening the unit. PulseAir™ Dust Extractors are designed for source capture tools.</p>"
+          }
+        }
+      },
+      "block_order": ["heading_6G4zBp", "text_q9ekF6"],
+      "custom_css": ["h2 {font-size: 28px;}"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_iB8Cjb": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_pYmxV4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200NEDPA.jpg",
+            "title": "<a href=\"/products/powerquad-55-gallon-pulseair-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon PulseAir™ Vacuum Kit w/ 2&quot; Inlet\">PulseAir™ 55 Gallon Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zd9PJ8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30C200NEDPA.jpg",
+            "title": "<a href=\"/products/powerquad-30-gallon-pulseair-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon PulseAir™ Vacuum Kit w/ 2&quot; Inlet\">PulseAir™ 30 Gallon Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DT3eU8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ20C200NEDPA.jpg",
+            "title": "<a href=\"/products/powerquad-20-gallon-pulseair-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon PulseAir™ Vacuum Kit w/ 2&quot; Inlet\">PulseAir™ 20 Gallon Vacuum Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6UULbi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30C200NEDPAD.jpg",
+            "title": "<a href=\"/products/powerquad-30-gallon-pulseair-dust-extractor-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon PulseAir™ Dust Extractor Kit w/ 2&quot; Inlet\">PulseAir™ 30 Gallon Dust Extractor</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BkkhUK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ20C200NEDPAD.jpg",
+            "title": "<a href=\"/products/powerquad-20-gallon-pulseair-dust-extractor-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon PulseAir™ Dust Extractor Kit w/ 2&quot; Inlet\">PulseAir™ 20 Gallon Dust Extractor</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pYmxV4",
+        "column_zd9PJ8",
+        "column_DT3eU8",
+        "column_6UULbi",
+        "column_BkkhUK"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 16px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_4LhbKH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_RQLMeF": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": ["text_RQLMeF"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_YXK7Fj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iYFnzH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Handheld Pneumatic Vacuums",
+            "heading_size": "h1"
+          }
+        },
+        "text_3baGAW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GunVac® Handheld Vacuums deliver twice the power of a standard shop vacuum for quick, efficient cleanups in industrial settings. Compact and lightweight, they easily tackle dust and debris in tight spaces, making them ideal for maintenance and production environments.</p>"
+          }
+        }
+      },
+      "block_order": ["heading_iYFnzH", "text_3baGAW"],
+      "custom_css": ["h2 {font-size: 28px;}"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_y3RJDU": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_zT4wVd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-gunvac.png",
+            "title": "<a href=\"/products/gunvac-kit\" title=\"GunVac - Kit\">GunVac Kit</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MNGbjG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-flexible-gunvac.png",
+            "title": "<a href=\"/products/flexible-gunvac\" title=\"Flexible GunVac - Kit\">Flexible GunVac Kit</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6k8TxL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-contain-it-kit.png",
+            "title": "<a href=\"/products/contain-it-kits-contain-it-kit-with-gunvac\" title=\"Contain-It Kits - Contain-It Kit with GunVac\">Contain-It Kits</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["column_zT4wVd", "column_MNGbjG", "column_6k8TxL"],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 16px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_hbwgwC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gqBR3J": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": ["text_gqBR3J"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_yFmRQU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dEhKGU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Specialty Vacuum Systems",
+            "heading_size": "h1"
+          }
+        },
+        "text_Nr4HQY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Specialty Vacuum Systems are tailored for unique tasks such as material handling, debris removal, and cleaning in confined spaces. With features like air-agitators, portability, and vertical mounting, these vacuums ensure efficient, effective performance in specialized environments.</p>"
+          }
+        }
+      },
+      "block_order": ["heading_dEhKGU", "text_Nr4HQY"],
+      "custom_css": ["h2 {font-size: 28px;}"],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_QhMXfn": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_KFQXLx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-personnel-cleaning-station.png",
+            "title": "<a href=\"/products/personnel-cleaning-station\" title=\"Personnel Cleaning Station\">Personnel Cleaning Station</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4B7VLp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-machinevac.png",
+            "title": "<a href=\"/products/machine-vac\" title=\"MachineVac\">MachineVac</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3tEHy4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-material-mover.png",
+            "title": "<a href=\"/products/material-mover-4-nozzle-vacuum-unit\" title=\"Material Mover® - 4 Nozzle Vacuum Unit\">Material Mover</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jctXBn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-blind-hole-vacuum.png",
+            "title": "<a href=\"/products/blind-hole-vacuum\" title=\"Blind Hole Vacuum\">Blind Hole Vacuum</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xYRUzc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-personnel-cleaning-station-ned.png",
+            "title": "<a href=\"/products/personnel-cleaning-station-ned\" title=\"Personnel Cleaning Station NED\">Personnel Cleaning Station NED</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FhGY8J": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-guardair-vacuums-machinevac-ned.png",
+            "title": "<a href=\"/products/machine-vac-ned\" title=\"MachineVac NED\">MachineVac NED</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fViW9w": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-vacuums-guardair-vacuums-material-mover-ned.png",
+            "title": "<a href=\"/products/material-mover-static-conductive-4-nozzle-basic-kit\" title=\"Material Mover® Static Conductive - 4 Nozzle Basic Kit\">Material Mover Static Conductive</a>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_KFQXLx",
+        "column_4B7VLp",
+        "column_3tEHy4",
+        "column_jctXBn",
+        "column_xYRUzc",
+        "column_FhGY8J",
+        "column_fViW9w"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 16px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_kdFQtg",
+    "general_industry_section_mPQmH7",
+    "rich_text_Kc4nMk",
+    "multicolumn_xezMVG",
+    "rich_text_i7yrjL",
+    "rich_text_yeLVqe",
+    "multicolumn_7Ge9GP",
+    "rich_text_dkgGi7",
+    "rich_text_LMKtza",
+    "multicolumn_Cz9xRa",
+    "rich_text_KEJqiG",
+    "rich_text_EdVHeU",
+    "multicolumn_iB8Cjb",
+    "rich_text_4LhbKH",
+    "rich_text_YXK7Fj",
+    "multicolumn_y3RJDU",
+    "rich_text_hbwgwC",
+    "rich_text_yFmRQU",
+    "multicolumn_QhMXfn"
+  ]
+}
