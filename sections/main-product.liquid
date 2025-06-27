@@ -217,7 +217,7 @@
                 </quantity-input>
               </div>
 
-            {%- when 'featres' -%}
+            {%- when 'features' -%}
                       {%- assign current_variant = product.selected_or_first_available_variant -%}
                  {%- for variant in product.variants limit: 1 -%}
                      {% if variant.metafields.custom.featured.value != blank %}
