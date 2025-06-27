@@ -279,7 +279,7 @@
               </share-button>
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             {%- when 'linked_products_picker' %}
-              {% # This is a workaround to get the size filter to work because liquid is the most stupid language to ever be created %}
+            
               {% assign block_settings_products_size = block.settings.products | join : '||' | split: '||' | size %}
               {% unless block_settings_products_size <= 1 %}
                 {% assign option_name = block.settings.option_name %}
