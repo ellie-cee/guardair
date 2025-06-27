@@ -25,7 +25,7 @@
           "settings": {}
         },
         "klaviyo_reviews_average_rating_KHihtJ": {
-          "type": "shopify:\/\/apps\/klaviyo-reviews\/blocks\/average-rating\/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
             "product": "{{product}}"
           }
@@ -102,11 +102,19 @@
         "padding_bottom": 12
       }
     },
+    "gua_specifications_table_ttEDji": {
+      "type": "gua-specifications-table",
+      "name": "GUA Specifications Chart",
+      "settings": {
+        "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
+        "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
+      }
+    },
     "1721751086101a9e7e": {
       "type": "apps",
       "blocks": {
         "klaviyo_reviews_product_reviews_BFqFQQ": {
-          "type": "shopify:\/\/apps\/klaviyo-reviews\/blocks\/product-reviews\/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {}
         }
       },
@@ -138,7 +146,7 @@
     "custom_liquid_KmDEPm": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script type=\"text\/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"itg_btn product-form__submit button button--full-width button--primary\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n<\/script>",
+        "custom_liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"itg_btn product-form__submit button button--full-width button--primary\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n</script>",
         "color_scheme": "",
         "padding_top": 4,
         "padding_bottom": 4
@@ -147,6 +155,7 @@
   },
   "order": [
     "main",
+    "gua_specifications_table_ttEDji",
     "1721751086101a9e7e",
     "related-products",
     "custom_liquid_KmDEPm"
