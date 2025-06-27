@@ -90,9 +90,7 @@
   {%- endif -%}
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-   <div class="itg_product_title">
-   {% render 'breadcrumbs' %}
-   </div>
+   {% if section.settings.enable_breadcrumbs %}<div class="itg_product_title">{% render 'breadcrumbs' %}</div>{% endif %}
     <div class="itg_product_img grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery-x', variant_images: variant_images, itg_img_zoom_percent:section.settings.itg_zoom_percent %}
     </div>
