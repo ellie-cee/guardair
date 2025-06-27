@@ -399,9 +399,11 @@
       <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    {% comment %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" defer></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js" defer></script>
+    {% endcomment %}
     <script src="{{ 'ajaxinate.min.js' | asset_url }}" defer></script>
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
     <script src="{{ 'breadcrumbs.js' | asset_url }}" async></script>
