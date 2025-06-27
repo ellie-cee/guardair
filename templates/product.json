@@ -85,7 +85,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "itg_zoom_percent": true,
+        "itg_zoom_percent": false,
         "media_size": "xsmall",
         "constrain_to_viewport": true,
         "media_fit": "contain",
