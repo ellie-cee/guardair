@@ -63,13 +63,6 @@
         "description": {
           "type": "description",
           "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -81,22 +74,21 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "description"
       ],
       "custom_css": [],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
         "itg_zoom_percent": true,
-        "media_size": "medium",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
-        "hide_variants": true,
+        "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 12,
         "padding_bottom": 12
@@ -142,22 +134,12 @@
         "padding_top": 0,
         "padding_bottom": 28
       }
-    },
-    "custom_liquid_KmDEPm": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"itg_btn product-form__submit button button--full-width button--primary\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n</script>",
-        "color_scheme": "",
-        "padding_top": 4,
-        "padding_bottom": 4
-      }
     }
   },
   "order": [
     "main",
     "gua_specifications_table_ttEDji",
     "1721751086101a9e7e",
-    "related-products",
-    "custom_liquid_KmDEPm"
+    "related-products"
   ]
 }

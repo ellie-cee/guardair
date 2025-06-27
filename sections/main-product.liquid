@@ -1078,8 +1078,9 @@
     </script>
    <div class="itg_bottom_content">
    {% comment %}{% include 'variant-tabs' %}{% endcomment %}
-   {% include 'product_tabs' %}
-   {% include 'productVideoModal' %}
+   {% render 'product_tabs' %}
+   {% render 'productVideoModal' %}
+   {% render 'gua-klaviyo-scripts',task:'add-to-cart' %}
   </div>
 </section>
 
