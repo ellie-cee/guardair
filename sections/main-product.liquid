@@ -218,6 +218,7 @@
               </div>
 
             {%- when 'features' -%}
+                    {% if block.settings.features_heading %}<h3 class="product-features">{{ block.settings.features_heading }}</h3>{% endif %}
                       {%- assign current_variant = product.selected_or_first_available_variant -%}
                  {%- for variant in product.variants limit: 1 -%}
                      {% if variant.metafields.custom.featured.value != blank %}
