@@ -216,6 +216,23 @@
                   </button>
                 </quantity-input>
               </div>
+
+            {%- when 'featres' -%}
+                      {%- assign current_variant = product.selected_or_first_available_variant -%}
+                 {%- for variant in product.variants limit: 1 -%}
+                     {% if variant.metafields.custom.featured.value != blank %}
+                      <div id="{{ current_variant.sku}}-features" class="product-features" data="{{ current_variant.sku }}">
+                        <ul>
+                            {% if current_variant.title == variant.title %}
+                              {% for text in variant.metafields.custom.featured.value %}
+                                <li>{{ text }}</li>
+                              {% endfor %}
+                            {% endif %}
+                        </ul>
+                      </div>
+                      {% endif %}
+                {% endfor %}
+        
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
