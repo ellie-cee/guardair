@@ -47,9 +47,8 @@
     "search": {
       "search": "Search",
       "reset": "Clear search term",
-      "placeholder":"Search by keyword or part number",
-      "top_matches":"Top Product Matches"
-      
+      "placeholder": "Search by keyword or part number",
+      "top_matches": "Top Product Matches"
     },
     "cart": {
       "view": "View cart ({{ count }})",
@@ -116,9 +115,9 @@
     "product_title": "Example product title",
     "collection_title": "Your collection's name"
   },
-  "collection":{
-    "filter_menu":{
-      "refine":"Filter"
+  "collection": {
+    "filter_menu": {
+      "refine": "Filter"
     }
   },
   "products": {
@@ -289,7 +288,7 @@
       "announcement": "Announcement",
       "announcement_bar": "Announcement bar"
     },
-
+    "multicolumn": {},
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
