@@ -115,7 +115,6 @@
                   {{ product.title | escape | replace: "®", "<sup>®</sup>" | replace: "™", "<sup>™</sup>" }} <span>{% if current_variant.title != 'Default Title' %} - {{ current_variant.title | split: '(' | first }}{% endif %}</span>
                 </h2>
               </a>
-              <p>Part Number: <span>{{ current_variant.sku }}</span></p>
             </div>
 
             
