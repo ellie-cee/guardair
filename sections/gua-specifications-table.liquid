@@ -1,3 +1,218 @@
+    {% if show_spec_tab == true %}
+      <div id="tab3" class="tab-content">
+        <div class="table-container">
+          <table class="dynamic-table">
+            <thead>
+              <tr>
+                {% if show_part_number == true %}
+                  <th width="10%">Part Number</th>
+                {% endif %}
+                {% if show_fittings == true %}
+                  <th width="6%">Fittings</th>
+                {% endif %}
+                {% if show_air_hose_id == true %}
+                  <th width="7%">
+                    Air <br>
+                    Hose ID<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_Vacuum_Hose_ID == true %}
+                  <th width="8%">
+                    Vacuum <br>
+                    Hose ID<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_Inlet-Connection == true %}
+                  <th width="7%">
+                    Compressed <br>
+                    Air Inlet<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_flow == true %}
+                  <th width="10%">
+                    Compressed <br>
+                    Air Usage<br>
+                    (cfm)
+                  </th>
+                {% endif %}
+                {% if show_min_compressor == true %}
+                  <th width="10%">
+                    Min. Size <br>
+                    Air Compressor<br>
+                    (hp)
+                  </th>
+                {% endif %}
+                {% if show_vacuum_flow == true %}
+                  <th width="8%">
+                    Vacuum Flow<br>
+                    (cfm)
+                  </th>
+                {% endif %}
+                {% if show_Vacuum_Lift == true %}
+                  <th width="8%">
+                    Vacuum <br>
+                    Lift<br>
+                    (in H20)
+                  </th>
+                {% endif %}
+                {% if show_syphon_flow_rate == true %}
+                  <th width="9%">
+                    Syphon <br>
+                    Flow Rate<br>
+                    (gph)
+                  </th>
+                {% endif %}
+                {% if show_output_thrust == true %}
+                  <th width="8%">
+                    Output <br>
+                    Thrust<br>
+                    (lbs)
+                  </th>
+                {% endif %}
+                {% if show_noise_level == true %}
+                  <th width="8%">
+                    Noise <br>
+                    Level<br>
+                    (dBA)
+                  </th>
+                {% endif %}
+                {% if show_steel_drum_guage == true %}
+                  <th width="8%">
+                    Min.<br>
+                    Steel Drum<br>
+                    (Gauge)
+                  </th>
+                {% endif %}
+                {% if show_Dimensions == true %}
+                  <th width="10%">
+                    Dimensions<br>
+                    (L" x W" x H")
+                  </th>
+                {% endif %}
+                {% if show_weight == true %}
+                  <th width="6%">
+                    Weight<br>
+                    (lbs)
+                  </th>
+                {% endif %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for variant in product.variants %}
+                <tr>
+                  {% if show_part_number == true %}
+                    <td>
+                      <span class="td-title">Part Number</span>
+                      <span class="td-value td-noBr">{{ variant.sku }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_fittings == true %}
+                    <td>
+                      <span class="td-title">Fittings</span>
+                      <span class="td-value td-noBr">{{ variant.metafields.global.Fittings.value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_air_hose_id == true %}
+                    <td>
+                      <span class="td-title">Air Hose ID</span>
+                      <span class="td-value">{{ variant.metafields.global['Air-Hose-ID'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Vacuum_Hose_ID == true %}
+                    <td>
+                      <span class="td-title">Vacuum Hose ID</span>
+                      <span class="td-value">{{ variant.metafields.global['Vacuum-Hose-ID'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Inlet-Connection == true %}
+                    <td>
+                      <span class="td-title">Inlet Connection</span>
+                      <span class="td-value">{{ variant.metafields.global['Inlet-Connection'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_flow == true %}
+                    <td>
+                      <span class="td-title">Flow (cfm)</span>
+                      <span class="td-value">{{ variant.metafields.global.Flow.value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_min_compressor == true %}
+                    <td>
+                      <span class="td-title">Min. Compressor Required (hp)</span>
+                      <span class="td-value">{{ variant.metafields.global['Min-Compressor-Required'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_vacuum_flow == true %}
+                    <td>
+                      <span class="td-title">Vacuum Flow (cfm)</span>
+                      <span class="td-value">{{ variant.metafields.global['Vacuum-Flow'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Vacuum_Lift == true %}
+                    <td>
+                      <span class="td-title">Vacuum Lift (in H20)</span>
+                      <span class="td-value">{{ variant.metafields.global['Vacuum-Lift'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_syphon_flow_rate == true %}
+                    <td>
+                      <span class="td-title">Syphon Flow Rate (gph)</span>
+                      <span class="td-value">{{ variant.metafields.global['Syphon-Flow-Rate'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_output_thrust == true %}
+                    <td>
+                      <span class="td-title">Output Thrust (lbs)</span>
+                      <span class="td-value">{{ variant.metafields.global['Output-Thrust'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_noise_level == true %}
+                    <td>
+                      <span class="td-title">Noise Level (dB)</span>
+                      <span class="td-value">{{ variant.metafields.global['Noise-Level'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_steel_drum_guage == true %}
+                    <td>
+                      <span class="td-title">Steel Drum Gauge</span>
+                      <span class="td-value">{{ variant.metafields.global['Steel-Drum-Gauge'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Dimensions == true %}
+                    <td>
+                      <span class="td-title"
+                        >Dimensions <br>
+                        (L" x W" x H")</span
+                      >
+                      <span class="td-value">
+                        {{-
+                          variant.metafields.global['Each-Length'].value
+                          | append: ' X '
+                          | append: variant.metafields.global['Each-Width'].value
+                          | append: ' X '
+                          | append: variant.metafields.global['Each-Height'].value
+                        -}}
+                      </span>
+                    </td>
+                  {% endif %}
+                  {% if show_weight == true %}
+                    <td>
+                      <span class="td-title">Weight (lbs)</span>
+                      <span class="td-value">{{ variant.metafields.global['Each-Weight'].value }}</span>
+                    </td>
+                  {% endif %}
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    {% endif %}
+
+
 {% schema %}
   {
     "name": "Section name",
