@@ -523,6 +523,12 @@ slider-component.slider-mobile-gutter .itg_variant_sku p {margin: 0; font-size: 
 .itg_product_img.grid__item.product__media-wrapper {max-width: 50% !important; width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2) !important;}
 .itg_product_data.product__info-wrapper.grid__item {max-width: 50% !important; width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2) !important; padding-left: 30px !important;}
 {% endcomment %}
+
+.itg_product_img.grid__item.product__media-wrapper,
+.itg_product_data.product__info-wrapper.grid__item,
+.product--xsmallm:not(.product--no-media) .product__info-wrapper, 
+.product--xsmall:not(.product--no-media) .product__media-wrapper {max-width: 35%;width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);}
+
 .product__info-wrapper .product-form__input.product-form__input--dropdown .select:after {z-index: 0;}
 .product-form__input .product-form__quantity .quantity:after {z-index: 0;}
 .spr-container .spr-review-header {display: flex; gap: 10px;}
