@@ -119,7 +119,7 @@
 
             {%- when 'part_number' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
-              <p>Part Number: <span>{{ current_variant.sku }}</span></p>
+              <p>{{ block.settings.part_number_heading }}: <span>{{ current_variant.sku }}</span></p>
             </div>
             
             {%- when 'text' -%}
