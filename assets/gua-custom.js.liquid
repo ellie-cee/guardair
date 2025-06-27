@@ -1,0 +1,289 @@
+document.addEventListener('DOMContentLoaded', function () {
+  // --- Search Icon Click ---
+  const itgSearchIcon = document.querySelector('.itg_search_icon');
+  const itgSearchPopup = document.querySelector('.itg_search_popup');
+
+  if (itgSearchIcon && itgSearchPopup) {
+    itgSearchIcon.addEventListener('click', function () {
+      // For slideToggle, a custom implementation or CSS transitions are needed.
+      // This is a basic toggle for 'active' class, you'd add CSS for the slide effect.
+      itgSearchPopup.classList.toggle('active');
+
+      // A more robust slideToggle in plain JS:
+      if (itgSearchPopup.style.maxHeight) {
+        itgSearchPopup.style.maxHeight = null;
+        itgSearchPopup.style.opacity = '0';
+        itgSearchPopup.style.overflow = 'hidden';
+      } else {
+        itgSearchPopup.style.maxHeight = itgSearchPopup.scrollHeight + 'px';
+        itgSearchPopup.style.opacity = '1';
+        itgSearchPopup.style.overflow = 'visible';
+      }
+    });
+  }
+
+  // --- Featured Collection Slider (Owl Carousel) ---
+  // Owl Carousel is a jQuery plugin. To use it in plain JavaScript,
+  // you would need to initialize it differently if it has a standalone JS version,
+  // or use a different carousel library that is pure JavaScript.
+  // Assuming a hypothetical plain JS initialization for a carousel:
+  // You would typically include the Owl Carousel JS file and then initialize it.
+  // Since Owl Carousel is a jQuery plugin, you would likely need to find a
+  // plain JavaScript alternative or rewrite the carousel functionality.
+  // For demonstration, if Owl Carousel had a direct JS API:
+  /*
+  const popularItemsCarousel = document.querySelector('.popular-items.owl-carousel');
+  if (popularItemsCarousel && typeof OwlCarousel !== 'undefined') {
+    new OwlCarousel(popularItemsCarousel, {
+      loop: false,
+      margin: 15,
+      nav: true,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 4 }
+      }
+    });
+  }
+  */
+  // If you want a truly plain JS solution for a slider, you'd need to
+  // implement the sliding, navigation, and responsiveness logic yourself
+  // or use a lightweight pure JS slider library.
+
+  // --- Inner Pages Tab Script ---
+  const itgTabListSpans = document.querySelectorAll(".itg_tab_list span");
+  const itgTabContents = document.querySelectorAll('.itg_tab_details .itg_tab_content');
+
+  itgTabListSpans.forEach(span => {
+    span.addEventListener('click', function () {
+      const tabName = this.getAttribute('data-id');
+
+      itgTabListSpans.forEach(s => s.classList.remove('active_tabs'));
+      this.classList.add('active_tabs');
+
+      itgTabContents.forEach(content => {
+        const tabNameBox = content.getAttribute('data-id');
+        if (tabNameBox === tabName) {
+          content.classList.add('itg_active_content');
+        } else {
+          content.classList.remove('itg_active_content');
+        }
+      });
+    });
+  });
+
+  // --- FAQ Tab Script ---
+  const tabFaqButtons = document.querySelectorAll(".tab_faq_btn button");
+  const tabFaqAllData = document.querySelectorAll(".tab_faq_alldata .fqs_div");
+
+  tabFaqButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      tabFaqButtons.forEach(btn => btn.classList.remove('active_btn'));
+      this.classList.add('active_btn');
+
+      const faqBtnId = this.getAttribute('data-id');
+
+      tabFaqAllData.forEach(content => {
+        const faqContentId = content.getAttribute('data-id');
+        if (faqBtnId === faqContentId) {
+          content.style.display = 'block'; // For fadeIn, you'd add a CSS transition
+        } else {
+          content.style.display = 'none'; // For fadeOut
+        }
+      });
+    });
+  });
+
+  // --- Product Page Tab ---
+  const tabsNavLi = document.querySelectorAll('#tabs-nav li');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  // Show the first tab and hide the rest
+  if (tabsNavLi.length > 0) {
+    tabsNavLi[0].classList.add('active');
+  }
+  tabContents.forEach(content => content.style.display = 'none');
+  if (tabContents.length > 0) {
+    tabContents[0].style.display = 'block'; // Equivalent to .show()
+  }
+
+  // Click function
+  tabsNavLi.forEach(li => {
+    li.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default link behavior if 'a' tag is inside
+
+      tabsNavLi.forEach(item => item.classList.remove('active'));
+      this.classList.add('active');
+
+      tabContents.forEach(content => content.style.display = 'none');
+
+      const anchor = this.querySelector('a');
+      if (anchor) {
+        const activeTabSelector = anchor.getAttribute('href');
+        const activeTabElement = document.querySelector(activeTabSelector);
+        if (activeTabElement) {
+          activeTabElement.style.display = 'block'; // For fadeIn, add a CSS transition
+        }
+      }
+    });
+  });
+
+  // --- Product Page Image Zoom ---
+  const imgProductoContainers = document.querySelectorAll(".img_producto_container");
+
+  imgProductoContainers.forEach(container => {
+    const imgProducto = container.querySelector(".img_producto");
+    if (!imgProducto) return;
+
+    container.addEventListener("mouseover", function () {
+      const scale = this.getAttribute("data-scale");
+      imgProducto.style.transform = `scale(${scale})`;
+    });
+
+    container.addEventListener("mouseout", function () {
+      imgProducto.style.transform = "scale(1)";
+    });
+
+    container.addEventListener("mousemove", function (e) {
+      const rect = this.getBoundingClientRect();
+      const x = (e.pageX - rect.left) / rect.width * 100;
+      const y = (e.pageY - rect.top) / rect.height * 100;
+      imgProducto.style.transformOrigin = `${x}% ${y}%`;
+    });
+  });
+
+  // --- Mobile Filter ---
+  const ptMobileHeaderToggle = document.querySelector('.pt-mobile-header .pt-nav-toggle');
+  const itgCollFilter = document.querySelector('.itg_coll_filter');
+
+  if (ptMobileHeaderToggle && itgCollFilter) {
+    const windowsize = window.innerWidth;
+    if (windowsize < 768) {
+      ptMobileHeaderToggle.addEventListener('click', function () {
+        // For slideToggle, use a CSS class or direct style manipulation
+        itgCollFilter.classList.toggle('active'); // Add/remove an 'active' class and define CSS transitions for sliding
+        // Alternatively, manual slideToggle with max-height and overflow:
+        if (itgCollFilter.style.maxHeight) {
+          itgCollFilter.style.maxHeight = null;
+          itgCollFilter.style.overflow = 'hidden';
+        } else {
+          itgCollFilter.style.maxHeight = itgCollFilter.scrollHeight + 'px';
+          itgCollFilter.style.overflow = 'visible';
+        }
+      });
+    }
+  }
+
+  // --- Bottom Popup Cookie Setup ---
+  const cookieconsentModal = document.getElementById('cookieconsent-modal');
+  const cookieconsentDismiss = document.querySelector('.cookieconsent-dismiss');
+
+  if (cookieconsentModal && cookieconsentDismiss) {
+    // A simple cookie handler (for a more robust solution, use a dedicated library)
+    const setCookie = (name, value, days) => {
+      let expires = "";
+      if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = `; expires=${date.toUTCString()}`;
+      }
+      document.cookie = `${name}=${value || ""}${expires}; path=/`;
+    };
+
+    const getCookie = (name) => {
+      const nameEQ = `${name}=`;
+      const ca = document.cookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    };
+
+    cookieconsentModal.classList.remove('hide');
+
+    cookieconsentDismiss.addEventListener('click', function () {
+      setCookie('cookieconsent', 'accepted', 365);
+      // For slideUp, use CSS transitions or adjust height/opacity directly
+      cookieconsentModal.style.transition = 'all 0.5s ease-out';
+      cookieconsentModal.style.maxHeight = '0';
+      cookieconsentModal.style.opacity = '0';
+      cookieconsentModal.style.overflow = 'hidden';
+      cookieconsentModal.addEventListener('transitionend', function handler() {
+        cookieconsentModal.classList.add('hide');
+        cookieconsentModal.removeEventListener('transitionend', handler);
+      }, { once: true });
+    });
+
+    const cookieshowhide = getCookie('cookieconsent');
+    if (cookieshowhide === 'accepted') {
+      cookieconsentModal.style.maxHeight = '0';
+      cookieconsentModal.style.opacity = '0';
+      cookieconsentModal.style.overflow = 'hidden';
+      cookieconsentModal.classList.add('hide');
+    }
+  }
+
+  // --- Menu Open on Hover ---
+  // This section is already in plain JavaScript, so no conversion needed.
+  let items = document.querySelector(".header__inline-menu")?.querySelectorAll("details");
+  let timeout;
+
+  if (items) {
+    items.forEach(item => {
+      item.addEventListener("mouseover", (event) => {
+        clearTimeout(timeout);
+
+        items.forEach(otherItem => {
+          if (otherItem !== item && !item.contains(event.relatedTarget)) {
+            otherItem.removeAttribute("open");
+          }
+        });
+
+        item.setAttribute("open", true);
+      });
+
+      item.addEventListener("mouseleave", () => {
+        timeout = setTimeout(() => {
+          item.removeAttribute("open");
+        }, 300);
+      });
+
+      const ulElement = item.querySelector("ul");
+      if (ulElement) {
+        ulElement.addEventListener("mouseover", () => {
+          clearTimeout(timeout);
+        });
+
+        ulElement.addEventListener("mouseleave", () => {
+          timeout = setTimeout(() => {
+            item.removeAttribute("open");
+          }, 300);
+        });
+      }
+    });
+  }
+
+  // --- Magnific Popup ---
+  // Magnific Popup is a jQuery plugin. You would need to use a plain JavaScript
+  // lightbox/modal library or implement custom modal functionality.
+  // There is no direct plain JS equivalent without rewriting the library.
+  // If you choose to use it, you'd likely initialize it after including its JS file.
+  /*
+  const popupYoutube = document.querySelectorAll('.popup-youtube');
+  if (popupYoutube.length > 0 && typeof MagnificPopup !== 'undefined') {
+    // Assuming a plain JS version of MagnificPopup exists and is loaded
+    MagnificPopup.init({
+      selector: '.popup-youtube',
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+  }
+  */
+
+});
