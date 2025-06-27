@@ -215,7 +215,26 @@
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "name": "GUA Specifications Chart",
+   "settings": [
+        {
+          "id": "products",
+          "type": "product_list",
+          "label": "Products",
+          "info": "Select products"
+        },
+        {
+          "id": "option_name",
+          "label": "Option Name",
+          "type": "text",
+          "default": "Extension Length"
+        }
+      ],
+  "presets": [
+    {
+      "name": "GUA Specifications Chart",
+      "category":"Guardair"
+    }
+  ]
+}
 {% endschema %}
