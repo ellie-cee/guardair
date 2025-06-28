@@ -247,19 +247,8 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
                 </div>
               {% when 'drawer_nav' %}
 
-                <div
-                  class="
-                    header__icon-wrapper
-                    v2-header__drawer-nav
-                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
-                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
-                  "
-                  style="
-                    --flex-grow: {{ block.settings.flex_grow }};
-                    --flex-shrink: {{ block.settings.flex_shrink }};
-                    --flex-basis: {{ block.settings.flex_basis }};
-                  "
-                >
+                <div class="header__icon-wrapper v2-header__drawer-nav{% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}"
+                  style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};">
                   {% render 'header-drawer', block: block, menu: section.settings.nav_menu, menu_type_desktop: 'tablet', secondary_menu: section.settings.secondary_menu %}
                 </div>
             {% endcase %}
