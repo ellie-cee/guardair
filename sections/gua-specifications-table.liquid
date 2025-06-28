@@ -7,11 +7,8 @@
     {% assign p_entries = shop.metaobjects.linked_products.values %}
 
       {% for entry in p_entries %}
- 
-        {% assign option_name = entry.option_name %}
-        {% assign definition = entry.definition %}
-
-      {{ option_name }}
+        {% assign group_name = entry.group_name %}
+      {{ group_name }}
 
       {% endfor %}
       
