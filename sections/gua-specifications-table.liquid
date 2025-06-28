@@ -1,6 +1,14 @@
 <div class="specifications-table page-width">
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
-  
+
+  {% assign product_group = section.settings.products %}
+<ul>
+  <ol>{{ product_group }}</ol>
+  <ol>{{ product_group.size }}</ol>    
+  <ol>{{ product_group.id }}</ol>  
+  <ol>{{ product_group.value }}</ol>
+  <ol>{{ product_group | json }}</ol>    
+</ul>
 {% assign warning65_text = product.metafields.custom.warning65_text.value %}
 {% assign warning65_url = product.metafields.custom.warning65_url.value %}
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
