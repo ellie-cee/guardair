@@ -73,18 +73,8 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
               {% when 'spacer' %}
                 <span class="header__spacer" {{ block.shopify_attributes }}></span>
               {% when 'text' %}
-                <div
-                  class="
-                    header__text-wrapper
-                    {% if block.settings.show_on_desktop != true %}hide-on-desktop{% endif %}
-                    {% if block.settings.show_on_mobile != true %}hide-on-mobile{% endif %}
-                  "
-                  style="
-                    --flex-grow: {{ block.settings.flex_grow }};
-                    --flex-shrink: {{ block.settings.flex_shrink }};
-                    --flex-basis: {{ block.settings.flex_basis }};
-                  "
-                >
+                <div class="header__text-wrapper{% if block.settings.show_on_desktop != true %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile != true %} hide-on-mobile{% endif %}"
+                  style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};">
                   {% if block.settings.show_left_separator %}
                     {{ vertical_separator }}
                   {% endif %}
@@ -99,11 +89,7 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
                     {% endif %}
                   {% endcapture %}
                   {% if block.settings.link != blank %}
-                    <a
-                      href="{{ block.settings.link }}"
-                      class="link link--text focus-inset"
-                      {{ block.shopify_attributes }}
-                    >
+                    <a href="{{ block.settings.link }}" class="link link--text focus-inset" {{ block.shopify_attributes }}>
                       {{ content }}
                     </a>
                   {% else %}
