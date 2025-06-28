@@ -6,7 +6,8 @@
       {% for entry in p_entries %}
 <ul>
   {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
-  <ol>{{ forloop.index }}: {{ entry.group_name }}</ol>
+  <ol>{{ forloop.index }}: {{ entry.title }}</ol>
+        <ol>{{ entry.group_name }}</ol>
   <ol>{{ entry.option_name }}</ol>    
   <ol>Product ID: {{ product.id }}</ol>       
   <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
