@@ -40,7 +40,7 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
   "
 >
   {% for i in (1..number_of_rows) %}
-    <div class="v2-header__row page-width">
+    <div class="v2-header__row page-width row-{{ i }}">
       <div class="v2-header__row-inner v2-color v2-color--primary">
         {% for block in section.blocks %}
           {% if block.settings.row == i %}
