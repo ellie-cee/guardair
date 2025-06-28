@@ -9,10 +9,7 @@
       {% for entry in p_entries %}
         {% assign group_name = entry.group_name %}
          {% assign product_list = entry.products %}
-      {{ group_name }}
-        {% for p in product_list %}
-{{ p.title }}
-          {% endfor %}
+      {{ entry.handle }}<br/>
 
       {% endfor %}
       
