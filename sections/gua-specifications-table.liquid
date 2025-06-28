@@ -2,7 +2,7 @@
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 
       
-    {% assign p_entries = section.settings.products %}
+    {% assign p_entries = section.settings.products | sort: 'handle' %}
 {% comment %}
       {% for entry in p_entries %}
         {% assign handle = entry.handle %}
