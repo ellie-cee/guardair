@@ -4,6 +4,7 @@
       
     {% assign p_entries = section.settings.products %}
       {% for entry in p_entries %}
+        {% assign currentProduct = all_products.entry.handle %}
 <ul>
   {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
   <ol>{{ forloop.index }}: {{ entry.title }}</ol>
