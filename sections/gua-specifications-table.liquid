@@ -2,7 +2,15 @@
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 --- {{ section.settings.products.size }} ----
 --- {{ section.settings.option_name }} ----  
+
+
+  
   {% assign product_group = section.settings.products %}
+  {%- assign product_group_count = product.metafields.custom.mylist | split: ',' | uniq -%}
+{{ product_group_count.size }}
+
+  
+  {% assign my_metaobject = section.settings.products %}
    {% assign glossary_entries = shop.metaobjects.glossary.values %}
 
     <dl>
@@ -35,7 +43,30 @@
 {% assign linked = entry.products %} 
 {% if linked contains product.id %}TRUE --- {{ linked }}{{ group }}{% endif %}
 {% endfor %}
-  
+
+
+      {% comment %}
+  Assuming 'my_metaobject' is the variable holding your metaobject
+  and 'my_product_list_field' is the field containing the product_list.
+  Adjust these variable names to match your actual setup.
+{% endcomment %}
+
+{% if my_metaobject.fields.my_product_list_field.value != blank %}
+  <ul>
+    {% for product_handle in my_metaobject.fields.my_product_list_field.value %}
+      {% assign product = all_products[product_handle] %}
+      {% if product %}
+        <li>{{ product.title }}</li>
+      {% else %}
+        <li>Product with handle '{{ product_handle }}' not found.</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No products selected in the list.</p>
+{% endif %}
+
+      
 {% assign warning65_text = product.metafields.custom.warning65_text.value %}
 {% assign warning65_url = product.metafields.custom.warning65_url.value %}
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
