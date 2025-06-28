@@ -105,6 +105,7 @@
       "type": "gua-specifications-table",
       "name": "GUA Specifications Chart",
       "settings": {
+        "specifications_heading": "{{ product.metafields.custom.linked_products.value.group_name.value }} Specifications",
         "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
         "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
       }
