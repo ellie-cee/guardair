@@ -5,7 +5,7 @@
     {% assign p_entries = section.settings.products %}
       {% for entry in p_entries %}
 <ul>
-  <ol>{{ entry | json }}</ol>
+  {% if forloop.first %}<ol>{{ entry | json }}</ol>{% endif %}
   <ol>{{ forloop.index }}: {{ entry.group_name }}</ol>
   <ol>{{ entry.option_name }}</ol>    
   <ol>Product ID: {{ product.id }}</ol>       
