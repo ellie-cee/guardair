@@ -249,29 +249,32 @@
 
            
             <tbody>
-                    {% for variant in p_entries %}
+                    {% for entry in p_entries %}
+                          {% assign handle = entry.handle %}
+                          {% assign currentProduct = all_products[handle] %}       
+                          {% assign currentVariant = currentProduct.selected_or_first_available_variant %}                        
                 <tr>
                   {% if show_part_number == true %}
                     <td>
-                      <span class="td-value td-noBr">{{ variant.sku }}</span>
+                      <span class="td-value td-noBr">{{ currentVariant.sku }}</span>
                     </td>
                   {% endif %}
                   {% if show_fittings == true %}
                     <td>
                       <span class="td-title">Fittings</span>
-                      <span class="td-value td-noBr">{{ variant.metafields.global.Fittings.value }}</span>
+                      <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
                     </td>
                   {% endif %}
                   {% if show_air_hose_id == true %}
                     <td>
                       <span class="td-title">Air Hose ID</span>
-                      <span class="td-value">{{ variant.metafields.global['Air-Hose-ID'].value }}</span>
+                      <span class="td-value">{{ currentVariant.metafields.global['Air-Hose-ID'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_Vacuum_Hose_ID == true %}
                     <td>
                       <span class="td-title">Vacuum Hose ID</span>
-                      <span class="td-value">{{ variant.metafields.global['Vacuum-Hose-ID'].value }}</span>
+                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_Inlet-Connection == true %}
