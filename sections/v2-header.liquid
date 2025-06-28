@@ -168,19 +168,10 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
                   </nav>
                 {% endif %}
               {% when 'account' %}
-                <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="header__icon-wrapper header__account{% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}
-                  "
-                  style="
-                    --flex-grow: {{ block.settings.flex_grow }};
-                    --flex-shrink: {{ block.settings.flex_shrink }};
-                    --flex-basis: {{ block.settings.flex_basis }};
-                  "
-                  {{ block.shopify_attributes }}
-                >
+                <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="header__icon-wrapper header__account{% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}"
+                  style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};" {{ block.shopify_attributes }}>
                   {% if block.settings.icon != blank %}
-                    <span class="header__icon">
-                      {{ block.settings.icon }}
-                    </span>
+                    <span class="header__icon">{{ block.settings.icon }}</span>
                   {% endif %}
                   <div class="header__icon-title hide-on-mobile">
                     <span class="header__text">{{ 'customer.account.title' | t }}</span>
@@ -194,21 +185,8 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
                   </div>
                 </a>
               {% when 'cart' %}
-                <a
-                  href="{{ routes.cart_url }}"
-                  class="
-                    header__icon-wrapper
-                    header__icon--cart link focus-inset
-                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
-                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
-                  "
-                  style="
-                    --flex-grow: {{ block.settings.flex_grow }};
-                    --flex-shrink: {{ block.settings.flex_shrink }};
-                    --flex-basis: {{ block.settings.flex_basis }};
-                  "
-                  {{ block.shopify_attributes }}
-                >
+                <a href="{{ routes.cart_url }}" class="header__icon-wrapper header__icon--cart link focus-inset{% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}"
+                  style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};" {{ block.shopify_attributes }}>
                   <span class="header__icon">
                     {{ block.settings.icon }}
                     {% if cart.item_count > 0 %}<span 
@@ -260,9 +238,7 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
                         aria-label="{{ 'general.search.placeholder' | t }}"
                       >
                         {% if block.settings.icon != blank %}
-                          <div
-                            class="header__icon"
-                          />
+                          <div class="header__icon">
                           {{ block.settings.icon }}
                         {% endif %}
                       </button>
