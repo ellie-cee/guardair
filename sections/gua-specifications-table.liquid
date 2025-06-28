@@ -5,7 +5,7 @@
     {% assign p_entries = section.settings.products %}
       {% for variant in p_entries %}
 <ul>
-  {% if forloop.first %}<ol>{{ variant | json }}</ol>{% endif %}
+  {% if forloop.first %}<ol><pre>{{ variant | json }}</pre></ol>{% endif %}
   <ol>{{ forloop.index }}: {{ variant.group_name }}</ol>
   <ol>{{ variant.option_name }}</ol>    
   <ol>Product ID: {{ product.id }}</ol>       
@@ -251,7 +251,6 @@
                 <tr>
                   {% if show_part_number == true %}
                     <td>
-                      <span class="td-title">Part Number</span>
                       <span class="td-value td-noBr">{{ variant.sku }}</span>
                     </td>
                   {% endif %}
