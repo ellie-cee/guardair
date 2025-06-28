@@ -1,6 +1,6 @@
 <div class="specifications-table page-width">
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
---- {{ section.settings.products.values }} ----
+--- {{ section.settings.products.size }} ----
 --- {{ section.settings.option_name }} ----  
   {% assign product_group = section.settings.products %}
    {% assign glossary_entries = shop.metaobjects.glossary.values %}
