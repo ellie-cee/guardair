@@ -2,6 +2,14 @@
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 
   {% assign product_group = section.settings.products %}
+
+<ul> 
+{% for metafield in product_group.value %}
+<li><strong>Location: </strong>{{ metavalue  }}
+{% endfor %}</li>
+</ul>
+
+  
 <ul>
   <ol>{{ product_group }}</ol>
   <ol>{{ product_group.size }}</ol>    
