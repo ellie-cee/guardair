@@ -257,13 +257,13 @@
                 <tr>
                   {% if show_part_number == true %}
                     <td>
-                      <span class="td-value td-noBr">{{ currentVariant.sku }}</span>
+                      <span class="td-value td-noBr"><a href="{{ product.url }}" title="{{ product.title }}">{{ currentVariant.sku }}</a></span>
                     </td>
                   {% endif %}
                   {% if show_fittings == true %}
                     <td>
                       <span class="td-title">Fittings</span>
-                      <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
+                      <span class="td-value td-noBr">{{ currentVariant.variant.metafields.global.Fittings.value }}</span>
                     </td>
                   {% endif %}
                   {% if show_air_hose_id == true %}
@@ -281,7 +281,7 @@
                   {% if show_Inlet-Connection == true %}
                     <td>
                       <span class="td-title">Inlet Connection</span>
-                      <span class="td-value">{{ variant.metafields.global['Inlet-Connection'].value }}</span>
+                      <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_flow == true %}
