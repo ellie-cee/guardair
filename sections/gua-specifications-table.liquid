@@ -4,7 +4,17 @@
 --- {{ section.settings.option_name }} ----  
 
 
-  
+    {% assign p_entries = shop.metaobjects.linked_products.values %}
+
+      {% for entry in p_entries %}
+ 
+        {% assign option_name = entry.option_name %}
+        {% assign definition = entry.definition %}
+
+      {{ option_name }}
+
+      {% endfor %}
+      
   {% assign product_group = section.settings.products %}
   {%- assign product_group_count = product.metafields.custom.mylist | split: ',' | uniq -%}
 {{ product_group_count.size }}
