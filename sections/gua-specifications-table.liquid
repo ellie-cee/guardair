@@ -13,22 +13,11 @@
 
       {% endfor %}
       
-  {% assign product_group = section.settings.products %}
-  {%- assign product_group_count = product.metafields.custom.mylist | split: ',' | uniq -%}
-{{ product_group_count.size }}
-
-  
-  {% assign my_metaobject = section.settings.products %}
-   {% assign glossary_entries = shop.metaobjects.glossary.values %}
-
-    <dl>
-      {% for p in product_group %}
-        {{ p.option_name }}
-      {% endfor %}
 <ul>
   <ol>{{ product_group }}</ol>
   <ol>{{ product_group.size }}</ol>    
-  <ol>{{ product_group.id }}</ol>  
+  <ol>{{ product_group.system.id }}</ol>    
+  <ol>{{ product_group.system.handle }}</ol>  
   <ol>{{ product_group.value }}</ol>
   
 </ul>
