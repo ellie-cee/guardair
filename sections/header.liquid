@@ -450,11 +450,9 @@
       </a>
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          {% comment %}{% render 'icon-account' %}{% endcomment %}
           <span class="itg_mob_hide">Customer Log In</span>
           <span class="itg_mob_show">Log In</span>
-          <span class="visually-hidden">
-            {%- liquid
+          <span class="visually-hidden">{%- liquid
               if customer
                 echo 'customer.account_fallback' | t
               else
@@ -477,14 +475,6 @@
         {%- if cart.item_count > 0 -%}
             <p class="cart-amount"> {{ cart.total_price | money }}</p>
          {%- endif -%}
-        {% comment %}{%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}{% endcomment %}
       </a> {% endif %}
     </div>  
     {%- liquid
