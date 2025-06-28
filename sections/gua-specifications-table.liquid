@@ -7,53 +7,17 @@
     {% assign p_entries = shop.metaobjects.linked_products.values %}
 
       {% for entry in p_entries %}
-        {% assign group_name = entry.group_name %}
-         {% assign product_list = entry.products %}
-      {{ entry.system.handle }}<br/>
-
+<ul>
+  <ol>{{ forloop.index }}: {{ entry.group_name }}</ol>
+  <ol>{{ entry.option_name }}</ol>    
+  <ol>{{ entry.products }}</ol>    
+  <ol>{{ entry.products.size }}</ol>  
+  <ol>{{ entry.system.handle }}</ol>
+  <ol>{{ entry.system.id }}</ol>  
+</ul>
       {% endfor %}
       
-<ul>
-  <ol>{{ product_group }}</ol>
-  <ol>{{ product_group.size }}</ol>    
-  <ol>{{ product_group.system.id }}</ol>    
-  <ol>{{ product_group.system.handle }}</ol>  
-  <ol>{{ product_group.value }}</ol>
-  
-</ul>
-  <ul> 
-{% for metafield in product_group.value %}
-<li><strong>Location: </strong>{{ metavalue  }}
-{% endfor %}</li>
-</ul>
 
-
-  {% assign meta = product.metafields.custom.linked_product_value %}
-  {% assign product_metaobject_type_handle = 'linked_products' %}
-  {% assign linked_products = shop.metaobjects.linked_products.values %}
-
-
-
-      {% comment %}
-  Assuming 'my_metaobject' is the variable holding your metaobject
-  and 'my_product_list_field' is the field containing the product_list.
-  Adjust these variable names to match your actual setup.
-{% endcomment %}
-
-{% if my_metaobject.fields.my_product_list_field.value != blank %}
-  <ul>
-    {% for product_handle in my_metaobject.fields.my_product_list_field.value %}
-      {% assign product = all_products[product_handle] %}
-      {% if product %}
-        <li>{{ product.title }}</li>
-      {% else %}
-        <li>Product with handle '{{ product_handle }}' not found.</li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>No products selected in the list.</p>
-{% endif %}
 
       
 {% assign warning65_text = product.metafields.custom.warning65_text.value %}
