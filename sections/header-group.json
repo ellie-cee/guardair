@@ -254,7 +254,7 @@
         "nav_menu": "mega-menu",
         "secondary_menu": "mobile-bottom",
         "number_of_rows": 2,
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "reduce-logo-size",
         "padding_block": 25,
         "primary_color": "scheme-1",
         "secondary_color": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
