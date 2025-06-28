@@ -9,7 +9,8 @@
 <ul>
   <ol>{{ forloop.index }}: {{ entry.group_name }}</ol>
   <ol>{{ entry.option_name }}</ol>    
-  <ol>{{ product.selected_or_first_available_variant.id }}</ol>     
+  <ol>Product ID: {{ product.id }}</ol>       
+  <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
   <ol>{{ entry.products }}</ol>    
   <ol>{{ entry.products.values.size }}</ol>  
   <ol>{{ entry.system.handle }}</ol>
