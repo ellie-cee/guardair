@@ -168,19 +168,7 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
                   </nav>
                 {% endif %}
               {% when 'account' %}
-                <a
-                  href="
-                    {% if customer %}
-                      {{ routes.account_url }}
-                    {% else %}
-                      {{ routes.account_login_url }}
-                    {% endif %}
-                  "
-                  class="
-                    header__icon-wrapper
-                    header__account
-                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
-                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
+                <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="header__icon-wrapper header__account{% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}
                   "
                   style="
                     --flex-grow: {{ block.settings.flex_grow }};
