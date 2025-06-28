@@ -2,7 +2,20 @@
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 
       
-
+    {% assign p_entries = section.settings.products %}
+      {% for entry in p_entries %}
+<ul>
+  <ol>{{ entry | json }}</ol>
+  <ol>{{ forloop.index }}: {{ entry.group_name }}</ol>
+  <ol>{{ entry.option_name }}</ol>    
+  <ol>Product ID: {{ product.id }}</ol>       
+  <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
+  <ol>{{ entry.products }}</ol>    
+  <ol>{{ entry.products.values.size }}</ol>  
+  <ol>{{ entry.system.handle }}</ol>
+  <ol>{{ entry.system.id }}</ol>  
+</ul>
+      {% endfor %}  
 
       
 {% assign warning65_text = product.metafields.custom.warning65_text.value %}
@@ -232,20 +245,7 @@
             </thead>
 
 
-    {% assign p_entries = section.settings.products %}
-      {% for entry in p_entries %}
-<ul>
-  <ol>{{ entry | json }}</ol>
-  <ol>{{ forloop.index }}: {{ entry.group_name }}</ol>
-  <ol>{{ entry.option_name }}</ol>    
-  <ol>Product ID: {{ product.id }}</ol>       
-  <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
-  <ol>{{ entry.products }}</ol>    
-  <ol>{{ entry.products.values.size }}</ol>  
-  <ol>{{ entry.system.handle }}</ol>
-  <ol>{{ entry.system.id }}</ol>  
-</ul>
-      {% endfor %}            
+           
             <tbody>
                     {% for variant in p_entries %}
                 <tr>
