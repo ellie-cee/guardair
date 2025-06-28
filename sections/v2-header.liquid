@@ -46,20 +46,8 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
           {% if block.settings.row == i %}
             {% case block.type %}
               {% when 'logo' %}
-                <a
-                  href="{{ routes.root_url }}"
-                  class="
-                    header__heading-link link link--text focus-inset
-                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
-                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
-                  "
-                  style="
-                    --flex-grow: {{ block.settings.flex_grow }};
-                    --flex-shrink: {{ block.settings.flex_shrink }};
-                    --flex-basis: {{ block.settings.flex_basis }};
-                  "
-                  {{ block.shopify_attributes }}
-                >
+                <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset{% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}"
+                  style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};" {{ block.shopify_attributes }}>
                   {% if block.settings.logo != blank %}
                     {%- assign logo_alt = block.settings.logo.alt | default: shop.name | escape -%}
                     {%- assign logo_width = block.settings.flex_basis | divided_by: 1 | default: 100 %}
