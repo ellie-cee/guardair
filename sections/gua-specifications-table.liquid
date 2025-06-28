@@ -1,4 +1,5 @@
-{% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
+<div class="specifications-table">
+  {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 {% assign warning65_text = product.metafields.custom.warning65_text.value %}
 {% assign warning65_url = product.metafields.custom.warning65_url.value %}
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
@@ -335,7 +336,7 @@
         </div>
       </div>
     {% endif %}
-
+</div>
 
 {% schema %}
   {
