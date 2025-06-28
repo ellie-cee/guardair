@@ -4,11 +4,13 @@
       
     {% assign p_entries = section.settings.products %}
       {% for entry in p_entries %}
-        {% assign currentProduct = all_products.entry.handle %}
+        {% assign handle = entry.handle %}
+        {% assign currentProduct = all_products[handle] %}
 <ul>
   {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
   <ol>{{ forloop.index }}: {{ entry.title }}</ol>
         <ol>{{ entry.handle }}</ol>
+  <ol>rr{{ currentProduct.title }}</ol>
   <ol>{{ entry.option_name }}</ol>    
   <ol>Product ID: {{ product.id }}</ol>       
   <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
