@@ -204,19 +204,8 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
                   <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
                 </a>
               {% when 'search' %}
-                <div
-                  class="
-                    header__search-wrapper
-                    {% if block.settings.show_on_desktop == false %}hide-on-desktop{% endif %}
-                    {% if block.settings.show_on_mobile == false %}hide-on-mobile{% endif %}
-                  "
-                  style="
-                    --flex-grow: {{ block.settings.flex_grow }};
-                    --flex-shrink: {{ block.settings.flex_shrink }};
-                    --flex-basis: {{ block.settings.flex_basis }};
-                  "
-                  {{ block.shopify_attributes }}
-                >
+                <div class="header__search-wrapper{% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}"
+                  style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};" {{ block.shopify_attributes }}>
                   <v2-predictive-search
                     title-classes="v2-color v2-color--accent"
                     results-classes="color-{{ section.settings.predictive_color_scheme }} gradient"
