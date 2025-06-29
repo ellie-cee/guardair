@@ -16,13 +16,14 @@ body {font-family: "Eurostile-Reg", sans-serif;}
 {% comment %} --- PRODUCT --- {% endcomment %}
 body.template-product .product {margin-top:2rem;}
 body.template-product .product__title h1 {font-size: calc(var(--font-heading-scale) * 3rem);}
+body.template-product table.specifications-table {padding:40px 0px;}
 body.template-product table.specifications-table, body.template-product table.specifications-table td {text-align:center;line-height:1.2;padding:4px;}
 body.template-product table.specifications-table tr:nth-child(even) {background:#fafafa;}
 body.template-product table.specifications-table tr.active, body.template-product table.specifications-table tr.active a {background:{{ accent_color1 }};color:{{ accent_color1_text }};}
 body.template-product table.specifications-table a {color:#333;font-weight:600;text-decoration:none;}
 
 
-body.template-product .itg_full_product_info {}
+body.template-product .itg_full_product_info {padding-top:10px;}
 body.template-product .itg_full_product_info .tabs {background:#fff;margin: 20px 0; border: 1px solid #ddd; overflow: hidden; }
 body.template-product .itg_full_product_info .tabs-nav {background-color: #f9f9f9;}
 
@@ -32,7 +33,7 @@ body.template-product .itg_full_product_info #tabs-nav li { margin: 0; padding: 
 body.template-product .itg_full_product_info #tabs-nav li a { display: block; padding: 15px 20px; text-decoration: none; color: #555; font-weight: 600; font-size: 16px; transition: all 0.3s ease; border-right: 1px solid #eee; white-space: nowrap; }
 body.template-product .itg_full_product_info #tabs-nav li:last-child a { border-right: none; }
 body.template-product .itg_full_product_info #tabs-nav li a:hover { background-color: {{ gray_color | darken: 20 }}; color: #000; }
-body.template-product .itg_full_product_info #tabs-nav li.active a { color: {{ accent_color2 }}; border-bottom: 4px solid {{ accent_color1 }}; padding-bottom: 12px; position: relative; z-index: 2;}
+body.template-product .itg_full_product_info #tabs-nav li.active a { color: {{ accent_color2 }}; border-bottom: 5px solid {{ accent_color1 }}; padding-bottom: 12px; position: relative; z-index: 2;}
 body.template-product .itg_full_product_info #tabs-nav li.active:first-child a {}
 body.template-product .itg_full_product_info #tabs-nav li.active:last-child a {}
 body.template-product .itg_full_product_info #tabs-content {max-width:{{ desktop_max_width }};margin:0 auto; padding: 20px; background-color: #ffffff;  line-height: 1.6; color: #333; }
