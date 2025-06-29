@@ -121,6 +121,7 @@
   {% assign show_spec_tab = true %}
 {% endif %}
 
+<div class="itg_full_product_info">
 <div class="tabs"><div class="nav-wrapper">
   <ul id="tabs-nav">
     {%- for variant in product.variants limit: 1 -%}
@@ -588,11 +589,8 @@
       </div>
     {% endif %}
   </div>
+</div>
 
-{% style %}
-  /* General Tab Container Styling */
- 
-{% endstyle %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
       const table = document.querySelector(".dynamic-table");
