@@ -591,58 +591,7 @@
 
 {% style %}
   /* General Tab Container Styling */
-.tabs { margin: 20px 0; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #f9f9f9; }
-
-/* Tab Navigation (the actual tabs/buttons) */
-#tabs-nav { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; background-color: #f1f1f1; border-top-left-radius: 8px; border-top-right-radius: 8px; }
-#tabs-nav li { margin: 0; padding: 0; flex-grow: 1; text-align: center; }
-#tabs-nav li a { display: block; padding: 15px 20px; text-decoration: none; color: #555; font-weight: 600; font-size: 16px; transition: all 0.3s ease; border-right: 1px solid #eee; white-space: nowrap; }
-#tabs-nav li:last-child a { border-right: none; }
-
-/* Hover state for tabs */
-#tabs-nav li a:hover { background-color: #e9e9e9; color: #333; }
-
-/* Active tab styling */
-#tabs-nav li.active a { background-color: #ffffff; color: #007bff; border-bottom: 3px solid #007bff; padding-bottom: 12px; position: relative; z-index: 2; border-right-color: transparent; border-left-color: transparent; border-top-left-radius: 8px; border-top-right-radius: 8px; }
-
-/* Specific styling for the first and last active tabs to handle corner radii */
-#tabs-nav li.active:first-child a { border-left-color: transparent; }
-#tabs-nav li.active:last-child a { border-right-color: transparent; }
-
-/* Tab Content Styling */
-#tabs-content { padding: 20px; background-color: #ffffff; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; line-height: 1.6; color: #333; }
-
-/* Ensure hidden tabs don't take up space and are actually hidden */
-.tab-content { display: none; }
-.tab-content[style*="display: block"] { display: block !important; }
-
-/* Basic styling for lists within tab content for better readability */
-.tab-content ul { list-style: disc; margin-left: 20px; padding: 0; }
-.tab-content ul li { margin-bottom: 8px; }
-
-/* Styling for the table within the specifications tab */
-.tab-content table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-.tab-content table th, .tab-content table td { border: 1px solid #e0e0e0; padding: 10px 12px; text-align: left; }
-.tab-content table th { background-color: #f5f5f5; font-weight: 600; color: #444; vertical-align: top; }
-.tab-content table tbody tr:nth-child(even) { background-color: #fcfcfc; }
-.tab-content table .td-title { font-weight: 600; display: block; color: #666; font-size: 0.9em; }
-.tab-content table .td-value { font-weight: normal; color: #333; font-size: 1em; }
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-#tabs-nav { flex-direction: column; border-bottom: none; border-radius: 0; }
-#tabs-nav li { width: 100%; border-bottom: 1px solid #eee; }
-#tabs-nav li:last-child { border-bottom: none; }
-#tabs-nav li a { border-right: none; border-bottom: 3px solid transparent; }
-#tabs-nav li.active a { border-bottom: 3px solid #007bff; border-right-color: transparent; border-left-color: transparent; border-radius: 0; }
-.tabs { border-radius: 0; }
-.tab-content table { display: block; overflow-x: auto; white-space: nowrap; }
-.tab-content table thead { display: none; }
-.tab-content table tbody, .tab-content table tr, .tab-content table td { display: block; width: 100%; }
-.tab-content table tr { margin-bottom: 15px; border: 1px solid #ddd; display: flex; flex-wrap: wrap; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-.tab-content table td { border: none; text-align: right; padding: 8px 15px; position: relative; padding-left: 50%; }
-.tab-content table td .td-title { position: absolute; left: 15px; top: 8px; width: calc(50% - 30px); text-align: left; font-weight: 700; color: #555; font-size: 1em; }
-}
+ 
 {% endstyle %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
