@@ -1,4 +1,4 @@
-<div class="specifications-table page-width">
+<hr><div class="specifications-table page-width">
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 
       
@@ -350,6 +350,9 @@
 {% schema %}
   {
     "name": "GUA Specifications Chart",
+    "enabled_on": {
+      "templates": ["product"]
+    },    
    "settings": [
      {
           "type": "text",
