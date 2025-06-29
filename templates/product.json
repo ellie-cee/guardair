@@ -142,11 +142,20 @@
         "padding_top": 0,
         "padding_bottom": 28
       }
+    },
+    "gua_product_tabs_6VXzLn": {
+      "type": "gua-product-tabs",
+      "name": "GUA Product Tabs",
+      "settings": {
+        "products": [],
+        "option_name": "Extension Length"
+      }
     }
   },
   "order": [
     "main",
     "gua_specifications_table_ttEDji",
+    "gua_product_tabs_6VXzLn",
     "1721751086101a9e7e",
     "related-products"
   ]
