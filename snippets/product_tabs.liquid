@@ -121,7 +121,7 @@
   {% assign show_spec_tab = true %}
 {% endif %}
 
-<div class="tabs">
+<div class="tabs"><div class="nav-wrapper">
   <ul id="tabs-nav">
     {%- for variant in product.variants limit: 1 -%}
       {% if variant.metafields.custom.advantages.value != blank %}
@@ -167,7 +167,7 @@
     {% if warning65_text != blank and warning65_url != blank %}
       <li><a href="#tab8">Prop. 65 Warning</a></li>
     {% endif %}
-  </ul>
+  </ul></div>
   <!-- END tabs-nav -->
   <div class="itg_variant_data hide">
     {%- for variant in product.variants -%}
