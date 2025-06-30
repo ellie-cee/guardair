@@ -92,6 +92,49 @@
    {% if section.settings.enable_breadcrumbs %}<div class="itg_product_title">{% render 'breadcrumbs' %}</div>{% endif %}
     <div class="itg_product_img grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
+
+       {% assign debug = false %}
+          {% assign left_blocks = '' %}
+          {% assign hide_right = true %}
+                    {% for block in section.blocks %}
+                      {% if block.type == 'ywm-toggle' %}
+                          {% assign left_blocks = block.settings.blocks %}
+                          {% if block.settings.debug %}{% assign debug = true %}{% endif %}
+                          {% assign id = block.id %}
+                          {% assign padding_top = block.settings.padding_top %}
+                          {% assign padding_bottom = block.settings.padding_bottom %}
+                          {% if block.settings.custom_block %}{% assign custom_content = block.settings.custom_block %}{% endif %}
+                        {% assign desktop_only = block.settings.desktop_only %}
+                      {% endif %}
+                    {% endfor %}
+                {% if debug %}{%- for block in section.blocks -%}{{ block.id }}    ({{ block.type }})<br/>{% endfor %}Debug: {{ debug }}<br/>Left Blocks: {{ left_blocks }}<br/>{% endif %}
+
+                {% capture left_content %}
+                            <div class="product-block" {{ block.shopify_attributes }}>
+                              {{ custom_content }}
+                            </div>
+                               {%- for block in section.blocks -%}
+                                   {% if left_blocks contains block.id %}
+                                          {%- case block.type -%}
+                                                {%- when '@app' -%}{% render block %}
+                                                {%- when 'custom' -%}<div class="product-block" {{ block.shopify_attributes }}>{{ block.settings.code }}</div>     
+                                                {%- when 'ywm_product_info' -%}{% render 'ywm-product-info' %}
+                                          {% endcase %}                        
+                                     {% endif %}
+                                {% endfor %}
+                {% endcapture %}           
+          
+          {% if left_blocks or custom %}
+                <div class="block-{{ id }}-padding{% if desktop_only %} hidden-mobile{% endif %}">{{ left_content }}
+                   {% style %}.block-{{ id }}-padding {padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;}
+                         @media screen and (min-width: 750px) {.block-{{ id }}-padding {padding-top: {{ padding_top }}px;padding-bottom: {{ padding_bottom }}px;}}
+                         @media screen and (max-width: 480px) {.hidden-mobile {display:none;}.visible-mobile {display:block;}}
+                         @media screen and (min-width: 480px) {.visible-mobile {display:none;}}
+                   {% endstyle %}
+                </div>
+          {% endif %}
+
+      
     </div>
     <div class="itg_product_data product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div
