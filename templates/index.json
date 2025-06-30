@@ -95,16 +95,16 @@
         "icon_nn6zhf": {
           "type": "icon",
           "settings": {
-            "logo": "shopify://shop_images/question-mark.webp",
+            "icon": "shopify://shop_images/question-mark.webp",
             "text": "<p>Why Choose Guardair?</p>",
             "text-line-2": "",
-            "main": true
+            "main": false
           }
         },
         "icon_YKMcxx": {
           "type": "icon",
           "settings": {
-            "logo": "shopify://shop_images/master_icons_white_Safety.png",
+            "icon": "shopify://shop_images/master_icons_white_Safety.png",
             "text": "<p>Engineered for Safety</p>",
             "text-line-2": "",
             "main": false
@@ -113,7 +113,7 @@
         "icon_GhjaQm": {
           "type": "icon",
           "settings": {
-            "logo": "shopify://shop_images/master_icons_white_shield.png",
+            "icon": "shopify://shop_images/master_icons_white_shield.png",
             "text": "<p>Industry-Leading Warranties</p>",
             "text-line-2": "",
             "main": false
@@ -122,7 +122,7 @@
         "icon_igaCAc": {
           "type": "icon",
           "settings": {
-            "logo": "shopify://shop_images/master_icons_white_USA.png",
+            "icon": "shopify://shop_images/master_icons_white_USA.png",
             "text": "<p>Assembled in the USA</p>",
             "text-line-2": "",
             "main": false
