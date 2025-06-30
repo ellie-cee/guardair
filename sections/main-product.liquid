@@ -144,6 +144,10 @@
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
+              {% assign pos = block.id | size | minus: 2 %}
+              {% assign block_check = block.id | slice: 0, pos %}
+              {% unless left_blocks contains block_check %}            
+            
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
@@ -718,8 +722,10 @@
                     <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
                   {%- endif -%}
                 </product-recommendations>
-          {%- endcase -%}
+              {%- endcase -%}
+           {% endunless %}   
         {%- endfor -%}
+
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
