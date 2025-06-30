@@ -3,9 +3,9 @@
     {% for block in section.blocks %}
       <div class="single_slide {% if block.settings.main %}main_logo_mobile{% endif %}">
         <div class="single_logo_column">
-            {% if block.settings.logo != blank %}
+            {% if block.settings.icon != blank %}
                 <div class="single_logo_logo">
-                  <img {% if block.settings.main %} class="main_logo_image" {% endif %} src="{{ block.settings.logo | img_url: 'master' }}" alt="logo">
+                  <img {% if block.settings.main %} class="main_logo_image" {% endif %} src="{{ block.settings.icon | img_url: 'master' }}" alt="icon">
                 </div>
             {% endif %}
 
@@ -152,8 +152,8 @@
     ],
     "blocks": [
       {
-        "name": "Logo",
-        "type": "logo",
+        "name": "Icon",
+        "type": "icon",
         "settings": [
           {
             "type": "image_picker",
