@@ -38,11 +38,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_Tip9nz",
-        "text_mQUpVq",
-        "buttons_HmMVbL"
-      ],
+      "block_order": ["heading_Tip9nz", "text_mQUpVq", "buttons_HmMVbL"],
       "custom_css": [
         "h2 {font-size: 44px; margin-bottom: 20px;}",
         "p {color: #fff; font-size: 20px;}",
@@ -66,7 +62,7 @@
       }
     },
     "why_choose_with_icons_ERiyQ4": {
-      "type": "why-choose-with-icons",
+      "type": "gua-icon-bar",
       "blocks": {
         "logo_rfpweF": {
           "type": "logo",
@@ -111,9 +107,7 @@
         "logo_Mw4wL7",
         "logo_gAH6hg"
       ],
-      "custom_css": [
-        "p {margin-top: 0px;}"
-      ],
+      "custom_css": ["p {margin-top: 0px;}"],
       "settings": {
         "background_color": "#121212",
         "text_color": "#ffffff",
@@ -162,10 +156,7 @@
           }
         }
       },
-      "block_order": [
-        "featured_block_C9NrnX",
-        "featured_block_4PcFxF"
-      ],
+      "block_order": ["featured_block_C9NrnX", "featured_block_4PcFxF"],
       "custom_css": [
         ".itg_btn {padding: 12px 20px; background-color: #4b92db;}",
         "@media screen and (max-width: 767px) {h2 {font-size: 32px; padding-bottom: 10px; } h3 {font-size: 32px; }}"
@@ -210,11 +201,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_DwrcAG",
-        "text_RfAR4Q",
-        "button_3yAkey"
-      ],
+      "block_order": ["heading_DwrcAG", "text_RfAR4Q", "button_3yAkey"],
       "custom_css": [
         "h2 {font-size: 36px;}",
         ".image-with-text__media {border: none;}",
@@ -267,11 +254,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_yKy8CG",
-        "text_KCnA3C",
-        "button_hNXPPx"
-      ],
+      "block_order": ["heading_yKy8CG", "text_KCnA3C", "button_hNXPPx"],
       "custom_css": [
         "h2 {font-size: 36px;}",
         ".image-with-text__media {border: none;}",
@@ -349,10 +332,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_9XMMNn",
-        "text_6nWKp7"
-      ],
+      "block_order": ["heading_9XMMNn", "text_6nWKp7"],
       "custom_css": [
         "h2 {font-size: 36px;}",
         "@media screen and (max-width: 767px) {h2 {font-size: 32px; }}",
@@ -409,11 +389,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_zTxpyB",
-        "text_YPDCYy",
-        "button_YmyykQ"
-      ],
+      "block_order": ["heading_zTxpyB", "text_YPDCYy", "button_YmyykQ"],
       "custom_css": [
         "p {font-size: 18px; color: #000;}",
         "h2 {font-size: 36px; color: #000;}",
