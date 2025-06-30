@@ -486,16 +486,16 @@
             "contact_text_3": "<p>Live Chat</p>",
             "faq_title": "Frequently Asked Questions",
             "faq_question_1": "How can I purchase Guardair products?",
-            "faq_answer_1": "",
-            "faq_question_2": "",
-            "faq_answer_2": "",
-            "faq_question_3": "",
-            "faq_answer_3": "",
-            "faq_question_4": "",
-            "faq_answer_4": "",
-            "faq_question_5": "",
-            "faq_answer_5": "",
-            "faq_bottom": ""
+            "faq_answer_1": "<p>You can purchase Guardair products directly from our <a href=\"/pages/all-products\" title=\"All Products\">website</a> or through authorized <a href=\"/pages/where-to-buy\" title=\"Where to Buy\">distributors</a>. For assistance, contact our <a href=\"/pages/contact-us\" title=\"Contact Us\">Customer Service Department</a>.</p>",
+            "faq_question_2": "Are Guardair safety air guns OSHA compliant?",
+            "faq_answer_2": "<p>Yes, our safety air guns are designed to meet OSHA standards, including the 30 PSI dead-end pressure limit. Find more details on our OSHA compliance <a href=\"/pages/osha-compliance-with-guardair-products\" title=\"OSHA Compliance with Guardair Products\">here</a>.</p>",
+            "faq_question_3": "What’s the difference between a standard air gun and a safety air gun?",
+            "faq_answer_3": "<p>Safety air guns include features like noise reduction, pressure regulation, and chip guards to help meet OSHA requirements.</p>",
+            "faq_question_4": "What’s the difference between pneumatic vacuums and electric ones?",
+            "faq_answer_4": "<p>Guardair pneumatic vacuums are powered by compressed air instead of electricity, making them ideal for hazardous environments or areas where electrical tools are restricted.</p>",
+            "faq_question_5": "How do I know which pneumatic vacuum I need?",
+            "faq_answer_5": "<p>Take our pneumatic vacuum <a href=\"https://guardair.com/#quiz-zMH9Yyo\" title=\"product recommendation quiz\">product recommendation quiz</a>. Just answer a few questions to find out which one is best for your specific requirements.</p>",
+            "faq_bottom": "<p>View a full list of FAQs <a href=\"/pages/faq\" title=\"FAQ\">here</a>.</p>"
           }
         }
       },
