@@ -68,48 +68,17 @@
     "why_choose_with_icons_ERiyQ4": {
       "type": "gua-icon-bar",
       "blocks": {
-        "logo_rfpweF": {
-          "type": "logo",
+        "icon_t7PLtx": {
+          "type": "icon",
           "settings": {
-            "logo": "shopify://shop_images/question-mark.webp",
-            "text": "<p>Why Choose</p>",
-            "text-line-2": "<p>Guardair?</p>",
-            "main": false
-          }
-        },
-        "logo_LbrUd8": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/master_icons_white_Safety.png",
-            "text": "<p>Engineered for Safety</p>",
-            "text-line-2": "",
-            "main": false
-          }
-        },
-        "logo_Mw4wL7": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/master_icons_white_shield.png",
-            "text": "<p>Industry-Leading Warranties</p>",
-            "text-line-2": "",
-            "main": false
-          }
-        },
-        "logo_gAH6hg": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/master_icons_white_USA.png",
-            "text": "<p>Assembled in the USA</p>",
+            "text": "",
             "text-line-2": "",
             "main": false
           }
         }
       },
       "block_order": [
-        "logo_rfpweF",
-        "logo_LbrUd8",
-        "logo_Mw4wL7",
-        "logo_gAH6hg"
+        "icon_t7PLtx"
       ],
       "custom_css": [
         "p {margin-top: 0px;}"
@@ -123,36 +92,48 @@
     "gua_icon_bar_QiQw48": {
       "type": "gua-icon-bar",
       "blocks": {
-        "logo_MJfWpU": {
-          "type": "logo",
-          "settings": {
-            "text": "",
-            "text-line-2": "",
-            "main": false
-          }
-        },
-        "logo_UdMXbN": {
-          "type": "logo",
-          "settings": {
-            "text": "",
-            "text-line-2": "",
-            "main": false
-          }
-        },
-        "logo_KiANFD": {
-          "type": "logo",
+        "icon_nn6zhf": {
+          "type": "icon",
           "settings": {
             "logo": "shopify://shop_images/question-mark.webp",
-            "text": "<p>Why Choose</p>",
+            "text": "<p>Why Choose Guardair?</p>",
+            "text-line-2": "",
+            "main": false
+          }
+        },
+        "icon_YKMcxx": {
+          "type": "icon",
+          "settings": {
+            "logo": "shopify://shop_images/master_icons_white_Safety.png",
+            "text": "<p>Engineered for Safety</p>",
+            "text-line-2": "<p>Engineered for Safety</p>",
+            "main": false
+          }
+        },
+        "icon_GhjaQm": {
+          "type": "icon",
+          "settings": {
+            "logo": "shopify://shop_images/master_icons_white_shield.png",
+            "text": "<p>Industry-Leading Warranties</p>",
+            "text-line-2": "",
+            "main": false
+          }
+        },
+        "icon_igaCAc": {
+          "type": "icon",
+          "settings": {
+            "logo": "shopify://shop_images/master_icons_white_USA.png",
+            "text": "<p>Assembled in the USA</p>",
             "text-line-2": "",
             "main": false
           }
         }
       },
       "block_order": [
-        "logo_MJfWpU",
-        "logo_UdMXbN",
-        "logo_KiANFD"
+        "icon_nn6zhf",
+        "icon_YKMcxx",
+        "icon_GhjaQm",
+        "icon_igaCAc"
       ],
       "name": "GUA Icon Bar",
       "settings": {
