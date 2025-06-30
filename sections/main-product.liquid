@@ -2482,7 +2482,86 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
-    }
+    },
+     {
+      "type": "ywm-toggle",
+      "name": "GUA Block Switch",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Settings"
+        },        
+        {
+          "type": "checkbox",
+          "id":"desktop_only",
+          "label":"Only on Desktop",
+          "info":"On mobile, will show in natural order"
+        },        
+        {
+          "type": "header",
+          "content": "Custom Left Content"
+        },
+        {
+          "type": "liquid",
+          "id": "custom_block",
+          "label": "Custom Block",
+          "info": "Use this advanced section to add custom HTML, app scripts, or liquid. Supports Liquid"
+        },
+        {
+          "type": "header",
+          "content": "Blocks to Display on Left"
+        },        
+        {
+          "type": "paragraph",
+          "content": "You must find the block id from the frontend code"
+        },
+        {
+          "type": "text",
+          "id":"blocks",
+          "label":"Blocks to Move",
+          "info":"List block ids in a comma separated list"
+        },
+        {
+          "type": "paragraph",
+          "content": "-"
+        }, 
+        {
+            "type": "header",
+            "content": "Column Padding"
+          },
+          {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 36,
+            "step": 4,
+            "unit": "px",
+            "label": "Padding Top",
+            "default": 20
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 36,
+            "step": 4,
+            "unit": "px",
+            "label": "Padding Bottom",
+            "default": 20
+          },        
+        {
+          "type": "header",
+          "content": "Debug"
+        },        
+        {
+          "type": "checkbox",
+          "id":"debug",
+          "default":false,
+          "label":"Show block id list",
+          "info":"Do NOT do on LIVE site"
+        }        
+      ]
+     }
   ],
   "settings": [
     {
