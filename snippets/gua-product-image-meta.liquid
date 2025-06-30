@@ -1,0 +1,22 @@
+  <!-- prod-meta-image-group -->
+            {% if product.metafields.custom.product_info_image.value != blank %}
+                  <div class="prod-meta-image-group">
+                    <div class="prod-meta-image-container">
+                      {% if product.metafields.custom.product_info_image_url.value != blank %}
+                        <a href="{{ product.metafields.custom.product_info_image_url.value }}">
+                          <img
+                            src="{{ product.metafields.custom.product_info_image.value }}"
+                            class="prod-meta-image"
+                            height="auto"
+                            width="auto"
+                            {% if product.metafields.custom.product_info_image_alt_text.value != blank %}
+                              alt="{{ product.metafields.custom.product_info_image_alt_text.value }}"
+                            {% endif %}
+                          >
+                        </a>
+                      {% endif %}
+                    </div>
+                    <!-- Closing for prod-meta-image-container -->
+                  </div>
+                  <!-- Closing for prod-meta-image-group -->
+                {% endif %}
