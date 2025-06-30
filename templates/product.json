@@ -37,10 +37,10 @@
           "settings": {
             "desktop_only": true,
             "custom_block": "",
-            "blocks": "",
+            "blocks": "part_number_CKpjqq, Aa3lTV1ZRQjg5Z0tMM__klaviyo_reviews_average_rating_KHihtJ, features_JCcDdi",
             "padding_top": 20,
             "padding_bottom": 20,
-            "debug": true
+            "debug": false
           }
         },
         "features_JCcDdi": {
