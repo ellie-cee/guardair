@@ -515,6 +515,48 @@
         "button_label": "ORDER YOUR FREE KIT",
         "button_link": "shopify://pages/order-an-osha-compliance-kit"
       }
+    },
+    "gua_mixed_content_rhKwgm": {
+      "type": "gua-mixed-content",
+      "blocks": {
+        "shield_block_Mwa8M7": {
+          "type": "shield_block",
+          "settings": {
+            "title": "Legendary Support",
+            "body": "<p>Learn how AirSpade saves time and helps you deliver the best results from your work.</p>",
+            "links": "",
+            "contact_icon_1": "",
+            "contact_text_1": "",
+            "contact_icon_2": "",
+            "contact_text_2": "",
+            "contact_icon_3": "",
+            "contact_text_3": "",
+            "faq_title": "",
+            "faq_question_1": "",
+            "faq_answer_1": "",
+            "faq_question_2": "",
+            "faq_answer_2": "",
+            "faq_question_3": "",
+            "faq_answer_3": "",
+            "faq_question_4": "",
+            "faq_answer_4": "",
+            "faq_question_5": "",
+            "faq_answer_5": "",
+            "faq_bottom": ""
+          }
+        }
+      },
+      "block_order": [
+        "shield_block_Mwa8M7"
+      ],
+      "name": "GUA Mixed Content",
+      "settings": {
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_overlay": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 50
+      }
     }
   },
   "order": [
@@ -526,6 +568,7 @@
     "featured_collection",
     "rich_text_6KAite",
     "5e91661a-8314-47db-83bd-749d12145954",
+    "gua_mixed_content_rhKwgm",
     "video_with_text_HyfDyC",
     "d7c7a8d5-0b39-42b7-812d-91d098fcdcd1"
   ]

@@ -61,6 +61,7 @@
         "announcement_PPEcQx"
       ],
       "custom_css": [
+        ".announcement-bar p.announcement-bar__message {font-size: 14px;font-weight:400;}",
         "@media screen and (max-width: 699px) {.announcement-bar p.announcement-bar__message {font-size: 14px; padding-bottom: 8px; }}",
         ".announcement-bar__message.h5 {min-height: unset;}"
       ],
