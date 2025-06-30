@@ -1,8 +1,3 @@
-<hr><div class="specifications-table page-width">
-  {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
-
-      
-    {% assign p_entries = section.settings.products | sort: 'title' %}
 {% comment %}
       {% for entry in p_entries %}
         {% assign handle = entry.handle %}
@@ -141,9 +136,15 @@
   or show_Dimensions == true
   or show_weight == true
 %}
-  {% assign show_spec_tab = true %}
+  {% assign show_spec = true %}
 {% endif %}
-    
+
+{% if show_spec %}
+<hr><div class="specifications-table page-width">
+  {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
+
+      
+    {% assign p_entries = section.settings.products | sort: 'title' %}    
     {% if show_spec_tab == true %}
       <div id="{{ product.selected_or_first_available_variant.sku }}-specifications" class="table-content">
         <div class="table-container">
@@ -346,6 +347,8 @@
       </div>
     {% endif %}
 </div>
+{% endif %}
+
 
 {% schema %}
   {
