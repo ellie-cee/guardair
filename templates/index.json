@@ -95,7 +95,7 @@
         "icon_nn6zhf": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/question-mark.webp",
+            "icon": "shopify://shop_images/white_question_mark.png",
             "text": "<p>Why Choose Guardair?</p>",
             "text-line-2": "",
             "main": false
