@@ -443,6 +443,49 @@
       ],
       "settings": {}
     },
+    "gua_mixed_content_rhKwgm": {
+      "type": "gua-mixed-content",
+      "blocks": {
+        "shield_block_Mwa8M7": {
+          "type": "shield_block",
+          "settings": {
+            "title": "Legendary Support",
+            "body": "<p>Learn how AirSpade saves time and helps you deliver the best results from your work.</p>",
+            "links": "",
+            "contact_icon_1": "",
+            "contact_text_1": "",
+            "contact_icon_2": "",
+            "contact_text_2": "",
+            "contact_icon_3": "",
+            "contact_text_3": "",
+            "faq_title": "",
+            "faq_question_1": "",
+            "faq_answer_1": "",
+            "faq_question_2": "",
+            "faq_answer_2": "",
+            "faq_question_3": "",
+            "faq_answer_3": "",
+            "faq_question_4": "",
+            "faq_answer_4": "",
+            "faq_question_5": "",
+            "faq_answer_5": "",
+            "faq_bottom": ""
+          }
+        }
+      },
+      "block_order": [
+        "shield_block_Mwa8M7"
+      ],
+      "name": "GUA Mixed Content",
+      "settings": {
+        "background_image": "shopify://shop_images/ga-shield.png",
+        "background_size": "auto",
+        "background_position": "center center",
+        "background_overlay": false,
+        "overlay_color": "#000000",
+        "overlay_opacity": 50
+      }
+    },
     "video_with_text_HyfDyC": {
       "type": "video-with-text",
       "blocks": {
@@ -514,48 +557,6 @@
         "author": "",
         "button_label": "ORDER YOUR FREE KIT",
         "button_link": "shopify://pages/order-an-osha-compliance-kit"
-      }
-    },
-    "gua_mixed_content_rhKwgm": {
-      "type": "gua-mixed-content",
-      "blocks": {
-        "shield_block_Mwa8M7": {
-          "type": "shield_block",
-          "settings": {
-            "title": "Legendary Support",
-            "body": "<p>Learn how AirSpade saves time and helps you deliver the best results from your work.</p>",
-            "links": "",
-            "contact_icon_1": "",
-            "contact_text_1": "",
-            "contact_icon_2": "",
-            "contact_text_2": "",
-            "contact_icon_3": "",
-            "contact_text_3": "",
-            "faq_title": "",
-            "faq_question_1": "",
-            "faq_answer_1": "",
-            "faq_question_2": "",
-            "faq_answer_2": "",
-            "faq_question_3": "",
-            "faq_answer_3": "",
-            "faq_question_4": "",
-            "faq_answer_4": "",
-            "faq_question_5": "",
-            "faq_answer_5": "",
-            "faq_bottom": ""
-          }
-        }
-      },
-      "block_order": [
-        "shield_block_Mwa8M7"
-      ],
-      "name": "GUA Mixed Content",
-      "settings": {
-        "background_size": "cover",
-        "background_position": "center center",
-        "background_overlay": false,
-        "overlay_color": "#000000",
-        "overlay_opacity": 50
       }
     }
   },
