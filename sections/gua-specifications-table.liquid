@@ -21,7 +21,7 @@
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
 {% assign sell_sheet_url = product.metafields.custom.literature_sell_sheet_url.value %}
 {% assign show_part_number = false %}
-{% assign show_spec_tab = false %}
+{% assign show_spec = false %}
 {% assign show_air_inlet_FNPT = false %}
 {% assign show_air_hose_id = false %}
 {% assign show_vacuum_flow = false %}
@@ -144,7 +144,7 @@
 
       
     {% assign p_entries = section.settings.products | sort: 'title' %}    
-    {% if show_spec_tab == true %}
+
       <div id="{{ product.selected_or_first_available_variant.sku }}-specifications" class="table-content">
         <div class="table-container">
           <table class="specifications-table">
@@ -344,7 +344,7 @@
           </table>
         </div>
       </div>
-    {% endif %}
+
 </div>
 {% endif %}
 
