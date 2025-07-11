@@ -1,0 +1,179 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "part_number_CKpjqq": {
+          "type": "part_number",
+          "settings": {
+            "part_number_heading": "Part Number"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "klaviyo_reviews_average_rating_KHihtJ": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "ywm_toggle_yqdhWp": {
+          "type": "ywm-toggle",
+          "settings": {
+            "desktop_only": true,
+            "custom_block": "",
+            "blocks": "part_number_CKpjqq, Aa3lTV1ZRQjg5Z0tMM__klaviyo_reviews_average_rating_KHihtJ, features_JCcDdi",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "debug": false
+          }
+        },
+        "features_JCcDdi": {
+          "type": "features",
+          "settings": {
+            "features_heading": "Features"
+          }
+        },
+        "linked_products_picker_Qq9Ayh": {
+          "type": "linked_products_picker",
+          "disabled": true,
+          "source": "{{ product.metafields.custom.linked_products.value }}",
+          "settings": {
+            "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
+            "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "product_image_meta_7VKecY": {
+          "type": "product_image_meta",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "part_number_CKpjqq",
+        "description",
+        "klaviyo_reviews_average_rating_KHihtJ",
+        "ywm_toggle_yqdhWp",
+        "features_JCcDdi",
+        "linked_products_picker_Qq9Ayh",
+        "variant_picker",
+        "price",
+        "quantity_selector",
+        "buy_buttons",
+        "product_image_meta_7VKecY"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "itg_zoom_percent": true,
+        "media_size": "xsmall",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "enable_breadcrumbs": false,
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "gua_specifications_table_ttEDji": {
+      "type": "gua-specifications-table",
+      "name": "GUA Specifications Chart",
+      "settings": {
+        "specifications_heading": "{{ product.metafields.custom.linked_products.value.group_name.value }} Specifications",
+        "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
+        "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
+      }
+    },
+    "gua_product_tabs_6VXzLn": {
+      "type": "gua-product-tabs",
+      "name": "GUA Product Tabs",
+      "settings": {
+        "products": [],
+        "option_name": "Extension Length"
+      }
+    },
+    "1721751086101a9e7e": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_BFqFQQ": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_BFqFQQ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "RECOMMENDED PRODUCTS",
+        "heading_size": "h2",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gua_specifications_table_ttEDji",
+    "gua_product_tabs_6VXzLn",
+    "1721751086101a9e7e",
+    "related-products"
+  ]
+}
