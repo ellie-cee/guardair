@@ -18,7 +18,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
   <tbody>
 
 
-{% paginate collections.all.products by 10000 %}
+{% paginate collections.all.products by 100 %}
     {% assign sorted_products = collections.all.products | sort: 'title' %}
   
 {% for product in sorted_products %}
