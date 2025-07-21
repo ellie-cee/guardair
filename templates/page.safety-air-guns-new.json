@@ -136,17 +136,6 @@
             "alt_ptitle": ""
           }
         },
-        "column_C7thbA": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust.png",
-            "image_link": "",
-            "title": "<a href=\"/products/xtrathrust-75xt-safety-air-gun-6\" title=\"XtraThrust® 75XT Safety Air Gun - 6&quot;\">XtraThrust Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_G4UAWG": {
           "type": "column",
           "settings": {
@@ -272,7 +261,6 @@
       "block_order": [
         "product_J8jtVp",
         "product_R9MdPq",
-        "column_C7thbA",
         "column_G4UAWG",
         "column_cCawkH",
         "column_iF4tK4",
