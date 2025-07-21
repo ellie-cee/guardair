@@ -1,21 +1,30 @@
 {% comment %}
   new-title.liquid
   
-  Usage: {% render 'new-title', title: 'Your Title String Here' %}
+  Usage: {% render 'new-title', title: 'Your Title String Here', remove_after_dash: true %}
+  
+  Parameters:
+  - title: The string to process
+  - remove_after_dash: true/false - whether to remove everything after dash (default: true)
   
   Rules applied:
-  1. Remove everything after dash (-)
+  1. Remove everything after dash (-) - optional based on remove_after_dash parameter
   2. Remove specific words like "The" and "Classic+"
-  3. Remove special characters
+  3. Remove specific special characters (trademark, registered, etc.)
 {% endcomment %}
 
 {%- liquid
   assign processed_title = title
+  
+  # Set default value for remove_after_dash if not provided
+  if remove_after_dash == blank
+    assign remove_after_dash = true
+  endif
 -%}
 
-{% comment %} Step 1: Remove everything after dash (including the dash) {% endcomment %}
+{% comment %} Step 1: Remove everything after dash (including the dash) - conditional {% endcomment %}
 {%- liquid
-  if processed_title contains '-'
+  if remove_after_dash and processed_title contains '-'
     assign dash_position = processed_title | split: '-' | first
     assign processed_title = dash_position
   endif
