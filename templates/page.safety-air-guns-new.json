@@ -136,6 +136,13 @@
             "alt_ptitle": ""
           }
         },
+        "product_chEUM4": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80lj-safety-air-gun-12",
+            "alt_ptitle": ""
+          }
+        },
         "column_G4UAWG": {
           "type": "column",
           "settings": {
@@ -261,6 +268,7 @@
       "block_order": [
         "product_J8jtVp",
         "product_R9MdPq",
+        "product_chEUM4",
         "column_G4UAWG",
         "column_cCawkH",
         "column_iF4tK4",
