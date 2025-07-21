@@ -122,21 +122,17 @@
     "multicolumn_xezMVG": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_7dazHw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-long-john.png",
-            "image_link": "",
-            "title": "<a href=\"/products/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_J8jtVp": {
           "type": "product",
           "settings": {
             "product": "long-john-75lj-nylon-safety-air-gun-12",
+            "alt_ptitle": ""
+          }
+        },
+        "product_R9MdPq": {
+          "type": "product",
+          "settings": {
+            "product": "xtrathrust-safety-air-gun-96",
             "alt_ptitle": ""
           }
         },
@@ -274,8 +270,8 @@
         }
       },
       "block_order": [
-        "column_7dazHw",
         "product_J8jtVp",
+        "product_R9MdPq",
         "column_C7thbA",
         "column_G4UAWG",
         "column_cCawkH",
