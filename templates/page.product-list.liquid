@@ -28,6 +28,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
         <td>{{ product.title }}</td>
         {% comment %} <td>{{ product.handle }}</td>{% endcomment %} 
         <td>{% render 'gua-title',title:product.title %}</td>
+        <td>{% render 'gua-new-title',title:product.title %}</td>        
        {% comment %} <td>
           {% if product.tags.size > 0 %}
             {% for tag in product.tags %}
