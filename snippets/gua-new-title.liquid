@@ -22,7 +22,88 @@
   endif
 -%}
 
-{% comment %} Step 1: Remove everything after dash (including the dash) - conditional {% endcomment %}
+{% comment %}
+  new-title.liquid
+  
+  Usage: {% render 'new-title', title: 'Your Title String Here', remove_after_dash: true, change_model: 'remove' %}
+  
+  Parameters:
+  - title: The string to process
+  - remove_after_dash: true/false - whether to remove everything after dash (default: true)
+  - change_model: 'remove'/'move'/blank - what to do with model numbers (default: no change)
+  
+  Rules applied:
+  1. Remove everything after dash (-) - optional based on remove_after_dash parameter
+  2. Remove specific words like "The" and "Classic+"
+  3. Remove specific special characters (trademark, registered, etc.)
+  4. Handle model numbers - optional based on change_model parameter
+{% endcomment %}
+
+{%- liquid
+  assign processed_title = title
+  
+  # Set default value for remove_after_dash if not provided
+  if remove_after_dash == blank
+    assign remove_after_dash = true
+  endif
+  
+  # Initialize model number variables
+  assign found_model = ''
+  assign model_removed_title = ''
+-%}
+
+{% comment %} Step 1: Handle model numbers if change_model is specified {% endcomment %}
+{%- liquid
+  if change_model == 'remove' or change_model == 'move'
+    # Split title into words to find model number
+    assign words = processed_title | split: ' '
+    assign model_pattern_found = false
+    
+    for word in words
+      # Check if word matches model number pattern (digits + 1-2 letters)
+      assign word_size = word | size
+      assign has_digits = false
+      assign has_letters = false
+      assign letter_count = 0
+      assign digit_count = 0
+      
+      # Simple pattern check - look for words with both numbers and letters
+      if word contains '0' or word contains '1' or word contains '2' or word contains '3' or word contains '4' or word contains '5' or word contains '6' or word contains '7' or word contains '8' or word contains '9'
+        assign has_digits = true
+        # Count approximate digits by checking for common digit patterns
+        assign temp_word = word
+        assign temp_word = temp_word | replace: '0', ''
+        assign temp_word = temp_word | replace: '1', ''
+        assign temp_word = temp_word | replace: '2', ''
+        assign temp_word = temp_word | replace: '3', ''
+        assign temp_word = temp_word | replace: '4', ''
+        assign temp_word = temp_word | replace: '5', ''
+        assign temp_word = temp_word | replace: '6', ''
+        assign temp_word = temp_word | replace: '7', ''
+        assign temp_word = temp_word | replace: '8', ''
+        assign temp_word = temp_word | replace: '9', ''
+        assign remaining_size = temp_word | size
+        assign digit_count = word_size | minus: remaining_size
+      endif
+      
+      # Check if remaining characters are letters (and not too many)
+      if has_digits and remaining_size > 0 and remaining_size <= 2 and digit_count >= 1
+        # This looks like a model number pattern
+        assign found_model = word
+        assign model_pattern_found = true
+        break
+      endif
+    endfor
+    
+    # Remove the model number from the title
+    if model_pattern_found
+      assign model_removed_title = processed_title | replace: found_model, ''
+      assign processed_title = model_removed_title
+    endif
+  endif
+-%}
+
+{% comment %} Step 2: Remove everything after dash (including the dash) - conditional {% endcomment %}
 {%- liquid
   if remove_after_dash and processed_title contains '-'
     assign dash_position = processed_title | split: '-' | first
@@ -30,7 +111,7 @@
   endif
 -%}
 
-{% comment %} Step 2: Remove specific words {% endcomment %}
+{% comment %} Step 3: Remove specific words {% endcomment %}
 {%- liquid
   assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+'
   assign words_array = words_to_remove | split: ','
@@ -40,7 +121,7 @@
   endfor
 -%}
 
-{% comment %} Step 3: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
+{% comment %} Step 4: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
 {%- liquid
   assign special_chars = '®,™,©,℠'
   assign special_chars_array = special_chars | split: ','
@@ -52,13 +133,21 @@
   endfor
 -%}
 
-{% comment %} Clean up multiple spaces and trim {% endcomment %}
+{% comment %} Step 5: Clean up multiple spaces and trim {% endcomment %}
 {%- liquid
   assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
 -%}
 
-{% comment %} Assign result to output variable {% endcomment %}
+{% comment %} Step 6: Handle model number positioning {% endcomment %}
 {%- liquid
+  if change_model == 'move' and found_model != ''
+    assign clean_title = found_model | append: ' ' | append: clean_title
+  endif
+-%}
+
+{% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
+{%- liquid
+  assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
   assign new_title = clean_title
 -%}
 {{ new_title }}
