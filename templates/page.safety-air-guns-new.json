@@ -22,6 +22,7 @@
         "column_3YaeJN": {
           "type": "column",
           "settings": {
+            "image_link": "",
             "title": "",
             "text": "<ul><li><a href=\"#classic-plus\" title=\"Classic+ Safety Air Guns\"><strong>Classic+ Safety Air Guns</strong></a></li><li><a href=\"#palmjet\" title=\"PalmJet Safety Air Guns\"><strong>PalmJet Safety Air Guns</strong></a></li><li><a href=\"#ultra\" title=\"Ultra Safety Air Guns\"><strong>Ultra Safety Air Guns</strong></a></li></ul>",
             "link_label": "",
@@ -31,6 +32,7 @@
         "column_3cEFfD": {
           "type": "column",
           "settings": {
+            "image_link": "",
             "title": "",
             "text": "<ul><li><a href=\"#whisperjet\" title=\"WhisperJet Safety Air Guns\"><strong>WhisperJet Safety Air Guns</strong></a></li><li><a href=\"#thumbswitch\" title=\"ThumbSwitch Safety Air Guns\"><strong>ThumbSwitch Safety Air Guns</strong></a></li><li><a href=\"#lazer\" title=\"Lazer Safety Air Guns\"><strong>Lazer Safety Air Guns</strong></a></li></ul>",
             "link_label": "",
@@ -40,6 +42,7 @@
         "column_yq9ypt": {
           "type": "column",
           "settings": {
+            "image_link": "",
             "title": "",
             "text": "<ul><li><a href=\"#big-guns\" title=\"Big Air Guns\"><strong>Big Air Guns</strong></a></li><li><a href=\"#specialty-guns\" title=\"Specialty Air Guns\"><strong>Specialty Air Guns</strong></a></li></ul>",
             "link_label": "",
@@ -47,7 +50,11 @@
           }
         }
       },
-      "block_order": ["column_3YaeJN", "column_3cEFfD", "column_yq9ypt"],
+      "block_order": [
+        "column_3YaeJN",
+        "column_3cEFfD",
+        "column_yq9ypt"
+      ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
         "h2 {font-size: 24px;}",
@@ -57,18 +64,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 12,
-        "padding_bottom": 16
+        "padding_bottom": 16,
+        "anchor_id": ""
       }
     },
     "rich_text_Kc4nMk": {
@@ -88,15 +101,22 @@
           }
         }
       },
-      "block_order": ["heading_XwdxkB", "text_hWmUyd"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_XwdxkB",
+        "text_hWmUyd"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_xezMVG": {
@@ -106,16 +126,25 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-long-john.png",
+            "image_link": "",
             "title": "<a href=\"/products/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John Safety Air Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
           }
         },
+        "product_J8jtVp": {
+          "type": "product",
+          "settings": {
+            "product": "long-john-75lj-nylon-safety-air-gun-12",
+            "alt_ptitle": ""
+          }
+        },
         "column_C7thbA": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust.png",
+            "image_link": "",
             "title": "<a href=\"/products/xtrathrust-75xt-safety-air-gun-6\" title=\"XtraThrust® 75XT Safety Air Gun - 6&quot;\">XtraThrust Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -126,6 +155,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-80lj_6b18b128-1b0e-4844-8c71-10267626f064.png",
+            "image_link": "",
             "title": "<a href=\"/products/whisperjet-80lj-safety-air-gun-6\" title=\"WhisperJet® 80LJ Safety Air Gun - 6&quot;\">WhisperJet Safety Air Gun 80LJ</a>",
             "text": "",
             "link_label": "",
@@ -136,6 +166,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
+            "image_link": "",
             "title": "<a href=\"/products/flex-80-safety-air-gun-w-whisperjet-nozzle-12\" title=\"Flex 80 Safety Air Gun w/ WhisperJet® Nozzle - 12&quot;\">Flex Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -146,6 +177,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-original.png",
+            "image_link": "",
             "title": "<a href=\"/products/original-safety-air-gun-57s30xb\" title=\"Original Safety Air Gun 57S30XB\">Original Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -156,6 +188,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-jetguard-74s.png",
+            "image_link": "",
             "title": "<a href=\"/products/jetguard-74s-safety-air-gun\" title=\"JetGuard 74S Safety Air Gun\">JetGuard Safety Air Gun 74S</a>",
             "text": "",
             "link_label": "",
@@ -166,6 +199,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-rubber-tip.png",
+            "image_link": "",
             "title": "<a href=\"/products/rubber-tip-safety-air-gun\" title=\"Rubber Tip Safety Air Gun\">Rubber Tip Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -176,6 +210,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust-75xxt.png",
+            "image_link": "",
             "title": "<a href=\"/products/xtra-thrust-safety-air-gun-75xxt\" title=\"XtraThrust Safety Air Gun 75XXT\">XtraThrust Safety Air Gun 75XXT</a>",
             "text": "",
             "link_label": "",
@@ -186,6 +221,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-airmiser-74h.png",
+            "image_link": "",
             "title": "<a href=\"/products/air-miser-safety-air-gun-74h\" title=\"AirMiser Safety Air Gun 74H\">AirMiser Safety Air Gun 74H</a>",
             "text": "",
             "link_label": "",
@@ -196,6 +232,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
+            "image_link": "",
             "title": "<a href=\"/products/whisperjet-80wj-safety-air-gun\" title=\"WhisperJet® 80WJ Safety Air Gun\">WhisperJet Safety Air Gun 80WJ</a>",
             "text": "",
             "link_label": "",
@@ -206,6 +243,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-quietforce.png",
+            "image_link": "",
             "title": "<a href=\"/products/classic-quietforce-74g-safety-air-gun-adjustable-air-nozzle-79-dba\" title=\"Classic+ QuietForce® 74G Safety Air Gun - Adjustable Air Nozzle (79 dBA)\">QuietForce Safety Air Gun 74G</a>",
             "text": "",
             "link_label": "",
@@ -216,6 +254,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-booster.png",
+            "image_link": "",
             "title": "<a href=\"/products/booster-76s-safety-air-gun-6\" title=\"Booster 76S Safety Air Gun - 6&quot;\">Booster Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -226,6 +265,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-blind-hole.png",
+            "image_link": "",
             "title": "<a href=\"/products/blind-hole-74bh-safety-air-gun-12-angled-tip\" title=\"Blind Hole® 74BH Safety Air Gun - 12&quot; Angled Tip\">Blind Hole Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -235,6 +275,7 @@
       },
       "block_order": [
         "column_7dazHw",
+        "product_J8jtVp",
         "column_C7thbA",
         "column_G4UAWG",
         "column_cCawkH",
@@ -257,18 +298,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "anchor_id": ""
       }
     },
     "rich_text_i7yrjL": {
@@ -281,14 +328,18 @@
           }
         }
       },
-      "block_order": ["text_Ymgpnq"],
+      "block_order": [
+        "text_Ymgpnq"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 0,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "rich_text_EdVHeU": {
@@ -308,15 +359,22 @@
           }
         }
       },
-      "block_order": ["heading_6G4zBp", "text_q9ekF6"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_6G4zBp",
+        "text_q9ekF6"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_nUa7bn": {
@@ -326,6 +384,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-palmjet.png",
+            "image_link": "",
             "title": "<a href=\"/products/palmjet-ga44-safety-air-gun-4-straight\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Straight\">PalmJet Safety Air Gun w/ Straight Extension</a>",
             "text": "",
             "link_label": "",
@@ -336,6 +395,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-palmjet-bent.png",
+            "image_link": "",
             "title": "<a href=\"/products/palmjet-ga44-safety-air-gun-4-bent\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Bent\">PalmJet Safety Air Gun w/ Bent Extension</a>",
             "text": "",
             "link_label": "",
@@ -343,7 +403,10 @@
           }
         }
       },
-      "block_order": ["column_niwJUR", "column_b7hPdC"],
+      "block_order": [
+        "column_niwJUR",
+        "column_b7hPdC"
+      ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
         "h2 {font-size: 28px;}",
@@ -353,18 +416,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "anchor_id": ""
       }
     },
     "rich_text_4LhbKH": {
@@ -377,14 +446,18 @@
           }
         }
       },
-      "block_order": ["text_RQLMeF"],
+      "block_order": [
+        "text_RQLMeF"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 0,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "rich_text_YXK7Fj": {
@@ -404,15 +477,22 @@
           }
         }
       },
-      "block_order": ["heading_iYFnzH", "text_3baGAW"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_iYFnzH",
+        "text_3baGAW"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_y3RJDU": {
@@ -422,6 +502,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-xtrathrust.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-xtra-thrust-safety-air-gun\" title=\"Ultra Xtra Thrust Safety Air Gun\">Ultra XtraThrust Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -432,6 +513,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet-extended_66820161-22e2-4146-af76-1035dcdcfffa.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-whisperjet-u80lj-safety-air-gun-6-w-long-trigger\" title=\"Ultra® WhisperJet® U80LJ Safety Air Gun - 6&quot; w/ Long Trigger\">Ultra WhisperJet Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -442,6 +524,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-venturi.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-u75lj-safety-air-gun-6-w-long-trigger\" title=\"Ultra® U75LJ Safety Air Gun - 6&quot; w/ Long Trigger\">Ultra Long John Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -452,6 +535,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-quietforce_extended.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-quietforce-u74ht37-safety-air-gun-6\" title=\"Ultra® QuietForce® U74HT37 Safety Air Gun - 6&quot;\">Ultra QuietForce Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -462,6 +546,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet_f0441c86-335c-4dd1-9372-d8172bd1048b.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet\" title=\"Ultra® WhisperJet® U80WJ Safety Air Gun - 3/8&quot; FNPT Inlet\">Ultra WhisperJet Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -472,6 +557,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-quietforce.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-quietforce-u74-safety-air-gun-adjustable-air-nozzle-79-dba\" title=\"Ultra® QuietForce® U74 Safety Air Gun - Adjustable Air Nozzle (79 dBA)\">Ultra QuietForce Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -496,18 +582,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "anchor_id": ""
       }
     },
     "rich_text_dkgGi7": {
@@ -520,14 +612,18 @@
           }
         }
       },
-      "block_order": ["text_d7aGNm"],
+      "block_order": [
+        "text_d7aGNm"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 0,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "rich_text_4NpCpc": {
@@ -547,15 +643,22 @@
           }
         }
       },
-      "block_order": ["heading_mBxCM6", "text_EY3znn"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_mBxCM6",
+        "text_EY3znn"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_UqBAWA": {
@@ -565,6 +668,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-80lj_6b18b128-1b0e-4844-8c71-10267626f064.png",
+            "image_link": "",
             "title": "<a href=\"/products/whisperjet-80lj-safety-air-gun-6\" title=\"WhisperJet® 80LJ Safety Air Gun - 6&quot;\">WhisperJet Safety Air Gun 80LJ</a>",
             "text": "",
             "link_label": "",
@@ -575,6 +679,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
+            "image_link": "",
             "title": "<a href=\"/products/whisperjet-80wj-safety-air-gun\" title=\"WhisperJet® 80WJ Safety Air Gun\">WhisperJet Safety Air Gun 80WJ</a>",
             "text": "",
             "link_label": "",
@@ -585,6 +690,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-volume-control.png",
+            "image_link": "",
             "title": "<a href=\"/products/whisperjet-80-safety-air-gun-with-volume-control\" title=\"WhisperJet® 80 Safety Air Gun w/ Volume Control\">WhisperJet Safety Air Gun 80</a>",
             "text": "",
             "link_label": "",
@@ -595,6 +701,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
+            "image_link": "",
             "title": "<a href=\"/products/flex-80-safety-air-gun-w-whisperjet-nozzle-12\" title=\"Flex 80 Safety Air Gun w/ WhisperJet® Nozzle - 12&quot;\">Flex Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -605,6 +712,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet-extended_66820161-22e2-4146-af76-1035dcdcfffa.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-whisperjet-u80lj-safety-air-gun-12-w-short-trigger\" title=\"Ultra® WhisperJet® U80LJ Safety Air Gun - 12&quot; w/ Short Trigger\">Ultra WhisperJet Safety Air Gun U80LJ</a>",
             "text": "",
             "link_label": "",
@@ -615,6 +723,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet_f0441c86-335c-4dd1-9372-d8172bd1048b.png",
+            "image_link": "",
             "title": "<a href=\"/products/ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet\" title=\"Ultra® WhisperJet® U80WJ Safety Air Gun - 3/8&quot; FNPT Inlet\">Ultra WhisperJet Safety Air Gun U80WJ</a>",
             "text": "",
             "link_label": "",
@@ -625,6 +734,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-thumbswitch_7936cfcb-15bb-4011-bd5d-61dad117b113.png",
+            "image_link": "",
             "title": "<a href=\"/products/whisperjet-thumbswitch-980-safety-air-gun\" title=\"WhisperJet® ThumbSwitch 980 Safety Air Gun\">WhisperJet ThumbSwitch Safety Air Gun 980</a>",
             "text": "",
             "link_label": "",
@@ -650,18 +760,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "anchor_id": ""
       }
     },
     "rich_text_e6KfPT": {
@@ -674,14 +790,18 @@
           }
         }
       },
-      "block_order": ["text_dVCMQf"],
+      "block_order": [
+        "text_dVCMQf"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 0,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "rich_text_yeLVqe": {
@@ -701,15 +821,22 @@
           }
         }
       },
-      "block_order": ["heading_MUQFGE", "text_A4gEDB"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_MUQFGE",
+        "text_A4gEDB"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_7Ge9GP": {
@@ -719,6 +846,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-thumbswitch-900.png",
+            "image_link": "",
             "title": "<a href=\"/products/thumbswitch-safety-air-gun-900\" title=\"ThumbSwitch Safety Air Gun 900\">ThumbSwitch Safety Air Gun 900</a>",
             "text": "",
             "link_label": "",
@@ -729,6 +857,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-thumbswitch-900s.png",
+            "image_link": "",
             "title": "<a href=\"/products/thumbswitch-safety-air-gun-900s\" title=\"ThumbSwitch Safety Air Gun 900S\">ThumbSwitch Safety Air Gun 900S</a>",
             "text": "",
             "link_label": "",
@@ -739,6 +868,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-thumbswitch.png",
+            "image_link": "",
             "title": "<a href=\"/products/thumbswitch-900lj-safety-air-gun-6\" title=\"ThumbSwitch 900LJ Safety Air Gun - 6&quot;\">ThumbSwitch Safety Air Gun 900LJ</a>",
             "text": "",
             "link_label": "",
@@ -749,6 +879,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-thumbswitch_7936cfcb-15bb-4011-bd5d-61dad117b113.png",
+            "image_link": "",
             "title": "<a href=\"/products/whisper-jet-thumbswitch-safety-air-gun-980\" title=\"WhisperJet ThumbSwitch Safety Air Gun 980\">WhisperJet ThumbSwitch Safety Air Gun 980</a>",
             "text": "",
             "link_label": "",
@@ -759,6 +890,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-compact-thumbswitch.png",
+            "image_link": "",
             "title": "<a href=\"/products/compact-thumbswitch-safety-air-gun-970\" title=\"Compact ThumbSwitch Safety Air Gun 970\">Compact ThumbSwitch Safety Air Gun 970</a>",
             "text": "",
             "link_label": "",
@@ -769,6 +901,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust-thumbswitch.png",
+            "image_link": "",
             "title": "<a href=\"/products/xtra-thrust-thumbswitch-safety-air-gun\" title=\"XtraThrust ThumbSwitch Safety Air Gun\">XtraThrust ThumbSwitch Safety Air Gun 970XT</a>",
             "text": "",
             "link_label": "",
@@ -793,18 +926,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "anchor_id": ""
       }
     },
     "rich_text_hbwgwC": {
@@ -817,14 +956,18 @@
           }
         }
       },
-      "block_order": ["text_gqBR3J"],
+      "block_order": [
+        "text_gqBR3J"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 0,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "rich_text_LMKtza": {
@@ -844,15 +987,22 @@
           }
         }
       },
-      "block_order": ["heading_kEmKEn", "text_ztYDWQ"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_kEmKEn",
+        "text_ztYDWQ"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_Cz9xRa": {
@@ -862,6 +1012,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-lazer-pistol-grip.png",
+            "image_link": "",
             "title": "<a href=\"/products/lazer-pistol-grip-650-safety-air-gun-6\" title=\"Lazer® Pistol Grip 650 Safety Air Gun - 6&quot;\">Lazer Pistol Grip Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -872,6 +1023,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-lazer-palmswitch.png",
+            "image_link": "",
             "title": "<a href=\"/products/lazer-palmswitch-600-safety-air-gun-6\" title=\"Lazer PalmSwitch® 600 Safety Air Gun - 6&quot;\">Lazer Palm Switch Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -879,7 +1031,10 @@
           }
         }
       },
-      "block_order": ["column_ibaRDn", "column_wpQ3Jc"],
+      "block_order": [
+        "column_ibaRDn",
+        "column_wpQ3Jc"
+      ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
         "h2 {font-size: 28px;}",
@@ -889,18 +1044,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "anchor_id": ""
       }
     },
     "rich_text_67Er7i": {
@@ -913,14 +1074,18 @@
           }
         }
       },
-      "block_order": ["text_cd4iKN"],
+      "block_order": [
+        "text_cd4iKN"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 0,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "rich_text_TzcPFa": {
@@ -940,15 +1105,22 @@
           }
         }
       },
-      "block_order": ["heading_cTGFmz", "text_VEYLXp"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_cTGFmz",
+        "text_VEYLXp"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_dtEXT8": {
@@ -958,6 +1130,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-force-5.png",
+            "image_link": "",
             "title": "<a href=\"/products/force-5-f5-safety-air-gun-24\" title=\"Force 5® F5 Safety Air Gun - 24&quot;\">Force 5 Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -968,6 +1141,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-force-5-quietforce.png",
+            "image_link": "",
             "title": "<a href=\"/products/force-5-quietforce-f5-safety-air-gun-24\" title=\"Force 5® QuietForce® F5 Safety Air Gun - 24&quot;\">Force 5 QuietForce Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -978,6 +1152,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-inforcer.png",
+            "image_link": "",
             "title": "<a href=\"/products/inforcer-inf5-safety-air-gun-24\" title=\"Inforcer® INF5 Safety Air Gun - 24&quot;\">Inforcer Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -988,6 +1163,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-inforcer-quietforce.png",
+            "image_link": "",
             "title": "<a href=\"/products/inforcer-quietforce-inf5-safety-air-gun-24\" title=\"Inforcer® QuietForce® INF5 Safety Air Gun - 24&quot;\">Inforcer QuietForce Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -998,6 +1174,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-inforcer-steel-chisel.png",
+            "image_link": "",
             "title": "<a href=\"/products/inforcer-inf5-steel-safety-air-gun-w-chisel-point-nozzle-24\" title=\"Inforcer® INF5 Steel Safety Air Gun w/ Chisel Point Nozzle - 24&quot;\">Inforcer Steel Safety Air Gun w/ Chisel Point Nozzle</a>",
             "text": "",
             "link_label": "",
@@ -1008,6 +1185,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-inforcer-steel-scraper.png",
+            "image_link": "",
             "title": "<a href=\"/products/inforcer-inf5-steel-safety-air-gun-w-scraper-nozzle-60\" title=\"Inforcer® INF5 Steel Safety Air Gun w/ Scraper Nozzle - 60&quot;\">Inforcer Steel Safety Air Gun w/ Scraper Nozzle</a>",
             "text": "",
             "link_label": "",
@@ -1018,6 +1196,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-hydroforce.png",
+            "image_link": "",
             "title": "<a href=\"/products/hydroforce-hyd-power-wash-gun-24\" title=\"HydroForce® HYD Power Wash Gun - 24&quot;\">HydroForce Power Wash Gun</a>",
             "text": "",
             "link_label": "",
@@ -1043,18 +1222,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "anchor_id": ""
       }
     },
     "rich_text_KEJqiG": {
@@ -1067,14 +1252,18 @@
           }
         }
       },
-      "block_order": ["text_ta7DNB"],
+      "block_order": [
+        "text_ta7DNB"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 0,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "rich_text_yFmRQU": {
@@ -1094,15 +1283,22 @@
           }
         }
       },
-      "block_order": ["heading_dEhKGU", "text_Nr4HQY"],
-      "custom_css": ["h2 {font-size: 28px;}"],
+      "block_order": [
+        "heading_dEhKGU",
+        "text_Nr4HQY"
+      ],
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
+        "bdr_btm": false,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "anchor_id": ""
       }
     },
     "multicolumn_QhMXfn": {
@@ -1112,6 +1308,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-reverseforce.png",
+            "image_link": "",
             "title": "<a href=\"/products/reverseforce-75rf-air-gun-48\" title=\"ReverseForce 75RF Air Gun - 48&quot;\">ReverseForce Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -1122,6 +1319,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-radiator.png",
+            "image_link": "",
             "title": "<a href=\"/products/radiator-inrg-air-gun-60\" title=\"Radiator INRG Air Gun - 60&quot;\">Radiator Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -1132,6 +1330,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-filter.png",
+            "image_link": "",
             "title": "<a href=\"/products/filter-900f-cleaning-safety-air-gun-12\" title=\"Filter 900F Cleaning Safety Air Gun - 12&quot;\">Filter Cleaning Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -1142,6 +1341,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-blind-hole.png",
+            "image_link": "",
             "title": "<a href=\"/products/blind-hole-74bh-safety-air-gun-12-angled-tip\" title=\"Blind Hole® 74BH Safety Air Gun - 12&quot; Angled Tip\">Blind Hole Safety Air Gun</a>",
             "text": "",
             "link_label": "",
@@ -1164,18 +1364,24 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "anchor_id": ""
       }
     }
   },
