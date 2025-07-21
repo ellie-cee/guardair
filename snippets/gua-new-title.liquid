@@ -31,10 +31,9 @@
   endfor
 -%}
 
-{% comment %} Step 3: Remove special characters using regex-like replacements {% endcomment %}
-{% comment %} Remove common special characters {% endcomment %}
+{% comment %} Step 3: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
 {%- liquid
-  assign special_chars = '!,@,#,$,%,^,&,*,(,),+,=,{,},[,],|,\,",;,:,<,>,?,/,~,`,.'
+  assign special_chars = '®,™,©,℠'
   assign special_chars_array = special_chars | split: ','
   
   assign clean_title = processed_title
