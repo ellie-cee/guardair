@@ -114,6 +114,14 @@
   endif
 -%}
 
+{% comment %} Step 2b: Remove everything after with - conditional {% endcomment %}
+{%- liquid
+  if remove_after_dash and processed_title contains 'w/'
+    assign dash_position = processed_title | split: 'w/' | first
+    assign processed_title = dash_position
+  endif
+-%}
+
 {% comment %} Step 3: Remove specific words {% endcomment %}
 {%- liquid
   assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+'
