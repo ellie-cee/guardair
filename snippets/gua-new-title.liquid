@@ -60,39 +60,42 @@
     assign model_pattern_found = false
     
     for word in words
-      # Check if word matches model number pattern (digits + 1-2 letters)
-      assign word_size = word | size
-      assign has_digits = false
-      assign has_letters = false
-      assign letter_count = 0
-      assign digit_count = 0
-      
-      # Simple pattern check - look for words with both numbers and letters
-      if word contains '0' or word contains '1' or word contains '2' or word contains '3' or word contains '4' or word contains '5' or word contains '6' or word contains '7' or word contains '8' or word contains '9'
-        assign has_digits = true
-        # Count approximate digits by checking for common digit patterns
-        assign temp_word = word
-        assign temp_word = temp_word | replace: '0', ''
-        assign temp_word = temp_word | replace: '1', ''
-        assign temp_word = temp_word | replace: '2', ''
-        assign temp_word = temp_word | replace: '3', ''
-        assign temp_word = temp_word | replace: '4', ''
-        assign temp_word = temp_word | replace: '5', ''
-        assign temp_word = temp_word | replace: '6', ''
-        assign temp_word = temp_word | replace: '7', ''
-        assign temp_word = temp_word | replace: '8', ''
-        assign temp_word = temp_word | replace: '9', ''
-        assign remaining_size = temp_word | size
-        assign digit_count = word_size | minus: remaining_size
-      endif
-      
-      # Check if remaining characters are letters (and not too many)
-      if has_digits and remaining_size > 0 and remaining_size <= 2 and digit_count >= 1
-        # This looks like a model number pattern
-        assign found_model = word
-        assign model_pattern_found = true
-        break
-      endif
+      # Skip if word contains quote mark (it's a size measurement)
+      unless word contains '"' or word contains "'"
+        # Check if word matches model number pattern (digits + 1-2 letters)
+        assign word_size = word | size
+        assign has_digits = false
+        assign has_letters = false
+        assign letter_count = 0
+        assign digit_count = 0
+        
+        # Simple pattern check - look for words with both numbers and letters
+        if word contains '0' or word contains '1' or word contains '2' or word contains '3' or word contains '4' or word contains '5' or word contains '6' or word contains '7' or word contains '8' or word contains '9'
+          assign has_digits = true
+          # Count approximate digits by checking for common digit patterns
+          assign temp_word = word
+          assign temp_word = temp_word | replace: '0', ''
+          assign temp_word = temp_word | replace: '1', ''
+          assign temp_word = temp_word | replace: '2', ''
+          assign temp_word = temp_word | replace: '3', ''
+          assign temp_word = temp_word | replace: '4', ''
+          assign temp_word = temp_word | replace: '5', ''
+          assign temp_word = temp_word | replace: '6', ''
+          assign temp_word = temp_word | replace: '7', ''
+          assign temp_word = temp_word | replace: '8', ''
+          assign temp_word = temp_word | replace: '9', ''
+          assign remaining_size = temp_word | size
+          assign digit_count = word_size | minus: remaining_size
+        endif
+        
+        # Check if remaining characters are letters (and not too many)
+        if has_digits and remaining_size > 0 and remaining_size <= 2 and digit_count >= 1
+          # This looks like a model number pattern
+          assign found_model = word
+          assign model_pattern_found = true
+          break
+        endif
+      endunless
     endfor
     
     # Remove the model number from the title
