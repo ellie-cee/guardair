@@ -11,8 +11,9 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
     <tr>
       <th>Num</th>
       <th>Original Title</th> 
-      <th>Clean Title</th>
-      <th>New Title</th>      
+      <th>Remove After Dash</th>
+      <th>New Title</th>   
+      <th>New Title</th>         
     </tr>
   </thead>
   <tbody>
@@ -27,7 +28,8 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
           <td>{{ forloop.index }}</td>
           <td>{{ product.title }}</td>
           <td>{% render 'gua-new-title',title:product.title, remove_after_dash: true %}</td>
-          <td>{% render 'gua-new-title',title:product.title, remove_after_dash: false %}</td>
+          <td>{% render 'gua-new-title',title:product.title, remove_after_dash: false, change_model: 'remove' %} %}</td>
+          <td>{% render 'gua-new-title',title:product.title, remove_after_dash: false, change_model: 'move' %} %}</td>        
       </tr>
   {% endfor %}
 
