@@ -1,0 +1,47 @@
+{%- comment -%}
+  new-title.liquid
+  
+  Usage: {% render 'new-title', title: 'Your Title String Here' %}
+  
+  Rules applied:
+  1. Remove everything after dash (-)
+  2. Remove specific words like "The" and "Classic+"
+  3. Remove special characters
+{%- endcomment -%}
+
+{%- liquid
+  assign processed_title = title
+  
+  # Step 1: Remove everything after dash (including the dash)
+  if processed_title contains '-'
+    assign dash_position = processed_title | split: '-' | first
+    assign processed_title = dash_position
+  endif
+  
+  # Step 2: Remove specific words
+  assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+'
+  assign words_array = words_to_remove | split: ','
+  
+  for word in words_array
+    assign processed_title = processed_title | replace: word, ''
+  endfor
+  
+  # Step 3: Remove special characters (keeping only letters, numbers, and spaces)
+  assign clean_title = ''
+  assign title_size = processed_title | size
+  
+  for i in (0..title_size)
+    assign char = processed_title | slice: i, 1
+    assign ascii = char | ascii_to_int
+    
+    # Keep letters (A-Z: 65-90, a-z: 97-122), numbers (0-9: 48-57), and spaces (32)
+    if ascii >= 65 and ascii <= 90 or ascii >= 97 and ascii <= 122 or ascii >= 48 and ascii <= 57 or ascii == 32
+      assign clean_title = clean_title | append: char
+    endif
+  endfor
+  
+  # Clean up multiple spaces and trim
+  assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
+  
+  echo clean_title
+-%}
