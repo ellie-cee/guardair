@@ -43,5 +43,6 @@
   # Clean up multiple spaces and trim
   assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
   
-  echo clean_title
--%}
+  # Assign result to output variable
+  assign new_title = clean_title
+-%}{{ new_title }}
