@@ -239,7 +239,17 @@ slider-component.featured-collection-wrap .collection-image img {width: 100%;hei
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if product.title != blank -%}
-                  <h3 class="{{ section.settings.font_style }}"><a href="{{ product.url }}">{% render 'gua-title',title:product.title,split:section.settings.ptitle_fix %}</a></h3>
+                  <h3 class="{{ section.settings.font_style }}">
+                    <a href="{{ product.url }}">
+                      {% comment %}{% render 'gua-title',title:product.title,split:section.settings.ptitle_fix %}{% endcomment %}
+                        {% case section.settings.ptitle_fix %}
+                            {% when 'none' %}{{ product.title }}
+                            {% when 'slice' %}{% render 'gua-new-title',title:product.title %}                                 
+                            {% when 'move_model' %}{% render 'gua-new-title',title:product.title,change_model:'move' %}                          
+                            {% when 'remove_model' %}{% render 'gua-new-title',title:product.title,change_model:'remove' %}
+                        {% endcase %}
+                    </a>
+                  </h3>
                 {%- endif -%}
                 {%- if product.description != blank and section.settings.pdesc -%}
                   <div class="rte">{{ product.description }}</div>
@@ -417,11 +427,29 @@ slider-component.featured-collection-wrap .collection-image img {width: 100%;hei
       "content": "Product Blocks"
     },
     {
-      "type": "checkbox",
+      "type": "select",
       "id": "ptitle_fix",
-      "label": "Clean Product Title",
-      "default":false
-    },      
+      "label": "Clean Product Title Filter",
+       "options": [
+        {
+          "value": "none",
+          "label": "Leave title intact"
+        },
+        {
+          "value": "slice",
+          "label": "Split on Dash"
+        },
+        {
+          "value": "move_model",
+          "label": "Move Model to Beginning"
+        },
+        {
+          "value": "remove_model",
+          "label": "Remove Model"
+        }         
+      ],
+      "default": "none"
+    },     
     {
       "type": "checkbox",
       "id": "pdesc",
