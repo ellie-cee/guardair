@@ -20,8 +20,9 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
 
 {% paginate collections.all.products by 100 %}
     {% assign sorted_products = collections.all.products | sort: 'title' %}
-  
-{% for product in sorted_products %}
+    {% assign parts_products = collections.all.products | sort: 'title' | map: "type", "Parts & Accessories" %}
+    
+{% for product in parts_products %}
       <tr>
           <td>{{ forloop.index }}</td>
           <td>{{ product.title }}</td>
