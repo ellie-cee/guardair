@@ -147,6 +147,7 @@
           "type": "product",
           "settings": {
             "product": "flex-80-flextension-w-whisperjet-nozzle-12",
+            "alt_pimage": "{{ block.settings.product.metafields.custom.block_product_image.value }}",
             "alt_ptitle": ""
           }
         },
