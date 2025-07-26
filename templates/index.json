@@ -29,11 +29,11 @@
         "buttons_HmMVbL": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP BESTSELLERS",
-            "button_link_1": "shopify://pages/bestsellers",
+            "button_label_1": "Shop Safety Air Guns",
+            "button_link_1": "shopify://pages/safety-air-guns",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Shop Pneumatic Vacuums",
+            "button_link_2": "shopify://pages/pneumatic-vacuums",
             "button_style_secondary_2": false
           }
         }
