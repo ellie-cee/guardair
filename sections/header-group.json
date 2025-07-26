@@ -76,6 +76,7 @@
       "blocks": {
         "logo_ezQrLt": {
           "type": "logo",
+          "disabled": true,
           "settings": {
             "row": 1,
             "flex_grow": 0,
@@ -92,8 +93,8 @@
             "row": 1,
             "flex_grow": 0,
             "flex_shrink": 1,
-            "flex_basis": "350px",
-            "show_on_desktop": false,
+            "flex_basis": "300px",
+            "show_on_desktop": true,
             "show_on_mobile": true,
             "logo": "shopify://shop_images/GA_logo_4C-white-outline.png"
           }
