@@ -60,14 +60,10 @@
         "announcement_i6QAT9",
         "announcement_PPEcQx"
       ],
-      "custom_css": [
-        ".announcement-bar p.announcement-bar__message {font-size: 14px; font-weight: 400; letter-spacing: 0.05em;}",
-        "@media screen and (max-width: 699px) {.announcement-bar p.announcement-bar__message {font-size: 14px; padding-bottom: 8px; }}",
-        ".announcement-bar__message.h5 {min-height: unset;}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "show_social": false,
         "auto_rotate": true,
         "change_slides_speed": 3,
@@ -261,7 +257,7 @@
         "sticky_header_type": "reduce-logo-size",
         "padding_block": 25,
         "primary_color": "scheme-1",
-        "secondary_color": "scheme-4",
+        "secondary_color": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
         "nav_color_scheme": "scheme-4",
         "sub_menu_border_color": "#4b92db",
         "accent_color": "scheme-4",

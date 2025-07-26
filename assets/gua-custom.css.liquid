@@ -17,6 +17,15 @@ body {font-family: "Eurostile-Reg", sans-serif;}
 @media (min-width: 768px) {
 body.template-index .v2-header__nav-menu {margin-top: 0;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
 }
+
+{% comment %} --- ANNOUNCEMENT BAR --- {% endcomment %}
+{% comment %}
+.announcement-bar p.announcement-bar__message {font-size: 14px;letter-spacing: 0.05em;}
+.announcement-bar__message.h5 {min-height: unset;}
+@media screen and (max-width: 699px) {
+  .announcement-bar p.announcement-bar__message {font-size: 14px;padding-bottom: 8px;}
+}
+{% endcomment %}
   
 {% comment %} --- PRODUCT --- {% endcomment %}
 body.template-product .product {margin-top:2rem;}
