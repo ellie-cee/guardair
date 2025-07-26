@@ -46,8 +46,8 @@
       "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/BW_Press_with_Blue_Gradient.jpg",
-        "image_overlay_opacity": 50,
-        "image_height": "large",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
