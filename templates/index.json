@@ -43,20 +43,13 @@
         "text_mQUpVq",
         "buttons_HmMVbL"
       ],
-      "custom_css": [
-        "h2 {font-size: 44px; margin-bottom: 20px;}",
-        "p {color: #fff; font-size: 20px;}",
-        ".button.button--primary {background-color: #4b92db;}",
-        ".content-container {background: none;}",
-        "@media screen and (min-width: 750px) {.banner__box {max-width: 65rem; } .banner__content {padding: 5rem 0rem; }}",
-        "@media screen and (max-width: 767px) {h2 {font-size: 32px; } p {font-size: 18px; }}"
-      ],
+      "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/GA-Main_slider_Palmjet.png",
+        "image": "shopify://shop_images/BW_Press_with_Blue_Gradient.jpg",
         "image_overlay_opacity": 50,
-        "image_height": "medium",
+        "image_height": "large",
         "desktop_content_position": "middle-left",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-910f9ac4-69fe-4943-bab5-8c0b2a36303e",
         "image_behavior": "none",
