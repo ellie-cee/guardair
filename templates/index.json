@@ -10,7 +10,7 @@
 {
   "sections": {
     "image_banner_XbTPBM": {
-      "type": "image-banner",
+      "type": "gua-image-banner",
       "blocks": {
         "heading_Tip9nz": {
           "type": "heading",
@@ -38,11 +38,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_Tip9nz",
-        "text_mQUpVq",
-        "buttons_HmMVbL"
-      ],
+      "block_order": ["heading_Tip9nz", "text_mQUpVq", "buttons_HmMVbL"],
       "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/GUA_Hero.jpg",
@@ -153,10 +149,7 @@
           }
         }
       },
-      "block_order": [
-        "featured_block_C9NrnX",
-        "featured_block_4PcFxF"
-      ],
+      "block_order": ["featured_block_C9NrnX", "featured_block_4PcFxF"],
       "custom_css": [
         ".itg_btn {padding: 12px 20px; background-color: #4b92db;}",
         "@media screen and (max-width: 767px) {h2 {font-size: 32px; padding-bottom: 10px; } h3 {font-size: 32px; }}"
@@ -201,11 +194,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_DwrcAG",
-        "text_RfAR4Q",
-        "button_3yAkey"
-      ],
+      "block_order": ["heading_DwrcAG", "text_RfAR4Q", "button_3yAkey"],
       "custom_css": [
         "h2 {font-size: 36px;}",
         ".image-with-text__media {border: none;}",
@@ -258,11 +247,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_yKy8CG",
-        "text_KCnA3C",
-        "button_hNXPPx"
-      ],
+      "block_order": ["heading_yKy8CG", "text_KCnA3C", "button_hNXPPx"],
       "custom_css": [
         "h2 {font-size: 36px;}",
         ".image-with-text__media {border: none;}",
@@ -340,10 +325,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_9XMMNn",
-        "text_6nWKp7"
-      ],
+      "block_order": ["heading_9XMMNn", "text_6nWKp7"],
       "custom_css": [
         "h2 {font-size: 36px;}",
         "@media screen and (max-width: 767px) {h2 {font-size: 32px; }}",
@@ -400,11 +382,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_zTxpyB",
-        "text_YPDCYy",
-        "button_YmyykQ"
-      ],
+      "block_order": ["heading_zTxpyB", "text_YPDCYy", "button_YmyykQ"],
       "custom_css": [
         "p {font-size: 18px; color: #000;}",
         "h2 {font-size: 36px; color: #000;}",
