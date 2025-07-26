@@ -1,6 +1,403 @@
+{% comment %} SECTIONS: ywm-toolbar.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/e9bb51b02efe275537e442e01c2cb316478f2e55/Sections/ywm-toolbar.liquid {% endcomment %}
+{% comment %} LAST UPDATED: 20250718 {% endcomment %}
+
+{% comment %} USAGE {% endcomment %}
+{% comment %}
+    {% section 'ywm-toolbar.liquid' %}
+{% endcomment %}
+
+ {%- unless request.page_type == 'index' and section.settings.show_on_homepage == false -%}
+
+
+
+{% for scheme in settings.color_schemes %}
+  {% if scheme == section.settings.toolbar_color_scheme %}
+    {% assign bg = scheme.settings.background %}
+        {% assign font = scheme.settings.text %}
+  {% elsif scheme == section.settings.homepage_color_scheme %}
+    {% assign homebg = scheme.settings.background %}
+        {% assign homefont = scheme.settings.text %}    
+  {% endif %}
+{% endfor %}
+{% assign flexbox = 'display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;flex-flow:row wrap;' %}
+{% style %}
+ #shopify-section-{{ section.id }} .toolbar__separator {padding:0rem 1rem;}
+ #shopify-section-{{ section.id }} .toolbar__item.toolbar__item--menu {padding:0rem 3rem;}
+ #shopify-section-{{ section.id }} .toolbar .page-width {}  
+.section-header~.shopify-section-group-header-group {z-index:3;}
+  {% if section.settings.overlay_header_all  %}  
+      #shopify-section-{{ section.id }} .toolbar {background-color: transparent;}   
+      #shopify-section-{{ section.id }} .header-toolbar.color-{{ section.settings.toolbar_color_scheme}} {background-color: transparent;}
+  {% elsif section.settings.overlay_header and request.page_type == 'index' %}
+      body.template-index #shopify-section-{{ section.id }} .toolbar {background-color: transparent;}
+      body.template-index #shopify-section-{{ section.id }} .header-toolbar.color-{{ section.settings.toolbar_color_scheme }} {background-color: transparent;}    
+      body:not(.template-index) #shopify-section-{{ section.id }} .toolbar {background-color: {{ bg }};}
+  {% else %}
+      body.template-index #shopify-section-{{ section.id }} .toolbar {background-color: {{ homebg }};} 
+      body:not(.template-index) #shopify-section-{{ section.id }} .toolbar {background-color: {{ bg }};}
+  {% endif %}
+ #shopify-section-{{ section.id }} .toolbar-right,  #shopify-section-{{ section.id }} .toolbar-left {flex:1 0 50%;width:100%;align-items:center;{{ flexbox }}}
+ #shopify-section-{{ section.id }} .toolbar-right,  #shopify-section-{{ section.id }} .toolbar-left {justify-content:start;}  
+ #shopify-section-{{ section.id }} .toolbar-right,  #shopify-section-{{ section.id }} .toolbar-right {justify-content:end;}    
+  #shopify-section-{{ section.id }} .toolbar-search--disabled,  #shopify-section-{{ section.id }} .toolbar-account,  #shopify-section-{{ section.id }} .toolbar-cart,
+    #shopify-section-{{ section.id }} .toolbar__menu {transform:scale(1.0);padding: 0;margin: 5px 0;{{ flexbox }}}
+   #shopify-section-{{ section.id }} .toolbar__menu li {list-decoration:none;}
+   #shopify-section-{{ section.id }} .toolbar__menu li::marker {content:none;}
+ #shopify-section-{{ section.id }} .toolbar__menu li a {color: {{ font }};font-size:14px;text-decoration:none;}
+      body.template-index #shopify-section-{{ section.id }} .toolbar__menu li a {color: {{ homefont }};  
+ #shopify-section-{{ section.id }} .toolbar__menu .toolbar__item--menu {transform:scale(1.0);{{ flexbox }}}  
+@media screen and (max-width:480px) {
+ #shopify-section-{{ section.id }} {width:100vw; overflow: scroll;}
+ #shopify-section-{{ section.id }} .header-toolbar  {flex-flow: row nowrap;justify-content:space-between;{{ flexbox }}}
+ #shopify-section-{{ section.id }} .page-width {text-align: left;margin: 0 10px !important}
+}
+@media screen and (min-width:480px) {
+  #shopify-section-{{ section.id }} .page-width {text-align: center;}
+}   
+.header-toolbar {padding:0rem 5rem; margin:0 auto;border-bottom:0px solid #333; display:flex;flex-flow:row wrap;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;}
+  
+    @media screen and (min-width:1500px) {
+    .header-toolbar {padding:0rem 10rem;}
+    }
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+{% endstyle %}
+
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
+    <circle r="8.5" cy="9" cx="9" stroke-opacity="0.2"/>
+    <path d="M6.82972 6.82915L1.17193 1.17097" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
+    <path d="M1.22896 6.88502L6.77288 1.11523" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
+  </symbol>
+  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+  </symbol>
+  <symbol id="icon-account" class="icon icon-account" fill="none" viewBox="0 0 18 17">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
+  </symbol>
+  <symbol id="icon-cart-empty" class="icon icon-cart-empty" fill="none" viewBox="0 0 18 17">      
+    <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="currentColor" fill-rule="evenodd"/>
+  </symbol>
+  <symbol id="icon-cart" class="icon icon-cart" fill="none" viewBox="0 0 18 17">      
+    <path fill="currentColor" fill-rule="evenodd" d="M20.5 6.5a4.75 4.75 0 00-4.75 4.75v.56h-3.16l-.77 11.6a5 5 0 004.99 5.34h7.38a5 5 0 004.99-5.33l-.77-11.6h-3.16v-.57A4.75 4.75 0 0020.5 6.5zm3.75 5.31v-.56a3.75 3.75 0 10-7.5 0v.56h7.5zm-7.5 1h7.5v.56a3.75 3.75 0 11-7.5 0v-.56zm-1 0v.56a4.75 4.75 0 109.5 0v-.56h2.22l.71 10.67a4 4 0 01-3.99 4.27h-7.38a4 4 0 01-4-4.27l.72-10.67h2.22z"/>
+  </symbol>
+    
+</svg>
+
+     
+{%- liquid
+  assign social_links = false
+  assign localization_forms = false
+
+  if settings.social_twitter_link != blank or settings.social_facebook_link != blank or settings.social_pinterest_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_vimeo_link != blank or settings.social_tiktok_link != blank or settings.social_tumblr_link != blank or settings.social_snapchat_link != blank
+    assign social_links = true
+  endif   
+-%} 
+      
+{% capture menu_left %}
+        {%- if section.settings.toolbar_menu != blank -%}
+                <div class="toolbar__item toolbar__item--menu">
+                  <ul class="inline-list toolbar__menu">
+                      {%- for link in section.settings.toolbar_menu.links -%}
+                      <li class="toolbar__item--menu">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                        {% if section.settings.show_line_separator %}{%- unless forloop.last -%}
+                          <span class="toolbar__separator">  | </span>
+                        {%- endunless -%}{% endif %}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+        {%- endif -%}
+{% endcapture %}
+
+{% capture menu_right %}
+        {%- if section.settings.toolbar_menu_right != blank -%}
+                <div class="toolbar__item toolbar__item--menu">
+                  <ul class="inline-list toolbar__menu">
+                      {%- for link in section.settings.toolbar_menu_right.links -%}
+                      <li class="toolbar__item--menu">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                        {% if section.settings.show_line_separator %}{%- unless forloop.last -%}
+                          <span class="toolbar__separator">  | </span>
+                        {%- endunless -%}{% endif %}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+        {%- endif -%}
+{% endcapture %}      
+      
+{% capture social %}
+<div class="toolbar__item">
+  {% render 'social-icons', additional_classes: 'inline-list toolbar__social' %}
+</div>    
+{% endcapture %}
+  {% if section.settings.toolbar_social %}{{ social }}{% endif %}
+
+{% capture account %}
+    {%- if shop.customer_accounts_enabled -%}
+      <div class="toolbar-account">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+        <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
+          <span class="visually-hidden">
+            {%- liquid
+            if customer
+            echo 'customer.account_fallback' | t
+            else
+            echo 'customer.log_in' | t
+            endif
+            -%} 
+          </span>
+        </a>
+      </div>
+    {%- endif -%}         
+{% endcapture %}
+
+{% capture cart %}
+    <div class="toolbar-cart"> 
+           <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {% if cart == empty %}
+          <span class="svg-wrapper">{{ 'icon-empty-cart2.svg' | inline_asset_content }}</span>
+        {% else %}
+          <span class="svg-wrapper">{{ 'icon-cart2.svg' | inline_asset_content }}</span>
+        {% endif %}
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </div>
+        {%- endif -%} 
+      </a> 
+    </div>  
+{% endcapture %}
+
+{% capture search %}
+      <div class="toolbar-search">
+        {% render 'header-search', input_id: 'Search-In-Modal' %}
+      </div>
+{% endcapture %}
+
+
+<div class="toolbar{% if section.settings.overlay_header and request.page_type == 'index' %} toolbar--transparent{% endif %} small--hide gradient color-{{ section.settings.toolbar_color_scheme }}">
+  <div class="page-width">      
+
+       <div class="header-toolbar color-{{ section.settings.toolbar_color_scheme }}">
+
+         {% if menu_left or section.settings.toolbar_search or section.settings.toolbar_account or section.settings.toolbar_cart  %}         
+                <div class="toolbar-left">
+                  {% if section.settings.toolbar_search %}{{ search }}{% endif %}
+                  {% if section.settings.toolbar_menu %}{{ menu_left }}{% endif %}
+                  {% if section.settings.toolbar_account %}{{ account }}{% endif %}
+                  {% if section.settings.toolbar_cart %}{{ cart }}{% endif %}
+                  {% if section.settings.toolbar_social %}{{ social }}{% endif %}            
+                </div>
+          {% endif %}
+         {% if menu_right or section.settings.toolbar_search_right or section.settings.toolbar_account_right or section.settings.toolbar_cart_right %}
+             <div class="toolbar-right">
+                  {% if section.settings.toolbar_search_right %}{{ search }}{% endif %}
+                  {% if section.settings.toolbar_menu_right %}{{ menu_right }}{% endif %}           
+                  {% if section.settings.toolbar_account_right %}{{ account }}{% endif %}
+                  {% if section.settings.toolbar_cart_right %}{{ cart }}{% endif %}
+                  {% if section.settings.toolbar_social_right %}{{ social }}{% endif %}
+             </div>
+          {% endif %}           
+       </div>
+
+ 
+  </div>
+</div>
+
+{%- endunless -%}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "YWM Toolbar",
+  "class": "section-header",
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": ["header"]
+  },
+  "max_blocks": 3,
+  "settings": [
+              {
+      "type": "header",
+      "content": "Global Toolbar"
+    },
+     {
+      "type": "color_scheme",
+      "id": "toolbar_color_scheme",
+      "label": "Toolbar Color Scheme",
+      "default": "scheme-1"
+    },     
+    {
+      "type": "checkbox",
+      "id": "overlay_header_all",
+      "default": false,
+      "label": "Show as transparent everywhere"
+    },     
+    {
+      "type": "header",
+      "content": "Homepage Settings"
+    },    
+    {
+      "type": "checkbox",
+      "id": "show_on_homepage",
+      "default": true,
+      "label": "Show Toolbar on Home"
+    },    
+    {
+      "type": "checkbox",
+      "id": "overlay_header",
+      "default": false,
+      "label": "Show as transparent on homepage"
+    }, 
+     {
+      "type": "color_scheme",
+      "id": "homepage_color_scheme",
+      "label": "Toolbar Color Scheme (Homepage only)",
+      "default": "scheme-1"
+    },     
+    {
+      "type": "checkbox",
+      "id": "reverse_order",
+      "default": false,
+      "label": "Flip items so menu on right"
+    },       
+    {
+      "type": "checkbox",
+      "id": "show_line_separator",
+      "default": true,
+      "label": "t:sections.header.settings.show_line_separator.label"
+    },    
+    {
+      "type": "header",
+      "content": "Left Toolbar"
+    },    
+    {
+      "type": "checkbox",
+      "id": "toolbar_search",
+      "default": false,
+      "label": "Show Search on Left"
+    }, 
+    {
+      "type": "link_list",
+      "id": "toolbar_menu",
+      "label": "Toolbar Menu on Left"
+    }, 
+    {
+      "type": "checkbox",
+      "id": "toolbar_account",
+      "default": false,
+      "label": "Show My Account on Left"
+    }, 
+    {
+      "type": "checkbox",
+      "id": "toolbar_cart",
+      "default": false,
+      "label": "Show Cart on Left"
+    },  
+    {
+      "type": "checkbox",
+      "id": "toolbar_social",
+      "default": false,
+      "label": "Show social icons on Left"
+    },
+    {
+      "type": "header",
+      "content": "Right Toolbar"
+    },  
+   {
+      "type": "checkbox",
+      "id": "toolbar_search_right",
+      "default": false,
+      "label": "Show Search on Right"
+    }, 
+    {
+      "type": "link_list",
+      "id": "toolbar_menu_right",
+      "label": "Toolbar Menu on Right"
+    }, 
+    {
+      "type": "checkbox",
+      "id": "toolbar_account_right",
+      "default": false,
+      "label": "Show My Account on Right"
+    }, 
+    {
+      "type": "checkbox",
+      "id": "toolbar_cart_right",
+      "default": false,
+      "label": "Show Cart on Right"
+    },  
+    {
+      "type": "checkbox",
+      "id": "toolbar_social_right",
+      "default": false,
+      "label": "Show social icons on Right"
+    },    
+   
+   {
+      "type": "header",
+      "content": "t:sections.all.spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.header.settings.margin_bottom.label",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+  ],
+  "blocks": [
+  ],
+  "presets": [
+    {
+      "name": "YWM Toolbar"
+    }
+  ]  
+}
 {% endschema %}
