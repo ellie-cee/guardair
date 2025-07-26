@@ -8,8 +8,8 @@ px{% assign accent_color1 = '#328ad2' %}
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;}
-body {font-family: "Eurostile-Reg", sans-serif;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;letter-spacing:0.1em;}}
+body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.1em;}}
 
 .page-width {width: auto; max-width: 1140px; padding: 0 10px;}
 
@@ -84,8 +84,9 @@ body.template-product .itg_full_product_info .tab-content table td .td-title { p
 
 {% comment %} --- HEADER --- {% endcomment %}
 .shopify-section-header-sticky.scrolled-past-header .v2-header__row.row-2 {display:none;}
+.header__search-wrapper {border: 1px solid #ddd;}
 .header__search-wrapper form {}
-.header__search-wrapper form input[type="search"] {height:auto;}
+.header__search-wrapper form input[type="search"] {height:auto;letter-spacing:0.1em;}
 .header__search-wrapper form input[type="search"]::placeholder {color:#ccc;}
 
 div#qab_container {display: none !important;}
