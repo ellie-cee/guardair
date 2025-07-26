@@ -33,14 +33,14 @@
         "announcement_WinPr4": {
           "type": "announcement",
           "settings": {
-            "text": "FREE SHIPPING ON ORDERS OVER $100",
+            "text": "Free Shipping on Orders over $100",
             "link": "shopify://pages/shipping-and-returns"
           }
         },
         "announcement_i6QAT9": {
           "type": "announcement",
           "settings": {
-            "text": "ULTRA AIR GUNS BACK IN STOCK!",
+            "text": "Ultra Air Guns Back in Stock",
             "link": "shopify://pages/ultra-safety-air-guns"
           }
         },
