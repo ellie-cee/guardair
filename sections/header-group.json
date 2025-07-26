@@ -252,7 +252,7 @@
         "show_sublink_arrow": true,
         "scroll_when_larger_height": false,
         "menu_min_height": 4,
-        "nav_menu": "mega-menu",
+        "nav_menu": "mega-menu-v2",
         "secondary_menu": "mobile-bottom",
         "number_of_rows": 2,
         "sticky_header_type": "reduce-logo-size",
