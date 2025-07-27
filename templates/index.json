@@ -822,6 +822,16 @@
         "heading_GQbAhe": {
           "type": "heading",
           "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
             "heading": "Connect with Us",
             "subheading": "",
             "seo_heading": "h2",
@@ -915,6 +925,16 @@
         "social_qNEA6Y": {
           "type": "social",
           "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
             "social_heading": "Follow us on social media",
             "social_text": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
           }
@@ -930,7 +950,7 @@
       ],
       "name": "GUA Flex Section",
       "settings": {
-        "color_scheme": ""
+        "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417"
       }
     }
   },
