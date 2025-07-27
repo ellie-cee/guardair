@@ -50,10 +50,9 @@
   </div>
 
 {% style %}
-flex.flex .flex__content{padding-block: 24px;}
-flex.flex p{margin: 0;}
-.flex__content{display: grid; grid-template-columns: repeat(5, 1fr); column-gap: min(70px, calc(100vw / 4 - 225px)); row-gap: 28px; color: rgba(var(--color-foreground), 1);}
-.flex__content-block{--row: var(--desktop-row); --column: var(--desktop-column); --rowspan: var(--desktop-row-span); --colspan: var(--desktop-column-span); grid-row: var(--row); grid-column-start: var(--column); grid-column-end: calc(var(--column) + var(--colspan)); display: flex;}
+
+.flex__content {display: flex;-webkit-display:flexbox; }
+.flex__content-block {display: flex;}
 .flex__content-block__text{line-height: 1.2;}
 .flex__content-block__button{margin-top: 26px;}
 .flex__content-block__heading{margin-block: 0; color: rgba(var(--color-button), var(--alpha-button-background));}
