@@ -59,6 +59,60 @@
         "show_text_below": false
       }
     },
+    "gua_icon_bar_QiQw48": {
+      "type": "gua-icon-bar",
+      "blocks": {
+        "icon_nn6zhf": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/white_question_mark_70c175c9-f899-47cc-b9f1-5f26d6332ef3.png",
+            "text": "<h2>Why Choose Guardair?</h2>",
+            "text-line-2": "",
+            "main": false
+          }
+        },
+        "icon_YKMcxx": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/master_icons_white_Safety.png",
+            "text": "<p>Engineered for Safety</p>",
+            "text-line-2": "",
+            "main": false
+          }
+        },
+        "icon_GhjaQm": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/master_icons_white_shield.png",
+            "text": "<p>Industry-Leading Warranties</p>",
+            "text-line-2": "",
+            "main": false
+          }
+        },
+        "icon_igaCAc": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/master_icons_white_USA.png",
+            "text": "<p>Assembled in the USA</p>",
+            "text-line-2": "",
+            "main": false
+          }
+        }
+      },
+      "block_order": [
+        "icon_nn6zhf",
+        "icon_YKMcxx",
+        "icon_GhjaQm",
+        "icon_igaCAc"
+      ],
+      "name": "GUA Icon Bar",
+      "settings": {
+        "background_color": "#002395",
+        "text_color": "#ffffff",
+        "max_width": 1160
+      }
+    },
     "gua_multicolumn_fD7AFm": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -121,60 +175,6 @@
         "anchor_id": ""
       }
     },
-    "gua_icon_bar_QiQw48": {
-      "type": "gua-icon-bar",
-      "blocks": {
-        "icon_nn6zhf": {
-          "type": "icon",
-          "disabled": true,
-          "settings": {
-            "icon": "shopify://shop_images/white_question_mark_70c175c9-f899-47cc-b9f1-5f26d6332ef3.png",
-            "text": "<h2>Why Choose Guardair?</h2>",
-            "text-line-2": "",
-            "main": false
-          }
-        },
-        "icon_YKMcxx": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify://shop_images/master_icons_white_Safety.png",
-            "text": "<p>Engineered for Safety</p>",
-            "text-line-2": "",
-            "main": false
-          }
-        },
-        "icon_GhjaQm": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify://shop_images/master_icons_white_shield.png",
-            "text": "<p>Industry-Leading Warranties</p>",
-            "text-line-2": "",
-            "main": false
-          }
-        },
-        "icon_igaCAc": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify://shop_images/master_icons_white_USA.png",
-            "text": "<p>Assembled in the USA</p>",
-            "text-line-2": "",
-            "main": false
-          }
-        }
-      },
-      "block_order": [
-        "icon_nn6zhf",
-        "icon_YKMcxx",
-        "icon_GhjaQm",
-        "icon_igaCAc"
-      ],
-      "name": "GUA Icon Bar",
-      "settings": {
-        "background_color": "#002395",
-        "text_color": "#ffffff",
-        "max_width": 1160
-      }
-    },
     "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8": {
       "type": "featured-block",
       "blocks": {
@@ -221,7 +221,6 @@
         "featured_block_C9NrnX",
         "featured_block_4PcFxF"
       ],
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "title": "Innovative Cleaning Solutions",
