@@ -62,7 +62,6 @@
     if (window.innerWidth < 1280 && slides.length > 0) {
       let currentSlide = 0;
       
-      {% comment %}Create dots{% endcomment %}
       slides.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.className = `carousel_dot ${index === 0 ? 'active' : ''}`;
@@ -87,10 +86,8 @@
         goToSlide(currentSlide);
       }
       
-      {% comment %}Auto-advance every 4 seconds{% endcomment %}
       setInterval(nextSlide, 4000);
       
-      {% comment %}Touch/swipe support{% endcomment %}
       let startX = 0;
       let currentX = 0;
       let isDragging = false;
@@ -119,7 +116,7 @@
         isDragging = false;
       });
     }
-  })();
+  });
 </script>
 
 {% schema %}
