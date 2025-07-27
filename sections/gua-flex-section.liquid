@@ -39,54 +39,8 @@
                     {% render 'gua-b-paragraph',block:block %}
             
             {% when 'contact' %}
-              <div class="footer__content-block__content hide-on-mobile">
-                {% capture header_content %}
-                  <h3 class="footer__content-block__heading">{{ block.settings.heading }}</h3>
-                {% endcapture %}
-                {% capture content %}
-                <div class="footer__content-block__text">{{ block.settings.content }}</div>
-                <div class="footer__content-block__contact">
-                  {% if block.settings.contact_us_link != blank %}
-                    <div class="footer__content-block__contact-item footer__content-block__contact__contact-us">
-                      <a href="{{ block.settings.contact_us_link }}">{{ block.settings.contact_us_text }}</a>
-                    </div>
-                  {% endif %}
-                  {% if block.settings.phone_number != blank %}
-                    <div class="footer__content-block__contact-item footer__content-block__contact__phone">
-                      {{ block.settings.phone_icon }}
-                      <a href="tel:{{ block.settings.phone_number }}">{{ block.settings.phone_number }}</a>
-                      {% if block.settings.phone_hours != blank %}
-                        <span>{{ block.settings.phone_hours }}</span>
-                      {% endif %}
-                    </div>
-                  {% endif %}
-                  {% if block.settings.email_address != blank %}
-                    <div class="footer__content-block__contact-item footer__content-block__contact__email">
-                      {{ block.settings.email_icon }}
-                      <a href="mailto:{{ block.settings.email_address }}">{{ block.settings.email_address }}</a>
-                    </div>
-                  {% endif %}
-                  {% if block.settings.live_chat_text != blank %}
-                    <div class="footer__content-block__contact-item footer__content-block__contact__live-chat">
-                      {{ block.settings.live_chat_icon }}
-                      <a href="javascript:void(0);" onclick="{{ block.settings.live_chat_onclick }}">
-                        {{- block.settings.live_chat_text -}}
-                      </a>
-                    </div>
-                  {% endif %}
-                </div>
-                {% endcapture %}
-                {{ header_content }}
-                {{ content }}
-              </div>
-              <hc-accordion class="footer__content-block__content hide-on-desktop">
-                <div slot="header">
-                  {{ header_content }}
-                </div>
-                <div slot="content">
-                  {{ content }}
-                </div>
-              </hc-accordion>
+                    {% render 'gua-b-contact',block:block %}
+            
             {% when 'linklist' %}
               <div class="footer__content-block__content hide-on-mobile">
                 {% capture header_content %}
