@@ -192,7 +192,7 @@
               {%- if product_image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
-                  {% style %}.media > img {object-fit: contain;}{% endstyle %}                  
+                  {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}                  
                 {% endif %}
                   <a href="{{ product.url }}">
                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
