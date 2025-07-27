@@ -12,6 +12,7 @@
 
 {% comment %} --- BUTTONS --- {% endcomment %}
 .button {
+{% if settings.button_vertical_padding != 0 %}padding: {{  settings.button_vertical_padding }}px;{% endif %}  
 {% if settings.button_caps %}text-transform:uppercase;{% endif %}
 {% if settings.button_font_size %}font-size:{{ settings.button_font_size }}px;{% endif %}
 {% if settings.button_font_weight %}font-weight:{{ settings.button_font_weight }};{% endif %}
