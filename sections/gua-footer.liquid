@@ -3,7 +3,7 @@
 <footer class="footer">
   <div class="footer__top color-{{ section.settings.color_scheme }} gradient">
     <div class="footer__top__content page-width">
-      <!-- Connect with us paragraph -->
+
       {% if section.settings.enable_connect_panel %}
         <div class="footer__content-block">
           <div class="footer__content-block__content">
@@ -21,14 +21,9 @@
           </div>
         </div>
       {% endif %}
-      <!-- Social paragraph -->
-      <div class="footer__content-block">
-        <div class="footer__content-block__content">
-          <h3 class="footer__content-block__heading">{{ section.settings.social_heading }}</h3>
-          <div class="footer__content-block__text">{{ section.settings.social_text }}</div>
-          {% render 'social-icons' %}
-        </div>
-      </div>
+
+      {% render 'gua-b-social',block:block %}
+
     </div>
   </div>
   <div class="page-width">
