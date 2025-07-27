@@ -166,11 +166,21 @@ flex.flex .flex__content{padding-bottom: 4px;}
           "default": 1
         },
         {
+          "type": "select",
           "id": "flex_grow",
-          "type": "number",
+          "options": [
+            {
+              "value": "0",
+              "label": "No"
+            },
+            {
+              "value": "1",
+              "label": "Yes"
+            }           
+          ],
+          "default": "0",
           "label": "Flex grow",
-          "default": 0
-        },
+        },          
         {
           "id": "flex_shrink",
           "type": "number",
