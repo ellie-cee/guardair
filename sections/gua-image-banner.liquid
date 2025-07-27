@@ -5,20 +5,12 @@
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}::before,
       #Banner-{{ section.id }} .banner__media::before,
-      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
+      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;content: '';display: block;}
     }
 
     @media screen and (min-width: 750px) {
       #Banner-{{ section.id }}::before,
-      #Banner-{{ section.id }} .banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
+      #Banner-{{ section.id }} .banner__media::before {padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;content: '';display: block;}
     }
   {%- endstyle -%}
 {%- endif -%}
@@ -131,6 +123,9 @@
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
+          {% if block.settings.display_inline %}{% style %}
+                  .banner__buttons {max-width:75vw;}
+              {% endstyle %}{% endif %}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }}
