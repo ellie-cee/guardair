@@ -1,0 +1,50 @@
+              <div class="flex__content-block__content hide-on-mobile">
+                {% capture header_content %}
+                <h3 class="flex__content-block__heading">{{ block.settings.heading }}</h3>
+                {% endcapture %}
+                {% capture content %}
+                <div class="flex__content-block__divisions">
+                  {% assign divisions_num = 2 %}
+                  {% for i in (1..divisions_num) %}
+                    {% liquid
+                      assign division_link_named_index = 'division_link_' | append: i
+                      assign division_image_named_index = 'division_image_' | append: i
+                      assign division_link = block.settings[division_link_named_index]
+                      assign division_image = block.settings[division_image_named_index]
+                    %}
+
+                    {% if division_link != blank and division_image != blank %}
+                      <a href="{{ division_link }}">
+                        {% liquid
+                          assign image = division_image
+                          assign image_aspect_ratio = image.aspect_ratio
+                          assign image_height = block.settings.image_height
+                          assign image_width = image_height | times: image_aspect_ratio
+                          assign image_width_full = image_width | times: 2
+                        %}
+                        {{
+                          image
+                          | image_url: width: image_width_full
+                          | image_tag:
+                            class: 'flex__content-image motion-reduce',
+                            width: image_width,
+                            height: image_height,
+                            alt: image.alt,
+                            preload: false
+                        }}
+                      </a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                {% endcapture %}
+                {{ header_content }}
+                {{ content }}
+              </div>
+              <hc-accordion class="flex__content-block__content hide-on-desktop">
+                <div slot="header">
+                  {{ header_content }}
+                </div>
+                <div slot="content">
+                  {{ content }}
+                </div>
+              </hc-accordion>
