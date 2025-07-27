@@ -4,6 +4,8 @@ px{% assign accent_color1 = '#328ad2' %}
 {% assign gray_color = '#f1f1f1' %}
 {% assign desktop_max_width = '1200px' %}
 {% assign border_radius = '' %}
+{% assign accent_gradient2 = accent_color1 | color_to_rgb %}
+
 
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
@@ -17,7 +19,7 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 @media (min-width: 768px) {
 body.template-index .v2-header__nav-menu {margin-top: 0;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
 }
-body.template-index .v2-header__nav-menu.gradient {background:{{ accent_color2 | color_to_rgb}};}
+body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 }};}
 
 {% comment %} --- ANNOUNCEMENT BAR --- {% endcomment %}
 .announcement-bar p.announcement-bar__message {font-size: 1.5rem;letter-spacing:0.1em; font-weight: 100;}
