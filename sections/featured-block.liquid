@@ -1,14 +1,8 @@
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+  .section-{{ section.id }}-padding {padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;}
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+    .section-{{ section.id }}-padding {padding-top: {{ section.settings.padding_top }}px;padding-bottom: {{ section.settings.padding_bottom }}px;}
   }
 {%- endstyle -%}
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -31,26 +25,21 @@
             <div class="vk--box-main">
             <!-- box-title begins -->
             <div class="box-title"><h3>{{ block.settings.title }}</h3></div>
-            <!-- box-title ends -->
-            <!-- box-desc begins -->
-            <div class="box-desc">
-              {{ block.settings.body }}
-            </div>
-            <!-- box-desc ends -->
+
+            <div class="box-desc">{{ block.settings.body }}</div>
+   
             <div class="banner__buttons_group">
             {%- if block.settings.show_button -%}
-              <!-- box-link begins -->
-              <div class="box-link">
-                <a href="{{ block.settings.button_link }}" class="itg_btn">{{ block.settings.button_text }}</a>
-              </div>
-              <!-- box-link ends -->
+                <div class="box-link">
+                  <a href="{{ block.settings.button_link }}" class="itg_btn">{{ block.settings.button_text }}</a>
+                </div>
             {%- endif -%}
               {%- if block.settings.show_button_second -%}
-                <!-- box-link begins -->
+
                 <div class="box-link banner__buttons">
                   <a href="{{ block.settings.button_link_second }}" class="btn {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}">{{ block.settings.button_text_second }}</a>
                 </div>
-                <!-- box-link ends -->
+
               {%- endif -%}
             </div>
             </div>
