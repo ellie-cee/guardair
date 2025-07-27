@@ -18,7 +18,7 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 
 {% comment %} --- HOMEPAGE --- {% endcomment %}
 @media (min-width: 768px) {
-.v2-header__nav-menu {margin-top: 0;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
+.v2-header__nav-menu {margin-top: 0 !important;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
 }
 body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' | replace:')',',0.75)' }};}
 body.template-index .section-v2-header.scrolled-past-header .v2-header__nav-menu.gradient {background:{{ accent_gradient2 }};}
