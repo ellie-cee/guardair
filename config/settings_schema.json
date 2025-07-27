@@ -319,6 +319,16 @@
         "content": "Button Overrides"
       },
       {
+        "type": "range",
+        "id": "buttons_vertical_padding",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Button Vertical Padding",
+        "default": 0
+      },
+      {
         "type": "checkbox",
         "id": "buttons_caps",
         "label": "Text UPPERCASE",
