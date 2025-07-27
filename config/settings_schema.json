@@ -320,6 +320,16 @@
       },
       {
         "type": "range",
+        "id": "buttons_font_size",
+        "min": 12,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Button Font Size",
+        "default": 15
+      },
+      {
+        "type": "range",
         "id": "buttons_vertical_padding",
         "min": 0,
         "max": 10,
