@@ -815,6 +815,121 @@
         "padding_bottom": 16,
         "anchor_id": ""
       }
+    },
+    "gua_flex_section_AQxr9j": {
+      "type": "gua-flex-section",
+      "blocks": {
+        "heading_GQbAhe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Connect with Us",
+            "subheading": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
+          }
+        },
+        "contact_dXWqtc": {
+          "type": "contact",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "Contact Us",
+            "content": "<p>Paragraph Content</p>",
+            "contact_us_link": "",
+            "contact_us_text": "Contact Us",
+            "phone_icon": "",
+            "phone_number": "",
+            "phone_hours": "",
+            "email_icon": "",
+            "email_address": "",
+            "live_chat_icon": "",
+            "live_chat_text": "",
+            "live_chat_onclick": ""
+          }
+        },
+        "linklist_DBmrzM": {
+          "type": "linklist",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "",
+            "links": ""
+          }
+        },
+        "paragraph_qedwKj": {
+          "type": "paragraph",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "image_height": 54,
+            "heading": "Paragraph Heading",
+            "content": "<p>Paragraph Content</p>",
+            "button_link": "",
+            "button_text": ""
+          }
+        },
+        "social_qNEA6Y": {
+          "type": "social",
+          "settings": {
+            "social_heading": "Follow us on social media",
+            "social_text": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
+          }
+        },
+        "subscribe_HmQ3CJ": {
+          "type": "subscribe",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "connect_heading": "Connect with us",
+            "connect_text": "<p>Connect with us on social media to stay up to date on the latest news and events.</p>",
+            "connect_button_link": "",
+            "connect_button_onclick": "",
+            "connect_button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_GQbAhe",
+        "contact_dXWqtc",
+        "linklist_DBmrzM",
+        "paragraph_qedwKj",
+        "social_qNEA6Y",
+        "subscribe_HmQ3CJ"
+      ],
+      "name": "GUA Flex Section",
+      "settings": {
+        "color_scheme": ""
+      }
     }
   },
   "order": [
@@ -831,6 +946,7 @@
     "rich_text_6KAite",
     "gua_mixed_content_rhKwgm",
     "video_with_text_HyfDyC",
-    "gua_multicolumn_nXUXUT"
+    "gua_multicolumn_nXUXUT",
+    "gua_flex_section_AQxr9j"
   ]
 }
