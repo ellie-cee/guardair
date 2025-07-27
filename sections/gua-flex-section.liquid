@@ -1,59 +1,73 @@
+{% liquid
+  assign number_of_rows = section.settings.number_of_rows
+%}
+
 <div class="flex-section color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width flex__content">
-      {% for block in section.blocks %}
-        <div
-          class="
-            flex__content-block
-            {% if block.settings.show_on_mobile == false %}
-              hide-on-mobile
-            {% endif %}
-            {% if block.settings.show_on_desktop == false %}
-              hide-on-desktop
-            {% endif %}
-            flex__content-block-{{ block.type }}
-          "
-          style="
-            --desktop-row: {{ block.settings.row }};
-            --desktop-column: {{ block.settings.column }};
-            --desktop-row-span: {{ block.settings.row_span }};
-            --desktop-column-span: {{ block.settings.column_span }};
+      {% for i in (1..number_of_rows) %}
+    <div class="flex__row page-width row-{{ i }}">
+      <div class="flex__row-inner">
 
-            --mobile-row: {{ block.settings.row_mobile }};
-            --mobile-column: {{ block.settings.column_mobile }};
-            --mobile-row-span: {{ block.settings.row_span_mobile }};
-            --mobile-column-span: {{ block.settings.column_span_mobile }};
-          "
-          {{ block.shopify_attributes }}
-        >
-          {% case block.type %}
-            {% when 'heading' %}        
-                    {% render 'gua-b-heading',block:block %}     
-            
-            {% when 'subscribe' %}        
-                    {% render 'gua-b-subscribe',block:block %}
-            
-            {% when 'social' %}                  
-                    {% render 'gua-b-social',block:block %}
-            
-            {% when 'paragraph' %}
-                    {% render 'gua-b-paragraph',block:block %}
-            
-            {% when 'contact' %}
-                    {% render 'gua-b-contact',block:block %}
-            
-            {% when 'linklist' %}
-                    {% render 'gua-b-menu',block:block %}
-            
-            {% when 'image_block' %}
-                    {% render 'gua-b-image-block',block:block %}
-
-            {% else %}
-              {% comment %}
-                This block type is not supported.
-              {% endcomment %}
-          {% endcase %}
-        </div>
-      {% endfor %}
+        
+          {% for block in section.blocks %}
+             {% if block.settings.row == i %}
+                  <div
+                    class="
+                      flex__content-block
+                      {% if block.settings.show_on_mobile == false %}
+                        hide-on-mobile
+                      {% endif %}
+                      {% if block.settings.show_on_desktop == false %}
+                        hide-on-desktop
+                      {% endif %}
+                      flex__content-block-{{ block.type }}
+                    "
+                    style="
+                      --desktop-row: {{ block.settings.row }};
+                      --desktop-column: {{ block.settings.column }};
+                      --desktop-row-span: {{ block.settings.row_span }};
+                      --desktop-column-span: {{ block.settings.column_span }};
+          
+                      --mobile-row: {{ block.settings.row_mobile }};
+                      --mobile-column: {{ block.settings.column_mobile }};
+                      --mobile-row-span: {{ block.settings.row_span_mobile }};
+                      --mobile-column-span: {{ block.settings.column_span_mobile }};
+                    "
+                    {{ block.shopify_attributes }}
+                  >
+                    {% case block.type %}
+                      {% when 'heading' %}        
+                              {% render 'gua-b-heading',block:block %}     
+                      
+                      {% when 'subscribe' %}        
+                              {% render 'gua-b-subscribe',block:block %}
+                      
+                      {% when 'social' %}                  
+                              {% render 'gua-b-social',block:block %}
+                      
+                      {% when 'paragraph' %}
+                              {% render 'gua-b-paragraph',block:block %}
+                      
+                      {% when 'contact' %}
+                              {% render 'gua-b-contact',block:block %}
+                      
+                      {% when 'linklist' %}
+                              {% render 'gua-b-menu',block:block %}
+                      
+                      {% when 'image_block' %}
+                              {% render 'gua-b-image-block',block:block %}
+          
+                      {% else %}
+                        {% comment %}
+                          This block type is not supported.
+                        {% endcomment %}
+                    {% endcase %}
+                  </div>
+               {% endif %}
+                {% endfor %}
+      </div>
+    </div>
+        {% endfor %}
     </div>
   </div>
 
@@ -126,7 +140,15 @@ flex.flex .flex__content{padding-bottom: 4px;}
       "id": "color_scheme",
       "type": "color_scheme",
       "label": "Color Scheme"
-    }
+    },
+    {
+      "id": "number_of_rows",
+      "type": "range",
+      "label": "Number of rows",
+      "min": 1,
+      "max": 3,
+      "default": 2
+    }    
   ],
   "blocks": [
     {
