@@ -26,30 +26,30 @@
 </div>
 
 {% style %}
-  #shopify-section-{{ section.id }} {background: {{ section.settings.background_color }} !important;}
+  #shopify-section-{{ section.id }} {background: {{ section.settings.background_color }};}
   #shopify-section-{{ section.id }} .single_logo_column > *, .single_logo_column h2 {color: {{ section.settings.text_color }} !important;}
   #shopify-section-{{ section.id }} .logos_column_container {display: flex; flex-direction: column; max-width: {{ section.settings.max_width | append: 'px' }}; padding: 3px 20px; margin: 0 auto; position: relative;}
-  .logos_wrapper {display: flex; gap: 30px; justify-content: space-between; overflow: hidden; position: relative;}
-  .single_slide {flex: 1 1 auto; transition: transform 0.3s ease;}
-  .single_logo_column {display: flex; gap: 3px; align-items: center; height: 100%;}
-  .single_logo_column img {width: 100%; height: auto; max-width: 50px;}
-  .single_logo_column h2 {line-height:1.2;margin:5px;}
-  .single_logo_column p {font-size: 20px; display: flex; align-items: center; margin: 0px; font-family: Eurostile-Bol, serif;line-height:1.1;}
-  .single_logo_column img.main_logo_image {max-width: 100%;}
-  .single_logo_logo {display: flex; align-items: center;}
-  .carousel_dots {display: none; justify-content: center; gap: 8px; margin-top: 15px;}
-  .carousel_dot {width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: background 0.3s ease;}
-  .carousel_dot.active {background: {{ section.settings.text_color }};}
+  #shopify-section-{{ section.id }} .logos_wrapper {display: flex; gap: 30px; justify-content: space-between; overflow: hidden; position: relative;}
+  #shopify-section-{{ section.id }} .single_slide {flex: 1 1 auto; transition: transform 0.3s ease;}
+  #shopify-section-{{ section.id }} .single_logo_column {display: flex; gap: 3px; align-items: center; height: 100%;}
+  #shopify-section-{{ section.id }} .single_logo_column img {width: 100%; height: auto; max-width: 50px;}
+  #shopify-section-{{ section.id }} .single_logo_column h2 {line-height:1.2;margin:5px;}
+  #shopify-section-{{ section.id }} .single_logo_column p {font-size: 20px; display: flex; align-items: center; margin: 0px; font-family: Eurostile-Bol, serif;line-height:1.1;}
+  #shopify-section-{{ section.id }} .single_logo_column img.main_logo_image {max-width: 100%;}
+  #shopify-section-{{ section.id }} .single_logo_logo {display: flex; align-items: center;}
+  #shopify-section-{{ section.id }} .carousel_dots {display: none; justify-content: center; gap: 8px; margin-top: 15px;}
+  #shopify-section-{{ section.id }} .carousel_dot {width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: background 0.3s ease;}
+  #shopify-section-{{ section.id }} .carousel_dot.active {background: {{ section.settings.text_color }};}
   
   @media only screen and (max-width: 1280px) {
-    .logos_wrapper {overflow: hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth;}
-    .single_slide {flex: 0 0 100%; scroll-snap-align: start;}
-    .single_logo_column {justify-content: center;}
-    .single_logo_column img {max-width: 35px;}
-    .single_logo_column p {font-size: 18px;}
-    .main_logo_mobile {display: none;}
-    #shopify-section-{{ section.id }} .logos_column_container {padding: 10px 0;}
-    .carousel_dots {display: flex;}
+  #shopify-section-{{ section.id }} .logos_wrapper {overflow: hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth;}
+  #shopify-section-{{ section.id }} .single_slide {flex: 0 0 100%; scroll-snap-align: start;}
+  #shopify-section-{{ section.id }} .single_logo_column {justify-content: center;}
+  #shopify-section-{{ section.id }} .single_logo_column img {max-width: 35px;}
+  #shopify-section-{{ section.id }} .single_logo_column p {font-size: 18px;}
+  #shopify-section-{{ section.id }} .main_logo_mobile {display: none;}
+  #shopify-section-{{ section.id }} .logos_column_container {padding: 10px 0;}
+  #shopify-section-{{ section.id }} .carousel_dots {display: flex;}
   }
 {% endstyle %}
 
