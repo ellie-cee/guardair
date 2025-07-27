@@ -313,6 +313,12 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
         "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "buttons_caps",
+        "label": "Text UPPERCASE",
+        "default": false
       }
     ]
   },
