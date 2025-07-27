@@ -19,7 +19,7 @@
 {% if settings.button_font_weight == '100'  %}font-family: "Eurostile-Reg", sans-serif;font-weight:{{ settings.button_font_weight }};
   {% else %}font-family: "Eurostile-Bol", sans-serif;  font-weight:{{ settings.button_font_weight }};
 {% endif %}
-{% if settings.button_letter_spacing %}letter-spacing: {{ settings.button_letter_spacing | divided_by: 10 }}em;{% endif %}
+{% if settings.button_letter_spacing %}letter-spacing: 0.{{ settings.button_letter_spacing | divided_by: 100 }}em;{% endif %}
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;letter-spacing:0.05em;}
 body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
