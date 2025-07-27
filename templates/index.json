@@ -381,7 +381,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/powerquad-family-vacs-press-release.jpg",
+        "image": "shopify://shop_images/PQ_family_vacs.png",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -389,7 +389,7 @@
         "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-14641472-9d04-478c-88ca-0fac7f4aef46",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 24,
