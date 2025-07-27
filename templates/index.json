@@ -823,7 +823,29 @@
           "type": "heading",
           "settings": {
             "heading": "Connect with Us",
-            "subheading": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
+            "subheading": "",
+            "seo_heading": "h2",
+            "heading_class": "h1"
+          }
+        },
+        "subscribe_HmQ3CJ": {
+          "type": "subscribe",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 3,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "connect_heading": "Connect with us",
+            "connect_text": "<p>Connect with us on social media to stay up to date on the latest news and events.</p>",
+            "connect_button_link": "",
+            "connect_button_onclick": "",
+            "connect_button_text": ""
           }
         },
         "contact_dXWqtc": {
@@ -896,35 +918,15 @@
             "social_heading": "Follow us on social media",
             "social_text": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
           }
-        },
-        "subscribe_HmQ3CJ": {
-          "type": "subscribe",
-          "settings": {
-            "show_on_mobile": true,
-            "show_on_desktop": true,
-            "row": 1,
-            "column": 1,
-            "row_mobile": 1,
-            "column_mobile": 1,
-            "row_span": 1,
-            "column_span": 1,
-            "row_span_mobile": 1,
-            "column_span_mobile": 1,
-            "connect_heading": "Connect with us",
-            "connect_text": "<p>Connect with us on social media to stay up to date on the latest news and events.</p>",
-            "connect_button_link": "",
-            "connect_button_onclick": "",
-            "connect_button_text": ""
-          }
         }
       },
       "block_order": [
         "heading_GQbAhe",
+        "subscribe_HmQ3CJ",
         "contact_dXWqtc",
         "linklist_DBmrzM",
         "paragraph_qedwKj",
-        "social_qNEA6Y",
-        "subscribe_HmQ3CJ"
+        "social_qNEA6Y"
       ],
       "name": "GUA Flex Section",
       "settings": {
