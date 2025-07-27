@@ -1,0 +1,14 @@
+    <div class="flex__content-block">
+          <div class="flex__content-block__content">
+            <h3 class="flex__content-block__heading">{{ section.settings.connect_heading }}</h3>
+            <div class="flex__content-block__text">{{ section.settings.connect_text }}</div>
+            <a
+              href="{{ section.settings.connect_button_link | default: 'javascript:void(0);' }}"
+              {% if section.settings.connect_button_onclick != blank %}
+                onclick="{{ section.settings.connect_button_onclick }}"
+              {% endif %}
+              class="flex__content-block__button button button--round">
+              {{- section.settings.connect_button_text -}}
+            </a>
+          </div>
+        </div>
