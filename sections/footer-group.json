@@ -175,8 +175,8 @@
         "paragraph_RqVQzp"
       ],
       "custom_css": [
-        ".footer__top__content {margin-bottom: 12px;}",
-        ".footer__bottom {background-color: #666;}"
+        ".footer__content-block__divisions {flex-flow: row wrap;}",
+        ".footer__bottom {background-color: #ededed; color: #333;}"
       ],
       "settings": {
         "footer_text": "<p>© {Year} Guardair Corporation</p>",
