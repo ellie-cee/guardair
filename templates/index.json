@@ -427,26 +427,6 @@
         "padding_top": 0,
         "padding_bottom": 100
       }
-    },
-    "d7c7a8d5-0b39-42b7-812d-91d098fcdcd1": {
-      "type": "featured-article",
-      "custom_css": [
-        "h3 {color: #fff;}",
-        ".article-image,.article-detail {padding-top: 12px;}"
-      ],
-      "settings": {
-        "title": "OSHA COMPLIANCE KIT",
-        "is_article": false,
-        "article": "",
-        "link": "",
-        "block_title": "Are You OSHA Compliant?",
-        "block_url": "",
-        "block_image": "shopify://shop_images/osha_kit_44eb26e6-71f5-4a10-a1c6-0e834ee2784c.png",
-        "block_content": "<p>With our free OSHA compliance kit, you’ll have everything you need to get started on meeting OSHA Standards for cleaning with compressed air in your facility.</p>",
-        "author": "",
-        "button_label": "ORDER YOUR FREE KIT",
-        "button_link": "shopify://pages/order-an-osha-compliance-kit"
-      }
     }
   },
   "order": [
@@ -458,7 +438,6 @@
     "featured_collection",
     "rich_text_6KAite",
     "gua_mixed_content_rhKwgm",
-    "video_with_text_HyfDyC",
-    "d7c7a8d5-0b39-42b7-812d-91d098fcdcd1"
+    "video_with_text_HyfDyC"
   ]
 }
