@@ -349,6 +349,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "h2 {text-transform: none;}",
         ".card__inner.ratio {height: auto !important; aspect-ratio: auto !important;}",
@@ -405,6 +406,7 @@
         "heading_9XMMNn",
         "text_6nWKp7"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 36px;}",
         "@media screen and (max-width: 767px) {h2 {font-size: 32px; }}",
@@ -525,6 +527,7 @@
         "text_YPDCYy",
         "button_YmyykQ"
       ],
+      "disabled": true,
       "custom_css": [
         "p {font-size: 18px; color: #000;}",
         "h2 {font-size: 36px; color: #000;}",
