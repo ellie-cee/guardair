@@ -362,8 +362,8 @@
         "type": "range",
         "id": "button_letter_spacing",
         "min": 0,
-        "max": 100,
-        "step": 5,
+        "max": 9,
+        "step": 1,
         "unit": "em",
         "label": "Button Letter Spacing",
         "default": 0
