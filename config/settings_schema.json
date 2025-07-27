@@ -339,6 +339,26 @@
         "default": 0
       },
       {
+        "type": "select",
+        "id": "button_font_weight",
+        "options": [
+          {
+            "value": "100",
+            "label": "Light"
+          },
+          {
+            "value": "400",
+            "label": "Normal"
+          },
+          {
+            "value": "600",
+            "label": "Bold"
+          }
+        ],
+        "default": "400",
+        "label": "Font Weight"
+      },
+      {
         "type": "checkbox",
         "id": "buttons_caps",
         "label": "Text UPPERCASE",
