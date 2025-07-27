@@ -332,7 +332,7 @@
         "type": "range",
         "id": "button_font_size",
         "min": 12,
-        "max": 20,
+        "max": 28,
         "step": 1,
         "unit": "px",
         "label": "Button Font Size",
