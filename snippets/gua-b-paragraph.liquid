@@ -1,0 +1,35 @@
+ <div class="flex__content-block__content">
+                {% if block.settings.image != blank %}
+                  {% liquid
+                    assign image = block.settings.image
+                    assign image_aspect_ratio = image.aspect_ratio
+                    assign image_height = block.settings.image_height
+                    assign image_width = image_height | times: image_aspect_ratio
+                    assign image_width_full = image_width | times: 2
+                  %}
+
+                  {% capture widths %}{{ image_width }}, {{ image_width | times: 1.5 | round }}, {{ image_width | times: 2 }}{% endcapture %}
+                  {% capture sizes %}(max-width: {{ image_width }}px) 100vw, {{ image_width }}px{% endcapture %}
+
+                  {{
+                    image
+                    | image_url: width: image_width_full
+                    | image_tag:
+                      class: 'flex__content-image motion-reduce',
+                      widths: widths,
+                      height: image_height,
+                      width: image_width,
+                      alt: image.alt,
+                      sizes: sizes,
+                      preload: false
+                  }}
+                {% endif %}
+
+                <h3 class="flex__content-block__heading">{{ block.settings.heading }}</h3>
+                <div class="flex__content-block__text">{{ block.settings.content }}</div>
+                {% if block.settings.button_text != blank %}
+                  <a href="{{ block.settings.button_link }}" class="flex__content-block__button button button--round">
+                    {{- block.settings.button_text -}}
+                  </a>
+                {% endif %}
+</div>
