@@ -12,6 +12,7 @@
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
 
 {% comment %} --- BUTTONS --- {% endcomment %}
+.button, .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded {min-width: calc(12rem + var(--buttons-border-width) * 2);min-height: calc(2.5rem + var(--buttons-border-width) * 2);}
 .button {
 {% if settings.button_vertical_padding != 0 %}padding-top: {{  settings.button_vertical_padding }}px;padding-bottom: {{  settings.button_vertical_padding }}px;{% endif %}  
 {% if settings.button_caps %}text-transform:uppercase;{% endif %}
