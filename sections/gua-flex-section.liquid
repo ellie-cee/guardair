@@ -1,6 +1,598 @@
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "GUA Flex Sections",
+  "settings": [
+    {
+      "id": "color_scheme",
+      "type": "color_scheme",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "header",
+      "content": "Connect with us"
+    },
+    {
+      "id": "enable_connect_panel",
+      "type": "checkbox",
+      "label": "Enable Connect Panel",
+      "default": true
+    },
+    {
+      "id": "connect_heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Connect with us"
+    },
+    {
+      "id": "connect_text",
+      "type": "richtext",
+      "label": "Text",
+      "default": "<p>Connect with us on social media to stay up to date on the latest news and events.</p>"
+    },
+    {
+      "id": "connect_button_link",
+      "type": "url",
+      "label": "Button Link"
+    },
+    {
+      "id": "connect_button_onclick",
+      "type": "text",
+      "label": "Button JS Function"
+    },
+    {
+      "id": "connect_button_text",
+      "type": "text",
+      "label": "Button Text"
+    },
+    {
+      "type": "header",
+      "content": "Social"
+    },
+    {
+      "id": "social_heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Follow us on social media"
+    },
+    {
+      "id": "social_text",
+      "type": "richtext",
+      "label": "Text",
+      "default": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "column",
+          "type": "number",
+          "label": "Column",
+          "default": 1
+        },
+        {
+          "id": "row_mobile",
+          "type": "number",
+          "label": "Row Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_mobile",
+          "type": "number",
+          "label": "Column Mobile",
+          "default": 1
+        },
+        {
+          "id": "row_span",
+          "type": "number",
+          "label": "Row Span",
+          "default": 1
+        },
+        {
+          "id": "column_span",
+          "type": "number",
+          "label": "Column Span",
+          "default": 1
+        },
+        {
+          "id": "row_span_mobile",
+          "type": "number",
+          "label": "Row Span Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_span_mobile",
+          "type": "number",
+          "label": "Column Span Mobile",
+          "default": 1
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "id": "image_height",
+          "type": "number",
+          "label": "Image Height",
+          "default": 54
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading",
+          "default": "Paragraph Heading"
+        },
+        {
+          "id": "content",
+          "type": "richtext",
+          "label": "Content",
+          "default": "<p>Paragraph Content</p>"
+        },
+        {
+          "id": "button_link",
+          "type": "url",
+          "label": "Button Link"
+        },
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button Text"
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "name": "Contact",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "column",
+          "type": "number",
+          "label": "Column",
+          "default": 1
+        },
+        {
+          "id": "row_mobile",
+          "type": "number",
+          "label": "Row Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_mobile",
+          "type": "number",
+          "label": "Column Mobile",
+          "default": 1
+        },
+        {
+          "id": "row_span",
+          "type": "number",
+          "label": "Row Span",
+          "default": 1
+        },
+        {
+          "id": "column_span",
+          "type": "number",
+          "label": "Column Span",
+          "default": 1
+        },
+        {
+          "id": "row_span_mobile",
+          "type": "number",
+          "label": "Row Span Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_span_mobile",
+          "type": "number",
+          "label": "Column Span Mobile",
+          "default": 1
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading",
+          "default": "Contact Us"
+        },
+        {
+          "id": "content",
+          "type": "richtext",
+          "label": "Content",
+          "default": "<p>Paragraph Content</p>"
+        },
+        {
+          "id": "contact_us_link",
+          "type": "url",
+          "label": "Contact Us Link"
+        },
+        {
+          "id": "contact_us_text",
+          "type": "text",
+          "label": "Contact Us Text",
+          "default": "Contact Us"
+        },
+        {
+          "id": "phone_icon",
+          "type": "html",
+          "label": "Phone Icon"
+        },
+        {
+          "id": "phone_number",
+          "type": "text",
+          "label": "Phone Number"
+        },
+        {
+          "id": "phone_hours",
+          "type": "text",
+          "label": "Phone Hours"
+        },
+        {
+          "id": "email_icon",
+          "type": "html",
+          "label": "Email Icon"
+        },
+        {
+          "id": "email_address",
+          "type": "text",
+          "label": "Email Address"
+        },
+        {
+          "id": "live_chat_icon",
+          "type": "html",
+          "label": "Live Chat Icon"
+        },
+        {
+          "id": "live_chat_text",
+          "type": "text",
+          "label": "Live Chat Text"
+        },
+        {
+          "id": "live_chat_onclick",
+          "type": "text",
+          "label": "Live Chat JS Function"
+        }
+      ]
+    },
+    {
+      "type": "linklist",
+      "name": "Links",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "column",
+          "type": "number",
+          "label": "Column",
+          "default": 1
+        },
+        {
+          "id": "row_mobile",
+          "type": "number",
+          "label": "Row Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_mobile",
+          "type": "number",
+          "label": "Column Mobile",
+          "default": 1
+        },
+        {
+          "id": "row_span",
+          "type": "number",
+          "label": "Row Span",
+          "default": 1
+        },
+        {
+          "id": "column_span",
+          "type": "number",
+          "label": "Column Span",
+          "default": 1
+        },
+        {
+          "id": "row_span_mobile",
+          "type": "number",
+          "label": "Row Span Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_span_mobile",
+          "type": "number",
+          "label": "Column Span Mobile",
+          "default": 1
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "id": "links",
+          "type": "link_list",
+          "label": "Links"
+        }
+      ]
+    },
+    {
+      "type": "divisions",
+      "name": "Divisions",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "column",
+          "type": "number",
+          "label": "Column",
+          "default": 1
+        },
+        {
+          "id": "row_mobile",
+          "type": "number",
+          "label": "Row Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_mobile",
+          "type": "number",
+          "label": "Column Mobile",
+          "default": 1
+        },
+        {
+          "id": "row_span",
+          "type": "number",
+          "label": "Row Span",
+          "default": 1
+        },
+        {
+          "id": "column_span",
+          "type": "number",
+          "label": "Column Span",
+          "default": 1
+        },
+        {
+          "id": "row_span_mobile",
+          "type": "number",
+          "label": "Row Span Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_span_mobile",
+          "type": "number",
+          "label": "Column Span Mobile",
+          "default": 1
+        },
+        {
+          "type": "header",
+          "content": "Customization"
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "id": "image_height",
+          "type": "number",
+          "label": "Image Height",
+          "default": 38
+        },
+        {
+          "id": "division_link_1",
+          "type": "url",
+          "label": "Division Link 1"
+        },
+        {
+          "id": "division_image_1",
+          "type": "image_picker",
+          "label": "Division Image 1"
+        },
+        {
+          "id": "division_link_2",
+          "type": "url",
+          "label": "Division Link 2"
+        },
+        {
+          "id": "division_image_2",
+          "type": "image_picker",
+          "label": "Division Image 2"
+        }
+      ]
+    },
+    {
+      "type": "subscribe",
+      "name": "Newsletter Subscribe",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "id": "show_on_mobile",
+          "type": "checkbox",
+          "label": "Show on mobile",
+          "default": true
+        },
+        {
+          "id": "show_on_desktop",
+          "type": "checkbox",
+          "label": "Show on desktop",
+          "default": true
+        },
+        {
+          "id": "row",
+          "type": "number",
+          "label": "Row",
+          "default": 1
+        },
+        {
+          "id": "column",
+          "type": "number",
+          "label": "Column",
+          "default": 1
+        },
+        {
+          "id": "row_mobile",
+          "type": "number",
+          "label": "Row Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_mobile",
+          "type": "number",
+          "label": "Column Mobile",
+          "default": 1
+        },
+        {
+          "id": "row_span",
+          "type": "number",
+          "label": "Row Span",
+          "default": 1
+        },
+        {
+          "id": "column_span",
+          "type": "number",
+          "label": "Column Span",
+          "default": 1
+        },
+        {
+          "id": "row_span_mobile",
+          "type": "number",
+          "label": "Row Span Mobile",
+          "default": 1
+        },
+        {
+          "id": "column_span_mobile",
+          "type": "number",
+          "label": "Column Span Mobile",
+          "default": 1
+        },
+        {
+          "id": "connect_heading",
+          "type": "text",
+          "label": "Heading",
+          "default": "Connect with us"
+        },
+        {
+          "id": "connect_text",
+          "type": "richtext",
+          "label": "Text",
+          "default": "<p>Connect with us on social media to stay up to date on the latest news and events.</p>"
+        },
+        {
+          "id": "connect_button_link",
+          "type": "url",
+          "label": "Button Link"
+        },
+        {
+          "id": "connect_button_onclick",
+          "type": "text",
+          "label": "Button JS Function"
+        },
+        {
+          "id": "connect_button_text",
+          "type": "text",
+          "label": "Button Text"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
