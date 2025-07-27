@@ -12,18 +12,17 @@
     <h2>{{ section.settings.title }}</h2>
   </div>
 {%- if section.blocks.size > 0 -%}
-  <!-- featured-container begins -->
+ 
   <section class="featured-container" data-section-id="{{ section.id }}" data-section-type="featured-block">
     {%- for block in section.blocks -%}
-      <!-- featured-box begins -->
-      {% comment %}<div class="featured-box" {%- if block.settings.image -%} style="background-image: url('{{ block.settings.image | img_url: '800x' }}');"{%- endif -%}>{% endcomment %}
+ 
       <div class="featured-box vk--text-{{ block.settings.text_alignment }} {% if block.settings.text_background %}itg--text-bg{% endif %} {% if block.settings.border %}itg--border_main{% endif %}" {%- if block.settings.image -%} style="background-image: url('{{ block.settings.image | img_url: '800x' }}');"{%- endif -%}>
-        <!-- container begins -->
+ 
         <div class="container">
-          <!-- box-panel begins -->
+ 
           <div class="box-panel">
             <div class="vk--box-main">
-            <!-- box-title begins -->
+ 
             <div class="box-title"><h3>{{ block.settings.title }}</h3></div>
 
             <div class="box-desc">{{ block.settings.body }}</div>
@@ -44,14 +43,14 @@
             </div>
             </div>
           </div>
-          <!-- box-panel begins -->
+  
         </div>
-        <!-- container ends -->
+    
       </div>
-      <!-- featured-item ends -->
+ 
     {%- endfor -%}
   </section>
-  <!-- featured-container ends -->
+ 
 {%- endif -%}
 </div>
 </div>
