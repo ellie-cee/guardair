@@ -20,8 +20,8 @@
         "padding_bottom": 0
       }
     },
-    "v2-footer": {
-      "type": "v2-footer",
+    "gua-footer": {
+      "type": "gua-footer",
       "blocks": {
         "paragraph_xxdELJ": {
           "type": "paragraph",
@@ -194,8 +194,5 @@
       }
     }
   },
-  "order": [
-    "custom_liquid_aiPi7w",
-    "v2-footer"
-  ]
+  "order": ["custom_liquid_aiPi7w", "gua-footer"]
 }
