@@ -72,7 +72,7 @@
       }
     },
     "header": {
-      "type": "v2-header",
+      "type": "gua-header",
       "blocks": {
         "logo_ezQrLt": {
           "type": "logo",
@@ -269,8 +269,5 @@
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header"
-  ]
+  "order": ["announcement-bar", "header"]
 }
