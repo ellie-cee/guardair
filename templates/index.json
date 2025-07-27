@@ -159,10 +159,7 @@
         "featured_block_C9NrnX",
         "featured_block_4PcFxF"
       ],
-      "custom_css": [
-        ".itg_btn {padding: 12px 20px; background-color: #4b92db;}",
-        "@media screen and (max-width: 767px) {h2 {font-size: 32px; padding-bottom: 10px; } h3 {font-size: 32px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Innovative Cleaning Solutions",
         "heading_text_color": "#000000",
