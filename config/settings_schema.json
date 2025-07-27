@@ -315,6 +315,10 @@
         "default": 0
       },
       {
+        "type": "header",
+        "content": "Button Overrides"
+      },
+      {
         "type": "checkbox",
         "id": "buttons_caps",
         "label": "Text UPPERCASE",
