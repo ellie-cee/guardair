@@ -2,8 +2,6 @@
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
-
-    #Banner-{{ section.id }} .banner__text {color:rgba(var(--color-foreground), 1);}
     
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}::before,
@@ -19,9 +17,8 @@
 {%- endif -%}
 
 {%- style -%}
-  #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
-  }
+  #Banner-{{ section.id }}::after {opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};}
+      #Banner-{{ section.id }} .banner__text {color:rgba(var(--color-foreground), 1);}
 {%- endstyle -%}
 
 {%- liquid
