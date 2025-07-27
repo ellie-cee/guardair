@@ -6,8 +6,6 @@
   <div class="page-width flex__content">
       {% for i in (1..number_of_rows) %}
     <div class="flex__row page-width row-{{ i }}">
-      <div class="flex__row-inner">
-
         
           {% for block in section.blocks %}
              {% if block.settings.row == i %}
@@ -43,7 +41,7 @@
                   </div>
                {% endif %}
                 {% endfor %}
-      </div>
+
     </div>
         {% endfor %}
     </div>
