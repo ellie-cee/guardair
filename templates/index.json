@@ -230,6 +230,135 @@
         "padding_bottom": 0
       }
     },
+    "gua_multicolumn_Tj6HwR": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_wMRWyJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PowerQUAD_55_Gallon_Vacuum_Kit.webp",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">Standard Pneumatic Vacuums</a>  provide powerful, versatile solutions for heavy-duty industrial cleaning.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MGhJUq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200NED_ca25b7e6-bc3c-4809-84c7-762624e44d89.jpg",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">Non-Electrical Discharge (NED) Pneumatic Vacuums</a> eliminate static electricity, making them ideal for static-sensitive environments.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Qe6RhH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ30C150ATEX_Main_ae91db30-79c7-4388-ac44-88fbc6084cf4.jpg",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">ATEX Certified Pneumatic Vacuums</a> are certified for safe use in hazardous environments with flammable dust or gases.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_X3Jya3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200NEDPA_310e486b-9612-4fea-900f-9afac4fe261f.jpg",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">PulseAir™ Pneumatic Vacuums & Dust Extractors</a> are powerful industrial vacuums incorporating a proprietary, button-activated system engineered to clean the vacuum filter without opening the unit.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wMRWyJ",
+        "column_MGhJUq",
+        "column_Qe6RhH",
+        "column_X3Jya3"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "title": "Pneumatic Vacuums",
+        "heading_size": "h1",
+        "font_style": "blue-subtitle",
+        "description": "Featuring a patent-pending, dualstage vacuum, multi-venturi generating engine, powerful PowerQUAD vacuums save energy. PowerQUAD can be configured to match your compressed air supply while optimizing vacuum performance.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "ptitle_fix": "remove_model",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "Shop All",
+        "button_link": "#",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
+    "image_with_text_94tjDg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yKy8CG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Take the Product Quiz",
+            "heading_size": "h1"
+          }
+        },
+        "text_KCnA3C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not sure which Guardair tool is best?  Answer a few quick questions and we'll point you in the right direction.</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_hNXPPx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start Quiz",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yKy8CG",
+        "text_KCnA3C",
+        "button_hNXPPx"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/PQ_family_vacs.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
+        "color_scheme": "scheme-14641472-9d04-478c-88ca-0fac7f4aef46",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 24,
+        "padding_bottom": 40
+      }
+    },
     "image_with_text_FgG4Yx": {
       "type": "image-with-text",
       "blocks": {
@@ -264,6 +393,7 @@
         "text_RfAR4Q",
         "button_3yAkey"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 36px;}",
         ".image-with-text__media {border: none;}",
@@ -333,6 +463,7 @@
         "featured_block_C9NrnX",
         "featured_block_4PcFxF"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "title": "Innovative Cleaning Solutions",
@@ -343,57 +474,6 @@
         "text_color": "#ffffff",
         "padding_top": 60,
         "padding_bottom": 0
-      }
-    },
-    "image_with_text_94tjDg": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_yKy8CG": {
-          "type": "heading",
-          "settings": {
-            "heading": "Take the Product Quiz",
-            "heading_size": "h1"
-          }
-        },
-        "text_KCnA3C": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Not sure which Guardair tool is best?  Answer a few quick questions and we'll point you in the right direction.</p>",
-            "text_style": "subtitle"
-          }
-        },
-        "button_hNXPPx": {
-          "type": "button",
-          "settings": {
-            "button_label": "Start Quiz",
-            "button_link": "#",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_yKy8CG",
-        "text_KCnA3C",
-        "button_hNXPPx"
-      ],
-      "custom_css": [],
-      "settings": {
-        "image": "shopify://shop_images/PQ_family_vacs.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "right",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
-        "color_scheme": "scheme-14641472-9d04-478c-88ca-0fac7f4aef46",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 24,
-        "padding_bottom": 40
       }
     },
     "featured_collection": {
@@ -605,9 +685,10 @@
     "gua_icon_bar_QiQw48",
     "gua_multicolumn_fD7AFm",
     "image_with_text_ec78Mz",
+    "gua_multicolumn_Tj6HwR",
+    "image_with_text_94tjDg",
     "image_with_text_FgG4Yx",
     "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8",
-    "image_with_text_94tjDg",
     "featured_collection",
     "rich_text_6KAite",
     "gua_mixed_content_rhKwgm",
