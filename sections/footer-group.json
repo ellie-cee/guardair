@@ -184,7 +184,7 @@
         "color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
         "footer_links": "footer-1",
         "enable_connect_panel": true,
-        "connect_heading": "CONNECT WITH US",
+        "connect_heading": "Connect with us",
         "connect_text": "<p>Get 10% off when you sign up for our Newsletter:</p>",
         "connect_button_link": "",
         "connect_button_onclick": "window._klOnsite = window._klOnsite || []; window._klOnsite.push(['openForm', 'TsMBgR']);",
@@ -194,5 +194,8 @@
       }
     }
   },
-  "order": ["custom_liquid_aiPi7w", "gua-footer"]
+  "order": [
+    "custom_liquid_aiPi7w",
+    "gua-footer"
+  ]
 }
