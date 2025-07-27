@@ -9,6 +9,68 @@
  */
 {
   "sections": {
+    "gua_multicolumn_fD7AFm": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_td3QEb": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-quietforce-u74-safety-air-gun-super-fan-nozzle-83-dba",
+            "alt_ptitle": ""
+          }
+        },
+        "product_HTLaAt": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80-safety-air-gun-with-volume-control",
+            "alt_ptitle": ""
+          }
+        },
+        "product_RV7VwP": {
+          "type": "product",
+          "settings": {
+            "product": "classic-quietforce-74g-safety-air-gun-brass-nozzle-80-dba",
+            "alt_ptitle": ""
+          }
+        },
+        "product_LgBFkH": {
+          "type": "product",
+          "settings": {
+            "product": "palmjet-ga44-safety-air-gun-18-bent",
+            "alt_ptitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_td3QEb",
+        "product_HTLaAt",
+        "product_RV7VwP",
+        "product_LgBFkH"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "title": "Safety Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "ptitle_fix": "remove_model",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "Shop All",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
     "image_banner_XbTPBM": {
       "type": "gua-image-banner",
       "blocks": {
@@ -159,6 +221,7 @@
         "featured_block_C9NrnX",
         "featured_block_4PcFxF"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "title": "Innovative Cleaning Solutions",
@@ -363,6 +426,65 @@
     },
     "gua_mixed_content_rhKwgm": {
       "type": "gua-mixed-content",
+      "blocks": {
+        "multi_block_nyPBL7": {
+          "type": "multi_block",
+          "settings": {
+            "title": "Our Heritage",
+            "body": "",
+            "links": "",
+            "contact_icon_1": "",
+            "contact_text_1": "",
+            "contact_icon_2": "",
+            "contact_text_2": "",
+            "contact_icon_3": "",
+            "contact_text_3": "",
+            "faq_title": "",
+            "faq_question_1": "",
+            "faq_answer_1": "",
+            "faq_question_2": "",
+            "faq_answer_2": "",
+            "faq_question_3": "",
+            "faq_answer_3": "",
+            "faq_question_4": "",
+            "faq_answer_4": "",
+            "faq_question_5": "",
+            "faq_answer_5": "",
+            "faq_bottom": ""
+          }
+        },
+        "multi_block_baVG6E": {
+          "type": "multi_block",
+          "settings": {
+            "title": "",
+            "body": "",
+            "links": "",
+            "contact_icon_1": "",
+            "contact_text_1": "",
+            "contact_icon_2": "",
+            "contact_text_2": "",
+            "contact_icon_3": "",
+            "contact_text_3": "",
+            "faq_title": "",
+            "faq_question_1": "",
+            "faq_answer_1": "",
+            "faq_question_2": "",
+            "faq_answer_2": "",
+            "faq_question_3": "",
+            "faq_answer_3": "",
+            "faq_question_4": "",
+            "faq_answer_4": "",
+            "faq_question_5": "",
+            "faq_answer_5": "",
+            "faq_bottom": ""
+          }
+        }
+      },
+      "block_order": [
+        "multi_block_nyPBL7",
+        "multi_block_baVG6E"
+      ],
+      "disabled": true,
       "name": "GUA Mixed Content",
       "settings": {
         "background_image": "shopify://shop_images/ga-shield.png",
@@ -428,6 +550,7 @@
     }
   },
   "order": [
+    "gua_multicolumn_fD7AFm",
     "image_banner_XbTPBM",
     "gua_icon_bar_QiQw48",
     "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8",
