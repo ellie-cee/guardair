@@ -220,6 +220,10 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
   <nav class="hide-on-mobile v2-header__nav-menu
     {% if section.settings.nav_color_scheme != blank %}gradient color-{{ section.settings.nav_color_scheme }}{% endif %}
     ">
+                    {% for scheme in settings.color_schemes -%}
+                          {% if scheme.id == section.settings.nav_color_scheme %}
+                      {% style %}body.template-index .v2-header__nav-menu.gradient {background:  {{ scheme.settings.background_gradient }};} {% endstyle %}{% endif %}
+                    {% endfor %}
     <div class=" page-width">
       <ul class="v2-header__nav-menu-list">
         {% for link in section.settings.nav_menu.links %}
@@ -241,10 +245,6 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
               {% endif %}
             </a>
             {% if link.links.size > 0 %}
-                    {% for scheme in settings.color_schemes -%}
-                          {% if scheme.id == section.settings.secondary_color %}
-                      {% style %}body.template-index .v2-header__nav-menu.gradient {background:  {{ scheme.settings.background_gradient }};} {% endstyle %}{% endif %}
-                    {% endfor %}
               <ul 
                 style="--border-color: {{ section.settings.sub_menu_border_color }};"
               class="v2-header__nav-menu-submenu 
