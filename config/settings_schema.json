@@ -320,16 +320,6 @@
       },
       {
         "type": "range",
-        "id": "button_font_size",
-        "min": 12,
-        "max": 20,
-        "step": 1,
-        "unit": "px",
-        "label": "Button Font Size",
-        "default": 15
-      },
-      {
-        "type": "range",
         "id": "button_vertical_padding",
         "min": 0,
         "max": 10,
@@ -337,6 +327,16 @@
         "unit": "px",
         "label": "Button Vertical Padding",
         "default": 0
+      },
+      {
+        "type": "range",
+        "id": "button_font_size",
+        "min": 12,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Button Font Size",
+        "default": 15
       },
       {
         "type": "select",
@@ -357,6 +357,16 @@
         ],
         "default": "400",
         "label": "Font Weight"
+      },
+      {
+        "type": "range",
+        "id": "button_letter_spacing",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "em",
+        "label": "Button Letter Spacing",
+        "default": 0
       },
       {
         "type": "checkbox",
