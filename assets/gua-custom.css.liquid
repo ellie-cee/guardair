@@ -19,7 +19,7 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 @media (min-width: 768px) {
 body.template-index .v2-header__nav-menu {margin-top: 0;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
 }
-body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 }};}
+body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' }};}
 
 {% comment %} --- ANNOUNCEMENT BAR --- {% endcomment %}
 .announcement-bar p.announcement-bar__message {font-size: 1.5rem;letter-spacing:0.1em; font-weight: 100;}
