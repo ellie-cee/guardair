@@ -4,6 +4,7 @@ px{% assign accent_color1 = '#328ad2' %}
 {% assign gray_color = '#f1f1f1' %}
 {% assign desktop_max_width = '1200px' %}
 {% assign border_radius = '' %}
+{% assign accent_gradient1 = accent_color2 | color_to_rgb %}
 {% assign accent_gradient2 = accent_color1 | color_to_rgb %}
 
 
@@ -20,7 +21,9 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 body.template-index .v2-header__nav-menu {margin-top: 0;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
 }
 body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' | replace:')',',0.75)' }};}
+body.template-index .v2-header__nav-menu-item:first-of-type {background: {{ accent_gradient1 | replace:'rgb','rgba' | replace:')',',0.75)' }};};border-bottom: 2px solid #0027868c;margin: -6px auto;border-top: 5px solid #0027868c;}
 
+  
 {% comment %} --- ANNOUNCEMENT BAR --- {% endcomment %}
 .announcement-bar p.announcement-bar__message {font-size: 1.2rem;letter-spacing:0.1em; font-weight: 100;}
 {% comment %}
