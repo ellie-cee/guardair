@@ -351,22 +351,22 @@
         "heading_yKy8CG": {
           "type": "heading",
           "settings": {
-            "heading": "Introducing PowerQUAD™ Vacuums",
+            "heading": "Take the Product Quiz",
             "heading_size": "h1"
           }
         },
         "text_KCnA3C": {
           "type": "text",
           "settings": {
-            "text": "<p>The most significant advancement in pneumatic vacuum technology in over 75 years! Experience unparalleled vacuum performance and energy savings with the new PowerQUAD™ pneumatic vacuum line by Guardair Corporation.</p>",
-            "text_style": "body"
+            "text": "<p>Not sure which Guardair tool is best?  Answer a few quick questions and we'll point you in the right direction.</p>",
+            "text_style": "subtitle"
           }
         },
         "button_hNXPPx": {
           "type": "button",
           "settings": {
-            "button_label": "LEARN MORE",
-            "button_link": "shopify://pages/powerquad-pneumatic-vacuums",
+            "button_label": "Start Quiz",
+            "button_link": "#",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -379,23 +379,17 @@
         "text_KCnA3C",
         "button_hNXPPx"
       ],
-      "custom_css": [
-        "h2 {font-size: 36px;}",
-        ".image-with-text__media {border: none;}",
-        ".image-with-text {border-bottom: 2px solid #ddd; padding-bottom: 25px;}",
-        ".image-with-text__content .image-with-text__text + .button {margin-top: 0rem;}",
-        "@media screen and (max-width: 767px) {h2 {font-size: 32px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/powerquad-family-vacs-press-release.jpg",
         "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
+        "desktop_image_width": "small",
+        "layout": "image_first",
         "desktop_content_position": "bottom",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-1",
+        "section_color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
+        "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 24,
