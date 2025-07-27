@@ -51,7 +51,7 @@
       "settings": {
         "title": "Safety Air Guns",
         "heading_size": "h1",
-        "font_style": "inline-richtext",
+        "font_style": "blue-subtitle",
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
