@@ -27,7 +27,7 @@
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
-    "button_vertical_padding": 5,
+    "button_vertical_padding": 10,
     "button_font_size": 20,
     "button_font_weight": "100",
     "button_letter_spacing": 1,
