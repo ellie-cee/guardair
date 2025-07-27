@@ -11,26 +11,8 @@
         
           {% for block in section.blocks %}
              {% if block.settings.row == i %}
-                  <div
-                    class="
-                      flex__content-block
-                      {% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}
-                      {% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}
-                      flex__content-block-{{ block.type }}
-                    "
-                    style="
-                      --desktop-row: {{ block.settings.row }};
-                      --desktop-column: {{ block.settings.column }};
-                      --desktop-row-span: {{ block.settings.row_span }};
-                      --desktop-column-span: {{ block.settings.column_span }};
-          
-                      --mobile-row: {{ block.settings.row_mobile }};
-                      --mobile-column: {{ block.settings.column_mobile }};
-                      --mobile-row-span: {{ block.settings.row_span_mobile }};
-                      --mobile-column-span: {{ block.settings.column_span_mobile }};
-                    "
-                    {{ block.shopify_attributes }}
-                  >
+                  <div class="{% if block.settings.show_on_desktop != true %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile != true %} hide-on-mobile{% endif %}"
+                  style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};" {{ block.shopify_attributes }}>
                     {% case block.type %}
                       {% when 'heading' %}        
                               {% render 'gua-b-heading',block:block %}     
