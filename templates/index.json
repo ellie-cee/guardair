@@ -116,47 +116,63 @@
     "gua_multicolumn_fD7AFm": {
       "type": "gua-multicolumn",
       "blocks": {
-        "product_td3QEb": {
-          "type": "product",
+        "column_cNqCtf": {
+          "type": "column",
           "settings": {
-            "product": "ultra-quietforce-u74-safety-air-gun-super-fan-nozzle-83-dba",
-            "alt_ptitle": ""
+            "image": "shopify://shop_images/guardair-ultra-xtrathrust-u75xt-6-inch-long-trigger-u75xt006aa3-main.jpg",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">Ultra® </a>Safety Air Guns feature an ergonomic cushioned grip for comfort and durability. Available with a wide assortment of extensions and nozzles, they deliver the ultimate in OSHA compliant cleaning.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "product_HTLaAt": {
-          "type": "product",
+        "column_QG4UHh": {
+          "type": "column",
           "settings": {
-            "product": "whisperjet-80-safety-air-gun-with-volume-control",
-            "alt_ptitle": ""
+            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">WhisperJet® </a>Safety Air Guns deliver powerful cleaning with low-noise operation, ideal for noise-sensitive environments. Featuring a unique nozzle design, they balance safety, noise reduction, and performance.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "product_RV7VwP": {
-          "type": "product",
+        "column_e4azRF": {
+          "type": "column",
           "settings": {
-            "product": "classic-quietforce-74g-safety-air-gun-brass-nozzle-80-dba",
-            "alt_ptitle": ""
+            "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust-75xxt.png",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">Classic+®</a> Safety Air Guns combine our most popular design with enhanced safety features for reliable industrial cleaning. Built for durability, they feature OSHA-compliant nozzles and an ergonomic pistol-style grip for safe, powerful performance</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "product_LgBFkH": {
-          "type": "product",
+        "column_HPqrkt": {
+          "type": "column",
           "settings": {
-            "product": "palmjet-ga44-safety-air-gun-18-bent",
-            "alt_ptitle": ""
+            "image": "shopify://shop_images/guardair-palmjet-ga44-safety-air-gun-4-inch-straight-ga4404s-main.jpg",
+            "image_link": "",
+            "title": "",
+            "text": "<p><a href=\"#\" title=\"#\">PalmJet®</a> Safety Air Guns are compact, lightweight, and perfect for cleaning tight spaces. With a comfortable, palm-style grip, adjustable airflow, and straight or bent extensions, they offer</p><p>exceptional cleaning power</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "product_td3QEb",
-        "product_HTLaAt",
-        "product_RV7VwP",
-        "product_LgBFkH"
+        "column_cNqCtf",
+        "column_QG4UHh",
+        "column_e4azRF",
+        "column_HPqrkt"
       ],
       "name": "GUA Multicolumns",
       "settings": {
         "title": "Safety Air Guns",
         "heading_size": "h1",
         "font_style": "blue-subtitle",
-        "description": "",
+        "description": "Guardair Safety Air Guns provide exceptional performance, maximize operator comfort, and meet OSHA Standards.",
         "image_width": "full",
         "image_ratio": "adapt",
         "ptitle_fix": "remove_model",
