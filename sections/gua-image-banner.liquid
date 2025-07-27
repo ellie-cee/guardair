@@ -124,7 +124,7 @@
             </div>
           {%- when 'buttons' -%}
           {% if block.settings.display_inline %}{% style %}
-                  .banner__buttons {max-width:75vw;}
+                  .banner__buttons {max-width:75vw;}  
               {% endstyle %}{% endif %}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
