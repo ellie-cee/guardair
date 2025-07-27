@@ -230,6 +230,63 @@
         "anchor_id": ""
       }
     },
+    "image_with_text_FgG4Yx": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DwrcAG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ultra® Air Guns: Back in Stock!",
+            "heading_size": "h1"
+          }
+        },
+        "text_RfAR4Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ultra® Safety Air Guns are available again! These ergonomic, cushioned-grip air guns deliver powerful, precise cleaning while meeting OSHA safety standards. Choose from a range of nozzles and extension lengths to fit your needs.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_3yAkey": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://pages/ultra-safety-air-guns",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DwrcAG",
+        "text_RfAR4Q",
+        "button_3yAkey"
+      ],
+      "custom_css": [
+        "h2 {font-size: 36px;}",
+        ".image-with-text__media {border: none;}",
+        ".image-with-text {border-bottom: 2px solid #ddd; padding-bottom: 25px;}",
+        ".image-with-text__content .image-with-text__text + .button {margin-top: 0rem;}",
+        "@media screen and (max-width: 767px) {h2 {font-size: 32px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/U75LJ012SS3_MAIN_IMAGE_800x800_fda6d2dc-a54b-4011-81cf-d23c36008d75.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 24,
+        "padding_bottom": 40
+      }
+    },
     "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8": {
       "type": "featured-block",
       "blocks": {
@@ -286,63 +343,6 @@
         "text_color": "#ffffff",
         "padding_top": 60,
         "padding_bottom": 0
-      }
-    },
-    "image_with_text_FgG4Yx": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_DwrcAG": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ultra® Air Guns: Back in Stock!",
-            "heading_size": "h1"
-          }
-        },
-        "text_RfAR4Q": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ultra® Safety Air Guns are available again! These ergonomic, cushioned-grip air guns deliver powerful, precise cleaning while meeting OSHA safety standards. Choose from a range of nozzles and extension lengths to fit your needs.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_3yAkey": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://pages/ultra-safety-air-guns",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_DwrcAG",
-        "text_RfAR4Q",
-        "button_3yAkey"
-      ],
-      "custom_css": [
-        "h2 {font-size: 36px;}",
-        ".image-with-text__media {border: none;}",
-        ".image-with-text {border-bottom: 2px solid #ddd; padding-bottom: 25px;}",
-        ".image-with-text__content .image-with-text__text + .button {margin-top: 0rem;}",
-        "@media screen and (max-width: 767px) {h2 {font-size: 32px; }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/U75LJ012SS3_MAIN_IMAGE_800x800_fda6d2dc-a54b-4011-81cf-d23c36008d75.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 24,
-        "padding_bottom": 40
       }
     },
     "image_with_text_94tjDg": {
@@ -611,8 +611,8 @@
     "image_with_text_ec78Mz",
     "gua_icon_bar_QiQw48",
     "gua_multicolumn_fD7AFm",
-    "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8",
     "image_with_text_FgG4Yx",
+    "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8",
     "image_with_text_94tjDg",
     "featured_collection",
     "rich_text_6KAite",
