@@ -44,64 +44,23 @@
             "button_text": ""
           }
         },
-        "paragraph_NnaGam": {
-          "type": "paragraph",
-          "disabled": true,
-          "settings": {
-            "show_on_mobile": false,
-            "show_on_desktop": true,
-            "row": 1,
-            "column": 2,
-            "row_mobile": 1,
-            "column_mobile": 2,
-            "row_span": 1,
-            "column_span": 1,
-            "row_span_mobile": 1,
-            "column_span_mobile": 1,
-            "image_height": 39,
-            "heading": "Contact & Support",
-            "content": "<p><strong>Guardair Corporation</strong><br/>47 Veterans Drive<br/>Chicopee, MA 01022-1062<br/><br/>800-482-7324<br/>Mon-Fri, 8 AM-5PM EST<br/><br/>info@guardair.com<br/><br/>Live Chat</p>",
-            "button_link": "",
-            "button_text": ""
-          }
-        },
-        "paragraph_RqVQzp": {
-          "type": "paragraph",
-          "settings": {
-            "show_on_mobile": true,
-            "show_on_desktop": true,
-            "row": 1,
-            "column": 2,
-            "row_mobile": 0,
-            "column_mobile": 1,
-            "row_span": 1,
-            "column_span": 4,
-            "row_span_mobile": 1,
-            "column_span_mobile": 1,
-            "image_height": 54,
-            "heading": "PRODUCT CATALOG",
-            "content": "<p>See our latest catalog full of products, accessories and replacement parts:</p>",
-            "button_link": "https://cdn.shopify.com/s/files/1/2656/7586/files/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868",
-            "button_text": "DOWNLOAD"
-          }
-        },
         "contact_96cXPU": {
           "type": "contact",
           "settings": {
             "show_on_mobile": true,
             "show_on_desktop": true,
             "row": 1,
-            "column": 2,
+            "column": 3,
             "row_mobile": 0,
             "column_mobile": 1,
             "row_span": 1,
             "column_span": 1,
             "row_span_mobile": 1,
             "column_span_mobile": 1,
-            "heading": "HELP",
-            "content": "",
-            "contact_us_link": "shopify://pages/contact-us",
-            "contact_us_text": "Contact Us",
+            "heading": "Contact & Support",
+            "content": "<p><strong>Guardair Corporation</strong><br/>47 Veterans Drive<br/>Chicopee, MA 01022-1062</p>",
+            "contact_us_link": "#",
+            "contact_us_text": "",
             "phone_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z\"></path></svg>",
             "phone_number": "800-482-7324",
             "phone_hours": "Mon - Fri 8AM ET - 5PM ET",
@@ -160,7 +119,7 @@
             "row_span_mobile": 1,
             "column_span_mobile": 1,
             "heading": "Helpful Links",
-            "links": "useful-link"
+            "links": "info"
           }
         },
         "divisions_Hfb8ti": {
@@ -183,17 +142,37 @@
             "division_link_2": "https://allpaxcorp.com/",
             "division_image_2": "shopify://shop_images/AP_logo_RGB_b7edfa12-2be3-4277-9759-6f549af08ca5.png"
           }
+        },
+        "paragraph_RqVQzp": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 2,
+            "row_mobile": 0,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 4,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "image_height": 54,
+            "heading": "PRODUCT CATALOG",
+            "content": "<p>See our latest catalog full of products, accessories and replacement parts:</p>",
+            "button_link": "https://cdn.shopify.com/s/files/1/2656/7586/files/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868",
+            "button_text": "DOWNLOAD"
+          }
         }
       },
       "block_order": [
         "paragraph_xxdELJ",
-        "paragraph_NnaGam",
-        "paragraph_RqVQzp",
         "contact_96cXPU",
         "linklist_ht3rzQ",
         "linklist_m6BjEt",
         "linklist_b8ALRM",
-        "divisions_Hfb8ti"
+        "divisions_Hfb8ti",
+        "paragraph_RqVQzp"
       ],
       "custom_css": [
         ".footer__top__content {margin-bottom: 12px;}",
