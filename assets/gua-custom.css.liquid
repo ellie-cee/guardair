@@ -23,7 +23,7 @@ body.template-index .v2-header__nav-menu {margin-top: 0;margin-bottom: 0rem;disp
 body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' | replace:')',',0.75)' }};}
 body.template-index .section-v2-header.scrolled-past-header .v2-header__nav-menu.gradient {background:{{ accent_gradient2 }};}
 
-:is(.v2-header__nav-menu-item:hover,.v2-header__nav-menu-item.v2-header--is-active) .v2-header__nav-menu-link, body.template-index .v2-header__nav-menu-item:first-of-type {
+:is(.v2-header__nav-menu-item:hover,.v2-header__nav-menu-item.v2-header--is-active) .v2-header__nav-menu-link {
   background-color: {{ accent_gradient1 | replace:'rgb','rgba' | replace:')',',0.75)' }} !important;border-bottom: 2px solid #0027868c;margin: -6px auto;border-top: 5px solid #0027868c;}
   
 {% comment %} --- ANNOUNCEMENT BAR --- {% endcomment %}
