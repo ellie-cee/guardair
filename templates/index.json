@@ -359,6 +359,69 @@
         "padding_bottom": 40
       }
     },
+    "gua_multicolumn_LjznnJ": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_BQ3Y3p": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "\"The 75LJ meets our corporate safety standards, a paramount requirement.\"",
+            "text": "<p><strong>Team Leader</strong></p><p><em>Covanta Kent, Inc.</em></p><p><em>Grand Rapids, MI</em></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BiQNCg": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "\"Trust me, our Guardair guns see a fair share of abuse. They are tough and very well built.\"",
+            "text": "<p><strong>Machine Operator</strong></p><p><em>Felters of South Carolina</em></p><p><em>Roebuck, SC</em></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_939phQ": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "\"The fact that Guardair air guns meet OSHA requirements is the key in our production facility.\"",
+            "text": "<p><strong>Mechanic</strong></p><p><em>B&G Foods</em></p><p><em>Roseland, NJ</em></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BQ3Y3p",
+        "column_BiQNCg",
+        "column_939phQ"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
     "image_with_text_FgG4Yx": {
       "type": "image-with-text",
       "blocks": {
@@ -687,6 +750,7 @@
     "image_with_text_ec78Mz",
     "gua_multicolumn_Tj6HwR",
     "image_with_text_94tjDg",
+    "gua_multicolumn_LjznnJ",
     "image_with_text_FgG4Yx",
     "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8",
     "featured_collection",
