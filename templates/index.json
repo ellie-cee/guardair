@@ -59,45 +59,6 @@
         "show_text_below": false
       }
     },
-    "image_with_text_ec78Mz": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_xBeLkf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Award-Winning Innovation",
-            "heading_size": "h1"
-          }
-        },
-        "text_x3KdY3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Guardair Corporation is the winner of the 2025 ISA Innovation Impact Award, presented live at ISA25 in Nashville, Tennessee. This annual award celebrates breakthrough solutions that are transforming the industrial MROP channel and delivering measurable value to the end user.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_xBeLkf",
-        "text_x3KdY3"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Innovation_award_2a0b6cd9-6a1b-41e1-8228-c512717b57c2.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "right",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
-        "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
     "gua_icon_bar_QiQw48": {
       "type": "gua-icon-bar",
       "blocks": {
@@ -228,6 +189,45 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "anchor_id": ""
+      }
+    },
+    "image_with_text_ec78Mz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xBeLkf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Award-Winning Innovation",
+            "heading_size": "h1"
+          }
+        },
+        "text_x3KdY3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Guardair Corporation is the winner of the 2025 ISA Innovation Impact Award, presented live at ISA25 in Nashville, Tennessee. This annual award celebrates breakthrough solutions that are transforming the industrial MROP channel and delivering measurable value to the end user.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xBeLkf",
+        "text_x3KdY3"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Innovation_award_2a0b6cd9-6a1b-41e1-8228-c512717b57c2.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
+        "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
       }
     },
     "image_with_text_FgG4Yx": {
@@ -608,9 +608,9 @@
   },
   "order": [
     "image_banner_XbTPBM",
-    "image_with_text_ec78Mz",
     "gua_icon_bar_QiQw48",
     "gua_multicolumn_fD7AFm",
+    "image_with_text_ec78Mz",
     "image_with_text_FgG4Yx",
     "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8",
     "image_with_text_94tjDg",
