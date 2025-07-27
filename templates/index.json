@@ -64,6 +64,7 @@
       "blocks": {
         "icon_nn6zhf": {
           "type": "icon",
+          "disabled": true,
           "settings": {
             "icon": "shopify://shop_images/white_question_mark_70c175c9-f899-47cc-b9f1-5f26d6332ef3.png",
             "text": "<h2>Why Choose Guardair?</h2>",
@@ -107,7 +108,7 @@
       ],
       "name": "GUA Icon Bar",
       "settings": {
-        "background_color": "#292929",
+        "background_color": "#002395",
         "text_color": "#ffffff",
         "max_width": 1160
       }
