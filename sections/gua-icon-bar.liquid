@@ -55,7 +55,7 @@
 <script>
   (function() {
     const container = document.querySelector('[data-section-id="{{ section.id }}"] .logos_column_container');
-    const wrapper = container.querySelector('.logos_wrapper');
+    const wrapper = container.querySelector('[data-section-id="{{ section.id }}"] .logos_wrapper');
     const slides = container.querySelectorAll('.single_slide:not(.main_logo_mobile)');
     const dotsContainer = container.querySelector('.carousel_dots');
     
