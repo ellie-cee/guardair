@@ -14,12 +14,8 @@
                   <div
                     class="
                       flex__content-block
-                      {% if block.settings.show_on_mobile == false %}
-                        hide-on-mobile
-                      {% endif %}
-                      {% if block.settings.show_on_desktop == false %}
-                        hide-on-desktop
-                      {% endif %}
+                      {% if block.settings.show_on_mobile == false %} hide-on-mobile{% endif %}
+                      {% if block.settings.show_on_desktop == false %} hide-on-desktop{% endif %}
                       flex__content-block-{{ block.type }}
                     "
                     style="
