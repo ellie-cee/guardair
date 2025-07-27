@@ -320,7 +320,7 @@
       },
       {
         "type": "range",
-        "id": "buttons_font_size",
+        "id": "button_font_size",
         "min": 12,
         "max": 20,
         "step": 1,
@@ -330,7 +330,7 @@
       },
       {
         "type": "range",
-        "id": "buttons_vertical_padding",
+        "id": "button_vertical_padding",
         "min": 0,
         "max": 10,
         "step": 1,
@@ -360,7 +360,7 @@
       },
       {
         "type": "checkbox",
-        "id": "buttons_caps",
+        "id": "button_caps",
         "label": "Text UPPERCASE",
         "default": false
       }
