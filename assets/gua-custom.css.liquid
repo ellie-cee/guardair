@@ -1,4 +1,4 @@
-px{% assign accent_color1 = '#328ad2' %}
+{% assign accent_color1 = '#328ad2' %}
   {% assign accent_color1_text = '#fff' %}
 {% assign accent_color2 = '#002395' %}
 {% assign gray_color = '#f1f1f1' %}
@@ -15,14 +15,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurosti
 body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 
 .page-width {width: auto; max-width: 1140px; padding: 0 10px;}
-
-{% comment %} --- HOMEPAGE --- {% endcomment %}
-@media (min-width: 768px) {
-  .v2-header__nav-menu {margin-top: 0 !important;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
-  body.template-index .v2-header__nav-menu {position: absolute;}
-}
-body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' | replace:')',',0.75)' }};}
-body.template-index .section-v2-header.scrolled-past-header .v2-header__nav-menu.gradient {background:{{ accent_gradient2 }};}
 
 {% comment %}
 :is(.v2-header__nav-menu-item:hover,.v2-header__nav-menu-item.v2-header--is-active) .v2-header__nav-menu-link, body.template-index .v2-header__nav-menu-item:first-of-type {
@@ -51,7 +43,13 @@ body.template-index .section-v2-header.scrolled-past-header .v2-header__nav-menu
 .v2-header .icon-arrow-alt {height: 1rem;padding-bottom: 1px;margin-left: -5px;transform: rotate(90deg);color: #b7c3cf;}
 .v2-header__nav-menu-item:is(:hover,.v2-header--is-active)>a .icon-arrow-alt {transform:none;color: #1d2395;}
 .v2-header__row:not(:last-child) {margin-bottom:0px !important;padding-bottom: 10px;}
-
+      {% comment %} --- HEADER HOMEPAGE --- {% endcomment %}
+      @media (min-width: 768px) {
+        .v2-header__nav-menu {margin-top: 0 !important;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
+        body.template-index .v2-header__nav-menu {position: absolute;}
+      }
+      body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' | replace:')',',0.75)' }};}
+      body.template-index .section-v2-header.scrolled-past-header .v2-header__nav-menu.gradient {background:{{ accent_gradient2 }};}
  
   
 {% comment %} --- PRODUCT --- {% endcomment %}
