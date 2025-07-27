@@ -831,7 +831,7 @@
             "row_span": 1,
             "column_span": 2,
             "row_span_mobile": 1,
-            "column_span_mobile": 3,
+            "column_span_mobile": 2,
             "heading": "Connect with Us",
             "subheading": "",
             "seo_heading": "h2",
@@ -844,7 +844,7 @@
             "show_on_mobile": true,
             "show_on_desktop": true,
             "row": 1,
-            "column": 3,
+            "column": 2,
             "row_mobile": 1,
             "column_mobile": 1,
             "row_span": 1,
@@ -864,15 +864,15 @@
             "show_on_mobile": true,
             "show_on_desktop": true,
             "row": 1,
-            "column": 1,
+            "column": 3,
             "row_mobile": 1,
             "column_mobile": 1,
             "row_span": 1,
             "column_span": 1,
             "row_span_mobile": 1,
             "column_span_mobile": 1,
-            "social_heading": "Follow us on social media",
-            "social_text": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
+            "social_heading": "",
+            "social_text": "<p>Stay updated on the latest from Guardair</p>"
           }
         }
       },
