@@ -219,7 +219,7 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
   {% endfor %}
   <nav class="hide-on-mobile v2-header__nav-menu
     {% if section.settings.nav_color_scheme != blank %}gradient color-{{ section.settings.nav_color_scheme }}{% endif %}
-    ">{{ section.settings.nav_color_scheme }}
+    ">
                     {% for scheme in settings.color_schemes -%} 
                           {% if scheme.id == section.settings.nav_color_scheme %}<br>--- {{ scheme.id }}---{{ section.settings.nav_color_scheme }}<br/>
                       {% style %}body.template-index .v2-header__nav-menu.gradient {background:  {{ scheme.settings.background_gradient }};} {% endstyle %}
