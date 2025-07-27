@@ -31,13 +31,13 @@
             <div class="banner__buttons_group">
             {%- if block.settings.show_button -%}
                 <div class="box-link">
-                  <a href="{{ block.settings.button_link }}" class="itg_btn">{{ block.settings.button_text }}</a>
+                  <a href="{{ block.settings.button_link }}" class="button">{{ block.settings.button_text }}</a>
                 </div>
             {%- endif -%}
               {%- if block.settings.show_button_second -%}
 
                 <div class="box-link banner__buttons">
-                  <a href="{{ block.settings.button_link_second }}" class="btn {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}">{{ block.settings.button_text_second }}</a>
+                  <a href="{{ block.settings.button_link_second }}" class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}">{{ block.settings.button_text_second }}</a>
                 </div>
 
               {%- endif -%}
