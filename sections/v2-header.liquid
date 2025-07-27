@@ -242,8 +242,8 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
             </a>
             {% if link.links.size > 0 %}
                     {% for scheme in settings.color_schemes -%}
-                          {% if scheme.id == section.settings.secondary_color %}{% endif %}
-                      {% style %}body.template-index .v2-header__nav-menu.gradient {background:  {{ scheme.settings.background_gradient }};} {% endstyle %}
+                          {% if scheme.id == section.settings.secondary_color %}
+                      {% style %}body.template-index .v2-header__nav-menu.gradient {background:  {{ scheme.settings.background_gradient }};} {% endstyle %}{% endif %}
                     {% endfor %}
               <ul 
                 style="--border-color: {{ section.settings.sub_menu_border_color }};"
