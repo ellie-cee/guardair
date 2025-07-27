@@ -1,0 +1,22 @@
+              <div class="flex__content-block__content hide-on-mobile">
+                {% capture header_content %}
+                <h3 class="flex__content-block__heading">{{ block.settings.heading }}</h3>
+                {% endcapture %}
+                {% capture content %}
+                <div class="flex__content-block__links">
+                  {% for link in block.settings.links.links %}
+                    <a href="{{ link.url }}" class="flex__content-block__link">{{ link.title }}</a>
+                  {% endfor %}
+                </div>
+                {% endcapture %}
+                {{ header_content }}
+                {{ content }}
+              </div>
+              <hc-accordion class="flex__content-block__content hide-on-desktop">
+                <div slot="header">
+                  {{ header_content }}
+                </div>
+                <div slot="content">
+                  {{ content }}
+                </div>
+              </hc-accordion>
