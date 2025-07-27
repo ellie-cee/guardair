@@ -9,6 +9,56 @@
  */
 {
   "sections": {
+    "image_banner_XbTPBM": {
+      "type": "gua-image-banner",
+      "blocks": {
+        "heading_Tip9nz": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Leader in Industrial, Air-Powered Cleaning Solutions",
+            "heading_size": "h1"
+          }
+        },
+        "text_mQUpVq": {
+          "type": "text",
+          "settings": {
+            "text": "Work safer and cleaner with Guardair—your trusted source for OSHA-compliant safety air guns and powerful pneumatic vacuums, designed for industrial compressed air cleaning applications.",
+            "text_style": "body"
+          }
+        },
+        "buttons_HmMVbL": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Safety Air Guns",
+            "button_link_1": "shopify://pages/safety-air-guns",
+            "button_style_secondary_1": false,
+            "button_label_2": "Shop Pneumatic Vacuums",
+            "button_link_2": "shopify://pages/pneumatic-vacuums",
+            "button_style_secondary_2": false,
+            "display_inline": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_Tip9nz",
+        "text_mQUpVq",
+        "buttons_HmMVbL"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/GUA_Hero_1.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "gua_multicolumn_fD7AFm": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -69,56 +119,6 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "anchor_id": ""
-      }
-    },
-    "image_banner_XbTPBM": {
-      "type": "gua-image-banner",
-      "blocks": {
-        "heading_Tip9nz": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Leader in Industrial, Air-Powered Cleaning Solutions",
-            "heading_size": "h1"
-          }
-        },
-        "text_mQUpVq": {
-          "type": "text",
-          "settings": {
-            "text": "Work safer and cleaner with Guardair—your trusted source for OSHA-compliant safety air guns and powerful pneumatic vacuums, designed for industrial compressed air cleaning applications.",
-            "text_style": "body"
-          }
-        },
-        "buttons_HmMVbL": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Safety Air Guns",
-            "button_link_1": "shopify://pages/safety-air-guns",
-            "button_style_secondary_1": false,
-            "button_label_2": "Shop Pneumatic Vacuums",
-            "button_link_2": "shopify://pages/pneumatic-vacuums",
-            "button_style_secondary_2": false,
-            "display_inline": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_Tip9nz",
-        "text_mQUpVq",
-        "buttons_HmMVbL"
-      ],
-      "custom_css": [],
-      "settings": {
-        "image": "shopify://shop_images/GUA_Hero_1.jpg",
-        "image_overlay_opacity": 30,
-        "image_height": "medium",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-4",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
       }
     },
     "gua_icon_bar_QiQw48": {
@@ -550,8 +550,8 @@
     }
   },
   "order": [
-    "gua_multicolumn_fD7AFm",
     "image_banner_XbTPBM",
+    "gua_multicolumn_fD7AFm",
     "gua_icon_bar_QiQw48",
     "80753835-d4c8-42ab-8bcb-ab2cbfb06ac8",
     "image_with_text_FgG4Yx",
