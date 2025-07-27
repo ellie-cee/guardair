@@ -4,10 +4,7 @@
 {% unless section.settings.disable_predictive_search %}
 <script src="{{ 'v2-components-predictive-search.js' | asset_url }}" defer></script>
 {% endunless %}
-<link
-  rel="stylesheet"
-  href="{{ 'v2-components-predictive-search.css' | asset_url }}"
->
+<link rel="stylesheet" href="{{ 'v2-components-predictive-search.css' | asset_url }}">
 <script src="{{ 'v2-components-accordion.js' | asset_url }}" defer></script>
 <script src="{{ 'v2-components-nav-drawer.js' | asset_url }}" defer></script>
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -244,6 +241,10 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
               {% endif %}
             </a>
             {% if link.links.size > 0 %}
+                    {% for scheme in settings.color_schemes -%}
+                          {% if scheme.id == section.settings.secondary_color %}{% endif %}
+                      {% style %}body.template-index .v2-header__nav-menu.gradient {background:  {{ scheme.settings.background_gradient }};} {% endstyle %}
+                    {% endfor %}
               <ul 
                 style="--border-color: {{ section.settings.sub_menu_border_color }};"
               class="v2-header__nav-menu-submenu 
