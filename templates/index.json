@@ -741,6 +741,80 @@
         "padding_top": 0,
         "padding_bottom": 100
       }
+    },
+    "gua_multicolumn_nXUXUT": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_yUH8W9": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Product Literature",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "Learn More",
+            "link": "#"
+          }
+        },
+        "column_QwaFfW": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Free Audit for Safety & Compliance",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "Learn More",
+            "link": "#"
+          }
+        },
+        "column_jLPafQ": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Find a Retailer Near You",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "Learn More",
+            "link": "#"
+          }
+        },
+        "column_paTMxj": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "OSHA Standards",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "Learn More",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "column_yUH8W9",
+        "column_QwaFfW",
+        "column_jLPafQ",
+        "column_paTMxj"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "meta_pimage": "custom.block_product_image",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-14641472-9d04-478c-88ca-0fac7f4aef46",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 16,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
@@ -756,6 +830,7 @@
     "featured_collection",
     "rich_text_6KAite",
     "gua_mixed_content_rhKwgm",
-    "video_with_text_HyfDyC"
+    "video_with_text_HyfDyC",
+    "gua_multicolumn_nXUXUT"
   ]
 }
