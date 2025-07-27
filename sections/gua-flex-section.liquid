@@ -47,17 +47,6 @@
             {% when 'image_block' %}
                     {% render 'gua-b-image-block',block:block %}
 
-            {% when 'payment_icons' %}
-              <div class="footer__payment">
-                <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-                <ul class="list list-payment" role="list">
-                  {%- for type in shop.enabled_payment_types -%}
-                    <li class="list-payment__item">
-                      {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
             {% else %}
               {% comment %}
                 This block type is not supported.
@@ -67,30 +56,6 @@
       {% endfor %}
     </div>
   </div>
-  <div class="footer__bottom color-{{ section.settings.color_scheme }} gradient">
-    <div class="footer__bottom__content page-width">
-      <div class="footer__bottom__content-text">
-        <div class="footer__bottom__content-text-desktop hide-on-mobile">
-          {% assign year = 'now' | date: '%Y' %}
-          {% assign year_text = '{Year}' %}
-          {{ section.settings.footer_text | replace: year_text, year }}
-        </div>
-        <div class="footer__bottom__content-text-mobile hide-on-desktop">
-          {{ section.settings.footer_text_mobile | replace: year_text, year }}
-        </div>
-      </div>
-
-      <div class="footer__bottom__content-links">
-        {% for link in section.settings.footer_links.links %}
-          <a href="{{ link.url }}" class="footer__bottom__content-links__link">{{ link.title }}</a>
-          {% unless forloop.last %}
-            <span>|</span>
-          {% endunless %}
-        {% endfor %}
-      </div>
-    </div>
-
-</div>
 
 
 
