@@ -9,7 +9,7 @@
         
           {% for block in section.blocks %}
              {% if block.settings.row == i %}
-                  <div class="{% if block.settings.show_on_desktop != true %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile != true %} hide-on-mobile{% endif %}"
+                  <div class="flex__item {% if block.settings.show_on_desktop != true %} hide-on-desktop{% endif %}{% if block.settings.show_on_mobile != true %} hide-on-mobile{% endif %}"
                   style="--flex-grow: {{ block.settings.flex_grow }};--flex-shrink: {{ block.settings.flex_shrink }};--flex-basis: {{ block.settings.flex_basis }};" {{ block.shopify_attributes }}>
                     {% case block.type %}
                       {% when 'heading' %}        
