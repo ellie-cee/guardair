@@ -53,7 +53,7 @@
 #shopify-section-{{ section.id }} .flex__row,
   #shopify-section-{{ section.id }} .flex__item,
   #shopify-section-{{ section.id }} .flex__content-block {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;  }
-#shopify-section-{{ section.id }} .flex__row {justify-content: {{ section.settings.justify_content }};}
+#shopify-section-{{ section.id }} .flex__row {justify-content: {{ section.settings.justify_content }};align-content:{{ section.settings.align_content }};}
   
   {% comment %}
 #shopify-section-{{ section.id }} .flex__content-block__text{line-height: 1.2;}
@@ -130,6 +130,30 @@
    {
           "type": "select",
           "id": "justify_content",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Start"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "space-between",
+              "label": "Space Between"
+            },
+            {
+              "value": "flex-end",
+              "label": "End"
+            }           
+          ],
+          "default": "center",
+          "label": "Flex Alignment"
+        },
+     {
+          "type": "select",
+          "id": "align_content",
           "options": [
             {
               "value": "flex-start",
