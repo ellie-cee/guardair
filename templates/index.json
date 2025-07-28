@@ -872,7 +872,8 @@
       "name": "GUA Flex Section",
       "settings": {
         "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
-        "number_of_rows": 1
+        "number_of_rows": 1,
+        "justify_content": "space-between"
       }
     }
   },
