@@ -62,7 +62,7 @@
     #shopify-section-{{ section.id }} .flex__row {justify-content: {{ section.settings.justify_content }};}
   }
   @media screen and (max-width:768px) {
-  #shopify-section-{{ section.id }} .flex__row {justify-content: {{ section.settings.justify_content_mobile }};
+  #shopify-section-{{ section.id }} .flex__row, #shopify-section-{{ section.id }} .flex__content-block {justify-content: {{ section.settings.justify_content_mobile }};
    }
   {% comment %}
 #shopify-section-{{ section.id }} .flex__content-block__text{line-height: 1.2;}
