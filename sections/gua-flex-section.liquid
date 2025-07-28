@@ -58,7 +58,12 @@
   #shopify-section-{{ section.id }} .flex__item,
   #shopify-section-{{ section.id }} .flex__content-block {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;  }
 #shopify-section-{{ section.id }} .flex__row {justify-content: {{ section.settings.justify_content }};align-items:{{ section.settings.align_content }};}
-  
+  @media screen and (min-width:768px) {
+    #shopify-section-{{ section.id }} .flex__row {justify-content: {{ section.settings.justify_content }};}
+  }
+  @media screen and (max-width:768px) {
+  #shopify-section-{{ section.id }} .flex__row {justify-content: {{ section.settings.justify_content }};
+   }
   {% comment %}
 #shopify-section-{{ section.id }} .flex__content-block__text{line-height: 1.2;}
 #shopify-section-{{ section.id }} .flex__content-block__button{margin-top: 26px;}
