@@ -2,7 +2,7 @@
   assign number_of_rows = section.settings.number_of_rows
 %}
 
-<div class="flex-section color-{{ section.settings.color_scheme }} gradient">
+<div class="flex-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding ">
   <div class="page-width flex__content">
       {% for i in (1..number_of_rows) %}
     <div class="flex__row page-width row-{{ i }}">
