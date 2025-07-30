@@ -48,7 +48,7 @@
 {%- liquid
   if change_model == 'remove' or change_model == 'move' or change_model == 'get_series'
     # Split title into words to find model number
-    assign words = processed_title | split: ' '
+    assign words = clean_title | split: ' '
     assign model_pattern_found = false
     
     for word in words
@@ -89,43 +89,40 @@
         endif
       endunless
     endfor
-    
+    endif
+-%}
+ {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
-      assign model_removed_title = processed_title | replace: found_model, ''
-      assign processed_title = model_removed_title
+      assign model_removed_title = clean_title | replace: found_model, ''
+      assign clean_title = model_removed_title
     endif
   endif
--%}
+{% endcomment %}
 
-{% comment %} Step 2: Remove everything after dash (including the dash) - conditional {% endcomment %}
-{%- liquid
+{% comment %} Step 2: Remove everything after dash (including the dash) - conditional  
   if remove_after_dash and processed_title contains '-'
     assign dash_position = processed_title | split: '-' | first
     assign processed_title = dash_position
   endif
--%}
+{% endcomment %}
 
 {% comment %} Step 2b: Remove everything after with - conditional {% endcomment %}
-{%- liquid
+{% comment %}
   if remove_after_dash and processed_title contains 'w/'
     assign dash_position = processed_title | split: 'w/' | first
     assign processed_title = dash_position
   endif
--%}
+{% endcomment %}
 
-
-{% comment %} Step 5: Clean up multiple spaces and trim {% endcomment %}
-{%- liquid
-  assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
--%}
 
 {% comment %} Step 6: Handle model number positioning {% endcomment %}
-{%- liquid
-  if change_model == 'move' and found_model != ''
-    assign clean_title = found_model | append: ' ' | append: clean_title
-  endif
--%}
+{% comment %} 
+  {% if change_model == 'move' and found_model != '' %}
+    {% assign clean_title = found_model | append: ' ' | append: clean_title %}
+  {% endif %}
+{% endcomment %}
+
 {% comment %} Step 7: Display Series {% endcomment %}
 {%- liquid
   if change_model == 'get_series'
@@ -166,8 +163,7 @@
 -%} 
 
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
-{%- liquid
-  assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
-  assign new_title = clean_title
--%}
+  {% assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
+  {% assign new_title = clean_title %}
+
 {{ new_title }}
