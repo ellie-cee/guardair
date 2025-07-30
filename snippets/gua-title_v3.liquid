@@ -16,8 +16,9 @@
 {%- liquid
   assign processed_title = title
   
-  assign found_model = ''
+  assign model = ''
   assign plain_jane = false
+  assign found_quote = false    
   assign model_removed_title = ''
     
   if remove_after_dash == blank
@@ -43,7 +44,12 @@
 {% assign clean_title = clean_title | replace: special_char, '' %}
 {% endfor %}
 
-
+{% if clean_title contains '"' %}
+    {% assign found_quote = true %}
+{% endif %}
+{% if clean_title contains '"' %}
+    {% assign found_quote = true %}
+{% endif %}
 {% comment %} Step 1: Handle model numbers if change_model is specified {% endcomment %}
 {% comment %}Split title into words to find model number {% endcomment %}
   {% assign words = clean_title | split: ' ' %}
@@ -81,7 +87,7 @@
           {% comment %}Check if remaining characters are letters (and not too many) {% endcomment %}
             {% if has_digits and remaining_size > 0 and remaining_size <= 2 and digit_count >= 1 %}
                 {% comment %}This looks like a model number pattern {% endcomment %}
-                  {% assign found_model = word %}
+                  {% assign model = word %}
                   {% assign model_pattern_found = true %}
                   {% break %}
             {% endif %}
@@ -92,14 +98,14 @@
 
 {% comment %} Step 7: Display Series {% endcomment %}
   {% if change_model == 'get_series' %}
-      {% assign series = found_model    %}
+      {% assign series = model    %}
 {{ series }}
   {% endif%}
    
 
 {% comment %} Step 7: Dispaly Family {% endcomment %}
   {% if change_model == 'get_family' %}
-    {% assign family = clean_title | split: found_model | first %}
+    {% assign family = clean_title | split: model | first %}
 {{ family }}
   {% endif %}
 
