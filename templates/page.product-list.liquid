@@ -47,6 +47,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
                 <th>Original Title</th> 
                 <!-- <th>Product Type</th> -->
                 <!-- <th>Display Name</th>    -->
+                <th>Basic with Series</th>                 
                 <th>Product Value</th>                
                 <th>Size</th>
                 <th>Series</th>      
@@ -68,7 +69,8 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
                     <td>{{ product.metafields.custom.linked_product_value }}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false,change_model: 'get_size' %}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false,change_model: 'get_series' %}</td>
-                    <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false,change_model: 'get_diff' %}</td>                  
+                    <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false,change_model: 'get_diff' %}</td>
+                    <td>{% render 'gua-title_v3',title:product.title, text_style:'Basic' %}</td>                    
                 </tr>
             {% endfor %}
           
