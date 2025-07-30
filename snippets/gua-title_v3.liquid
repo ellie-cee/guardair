@@ -91,37 +91,7 @@
     endfor
     endif
 -%}
- {% comment %}   
-    # Remove the model number from the title
-    if model_pattern_found
-      assign model_removed_title = clean_title | replace: found_model, ''
-      assign clean_title = model_removed_title
-    endif
-  endif
-{% endcomment %}
 
-{% comment %} Step 2: Remove everything after dash (including the dash) - conditional  
-  if remove_after_dash and processed_title contains '-'
-    assign dash_position = processed_title | split: '-' | first
-    assign processed_title = dash_position
-  endif
-{% endcomment %}
-
-{% comment %} Step 2b: Remove everything after with - conditional {% endcomment %}
-{% comment %}
-  if remove_after_dash and processed_title contains 'w/'
-    assign dash_position = processed_title | split: 'w/' | first
-    assign processed_title = dash_position
-  endif
-{% endcomment %}
-
-
-{% comment %} Step 6: Handle model number positioning {% endcomment %}
-{% comment %} 
-  {% if change_model == 'move' and found_model != '' %}
-    {% assign clean_title = found_model | append: ' ' | append: clean_title %}
-  {% endif %}
-{% endcomment %}
 
 {% comment %} Step 7: Display Series {% endcomment %}
 {%- liquid
@@ -167,3 +137,34 @@
   {% assign new_title = clean_title %}
 
 {{ new_title }}
+ {% comment %}   
+    # Remove the model number from the title
+    if model_pattern_found
+      assign model_removed_title = clean_title | replace: found_model, ''
+      assign clean_title = model_removed_title
+    endif
+  endif
+{% endcomment %}
+
+{% comment %} Step 2: Remove everything after dash (including the dash) - conditional  
+  if remove_after_dash and processed_title contains '-'
+    assign dash_position = processed_title | split: '-' | first
+    assign processed_title = dash_position
+  endif
+{% endcomment %}
+
+{% comment %} Step 2b: Remove everything after with - conditional {% endcomment %}
+{% comment %}
+  if remove_after_dash and processed_title contains 'w/'
+    assign dash_position = processed_title | split: 'w/' | first
+    assign processed_title = dash_position
+  endif
+{% endcomment %}
+
+
+{% comment %} Step 6: Handle model number positioning {% endcomment %}
+{% comment %} 
+  {% if change_model == 'move' and found_model != '' %}
+    {% assign clean_title = found_model | append: ' ' | append: clean_title %}
+  {% endif %}
+{% endcomment %}
