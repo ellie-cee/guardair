@@ -149,8 +149,9 @@
 {%- liquid
   if change_model == 'get_diff'
     if processed_title contains 'w/'
-    assign diff_split = processed_title | split: 'w/'
-    assign clean_title = diff_split | last
+      assign diff_split = processed_title | split: 'w/'
+      assign clean_title = diff_split | last
+      assign clean_title = 'true'
     else
         assign clean_title = ''
     endif
