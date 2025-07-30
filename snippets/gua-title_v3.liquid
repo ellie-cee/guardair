@@ -108,7 +108,7 @@
 
 {% comment %} Step 3: Remove specific words {% endcomment %}
 {%- liquid
-  assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,F5'
+  assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,INF5,F5'
   assign words_array = words_to_remove | split: ','
   
   for word in words_array
