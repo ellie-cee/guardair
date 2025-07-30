@@ -17,7 +17,8 @@
   assign processed_title = title
   
   assign model = ''
-  assign plain_jane = false
+  assign plain_jane = true
+  assign found_model = false       
   assign found_quote = false    
   assign model_removed_title = ''
     
@@ -87,13 +88,16 @@
           {% comment %}Check if remaining characters are letters (and not too many) {% endcomment %}
             {% if has_digits and remaining_size > 0 and remaining_size <= 2 and digit_count >= 1 %}
                 {% comment %}This looks like a model number pattern {% endcomment %}
-                  {% assign model = word %}
-                  {% assign model_pattern_found = true %}
+                  {% assign model = word %}             
+                  {% assign found_model = true %}
                   {% break %}
             {% endif %}
         {% endunless %}
   {% endfor %}
- 
+
+ {% if found_model or found_quote %}
+      {% assign plain_jane = false %}
+   {% endif %}
 
 
 {% comment %} Step 7: Display Series {% endcomment %}
