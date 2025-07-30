@@ -118,8 +118,8 @@
 
 {% comment %} Step 7: Display Differentiator {% endcomment %}
   {% if change_model == 'get_diff' %}
-      {% if title contains 'w/' %}
-          {% assign diff_split = title | split: 'w/' %}
+      {% if clean_title contains 'w/' %}
+          {% assign diff_split = clean_title | split: 'w/' %}
           {% assign differentiator = diff_split | last %}
           {% assign found_diff = true %}
       {% else %}
@@ -135,7 +135,7 @@
    
 {% comment %} Step 7: Display Size {% endcomment %}
   {% if change_model == 'get_size' %}
-    {% if title contains '"' %}
+    {% if clean_title contains '"' %}
       {% assign size_split = title | split: '"' %}
       {% assign size_first = size_split | first %}
       {% assign size_last = size_split | last %}
