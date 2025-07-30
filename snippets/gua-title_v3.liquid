@@ -157,6 +157,17 @@
   endif
 -%} 
 
+{% comment %} Step 7: Display Size {% endcomment %}
+{%- liquid
+  if change_model == 'get_size'
+    if title contains '"'
+      assign size_split = title | split: '"'
+      assign clean_title = size_split | first
+    else
+        assign clean_title = ''
+    endif
+  endif
+-%} 
 
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
 {%- liquid
