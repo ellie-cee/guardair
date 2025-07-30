@@ -170,7 +170,7 @@
           assign clean_title = size_split | last
       endif
         if size_last contains ' x ' 
-           assign clean_title = clean_title |  append: size_last
+           assign clean_title = clean_title |  append: size_last | append:'"'
         endif
     else
         assign clean_title = ''
