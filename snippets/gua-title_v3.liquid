@@ -22,6 +22,15 @@
   endif
 -%}
 
+{% comment %} Step 1: Remove specific words {% endcomment %}
+{%- liquid
+  assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,F5'
+  assign words_array = words_to_remove | split: ','
+  
+  for word in words_array
+    assign processed_title = processed_title | replace: word, ''
+  endfor
+-%}
 
 {%- liquid
   assign processed_title = title
@@ -106,15 +115,6 @@
   endif
 -%}
 
-{% comment %} Step 3: Remove specific words {% endcomment %}
-{%- liquid
-  assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,F5'
-  assign words_array = words_to_remove | split: ','
-  
-  for word in words_array
-    assign processed_title = processed_title | replace: word, ''
-  endfor
--%}
 
 {% comment %} Step 4: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
 {%- liquid
