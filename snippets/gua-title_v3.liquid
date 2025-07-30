@@ -96,6 +96,7 @@
 {% comment %} Step 7: Display Series {% endcomment %}
 {%- liquid
   if change_model == 'get_series'
+    assign series = found_model    
     assign clean_title = found_model
   endif
 -%}    
@@ -105,6 +106,7 @@
     if title contains 'w/'
       assign diff_split = title | split: 'w/'
       assign clean_title = diff_split | last
+      assign differentiator = diff_split | last
     else
         assign clean_title = ''
     endif
@@ -126,12 +128,16 @@
         if size_last contains ' x ' 
            assign clean_title = clean_title |  append: size_last | append:'"'
         endif
+       assign size = clean_title
     else
         assign clean_title = ''
     endif
   endif
 -%} 
 
+{% if text_style and text_style == 'basic_series' %}
+  {% assign clean_title = series %}
+{% endif %}
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
   {% assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
   {% assign value_needed = clean_title %}
