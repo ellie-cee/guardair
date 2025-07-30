@@ -1,3 +1,45 @@
+{% comment %}
+  new-title.liquid
+  
+  Usage: {% render 'new-title', title: 'Your Title String Here', remove_after_dash: true %}
+  
+  Parameters:
+  - title: The string to process
+  - remove_after_dash: true/false - whether to remove everything after dash (default: true)
+  
+  Rules applied:
+  1. Remove everything after dash (-) - optional based on remove_after_dash parameter
+  2. Remove specific words like "The" and "Classic+"
+  3. Remove specific special characters (trademark, registered, etc.)
+{% endcomment %}
+
+{%- liquid
+  assign processed_title = title
+  
+  # Set default value for remove_after_dash if not provided
+  if remove_after_dash == blank
+    assign remove_after_dash = true
+  endif
+-%}
+
+{% comment %}
+  new-title.liquid
+  
+  Usage: {% render 'new-title', title: 'Your Title String Here', remove_after_dash: true, change_model: 'remove' %}
+  
+  Parameters:
+  - title: The string to process
+  - remove_after_dash: true/false - whether to remove everything after dash (default: true)
+  - change_model: 'remove'/'move'/blank - what to do with model numbers (default: no change)
+  
+  Rules applied:
+  1. Remove everything after dash (-) - optional based on remove_after_dash parameter
+  2. Remove specific words like "The" and "Classic+"
+  3. Remove specific special characters (trademark, registered, etc.)
+  4. Handle model numbers - optional based on change_model parameter
+{% endcomment %}
+
+{%- liquid
   assign processed_title = title
   
   # Set default value for remove_after_dash if not provided
@@ -8,8 +50,10 @@
   # Initialize model number variables
   assign found_model = ''
   assign model_removed_title = ''
+-%}
 
 {% comment %} Step 1: Handle model numbers if change_model is specified {% endcomment %}
+{%- liquid
   if change_model == 'remove' or change_model == 'move'
     # Split title into words to find model number
     assign words = processed_title | split: ' '
@@ -60,29 +104,36 @@
       assign processed_title = model_removed_title
     endif
   endif
-
+-%}
 
 {% comment %} Step 2: Remove everything after dash (including the dash) - conditional {% endcomment %}
+{%- liquid
   if remove_after_dash and processed_title contains '-'
     assign dash_position = processed_title | split: '-' | first
     assign processed_title = dash_position
   endif
+-%}
 
 {% comment %} Step 2b: Remove everything after with - conditional {% endcomment %}
+{%- liquid
   if remove_after_dash and processed_title contains 'w/'
     assign dash_position = processed_title | split: 'w/' | first
     assign processed_title = dash_position
   endif
+-%}
 
 {% comment %} Step 3: Remove specific words {% endcomment %}
+{%- liquid
   assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+'
   assign words_array = words_to_remove | split: ','
   
   for word in words_array
     assign processed_title = processed_title | replace: word, ''
   endfor
+-%}
 
 {% comment %} Step 4: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
+{%- liquid
   assign special_chars = '®,™,©,℠'
   assign special_chars_array = special_chars | split: ','
   
@@ -91,19 +142,26 @@
   for special_char in special_chars_array
     assign clean_title = clean_title | replace: special_char, ''
   endfor
-
+-%}
 
 {% comment %} Step 5: Clean up multiple spaces and trim {% endcomment %}
+{%- liquid
   assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
+-%}
 
 {% comment %} Step 6: Handle model number positioning {% endcomment %}
+{%- liquid
   if change_model == 'move' and found_model != ''
     assign clean_title = found_model | append: ' ' | append: clean_title
   endif
--%}
 
+  if change_model == 'get_series'
+    assign clean_title = found_model
+  endif
+-%}    
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
+{%- liquid
   assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
   assign new_title = clean_title
-
+-%}
 {{ new_title }}
