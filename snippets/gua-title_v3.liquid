@@ -22,22 +22,6 @@
   endif
 -%}
 
-{% comment %}
-  new-title.liquid
-  
-  Usage: {% render 'new-title', title: 'Your Title String Here', remove_after_dash: true, change_model: 'remove' %}
-  
-  Parameters:
-  - title: The string to process
-  - remove_after_dash: true/false - whether to remove everything after dash (default: true)
-  - change_model: 'remove'/'move'/blank - what to do with model numbers (default: no change)
-  
-  Rules applied:
-  1. Remove everything after dash (-) - optional based on remove_after_dash parameter
-  2. Remove specific words like "The" and "Classic+"
-  3. Remove specific special characters (trademark, registered, etc.)
-  4. Handle model numbers - optional based on change_model parameter
-{% endcomment %}
 
 {%- liquid
   assign processed_title = title
@@ -154,11 +138,22 @@
   if change_model == 'move' and found_model != ''
     assign clean_title = found_model | append: ' ' | append: clean_title
   endif
-
+-%}
+{% comment %} Step 7: Display Series {% endcomment %}
+{%- liquid
   if change_model == 'get_series'
     assign clean_title = found_model
   endif
 -%}    
+{% comment %} Step 7: Display Series {% endcomment %}
+{%- liquid
+  if change_model == 'get_diff'
+    assign diff_split = processed_title | split: 'w/'
+    assign clean_title = diff_split | last
+  endif
+-%} 
+
+
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
 {%- liquid
   assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip
