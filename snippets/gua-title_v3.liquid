@@ -134,9 +134,9 @@
 
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
   {% assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
-  {% assign new_title = clean_title %}
+  {% assign value_needed = clean_title %}
 
-{{ new_title }}
+{{ value_needed }}
  {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
