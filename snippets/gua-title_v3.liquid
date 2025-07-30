@@ -28,9 +28,6 @@
     assign remove_after_dash = true
   endif
 
-    if product.type == 'Parts & Accessories' or product.type == 'Vacuums' or product.type == 'Air Hoses & Fittings'
-      assign type_subcat = true
-    endif
 -%}
 
 {% comment %} Step 1: Remove specific words {% endcomment %}
@@ -154,9 +151,11 @@
   {% endif %}
 
 
-{% if text_style and text_style == 'basic_series' %}P:{{ plain_jane }}---SC:{{ type_subcat }}<br/>
-    {% if type_subcat == true %}
-         {% assign basic_series = processed_title %}
+{% if text_style and text_style == 'basic_series' %}
+    {% if product.type == 'Parts & Accessories' %}
+         {% assign basic_series = processed_title %}  
+    {% elsif product.type == 'Vacuums' or product.type == 'Air Hoses & Fittings' %}
+         {% assign basic_series = processed_title | remove: size %}
     {% elsif plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
     {% else %}
