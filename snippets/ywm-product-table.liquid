@@ -1,0 +1,41 @@
+ <div style="display:block;">
+          <table style="max-width:1200px;margin-top:6rem;font-size:14px;">
+            <thead>
+              <tr>
+                <!-- <th>Num</th> -->
+                <th>Original Title</th> 
+                <th>Product Type</th>
+                <th>Display Name</th>   
+                <th>Basic with Series</th>    
+                <!-- <th>Family</th>                      -->
+                <th>Product Value</th>                
+                <th>Size</th>
+                <th>Series</th>      
+                <th>Diff</th>                   
+              </tr>
+            </thead>
+            <tbody>
+          
+          
+          {% paginate collections.all.products by 100 %}
+              {% assign sorted_products = collections.all.products | sort_natural: 'title' %}
+              
+          {% for product in sorted_products %}
+                <tr>
+                    <!-- <td>{{ forloop.index }}</td> -->
+                    <td>{{ product.title }}</td>
+                    <td>{{ product.type }}</td>     
+                    <td>{{ product.metafields.custom.linked_products.value.group_name }}</td>
+                    <td>{% render 'gua-title_v3',product:product, text_style:'basic_series' %}</td>   
+                    <!-- <td>{% render 'gua-title_v3',product:product, change_model: 'get_family' %}</td>                   -->
+                    <td>{{ product.metafields.custom.linked_product_value }}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
+                </tr>
+            {% endfor %}
+          
+          {% endpaginate %}
+            </tbody>
+          </table>
+    </div>  
