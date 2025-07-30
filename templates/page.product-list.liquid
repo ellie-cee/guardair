@@ -63,11 +63,20 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
                     <td>{{ forloop.index }}</td>
                     <td>{{ product.title }}</td>
                     <td>{{ product.type }}</td>     
-                    <td>{{ product.metafields.custom.linked_products }}<br/>{{ product.metafields.custom.linked_products.group_name }}</td>
+                    <td>{{ product.metafields.custom.linked_products }}<br/>
+                        {{ product.metafields.custom.linked_products.group_name.value }}<br/>
+                    <!-- Debug the metafield -->
+<p>Raw metafield: {{ product.metafields.custom.linked_products }}</p>
+<p>Metafield type: {{ product.metafields.custom.linked_products.type }}</p>
+<p>Metafield value: {{ product.metafields.custom.linked_products.value }}</p>
+
+<!-- Try to access the metaobject -->
+{% assign metaobject = product.metafields.custom.linked_products.value %}
+<p>Metaobject: {{ metaobject }}</p>
+<p>Metaobject fields: {{ metaobject.fields }}</p></td>
                     <td>{{ product.metafields.custom.linked_product_value }}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: true %}</td>
-                    <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false, change_model: 'remove' %}</td>
-                    <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false, change_model: 'move' %}</td>        
+                    <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false, change_model: 'remove' %}</td>     
                 </tr>
             {% endfor %}
           
