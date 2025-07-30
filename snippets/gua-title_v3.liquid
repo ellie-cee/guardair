@@ -91,12 +91,11 @@
 
 
 {% comment %} Step 7: Display Series {% endcomment %}
-{%- liquid
-  if change_model == 'get_series'
-    assign series = found_model    
-    assign clean_title = found_model
-  endif
--%}    
+  {% if change_model == 'get_series' %}
+      {% assign series = found_model    %}
+      {% assign clean_title = found_model%}
+  {% endif%}
+   
 
 {% comment %} Step 7: Dispaly Family {% endcomment %}
   {% if change_model == 'get_family' %}
