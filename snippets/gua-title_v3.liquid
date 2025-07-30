@@ -30,7 +30,17 @@
   assign words_array = words_to_remove | split: ','
   
   for word in words_array
-    assign processed_title = title | replace: word, ''
+    assign clean_title = processed_title | replace: word, ''
+  endfor
+-%}
+
+{% comment %} Step 4: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
+{%- liquid
+  assign special_chars = '®,™,©,℠'
+  assign special_chars_array = special_chars | split: ','
+  
+  for special_char in special_chars_array
+    assign clean_title = clean_title | replace: special_char, ''
   endfor
 -%}
 
@@ -104,18 +114,6 @@
   endif
 -%}
 
-
-{% comment %} Step 4: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
-{%- liquid
-  assign special_chars = '®,™,©,℠'
-  assign special_chars_array = special_chars | split: ','
-  
-  assign clean_title = processed_title
-  
-  for special_char in special_chars_array
-    assign clean_title = clean_title | replace: special_char, ''
-  endfor
--%}
 
 {% comment %} Step 5: Clean up multiple spaces and trim {% endcomment %}
 {%- liquid
