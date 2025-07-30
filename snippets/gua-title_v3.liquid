@@ -164,7 +164,7 @@
       assign size_split = title | split: '"'
       assign size_first = size_split | first
       assign size_last = size_split | last    
-      assign clean_title = clean_title | append:'"'  
+      assign clean_title = size_first | append:'"'  
       if clean_title contains ' - '
           assign size_split = clean_title | split: ' - '
           assign clean_title = size_split | last
