@@ -158,7 +158,7 @@
         {% assign basic_series = clean_title | remove: model | remove: differentiator | remove: size %}      
     {% endif %}
       {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | strip %}  
-      {{ basic_series }}  
+      {{ plain_jane }}<br/>{{ basic_series }}  
 {% endif %}
 
 
