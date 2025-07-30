@@ -152,7 +152,12 @@
 
 
 {% if text_style and text_style == 'basic_series' %}
-    {% if plain_jane %}{% assign basic_series = clean_title | split: ' - ' %}{{ basic_series }}{% endif %}
+    {% if plain_jane %}
+        {% assign basic_series = clean_title | split: ' - ' %}
+    {% else %}
+        {% assign basic_series = clean_title | remove: model | remove: differentiator %}      
+    {% endif %}
+      {{ basic_series }}  
 {% endif %}
 
 
