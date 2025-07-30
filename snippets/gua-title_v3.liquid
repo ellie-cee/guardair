@@ -93,14 +93,14 @@
 {% comment %} Step 7: Display Series {% endcomment %}
   {% if change_model == 'get_series' %}
       {% assign series = found_model    %}
-      Series {{ series }}
+{{ series }}
   {% endif%}
    
 
 {% comment %} Step 7: Dispaly Family {% endcomment %}
   {% if change_model == 'get_family' %}
     {% assign family = clean_title | split: found_model | first %}
-Family: {{ family }}
+{{ family }}
   {% endif %}
 
 
@@ -113,7 +113,7 @@ Family: {{ family }}
       {% else %}
           {% assign differentiator = '' %}
       {% endif %}
-    Differentiator: {{ differentiator }}
+{{ differentiator }}
   {% endif %}
  
 
@@ -135,7 +135,7 @@ Family: {{ family }}
     {% else %}
       {% assign size = '' %}
     {% endif %}
-    Size: {{ size }}
+{{ size }}
   {% endif %}
 
 
