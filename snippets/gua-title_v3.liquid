@@ -163,6 +163,11 @@
     if title contains '"'
       assign size_split = title | split: '"'
       assign clean_title = size_split | first
+      assign clean_title = clean_title | append:'"'  
+      if clean_title contains ' - '
+          assign size_split = clean_title | split: ' - '
+          assign clean_title = size_split | last
+      endif
     else
         assign clean_title = ''
     endif
