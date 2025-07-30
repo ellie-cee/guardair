@@ -148,7 +148,7 @@
 {% comment %} Step 7: Display Differentiator {% endcomment %}
 {%- liquid
   if change_model == 'get_diff'
-    if processed_title contains 'w/'
+    if processed_title contains '/'
       assign diff_split = processed_title | split: 'w/'
       assign clean_title = diff_split | last
       assign clean_title = 'true'
