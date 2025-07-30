@@ -63,7 +63,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
                     <td>{{ forloop.index }}</td>
                     <td>{{ product.title }}</td>
                     <td>{{ product.type }}</td>     
-                    <td>{{ product.metafields.custom.linked_products }}<br/>{{ product.metafields.custom.linked_products.field_name.value }}</td>
+                    <td>{{ product.metafields.custom.linked_products }}<br/>{{ product.metafields.custom.linked_products.group_name.value }}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: true %}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false, change_model: 'remove' %}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false, change_model: 'move' %}</td>        
