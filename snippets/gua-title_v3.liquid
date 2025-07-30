@@ -19,7 +19,8 @@
   assign model = ''
   assign plain_jane = true
   assign found_model = false       
-  assign found_quote = false    
+  assign found_quote = false   
+  assign found_diff = false   
   assign model_removed_title = ''
     
   if remove_after_dash == blank
@@ -95,10 +96,6 @@
         {% endunless %}
   {% endfor %}
 
- {% if found_model or found_quote %}
-      {% assign plain_jane = false %}
-   {% endif %}
-
 
 {% comment %} Step 7: Display Series {% endcomment %}
   {% if change_model == 'get_series' %}
@@ -120,13 +117,18 @@
           {% assign diff_split = title | split: 'w/' %}
           {% assign clean_title = diff_split | last %}
           {% assign differentiator = diff_split | last %}
+          {% assign found_diff = true %}
       {% else %}
           {% assign differentiator = '' %}
       {% endif %}
 {{ differentiator }}
   {% endif %}
  
+ {% if found_model or found_quote or found_diff %}
+      {% assign plain_jane = false %}
+   {% endif %}
 
+   
 {% comment %} Step 7: Display Size {% endcomment %}
   {% if change_model == 'get_size' %}
     {% if title contains '"' %}
