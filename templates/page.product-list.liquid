@@ -47,9 +47,10 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
                 <th>Original Title</th> 
                 <th>Product Type</th>
                 <th>Display Name</th>   
+                <th>Product Value</th>                
                 <th>Base</th>
                 <th>Series</th>      
-                <th>Series</th>                   
+                <th>Diff</th>                   
               </tr>
             </thead>
             <tbody>
@@ -65,9 +66,9 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
                     <td>{{ product.type }}</td>     
                     <td>{{ product.metafields.custom.linked_products.value.group_name }}</td>
                     <td>{{ product.metafields.custom.linked_product_value }}</td>
+                  <td></td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false,change_model: 'get_series' %}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false,change_model: 'get_diff' %}</td>                  
-                    <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: false, change_model: 'remove' %}</td>     
                 </tr>
             {% endfor %}
           
