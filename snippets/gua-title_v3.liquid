@@ -151,7 +151,7 @@
     if processed_title contains 'w/'
       assign diff_split = processed_title | split: 'w/'
       assign clean_title = diff_split | last
-      assign clean_title = 'true'
+      assign clean_title = processed_title
     else
         assign clean_title = ''
     endif
