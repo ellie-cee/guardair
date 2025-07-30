@@ -64,7 +64,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
                     <td>{{ product.title }}</td>
                     <td>{{ product.type }}</td>     
                     <td>{{ product.metafields.custom.linked_products }}<br/>
-                        {{ product.metafields.custom.linked_products.group_name.value }}<br/>
+                        {{ product.metafields.custom.linked_products.value.group_name }}<br/>
                     <!-- Debug the metafield -->
 <p>Raw metafield: {{ product.metafields.custom.linked_products }}</p>
 <p>Metafield type: {{ product.metafields.custom.linked_products.type }}</p>
