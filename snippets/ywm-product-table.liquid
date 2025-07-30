@@ -17,10 +17,9 @@
             <tbody>
           
           
-          {% paginate collections.all.products by 100 %}
-              {% assign sorted_products = collections.all.products | sort_natural: 'title' %}
+          {% paginate collection by 100 %}
               
-          {% for product in sorted_products %}
+          {% for product in collection %}
                 <tr>
                     <!-- <td>{{ forloop.index }}</td> -->
                     <td>{{ product.title }}</td>
