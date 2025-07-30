@@ -164,14 +164,14 @@
       assign size_split = title | split: '"'
       assign size_first = size_split | first
       assign size_last = size_split | last    
-        if size_last contains ' x ' 
-           assign clean_title = 'true'
-        endif
       assign clean_title = clean_title | append:'"'  
-      if clean_title contains ' - ' and 1 == 2
+      if clean_title contains ' - '
           assign size_split = clean_title | split: ' - '
           assign clean_title = size_split | last
       endif
+        if size_last contains ' x ' 
+           assign clean_title = clean_title |  append: size_last
+        endif
     else
         assign clean_title = ''
     endif
