@@ -240,9 +240,9 @@
                       {% comment %}{% render 'gua-title',title:product.title,split:section.settings.ptitle_fix %}{% endcomment %}
                         {% case section.settings.ptitle_fix %}
                             {% when 'none' %}{{ product.title }}
-                            {% when 'slice' %}{% render 'gua-new-title',title:product.title %}                                 
-                            {% when 'move_model' %}{% render 'gua-new-title',title:product.title,change_model:'move' %}                          
-                            {% when 'remove_model' %}{% render 'gua-new-title',title:product.title,change_model:'remove' %}
+                            {% when 'slice' %}{% render 'gua-title_v2',title:product.title %}                                 
+                            {% when 'move_model' %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}                          
+                            {% when 'remove_model' %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}
                         {% endcase %}
                     </a>
                   </h3>
