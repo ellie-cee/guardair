@@ -155,7 +155,7 @@
     {% if product.type == 'Vacuums' %}
          {% assign basic_series = processed_title %}  
     {% elsif product.type == 'Parts & Accessories' or product.type == 'Air Hoses & Fittings' %}
-         {% assign basic_series = processed_title | remove: size %}
+         {% assign basic_series = processed_title | split: size | first %}
     {% elsif plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
     {% else %}
