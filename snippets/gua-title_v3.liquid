@@ -115,7 +115,6 @@
   {% if change_model == 'get_diff' %}
       {% if title contains 'w/' %}
           {% assign diff_split = title | split: 'w/' %}
-          {% assign clean_title = diff_split | last %}
           {% assign differentiator = diff_split | last %}
           {% assign found_diff = true %}
       {% else %}
@@ -135,15 +134,15 @@
       {% assign size_split = title | split: '"' %}
       {% assign size_first = size_split | first %}
       {% assign size_last = size_split | last %}
-      {% assign clean_title = size_first | append:'"' %}
-    {% if clean_title contains ' - ' %}
-      {% assign size_split = clean_title | split: ' - ' %}
-      {% assign clean_title = size_split | last %}
-    {% endif %}
-    {% if size_last contains ' x '  %}
-      {% assign clean_title = clean_title |  append: size_last | append:'"' %}
-    {% endif %}
-      {% assign size = clean_title %}
+      {% assign size = size_first | append:'"' %}
+        {% if size contains ' - ' %}
+          {% assign size_split = size | split: ' - ' %}
+          {% assign size = size_split | last %}
+        {% endif %}
+        {% if size_last contains ' x '  %}
+          {% assign size = size |  append: size_last | append:'"' %}
+        {% endif %}
+        {% assign size = size %}
     {% else %}
       {% assign size = '' %}
     {% endif %}
