@@ -155,8 +155,9 @@
     {% if plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' %}
     {% else %}
-        {% assign basic_series = clean_title | remove: model | remove: differentiator %}      
+        {% assign basic_series = clean_title | remove: model | remove: differentiator | remove: size %}      
     {% endif %}
+      {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | strip %}  
       {{ basic_series }}  
 {% endif %}
 
