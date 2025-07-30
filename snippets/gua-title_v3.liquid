@@ -162,7 +162,11 @@
   if change_model == 'get_size'
     if title contains '"'
       assign size_split = title | split: '"'
-      assign clean_title = size_split | first
+      assign size_first = size_split | first
+      assign size_last = size_split | last    
+        if size_last contains ' x ' 
+           assign clean_title = 'true'
+        endif
       assign clean_title = clean_title | append:'"'  
       if clean_title contains ' - ' and 1 == 2
           assign size_split = clean_title | split: ' - '
