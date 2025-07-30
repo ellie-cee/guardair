@@ -100,49 +100,55 @@
     assign clean_title = found_model
   endif
 -%}    
+
+{% comment %} Step 7: Dispaly Family {% endcomment %}
+  {% if change_model == 'get_family' %}
+    {% assign family = clean_title | split: found_model | first %}
+Family: {{ family }}
+  {% endif %}
+
+
 {% comment %} Step 7: Display Differentiator {% endcomment %}
-{%- liquid
-  if change_model == 'get_diff'
-    if title contains 'w/'
-      assign diff_split = title | split: 'w/'
-      assign clean_title = diff_split | last
-      assign differentiator = diff_split | last
-    else
-        assign clean_title = ''
-    endif
-  endif
--%} 
+  {% if change_model == 'get_diff' %}
+      {% if title contains 'w/' %}
+          {% assign diff_split = title | split: 'w/' %}
+          {% assign clean_title = diff_split | last %}
+          {% assign differentiator = diff_split | last %}
+      {% else %}
+          {% assign differentiator = '' %}
+      {% endif %}
+    Differentiator: {{ differentiator }}
+  {% endif %}
+ 
 
 {% comment %} Step 7: Display Size {% endcomment %}
-{%- liquid
-  if change_model == 'get_size'
-    if title contains '"'
-      assign size_split = title | split: '"'
-      assign size_first = size_split | first
-      assign size_last = size_split | last    
-      assign clean_title = size_first | append:'"'  
-      if clean_title contains ' - '
-          assign size_split = clean_title | split: ' - '
-          assign clean_title = size_split | last
-      endif
-        if size_last contains ' x ' 
-           assign clean_title = clean_title |  append: size_last | append:'"'
-        endif
-       assign size = clean_title
-    else
-        assign clean_title = ''
-    endif
-  endif
--%} 
+  {% if change_model == 'get_size' %}
+    {% if title contains '"' %}
+      {% assign size_split = title | split: '"' %}
+      {% assign size_first = size_split | first %}
+      {% assign size_last = size_split | last %}
+      {% assign clean_title = size_first | append:'"' %}
+    {% if clean_title contains ' - ' %}
+      {% assign size_split = clean_title | split: ' - ' %}
+      {% assign clean_title = size_split | last %}
+    {% endif %}
+    {% if size_last contains ' x '  %}
+      {% assign clean_title = clean_title |  append: size_last | append:'"' %}
+    {% endif %}
+      {% assign size = clean_title %}
+    {% else %}
+      {% assign size = '' %}
+    {% endif %}
+    Size: {{ size }}
+  {% endif %}
+
 
 {% if text_style and text_style == 'basic_series' %}
-  {% assign clean_title = series %}
+Basic with Series: {{ family }} {{ series }}
 {% endif %}
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
   {% assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
-  {% assign value_needed = clean_title %}
 
-{{ value_needed }}
  {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
