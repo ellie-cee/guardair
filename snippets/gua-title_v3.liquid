@@ -157,7 +157,7 @@
     {% elsif product.type == 'Parts & Accessories' and size %}
          {% assign basic_series = processed_title | split: size | first %}
     {% elsif product.type == 'Air Hoses & Fittings' and size %}
-         {% assign basic_series = processed_title | split: size | first %}  
+         {% assign basic_series = processed_title | split: size | first | append:'-' %}  
     {% elsif product.type == 'Parts & Accessories' or product.type == 'Air Hoses & Fittings' %}
          {% assign basic_series = processed_title %}
     {% elsif plain_jane %}
