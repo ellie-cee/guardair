@@ -54,7 +54,7 @@
 
 {% comment %} Step 1: Handle model numbers if change_model is specified {% endcomment %}
 {%- liquid
-  if change_model == 'remove' or change_model == 'move'
+  if change_model == 'remove' or change_model == 'move' or change_model == 'get_series'
     # Split title into words to find model number
     assign words = processed_title | split: ' '
     assign model_pattern_found = false
