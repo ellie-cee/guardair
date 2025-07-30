@@ -26,7 +26,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
               {% assign parts_products = collections.all.products | sort: 'title' | where: "type", "Parts & Accessories" %}
               
           {% for product in sorted_products %}
-                <tr style="display:none;">
+                <tr>
                     <td>{{ forloop.index }}</td>
                     <td>{{ product.title }}</td>
                     <td>{% render 'gua-title_v2',title:product.title, remove_after_dash: true %}</td>
@@ -57,10 +57,9 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
           
           {% paginate collections.all.products by 100 %}
               {% assign sorted_products = collections.all.products | sort: 'title' %}
-              {% assign parts_products = collections.all.products | sort: 'title' | where: "type", "Parts & Accessories" %}
               
           {% for product in sorted_products %}
-                <tr style="display:none;">
+                <tr>
                     <td>{{ forloop.index }}</td>
                     <td>{{ product.title }}</td>
                     <td>{% render 'gua-title_v3',title:product.title, remove_after_dash: true %}</td>
