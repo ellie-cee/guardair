@@ -150,8 +150,10 @@
 
 
 {% if text_style and text_style == 'basic_series' %}
-Basic with Series: {{ family }} {{ series }}
+    {% if plain_jane %}{% assign basic_series = clean_title | split: ' - ' %}{{ basic_series }}{% endif %}
 {% endif %}
+
+
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
   {% assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
 
