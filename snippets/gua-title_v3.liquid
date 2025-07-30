@@ -60,7 +60,6 @@
 {% comment %} Step 1: Handle model numbers if change_model is specified {% endcomment %}
 {% comment %}Split title into words to find model number {% endcomment %}
   {% assign words = clean_title | split: ' ' %}
-  {% assign model_pattern_found = false %}
     
   {% for word in words %}
       {% comment %}Skip if word contains quote mark (it's a size measurement) {% endcomment %}
@@ -136,7 +135,7 @@
 {% comment %} Step 7: Display Size {% endcomment %}
   {% if change_model == 'get_size' %}
     {% if clean_title contains '"' %}
-      {% assign size_split = title | split: '"' %}
+      {% assign size_split = clean_title | split: '"' %}
       {% assign size_first = size_split | first %}
       {% assign size_last = size_split | last %}
       {% assign size = size_first | append:'"' %}
@@ -157,7 +156,7 @@
 
 {% if text_style and text_style == 'basic_series' %}
     {% if type_subcat == true %}
-         {% assign basic_series = clean_title %}
+         {% assign basic_series = processed_title %}
     {% elsif plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
     {% else %}
