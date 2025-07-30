@@ -145,11 +145,15 @@
     assign clean_title = found_model
   endif
 -%}    
-{% comment %} Step 7: Display Series {% endcomment %}
+{% comment %} Step 7: Display Differentiator {% endcomment %}
 {%- liquid
   if change_model == 'get_diff'
+    if processed_title contains 'w/'
     assign diff_split = processed_title | split: 'w/'
     assign clean_title = diff_split | last
+    else
+        assign clean_title = ''
+    endif
   endif
 -%} 
 
