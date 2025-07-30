@@ -16,7 +16,9 @@
 {%- liquid
   assign processed_title = title
   
-  # Set default value for remove_after_dash if not provided
+  assign found_model = ''
+  assign model_removed_title = ''
+    
   if remove_after_dash == blank
     assign remove_after_dash = true
   endif
@@ -28,21 +30,8 @@
   assign words_array = words_to_remove | split: ','
   
   for word in words_array
-    assign processed_title = processed_title | replace: word, ''
+    assign processed_title = title | replace: word, ''
   endfor
--%}
-
-{%- liquid
-  assign processed_title = title
-  
-  # Set default value for remove_after_dash if not provided
-  if remove_after_dash == blank
-    assign remove_after_dash = true
-  endif
-  
-  # Initialize model number variables
-  assign found_model = ''
-  assign model_removed_title = ''
 -%}
 
 {% comment %} Step 1: Handle model numbers if change_model is specified {% endcomment %}
