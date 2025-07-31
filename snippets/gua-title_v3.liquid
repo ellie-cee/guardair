@@ -126,6 +126,7 @@
       {% if clean_title contains 'w/' %}
           {% assign diff_split = clean_title | split: 'w/' %}
           {% assign differentiator = diff_split | last %}
+          {% assign differentiator_whole = differentiator | prepend:'w/ ' %}
           {% assign found_diff = true %}
       {% else %}
           {% assign differentiator = '' %}
@@ -192,7 +193,7 @@
     {% elsif plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
     {% else %}
-        {% assign basic_series = clean_title | remove: model | remove: differentiator | remove: size %}      
+        {% assign basic_series = clean_title | remove: model | remove: differentiator_whole | remove: size %}      
     {% endif %}
       {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}
       
