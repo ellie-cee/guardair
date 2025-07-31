@@ -10,8 +10,8 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
   {% assign product_types = 'Vacuums,Parts & Accessories,Air Hoses & Fittings' %}
   {% assign types = product_types | split: ',' %}
 
-  {{ types | first }}
   {% for type in types %}
+    <h2>{{ type }}</h2>
       {% assign current_collection = collections.all.products | where: "type", type %}
  
       {% assign sorted_products = current_collection | sort: 'title' %}
