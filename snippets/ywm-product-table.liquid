@@ -18,7 +18,7 @@
 
               {% assign all_products = collections['all-active-products'].products %}
           
-          {% paginate all_products by 1000 %}
+          {% paginate collections['all-active-products'].products by 1000 %}
               
           {% for product in collection %}
                 <tr>
