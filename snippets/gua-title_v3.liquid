@@ -134,7 +134,7 @@
     {% if clean_title contains '"' or clean_title contains 'Gallon' %}
        {% if clean_title contains '"' %}
             {% assign size_split = clean_title | split: '"' %}
-       {% elsif clean_title contains 'Gallon' %}         
+       {% elsif clean_title contains 'Gallon' %}         here
             {% assign size_split = clean_title | split: 'Gallon' %}
          {% else %}        
            {% assign size_split = clean_title %}
