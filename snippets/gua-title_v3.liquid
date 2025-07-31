@@ -45,7 +45,7 @@
 {% assign special_chars_array = special_chars | split: ',' %}
   
 {% for special_char in special_chars_array %}
-{% assign clean_title = clean_title | replace: special_char, '' %}
+  {% if clean_title contains special_char %}{% assign found_special = true %}{% endif %}{% assign clean_title = clean_title | replace: special_char, '' %}
 {% endfor %}
 
 {% if clean_title contains '"' %}
@@ -104,7 +104,11 @@
    
 
 {% comment %} Family {% endcomment %}
-{% assign family = clean_title | split: model | first %}
+{% if found_special %}
+  {% assign family = clean_title | append:'--' %}
+{% else %}
+  {% assign family = clean_title | split: model | first %}
+{% endif %}
 
 
 {% comment %} Differentiator {% endcomment %}
