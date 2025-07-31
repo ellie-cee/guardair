@@ -143,7 +143,7 @@
              {% assign units = 'Gallon' %}
             {% assign size_first = size_split | first %}
             {% assign size_last = size_split | last %}
-            {% assign size = size_last | append:units %}         
+            {% assign size = size_first | append:units %}         
          {% else %}        
            {% assign size_split = '' %}
            {% assign units = '' %}
