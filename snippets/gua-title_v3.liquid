@@ -130,7 +130,6 @@
 
    
 {% comment %} Step 7: Display Size {% endcomment %}
-  {% if change_model == 'get_size' %}
     {% if clean_title contains '"' or clean_title contains 'Gallon' %}
        {% if clean_title contains '"' %}
             {% assign size_split = clean_title | split: '"' %}
@@ -159,8 +158,9 @@
     {% else %}
       {% assign size = '' %}
     {% endif %}
-      {% assign size = size | strip %}{{- size -}}
-  {% endif %}
+      {% assign size = size | strip %}
+      
+{% if change_model == 'get_size' %}{{- size -}}{% endif %}
 
 
 {% if text_style and text_style == 'format1' %}
