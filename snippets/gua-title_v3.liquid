@@ -135,16 +135,20 @@
        {% if clean_title contains '"' %}
             {% assign size_split = clean_title | split: '"' %}
              {% assign units = '"' %}
-       {% elsif clean_title contains 'Gallon' %}
-            {% assign size_split = clean_title | split: 'Gallon' %}
-             {% assign units = 'Gallon' %}         
-         {% else %}        
-           {% assign size_split = clean_title %}
-           {% assign units = '' %}
-       {% endif %}
             {% assign size_first = size_split | first %}
             {% assign size_last = size_split | last %}
-            {% assign size = size_first | append:units %}
+            {% assign size = size_first | append:units %}         
+       {% elsif clean_title contains 'Gallon' %}
+            {% assign size_split = clean_title | split: 'Gallon' %}
+             {% assign units = 'Gallon' %}
+            {% assign size_first = size_split | first %}
+            {% assign size_last = size_split | last %}
+            {% assign size = size_last | append:units %}         
+         {% else %}        
+           {% assign size_split = '' %}
+           {% assign units = '' %}
+           {% assign size = '' %}         
+       {% endif %}
               {% if size contains ' - ' %}
                 {% assign size_split = size | split: ' - ' %}
                 {% assign size = size_split | last %}
