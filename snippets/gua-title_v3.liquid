@@ -197,8 +197,9 @@
       {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}
       
       {% comment %} WEIRD OVERRIDES {% endcomment %}
-  {% if basic_series contains 'Material Mover' %}{% assign basic_series = basic_series | append: ' Vacuum' %}{% endif %}
-  {% if basic_series contains 'ContainIt Kit' %}{% assign basic_series = 'Contain-It Kit' %}{% endif %}
+    {% if found_family and size_position != 0 %}{% assign basic_series = basic_series | remove:size %}{% endif %}
+    {% if basic_series contains 'Material Mover' %}{% assign basic_series = basic_series | append: ' Vacuum' %}{% endif %}
+    {% if basic_series contains 'ContainIt Kit' %}{% assign basic_series = 'Contain-It Kit' %}{% endif %}
 {{ basic_series }}  
 {% endif %}
 
