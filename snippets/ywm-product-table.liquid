@@ -24,7 +24,7 @@
               
           {% for product in collection %}
                     {% if broken contains product.title %}{% assign broken = 'broken' %}{% endif %}
-                      {% for part in parts %}{% if product.title contains part %}{% assign review = 'review' %}{% endif %}{% endfor %}
+                      {% for part in parts %}{% if product.title contains part %}{% assign review = ' review' %}{% endif %}{% endfor %}
                 <tr class="{{ broken }}{{ review }}">
                     {% comment %} <td>{{ forloop.index }}</td> {% endcomment %}
                     <td>{{ product.title }}</td>
@@ -37,7 +37,7 @@
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
                 </tr>
-                  {% assign highlight = '' %}
+                  {% assign broken = '' %}{% assign review = '' %}
             {% endfor %}
             </tbody>
           </table>
