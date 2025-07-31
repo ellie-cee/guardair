@@ -17,7 +17,7 @@
     <h2>{{ type }}</h2>
       {% assign current_collection = collections.all.products | where: "type", type %}
         {% render 'ywm-product-table', collection:test_collection %}
-        {% render 'ywm-product-table', collection:current_collection %}
+        {% comment %}{% render 'ywm-product-table', collection:current_collection %}{% endcomment %}
  
       <hr>
   {% endfor %}
