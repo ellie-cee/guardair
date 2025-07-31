@@ -20,7 +20,7 @@
             </thead>
             <tbody>
           
- {% if 1 == 2 %}             
+ {% if 1 == 1 %}             
           {% for product in collection %}
                     {% assign broken = '' %}{% assign review = '' %}            
                     {% if broken_list contains product.title %}{% assign broken = 'broken' %}{% endif %}
@@ -39,6 +39,7 @@
                 </tr>
             {% endfor %}
 {% endif %}
+ {% if 1 == 2 %} 
               <tr><td colspan="7" style="background:#000;"></td></tr>
               <tr><td colspan="7" style="background:#ccc;">BROKEN TITLES</td></tr>
             {% for product in brokens %}
@@ -55,6 +56,7 @@
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
                 </tr>
             {% endfor %}
+{% endif %}   
             </tbody>
           </table>
 
