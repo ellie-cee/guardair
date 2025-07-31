@@ -1,6 +1,6 @@
 {% assign broken = 'Personnel Cleaning Station 5.5 Gallon Vacuum' %}
 {% assign parts = 'ack)' %}
-{% assign highlight = 'broken' %}
+{% assign highlight = '' %}
 
  <div style="display:block;">
           <table style="max-width:1200px;font-size:14px;">
@@ -22,7 +22,7 @@
           
               
           {% for product in collection %}
-                    {% if broken contains product.title %} style="color:red"{% endif %}
+                    {% if broken contains product.title %}{% assign highlight = 'broken' %}{% endif %}
                 <tr>
                     <!-- <td>{{ forloop.index }}</td> -->
                     <td class="{{ highlight }}">{{ product.title }}</td>
@@ -35,6 +35,7 @@
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
                 </tr>
+                  {% assign highlight = '' %}
             {% endfor %}
             </tbody>
           </table>
