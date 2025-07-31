@@ -15,9 +15,10 @@
               </tr>
             </thead>
             <tbody>
+
+              {% assign all_products = collections['all-active-products'].products %}
           
-          
-          {% paginate collections.all.products by 1000 %}
+          {% paginate all_products by 1000 %}
               
           {% for product in collection %}
                 <tr>
