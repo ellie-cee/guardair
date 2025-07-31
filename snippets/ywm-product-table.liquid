@@ -32,7 +32,9 @@
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
                 </tr>
             {% endfor %}
-          
+                {% if paginate.pages > 1 %}
+                    {{ paginate | default_pagination }}
+                {% endif %}
           {% endpaginate %}
             </tbody>
           </table>
