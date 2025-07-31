@@ -21,8 +21,7 @@
   {% for type in types %}
     <h2>{{ type }}</h2>
       {% assign current_collection = collections.all.products | where: "type", type %}
-        {% render 'ywm-product-table', collection:test_collection %}
-        {% comment %}{% render 'ywm-product-table', collection:current_collection %}{% endcomment %}
+      {% render 'ywm-product-table', collection:current_collection %}
  
       <hr>
   {% endfor %}
