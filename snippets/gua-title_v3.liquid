@@ -169,7 +169,7 @@
     {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
         {% assign basic_series = clean_title | split: ' - ' | first | remove: size %}
     {% elsif product.type == 'Vacuums' %}
-        {% assign basic_series = clean_title | split: ' - ' | first %}        
+        {% assign basic_series = clean_title | split: ' - ' | first %}
     {% elsif product.type == 'Parts & Accessories' and product.title contains ' - '  %} 
          {% assign basic_series = clean_title | remove: size | split: ' - ' |  first %}            
     {% elsif product.type == 'Parts & Accessories'  %} 
@@ -183,7 +183,9 @@
     {% else %}
         {% assign basic_series = clean_title | remove: model | remove: differentiator | remove: size %}      
     {% endif %}
-      {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}  
+      {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}
+      {% comment %} WEIRD OVERRIDES {% endcomment %}
+  {% if basic_series contains 'Material Mover' %}{% assign basic_series = basic_series | append: ' Vacuum' %}{% endif %}
       {{ basic_series }}  
 {% endif %}
 
