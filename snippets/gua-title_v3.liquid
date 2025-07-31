@@ -184,9 +184,11 @@
         {% assign basic_series = clean_title | remove: model | remove: differentiator | remove: size %}      
     {% endif %}
       {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}
+      
       {% comment %} WEIRD OVERRIDES {% endcomment %}
   {% if basic_series contains 'Material Mover' %}{% assign basic_series = basic_series | append: ' Vacuum' %}{% endif %}
-      {{ basic_series }}  
+  {% if basic_series contains 'Contain-It Kit' %}{% assign basic_series = 'Contain-It Kit' %}{% endif %}
+{{ basic_series }}  
 {% endif %}
 
 
