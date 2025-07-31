@@ -125,21 +125,21 @@
 
    
 {% comment %} Size {% endcomment %}
-    {% if clean_title contains '"' or clean_title contains 'Gallon' %}
-       {% if clean_title contains '"' %}
-            {% assign size_split = clean_title | split: '"' %}
-             {% assign units = '"' %}
-            {% assign size_first = size_split | first %}
-            {% assign size_last = size_split | last %}
-            {% assign size = size_first | append:units %}         
-       {% elsif clean_title contains '5.5 Gallon' %}
+    {% if clean_title contains '"' or clean_title contains 'Gallon' %}     
+       {% if clean_title contains '5.5 Gallon' %}
             {% assign size = '5.5 Gallon' %}                  
        {% elsif clean_title contains 'Gallon' %}
             {% assign size_split = clean_title | split: 'Gallon' %}
              {% assign units = 'Gallon' %}
             {% assign size_first = size_split | first %}
             {% assign size_last = size_split | last %}
-            {% assign size = size_first | append:units %}         
+            {% assign size = size_first | append:units %}      
+       {% elsif clean_title contains '"' %}
+            {% assign size_split = clean_title | split: '"' %}
+             {% assign units = '"' %}
+            {% assign size_first = size_split | first %}
+            {% assign size_last = size_split | last %}
+            {% assign size = size_first | append:units %}                
          {% else %}        
            {% assign size_split = '' %}
            {% assign units = '' %}
