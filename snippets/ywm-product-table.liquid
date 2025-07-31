@@ -1,7 +1,8 @@
-{% assign broken = 'Personnel Cleaning Station 5.5 Gallon Vacuum' %}
+{% assign broken_list = 'Personnel Cleaning Station 5.5 Gallon Vacuum' %}
 {% assign parts_list = 'ack),Gallon' %}
 {% assign parts = parts_list | split:',' %}
 {% assign review = '' %}
+{% assign broken = '' %}
  <div style="display:block;">
           <table style="max-width:1800px;font-size:13px;">
             <thead>
@@ -22,7 +23,7 @@
           
               
           {% for product in collection %}
-                    {% if broken contains product.title %}{% assign broken = 'broken' %}{% endif %}
+                    {% if broken_list contains product.title %}{% assign broken = 'broken' %}{% endif %}
                       {% for part in parts %}{% if product.title contains part %}{% assign review = ' review' %}{% endif %}{% endfor %}
                 <tr class="{{ broken }}{{ review }}">
                     {% comment %} <td>{{ forloop.index }}</td> {% endcomment %}
