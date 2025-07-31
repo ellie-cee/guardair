@@ -38,7 +38,24 @@
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
                 </tr>
             {% endfor %}
-        
+{% if forloop.first %}
+              <tr><td colspan="7" style="background:#000;"></td></tr>
+              <tr><td colspan="7" style="background:#ccc;">BROKEN TITLES</td></tr>
+            {% for product in brokens %}
+                    {% assign broken = '' %}{% assign review = '' %}            
+                    {% if broken_list contains product.title %}{% assign broken = 'broken' %}{% endif %}
+                      {% for part in parts %}{% if product.title contains part %}{% assign review = ' review' %}{% endif %}{% endfor %}
+                <tr class="{{ broken }}{{ review }}">
+                    <td>{{ product }}</td>
+                    <td>{{ product.type }}</td>     
+                    <td>{% render 'gua-title_v3',product:product, text_style:'format1' %}</td>   
+                    <td>{{ product.metafields.custom.linked_product_value | split: '(' | first }}<br>{{ product.metafields.custom.linked_product_value | split: '(' | last | remove:')' }}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
+                </tr>
+            {% endfor %}
+  {% endif %}
             </tbody>
           </table>
 
