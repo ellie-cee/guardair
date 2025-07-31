@@ -1,6 +1,7 @@
 {% assign broken_list = 'Personnel Cleaning Station 5.5 Gallon Vacuum,Gunslinger® Magnetic Air Gun Holder,Exhaust Silencer Foam Insert - B/D/S Venturi' %}
 {% assign parts_list = 'ack),Gallon' %}
 {% assign parts = parts_list | split:',' %}
+{% assign brokens = broken_list | split:',' %}
  <div style="display:block;">
           <table style="max-width:1800px;font-size:13px;">
             <thead>
@@ -31,6 +32,21 @@
                     {% comment %} <td>{{ product.metafields.custom.linked_products.value.group_name }}</td> {% endcomment %}
                     <td>{% render 'gua-title_v3',product:product, text_style:'format1' %}</td>   
                     {% comment %} <td>{% render 'gua-title_v3',product:product, change_model: 'get_family' %}</td>{% endcomment %}
+                    <td>{{ product.metafields.custom.linked_product_value | split: '(' | first }}<br>{{ product.metafields.custom.linked_product_value | split: '(' | last | remove:')' }}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
+                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
+                </tr>
+            {% endfor %}
+
+            {% for product in brokens %}
+                    {% assign broken = '' %}{% assign review = '' %}            
+                    {% if broken_list contains product.title %}{% assign broken = 'broken' %}{% endif %}
+                      {% for part in parts %}{% if product.title contains part %}{% assign review = ' review' %}{% endif %}{% endfor %}
+                <tr class="{{ broken }}{{ review }}">
+                    <td>{{ product.title }}</td>
+                    <td>{{ product.type }}</td>     
+                    <td>{% render 'gua-title_v3',product:product, text_style:'format1' %}</td>   
                     <td>{{ product.metafields.custom.linked_product_value | split: '(' | first }}<br>{{ product.metafields.custom.linked_product_value | split: '(' | last | remove:')' }}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
