@@ -1,8 +1,8 @@
 {% style %}
-sticky-header {margin-bottom:6rem;}  
-table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
+  sticky-header {margin-bottom:6rem;}  
+  table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
   th,td {color:#000;background:#fff;}
-    th {background:#eee;}
+  th {background:#eee;}
 {% endstyle %}
 
 <div class="page-width" style="margin-top:6rem;">
@@ -21,78 +21,4 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
   {% endfor %}
   
 
-  
-    <div style="display:none;">
-          <table style="max-width:1200px;margin-top:2rem;">
-            <thead>
-              <tr>
-                <th>Num</th>
-                <th>Original Title</th> 
-                <th>Clean Title</th>
-                <th>Remove Model</th>   
-                <th>Model First</th>         
-              </tr>
-            </thead>
-            <tbody>
-          
-          
-          {% paginate collections.all.products by 100 %}
-              {% assign sorted_products = collections.all.products | sort: 'title' %}
-              {% assign parts_products = collections.all.products | sort: 'title' | where: "type", "Parts & Accessories" %}
-              
-          {% for product in sorted_products %}
-                <tr>
-                    <td>{{ forloop.index }}</td>
-                    <td>{{ product.title }}</td>
-                    <td>{% render 'gua-title_v2',title:product.title, remove_after_dash: true %}</td>
-                    <td>{% render 'gua-title_v2',title:product.title, remove_after_dash: false, change_model: 'remove' %}</td>
-                    <td>{% render 'gua-title_v2',title:product.title, remove_after_dash: false, change_model: 'move' %}</td>        
-                </tr>
-            {% endfor %}
-          
-          {% endpaginate %}
-            </tbody>
-          </table>
-    </div>
-    <div style="display:none;">
-          <table style="max-width:1200px;margin-top:6rem;font-size:14px;">
-            <thead>
-              <tr>
-                <!-- <th>Num</th> -->
-                <th>Original Title</th> 
-                <th>Product Type</th>
-                <th>Display Name</th>   
-                <th>Basic with Series</th>    
-                <!-- <th>Family</th>                      -->
-                <th>Product Value</th>                
-                <th>Size</th>
-                <th>Series</th>      
-                <th>Diff</th>                   
-              </tr>
-            </thead>
-            <tbody>
-          
-          
-          {% paginate collections.all.products by 100 %}
-              {% assign sorted_products = collections.all.products | sort_natural: 'title' %}
-              
-          {% for product in sorted_products %}
-                <tr>
-                    <!-- <td>{{ forloop.index }}</td> -->
-                    <td>{{ product.title }}</td>
-                    <td>{{ product.type }}</td>     
-                    <td>{{ product.metafields.custom.linked_products.value.group_name }}</td>
-                    <td>{% render 'gua-title_v3',product:product, text_style:'basic_series' %}</td>   
-                    <!-- <td>{% render 'gua-title_v3',product:product, change_model: 'get_family' %}</td>                   -->
-                    <td>{{ product.metafields.custom.linked_product_value }}</td>
-                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
-                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
-                    <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
-                </tr>
-            {% endfor %}
-          
-          {% endpaginate %}
-            </tbody>
-          </table>
-    </div>  
 </div>
