@@ -31,7 +31,7 @@
                     {% comment %} <td>{{ product.metafields.custom.linked_products.value.group_name }}</td> {% endcomment %}
                     <td>{% render 'gua-title_v3',product:product, text_style:'format1' %}</td>   
                     {% comment %} <td>{% render 'gua-title_v3',product:product, change_model: 'get_family' %}</td>{% endcomment %}
-                    <td>{{ product.metafields.custom.linked_product_value | split: '(' | first }}<br>({{ product.metafields.custom.linked_product_value | split: '(' | last }}</td>
+                    <td>{{ product.metafields.custom.linked_product_value | split: '(' | first }}<br>{{ product.metafields.custom.linked_product_value | split: '(' | last | prepend:'(' }}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
