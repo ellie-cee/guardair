@@ -7,7 +7,10 @@
   .broken {background-color:#dda8a857;}
   h2 {margin:0 auto;}
 {% endstyle %}
-  {% assign test_collection = collections['test-collection'] %}
+
+  {% assign test_handle = 'test-collection' %}
+  {% assign test_collection = collections[test_handle] %}
+
 <div class="page-width2" style="margin:8rem auto 0rem;max-width:1500px;">
         {% render 'ywm-product-table', collection:test_collection %}
 
