@@ -177,7 +177,7 @@
     {% else %}
         {% assign basic_series = clean_title | remove: model | remove: differentiator | remove: size %}      
     {% endif %}
-      {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | strip %}  
+      {% assign basic_series = basic_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}  
       {{ basic_series }}  
 {% endif %}
 
