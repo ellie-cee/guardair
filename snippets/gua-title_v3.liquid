@@ -156,7 +156,6 @@
               {% if size_last contains ' x '  %}
                 {% assign size = size |  append: size_last | append:'"' %}
               {% endif %}
-
     {% else %}
       {% assign size = '' %}
     {% endif %}
@@ -167,7 +166,7 @@
 {% if text_style and text_style == 'format1' %}
     {% if product.type == 'Vacuums' %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
-    {% elsif product.type == 'Parts & Accessories'  %}{{ size }}
+    {% elsif product.type == 'Parts & Accessories'  %} 
          {% assign basic_series = clean_title | remove: size %}         
     {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
          {% assign basic_series = clean_title | split: size | first %}  
