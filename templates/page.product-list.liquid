@@ -7,7 +7,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
 
 <div class="page-width" style="margin-top:6rem;">
 
-  {% assign product_types = 'Parts & Accessories' %}
+  {% assign product_types = 'Parts & Accessories,Vacuums' %}
   {% assign types = product_types | split: ',' %}
 
   {{ types | first }}
@@ -17,7 +17,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
       {% assign sorted_products = current_collection | sort: 'title' %}
 
         {% render 'ywm-product-table', collection:current_collection %}
-      
+      <hr>
   {% endfor %}
   
 
