@@ -99,10 +99,8 @@
 
 
 {% comment %} Step 7: Display Series {% endcomment %}
-  {% if change_model == 'get_series' %}
-      {% assign series = model    %}
-{{ series }}
-  {% endif%}
+{% assign series = model %}
+
    
 
 {% comment %} Family {% endcomment %}
@@ -193,6 +191,7 @@
 {% if change_model == 'get_size' %}{{- size -}}{% endif %}
 {% if change_model == 'get_diff' %}{{ differentiator }}{% endif %}
 {% if change_model == 'get_family' %}{{ family }}{% endif %}
+{% if change_model == 'get_series' %}{{ series }}{% endif%}
  {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
