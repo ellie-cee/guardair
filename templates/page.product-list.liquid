@@ -18,6 +18,7 @@
   {% assign product_types = 'Vacuums,Parts & Accessories,Air Hoses & Fittings' %}
   {% assign types = product_types | split: ',' %}
 
+  {% if 1 == 2 %}
   {% for type in types %}
     <h2>{{ type }}</h2>
       {% assign current_collection = collections.all.products | where: "type", type %}
@@ -25,6 +26,6 @@
  
       <hr>
   {% endfor %}
-  
+{% endif %}
 
 </div>
