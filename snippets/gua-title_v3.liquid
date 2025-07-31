@@ -168,10 +168,8 @@
     {% else %}
       {% assign size = '' %}
     {% endif %}
-       {% assign size_position = clean_title | split: size | first | size %}    
-       
-    {% if found_family and size_position != 0 %}
-         {% assign size = size | remove:family | strip %}
+    {% if found_family %}
+      {% assign size = size | remove:family | strip %}
     {% else %}
       {% assign size = size | strip %}
     {% endif %}
