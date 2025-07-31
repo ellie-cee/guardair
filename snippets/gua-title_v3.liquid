@@ -169,6 +169,7 @@
         {% assign basic_series = clean_title | split: ' - ' | first %}
     {% elsif product.type == 'Parts & Accessories' and size  != blank %}
          {% assign basic_series = clean_title | split: size | first %}
+         {% assign basic_series = clean_title | remove: size %}         
     {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
          {% assign basic_series = clean_title | split: size | first %}  
     {% elsif product.type == 'Parts & Accessories' or product.type == 'Air Hoses & Fittings' %}
