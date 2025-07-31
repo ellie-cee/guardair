@@ -1,5 +1,5 @@
  <div style="display:block;">
-          {% paginate collections['all-active-products'].products by 50 %}   
+
           <table style="max-width:1200px;margin-top:6rem;font-size:14px;">
             <thead>
               <tr>
@@ -35,8 +35,5 @@
             </tbody>
           </table>
 
-                   {% if paginate.pages > 1 %}
-                    {{ paginate | default_pagination }}
-                {% endif %}
-          {% endpaginate %}
+
     </div>  
