@@ -6,12 +6,12 @@
           <table style="max-width:1500px;font-size:14px;">
             <thead>
               <tr>
-                <!-- <th>Num</th> -->
+                {% comment %} <th>Num</th> {% endcomment %}
                 <th>Original Title</th> 
                 <th>Product Type</th>
-                <!-- <th>Display Name</th>-->
+                {% comment %} <th>Display Name</th>{% endcomment %}
                 <th>Format 1</th>    
-                <!-- <th>Family</th>-->
+                {% comment %} <th>Family</th>{% endcomment %}
                 <th>Product Value</th>                
                 <th>Size</th>
                 <th>Series</th>      
@@ -24,12 +24,12 @@
           {% for product in collection %}
                     {% if broken contains product.title %}{% assign highlight = 'broken' %}{% endif %}
                 <tr class="{{ highlight }}">
-                    <!-- <td>{{ forloop.index }}</td> -->
+                    {% comment %} <td>{{ forloop.index }}</td> {% endcomment %}
                     <td>{{ product.title }}</td>
                     <td>{{ product.type }}</td>     
-                    <!-- <td>{{ product.metafields.custom.linked_products.value.group_name }}</td> -->
+                    {% comment %} <td>{{ product.metafields.custom.linked_products.value.group_name }}</td> {% endcomment %}
                     <td>{% render 'gua-title_v3',product:product, text_style:'format1' %}</td>   
-                    <!-- <td>{% render 'gua-title_v3',product:product, change_model: 'get_family' %}</td>-->
+                    {% comment %} <td>{% render 'gua-title_v3',product:product, change_model: 'get_family' %}</td>{% endcomment %}
                     <td>{{ product.metafields.custom.linked_product_value }}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
