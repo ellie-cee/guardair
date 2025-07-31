@@ -39,6 +39,7 @@
                 </tr>
             {% endfor %}
 
+              <h2>Broken</h2>
             {% for product in brokens %}
                     {% assign broken = '' %}{% assign review = '' %}            
                     {% if broken_list contains product.title %}{% assign broken = 'broken' %}{% endif %}
