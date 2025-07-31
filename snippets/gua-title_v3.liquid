@@ -30,17 +30,16 @@
 
 -%}
 
-{% comment %} Step 1: Remove specific words {% endcomment %}
-{%- liquid
-  assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,F5,(Sold by the Foot)'
-  assign words_array = words_to_remove | split: ','
+{% comment %} Step X: Remove specific words {% endcomment %}
+{% assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,F5,(Sold by the Foot)' %}
+{% assign words_array = words_to_remove | split: ',' %}
   
-  for word in words_array
-    assign clean_title = processed_title | replace: word, ''
-  endfor
--%}
+{% for word in words_array %}
+  {% assign clean_title = processed_title | replace: word, '' %}
+{% endfor %}
 
-{% comment %} Step 4: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
+
+{% comment %} Step X: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
 {% assign special_chars = '®,®,™,©,℠' %}
 {% assign special_chars_array = special_chars | split: ',' %}
   
@@ -54,7 +53,16 @@
 {% if clean_title contains '"' %}
     {% assign found_quote = true %}
 {% endif %}
-{% comment %} Step 1: Handle model numbers if change_model is specified {% endcomment %}
+
+{% comment %} Step X: Find Family Name {% endcomment %}
+{% assign families = 'PowerQUAD' %}
+{% assign families_array = families | split: ',' %}
+  
+{% for family_val in families_array %}
+  {% if clean_title contains family_val %}{% assign found_family = true %}{% assign family = family_val %}{% endif %}
+{% endfor %}
+
+{% comment %} Step X: Handle model numbers if change_model is specified {% endcomment %}
 {% comment %}Split title into words to find model number {% endcomment %}
   {% assign words = clean_title | split: ' ' %}
     
