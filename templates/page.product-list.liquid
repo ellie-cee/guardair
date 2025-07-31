@@ -12,7 +12,7 @@ table {max-width:700px;margin:0 auto;background:#fff;color:#000;}
 
   {{ types | first }}
   {% for type in types %}
-      {% assign current_collection = collections.all.products | where: "type", "Parts & Accessories" %}
+      {% assign current_collection = collections.all.products | where: "type", type %}
  
       {% assign sorted_products = current_collection | sort: 'title' %}
 
