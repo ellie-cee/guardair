@@ -40,6 +40,7 @@
             {% endfor %}
 
               <tr><td colspan="7" style="background:#000;"></td></tr>
+              <tr><td colspan="7" style="background:#ccc;">BROKEN TITLES</td></tr>
             {% for product in brokens %}
                     {% assign broken = '' %}{% assign review = '' %}            
                     {% if broken_list contains product.title %}{% assign broken = 'broken' %}{% endif %}
