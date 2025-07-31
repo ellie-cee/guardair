@@ -18,7 +18,8 @@
   
   assign model = ''
   assign plain_jane = true
-  assign found_model = false       
+  assign found_model = false   
+  assign found_family = false 
   assign found_quote = false   
   assign found_diff = false   
   assign model_removed_title = ''
@@ -112,10 +113,12 @@
    
 
 {% comment %} Family {% endcomment %}
-{% if found_special %}
-  {% assign family = clean_title | append:'--' %}
+{% if found_family %}
+  {% assign family2 = clean_title | append:'--' %}
+{% elsif found_special %}
+  {% assign family2 = clean_title | append:'--' %}
 {% else %}
-  {% assign family = clean_title | split: ' ' | first %}
+  {% assign family2 = clean_title | split: ' ' | first %}
 {% endif %}
 
 
