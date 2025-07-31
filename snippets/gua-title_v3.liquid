@@ -41,7 +41,7 @@
 -%}
 
 {% comment %} Step 4: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
-{% assign special_chars = '®,™,©,℠' %}
+{% assign special_chars = '®,®,™,©,℠' %}
 {% assign special_chars_array = special_chars | split: ',' %}
   
 {% for special_char in special_chars_array %}
@@ -151,7 +151,7 @@
   {% endif %}
 
 
-{% if text_style and text_style == 'basic_series' %}
+{% if text_style and text_style == 'format1' %}
     {% if product.type == 'Vacuums' %}
         {% assign basic_series = processed_title %}  
     {% elsif product.type == 'Parts & Accessories' and size  != blank %}
