@@ -107,12 +107,12 @@
   {% endfor %}
 
 
-{% comment %} Step 7: Display Series {% endcomment %}
+{% comment %} SERIES {% endcomment %}
 {% assign series = model %}
 
    
 
-{% comment %} Family {% endcomment %}
+{% comment %} FAMILY {% endcomment %}
 {% if found_family %}
   {% assign family2 = clean_title | append:'--' %}
 {% elsif found_special %}
@@ -122,7 +122,7 @@
 {% endif %}
 
 
-{% comment %} Differentiator {% endcomment %}
+{% comment %} DIFFERENTIATOR {% endcomment %}
       {% if clean_title contains 'w/' %}
           {% assign diff_split = clean_title | split: 'w/' %}
           {% assign differentiator = diff_split | last %}
@@ -137,7 +137,7 @@
 {% endif %}
 
    
-{% comment %} Size {% endcomment %}
+{% comment %} SIZE {% endcomment %}
     {% if clean_title contains '"' or clean_title contains 'Gallon' %}     
        {% if clean_title contains '5.5 Gallon' %}
             {% assign size = '5.5 Gallon' %}                  
@@ -168,7 +168,11 @@
     {% else %}
       {% assign size = '' %}
     {% endif %}
+    {% if found_family %}
+      {% assign size = size | remove:family | strip %}
+    {% else %}
       {% assign size = size | strip %}
+    {% endif %}
 
 
 {% comment %} FORMAT 1 {% endcomment %}
