@@ -167,12 +167,11 @@
 {% if text_style and text_style == 'format1' %}
     {% if product.type == 'Vacuums' %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
-    {% elsif product.type == 'Parts & Accessories' and size  != blank %}
-         {% assign basic_series = clean_title | split: size | first %}
+    {% elsif product.type == 'Parts & Accessories'  %}ggg
          {% assign basic_series = clean_title | remove: size %}         
     {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
          {% assign basic_series = clean_title | split: size | first %}  
-    {% elsif product.type == 'Parts & Accessories' or product.type == 'Air Hoses & Fittings' %}
+    {% elsif product.type == product.type == 'Air Hoses & Fittings' %}
          {% assign basic_series = clean_title %}
     {% elsif plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
