@@ -1,4 +1,5 @@
  <div style="display:block;">
+          {% paginate collections['all-active-products'].products by 50 %}   
           <table style="max-width:1200px;margin-top:6rem;font-size:14px;">
             <thead>
               <tr>
@@ -16,7 +17,6 @@
             </thead>
             <tbody>
           
-          {% paginate collections['all-active-products'].products by 1000 %}
               
           {% for product in collection %}
                 <tr>
@@ -32,10 +32,11 @@
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>                 
                 </tr>
             {% endfor %}
-                {% if paginate.pages > 1 %}
+            </tbody>
+          </table>
+
+                   {% if paginate.pages > 1 %}
                     {{ paginate | default_pagination }}
                 {% endif %}
           {% endpaginate %}
-            </tbody>
-          </table>
     </div>  
