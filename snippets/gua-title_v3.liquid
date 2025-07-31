@@ -105,15 +105,11 @@
   {% endif%}
    
 
-{% comment %} Step 7: Dispaly Family {% endcomment %}
-  {% if change_model == 'get_family' %}
-    {% assign family = clean_title | split: model | first %}
-{{ family }}
-  {% endif %}
+{% comment %} Family {% endcomment %}
+{% assign family = clean_title | split: model | first %}
 
 
-{% comment %} Step 7: Display Differentiator {% endcomment %}
-  {% if change_model == 'get_diff' %}
+{% comment %} Differentiator {% endcomment %}
       {% if clean_title contains 'w/' %}
           {% assign diff_split = clean_title | split: 'w/' %}
           {% assign differentiator = diff_split | last %}
@@ -121,15 +117,14 @@
       {% else %}
           {% assign differentiator = '' %}
       {% endif %}
-{{ differentiator }}
-  {% endif %}
+
  
- {% if found_model or found_quote or found_diff %}
+{% if found_model or found_quote or found_diff %}
       {% assign plain_jane = false %}
-   {% endif %}
+{% endif %}
 
    
-{% comment %} Step 7: Display Size {% endcomment %}
+{% comment %} Size {% endcomment %}
     {% if clean_title contains '"' or clean_title contains 'Gallon' %}
        {% if clean_title contains '"' %}
             {% assign size_split = clean_title | split: '"' %}
@@ -161,10 +156,9 @@
       {% assign size = '' %}
     {% endif %}
       {% assign size = size | strip %}
-      
-{% if change_model == 'get_size' %}{{- size -}}{% endif %}
 
 
+{% comment %} FORMAT 1 {% endcomment %}
 {% if text_style and text_style == 'format1' %}
     {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
         {% assign basic_series = clean_title | split: ' - ' | first | remove: size %}
@@ -195,6 +189,10 @@
 {% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
   {% assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
 
+
+{% if change_model == 'get_size' %}{{- size -}}{% endif %}
+{% if change_model == 'get_diff' %}{{ differentiator }}{% endif %}
+{% if change_model == 'get_family' %}{{ family }}{% endif %}
  {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
