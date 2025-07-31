@@ -134,25 +134,22 @@
     {% if clean_title contains '"' or clean_title contains 'Gallon' %}
        {% if clean_title contains '"' %}
             {% assign size_split = clean_title | split: '"' %}
-       {% elsif clean_title contains 'Gallon' %}         here
+       {% elsif clean_title contains 'Gallon' %}
             {% assign size_split = clean_title | split: 'Gallon' %}
          {% else %}        
            {% assign size_split = clean_title %}
        {% endif %}
-      {% assign size_first = size_split | first %}
-      {% assign size_last = size_split | last %}
-      {% assign size = size_first | append:'"' %}
-        {% if size contains ' - ' %}
-          {% assign size_split = size | split: ' - ' %}
-          {% assign size = size_split | last %}
-        {% endif %}
-        {% if size_last contains ' x '  %}
-          {% assign size = size |  append: size_last | append:'"' %}
-        {% endif %}
-        {% assign size = size %}
-    {% elsif clean_title contains 'Gallon' %}    
+            {% assign size_first = size_split | first %}
+            {% assign size_last = size_split | last %}
+            {% assign size = size_first | append:'"' %}
+              {% if size contains ' - ' %}
+                {% assign size_split = size | split: ' - ' %}
+                {% assign size = size_split | last %}
+              {% endif %}
+              {% if size_last contains ' x '  %}
+                {% assign size = size |  append: size_last | append:'"' %}
+              {% endif %}
 
-    
     {% else %}
       {% assign size = '' %}
     {% endif %}
