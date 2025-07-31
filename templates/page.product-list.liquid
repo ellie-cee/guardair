@@ -7,12 +7,14 @@
   .broken {background-color:#dda8a857;}
   h2 {margin:0 auto;}
 {% endstyle %}
-
+  {% assign test_collection = collections['test-collection'] %}
 <div class="page-width2" style="margin:8rem auto 0rem;max-width:1500px;">
+        {% render 'ywm-product-table', collection:test_collection %}
 
+  
   {% assign product_types = 'Vacuums,Parts & Accessories,Air Hoses & Fittings' %}
   {% assign types = product_types | split: ',' %}
-  {% assign test_collection = collections['test-collection'] %}
+
   {% for type in types %}
     <h2>{{ type }}</h2>
       {% assign current_collection = collections.all.products | where: "type", type %}
