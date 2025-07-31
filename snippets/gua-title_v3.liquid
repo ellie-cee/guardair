@@ -107,7 +107,7 @@
 {% if found_special %}
   {% assign family = clean_title | append:'--' %}
 {% else %}
-  {% assign family = clean_title | split: model | first %}
+  {% assign family = clean_title | split: ' ' | first %}
 {% endif %}
 
 
