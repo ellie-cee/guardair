@@ -22,7 +22,7 @@
               
           {% for product in collection %}
             
-                <tr{% if borken contains product.title %} style="color:red"{% endif %}>
+                <tr{% if broken contains product.title %} style="color:red"{% endif %}>
                     <!-- <td>{{ forloop.index }}</td> -->
                     <td>{{ product.title }}</td>
                     <td>{{ product.type }}</td>     
