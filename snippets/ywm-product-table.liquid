@@ -17,7 +17,7 @@
             <tbody>
           
           
-          {% paginate collection by 100 %}
+          {% paginate collections.all.products by 100 %}
               
           {% for product in collection %}
                 <tr>
