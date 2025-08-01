@@ -202,6 +202,33 @@
     {% if basic_series contains 'Material Mover' %}{% assign basic_series = basic_series | append: ' Vacuum' %}{% endif %}
     {% if basic_series contains 'ContainIt Kit' %}{% assign basic_series = 'Contain-It Kit' %}{% endif %}
 {{ basic_series }}  
+
+
+  {% elsif text_style and text_style == 'format2' %}
+    {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
+        {% assign specific_series = clean_title | split: ' - ' | first | remove: size %}
+    {% elsif product.type == 'Vacuums' %}
+        {% assign specific_series = clean_title | split: ' - ' | first | remove: differentiator_whole %}
+    {% elsif product.type == 'Parts & Accessories' and product.title contains ' - '  %} 
+         {% assign specific_series = clean_title | remove: size | split: ' - ' |  first %}            
+    {% elsif product.type == 'Parts & Accessories'  %} 
+         {% assign specific_series = clean_title | remove: size %}         
+    {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
+         {% assign specific_series = clean_title | split: size | first %}  
+    {% elsif product.type == 'Air Hoses & Fittings' %}
+         {% assign specific_series = clean_title %}
+    {% elsif plain_jane %}
+        {% assign specific_series = clean_title | split: ' - ' | first %}
+    {% else %}
+        {% assign specific_series = clean_title | remove: model | remove: differentiator_whole | remove: size %}      
+    {% endif %}
+      {% assign specific_series = specific_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}
+      
+      {% comment %} WEIRD OVERRIDES {% endcomment %}
+    {% if found_family and size_position != 0 %}{% assign specific_series = specific_series | remove:size %}{% endif %}
+    {% if specific_series contains 'Material Mover' %}{% assign specific_series = specific_series | append: ' Vacuum' %}{% endif %}
+{{ specific_series }}  
+
 {% endif %}
 
 
