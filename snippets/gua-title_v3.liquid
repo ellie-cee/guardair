@@ -235,7 +235,7 @@
         {% else %}{% assign specific_series = clean_title | split: size | first %}{% endif %}
     {% elsif product.type == 'Air Hoses & Fittings' %}
          {% assign specific_series = clean_title %}
-    {% elsif product.type == 'Air & Syphon Guns'  %} 
+    {% elsif product.type == 'Air & Syphon Guns'  %} {{ variant }}--<br>
          {% assign specific_series = clean_title | remove: variant | remove: size %}              
     {% elsif plain_jane %}
         {% assign specific_series = clean_title | split: ' - ' | first %}
