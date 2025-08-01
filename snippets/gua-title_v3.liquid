@@ -201,7 +201,7 @@
     {% if found_family and size_position != 0 %}{% assign basic_series = basic_series | remove:size %}{% endif %}
     {% if basic_series contains 'Material Mover' %}{% assign basic_series = basic_series | append: ' Vacuum' %}{% endif %}
     {% if basic_series contains 'ContainIt Kit' %}{% assign basic_series = 'Contain-It Kit' %}{% endif %}
-{{ basic_series }}  
+{{ basic_series }}- {{ product.type  }}
 
 
   {% elsif text_style and text_style == 'format2' %}
