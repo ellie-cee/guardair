@@ -163,7 +163,9 @@
               {% endif %}
               {% if size_last contains ' x '  %}
                 {% assign units = size | clean_title:-1  %}
-                {% assign size = size |  append: size_last | append:units %}
+                
+              {% elsif size contains '"' %}
+
               {% endif %}
     {% else %}
       {% assign size = '' %}
