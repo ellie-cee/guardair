@@ -13,7 +13,6 @@
                 <th>Display Name</th>
                 <th>Format 1</th>    
                 <th>Format 2</th>                    
-                <th>Family</th>
                 <th>Product Value</th>
                 <th>Size</th>
                 <th>Series</th>      
@@ -34,7 +33,6 @@
                     <td>{{ product.metafields.custom.linked_products.value.group_name }}</td>
                     <td>{% render 'gua-title_v3',product:product, text_style:'format1' %}</td>
                     <td>{% render 'gua-title_v3',product:product, text_style:'format2' %}</td>                       
-                    <td>{% render 'gua-title_v3',product:product, change_model: 'get_family' %}</td>
                     <td>{{ product.metafields.custom.linked_product_value | split: '(' | first }}<br>{{ product.metafields.custom.linked_product_value | split: '(' | last | remove:')' }}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>
                     <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>
