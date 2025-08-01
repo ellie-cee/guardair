@@ -147,7 +147,7 @@
       {% else %}
           {% assign differentiator = '' %}
       {% endif %}
-
+      {% assign differentiator = differentiator | strip %}
  
 {% if found_model or found_quote or found_diff %}
       {% assign plain_jane = false %}
