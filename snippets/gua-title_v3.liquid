@@ -162,7 +162,7 @@
                 {% assign size = size_split | last %}
               {% endif %}
               {% if size_last contains ' x '  %}
-                {% assign units = size | clean_title:-1  %}
+                {% assign units = clean_title | slice:-1  %}
                 
               {% elsif size contains '"' %}
 
