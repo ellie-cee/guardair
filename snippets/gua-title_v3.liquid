@@ -238,7 +238,7 @@
 {% comment %} ---------- FORMAT 2 ---------- {% endcomment %}
   {% elsif text_style and text_style == 'format2' %}
         {% assign specific_series =  clean_title %}  
-        {% if product.title contains 'Pack' and product.type != 'Parts & Accessories' %}
+        {% if product.title contains 'Pack' and found_family == false %}
             {% assign specific_series = specific_series | remove: aside %}
         {% endif %}
 
