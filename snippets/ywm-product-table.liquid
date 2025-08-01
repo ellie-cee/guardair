@@ -14,9 +14,9 @@
                 <th>Format 1</th>    
                 <th>Format 2</th>                    
                    {% comment %}<th>Product Value</th>{% endcomment %}
-                   {% comment %}<<th>Size</th>{% endcomment %}
-                   {% comment %}<<th>Series</th>{% endcomment %}
-                   {% comment %}<<th>Diff</th>{% endcomment %}
+                   {% comment %}<th>Size</th>{% endcomment %}
+                   {% comment %}<th>Series</th>{% endcomment %}
+                   {% comment %}<th>Diff</th>{% endcomment %}
                 <th>Pieces</th>                      
               </tr>
             </thead>
@@ -35,10 +35,10 @@
                     <td>{% render 'gua-title_v3',product:product, text_style:'format1' %}</td>
                     <td>{% render 'gua-title_v3',product:product, text_style:'format2' %}</td>                       
                    {% comment %}<td>{{ product.metafields.custom.linked_product_value | split: '(' | first }}<br>{{ product.metafields.custom.linked_product_value | split: '(' | last | remove:')' }}</td>{% endcomment %}
-                   {% comment %}<<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>{% endcomment %}
-                   {% comment %}<<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>{% endcomment %}
-                   {% comment %}<<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>{% endcomment %}
-                   <<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_all' %}                   
+                   {% comment %}<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>{% endcomment %}
+                   {% comment %}<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>{% endcomment %}
+                   {% comment %}<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>{% endcomment %}
+                   <td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_all' %}</td>
                 </tr>
             {% endfor %}
 {% if 1 == 2 %}
