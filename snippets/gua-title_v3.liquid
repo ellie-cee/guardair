@@ -217,9 +217,11 @@
     {% elsif product.type == 'Parts & Accessories'  %} 
          {% assign specific_series = clean_title %}         
     {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
-         {% assign specific_series = clean_title | split: size | first %}  
+        {% assign temp_series = clean_title | split: size | first %}
+        {% if temp_series.size == 0 %}{% assign basic_series = clean_title | split: ' - ' | first %}
+        {% else %}{% assign basic_series = clean_title | split: size | first %}{% endif %}
     {% elsif product.type == 'Air Hoses & Fittings' %}
-         {% assign specific_series = clean_title %}
+         {% assign basic_series = clean_title %}
     {% elsif plain_jane %}
         {% assign specific_series = clean_title | split: ' - ' | first %}
     {% else %}
