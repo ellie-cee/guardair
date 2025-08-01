@@ -123,8 +123,8 @@
 {% comment %} VARIANT {% endcomment %}
   {% if product.type == 'Air & Syphon Guns' and product.title contains '-' %} 
           {% assign var_split = clean_title | split: '-' %}
-          {% assign variant = var_split | last %}
-          {% assign variant_whole = variant | prepend:'-' %}
+          {% assign variant = var_split | last  | strip %}
+          {% assign variant_whole = variant | prepend:'-'  | strip %}
   {% else %}
           {% assign variant = '' %}
   {% endif %}
@@ -194,7 +194,8 @@
     {% else %}
       {% assign size = size | strip %}
     {% endif %}
-{% assign size = size | strip | lstrip%}
+
+
 
 {% comment %} ---------- FORMAT 1 ---------- {% endcomment %}
 {% if text_style and text_style == 'format1' %}
