@@ -217,12 +217,7 @@
     {% elsif product.type == 'Air Hoses & Fittings' %}
          {% assign basic_series = clean_title %}
     {% elsif product.type == 'Air & Syphon Guns'  %} 
-
-Variant:-[{{ variant }}]<br/>
-Diff: [{{ differentiator }}]<br/>
-Diff Whole: [{{ differentiator_whole }}]<br/>
-Size: [{{ size }}]<br/>       
-Series: [{{ series }}]<br/>              
+           
           {% if variant %}{% assign basic_series = clean_title | remove: variant | remove: size %}
           {% else %}{% assign basic_series = clean_title | remove: differentiator | remove: size %}
           {% endif %}
@@ -286,6 +281,11 @@ Series: [{{ series }}]<br/>
 {% if change_model == 'get_diff' %}{{ differentiator }}{% endif %}
 {% if change_model == 'get_family' %}{{ family }}{% endif %}
 {% if change_model == 'get_series' %}{{ series }}{% endif%}
+{% if change_model == 'get_all' %}Variant:-[{{ variant }}]<br/>
+Diff: [{{ differentiator }}]<br/>
+Diff Whole: [{{ differentiator_whole }}]<br/>
+Size: [{{ size }}]<br/>       
+Series: [{{ series }}]<br/>{% endif%} 
  {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
