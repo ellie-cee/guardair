@@ -199,8 +199,9 @@
 
 {% comment %} ---------- FORMAT 1 ---------- {% endcomment %}
 {% if text_style and text_style == 'format1' %}
+      {% assign basic_series = clean_title %}
         {% if product.title contains 'Pack' and product.type != 'Parts & Accessories' %}
-            {% assign clean_title = clean_title | remove: aside %}
+            {% assign basic_series = clean_title | remove: aside %}
         {% endif %}  
     {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
         {% assign basic_series = clean_title | split: ' - ' | first | remove: size %}
@@ -281,7 +282,7 @@
 {% if change_model == 'get_diff' %}{{ differentiator }}{% endif %}
 {% if change_model == 'get_family' %}{{ family }}{% endif %}
 {% if change_model == 'get_series' %}{{ series }}{% endif%}
-{% if change_model == 'get_all' %}Variant:-[{{ variant }}]<br/>Diff: [{{ differentiator }}]<br/>Diff Whole: [{{ differentiator_whole }}]<br/>Size: [{{ size }}]<br/>Aside: [{{ aside }}]{% endif%} 
+{% if change_model == 'get_all' %}Variant: [{{ variant }}]<br/>Diff: [{{ differentiator }}]<br/>Diff Whole: [{{ differentiator_whole }}]<br/>Size: [{{ size }}]<br/>Aside: [{{ aside }}]{% endif%} 
  {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
