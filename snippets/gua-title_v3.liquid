@@ -134,6 +134,7 @@
           {% assign aside_end = clean_title | split: '(' | last %}
           {% assign aside = aside_split | split: ')' | first %}
           {% assign variant_whole = variant | prepend:'-' %}
+          {% assign aside = 'true' %}
   {% else %}
           {% assign aside = '' %}
   {% endif %}
