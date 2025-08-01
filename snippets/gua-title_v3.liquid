@@ -237,8 +237,9 @@
 
 {% comment %} ---------- FORMAT 2 ---------- {% endcomment %}
   {% elsif text_style and text_style == 'format2' %}
+        {% assign specific_series =  clean_title %}  
         {% if product.title contains 'Pack' and product.type != 'Parts & Accessories' %}
-            {% assign clean_title = clean_title | remove: aside %}
+            {% assign specific_series = clean_title | remove: aside %}
         {% endif %}
       {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
           {% assign specific_series = clean_title | split: ' - ' | first | remove: size %}
