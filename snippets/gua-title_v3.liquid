@@ -148,7 +148,7 @@
             {% assign size = size_first | append:units %}      
        {% elsif clean_title contains '"' %}
             {% assign size_split = clean_title | split: '"' %}
-             {% assign units = '' %}
+             {% assign units = '"' %}
             {% assign size_first = size_split | first %}
             {% assign size_last = size_split | last %}
             {% assign size = size_first | append:units %}                
