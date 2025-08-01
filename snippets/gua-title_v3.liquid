@@ -120,6 +120,17 @@
 {% endif %}
 
 
+{% comment %} VARIANT {% endcomment %}
+  {% if product.type == 'Air & Syphon Guns'  %} 
+          {% assign diff_split = clean_title | split: 'w/' %}
+          {% assign differentiator = diff_split | last %}
+          {% assign differentiator_whole = differentiator | prepend:'w/' %}
+          {% assign found_diff = true %}
+  {% else %}
+          {% assign differentiator = '' %}
+  {% endif %}
+
+
 {% comment %} DIFFERENTIATOR {% endcomment %}
       {% if clean_title contains 'w/' %}
           {% assign diff_split = clean_title | split: 'w/' %}
