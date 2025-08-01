@@ -247,7 +247,7 @@
           {% assign specific_series = specific_series | split: ' - ' | first | remove: size %}
       {% elsif product.type == 'Vacuums' %}
           {% assign specific_series = specific_series | split: ' - ' | first | remove: differentiator_whole %}
-      {% elsif product.type == 'Parts & Accessories' and product.title contains 'Repair'  %} 
+      {% elsif product.type == 'Parts & Accessories' and product.title contains 'Repair' or product.title contains 'Rebuild' %} 
           {% assign specific_series = specific_series  | remove: aside |  remove: differentiator_whole %}                  
       {% elsif product.type == 'Parts & Accessories' and product.title contains ' - '  %} 
           {% assign specific_series = specific_series  | split: ' - ' |  first %}            
