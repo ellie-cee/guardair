@@ -121,7 +121,7 @@
 
 
 {% comment %} VARIANT {% endcomment %}
-  {% if product.type == 'Air & Syphon Guns'  %} 
+  {% if product.type == 'Air & Syphon Guns' and product.title contains '-' %} 
           {% assign var_split = clean_title | split: '-' %}
           {% assign variant = var_split | last %}
           {% assign variant_whole = variant | prepend:'-' %}
@@ -235,7 +235,7 @@
         {% else %}{% assign specific_series = clean_title | split: size | first %}{% endif %}
     {% elsif product.type == 'Air Hoses & Fittings' %}
          {% assign specific_series = clean_title %}
-    {% elsif product.type == 'Air & Syphon Guns'  %} {{ variant }}--<br>
+    {% elsif product.type == 'Air & Syphon Guns'  %}
          {% assign specific_series = clean_title | remove: variant | remove: size %}              
     {% elsif plain_jane %}
         {% assign specific_series = clean_title | split: ' - ' | first %}
