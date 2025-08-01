@@ -275,10 +275,6 @@
 {% endif %}
 
 
-{% comment %} Step 7: Final cleanup and assign result to output variable {% endcomment %}
-  {% assign clean_title = clean_title | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
-
-
 {% if change_model == 'get_size' %}{{- size -}}{% endif %}
 {% if change_model == 'get_diff' %}{{ differentiator }}{% endif %}
 {% if change_model == 'get_family' %}{{ family }}{% endif %}
