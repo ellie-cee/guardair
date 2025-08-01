@@ -255,7 +255,7 @@
       {% comment %} WEIRD OVERRIDES {% endcomment %}
     {% if found_family and size_position != 0 %}{% assign specific_series = specific_series %}{% endif %}
     {% if specific_series contains 'Material Mover' %}{% assign specific_series = specific_series | append: ' Vacuum' %}{% endif %}
-{{ specific_series }}  <br>-{{ aside }}
+{{ specific_series }}
 
 {% endif %}
 
