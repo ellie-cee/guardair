@@ -204,7 +204,7 @@
     {% elsif product.type == 'Air Hoses & Fittings' %}
          {% assign basic_series = clean_title %}
     {% elsif product.type == 'Air & Syphon Guns'  %} 
-         {% assign basic_series = clean_title | remove: differentiator_whole | remove: size %}                 
+         {% assign basic_series = clean_title | remove: variant | remove: size %}                 
     {% elsif plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
     {% else %}
@@ -236,7 +236,7 @@
     {% elsif product.type == 'Air Hoses & Fittings' %}
          {% assign specific_series = clean_title %}
     {% elsif product.type == 'Air & Syphon Guns'  %} 
-         {% assign specific_series = clean_title | remove: differentiator_whole | remove: size %}              
+         {% assign specific_series = clean_title | remove: variant | remove: size %}              
     {% elsif plain_jane %}
         {% assign specific_series = clean_title | split: ' - ' | first %}
     {% else %}
