@@ -162,7 +162,8 @@
                 {% assign size = size_split | last %}
               {% endif %}
               {% if size_last contains ' x '  %}
-                {% assign size = size |  append: size_last | append:'"' %}
+                {% assign units = size | slice:-1  %}
+                {% assign size = size |  append: size_last | append:units %}
               {% endif %}
     {% else %}
       {% assign size = '' %}
@@ -186,7 +187,7 @@
          {% assign basic_series = clean_title | remove: size %}         
     {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
         {% assign temp_series = clean_title | split: size | first %}
-        {% if temp_series.size == 0 %}{% assign basic_series = clean_title | split: ' - ' | first %}here
+        {% if temp_series.size == 0 %}{% assign basic_series = clean_title | split: ' - ' | first %}
         {% else %}{% assign basic_series = clean_title | split: size | first %}{% endif %}
     {% elsif product.type == 'Air Hoses & Fittings' %}
          {% assign basic_series = clean_title %}
