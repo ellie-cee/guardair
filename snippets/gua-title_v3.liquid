@@ -241,6 +241,8 @@
         {% if product.title contains 'Pack' and product.type != 'Parts & Accessories' %}
             {% assign specific_series = clean_title | remove: aside %}
         {% endif %}
+
+        {{ specific_series }}<br/>
       {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
           {% assign specific_series = clean_title | split: ' - ' | first | remove: size %}
       {% elsif product.type == 'Vacuums' %}
