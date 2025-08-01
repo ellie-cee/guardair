@@ -200,8 +200,8 @@
 {% comment %} ---------- FORMAT 1 ---------- {% endcomment %}
 {% if text_style and text_style == 'format1' %}
       {% assign basic_series = clean_title %}
-        {% if product.title contains 'Pack' and found_family == false %}herhe
-            {% assign basic_series = basic_series | remove: aside %}
+        {% if product.title contains 'Pack' and found_family == false %}
+            {% assign basic_series = basic_series | remove: aside %}{{ basic_series }}
         {% endif %}  
     {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
         {% assign basic_series = clean_title | split: ' - ' | first | remove: size %}
