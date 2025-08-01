@@ -281,11 +281,7 @@
 {% if change_model == 'get_diff' %}{{ differentiator }}{% endif %}
 {% if change_model == 'get_family' %}{{ family }}{% endif %}
 {% if change_model == 'get_series' %}{{ series }}{% endif%}
-{% if change_model == 'get_all' %}Variant:-[{{ variant }}]<br/>
-Diff: [{{ differentiator }}]<br/>
-Diff Whole: [{{ differentiator_whole }}]<br/>
-Size: [{{ size }}]<br/>       
-Series: [{{ series }}]<br/>{% endif%} 
+{% if change_model == 'get_all' %}Variant:-[{{ variant }}]<br/>Diff: [{{ differentiator }}]<br/>Diff Whole: [{{ differentiator_whole }}]<br/>Size: [{{ size }}]<br/>Series: [{{ series }}]{% endif%} 
  {% comment %}   
     # Remove the model number from the title
     if model_pattern_found
