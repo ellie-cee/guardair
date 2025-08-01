@@ -122,12 +122,11 @@
 
 {% comment %} VARIANT {% endcomment %}
   {% if product.type == 'Air & Syphon Guns'  %} 
-          {% assign diff_split = clean_title | split: 'w/' %}
-          {% assign differentiator = diff_split | last %}
-          {% assign differentiator_whole = differentiator | prepend:'w/' %}
-          {% assign found_diff = true %}
+          {% assign var_split = clean_title | split: '-' %}
+          {% assign variant = var_split | last %}
+          {% assign variant_whole = variant | prepend:'-' %}
   {% else %}
-          {% assign differentiator = '' %}
+          {% assign variant = '' %}
   {% endif %}
 
 
