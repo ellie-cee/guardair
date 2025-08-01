@@ -242,7 +242,6 @@
             {% assign specific_series = clean_title | remove: aside %}
         {% endif %}
 
-        {{ specific_series }}<br/>
       {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
           {% assign specific_series = clean_title | split: ' - ' | first | remove: size %}
       {% elsif product.type == 'Vacuums' %}
@@ -266,7 +265,7 @@
       {% else %}
           {% assign specific_series = clean_title | remove: model | remove: differentiator_whole  %}      
       {% endif %}
-        
+              {{ specific_series }}<br/>  
       {% unless product.title contains 'Inlet' %}{% else %}{% assign specific_series = specific_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}{% endunless %}
       
       {% comment %} WEIRD OVERRIDES {% endcomment %}
