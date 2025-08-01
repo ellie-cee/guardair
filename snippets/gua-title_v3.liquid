@@ -132,7 +132,7 @@
 {% comment %} ASIDE {% endcomment %}
   {% if product.title contains '(' and product.title contains ')' %} 
           {% assign aside_end = clean_title | split: '(' | last %}
-          {% assign aside = aside_end | split: ')' | first | prepend: '('%}
+          {% assign aside = aside_end | split: ')' | first | prepend: '(' | append: ')' %}
   {% else %}
           {% assign aside = '' %}
   {% endif %}
