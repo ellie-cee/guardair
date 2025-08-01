@@ -156,35 +156,35 @@
    
 {% comment %} SIZE {% endcomment %}
     {% if clean_title contains '"' or clean_title contains 'Gallon' %}     
-       {% if clean_title contains '5.5 Gallon' %}
+      {% if clean_title contains '5.5 Gallon' %}
             {% assign size = '5.5 Gallon' %}                  
-       {% elsif clean_title contains 'Gallon' %}
+      {% elsif clean_title contains 'Gallon' %}
             {% assign size_split = clean_title | split: 'Gallon' %}
              {% assign units = 'Gallon' %}
             {% assign size_first = size_split | first %}
             {% assign size_last = size_split | last %}
             {% assign size = size_first | append:units %}      
-       {% elsif clean_title contains '"' %}
+      {% elsif clean_title contains '"' %}
             {% assign size_split = clean_title | split: '"' %}
              {% assign units = '"' %}
             {% assign size_first = size_split | first %}
             {% assign size_last = size_split | last %}
             {% assign size = size_first | append:units %}                
-         {% else %}        
+      {% else %}        
            {% assign size_split = '' %}
            {% assign units = '' %}
            {% assign size = '' %}         
-       {% endif %}
-              {% if size contains ' - ' %}
+      {% endif %}
+            {% if size contains ' - ' %}
                 {% assign size_split = size | split: ' - ' %}
                 {% assign size = size_split | last %}
-              {% endif %}
-              {% if size_last contains ' x '  %}
+            {% endif %}
+            {% if size_last contains ' x '  %}
                 {% assign units = clean_title | slice:-1  %}
                  {% assign size = size |  append: size_last %}
-              {% elsif size contains '"' %}
+            {% elsif size contains '"' %}
 
-              {% endif %}
+            {% endif %}
     {% else %}
       {% assign size = '' %}
     {% endif %}
@@ -194,7 +194,7 @@
     {% else %}
       {% assign size = size | strip %}
     {% endif %}
-      {% assign size = size | strip %}
+{% assign size = size | strip | lstrip%}
 
 {% comment %} ---------- FORMAT 1 ---------- {% endcomment %}
 {% if text_style and text_style == 'format1' %}
