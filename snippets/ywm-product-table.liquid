@@ -17,6 +17,7 @@
                    {% comment %}<<th>Size</th>{% endcomment %}
                    {% comment %}<<th>Series</th>{% endcomment %}
                    {% comment %}<<th>Diff</th>{% endcomment %}
+                <th>Pieces</th>                      
               </tr>
             </thead>
             <tbody>
@@ -37,6 +38,7 @@
                    {% comment %}<<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_size' %}</td>{% endcomment %}
                    {% comment %}<<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_series' %}</td>{% endcomment %}
                    {% comment %}<<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_diff' %}</td>{% endcomment %}
+                   <<td>{% render 'gua-title_v3',product:product, remove_after_dash: false,change_model: 'get_all' %}                   
                 </tr>
             {% endfor %}
 {% if 1 == 2 %}
