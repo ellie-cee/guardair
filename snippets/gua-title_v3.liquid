@@ -253,10 +253,10 @@
           {% else %}{% assign specific_series = clean_title | split: size | first %}{% endif %}
       {% elsif product.type == 'Air Hoses & Fittings' %}
           {% assign specific_series = clean_title %}
-      {% elsif product.type == 'Air & Syphon Guns'  %}          
-          {% if aside %}{% assign specific_series = clean_title | remove:size %}1
-          {% elsif product.title contains 'Inlet' %}{% assign basic_series = clean_title %}2
-          {% else %}{% assign specific_series = clean_title  | split: ' - ' | first %}3{% endif %}
+      {% elsif product.type == 'Air & Syphon Guns'  %}       
+          {% if product.title contains 'Inlet' %}{% assign basic_series = clean_title %}
+          {% elsif aside %}{% assign specific_series = clean_title | remove:size %}
+          {% else %}{% assign specific_series = clean_title  | split: ' - ' | first %}{% endif %}
       {% elsif plain_jane %}
           {% assign specific_series = clean_title | split: ' - ' | first %}
       {% else %}
