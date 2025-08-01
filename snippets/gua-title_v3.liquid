@@ -265,7 +265,7 @@
           {% assign specific_series = clean_title | remove: model | remove: differentiator_whole  %}      
       {% endif %}
         
-      {% assign specific_series = specific_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}
+      {% if product.title contains 'Inlet' %}{% else %}{% assign specific_series = specific_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}{% endif %}
       
       {% comment %} WEIRD OVERRIDES {% endcomment %}
     {% if found_family and size_position != 0 %}{% assign specific_series = specific_series %}{% endif %}
