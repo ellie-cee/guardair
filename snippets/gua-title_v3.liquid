@@ -201,25 +201,25 @@
 {% if text_style and text_style == 'format1' %}
       {% assign basic_series = clean_title %}
         {% if product.title contains 'Pack' and found_family == false %}
-            {% assign basic_series = basic_series | remove: aside %}{{ basic_series }}
+            {% assign basic_series = basic_series | remove: aside %}
         {% endif %}  
     {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
-        {% assign basic_series = clean_title | split: ' - ' | first | remove: size %}
+        {% assign basic_series = basic_series | split: ' - ' | first | remove: size %}
     {% elsif product.type == 'Vacuums' %}
-        {% assign basic_series = clean_title | split: ' - ' | first | remove: differentiator_whole %}
+        {% assign basic_series = basic_series | split: ' - ' | first | remove: differentiator_whole %}
     {% elsif product.type == 'Parts & Accessories' and product.title contains ' - '  %} 
-         {% assign basic_series = clean_title | remove: size | split: ' - ' |  first %}            
+         {% assign basic_series = basic_series | remove: size | split: ' - ' |  first %}            
     {% elsif product.type == 'Parts & Accessories'  %} 
-         {% assign basic_series = clean_title | remove: size %}         
+         {% assign basic_series = basic_series | remove: size %}         
     {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
-        {% assign temp_series = clean_title | split: size | first %}
+        {% assign temp_series = basic_series | split: size | first %}
         {% if temp_series.size == 0 %}{% assign basic_series = clean_title | split: ' - ' | first %}
-        {% else %}{% assign basic_series = clean_title | split: size | first %}{% endif %}
+        {% else %}{% assign basic_series = basic_series | split: size | first %}{% endif %}
     {% elsif product.type == 'Air Hoses & Fittings' %}
-         {% assign basic_series = clean_title %}
+         {% assign basic_series = basic_series %}
     {% elsif product.type == 'Air & Syphon Guns'  %} 
-          {% if variant %}{% assign basic_series = clean_title | remove: variant | remove: size %}       
-          {% else %}{% assign basic_series = clean_title | remove: differentiator_whole %}
+          {% if variant %}{% assign basic_series = basic_series | remove: variant | remove: size %}       
+          {% else %}{% assign basic_series = basic_series | remove: differentiator_whole %}
           {% endif %}
     {% elsif plain_jane %}
         {% assign basic_series = clean_title | split: ' - ' | first %}
@@ -239,31 +239,31 @@
   {% elsif text_style and text_style == 'format2' %}
         {% assign specific_series =  clean_title %}  
         {% if product.title contains 'Pack' and product.type != 'Parts & Accessories' %}
-            {% assign specific_series = clean_title | remove: aside %}
+            {% assign specific_series = specific_series | remove: aside %}
         {% endif %}
 
       {% if product.type == 'Vacuums' and size == '5.5 Gallon' %}
-          {% assign specific_series = clean_title | split: ' - ' | first | remove: size %}
+          {% assign specific_series = specific_series | split: ' - ' | first | remove: size %}
       {% elsif product.type == 'Vacuums' %}
-          {% assign specific_series = clean_title | split: ' - ' | first | remove: differentiator_whole %}
+          {% assign specific_series = specific_series | split: ' - ' | first | remove: differentiator_whole %}
       {% elsif product.type == 'Parts & Accessories' and product.title contains ' - '  %} 
-          {% assign specific_series = clean_title  | split: ' - ' |  first %}            
+          {% assign specific_series = specific_series  | split: ' - ' |  first %}            
       {% elsif product.type == 'Parts & Accessories'  %} 
-          {% assign specific_series = clean_title %}         
+          {% assign specific_series = specific_series %}         
       {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
-          {% assign temp_series = clean_title | split: size | first %}
-          {% if temp_series.size == 0 %}{% assign specific_series = clean_title | split: ' - ' | first %}
-          {% else %}{% assign specific_series = clean_title | split: size | first %}{% endif %}
+          {% assign temp_series = specific_series | split: size | first %}
+          {% if temp_series.size == 0 %}{% assign specific_series = specific_series | split: ' - ' | first %}
+          {% else %}{% assign specific_series = specific_series | split: size | first %}{% endif %}
       {% elsif product.type == 'Air Hoses & Fittings' %}
-          {% assign specific_series = clean_title %}
+          {% assign specific_series = specific_series %}
       {% elsif product.type == 'Air & Syphon Guns'  %}       
           {% if product.title contains 'Inlet' %}{% assign specific_series = clean_title %}
-          {% elsif aside %}{% assign specific_series = clean_title | remove:size %}
-          {% else %}{% assign specific_series = clean_title  | split: ' - ' | first %}{% endif %}
+          {% elsif aside %}{% assign specific_series = specific_series | remove:size %}
+          {% else %}{% assign specific_series = specific_series  | split: ' - ' | first %}{% endif %}
       {% elsif plain_jane %}
-          {% assign specific_series = clean_title | split: ' - ' | first %}
+          {% assign specific_series = specific_series | split: ' - ' | first %}
       {% else %}
-          {% assign specific_series = clean_title | remove: model | remove: differentiator_whole  %}      
+          {% assign specific_series = specific_series | remove: model | remove: differentiator_whole  %}      
       {% endif %}
       {% unless product.title contains 'Inlet' or product.title contains 'Bent' %}{% assign specific_series = specific_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}{% endunless %}
       
