@@ -132,7 +132,7 @@
 {% comment %} ASIDE {% endcomment %}
   {% if product.title contains '(' and product.title contains ')' %} 
           {% assign aside_end = clean_title | split: '(' | last %}
-          {% assign aside = aside_end | split: ')' | first | prepend: '(' | append: ')' %}
+          {% assign aside = aside_end | split: ')' | first | prepend: '(' | append: ')' | strip %}
   {% else %}
           {% assign aside = '' %}
   {% endif %}
@@ -142,7 +142,7 @@
       {% if clean_title contains 'w/' %}
           {% assign diff_split = clean_title | split: 'w/' %}
           {% assign differentiator = diff_split | last %}
-          {% assign differentiator_whole = differentiator | prepend:'w/' %}
+          {% assign differentiator_whole = differentiator | prepend:'w/' | strip %}
           {% assign found_diff = true %}
       {% else %}
           {% assign differentiator = '' %}
@@ -188,6 +188,7 @@
     {% else %}
       {% assign size = '' %}
     {% endif %}
+    
     {% if found_family %}
       {% assign size = size | remove:family | strip %}
     {% else %}
@@ -216,9 +217,9 @@
          {% assign basic_series = clean_title %}
     {% elsif product.type == 'Air & Syphon Guns'  %} 
       Variant:{{ variant }}<br/>
-      Diff:{{ differentiator }}<br/>
-      Size:{{ size }}<br/>       
-      Series:{{ series }}<br/>              
+      Diff: {{ differentiator }}<br/>
+      Size: {{ size }}<br/>       
+      Series: {{ series }}<br/>              
           {% if variant %}{% assign basic_series = clean_title | remove: variant | remove: size %}
           {% else %}{% assign basic_series = clean_title | remove: differentiator | remove: size %}
           {% endif %}
