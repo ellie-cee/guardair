@@ -217,8 +217,9 @@
         {% else %}{% assign basic_series = basic_series | split: size | first %}{% endif %}
     {% elsif product.type == 'Air Hoses & Fittings' %}
          {% assign basic_series = basic_series %}
-    {% elsif product.type == 'Air & Syphon Guns'  %} 
-          {% if variant %}{% assign basic_series = basic_series | remove: variant | remove: size %}       
+    {% elsif product.type == 'Air & Syphon Guns'  %}
+          {% if variant and differentiator_whole %}{% assign basic_series = basic_series | remove: variant | remove: size | remove: differentiator_whole %}            
+          {% elsif variant %}{% assign basic_series = basic_series | remove: variant | remove: size %}       
           {% else %}{% assign basic_series = basic_series | remove: differentiator_whole %}
           {% endif %}
     {% elsif plain_jane %}
