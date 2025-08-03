@@ -249,7 +249,9 @@
       {% elsif product.type == 'Vacuums' %}
           {% assign specific_series = specific_series | split: ' - ' | first | remove: differentiator_whole %}
       {% elsif product.type == 'Parts & Accessories' and product.title contains 'Repair' or product.title contains 'Rebuild' %} 
-          {% assign specific_series = specific_series  | remove: aside |  remove: differentiator_whole %}                  
+          {% assign specific_series = specific_series  | remove: aside |  remove: differentiator_whole %}    
+      {% elsif product.type == 'Parts & Accessories' and product.title contains 'Tool'  %} 
+          {% assign specific_series = specific_series %}                         
       {% elsif product.type == 'Parts & Accessories' and product.title contains ' - '  %} 
           {% assign specific_series = specific_series  | split: ' - ' |  first %}            
       {% elsif product.type == 'Parts & Accessories'  %} 
