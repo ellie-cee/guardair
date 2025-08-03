@@ -198,7 +198,7 @@
 
 
 {% comment %} ---------- FORMAT 1 ---------- {% endcomment %}
-{% if text_style and text_style == 'format1' %}
+{% if text_style and text_style == 'basic_series' %}
       {% assign basic_series = clean_title %}
         {% if product.title contains 'Pack' %}
             {% assign basic_series = basic_series | remove: aside %}
@@ -239,7 +239,7 @@
 
 
 {% comment %} ---------- FORMAT 2 ---------- {% endcomment %}
-  {% elsif text_style and text_style == 'format2' %}
+  {% elsif text_style and text_style == 'specific_series' %}
         {% assign specific_series =  clean_title %}  
         {% if product.title contains 'Pack' and found_family == false %}
             {% assign specific_series = specific_series | remove: aside %}
@@ -283,7 +283,7 @@
 
 
 {% comment %} ---------- FORMAT 3 ---------- {% endcomment %}
-  {% elsif text_style and text_style == 'format3' %}
+  {% elsif text_style and text_style == 'basic' %}
         {% assign basic_without =  clean_title %}  
         {% if product.title contains 'Pack' and found_family == false %}
             {% assign basic_without = basic_without | remove: aside %}
