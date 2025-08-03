@@ -22,7 +22,8 @@
   assign found_family = false 
   assign found_quote = false   
   assign found_diff = false   
-    
+  assign num_word = ''
+
   if remove_after_dash == blank
     assign remove_after_dash = true
   endif
@@ -92,6 +93,7 @@
                   {% assign temp_word = temp_word | replace: '9', '' %}
                   {% assign remaining_size = temp_word | size %}
                   {% assign digit_count = word_size | minus: remaining_size %}
+                  {% assign num_word = word %}
             {% endif %}
                   
           {% comment %}Check if remaining characters are letters (and not too many) {% endcomment %}
@@ -330,7 +332,7 @@
     {% if basic_without contains 'Material Mover' %}{% assign basic_without = basic_without | append: ' Vacuum' %}{% endif %}
     {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
      {% endcomment %}
-{{ basic_without }}{% comment %}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}
+{{ basic_without }}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}
 
 {% endif %}
 
