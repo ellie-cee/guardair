@@ -268,7 +268,7 @@
       {% else %}
           {% assign specific_series = specific_series | remove: model | remove: differentiator_whole  %}      
       {% endif %}
-      {% unless product.title contains 'Inlet' or product.title contains 'Bent' or product.title contains 'Repair' or  product.title contains 'Rebuild' %}{% assign specific_series = specific_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}{% endunless %}
+      {% unless product.title contains 'Inlet' or product.title contains 'Bent' or product.title contains 'Repair' or  product.title contains 'Rebuild' or  product.title contains 'Pick-Up' %}{% assign specific_series = specific_series | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}{% endunless %}
       
       {% comment %} WEIRD OVERRIDES {% endcomment %}
     {% if found_family and size_position != 0 %}{% assign specific_series = specific_series %}{% endif %}
