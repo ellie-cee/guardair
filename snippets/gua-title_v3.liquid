@@ -294,7 +294,7 @@
          {% if product.type == 'Vacuums' %}
           {% assign basic = '' %}
          {% else %}
-          {% assign basic = basic  | split: ' - ' | first | remove: series | remove: num_word | remove: differentiator_whole  %}
+          {% assign basic = basic  | split: ' - ' | first | remove: differentiator_whole | remove: series | remove: num_word %}
         
         {% endif %}
         {% comment %}
