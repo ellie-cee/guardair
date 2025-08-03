@@ -288,6 +288,10 @@
             {% assign basic_without = basic_without | remove: aside %}
         {% endif %}
 
+         {% if product.type == 'Vacuums' %}
+          {% assign basic_without = '' %}
+        {% endif %}
+        {% comment %}
       {% if product.type == 'Vacuums' or product.type = 'Parts & Accessories' %}
           {% assign basic_without = basic_without | split: ' - ' | first | remove: size' %}
       {% elsif product.type == 'Vacuums' %}
@@ -321,6 +325,7 @@
     {% if found_family and size_position != 0 %}{% assign basic_without = basic_without %}{% endif %}
     {% if basic_without contains 'Material Mover' %}{% assign basic_without = basic_without | append: ' Vacuum' %}{% endif %}
     {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
+     {% endcomment %}
 {{ basic_without }}
 
 {% endif %}
