@@ -240,6 +240,10 @@
                       {% comment %}{% render 'gua-title',title:product.title,split:section.settings.ptitle_fix %}{% endcomment %}
                         {% case section.settings.ptitle_fix %}
                             {% when 'none' %}{{ product.title }}
+                            {% when 'basic_series' %}{% render 'gua-title_v3',title:product.title, text_style:'basic_series' %}
+                            {% when 'specific_series' %}{% render 'gua-title_v3',title:product.title, text_style:'specific_series' %}
+                            {% when 'basic' %}{% render 'gua-title_v3',title:product.title, text_style:'basic' %}
+                            {% when 'specific' %}{% render 'gua-title_v3',title:product.title, text_style:'specific' %}                                  
                             {% when 'slice' %}{% render 'gua-title_v2',title:product.title %}                                 
                             {% when 'move_model' %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}                          
                             {% when 'remove_model' %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}
