@@ -273,7 +273,7 @@
       {% comment %} WEIRD OVERRIDES {% endcomment %}
     {% if found_family and size_position != 0 %}{% assign specific_series = specific_series %}{% endif %}
     {% if specific_series contains 'Material Mover' %}{% assign specific_series = specific_series | append: ' Vacuum' %}{% endif %}
-    {% if specific_series contains 'LJ' %}{% unless specific_series contains 'Long John' %}{% assign specific_series = specific_series | prepend:'Long John ' %}{% endunless %}{% endif %}        
+    {% if specific_series contains '75LJ' %}{% unless specific_series contains 'Long John' %}{% assign specific_series = specific_series | prepend:'Long John ' %}{% endunless %}{% endif %}        
 {{ specific_series }}
 
 {% endif %}
