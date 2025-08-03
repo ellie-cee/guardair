@@ -286,15 +286,15 @@
 
 {% comment %} ---------- FORMAT 3 ---------- {% endcomment %}
   {% elsif text_style and text_style == 'basic' %}
-        {% assign basic_without =  clean_title %}  
+        {% assign basic =  clean_title %}  
         {% if product.title contains 'Pack' and found_family == false %}
-            {% assign basic_without = basic_without | remove: aside %}
+            {% assign basic = basic | remove: aside %}
         {% endif %}
 
          {% if product.type == 'Vacuums' %}
-          {% assign basic_without = '' %}
+          {% assign basic = '' %}
          {% else %}
-          {% assign basic_without = basic_without  | split: ' - ' | first | remove: series | remove: num_word %}
+          {% assign basic = basic  | split: ' - ' | first | remove: series | remove: num_word | remove: differentiator_whole  %}
         
         {% endif %}
         {% comment %}
@@ -332,7 +332,7 @@
     {% if basic_without contains 'Material Mover' %}{% assign basic_without = basic_without | append: ' Vacuum' %}{% endif %}
     {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
      {% endcomment %}
-{{ basic_without }}{% comment %}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}
+{{ basic }}{% comment %}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}
 
 {% endif %}
 
