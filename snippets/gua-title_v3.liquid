@@ -232,7 +232,7 @@
     {% if found_family and size_position != 0 %}{% assign basic_series = basic_series | remove:size %}{% endif %}
     {% if basic_series contains 'Material Mover' %}{% assign basic_series = basic_series | append: ' Vacuum' %}{% endif %}
     {% if basic_series contains 'ContainIt Kit' %}{% assign basic_series = 'Contain-It Kit' %}{% endif %}
-    {% if basic_series contains 'LJ' %}{% unless basic_series contains 'Long John' %}{% assign basic_series = basic_series | prepend:'Long John ' %}{% endunless %}{% endif %}    
+    {% if basic_series contains '75LJ' %}{% unless basic_series contains 'Long John' %}{% assign basic_series = basic_series | prepend:'Long John ' %}{% endunless %}{% endif %}    
 {{ basic_series }}
 
 
