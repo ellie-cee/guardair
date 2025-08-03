@@ -330,7 +330,7 @@
     {% if basic_without contains 'Material Mover' %}{% assign basic_without = basic_without | append: ' Vacuum' %}{% endif %}
     {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
      {% endcomment %}
-{{ basic_without }}
+{{ basic_without }}<br/>{{ digit_count }}
 
 {% endif %}
 
