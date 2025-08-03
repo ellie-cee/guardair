@@ -290,6 +290,8 @@
 
          {% if product.type == 'Vacuums' %}
           {% assign basic_without = '' %}
+         {% else %}
+          {% assign basic_without = clean_title | remove: series %}
         {% endif %}
         {% comment %}
       {% if product.type == 'Vacuums' or product.type = 'Parts & Accessories' %}
