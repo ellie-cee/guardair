@@ -343,7 +343,7 @@
 {% comment %} ---------- FORMAT 4 - specific ---------- {% endcomment %}
   {% elsif text_style and text_style == 'specific' %}
         {% assign specific =  clean_title %}
-        {% assign specific =specific | remove: differentiator_whole %} 
+
         
         {% if product.title contains 'Pack' and found_family == false %}
             {% assign specific = specific | remove: aside %}
