@@ -350,7 +350,7 @@
          {% if product.type == 'Vacuums' %}
           {% assign specific = '' %}
          {% else %}
-          {% assign specific = specific | remove: series | remove: num_word %}
+          {% assign specific = specific | remove: series | remove: num_word| remove: size %}
         
         {% endif %}
         {% comment %}
