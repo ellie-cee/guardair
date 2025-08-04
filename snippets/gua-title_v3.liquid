@@ -337,6 +337,61 @@
  
 {{ basic }}{% comment %}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}
 
+
+{% comment %} ---------- FORMAT 4 - specific ---------- {% endcomment %}
+  {% elsif text_style and text_style == 'specific' %}
+        {% assign specific =  clean_title %}
+        {% assign specific =specific | remove: differentiator_whole %} 
+        
+        {% if product.title contains 'Pack' and found_family == false %}
+            {% assign specific = specific | remove: aside %}
+        {% endif %}
+
+         {% if product.type == 'Vacuums' %}
+          {% assign specific = '' %}
+         {% else %}
+          {% assign specific = specific  | split: ' - ' | first  | remove: series | remove: num_word %}
+        
+        {% endif %}
+        {% comment %}
+      {% if product.type == 'Vacuums' or product.type = 'Parts & Accessories' %}
+          {% assign basic_without = basic_without | split: ' - ' | first | remove: size' %}
+      {% elsif product.type == 'Vacuums' %}
+          {% assign basic_without = basic_without | split: ' - ' | first | remove: differentiator_whole %}
+      {% elsif product.type == 'Parts & Accessories' and product.title contains 'Repair' or product.title contains 'Rebuild' %} 
+          {% assign basic_without = basic_without  | remove: aside |  remove: differentiator_whole %}    
+      {% elsif product.type == 'Parts & Accessories' and product.title contains 'Tool'  %} 
+          {% assign basic_without = basic_without %}                         
+      {% elsif product.type == 'Parts & Accessories' and product.title contains ' - '  %} 
+          {% assign basic_without = basic_without  | split: ' - ' |  first %}            
+      {% elsif product.type == 'Parts & Accessories'  %} 
+          {% assign basic_without = basic_without %}         
+      {% elsif product.type == 'Air Hoses & Fittings' and size != blank %}
+          {% assign temp_series = basic_without | split: size | first %}
+          {% if temp_series.size == 0 %}{% assign basic_without = basic_without | split: ' - ' | first %}
+          {% else %}{% assign basic_without = basic_without | split: size | first %}{% endif %}
+      {% elsif product.type == 'Air Hoses & Fittings' %}
+          {% assign basic_without = basic_without %}
+      {% elsif product.type == 'Air & Syphon Guns'  %}       
+          {% if product.title contains 'Inlet' %}{% assign basic_without = basic_without %}
+          {% elsif aside %}{% assign basic_without = basic_without | remove:size %}
+          {% else %}{% assign basic_without = basic_without  | split: ' - ' | first %}{% endif %}
+      {% elsif plain_jane %}
+          {% assign basic_without = basic_without | split: ' - ' | first %}
+      {% else %}
+          {% assign basic_without = basic_without | remove: model | remove: differentiator_whole  %}      
+      {% endif %}
+      {% unless product.title contains 'Inlet' or product.title contains 'Bent' or product.title contains 'Repair' or  product.title contains 'Rebuild' or  product.title contains 'Pick-Up' %}{% assign basic_without = basic_without | replace: '  ', ' ' | replace: '   ', ' ' | remove: '-' | strip %}{% endunless %}
+      
+      {% comment %} WEIRD OVERRIDES {% endcomment %}
+    {% if found_family and size_position != 0 %}{% assign basic_without = basic_without %}{% endif %}
+    {% if basic_without contains 'Material Mover' %}{% assign basic_without = basic_without | append: ' Vacuum' %}{% endif %}
+    {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
+     {% endcomment %}
+ 
+{{ specific }}{% comment %}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}
+
+
 {% endif %}
 
 
