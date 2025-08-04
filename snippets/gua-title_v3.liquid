@@ -391,7 +391,7 @@
     {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
      {% endcomment %}
   {% assign specific = specific | replace: '  ', ' ' | replace: '   ', ' ' | strip %}{% assign last_char = specific | slice: -1 %}
-  {% if last_char == '-' %}{% assign new_length = specific.size | minus: 1 %}{% assign specific = specific | slice: new_length %}{% endif %}
+  {% if last_char == '-' %}{% assign new_length = specific.size | minus: 1 %}{% assign specific = specific | slice: 0,new_length %}{% endif %}
 {{ specific }}{% comment %}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}
 
 
