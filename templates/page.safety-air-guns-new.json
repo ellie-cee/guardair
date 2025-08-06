@@ -1164,6 +1164,13 @@
             "link": ""
           }
         },
+        "product_rCMttg": {
+          "type": "product",
+          "settings": {
+            "product": "reverseforce-75rf-air-gun-48",
+            "alt_ptitle": ""
+          }
+        },
         "column_4B7VLp": {
           "type": "column",
           "settings": {
@@ -1173,6 +1180,14 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_hXUDFH": {
+          "type": "product",
+          "settings": {
+            "product": "radiator-inrg-air-gun-60",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-radiator.png",
+            "alt_ptitle": ""
           }
         },
         "column_3tEHy4": {
@@ -1186,6 +1201,14 @@
             "link": ""
           }
         },
+        "product_RnyLLW": {
+          "type": "product",
+          "settings": {
+            "product": "filter-900f-cleaning-safety-air-gun-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-filter.png",
+            "alt_ptitle": ""
+          }
+        },
         "column_jctXBn": {
           "type": "column",
           "settings": {
@@ -1196,13 +1219,25 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_w6cgkU": {
+          "type": "product",
+          "settings": {
+            "product": "blind-hole-74bh-safety-air-gun-12-angled-tip",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-blind-hole.png",
+            "alt_ptitle": ""
+          }
         }
       },
       "block_order": [
         "column_KFQXLx",
+        "product_rCMttg",
         "column_4B7VLp",
+        "product_hXUDFH",
         "column_3tEHy4",
-        "column_jctXBn"
+        "product_RnyLLW",
+        "column_jctXBn",
+        "product_w6cgkU"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
@@ -1217,7 +1252,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "ptitle_fix": "none",
+        "ptitle_fix": "basic_series",
         "pdesc": false,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
