@@ -31,6 +31,9 @@
     assign show_mobile_slider = true
   endif
 -%}
+{% if section.settings.pdesc_metafield.size %}
+    {% assign product_desc_key = section.settings.pdesc_metafield.size %}
+{% endif %}
 
 <div {% if section.settings.anchor_id != blank %}id="{{ section.settings.anchor_id }}"{% endif %} class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div
@@ -172,14 +175,21 @@
 
 
         
-          {% when 'product' %}
-          {% assign product = block.settings.product %}
+        {% when 'product' %}
+            {% assign product = block.settings.product %}
+              {% if section.settings.pdesc and section.settings.pdesc_length == 1 %}
+                {% assign product_shortdesc = product.description | split: '.' | first %}    
+              {% elsif section.settings.pdesc and section.settings.pdesc_length == 2 %}
+                  {% assign product_shortdesc = product.description | split: '.' | last %}                
+                  {% assign product_shortdesc = product.description | split: '.' | first %}                
+              {% endif %}
+  
             {% if block.settings.alt_pimage != blank %} 
                 {% assign product_image = block.settings.alt_pimage %}
             {% else %}
                 {% assign product_image = product.featured_image %}              
             {% endif %}
-     <li
+          <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
@@ -250,8 +260,10 @@
                     </a>
                   </h3>
                 {%- endif -%}
-                {%- if product.description != blank and section.settings.pdesc -%}
-                  <div class="rte">{{ product.description }}</div>
+                {%- if product.description != blank and section.settings.pdesc and section.settings.pdesc_length == 0 -%}
+                  <div class="rte">{{ product.description }}</div>           
+                {% else %}                 
+                  <div class="rte">{{ product_shortdesc }}</div>                    
                 {%- endif -%}
 
 
@@ -470,7 +482,17 @@
       "id": "pdesc",
       "default": false,
       "label": "Show Product Description"
-    },  
+    },
+    {
+      "type": "range",
+      "id": "pdesc_length",
+      "min":0,
+      "max":2,
+      "step":1,
+      "default":0,
+      "label": "Trim Product Description",
+      "info":"Number of Sentences.  Leave 0 to show full description."
+    },       
     {
       "type": "text",
       "id": "meta_pimage",
@@ -648,6 +670,10 @@
           "id": "product",
           "label": "Product"
         },
+    {
+      "type": "header",
+      "content": "IGNORE ALL BELOW FOR NOW"
+    },        
         {
           "type": "image_picker",
           "id": "alt_pimage",
