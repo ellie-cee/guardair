@@ -29,6 +29,7 @@
   endif
 
 -%}
+{{ processed_title }}
 
 {% comment %} Step X: Remove specific words {% endcomment %}
 {% assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,F5,(Sold by the Foot)' %}
@@ -337,7 +338,7 @@
 
  {% assign basic = basic | replace: '  ', ' ' | replace: '   ', ' ' | strip %}
       
-{{ basic }}{% comment %}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}ff
+{{ basic }}{% comment %}<br/>{{ num_word }}<br/>{{ digit_count }}<br/>{{ has_digits }}{% endcomment %}
 
 
 {% comment %} ---------- FORMAT 4 - specific ---------- {% endcomment %}
