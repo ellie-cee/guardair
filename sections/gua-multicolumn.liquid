@@ -253,7 +253,9 @@
                 {%- if product.description != blank and section.settings.pdesc -%}
                   <div class="rte">{{ product.description }}</div>
                 {%- endif -%}
-
+                {%- if section.settings.pdesc_metafield and section.settings.pdesc_metafield.size > 0 -%}
+                  <div class="rte">{{ section.settings.pdesc_metafield }}</div>
+                {%- endif -%}
 
               </div>
             </div>
