@@ -125,7 +125,8 @@
         "product_J8jtVp": {
           "type": "product",
           "settings": {
-            "product": "long-john-75lj-nylon-safety-air-gun-12",
+            "product": "long-john-75lj-nylon-nozzle-safety-air-gun-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-long-john.png",
             "alt_ptitle": ""
           }
         },
