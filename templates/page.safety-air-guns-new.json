@@ -612,7 +612,8 @@
         "product_CLXzPL": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "whisperjet-80wj-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
             "alt_ptitle": ""
           }
         },
@@ -630,7 +631,8 @@
         "product_mtLe3r": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "whisperjet-80-safety-air-gun-with-volume-control",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet-volume-control.png",
             "alt_ptitle": ""
           }
         },
