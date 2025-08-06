@@ -579,34 +579,12 @@
     "multicolumn_UqBAWA": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_8xkQF6": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-80lj_6b18b128-1b0e-4844-8c71-10267626f064.png",
-            "image_link": "",
-            "title": "<a href=\"/products/whisperjet-80lj-safety-air-gun-6\" title=\"WhisperJet® 80LJ Safety Air Gun - 6&quot;\">WhisperJet Safety Air Gun 80LJ</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_apfYmz": {
           "type": "product",
           "settings": {
             "product": "whisperjet-80lj-safety-air-gun-12",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet-80lj_6b18b128-1b0e-4844-8c71-10267626f064.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_jHLGDw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
-            "image_link": "",
-            "title": "<a href=\"/products/whisperjet-80wj-safety-air-gun\" title=\"WhisperJet® 80WJ Safety Air Gun\">WhisperJet Safety Air Gun 80WJ</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_CLXzPL": {
@@ -617,34 +595,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_nc6gqV": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-volume-control.png",
-            "image_link": "",
-            "title": "<a href=\"/products/whisperjet-80-safety-air-gun-with-volume-control\" title=\"WhisperJet® 80 Safety Air Gun w/ Volume Control\">WhisperJet Safety Air Gun 80</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_mtLe3r": {
           "type": "product",
           "settings": {
             "product": "whisperjet-80-safety-air-gun-with-volume-control",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet-volume-control.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_CUxmwk": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
-            "image_link": "",
-            "title": "<a href=\"/products/flex-80-safety-air-gun-w-whisperjet-nozzle-12\" title=\"Flex 80 Safety Air Gun w/ WhisperJet® Nozzle - 12&quot;\">Flex Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_RnBEek": {
@@ -655,17 +611,6 @@
             "alt_ptitle": ""
           }
         },
-        "column_B4NTF9": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet-extended_66820161-22e2-4146-af76-1035dcdcfffa.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-whisperjet-u80lj-safety-air-gun-12-w-short-trigger\" title=\"Ultra® WhisperJet® U80LJ Safety Air Gun - 12&quot; w/ Short Trigger\">Ultra WhisperJet Safety Air Gun U80LJ</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_77FNzq": {
           "type": "product",
           "settings": {
@@ -674,34 +619,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_dRmJ4B": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet_f0441c86-335c-4dd1-9372-d8172bd1048b.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet\" title=\"Ultra® WhisperJet® U80WJ Safety Air Gun - 3/8&quot; FNPT Inlet\">Ultra WhisperJet Safety Air Gun U80WJ</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_jcEdPC": {
           "type": "product",
           "settings": {
             "product": "ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet_f0441c86-335c-4dd1-9372-d8172bd1048b.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_Ajw8JU": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-thumbswitch_7936cfcb-15bb-4011-bd5d-61dad117b113.png",
-            "image_link": "",
-            "title": "<a href=\"/products/whisperjet-thumbswitch-980-safety-air-gun\" title=\"WhisperJet® ThumbSwitch 980 Safety Air Gun\">WhisperJet ThumbSwitch Safety Air Gun 980</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_8iraeX": {
@@ -714,19 +637,12 @@
         }
       },
       "block_order": [
-        "column_8xkQF6",
         "product_apfYmz",
-        "column_jHLGDw",
         "product_CLXzPL",
-        "column_nc6gqV",
         "product_mtLe3r",
-        "column_CUxmwk",
         "product_RnBEek",
-        "column_B4NTF9",
         "product_77FNzq",
-        "column_dRmJ4B",
         "product_jcEdPC",
-        "column_Ajw8JU",
         "product_8iraeX"
       ],
       "custom_css": [
