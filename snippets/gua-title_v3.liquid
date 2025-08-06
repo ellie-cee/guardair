@@ -29,7 +29,6 @@
   endif
 
 -%}
-{{ processed_title }}
 
 {% comment %} Step X: Remove specific words {% endcomment %}
 {% assign words_to_remove = 'The,Classic+,the,THE,classic+,CLASSIC+,F5,(Sold by the Foot)' %}
@@ -38,7 +37,7 @@
 {% for word in words_array %}
   {% assign clean_title = processed_title | replace: word, '' %}
 {% endfor %}
-
+{{ clean_title }}
 
 {% comment %} Step X: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
 {% assign special_chars = '®,®,™,©,℠' %}
