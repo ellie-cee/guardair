@@ -258,7 +258,7 @@
                 {%- if product.description != blank and section.settings.pdesc -%}
                   <div class="rte">{{ product.description }}</div>
                 {%- endif -%}
-                {%- if section.settings.pdesc_metafield and product_metadesc -%}
+                {%- if section.settings.pdesc_metafield and product_metadesc -%}{{ section.settings.pdesc_metafield }}<br/>{{ product_metadesc }}
                   <div class="rte">{{ product_metadesc }}</div>
                 {%- endif -%}
 
