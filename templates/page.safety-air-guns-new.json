@@ -650,7 +650,8 @@
         "product_RnBEek": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "flex-80-safety-air-gun-w-whisperjet-nozzle-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
             "alt_ptitle": ""
           }
         },
