@@ -472,15 +472,11 @@
             "alt_ptitle": ""
           }
         },
-        "column_jHCLrw": {
-          "type": "column",
+        "product_en3UP6": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-quietforce.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-quietforce-u74-safety-air-gun-adjustable-air-nozzle-79-dba\" title=\"Ultra® QuietForce® U74 Safety Air Gun - Adjustable Air Nozzle (79 dBA)\">Ultra QuietForce Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "ultra-quietforce-u74-safety-air-gun-adjustable-air-nozzle-79-dba",
+            "alt_ptitle": ""
           }
         }
       },
@@ -490,7 +486,7 @@
         "product_h73UUf",
         "product_L3cp9i",
         "product_cxaQUf",
-        "column_jHCLrw"
+        "product_en3UP6"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
