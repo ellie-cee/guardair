@@ -1067,7 +1067,8 @@
         "product_tT6aGV": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "inforcer-quietforce-inf5-safety-air-gun-24",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-inforcer-quietforce.png",
             "alt_ptitle": ""
           }
         },
