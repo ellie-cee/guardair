@@ -1153,33 +1153,11 @@
     "multicolumn_QhMXfn": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_KFQXLx": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-reverseforce.png",
-            "image_link": "",
-            "title": "<a href=\"/products/reverseforce-75rf-air-gun-48\" title=\"ReverseForce 75RF Air Gun - 48&quot;\">ReverseForce Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_rCMttg": {
           "type": "product",
           "settings": {
             "product": "reverseforce-75rf-air-gun-48",
             "alt_ptitle": ""
-          }
-        },
-        "column_4B7VLp": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-radiator.png",
-            "image_link": "",
-            "title": "<a href=\"/products/radiator-inrg-air-gun-60\" title=\"Radiator INRG Air Gun - 60&quot;\">Radiator Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_hXUDFH": {
@@ -1190,34 +1168,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_3tEHy4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-filter.png",
-            "image_link": "",
-            "title": "<a href=\"/products/filter-900f-cleaning-safety-air-gun-12\" title=\"Filter 900F Cleaning Safety Air Gun - 12&quot;\">Filter Cleaning Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_RnyLLW": {
           "type": "product",
           "settings": {
             "product": "filter-900f-cleaning-safety-air-gun-12",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-filter.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_jctXBn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-blind-hole.png",
-            "image_link": "",
-            "title": "<a href=\"/products/blind-hole-74bh-safety-air-gun-12-angled-tip\" title=\"Blind Hole® 74BH Safety Air Gun - 12&quot; Angled Tip\">Blind Hole Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_w6cgkU": {
@@ -1230,13 +1186,9 @@
         }
       },
       "block_order": [
-        "column_KFQXLx",
         "product_rCMttg",
-        "column_4B7VLp",
         "product_hXUDFH",
-        "column_3tEHy4",
         "product_RnyLLW",
-        "column_jctXBn",
         "product_w6cgkU"
       ],
       "custom_css": [
