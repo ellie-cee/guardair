@@ -199,15 +199,11 @@
             "alt_ptitle": "QuietForce Safety Air Gun 74G"
           }
         },
-        "column_tDQF7a": {
-          "type": "column",
+        "product_rQJNBU": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-booster.png",
-            "image_link": "",
-            "title": "<a href=\"/products/booster-76s-safety-air-gun-6\" title=\"Booster 76S Safety Air Gun - 6&quot;\">Booster Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "booster-76s-safety-air-gun-6",
+            "alt_ptitle": ""
           }
         },
         "column_ABkzBK": {
@@ -234,7 +230,7 @@
         "product_YPETAz",
         "product_hh4NY8",
         "product_KjaRme",
-        "column_tDQF7a",
+        "product_rQJNBU",
         "column_ABkzBK"
       ],
       "custom_css": [
