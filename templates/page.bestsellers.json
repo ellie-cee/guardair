@@ -33,7 +33,7 @@
         "product_nfnCnW": {
           "type": "product",
           "settings": {
-            "product": "material-mover-8-nozzle-basic-kit",
+            "product": "long-john-75lj-safety-air-gun-18",
             "alt_ptitle": ""
           }
         },
@@ -191,7 +191,6 @@
         "image_ratio": "adapt",
         "ptitle_fix": "basic",
         "pdesc": true,
-        "pdesc_length": 2,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
         "button_link": "",
