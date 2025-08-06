@@ -206,15 +206,11 @@
             "alt_ptitle": ""
           }
         },
-        "column_ABkzBK": {
-          "type": "column",
+        "product_8kWC4d": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-blind-hole.png",
-            "image_link": "",
-            "title": "<a href=\"/products/blind-hole-74bh-safety-air-gun-12-angled-tip\" title=\"Blind Hole® 74BH Safety Air Gun - 12&quot; Angled Tip\">Blind Hole Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "blind-hole-74bh-safety-air-gun-12-angled-tip",
+            "alt_ptitle": ""
           }
         }
       },
@@ -231,7 +227,7 @@
         "product_hh4NY8",
         "product_KjaRme",
         "product_rQJNBU",
-        "column_ABkzBK"
+        "product_8kWC4d"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
