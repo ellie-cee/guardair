@@ -467,6 +467,14 @@
             "link": ""
           }
         },
+        "product_L3cp9i": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-quietforce-u74ht37-safety-air-gun-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-ultra-quietforce_extended.png",
+            "alt_ptitle": ""
+          }
+        },
         "column_nBjwmF": {
           "type": "column",
           "settings": {
@@ -495,6 +503,7 @@
         "product_ekzdBW",
         "product_h73UUf",
         "column_6k8TxL",
+        "product_L3cp9i",
         "column_nBjwmF",
         "column_jHCLrw"
       ],
