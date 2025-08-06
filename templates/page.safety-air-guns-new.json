@@ -145,6 +145,7 @@
         },
         "column_cCawkH": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
             "image_link": "",
@@ -163,6 +164,7 @@
         },
         "column_iF4tK4": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-original.png",
             "image_link": "",
@@ -170,6 +172,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_JBphDH": {
+          "type": "product",
+          "settings": {
+            "product": "the-original-57s30xb-safety-air-gun",
+            "alt_ptitle": "Original Safety Air Gun"
           }
         },
         "column_VpyJwr": {
@@ -268,6 +277,7 @@
         "column_cCawkH",
         "product_nKmbPA",
         "column_iF4tK4",
+        "product_JBphDH",
         "column_VpyJwr",
         "column_xHfP3n",
         "column_9iMXeA",
