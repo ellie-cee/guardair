@@ -590,6 +590,14 @@
             "link": ""
           }
         },
+        "product_apfYmz": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80lj-safety-air-gun-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet-80lj_6b18b128-1b0e-4844-8c71-10267626f064.png",
+            "alt_ptitle": ""
+          }
+        },
         "column_jHLGDw": {
           "type": "column",
           "settings": {
@@ -599,6 +607,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_CLXzPL": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
           }
         },
         "column_nc6gqV": {
@@ -612,6 +627,13 @@
             "link": ""
           }
         },
+        "product_mtLe3r": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
+        },
         "column_CUxmwk": {
           "type": "column",
           "settings": {
@@ -621,6 +643,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_RnBEek": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
           }
         },
         "column_B4NTF9": {
@@ -634,6 +663,13 @@
             "link": ""
           }
         },
+        "product_77FNzq": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
+        },
         "column_dRmJ4B": {
           "type": "column",
           "settings": {
@@ -643,6 +679,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_jcEdPC": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
           }
         },
         "column_Ajw8JU": {
@@ -655,16 +698,30 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_8iraeX": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
         }
       },
       "block_order": [
         "column_8xkQF6",
+        "product_apfYmz",
         "column_jHLGDw",
+        "product_CLXzPL",
         "column_nc6gqV",
+        "product_mtLe3r",
         "column_CUxmwk",
+        "product_RnBEek",
         "column_B4NTF9",
+        "product_77FNzq",
         "column_dRmJ4B",
-        "column_Ajw8JU"
+        "product_jcEdPC",
+        "column_Ajw8JU",
+        "product_8iraeX"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
