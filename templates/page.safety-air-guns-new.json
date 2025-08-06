@@ -142,6 +142,7 @@
           "type": "product",
           "settings": {
             "product": "whisperjet-80lj-safety-air-gun-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet-80lj_6b18b128-1b0e-4844-8c71-10267626f064.png",
             "alt_ptitle": "WhisperJet Safety Air Gun 80LJ"
           }
         },
@@ -149,6 +150,7 @@
           "type": "product",
           "settings": {
             "product": "flex-80-safety-air-gun-w-whisperjet-nozzle-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
             "alt_ptitle": "Flex Safety Air Gun"
           }
         },
