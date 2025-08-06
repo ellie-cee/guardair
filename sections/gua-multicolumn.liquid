@@ -177,8 +177,8 @@
         
           {% when 'product' %}
           {% assign product = block.settings.product %}
-          {% assign product_metadesc = product.metafields[product_desc_key] %}    
-
+          {% assign product_shortdesc = product.description | split: '.' | last %}    
+              {% assign product_shortdesc = product.description | split: '.' | first %}    
             {% if block.settings.alt_pimage != blank %} 
                 {% assign product_image = block.settings.alt_pimage %}
             {% else %}
@@ -256,11 +256,11 @@
                   </h3>
                 {%- endif -%}
                 {%- if product.description != blank and section.settings.pdesc -%}
+                  <div class="rte">{{ product_shortdesc }}</div>                  
+                {% else %}                 
                   <div class="rte">{{ product.description }}</div>
                 {%- endif -%}
-                {%- if section.settings.pdesc_metafield and product_metadesc -%}{{ section.settings.pdesc_metafield }}<br/>{{ product_metadesc }}
-                  <div class="rte">{{ product_metadesc }}</div>
-                {%- endif -%}
+
 
               </div>
             </div>
@@ -479,10 +479,14 @@
       "label": "Show Product Description"
     },
     {
-      "type": "text",
-      "id": "pdesc_metafield",
-      "label": "Alternate Product Description",
-      "info":"Leave blank if do not want description or using default description.  Add namespace key of metafield if should use that if exists"
+      "type": "range",
+      "id": "pdesc_length",
+      "min":0,
+      "max":10,
+      "step":1,
+      "default":0,
+      "label": "Trim Product Description",
+      "info":"Number of Sentences.  Leave 0 to show full description."
     },       
     {
       "type": "text",
