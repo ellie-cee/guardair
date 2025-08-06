@@ -182,15 +182,11 @@
             "alt_ptitle": "Rubber Tip Safety Air Gun"
           }
         },
-        "column_9iMXeA": {
-          "type": "column",
+        "product_dmdBMb": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust-75xxt.png",
-            "image_link": "",
-            "title": "<a href=\"/products/xtra-thrust-safety-air-gun-75xxt\" title=\"XtraThrust Safety Air Gun 75XXT\">XtraThrust Safety Air Gun 75XXT</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "xtrathrust-75xxt-safety-air-gun",
+            "alt_ptitle": "XtraThrust Safety Air Gun 75XXT"
           }
         },
         "column_biUe4F": {
@@ -258,7 +254,7 @@
         "product_FQNpmR",
         "column_xHfP3n",
         "product_PkQhAQ",
-        "column_9iMXeA",
+        "product_dmdBMb",
         "column_biUe4F",
         "column_MWANrN",
         "column_GQzpzm",
