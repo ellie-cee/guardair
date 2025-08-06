@@ -432,37 +432,28 @@
     "multicolumn_y3RJDU": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_zT4wVd": {
-          "type": "column",
+        "product_AiGBfM": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-xtrathrust.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-xtra-thrust-safety-air-gun\" title=\"Ultra Xtra Thrust Safety Air Gun\">Ultra XtraThrust Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "ultra-xtrathrust-u75xt-safety-air-gun-6-w-1-4-fnpt-inlet-short-trigger",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-ultra-xtrathrust.png",
+            "alt_ptitle": ""
           }
         },
-        "column_MNGbjG": {
-          "type": "column",
+        "product_ekzdBW": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet-extended_66820161-22e2-4146-af76-1035dcdcfffa.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-whisperjet-u80lj-safety-air-gun-6-w-long-trigger\" title=\"Ultra® WhisperJet® U80LJ Safety Air Gun - 6&quot; w/ Long Trigger\">Ultra WhisperJet Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "ultra-whisperjet-u80lj-safety-air-gun-6-w-long-trigger",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet-extended_66820161-22e2-4146-af76-1035dcdcfffa.png",
+            "alt_ptitle": ""
           }
         },
-        "column_WRWw3J": {
-          "type": "column",
+        "product_h73UUf": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-venturi.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-u75lj-safety-air-gun-6-w-long-trigger\" title=\"Ultra® U75LJ Safety Air Gun - 6&quot; w/ Long Trigger\">Ultra Long John Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "ultra-u75lj-safety-air-gun-6-w-long-trigger",
+            "alt_pimage": "shopify://shop_images/guardair-corporation-6-u75lj006aa2-short-trigger-u75lj006aa2-ultra-venturi-safety-air-gun-4092302262316_0422707e-3a81-46de-bd30-87e19f9dbdf7.jpg",
+            "alt_ptitle": ""
           }
         },
         "column_6k8TxL": {
@@ -500,9 +491,9 @@
         }
       },
       "block_order": [
-        "column_zT4wVd",
-        "column_MNGbjG",
-        "column_WRWw3J",
+        "product_AiGBfM",
+        "product_ekzdBW",
+        "product_h73UUf",
         "column_6k8TxL",
         "column_nBjwmF",
         "column_jHCLrw"
@@ -520,7 +511,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "ptitle_fix": "none",
+        "ptitle_fix": "basic_series",
         "pdesc": false,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
