@@ -37,7 +37,6 @@
 {% for word in words_array %}
   {% assign clean_title = processed_title | replace: word, '' %}
 {% endfor %}
-{{ clean_title }}
 
 {% comment %} Step X: Remove specific special characters (trademark, registered, etc.) {% endcomment %}
 {% assign special_chars = '®,®,™,©,℠' %}
@@ -53,7 +52,7 @@
 {% if clean_title contains '"' %}
     {% assign found_quote = true %}
 {% endif %}
-
+ 
 {% comment %} Step X: Find Family Name {% endcomment %}
 {% assign families = 'Blind Hole,Contain-It Kit,GunVac,MachineVac,Material Mover,PowerQUAD' %}
 {% assign families_array = families | split: ',' %}
@@ -109,7 +108,7 @@
 
 {% comment %} SERIES {% endcomment %}
 {% assign series = model %}
-
+{{ clean_title }}
    
 
 {% comment %} FAMILY {% endcomment %}
