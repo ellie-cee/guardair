@@ -186,6 +186,7 @@
           "type": "product",
           "settings": {
             "product": "airmiser-74h-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-airmiser-74h.png",
             "alt_ptitle": "AirMiser Safety Air Gun 74H"
           }
         },
@@ -193,6 +194,7 @@
           "type": "product",
           "settings": {
             "product": "whisperjet-80wj-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
             "alt_ptitle": "WhisperJet Safety Air Gun 80WJ"
           }
         },
@@ -200,6 +202,7 @@
           "type": "product",
           "settings": {
             "product": "classic-quietforce-74g-safety-air-gun-adjustable-air-nozzle-79-dba",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-quietforce.png",
             "alt_ptitle": "QuietForce Safety Air Gun 74G"
           }
         },
@@ -207,6 +210,7 @@
           "type": "product",
           "settings": {
             "product": "booster-76s-safety-air-gun-6",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-booster.png",
             "alt_ptitle": ""
           }
         },
