@@ -322,6 +322,7 @@
       "blocks": {
         "column_niwJUR": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-palmjet.png",
             "image_link": "",
@@ -341,6 +342,7 @@
         },
         "column_b7hPdC": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-palmjet-bent.png",
             "image_link": "",
@@ -349,12 +351,21 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_m3wUTL": {
+          "type": "product",
+          "settings": {
+            "product": "palmjet-ga44-safety-air-gun-4-bent",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-palmjet-bent.png",
+            "alt_ptitle": ""
+          }
         }
       },
       "block_order": [
         "column_niwJUR",
         "product_CpHKem",
-        "column_b7hPdC"
+        "column_b7hPdC",
+        "product_m3wUTL"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
