@@ -176,7 +176,8 @@
       ],
       "custom_css": [
         ".footer__content-block__divisions {flex-flow: row wrap;}",
-        ".footer__bottom {background-color: #ededed; color: #333;}"
+        ".footer__bottom {background-color: #ededed; color: #333;}",
+        ".footer__top {display:none;}"
       ],
       "settings": {
         "footer_text": "<p>© {Year} Guardair Corporation</p>",
