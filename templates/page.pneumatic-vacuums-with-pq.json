@@ -372,7 +372,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "square",
-        "ptitle_fix": "none",
+        "ptitle_fix": "specific_series",
         "pdesc": false,
         "pdesc_length": 0,
         "meta_pimage": "custom.block_product_image",
