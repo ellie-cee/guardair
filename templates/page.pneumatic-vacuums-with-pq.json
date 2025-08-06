@@ -156,33 +156,11 @@
     "multicolumn_xezMVG": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_7dazHw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ55C200_e00ca3ac-2ff6-4188-9696-f096001394eb.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Drum Vacuum Kits</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_pFW3Pf": {
           "type": "product",
           "settings": {
             "product": "powerquad-55-gallon-vacuum-kit-w-2-inlet",
             "alt_ptitle": ""
-          }
-        },
-        "column_G4UAWG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ55H200.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-55-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Generating Head w/ 2&quot; Inlet\">55 Gallon Vacuum Generating Head</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_bTbqTg": {
@@ -192,33 +170,11 @@
             "alt_ptitle": ""
           }
         },
-        "column_mCNFLc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ30C200.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-30-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 30 Gallon Vacuum Kit w/ 2&quot; Inlet\">30 Gallon Drum Vacuum Kits</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_DVC3VH": {
           "type": "product",
           "settings": {
             "product": "powerquad-30-gallon-vacuum-kit-w-1-5-inlet",
             "alt_ptitle": ""
-          }
-        },
-        "column_qYRj7z": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ30H200.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 20/30 Gallon Vacuum Generating Head w/ 2&quot; Inlet\">30 Gallon Vacuum Generating Head</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_dz4Uqd": {
@@ -228,33 +184,11 @@
             "alt_ptitle": ""
           }
         },
-        "column_Ccp9jY": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ20C200_Main.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-20-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 20 Gallon Vacuum Kit w/ 2&quot; Inlet\">20 Gallon Drum Vacuum Kits</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_RFwxkn": {
           "type": "product",
           "settings": {
             "product": "powerquad-20-gallon-vacuum-kit-w-1-5-inlet",
             "alt_ptitle": ""
-          }
-        },
-        "column_Vd6gE3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ30H200.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-20-30-gallon-vacuum-generating-head-w-2-inlet\" title=\"PowerQUAD™ 20/30 Gallon Vacuum Generating Head w/ 2&quot; Inlet\">20 Gallon Vacuum Generating Head</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_fpYUzd": {
@@ -264,33 +198,11 @@
             "alt_ptitle": ""
           }
         },
-        "column_PNhQEY": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ10C150_Main1.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-10-gallon-vacuum-kit-w-1-5-inlet\" title=\"PowerQUAD™ 10 Gallon Vacuum Kit w/ 1.5&quot; Inlet\">10 Gallon Drum Vacuum Kits</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_LKtFky": {
           "type": "product",
           "settings": {
             "product": "powerquad-10-gallon-vacuum-kit-w-1-5-inlet",
             "alt_ptitle": ""
-          }
-        },
-        "column_KRikdd": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ10H150_Main1.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-10-gallon-vacuum-generating-head-w-1-5-inlet\" title=\"PowerQUAD™ 10 Gallon Vacuum Generating Head w/ 1.5&quot; Inlet\">10 Gallon Vacuum Generating Head</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_E6JAB4": {
@@ -300,33 +212,11 @@
             "alt_ptitle": ""
           }
         },
-        "column_PGjeUT": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ05C125_Main1.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-5-gallon-vacuum-kit-w-1-25-inlet\" title=\"PowerQUAD™ 5 Gallon Vacuum Kit w/ 1.25&quot; Inlet\">5 Gallon Carry Vacuum Kit</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_kmpCyP": {
           "type": "product",
           "settings": {
             "product": "powerquad-5-gallon-vacuum-generating-head-kit-w-1-25-inlet",
             "alt_ptitle": ""
-          }
-        },
-        "column_WnHYPG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PQ05H125_Main2.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-5-gallon-vacuum-generating-head-w-1-25-inlet\" title=\"PowerQUAD™ 5 Gallon Vacuum Generating Head w/ 1.25&quot; Inlet\">5 Gallon Vacuum Generating Head</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_tEednF": {
@@ -338,25 +228,15 @@
         }
       },
       "block_order": [
-        "column_7dazHw",
         "product_pFW3Pf",
-        "column_G4UAWG",
         "product_bTbqTg",
-        "column_mCNFLc",
         "product_DVC3VH",
-        "column_qYRj7z",
         "product_dz4Uqd",
-        "column_Ccp9jY",
         "product_RFwxkn",
-        "column_Vd6gE3",
         "product_fpYUzd",
-        "column_PNhQEY",
         "product_LKtFky",
-        "column_KRikdd",
         "product_E6JAB4",
-        "column_PGjeUT",
         "product_kmpCyP",
-        "column_WnHYPG",
         "product_tEednF"
       ],
       "custom_css": [
