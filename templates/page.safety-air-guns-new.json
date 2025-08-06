@@ -369,7 +369,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "ptitle_fix": "none",
+        "ptitle_fix": "specific_series",
         "pdesc": false,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
