@@ -143,18 +143,6 @@
             "alt_ptitle": "WhisperJet Safety Air Gun 80LJ"
           }
         },
-        "column_cCawkH": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
-            "image_link": "",
-            "title": "<a href=\"/products/flex-80-safety-air-gun-w-whisperjet-nozzle-12\" title=\"Flex 80 Safety Air Gun w/ WhisperJet® Nozzle - 12&quot;\">Flex Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_nKmbPA": {
           "type": "product",
           "settings": {
@@ -162,35 +150,11 @@
             "alt_ptitle": "Flex Safety Air Gun"
           }
         },
-        "column_iF4tK4": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-original.png",
-            "image_link": "",
-            "title": "<a href=\"/products/original-safety-air-gun-57s30xb\" title=\"Original Safety Air Gun 57S30XB\">Original Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_JBphDH": {
           "type": "product",
           "settings": {
             "product": "the-original-57s30xb-safety-air-gun",
             "alt_ptitle": "Original Safety Air Gun"
-          }
-        },
-        "column_VpyJwr": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-jetguard-74s.png",
-            "image_link": "",
-            "title": "<a href=\"/products/jetguard-74s-safety-air-gun\" title=\"JetGuard 74S Safety Air Gun\">JetGuard Safety Air Gun 74S</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_FQNpmR": {
@@ -209,6 +173,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_PkQhAQ": {
+          "type": "product",
+          "settings": {
+            "product": "rubber-tip-74rt-safety-air-gun",
+            "alt_ptitle": "Rubber Tip Safety Air Gun"
           }
         },
         "column_9iMXeA": {
@@ -282,13 +253,11 @@
         "product_J8jtVp",
         "product_R9MdPq",
         "product_chEUM4",
-        "column_cCawkH",
         "product_nKmbPA",
-        "column_iF4tK4",
         "product_JBphDH",
-        "column_VpyJwr",
         "product_FQNpmR",
         "column_xHfP3n",
+        "product_PkQhAQ",
         "column_9iMXeA",
         "column_biUe4F",
         "column_MWANrN",
