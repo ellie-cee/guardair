@@ -19,7 +19,13 @@
         "part_number_CKpjqq": {
           "type": "part_number",
           "settings": {
-            "part_number_heading": "Part Number"
+            "part_number_heading": "Part Number:"
+          }
+        },
+        "sku_tEbYhb": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
           }
         },
         "description": {
@@ -88,6 +94,7 @@
       "block_order": [
         "title",
         "part_number_CKpjqq",
+        "sku_tEbYhb",
         "description",
         "klaviyo_reviews_average_rating_KHihtJ",
         "ywm_toggle_yqdhWp",
