@@ -126,7 +126,7 @@
           "type": "product",
           "settings": {
             "product": "long-john-75lj-nylon-safety-air-gun-12",
-            "alt_ptitle": "Long John Safety Air Gun"
+            "alt_ptitle": ""
           }
         },
         "product_R9MdPq": {
@@ -162,17 +162,6 @@
           "settings": {
             "product": "jetguard-74s-safety-air-gun",
             "alt_ptitle": "JetGuard Safety Air Gun 74S"
-          }
-        },
-        "column_xHfP3n": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-rubber-tip.png",
-            "image_link": "",
-            "title": "<a href=\"/products/rubber-tip-safety-air-gun\" title=\"Rubber Tip Safety Air Gun\">Rubber Tip Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_PkQhAQ": {
@@ -244,7 +233,6 @@
         "product_nKmbPA",
         "product_JBphDH",
         "product_FQNpmR",
-        "column_xHfP3n",
         "product_PkQhAQ",
         "product_dmdBMb",
         "product_YPETAz",
