@@ -736,34 +736,12 @@
     "multicolumn_7Ge9GP": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_x7TdXK": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-thumbswitch-900.png",
-            "image_link": "",
-            "title": "<a href=\"/products/thumbswitch-safety-air-gun-900\" title=\"ThumbSwitch Safety Air Gun 900\">ThumbSwitch Safety Air Gun 900</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_TKitQ6": {
           "type": "product",
           "settings": {
             "product": "thumbswitch-900-safety-air-gun",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-thumbswitch-900.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_HUC7qy": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-thumbswitch-900s.png",
-            "image_link": "",
-            "title": "<a href=\"/products/thumbswitch-safety-air-gun-900s\" title=\"ThumbSwitch Safety Air Gun 900S\">ThumbSwitch Safety Air Gun 900S</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_dBHUbL": {
@@ -774,34 +752,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_Pnaidm": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-thumbswitch.png",
-            "image_link": "",
-            "title": "<a href=\"/products/thumbswitch-900lj-safety-air-gun-6\" title=\"ThumbSwitch 900LJ Safety Air Gun - 6&quot;\">ThumbSwitch Safety Air Gun 900LJ</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_UEyEne": {
           "type": "product",
           "settings": {
             "product": "thumbswitch-900lj-nylon-safety-air-gun-12",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-thumbswitch.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_dthF7n": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet-thumbswitch_7936cfcb-15bb-4011-bd5d-61dad117b113.png",
-            "image_link": "",
-            "title": "<a href=\"/products/whisper-jet-thumbswitch-safety-air-gun-980\" title=\"WhisperJet ThumbSwitch Safety Air Gun 980\">WhisperJet ThumbSwitch Safety Air Gun 980</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_q48U6X": {
@@ -812,34 +768,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_PzfGba": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-compact-thumbswitch.png",
-            "image_link": "",
-            "title": "<a href=\"/products/compact-thumbswitch-safety-air-gun-970\" title=\"Compact ThumbSwitch Safety Air Gun 970\">Compact ThumbSwitch Safety Air Gun 970</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_A3wcqt": {
           "type": "product",
           "settings": {
             "product": "compact-thumbswitch-970-safety-air-gun",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-compact-thumbswitch.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_mpAVn3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust-thumbswitch.png",
-            "image_link": "",
-            "title": "<a href=\"/products/xtra-thrust-thumbswitch-safety-air-gun\" title=\"XtraThrust ThumbSwitch Safety Air Gun\">XtraThrust ThumbSwitch Safety Air Gun 970XT</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_zRz8rA": {
@@ -852,17 +786,11 @@
         }
       },
       "block_order": [
-        "column_x7TdXK",
         "product_TKitQ6",
-        "column_HUC7qy",
         "product_dBHUbL",
-        "column_Pnaidm",
         "product_UEyEne",
-        "column_dthF7n",
         "product_q48U6X",
-        "column_PzfGba",
         "product_A3wcqt",
-        "column_mpAVn3",
         "product_zRz8rA"
       ],
       "custom_css": [
@@ -878,7 +806,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "ptitle_fix": "none",
+        "ptitle_fix": "basic_series",
         "pdesc": false,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
