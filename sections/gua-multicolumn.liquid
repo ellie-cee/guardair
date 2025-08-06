@@ -177,8 +177,13 @@
         
           {% when 'product' %}
           {% assign product = block.settings.product %}
-          {% assign product_shortdesc = product.description | split: '.' | last %}    
-              {% assign product_shortdesc = product.description | split: '.' | first %}    
+          {% if section.settings.pdesc_length == 1 %}
+            {% assign product_shortdesc = product.description | split: '.' | first %}    
+          {% elsif section.settings.pdesc_length == 2 %}
+              {% assign product_shortdesc = product.description | split: '.' | last %}                
+              {% assign product_shortdesc = product.description | split: '.' | first %}                
+          {% endif %}
+  
             {% if block.settings.alt_pimage != blank %} 
                 {% assign product_image = block.settings.alt_pimage %}
             {% else %}
@@ -255,10 +260,10 @@
                     </a>
                   </h3>
                 {%- endif -%}
-                {%- if product.description != blank and section.settings.pdesc -%}
-                  <div class="rte">{{ product_shortdesc }}</div>                  
+                {%- if product.description != blank and section.settings.pdesc and section.settings.pdesc_length == 0 -%}
+                  <div class="rte">{{ product.description }}</div>           
                 {% else %}                 
-                  <div class="rte">{{ product.description }}</div>
+                  <div class="rte">{{ product_shortdesc }}</div>                    
                 {%- endif -%}
 
 
