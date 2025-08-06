@@ -1086,7 +1086,8 @@
         "product_zF7wqR": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "inforcer-inf5-steel-safety-air-gun-w-chisel-point-nozzle-24",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-inforcer-steel-chisel.png",
             "alt_ptitle": ""
           }
         },
@@ -1104,7 +1105,8 @@
         "product_hhTDaY": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "inforcer-inf5-steel-safety-air-gun-w-scraper-nozzle-60",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-inforcer-steel-scraper.png",
             "alt_ptitle": ""
           }
         },
@@ -1122,7 +1124,8 @@
         "product_BccNBr": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "hydroforce-hyd-power-wash-gun-24",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-hydroforce.png",
             "alt_ptitle": ""
           }
         }
