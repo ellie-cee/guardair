@@ -996,34 +996,12 @@
     "multicolumn_dtEXT8": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_DQHENC": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-force-5.png",
-            "image_link": "",
-            "title": "<a href=\"/products/force-5-f5-safety-air-gun-24\" title=\"Force 5® F5 Safety Air Gun - 24&quot;\">Force 5 Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_XkhVcp": {
           "type": "product",
           "settings": {
             "product": "force-5-f5-safety-air-gun-24",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-force-5.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_mbMwkJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-force-5-quietforce.png",
-            "image_link": "",
-            "title": "<a href=\"/products/force-5-quietforce-f5-safety-air-gun-24\" title=\"Force 5® QuietForce® F5 Safety Air Gun - 24&quot;\">Force 5 QuietForce Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_VrC4GV": {
@@ -1034,34 +1012,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_DyzPEr": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-inforcer.png",
-            "image_link": "",
-            "title": "<a href=\"/products/inforcer-inf5-safety-air-gun-24\" title=\"Inforcer® INF5 Safety Air Gun - 24&quot;\">Inforcer Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_fGrLBe": {
           "type": "product",
           "settings": {
             "product": "inforcer-quietforce-inf5-safety-air-gun-24",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-inforcer-quietforce.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_xwmjia": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-inforcer-quietforce.png",
-            "image_link": "",
-            "title": "<a href=\"/products/inforcer-quietforce-inf5-safety-air-gun-24\" title=\"Inforcer® QuietForce® INF5 Safety Air Gun - 24&quot;\">Inforcer QuietForce Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_tT6aGV": {
@@ -1072,17 +1028,6 @@
             "alt_ptitle": ""
           }
         },
-        "column_KiUYMA": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-inforcer-steel-chisel.png",
-            "image_link": "",
-            "title": "<a href=\"/products/inforcer-inf5-steel-safety-air-gun-w-chisel-point-nozzle-24\" title=\"Inforcer® INF5 Steel Safety Air Gun w/ Chisel Point Nozzle - 24&quot;\">Inforcer Steel Safety Air Gun w/ Chisel Point Nozzle</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_zF7wqR": {
           "type": "product",
           "settings": {
@@ -1091,34 +1036,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_h6iBkG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-inforcer-steel-scraper.png",
-            "image_link": "",
-            "title": "<a href=\"/products/inforcer-inf5-steel-safety-air-gun-w-scraper-nozzle-60\" title=\"Inforcer® INF5 Steel Safety Air Gun w/ Scraper Nozzle - 60&quot;\">Inforcer Steel Safety Air Gun w/ Scraper Nozzle</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_hhTDaY": {
           "type": "product",
           "settings": {
             "product": "inforcer-inf5-steel-safety-air-gun-w-scraper-nozzle-60",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-inforcer-steel-scraper.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_GRkWAL": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-hydroforce.png",
-            "image_link": "",
-            "title": "<a href=\"/products/hydroforce-hyd-power-wash-gun-24\" title=\"HydroForce® HYD Power Wash Gun - 24&quot;\">HydroForce Power Wash Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_BccNBr": {
@@ -1131,19 +1054,12 @@
         }
       },
       "block_order": [
-        "column_DQHENC",
         "product_XkhVcp",
-        "column_mbMwkJ",
         "product_VrC4GV",
-        "column_DyzPEr",
         "product_fGrLBe",
-        "column_xwmjia",
         "product_tT6aGV",
-        "column_KiUYMA",
         "product_zF7wqR",
-        "column_h6iBkG",
         "product_hhTDaY",
-        "column_GRkWAL",
         "product_BccNBr"
       ],
       "custom_css": [
@@ -1159,7 +1075,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "ptitle_fix": "none",
+        "ptitle_fix": "specific_series",
         "pdesc": false,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
