@@ -788,7 +788,8 @@
         "product_UEyEne": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "thumbswitch-900lj-nylon-safety-air-gun-12",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-thumbswitch.png",
             "alt_ptitle": ""
           }
         },
@@ -806,7 +807,8 @@
         "product_q48U6X": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "whisperjet-thumbswitch-980-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet-thumbswitch_7936cfcb-15bb-4011-bd5d-61dad117b113.png",
             "alt_ptitle": ""
           }
         },
@@ -824,7 +826,8 @@
         "product_A3wcqt": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "compact-thumbswitch-970-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-compact-thumbswitch.png",
             "alt_ptitle": ""
           }
         },
@@ -842,7 +845,8 @@
         "product_zRz8rA": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "xtrathrust-thumbswitch-970xt-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-xtrathrust-thumbswitch.png",
             "alt_ptitle": ""
           }
         }
