@@ -707,7 +707,8 @@
         "product_8iraeX": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "whisperjet-thumbswitch-980-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-whisperjet-thumbswitch_7936cfcb-15bb-4011-bd5d-61dad117b113.png",
             "alt_ptitle": ""
           }
         }
