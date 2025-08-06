@@ -291,7 +291,7 @@
         {% endif %}
 
          {% if product.type == 'Vacuums' %}
-          {% assign basic = '' %}
+          {% assign basic = basic %}
          {% else %}
           {% assign basic = basic  | split: ' - ' | first  | remove: series | remove: num_word %}
         
