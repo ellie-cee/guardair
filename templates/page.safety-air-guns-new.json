@@ -884,34 +884,12 @@
     "multicolumn_Cz9xRa": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_ibaRDn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-lazer-pistol-grip.png",
-            "image_link": "",
-            "title": "<a href=\"/products/lazer-pistol-grip-650-safety-air-gun-6\" title=\"Lazer® Pistol Grip 650 Safety Air Gun - 6&quot;\">Lazer Pistol Grip Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_EhcJ77": {
           "type": "product",
           "settings": {
             "product": "lazer-pistol-grip-650-safety-air-gun-12",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-lazer-pistol-grip.png",
             "alt_ptitle": ""
-          }
-        },
-        "column_wpQ3Jc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-lazer-palmswitch.png",
-            "image_link": "",
-            "title": "<a href=\"/products/lazer-palmswitch-600-safety-air-gun-6\" title=\"Lazer PalmSwitch® 600 Safety Air Gun - 6&quot;\">Lazer Palm Switch Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_Nmgfkk": {
@@ -924,9 +902,7 @@
         }
       },
       "block_order": [
-        "column_ibaRDn",
         "product_EhcJ77",
-        "column_wpQ3Jc",
         "product_Nmgfkk"
       ],
       "custom_css": [
@@ -942,7 +918,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "ptitle_fix": "none",
+        "ptitle_fix": "basic_series",
         "pdesc": false,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
