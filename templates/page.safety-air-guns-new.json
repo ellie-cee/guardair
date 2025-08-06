@@ -320,36 +320,12 @@
     "multicolumn_nUa7bn": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_niwJUR": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-palmjet.png",
-            "image_link": "",
-            "title": "<a href=\"/products/palmjet-ga44-safety-air-gun-4-straight\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Straight\">PalmJet Safety Air Gun w/ Straight Extension</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_CpHKem": {
           "type": "product",
           "settings": {
             "product": "palmjet-ga44-safety-air-gun-4-straight",
             "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-palmjet.png",
             "alt_ptitle": "PalmJet Safety Air Gun w/ Straight Extension"
-          }
-        },
-        "column_b7hPdC": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-palmjet-bent.png",
-            "image_link": "",
-            "title": "<a href=\"/products/palmjet-ga44-safety-air-gun-4-bent\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Bent\">PalmJet Safety Air Gun w/ Bent Extension</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_m3wUTL": {
@@ -362,9 +338,7 @@
         }
       },
       "block_order": [
-        "column_niwJUR",
         "product_CpHKem",
-        "column_b7hPdC",
         "product_m3wUTL"
       ],
       "custom_css": [
