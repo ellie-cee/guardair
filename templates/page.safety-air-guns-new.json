@@ -153,7 +153,6 @@
         },
         "column_cCawkH": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-flex_44f1db54-d0a9-4711-9b06-ead92af45a0c.png",
             "image_link": "",
@@ -163,10 +162,10 @@
             "link": ""
           }
         },
-        "product_Yq7Vpy": {
+        "product_nKmbPA": {
           "type": "product",
           "settings": {
-            "product": "flex-80-safety-air-gun-w-whisperjet-nozzle-12",
+            "product": "",
             "alt_ptitle": ""
           }
         },
@@ -276,7 +275,7 @@
         "product_chEUM4",
         "product_UTtCFY",
         "column_cCawkH",
-        "product_Yq7Vpy",
+        "product_nKmbPA",
         "column_iF4tK4",
         "column_VpyJwr",
         "column_xHfP3n",
