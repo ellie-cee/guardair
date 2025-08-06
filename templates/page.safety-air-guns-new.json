@@ -747,6 +747,14 @@
             "link": ""
           }
         },
+        "product_TKitQ6": {
+          "type": "product",
+          "settings": {
+            "product": "thumbswitch-900-safety-air-gun",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-thumbswitch-900.png",
+            "alt_ptitle": ""
+          }
+        },
         "column_HUC7qy": {
           "type": "column",
           "settings": {
@@ -756,6 +764,14 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_dBHUbL": {
+          "type": "product",
+          "settings": {
+            "product": "thumbswitch-900s-safety-air-gun-w-air-shield-nozzle",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-thumbswitch-900s.png",
+            "alt_ptitle": ""
           }
         },
         "column_Pnaidm": {
@@ -769,6 +785,13 @@
             "link": ""
           }
         },
+        "product_UEyEne": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
+        },
         "column_dthF7n": {
           "type": "column",
           "settings": {
@@ -778,6 +801,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_q48U6X": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
           }
         },
         "column_PzfGba": {
@@ -791,6 +821,13 @@
             "link": ""
           }
         },
+        "product_A3wcqt": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
+        },
         "column_mpAVn3": {
           "type": "column",
           "settings": {
@@ -801,15 +838,28 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_zRz8rA": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
         }
       },
       "block_order": [
         "column_x7TdXK",
+        "product_TKitQ6",
         "column_HUC7qy",
+        "product_dBHUbL",
         "column_Pnaidm",
+        "product_UEyEne",
         "column_dthF7n",
+        "product_q48U6X",
         "column_PzfGba",
-        "column_mpAVn3"
+        "product_A3wcqt",
+        "column_mpAVn3",
+        "product_zRz8rA"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
