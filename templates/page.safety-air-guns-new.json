@@ -1007,6 +1007,14 @@
             "link": ""
           }
         },
+        "product_XkhVcp": {
+          "type": "product",
+          "settings": {
+            "product": "force-5-f5-safety-air-gun-24",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-force-5.png",
+            "alt_ptitle": ""
+          }
+        },
         "column_mbMwkJ": {
           "type": "column",
           "settings": {
@@ -1016,6 +1024,14 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_VrC4GV": {
+          "type": "product",
+          "settings": {
+            "product": "force-5-quietforce-f5-safety-air-gun-24",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-force-5-quietforce.png",
+            "alt_ptitle": ""
           }
         },
         "column_DyzPEr": {
@@ -1029,6 +1045,14 @@
             "link": ""
           }
         },
+        "product_fGrLBe": {
+          "type": "product",
+          "settings": {
+            "product": "inforcer-quietforce-inf5-safety-air-gun-24",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-inforcer-quietforce.png",
+            "alt_ptitle": ""
+          }
+        },
         "column_xwmjia": {
           "type": "column",
           "settings": {
@@ -1038,6 +1062,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_tT6aGV": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
           }
         },
         "column_KiUYMA": {
@@ -1051,6 +1082,13 @@
             "link": ""
           }
         },
+        "product_zF7wqR": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
+        },
         "column_h6iBkG": {
           "type": "column",
           "settings": {
@@ -1060,6 +1098,13 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_hhTDaY": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
           }
         },
         "column_GRkWAL": {
@@ -1072,16 +1117,30 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_BccNBr": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "alt_ptitle": ""
+          }
         }
       },
       "block_order": [
         "column_DQHENC",
+        "product_XkhVcp",
         "column_mbMwkJ",
+        "product_VrC4GV",
         "column_DyzPEr",
+        "product_fGrLBe",
         "column_xwmjia",
+        "product_tT6aGV",
         "column_KiUYMA",
+        "product_zF7wqR",
         "column_h6iBkG",
-        "column_GRkWAL"
+        "product_hhTDaY",
+        "column_GRkWAL",
+        "product_BccNBr"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
