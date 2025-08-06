@@ -52,7 +52,7 @@
 {% if clean_title contains '"' %}
     {% assign found_quote = true %}
 {% endif %}
- 
+
 {% comment %} Step X: Find Family Name {% endcomment %}
 {% assign families = 'Blind Hole,Contain-It Kit,GunVac,MachineVac,Material Mover,PowerQUAD' %}
 {% assign families_array = families | split: ',' %}
@@ -108,7 +108,7 @@
 
 {% comment %} SERIES {% endcomment %}
 {% assign series = model %}
-{{ clean_title }}
+
    
 
 {% comment %} FAMILY {% endcomment %}
@@ -153,7 +153,7 @@
 {% if found_model or found_quote or found_diff %}
       {% assign plain_jane = false %}
 {% endif %}
-
+ 
    
 {% comment %} SIZE {% endcomment %}
     {% if clean_title contains '"' or clean_title contains 'Gallon' %}     
@@ -238,7 +238,7 @@
     {% if basic_series contains '75LJ' %}{% unless basic_series contains 'Long John' %}{% assign basic_series = basic_series | prepend:'Long John ' %}{% endunless %}{% endif %}    
 {{ basic_series }}
 
-
+{{ clean_title }}
 {% comment %} ---------- FORMAT 2 ---------- {% endcomment %}
   {% elsif text_style and text_style == 'specific_series' %}
         {% assign specific_series =  clean_title %}  
