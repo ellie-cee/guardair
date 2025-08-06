@@ -456,17 +456,6 @@
             "alt_ptitle": ""
           }
         },
-        "column_6k8TxL": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-quietforce_extended.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-quietforce-u74ht37-safety-air-gun-6\" title=\"Ultra® QuietForce® U74HT37 Safety Air Gun - 6&quot;\">Ultra QuietForce Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_L3cp9i": {
           "type": "product",
           "settings": {
@@ -475,15 +464,12 @@
             "alt_ptitle": ""
           }
         },
-        "column_nBjwmF": {
-          "type": "column",
+        "product_cxaQUf": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet_f0441c86-335c-4dd1-9372-d8172bd1048b.png",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet\" title=\"Ultra® WhisperJet® U80WJ Safety Air Gun - 3/8&quot; FNPT Inlet\">Ultra WhisperJet Safety Air Gun</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet_f0441c86-335c-4dd1-9372-d8172bd1048b.png",
+            "alt_ptitle": ""
           }
         },
         "column_jHCLrw": {
@@ -502,9 +488,8 @@
         "product_AiGBfM",
         "product_ekzdBW",
         "product_h73UUf",
-        "column_6k8TxL",
         "product_L3cp9i",
-        "column_nBjwmF",
+        "product_cxaQUf",
         "column_jHCLrw"
       ],
       "custom_css": [
