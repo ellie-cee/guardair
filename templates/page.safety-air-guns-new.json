@@ -196,15 +196,11 @@
             "alt_ptitle": "AirMiser Safety Air Gun 74H"
           }
         },
-        "column_MWANrN": {
-          "type": "column",
+        "product_hh4NY8": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
-            "image_link": "",
-            "title": "<a href=\"/products/whisperjet-80wj-safety-air-gun\" title=\"WhisperJet® 80WJ Safety Air Gun\">WhisperJet Safety Air Gun 80WJ</a>",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "product": "whisperjet-80wj-safety-air-gun",
+            "alt_ptitle": "WhisperJet Safety Air Gun 80WJ"
           }
         },
         "column_GQzpzm": {
@@ -252,7 +248,7 @@
         "product_PkQhAQ",
         "product_dmdBMb",
         "product_YPETAz",
-        "column_MWANrN",
+        "product_hh4NY8",
         "column_GQzpzm",
         "column_tDQF7a",
         "column_ABkzBK"
