@@ -32,26 +32,26 @@
             "column": 1,
             "row_mobile": 1,
             "column_mobile": 1,
-            "row_span": 2,
+            "row_span": 1,
             "column_span": 2,
             "row_span_mobile": 2,
             "column_span_mobile": 2,
             "image": "shopify://shop_images/logo.png",
             "image_height": 51,
             "heading": "Connect with Us",
-            "content": "<p>Sign up to receive the latest news.</p>",
+            "content": "<h3>Sign up to receive the latest news.</h3><p>Get 10% off your first order when you sign up.</p>",
             "button_link": "",
-            "button_text": ""
+            "button_text": "Submit"
           }
         },
         "contact_96cXPU": {
           "type": "contact",
           "settings": {
-            "show_on_mobile": true,
+            "show_on_mobile": false,
             "show_on_desktop": true,
             "row": 1,
             "column": 3,
-            "row_mobile": 0,
+            "row_mobile": 1,
             "column_mobile": 1,
             "row_span": 1,
             "column_span": 1,
@@ -132,7 +132,7 @@
             "row_mobile": 0,
             "column_mobile": 1,
             "row_span": 1,
-            "column_span": 4,
+            "column_span": 1,
             "row_span_mobile": 1,
             "column_span_mobile": 1,
             "heading": "Divisions",
@@ -177,7 +177,7 @@
       "custom_css": [
         ".footer__content-block__divisions {flex-flow: row wrap;}",
         ".footer__bottom {background-color: #ededed; color: #333;}",
-        ".footer__top {display:none;}"
+        ".footer__top {display: none;}"
       ],
       "settings": {
         "footer_text": "<p>© {Year} Guardair Corporation</p>",
