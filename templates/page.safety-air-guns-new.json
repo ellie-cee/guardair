@@ -331,6 +331,14 @@
             "link": ""
           }
         },
+        "product_CpHKem": {
+          "type": "product",
+          "settings": {
+            "product": "palmjet-ga44-safety-air-gun-4-straight",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-palmjet.png",
+            "alt_ptitle": "PalmJet Safety Air Gun w/ Straight Extension"
+          }
+        },
         "column_b7hPdC": {
           "type": "column",
           "settings": {
@@ -345,6 +353,7 @@
       },
       "block_order": [
         "column_niwJUR",
+        "product_CpHKem",
         "column_b7hPdC"
       ],
       "custom_css": [
