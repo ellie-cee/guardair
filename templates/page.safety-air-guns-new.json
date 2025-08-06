@@ -669,7 +669,8 @@
         "product_77FNzq": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "ultra-whisperjet-u80lj-safety-air-gun-12-w-short-trigger",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet-extended_66820161-22e2-4146-af76-1035dcdcfffa.png",
             "alt_ptitle": ""
           }
         },
@@ -687,7 +688,8 @@
         "product_jcEdPC": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet",
+            "alt_pimage": "shopify://shop_images/guardair-safety-air-guns-ultra-whisperjet_f0441c86-335c-4dd1-9372-d8172bd1048b.png",
             "alt_ptitle": ""
           }
         },
