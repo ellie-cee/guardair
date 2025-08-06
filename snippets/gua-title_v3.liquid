@@ -196,7 +196,7 @@
       {% assign size = size | strip %}
     {% endif %}
 
-
+{{ clean_title }}
 
 {% comment %} ---------- FORMAT 1 ---------- {% endcomment %}
 {% if text_style and text_style == 'basic_series' %}
@@ -238,7 +238,6 @@
     {% if basic_series contains '75LJ' %}{% unless basic_series contains 'Long John' %}{% assign basic_series = basic_series | prepend:'Long John ' %}{% endunless %}{% endif %}    
 {{ basic_series }}
 
-{{ clean_title }}
 {% comment %} ---------- FORMAT 2 ---------- {% endcomment %}
   {% elsif text_style and text_style == 'specific_series' %}
         {% assign specific_series =  clean_title %}  
