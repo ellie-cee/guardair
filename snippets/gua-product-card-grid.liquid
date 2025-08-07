@@ -5,14 +5,14 @@
               data-cascade style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container">
+            <div class="multicolumn-card content-container grid">
               {%- if product.featured_image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                   {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}                  
                 {% endif %}
-                  <a href="{{ product.url }}" class="multicolumn-card__image-wrapper">
-               <div class="multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                  <a href="{{ product.url }}" class="multicolumn-card__image-wrapper grid__image">
+               <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div
                     class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
@@ -50,7 +50,7 @@
                   </div>
                 </a>
               {%- endif -%}
-              <div class="multicolumn-card__info">
+              <div class="multicolumn-card__info grid__info">
                 {%- if product.title != blank -%}
                   <h3 class="{{ section.settings.font_style }}">
                     <a href="{{ product.url }}" class="{{ section.settings.ptitle_fix }}">
