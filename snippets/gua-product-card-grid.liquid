@@ -7,7 +7,7 @@
             {% endif %}
           >
             <div class="multicolumn-card content-container">
-              {%- if product_image != blank -%}
+              {%- if product.featured_image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                   {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}                  
