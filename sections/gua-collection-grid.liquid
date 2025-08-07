@@ -17,9 +17,9 @@
     assign show_mobile_slider = true
   endif
 -%}
-{% if section.settings.image_width == 'third' %}        
+{% if section.settings.image_width == 'third' and settings.section.block_style == 'stacked' %}        
         {% assign highest_ratio = 3.00 %}
-{% elsif section.settings.image_width == 'half' %}        
+{% elsif section.settings.image_width == 'half' and settings.section.block_style == 'stacked' %}         
         {% assign highest_ratio = 2.00 %}        
 {% else %}
       {% assign highest_ratio = 1.00 %}
