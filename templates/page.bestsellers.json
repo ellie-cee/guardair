@@ -183,6 +183,7 @@
         "a {color: #002395;}"
       ],
       "settings": {
+        "block_style": "card",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
@@ -191,7 +192,6 @@
         "image_ratio": "adapt",
         "ptitle_fix": "basic",
         "pdesc": true,
-        "pdesc_length": 2,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
         "button_link": "",
