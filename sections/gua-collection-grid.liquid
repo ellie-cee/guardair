@@ -72,66 +72,21 @@
         role="list"
       >            
               {%- for product in collection.products -%}
-                 {% unless product.has_only_default_variant %}
-                {% for variant in product.variants %}
-                  {% assign var_id = variant.id %}
-                  {% assign var_price = variant.price %}
-                  {% assign var_title = variant.title | split: '(' | first %}
-                  {% assign var_sku = variant.sku %}
-                  {% assign var_images = variant.image %}
-                  <li class="grid__item itg_with_variant">
-                  {% render 'gua-product-card-grid',
-                    product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        image_shape: section.settings.image_shape,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
-                        lazy_load: lazy_load,
-                        show_quick_add: section.settings.enable_quick_add,
-                        section_id: section.id,
-                        var_id:var_id,
-                        var_price: var_price,
-                        var_title: var_title,
-                        var_sku: var_sku,
-                        var_images: var_images,
-                        section:section,
-                        forloop:forloop
-                      %}
-                 </li>
-                  {% endfor %}
-                {% else %}
+                
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
-                >
+              
                   {% render 'gua-product-card-grid',
                     product: product,
                         media_aspect_ratio: section.settings.image_ratio,
-                        image_shape: section.settings.image_shape,
                         show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
                         lazy_load: lazy_load,
-                        show_quick_add: section.settings.enable_quick_add,
-                        section_id: section.id,
-                        var_id:var_id,
-                        var_price: var_price,
-                        var_title: var_title,
-                        var_sku: var_sku,
-                        var_images: var_images,
                         section:section,
                         forloop:forloop
                   %}
-                </li>
-                  {% endunless %}  
+
               {%- endfor -%}
 
             </ul>
