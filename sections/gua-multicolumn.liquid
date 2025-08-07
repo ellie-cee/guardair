@@ -183,7 +183,7 @@
             {% else %}
                 {% assign product_image = product.featured_image %}              
             {% endif %}
-{{ product.featured_image.src }}
+{{ product_image.src }}
             {% render 'gua-product-card-grid',
                     product: product,
                       product_image:product_image,
