@@ -22,6 +22,9 @@
 #shopify-section-{{ section.id }} slider-component.featured-collection-wrap .collection-image.mobile-hide {display: none;} 
 #shopify-section-{{ section.id }} slider-component.featured-collection-wrap ul.product-grid {width: 100%;}
 }
+  {% if section.settings.block_style == 'side' %}
+    #shopify-section-{{ section.id }} .multicolumn-card.content-container {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;flex-flow:row wrap;}
+  {% endif %}
 {%- endstyle -%}
 
 {%- liquid
