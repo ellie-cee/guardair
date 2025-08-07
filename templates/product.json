@@ -22,12 +22,6 @@
             "part_number_heading": "Part Number:"
           }
         },
-        "sku_tEbYhb": {
-          "type": "sku",
-          "settings": {
-            "text_style": "body"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -53,6 +47,12 @@
           "type": "features",
           "settings": {
             "features_heading": "Features"
+          }
+        },
+        "sku_tEbYhb": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
           }
         },
         "linked_products_picker_Qq9Ayh": {
@@ -94,11 +94,11 @@
       "block_order": [
         "title",
         "part_number_CKpjqq",
-        "sku_tEbYhb",
         "description",
         "klaviyo_reviews_average_rating_KHihtJ",
         "ywm_toggle_yqdhWp",
         "features_JCcDdi",
+        "sku_tEbYhb",
         "linked_products_picker_Qq9Ayh",
         "variant_picker",
         "price",
