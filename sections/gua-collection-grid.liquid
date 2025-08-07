@@ -25,7 +25,7 @@
     }
   }
 {%- endstyle -%}
-    <h1>{{ collection.title }}</h1>
+
 <div class="itg_collections section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
  
@@ -398,7 +398,7 @@
       "type": "checkbox",
       "id": "enable_quick_add",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
+      "label": "Enable Quick Add"
     },
     {
       "type": "header",
