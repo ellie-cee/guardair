@@ -12,7 +12,7 @@
                   {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}                  
                 {% endif %}
                   <a href="{{ product.url }}" class="multicolumn-card__image-wrapper grid__image">
-               <div class="multicolumn-card__image-wrapper DISABLED--multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+               <div class="multicolumn-card__image-wrapper {% if section.settings.block_type == 'stack' %}multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% endif %}{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div
                     class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
