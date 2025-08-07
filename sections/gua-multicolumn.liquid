@@ -254,7 +254,15 @@
                   </h3>
                 {%- endif -%}
                 {%- if product.description != blank and section.settings.pdesc -%}
-                  <div class="rte">{{ product.description }}</div>
+                      {% assign desc_parts = product.description | split: '.' %}   
+
+                  {% if section.settings.pdesc_shorten == 1 and desc_parts %}               
+                        <div class="rte">{{ desc_parts[0] }}</div>
+                  {% elsif section.settings.pdesc_shorten == 2 and desc_parts %}                      
+                        <div class="rte">{{ desc_parts[1] }}</div>   
+                  {% else %}                       
+                    <div class="rte">{{ product.description }}</div>
+                  {% endif %}                  
                 {%- endif -%}
 
 
