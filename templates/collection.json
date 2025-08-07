@@ -51,7 +51,7 @@
         "products_per_page": 16,
         "columns_desktop": 2,
         "color_scheme": "",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
         "pdesc": true,
         "pdesc_shorten": 1,
