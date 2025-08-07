@@ -21,6 +21,7 @@
       "blocks": {
         "column_7dazHw": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
             "image_link": "",
