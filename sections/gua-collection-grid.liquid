@@ -182,11 +182,20 @@
       "default": "adapt",
       "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
     },
-    {
+  {
       "type": "checkbox",
-      "id": "show_vendor",
+      "id": "pdesc",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
+      "label": "Show Product Description"
+    },  
+     {
+      "type": "range",
+      "id": "pdesc_shorten",
+      "min": 0,
+      "max": 2,
+      "step": 1,
+      "label": "Trim Description to X sentences.  0 for full.",
+      "default": 0
     },
     {
       "type": "select",
