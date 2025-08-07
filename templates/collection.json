@@ -50,6 +50,7 @@
         "block_style": "side",
         "products_per_page": 16,
         "columns_desktop": 2,
+        "row_gap": 35,
         "color_scheme": "",
         "image_width": "third",
         "image_ratio": "adapt",
