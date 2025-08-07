@@ -22,18 +22,17 @@
 #shopify-section-{{ section.id }} slider-component.featured-collection-wrap .collection-image.mobile-hide {display: none;} 
 #shopify-section-{{ section.id }} slider-component.featured-collection-wrap ul.product-grid {width: 100%;}
 }
-  {% if section.settings.block_style == 'side' %}
-    #shopify-section-{{ section.id }} .block-style-side .multicolumn-card.content-container {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;flex-flow:row wrap;}
-    {% if section.settings.image_width == 'third' %}
-        #shopify-section-{{ section.id }} .block-style-side .multicolumn-card__image-wrapper {flex:0 1 33%;}
-        #shopify-section-{{ section.id }} .block-style-side .multicolumn-list .multicolumn-card__info {flex:1 0 60%;}        
-    {% elsif section.settings.image_width == 'half' %}
-        #shopify-section-{{ section.id }} .block-style-side .multicolumn-card__image-wrapper {flex:0 1 49%;}
-        #shopify-section-{{ section.id }} .block-style-side .multicolumn-list .multicolumn-card__info {flex:1 0 49%;max-width:49%;}            
-      {% endif %}
-  {% endif %}
-{%- endstyle -%}
 
+{%- endstyle -%}
+{% if settings.section.block_style == 'side' %}
+      {% assign highest_ratio = 1.00 %}  
+{% elsif section.settings.image_width == 'third' %}        
+        {% assign highest_ratio = 3.00 %}
+{% elsif section.settings.image_width == 'half' %}         
+        {% assign highest_ratio = 2.00 %}        
+{% else %}
+      {% assign highest_ratio = 1.00 %}
+{% endif %}
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
@@ -72,6 +71,7 @@
         id="Slider-{{ section.id }}"
         role="list"
       >
+        {% comment %}
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -83,7 +83,7 @@
               assign highest_ratio = block.settings.alt_pimage.aspect_ratio 
             endif
           endfor
-        -%}
+        -%}{% endcomment %}
         {%- for block in section.blocks -%}
           {%- assign empty_column = '' -%}
           {%- if block.type == 'column' and block.settings.image == blank
