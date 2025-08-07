@@ -235,11 +235,45 @@
       "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
     },
     {
-      "type": "checkbox",
-      "id": "enable_quick_add",
-      "default": false,
-      "label": "Enable Quick Add"
-    },
+      "type": "select",
+      "id": "ptitle_fix",
+      "label": "Clean Product Title Filter",
+       "options": [
+        {
+          "value": "none",
+          "label": "Leave title intact"
+        },
+        {   
+          "value": "basic_series",
+          "label": "Basic with Series"
+        },
+        {
+          "value": "specific_series",
+          "label": "Specific with Series"
+        },
+        {
+          "value": "basic",
+          "label": "Basic"
+        },  
+        {
+          "value": "specific",
+          "label": "Specific"
+        },              
+        {
+          "value": "slice",
+          "label": "Split on Dash"
+        },
+        {
+          "value": "move_model",
+          "label": "Move Model to Beginning"
+        },
+        {
+          "value": "remove_model",
+          "label": "Remove Model"
+        }         
+      ],
+      "default": "none"
+    }, 
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
