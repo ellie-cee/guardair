@@ -29,7 +29,7 @@
         #shopify-section-{{ section.id }} .multicolumn .multicolumn-list .multicolumn-card__info {flex:1 0 60%;}        
     {% elsif section.settings.image_width == 'half' %}
         #shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {flex:0 1 49%;}
-        #shopify-section-{{ section.id }} .multicolumn .multicolumn-list .multicolumn-card__info {flex:1 0 49%;}            
+        #shopify-section-{{ section.id }} .multicolumn .multicolumn-list .multicolumn-card__info {flex:1 0 49%;max-width:49%;}            
       {% endif %}
   {% endif %}
 {%- endstyle -%}
