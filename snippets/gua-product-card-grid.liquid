@@ -11,7 +11,7 @@
                   {% assign spaced_image = true %}
                   {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}                  
                 {% endif %}
-                  <a href="{{ product.url }}" class="multicolumn-card__image-wrapper grid__image">
+                  <a href="{{ product.url }}" class="multicolumn-card__image-wrapper grid__image grid__image-{{ section.settings.image_width }}">
                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div
                     class="media media--transparent media--{{ section.settings.image_ratio }}"
