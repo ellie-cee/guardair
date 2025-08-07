@@ -31,6 +31,16 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 
 .page-width {width: auto; max-width: 1140px; padding: 0 10px;}
 
+
+.block-style-side .grid__card {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;flex-flow:row wrap;}
+
+.block-style-side .grid__image {flex:0 1 33%;}
+.block-style-side .grid__info {flex:1 0 60%;}        
+
+.block-style-side .grid__image {flex:0 1 49%;}
+.block-style-side .grid__info {flex:1 0 49%;max-width:49%;}            
+
+
 {% comment %}
 :is(.v2-header__nav-menu-item:hover,.v2-header__nav-menu-item.v2-header--is-active) .v2-header__nav-menu-link, body.template-index .v2-header__nav-menu-item:first-of-type {
   background-color: {{ accent_gradient1 | replace:'rgb','rgba' | replace:')',',0.75)' }} !important;border-bottom: 3px solid #0027868c;margin: -5px auto -6px auto;border-top: 5px solid #0027868c;}
