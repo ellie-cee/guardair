@@ -191,7 +191,7 @@
         "description": "",
         "image_width": "third",
         "image_ratio": "adapt",
-        "image_valign": "start",
+        "image_valign": "center",
         "ptitle_fix": "basic",
         "pdesc": true,
         "pdesc_shorten": 2,
