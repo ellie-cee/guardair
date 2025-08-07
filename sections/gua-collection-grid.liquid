@@ -80,8 +80,7 @@
               
                   {% render 'gua-product-card-grid',
                     product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        show_secondary_image: section.settings.show_secondary_image,
+                        highest_ratio: section.settings.image_ratio,
                         lazy_load: lazy_load,
                         section:section,
                         forloop:forloop
