@@ -1,17 +1,4 @@
-        {%- liquid
-          assign highest_ratio = 0
-          for block in section.blocks
-            if block.settings.image.aspect_ratio > highest_ratio
-              assign highest_ratio = block.settings.image.aspect_ratio
-            elsif block.settings.product.featured_image.aspect_ratio > highest_ratio
-              assign highest_ratio = block.settings.product.featured_image.aspect_ratio 
-            elsif block.settings.alt_pimage.aspect_ratio > highest_ratio
-              assign highest_ratio = block.settings.alt_pimage.aspect_ratio 
-            else
-               assign highest_ratio = 1            
-            endif
-          endfor
-        -%}   
+  
    <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
