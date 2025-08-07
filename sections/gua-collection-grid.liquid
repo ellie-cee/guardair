@@ -217,8 +217,8 @@
                   {% assign var_sku = variant.sku %}
                   {% assign var_images = variant.image %}
                   <li class="grid__item itg_with_variant">
-                     {% render 'collection-card-product',
-                        card_product: product,
+                  {% render 'gua-product-card-grid',
+                    product: product,
                         media_aspect_ratio: section.settings.image_ratio,
                         image_shape: section.settings.image_shape,
                         show_secondary_image: section.settings.show_secondary_image,
@@ -231,7 +231,9 @@
                         var_price: var_price,
                         var_title: var_title,
                         var_sku: var_sku,
-                        var_images: var_images
+                        var_images: var_images,
+                        section:section,
+                        block:block
                       %}
                  </li>
                   {% endfor %}
@@ -247,8 +249,8 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                  {% render 'collection-card-product',
-                    card_product: product,
+                  {% render 'gua-product-card-grid',
+                    product: product,
                         media_aspect_ratio: section.settings.image_ratio,
                         image_shape: section.settings.image_shape,
                         show_secondary_image: section.settings.show_secondary_image,
@@ -261,7 +263,9 @@
                         var_price: var_price,
                         var_title: var_title,
                         var_sku: var_sku,
-                        var_images: var_images
+                        var_images: var_images,
+                        section:section,
+                        block:block
                   %}
                 </li>
                   {% endunless %}  
