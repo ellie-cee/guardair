@@ -189,7 +189,7 @@
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
-        "image_width": "third",
+        "image_width": "half",
         "image_ratio": "adapt",
         "ptitle_fix": "basic",
         "pdesc": true,
