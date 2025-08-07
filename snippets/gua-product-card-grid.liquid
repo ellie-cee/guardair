@@ -5,13 +5,13 @@
               data-cascade style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container grid__card">
+            <div class="multicolumn-card content-container grid__card grid__image-{{ section.settings.image_width }}">
               {%- if product.featured_image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                   {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}                  
                 {% endif %}
-                  <a href="{{ product.url }}" class="multicolumn-card__image-wrapper grid__image grid__image-{{ section.settings.image_width }}">
+                  <a href="{{ product.url }}" class="multicolumn-card__image-wrapper grid__image">
                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div
                     class="media media--transparent media--{{ section.settings.image_ratio }}"
