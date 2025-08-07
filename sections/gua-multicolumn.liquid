@@ -177,16 +177,13 @@
         
           {% when 'product' %}
           {% assign product = block.settings.product %}
-            {% if block.settings.alt_pimage != blank %} 
-                {% assign product.featured_image = block.settings.alt_pimage %}
-          {% endif %}          
-{% comment %}
+
             {% if block.settings.alt_pimage != blank %} 
                 {% assign product_image = block.settings.alt_pimage %}
             {% else %}
                 {% assign product_image = product.featured_image %}              
             {% endif %}
-{% endcomment %}
+
             {% render 'gua-product-card-grid',
                     product: product,
                       product_image:product_image,
