@@ -22,9 +22,6 @@
 #shopify-section-{{ section.id }} slider-component.featured-collection-wrap .collection-image.mobile-hide {display: none;} 
 #shopify-section-{{ section.id }} slider-component.featured-collection-wrap ul.product-grid {width: 100%;}
 }
-
-#shopify-section-{{ section.id }} .block-style-stack {display:none;}
-
   {% if section.settings.block_style == 'side' %}
     #shopify-section-{{ section.id }} .block-style-stack .multicolumn-card.content-container {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;flex-flow:row wrap;}
     {% if section.settings.image_width == 'third' %}
@@ -104,7 +101,7 @@
           {% when 'column' %}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="block-style-{{section.settings.block_style }} multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -354,15 +351,15 @@
       "id": "block_style",
       "options": [
         {
-          "value": "stacked",
-          "label": "Stacked"
+          "value": "stack",
+          "label": "Stack"
         },
         {
           "value": "side",
           "label": "Side by Side"
         }
       ],
-      "default": "stacked",
+      "default": "stack",
       "label": "Block Style"
     },
     {
