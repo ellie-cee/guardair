@@ -72,7 +72,7 @@
         role="list"
       >            
               {%- for product in collection.products -%}
-                
+
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
@@ -80,7 +80,7 @@
               
                   {% render 'gua-product-card-grid',
                     product: product,
-                        highest_ratio: section.settings.image_ratio,
+                        highest_ratio: product.featured_image.aspect_ratio,
                         lazy_load: lazy_load,
                         section:section,
                         forloop:forloop
