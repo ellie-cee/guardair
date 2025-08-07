@@ -192,6 +192,7 @@
         "image_ratio": "adapt",
         "ptitle_fix": "basic",
         "pdesc": true,
+        "pdesc_shorten": 2,
         "meta_pimage": "custom.block_product_image",
         "button_label": "",
         "button_link": "",
