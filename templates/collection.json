@@ -47,6 +47,7 @@
       "type": "gua-collection-grid",
       "name": "GUA Product Catalog Grid",
       "settings": {
+        "block_style": "side",
         "products_per_page": 16,
         "columns_desktop": 3,
         "color_scheme": "",
