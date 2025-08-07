@@ -183,9 +183,10 @@
             {% else %}
                 {% assign product_image = product.featured_image %}              
             {% endif %}
-{{ product_image.src }}
+
             {% render 'gua-product-card-grid',
                     product: product,
+                    highest_ratio:highest_ratio,
                       product_image:product_image,
                       section:section,
                       block:block
