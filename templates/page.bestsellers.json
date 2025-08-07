@@ -183,12 +183,12 @@
         "a {color: #002395;}"
       ],
       "settings": {
-        "block_style": "card",
+        "block_style": "side",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
         "ptitle_fix": "basic",
         "pdesc": true,
