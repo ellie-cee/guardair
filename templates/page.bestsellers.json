@@ -184,7 +184,7 @@
         "a {color: #002395;}"
       ],
       "settings": {
-        "block_style": "stack",
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
