@@ -53,7 +53,7 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if product.title != blank -%}
-                  <h3 class="{{ section.settings.font_style }}">
+                  <h3 class="{{ section.settings.font_style }}">{{ product.title }}
                     <a href="{{ product.url }}" class="{{ section.settings.ptitle_fix }}">
                         {% case section.settings.ptitle_fix %}
                             {% when 'none' %}{{ product.title }}
