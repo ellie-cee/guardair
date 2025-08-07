@@ -17,6 +17,13 @@
     assign show_mobile_slider = true
   endif
 -%}
+{% if section.settings.image_width == 'third' %}        
+        {% assign highest_ratio = 3.00 %}
+{% elsif section.settings.image_width == 'half' %}        
+        {% assign highest_ratio = 2.00 %}        
+{% else %}
+      {% assign highest_ratio = 1.00 %}
+{% endif %}
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     
@@ -56,11 +63,6 @@
         id="Slider-{{ section.id }}"
         role="list"
       >    
-      {% if section.settings.image_width == 'third' %}        
-        {% assign highest_ratio = 3.00 %}
-    {% else %}
-      {% assign highest_ratio = 1.00 %}
-    {% endif %}
               {%- for product in collection.products -%}
 
                 {% assign lazy_load = false %}
