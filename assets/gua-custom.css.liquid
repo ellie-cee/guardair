@@ -84,7 +84,7 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 .v2-header__row:not(:last-child) {margin-bottom:0px !important;padding-bottom: 10px;}
       {% comment %} --- HEADER HOMEPAGE --- {% endcomment %}
       @media (min-width: 768px) {
-        .v2-header__nav-menu {margin-top: 0 !important;margin-bottom: 0rem;display: block;position: absolute;width: 100%;z-index: 9;padding: 4px 0;}
+        .v2-header__nav-menu {margin-top: 0 !important;margin-bottom: 0rem;display: block;{% comment %}position: absolute;{% endcomment %}width: 100%;z-index: 9;padding: 4px 0;}
         body.template-index .v2-header__nav-menu {position: absolute;}
       }
       body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' | replace:')',',0.75)' }};}
