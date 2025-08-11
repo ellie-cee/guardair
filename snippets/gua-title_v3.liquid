@@ -385,7 +385,7 @@
       {% comment %} WEIRD OVERRIDES {% endcomment %}
     {% if found_family and size_position != 0 %}{% assign basic_without = basic_without %}{% endif %}
     {% if basic_without contains 'Material Mover' %}{% assign basic_without = basic_without | append: ' Vacuum' %}{% endif %}
-    {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
+    {% if basic_without contains '75LJ' %}{% unless basic_without contains 'Long John' or basic_without contains 'Ultra' %}{% assign basic_without = basic_without | prepend:'Long John ' %}{% endunless %}{% endif %}        
      {% endcomment %}
   {% assign specific = specific | replace: '  ', ' ' | replace: '   ', ' ' | strip %}{% assign last_char = specific | slice: -1 %}
   {% if last_char == '-' %}{% assign new_length = specific.size | minus: 1 %}{% assign specific = specific | slice: 0,new_length %}{% endif %}
