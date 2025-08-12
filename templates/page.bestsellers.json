@@ -73,15 +73,10 @@
             "product": "powerquad-55-gallon-ned-vacuum-kit-w-2-inlet"
           }
         },
-        "column_9qki4D": {
-          "type": "column",
+        "product_6drTbm": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/PQ55C150ATEX.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet\" title=\"PowerQUAD™ 55 Gallon ATEX Vacuum Kit w/ 1.5&quot; Inlet\">55 Gallon ATEX Vacuum Kit</a>",
-            "text": "<p>ATEX-Certified Vacuums are ideal for vacuuming debris and sludge in hazardous locations. Static conductive attachments are included.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet"
           }
         },
         "column_xHfP3n": {
@@ -156,6 +151,7 @@
         },
         "column_iF4tK4": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/INF5AA_SERIES_MAIN_IMAGE.jpg",
             "image_link": "",
@@ -167,6 +163,7 @@
         },
         "column_VpyJwr": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/79SG_SERIES_MAIN_IMAGE.jpg",
             "image_link": "",
@@ -178,6 +175,7 @@
         },
         "column_9iMXeA": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-corporation-gunvac-hand-held-pneumatic-vacuum-kit-1500.jpg",
             "image_link": "",
@@ -189,11 +187,24 @@
         },
         "column_biUe4F": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ55C200.jpg",
             "image_link": "",
             "title": "<a href=\"/products/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Vacuum Kit</a>",
             "text": "<p>PowerQUAD™ Vacuums are ideal for vacuuming up chips, dust, debris, liquids, or sludge in industrial and commercial applications.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9qki4D": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/PQ55C150ATEX.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet\" title=\"PowerQUAD™ 55 Gallon ATEX Vacuum Kit w/ 1.5&quot; Inlet\">55 Gallon ATEX Vacuum Kit</a>",
+            "text": "<p>ATEX-Certified Vacuums are ideal for vacuuming debris and sludge in hazardous locations. Static conductive attachments are included.</p>",
             "link_label": "",
             "link": ""
           }
@@ -221,7 +232,7 @@
         "product_XhmtVd",
         "product_QtWYfP",
         "product_9LJFXk",
-        "column_9qki4D",
+        "product_6drTbm",
         "column_xHfP3n",
         "column_G4UAWG",
         "column_7dazHw",
@@ -232,6 +243,7 @@
         "column_VpyJwr",
         "column_9iMXeA",
         "column_biUe4F",
+        "column_9qki4D",
         "column_PxUrTm"
       ],
       "custom_css": [
