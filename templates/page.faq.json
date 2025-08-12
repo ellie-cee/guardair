@@ -1331,6 +1331,9 @@
       "block_order": [
         "collapsible_row_zhenCY"
       ],
+      "custom_css": [
+        ".caption-with-letter-spacing {font-size: 30px; font-weight: bold;}"
+      ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "Pneumatic Vacuum FAQ",
