@@ -21,7 +21,6 @@
       "blocks": {
         "column_7dazHw": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
             "image_link": "",
@@ -34,8 +33,7 @@
         "product_nfnCnW": {
           "type": "product",
           "settings": {
-            "product": "long-john-75lj-safety-air-gun-24",
-            "alt_ptitle": ""
+            "product": "long-john-75lj-safety-air-gun-6"
           }
         },
         "column_Cr38dW": {
@@ -195,7 +193,8 @@
         "ptitle_fix": "basic",
         "pdesc": true,
         "pdesc_shorten": 2,
-        "meta_pimage": "custom.block_product_image",
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 2,
@@ -204,6 +203,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "row_gap": 0,
         "padding_top": 32,
         "padding_bottom": 100,
         "anchor_id": ""
