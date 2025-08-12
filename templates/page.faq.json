@@ -1242,9 +1242,45 @@
         "collapsible_row_rg6pJg": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "We use Guardair extended reach air guns in a particularly rough working environment and I need to ensure that the nozzle never comes apart from the extension. Is there any way to do this?",
+            "icon": "none",
+            "row_content": "<p>Yes. In addition to our standard thread locker, we offer the option to pin the nozzle to the extension. We refer to this as a PERM1 connection. We also offer an optional PERM2 connection where the nozzle is pinned to the extension, and the extension is pinned to the handle. Contact our Customer Service Department at 800-482-7324.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CQqpwm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Guardair sell replacement parts for the 79SG012 Syphon Spray Gun?",
+            "icon": "none",
+            "row_content": "<p>Guardair offers the replacement nozzle but not the replacement barrel for the 79SG012. The barrel is permanently attached to the body of the gun and is not repairable.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_arJU8q": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why can't I purchase an extension only, or nozzle only, for my Force 5 air gun?",
+            "icon": "none",
+            "row_content": "<p>Extensions with permanently attached nozzles are sold as a complete assembly to ensure OSHA compliance.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eGzTbN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I need a safety air gun with the ability to clean around and/or behind an obstruction. Does Guardair offer such a product?",
+            "icon": "none",
+            "row_content": "<p>Yes. Guardair can provide a factory installed angle on the extension of our extended reach air guns. We will bend it to whatever degree you require with some limitations. Please contact our Customer Service Department at 800-482-7324.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MGHrwd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the Model 86FLX compatible with any of the Guardair safety air gun handles?",
+            "icon": "none",
+            "row_content": "<p>The 86FLX comes complete with a ¼\" NPT (male) fitting for use with ¼\" FNPT (female) connector or fitting. It is not compatible with the outlet thread on any of our air gun handles. For a safety air gun with a flexible extension, see the Guardair Model 80FLEX12.</p>",
             "page": ""
           }
         }
@@ -1254,7 +1290,11 @@
         "collapsible_row_98DryL",
         "collapsible_row_VejUGN",
         "collapsible_row_MMdcQH",
-        "collapsible_row_rg6pJg"
+        "collapsible_row_rg6pJg",
+        "collapsible_row_CQqpwm",
+        "collapsible_row_arJU8q",
+        "collapsible_row_eGzTbN",
+        "collapsible_row_MGHrwd"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
