@@ -75,12 +75,12 @@
                 {%- endif -%}
                 {%- if product.description != blank and section.settings.pdesc -%}
                     {% assign desc_parts = product.description | split: '.' %}
-                    {% if section.settings.alt_desc != '' %}               
-                          <div class="rte">{{ product.metafields.custom.grid_description | metafield_text | replace:"&#39;","'" }}</div>                    
-                    {% elsif section.settings.pdesc_shorten == 1 and desc_parts %}               
+                    {% if section.settings.alt_desc != '' %}{% assign alt_text = product.metafields.custom.grid_description | metafield_text %}
+                          <div class="rte">{{ alt_text | replace:"&#39;","'" }}</div>
+                    {% elsif section.settings.pdesc_shorten == 1 and desc_parts %}
                           <div class="rte">{{ desc_parts[0] }}.</div>
-                    {% elsif section.settings.pdesc_shorten == 2 and desc_parts %}                      
-                          <div class="rte">{{ desc_parts[1] }}.</div>   
+                    {% elsif section.settings.pdesc_shorten == 2 and desc_parts %}
+                          <div class="rte">{{ desc_parts[1] }}.</div>
                     {% else %}                       
                       <div class="rte">{{ product.description }}</div>
                     {% endif %}                  
