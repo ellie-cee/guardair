@@ -53,7 +53,7 @@
         "row_gap": 40,
         "color_scheme": "",
         "ptitle_fix": "basic",
-        "font_style": "inline-richtext",
+        "font_style": "blue-subtitle",
         "alt_image": true,
         "image_width": "full",
         "image_ratio": "adapt",
