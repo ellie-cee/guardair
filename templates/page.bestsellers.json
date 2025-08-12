@@ -19,34 +19,10 @@
     "multicolumn_xezMVG": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_7dazHw": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John® Safety Air Gun</a>",
-            "text": "<p>The perfect tool for cleaning inaccessible and hard-to-reach areas. It's venturi nozzle boosts thrust up to 200% over conventional air guns.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_nfnCnW": {
           "type": "product",
           "settings": {
             "product": "long-john-75lj-safety-air-gun-6"
-          }
-        },
-        "column_Cr38dW": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/U75LJ006AA2_MAIN_IMAGE.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/ultra-u75lj-safety-air-gun-6-w-short-trigger\" title=\"Ultra® U75LJ Safety Air Gun - 6&quot; w/ Short Trigger\">Ultra® Safety Air Gun</a>",
-            "text": "<p>Ultra® is the ultimate in air gun performance and comfort. It's venturi nozzle boosts thrust up to 300% over conventional air guns.</p>",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_hrHHYJ": {
@@ -77,15 +53,10 @@
             "link": ""
           }
         },
-        "column_iF4tK4": {
-          "type": "column",
+        "product_MxgMqH": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/INF5AA_SERIES_MAIN_IMAGE.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/inforcer-inf5-safety-air-gun-24\" title=\"Inforcer® INF5 Safety Air Gun - 24&quot;\">Inforcer® Safety Air Gun</a>",
-            "text": "<p>Designed as the \"in-line\" version of the Force 5®, the Inforcer® excels in heavy-duty cleaning applications.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "inforcer-inf5-safety-air-gun-24"
           }
         },
         "column_VpyJwr": {
@@ -164,23 +135,60 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_7dazHw": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-safety-air-gun-6\" title=\"Long John® 75LJ Safety Air Gun - 6&quot;\">Long John® Safety Air Gun</a>",
+            "text": "<p>The perfect tool for cleaning inaccessible and hard-to-reach areas. It's venturi nozzle boosts thrust up to 200% over conventional air guns.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Cr38dW": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/U75LJ006AA2_MAIN_IMAGE.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/ultra-u75lj-safety-air-gun-6-w-short-trigger\" title=\"Ultra® U75LJ Safety Air Gun - 6&quot; w/ Short Trigger\">Ultra® Safety Air Gun</a>",
+            "text": "<p>Ultra® is the ultimate in air gun performance and comfort. It's venturi nozzle boosts thrust up to 300% over conventional air guns.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iF4tK4": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/INF5AA_SERIES_MAIN_IMAGE.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/inforcer-inf5-safety-air-gun-24\" title=\"Inforcer® INF5 Safety Air Gun - 24&quot;\">Inforcer® Safety Air Gun</a>",
+            "text": "<p>Designed as the \"in-line\" version of the Force 5®, the Inforcer® excels in heavy-duty cleaning applications.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_7dazHw",
         "product_nfnCnW",
-        "column_Cr38dW",
         "product_hrHHYJ",
         "column_C7thbA",
         "column_cCawkH",
-        "column_iF4tK4",
+        "product_MxgMqH",
         "column_VpyJwr",
         "column_9iMXeA",
         "column_biUe4F",
         "column_PxUrTm",
         "column_9qki4D",
         "column_xHfP3n",
-        "column_G4UAWG"
+        "column_G4UAWG",
+        "column_7dazHw",
+        "column_Cr38dW",
+        "column_iF4tK4"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px;}",
