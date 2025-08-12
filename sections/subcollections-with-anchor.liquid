@@ -1,0 +1,110 @@
+{% comment %} SECTIONS: ywm-subcollections.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/24f232a72d929ac4b536f14939ed547b3f9722c1/Sections/ywm-subcollections.liquid {% endcomment %}
+{% comment %} LAST UPDATED: 20250106 {% endcomment %}
+
+{% comment %} TO DO: {% endcomment %}
+{% comment %} 1. Go to Custom Data and Add metafield for Collections, named Subcollections, that is a list of collections: https://share.zight.com/bLuNRYQQ  {% endcomment %}
+
+
+{% style %}
+ #shopify-section-{{ section.id }} .toolbar__menu {flex-flow: row nowrap;;display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap; justify-content:center;}
+ #shopify-section-{{ section.id }} .toolbar__menu .toolbar__item--menu {display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;}
+ #shopify-section-{{ section.id }} .tab-item {list-style:none;margin:0 1rem;}
+ #shopify-section-{{ section.id }} .tab-item a {text-decoration:none;padding:5px 1rem;scroll-behavior: smooth;}
+ {% if section.settings.tab_bg %}#shopify-section-{{ section.id }} .tab-item {background: {{section.settings.tab_bg }};border-radius:8px;margin-right:5px;}{% endif %} {% if section.settings.tab_bg %}#shopify-section-{{ section.id }} .tab-item {background: {{section.settings.tab_bg }};border-radius:8px;margin-right:5px;}{% endif %}
+ {% if section.settings.toolbar_font %}#shopify-section-{{ section.id }} .toolbar__menu li a {color: {{ section.settings.toolbar_font }};}{% endif %}
+ {% if section.settings.toolbar_bg %}#shopify-section-{{ section.id }} .toolbar {background-color: {{ section.settings.toolbar_bg }};}{% endif %}
+ 
+  
+@media screen and (max-width:480px) {
+ #shopify-section-{{ section.id }} .toolbar__menu .toolbar__item--menu {flex-basis:150px;}
+#shopify-section-{{ section.id }} .page-width {text-align: left;margin: 0 10px !important}
+}
+@media screen and (min-width:480px) {
+  #shopify-section-{{ section.id }} .page-width {text-align: center;}
+}  
+{% endstyle %}
+
+
+<section id="shopify-{{ section.id }}" class="toolbar shopify-section">
+  <div class="page-width">
+    <div class="toolbar__content">
+        
+          {% assign collections = section.settings.collection_list %}
+          {% if collections %}
+                <div class="toolbar__item toolbar__item--menu"><ul class="inline-list toolbar__menu">
+            {% for collection in collections %}
+ 
+
+                <li class="tab-item {% if collection.handle != '' and canonical_url contains collection.handle %}tab-item--active{% endif %} tab-item--{{ block.id }} tab-item--border tab-item--text" 
+     {{ block.shopify_attributes }}>
+              
+              <a href="#{{ collection.handle }}" class="tab-item__link">
+                {% if collection.title != blank %}
+                  {{ collection.title }}
+                {% endif %}
+              </a>
+              
+            {% endfor %}
+                </ul></div>
+            {% endif %}
+          
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "YWM SubCollections",
+    "class": "shopify-section",
+    "settings": [
+    {
+      "type": "header",
+      "content": "SubCollections"
+    },      
+        {  
+          "type": "collection_list",
+          "id": "collection_list",
+          "label": "Subcollections"
+        },
+
+    {
+      "type":"color",
+      "id":"toolbar_bg",
+      "label":"Toolbar Background Color"
+    },
+    {
+      "type":"color",
+      "id":"tab_bg",
+      "label":"Tab Background Color"
+    },      
+    {
+      "type":"color",
+      "id":"toolbar_font",
+      "label":"Toolbar Font Color"
+    }    
+    ],
+    "max_blocks": 8,
+    "blocks": [
+        {
+            "name": "Collection",
+            "type": "collection_block",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Collection title"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "YWM Subcollections - Anchor",
+          "category":"YellowWebMonkey", 
+          "blocks": [   
+            ]
+        }
+    ]
+}
+{% endschema %}
