@@ -923,6 +923,7 @@
         },
         "faq_link_tMbiq8": {
           "type": "faq_link",
+          "disabled": true,
           "settings": {
             "link_text": "Product Care",
             "anchor_id": "product-care"
@@ -937,7 +938,7 @@
       "name": "YWM FAQ Navigation",
       "settings": {
         "toolbar_bg": "",
-        "tab_bg": "",
+        "tab_bg": "#f3f3f3",
         "toolbar_font": ""
       }
     },
