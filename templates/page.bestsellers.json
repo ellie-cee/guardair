@@ -49,48 +49,28 @@
             "product": "inforcer-inf5-safety-air-gun-24"
           }
         },
-        "column_VpyJwr": {
-          "type": "column",
+        "product_r7kMYd": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/79SG_SERIES_MAIN_IMAGE.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/syphon-spray-gun-79sg-6\" title=\"Syphon Spray Gun 79SG - 6&quot;\">Syphon Spray Gun</a>",
-            "text": "<p>The versatile Syphon Gun is ideal for spraying oils, solvents, insecticides, and coatings. Adjustable nozzle tip controls flow and spray pattern.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "syphon-spray-gun-79sg-6"
           }
         },
-        "column_9iMXeA": {
-          "type": "column",
+        "product_XhmtVd": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-corporation-gunvac-hand-held-pneumatic-vacuum-kit-1500.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/gunvac-kit\" title=\"GunVac - Kit\">GunVac - Kit</a>",
-            "text": "<p>Twice the power of a standard shop vacuum in the palm of your hand. GunVac is lightweight and has no electric motors to burn out.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "gunvac-handheld-vacuum-kit"
           }
         },
-        "column_biUe4F": {
-          "type": "column",
+        "product_QtWYfP": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/PQ55C200.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Vacuum Kit</a>",
-            "text": "<p>PowerQUAD™ Vacuums are ideal for vacuuming up chips, dust, debris, liquids, or sludge in industrial and commercial applications.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "powerquad-55-gallon-vacuum-kit-w-2-inlet"
           }
         },
-        "column_PxUrTm": {
-          "type": "column",
+        "product_9LJFXk": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/PQ55C200NED.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon NED Vacuum Kit w/ 2&quot; Inlet\">55 Gallon NED Vacuum Kit</a>",
-            "text": "<p>Electrically bonded components, multiple grounding options, and static conductive attachments eliminate static electricity and shocks at the source.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "powerquad-55-gallon-ned-vacuum-kit-w-2-inlet"
           }
         },
         "column_9qki4D": {
@@ -128,7 +108,6 @@
         },
         "column_7dazHw": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
             "image_link": "",
@@ -140,7 +119,6 @@
         },
         "column_Cr38dW": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/U75LJ006AA2_MAIN_IMAGE.jpg",
             "image_link": "",
@@ -152,7 +130,6 @@
         },
         "column_C7thbA": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GA4404S_MAIN_IMAGE.jpg",
             "image_link": "",
@@ -164,7 +141,6 @@
         },
         "column_cCawkH": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-corporation-force-5-safety-air-gun-24-inch-with-venturi-nozzle-f5024aa_f891c3f0-74da-4ba6-bedb-a74fddcefd15.jpg",
             "image_link": "",
@@ -176,12 +152,56 @@
         },
         "column_iF4tK4": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/INF5AA_SERIES_MAIN_IMAGE.jpg",
             "image_link": "",
             "title": "<a href=\"/products/inforcer-inf5-safety-air-gun-24\" title=\"Inforcer® INF5 Safety Air Gun - 24&quot;\">Inforcer® Safety Air Gun</a>",
             "text": "<p>Designed as the \"in-line\" version of the Force 5®, the Inforcer® excels in heavy-duty cleaning applications.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VpyJwr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/79SG_SERIES_MAIN_IMAGE.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/syphon-spray-gun-79sg-6\" title=\"Syphon Spray Gun 79SG - 6&quot;\">Syphon Spray Gun</a>",
+            "text": "<p>The versatile Syphon Gun is ideal for spraying oils, solvents, insecticides, and coatings. Adjustable nozzle tip controls flow and spray pattern.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9iMXeA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-gunvac-hand-held-pneumatic-vacuum-kit-1500.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/gunvac-kit\" title=\"GunVac - Kit\">GunVac - Kit</a>",
+            "text": "<p>Twice the power of a standard shop vacuum in the palm of your hand. GunVac is lightweight and has no electric motors to burn out.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_biUe4F": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/powerquad-55-gallon-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon Vacuum Kit w/ 2&quot; Inlet\">55 Gallon Vacuum Kit</a>",
+            "text": "<p>PowerQUAD™ Vacuums are ideal for vacuuming up chips, dust, debris, liquids, or sludge in industrial and commercial applications.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PxUrTm": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/PQ55C200NED.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/powerquad-55-gallon-ned-vacuum-kit-w-2-inlet\" title=\"PowerQUAD™ 55 Gallon NED Vacuum Kit w/ 2&quot; Inlet\">55 Gallon NED Vacuum Kit</a>",
+            "text": "<p>Electrically bonded components, multiple grounding options, and static conductive attachments eliminate static electricity and shocks at the source.</p>",
             "link_label": "",
             "link": ""
           }
@@ -193,10 +213,10 @@
         "product_3kbA3Q",
         "product_w6ddNy",
         "product_MxgMqH",
-        "column_VpyJwr",
-        "column_9iMXeA",
-        "column_biUe4F",
-        "column_PxUrTm",
+        "product_r7kMYd",
+        "product_XhmtVd",
+        "product_QtWYfP",
+        "product_9LJFXk",
         "column_9qki4D",
         "column_xHfP3n",
         "column_G4UAWG",
@@ -204,7 +224,11 @@
         "column_Cr38dW",
         "column_C7thbA",
         "column_cCawkH",
-        "column_iF4tK4"
+        "column_iF4tK4",
+        "column_VpyJwr",
+        "column_9iMXeA",
+        "column_biUe4F",
+        "column_PxUrTm"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px;}",
