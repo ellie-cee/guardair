@@ -1510,6 +1510,61 @@
             "block_image_alt": "",
             "block_image_size": "medium"
           }
+        },
+        "collapsible_row_93TJMN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the maximum ambient temperature in which I can operate my PowerQUAD™ vacuum?",
+            "icon": "none",
+            "row_content": "<p>150˚ F</p>",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_JMcacw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often do I need to replace the filter and/or Silencer Foam?",
+            "icon": "none",
+            "row_content": "<p>Filters should be inspected regularly. Shake out and clean, or replace, clogged filters. Immediately replace ripped or torn filters. Silencer foam should also be inspected regularly and does not normally need to be replaced unless dust/dirt is getting past the filter. Shake out the foam if covered with dirt/dust and replace if necessary.</p>",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_CrJVjX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_nf9Lri": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_Y3TFP9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
         }
       },
       "block_order": [
@@ -1519,7 +1574,12 @@
         "collapsible_row_fBCRe8",
         "collapsible_row_cwm8dA",
         "collapsible_row_JwpMVD",
-        "collapsible_row_4dmwnU"
+        "collapsible_row_4dmwnU",
+        "collapsible_row_93TJMN",
+        "collapsible_row_JMcacw",
+        "collapsible_row_CrJVjX",
+        "collapsible_row_nf9Lri",
+        "collapsible_row_Y3TFP9"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
