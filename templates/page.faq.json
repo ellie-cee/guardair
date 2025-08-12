@@ -1142,6 +1142,33 @@
             "row_content": "<p>Absolutely not! Blocking the side ports does not provide extra power at the nozzle tip. Thrust is actually reduced because ambient outside air cannot be drawn into the outgoing air stream. In addition, the nozzle is now OSHA non-compliant.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_gCfGJ9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the maximum ambient temperature in which I can operate my Guardair safety air gun?",
+            "icon": "none",
+            "row_content": "<p>The maximum ambient temperature in which our air guns can be used is 200°F.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YaeyYQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I recently purchased a HydroForce, hooked up the air and water lines, but only air comes out of the nozzle. Why?",
+            "icon": "none",
+            "row_content": "<p>The probable cause is inadequate air flow and/or air pressure.</p><ol><li>First, be sure to use an air line that provides adequate air flow to the HydroForce.</li><li>Second, be sure that all air fittings and connectors are adequately sized and offer no restrictions.</li><li>Third, ensure that the operating air pressure measures between 80 and 120 psi.</li></ol>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6GXX7n": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the maximum ambient temperature in which I can use my HydroForce?",
+            "icon": "none",
+            "row_content": "<p>200°F</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -1152,7 +1179,10 @@
         "collapsible_row_QgTMGF",
         "collapsible_row_Tfxhqq",
         "collapsible_row_UbGDtY",
-        "collapsible_row_6VbXip"
+        "collapsible_row_6VbXip",
+        "collapsible_row_gCfGJ9",
+        "collapsible_row_YaeyYQ",
+        "collapsible_row_6GXX7n"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
