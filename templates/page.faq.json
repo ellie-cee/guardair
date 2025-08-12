@@ -1447,9 +1447,9 @@
         "collapsible_row_eggaTb": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I optimize the performance of my PowerQUAD™ Vacuum?",
+            "icon": "none",
+            "row_content": "<p>PowerQUAD™ vacuums can be configured to maximize compressed air savings, maximize vacuum performance, or a balance between the two. PowerQUAD™ vacuums come with three (3) sets of injector nozzles, all of which provide industry leading vacuum efficiency (vacuum performance per cfm of compressed air consumed). To maximize compressed air savings, install the lowest flowing injector nozzles (Green) and then test the vacuum. If higher vacuum performance is desired, install the next higher flowing injector nozzles (Blue) and test again. To maximize vacuum performance, install highest flowing injector nozzles (Yellow) and test the vacuum.</p><p>If PowerQUAD™ vacuum performance is not as expected, the capacity of the compressed air system may not be sufficient. With the vacuum running, check the pressure gauge which should read between 80 and 90 psi. If the gauge measures lower than 80 psi, considering installing lower flowing injector nozzles. Since vacuum performance is directly related to compressed air consumption, make sure the air supply hose is delivering adequate compressed air to the vacuum for a given injector nozzle set. Refer to the <a href=\"https://guardair.com/pages/powerquad-vacuum-performance\" target=\"_blank\" title=\"PowerQUAD<sup>™</sup> Vacuum Performance\"><strong>PowerQUAD™ Vacuum Performance Table</strong></a> for compressed air consumption, vacuum performance specifications, and recommended minimum size of the compressed air supply line.</p>",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -1458,9 +1458,9 @@
         "collapsible_row_JJAUFB": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What is the recommended operating air pressure for my PowerQUAD™ vacuum?",
+            "icon": "none",
+            "row_content": "<p>Most in-plant air compressors operate at pressures, or are regulated to between 80-120 psi. PowerQUAD™vacuum are engineered to offer optimal performance at 80-90 psi as read on the pressure gauge located on the rear manifold of the vacuum while the vacuum is running.</p>",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -1469,10 +1469,44 @@
         "collapsible_row_fBCRe8": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What size compressed air supply line do I need to run my PowerQUAD™ vacuum?",
+            "icon": "none",
+            "row_content": "<p>PowerQUAD™ vacuums require compressed air supply lines that range from 3/8\" ID up to 1/2\" ID depending upon the injector nozzles that have been installed within the vacuum generating head. Refer to the <a href=\"https://guardair.com/pages/powerquad-vacuum-performance\" target=\"_blank\" title=\"PowerQUAD<sup>™</sup> Vacuum Performance\"><strong>PowerQUAD™ Vacuum Performance Table</strong></a> for recommended compressed air supply line size. To ensure adequate performance, a larger than required air supply line can always be employed, but never a smaller size.</p>",
             "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_cwm8dA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What about connectors and fittings?",
+            "icon": "none",
+            "row_content": "<p>Be sure that fittings and/or connectors do not restrict the air supply flow in any manner. Use fittings that are rated the same size, or larger, for a given air supply line. For optimal operation, use \"High Flow\" connectors.</p>",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_JwpMVD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the size of my compressed air receiver size in combination with my air compressor effect vacuum performance?",
+            "icon": "none",
+            "row_content": "<p>Receiver size can also affect the operation of the vacuum. The larger the receiver, the longer the period of time the vacuum can run without calling upon the air compressor to cycle \"on\" and refill the receiver.</p>",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_4dmwnU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use any steel drum with my PowerQUAD™ vacuum generating head?",
+            "icon": "none",
+            "row_content": "<p>No. PowerQUAD™vacuum generating heads produce extremely high head. Generating vacuum lift of up to 255 inches of H2O running on 80-90 psi of compressed air, they have been known to implode. Therefore, Guardair recommends that steel drums meet the following necessary wall thickness:</p>",
+            "page": "",
+            "block_image": "shopify://shop_images/drum_guage_chart.png",
             "block_image_alt": "",
             "block_image_size": "medium"
           }
@@ -1482,7 +1516,10 @@
         "collapsible_row_bzthjN",
         "collapsible_row_eggaTb",
         "collapsible_row_JJAUFB",
-        "collapsible_row_fBCRe8"
+        "collapsible_row_fBCRe8",
+        "collapsible_row_cwm8dA",
+        "collapsible_row_JwpMVD",
+        "collapsible_row_4dmwnU"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
