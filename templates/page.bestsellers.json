@@ -21,6 +21,7 @@
       "blocks": {
         "column_7dazHw": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
             "image_link": "",
@@ -38,6 +39,7 @@
         },
         "column_Cr38dW": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/U75LJ006AA2_MAIN_IMAGE.jpg",
             "image_link": "",
@@ -45,6 +47,12 @@
             "text": "<p>Ultra® is the ultimate in air gun performance and comfort. It's venturi nozzle boosts thrust up to 300% over conventional air guns.</p>",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_hrHHYJ": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-u75lj-safety-air-gun-6-w-short-trigger"
           }
         },
         "column_C7thbA": {
@@ -162,6 +170,7 @@
         "column_7dazHw",
         "product_nfnCnW",
         "column_Cr38dW",
+        "product_hrHHYJ",
         "column_C7thbA",
         "column_cCawkH",
         "column_iF4tK4",
