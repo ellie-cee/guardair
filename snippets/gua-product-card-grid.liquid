@@ -1,4 +1,4 @@
-  {% if product.metafields.current.block_product_image %}
+  {% if section.settings.alt_image == true and product.metafields.current.block_product_image %}
      {% assign product_image = product.metafields.current.block_product_image %}
   {% else %}
      {% assign product_image = product.featured_image %}
