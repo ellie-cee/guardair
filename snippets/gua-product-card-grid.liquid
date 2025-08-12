@@ -76,7 +76,7 @@
                 {%- if product.description != blank and section.settings.pdesc -%}
                     {% assign desc_parts = product.description | split: '.' %}
                     {% if section.settings.alt_desc != '' %}
-                          <div class="rte">{{ product.metafields.custom.grid_description | metafield_text | unescape }}</div>
+                          <div class="rte">{{ product.metafields.custom.grid_description | metafield_text | html_safe }}</div>
                     {% elsif section.settings.pdesc_shorten == 1 and desc_parts %}
                           <div class="rte">{{ desc_parts[0] }}.</div>
                     {% elsif section.settings.pdesc_shorten == 2 and desc_parts %}
