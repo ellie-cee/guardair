@@ -79,6 +79,12 @@
             "product": "powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet"
           }
         },
+        "product_cpEDTt": {
+          "type": "product",
+          "settings": {
+            "product": "personnel-cleaning-station-5-5-gallon-vacuum"
+          }
+        },
         "column_xHfP3n": {
           "type": "column",
           "settings": {
@@ -233,6 +239,7 @@
         "product_QtWYfP",
         "product_9LJFXk",
         "product_6drTbm",
+        "product_cpEDTt",
         "column_xHfP3n",
         "column_G4UAWG",
         "column_7dazHw",
