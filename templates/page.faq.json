@@ -1311,6 +1311,100 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collapsible_content_36xEED": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_zhenCY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I know which pneumatic vacuum I need?",
+            "icon": "none",
+            "row_content": "<p>Take our pneumatic vacuum <a href=\"https://guardair.com/pages/vacuum-faq#quiz-zMH9Yyo\" title=\"PowerQUAD™ Vacuum Quiz\"><strong>product recommendation quiz</strong></a>. Just answer a few questions to find out which one is best for your specific requirements.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_zhenCY"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "Pneumatic Vacuum FAQ",
+        "heading": "General",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_baLFjG": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_j3NB4y": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do PowerQUAD™ compressed air-powered vacuums work?",
+            "icon": "none",
+            "row_content": "<p>Compressed air-powered vacuums (also known as pneumatic vacuums) work on the venturi principle. Compressed air, via the compressed air supply hose, enters the venturi box and travels through the injector nozzle. As the air continues through the surrounding venturi, it accelerates, thereby creating low pressure inside the venturi box. This low pressure induces vacuum flow inside the adjacent canister, and in turn through the attached vacuum hose.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_G7iMAt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the advantages of compressed air-powered vacuums over electric vacuums?",
+            "icon": "none",
+            "row_content": "<p>Compressed air-powered vacuums offer a number of significant advantages over electric vacuums. These include:</p><ol><li>Compressed air-powered vacuums have no electric motor to wear out or burnout. Motor failure most often occurs in high demand applications where a motor is strained for long periods of time, for example when vacuuming heavy liquids or operating with a clogged filter.</li><li>With no electric motor, sparking at the brushes is eliminated, and no electric fields are present. This is important in hazardous locations, for example when combustible fumes are present.</li><li>Compressed air-powered vacuums require no dangerous, high voltage electric cords. Over time cords often become frayed as they are dragged across shop floors, or run over by mobile equipment, such as carts or forklift trucks. This is an important safety feature particularly on steel surfaces or where floors are wet.</li><li>Compressed air-powered vacuums generate significantly more vacuum lift than electric vacuums. This enables them to suck up heavier materials a higher vertical distance.</li><li>Compressed air is often more readily available than electric power in most in-plant and many remote or mobile locations.</li><li>And finally, since compressed air-powered vacuums feature an unlimited lifespan, their Total Cost of Ownership (TCO) is often lower than equivalent electric vacuums.</li></ol>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pn9kww": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_7VFPbM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_j3NB4y",
+        "collapsible_row_G7iMAt",
+        "collapsible_row_pn9kww",
+        "collapsible_row_7VFPbM"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "TECHNICAL",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -1321,6 +1415,8 @@
     "collapsible_content_PzxX7n",
     "collapsible_content_fQ4qPt",
     "collapsible_content_h8NTi9",
-    "collapsible_content_nyAE6p"
+    "collapsible_content_nyAE6p",
+    "collapsible_content_36xEED",
+    "collapsible_content_baLFjG"
   ]
 }
