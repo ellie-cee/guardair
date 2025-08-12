@@ -1199,6 +1199,78 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collapsible_content_nyAE6p": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_bbmJrx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Guardair offer replacement parts and/or repair kits for safety air guns?",
+            "icon": "none",
+            "row_content": "<p>We carry replacement parts for the vast majority of our guns. You can purchase replacement nozzles, extensions, and handles, as well as gun rebuild kits.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_98DryL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How are extended reach air guns (ie Long Johns) assembled?",
+            "icon": "none",
+            "row_content": "<p>First, thread locker is applied to the threads of each component (nozzle, extension, and handle). Components are then screwed together and tightened to factory specifications. The result is a semi-permanent connection with structural integrity.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VejUGN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I unscrew the extension of my Long John and screw in different extensions?",
+            "icon": "none",
+            "row_content": "<p>While this is possible, Guardair does not recommend this practice. Doing so first requires breaking the bond of the thread locker with heat from a blow torch or the like. Repeated screwing and unscrewing extensions runs the risk of galling the threads which are not designed with this in mind.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MMdcQH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_rg6pJg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_bbmJrx",
+        "collapsible_row_98DryL",
+        "collapsible_row_VejUGN",
+        "collapsible_row_MMdcQH",
+        "collapsible_row_rg6pJg"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "PRODUCTS/PARTS/ACCESSORIES",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -1208,6 +1280,7 @@
     "tab_faq_section_dqLFQc",
     "collapsible_content_PzxX7n",
     "collapsible_content_fQ4qPt",
-    "collapsible_content_h8NTi9"
+    "collapsible_content_h8NTi9",
+    "collapsible_content_nyAE6p"
   ]
 }
