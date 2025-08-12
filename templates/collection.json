@@ -47,9 +47,9 @@
       "type": "gua-collection-grid",
       "name": "GUA Product Catalog Grid",
       "settings": {
-        "block_style": "side",
+        "block_style": "stacked",
         "products_per_page": 16,
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "row_gap": 40,
         "color_scheme": "",
         "ptitle_fix": "basic",
