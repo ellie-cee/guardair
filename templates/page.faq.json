@@ -1052,6 +1052,9 @@
         "collapsible_row_jBjKdR",
         "collapsible_row_pWDyUL"
       ],
+      "custom_css": [
+        ".caption-with-letter-spacing {font-size: 30px; font-weight: bold;}"
+      ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "Air Gun FAQ",
