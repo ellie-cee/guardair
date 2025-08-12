@@ -904,17 +904,6 @@
         "padding_bottom": 24
       }
     },
-    "subcollections_with_anchor_XtrhiP": {
-      "type": "subcollections-with-anchor",
-      "name": "YWM Subcollections - Anchor",
-      "settings": {
-        "collection_list": [],
-        "toolbar_bg": "",
-        "tab_bg": "",
-        "toolbar_font": "",
-        "custom_class": ""
-      }
-    },
     "collapsible_content_PzxX7n": {
       "type": "collapsible-content",
       "blocks": {
@@ -1649,7 +1638,6 @@
     "e60ded08-2eb1-4fed-a7b1-52b4baf52cb2",
     "8240f399-2672-40dd-8abb-e02fa98a6c81",
     "tab_faq_section_dqLFQc",
-    "subcollections_with_anchor_XtrhiP",
     "collapsible_content_PzxX7n",
     "collapsible_content_fQ4qPt",
     "collapsible_content_h8NTi9",
