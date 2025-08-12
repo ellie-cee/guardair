@@ -180,8 +180,64 @@
     },
     {
       "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+      "content": "Product Card"
     },
+{
+      "type": "select",
+      "id": "ptitle_fix",
+      "label": "Clean Product Title Filter",
+       "options": [
+        {
+          "value": "none",
+          "label": "Leave title intact"
+        },
+        {   
+          "value": "basic_series",
+          "label": "Basic with Series"
+        },
+        {
+          "value": "specific_series",
+          "label": "Specific with Series"
+        },
+        {
+          "value": "basic",
+          "label": "Basic"
+        },  
+        {
+          "value": "specific",
+          "label": "Specific"
+        },              
+        {
+          "value": "slice",
+          "label": "Split on Dash"
+        },
+        {
+          "value": "move_model",
+          "label": "Move Model to Beginning"
+        },
+        {
+          "value": "remove_model",
+          "label": "Remove Model"
+        }         
+      ],
+      "default": "none"
+    },  
+      {
+      "type": "select",
+      "id": "font_style",
+      "options": [
+        {
+          "value": "inline-richtext",
+          "label": "Default"
+        },
+        {
+          "value": "blue-subtitle",
+          "label": "Blue Subtitles"
+        }
+      ],
+      "default": "inline-richtext",
+      "label": "Font Style"
+    },    
    {
       "type": "select",
       "id": "image_width",
@@ -260,62 +316,8 @@
       "label": "Override product description when metafield present",
       "info": "product.metafields.custom.grid_description"
     },
-    {
-      "type": "select",
-      "id": "font_style",
-      "options": [
-        {
-          "value": "inline-richtext",
-          "label": "Default"
-        },
-        {
-          "value": "blue-subtitle",
-          "label": "Blue Subtitles"
-        }
-      ],
-      "default": "inline-richtext",
-      "label": "Font Style"
-    },     
-    {
-      "type": "select",
-      "id": "ptitle_fix",
-      "label": "Clean Product Title Filter",
-       "options": [
-        {
-          "value": "none",
-          "label": "Leave title intact"
-        },
-        {   
-          "value": "basic_series",
-          "label": "Basic with Series"
-        },
-        {
-          "value": "specific_series",
-          "label": "Specific with Series"
-        },
-        {
-          "value": "basic",
-          "label": "Basic"
-        },  
-        {
-          "value": "specific",
-          "label": "Specific"
-        },              
-        {
-          "value": "slice",
-          "label": "Split on Dash"
-        },
-        {
-          "value": "move_model",
-          "label": "Move Model to Beginning"
-        },
-        {
-          "value": "remove_model",
-          "label": "Remove Model"
-        }         
-      ],
-      "default": "none"
-    }, 
+      
+     
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
