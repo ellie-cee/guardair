@@ -189,8 +189,8 @@
           {% when 'product' %}
           {% assign product = block.settings.product %}
 
-            {% if block.settings.alt_pimage != blank %} 
-                {% assign product_image = block.settings.alt_pimage %}
+            {% if section.settings.alt_image == true and product.metafields.custom.block_product_image %} 
+                {% assign product_image = product.metafields.custom.block_product_image %}
             {% else %}
                 {% assign product_image = product.featured_image %}              
             {% endif %}
