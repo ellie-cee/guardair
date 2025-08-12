@@ -92,8 +92,10 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
  
 
 {% comment %} --- BUILDING BLOCK --- {% endcomment %}
-h3.blue-subtitle, h3.blue-subtitle a {font-size: 18px;text-align: center;color: #002395;text-decoration:none;}  
-  
+h3.blue-subtitle, h3.blue-subtitle a {color: #002395;text-decoration:none;}  
+.multicolumn h3.blue-subtitle, .multicolumn h3.blue-subtitle a {font-size: 18px;text-align: center;}  
+.collection h3.blue-subtitle, .collection h3.blue-subtitle a {font-size: calc(var(--font-heading-scale) * 1.8rem);}  
+
 {% comment %} --- PRODUCT --- {% endcomment %}
 body.template-product .product {margin-top:2rem;}
 body.template-product .product__title h1 {font-size: calc(var(--font-heading-scale) * 3rem);}
