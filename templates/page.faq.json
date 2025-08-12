@@ -1115,6 +1115,33 @@
             "row_content": "<p>Be sure that fittings and/or connectors do not restrict the air flow in any manner. Use fittings that are rated the same size, or larger, for a given air line size. Where recommended use Guardair High Flow connectors.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_Tfxhqq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What size (capacity) air compressor do I need to operate my Guardair safety air gun?",
+            "icon": "none",
+            "row_content": "<p>A good rule of thumb states that air compressors generate approximately 4.5 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. To size a compressor (HP), divide the air requirement (cfm) by 4.5. Refer to the specification on your compressor for more information.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UbGDtY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why does my air gun lack power?",
+            "icon": "none",
+            "row_content": "<p>The three most common problems are:</p><ul><li>Undersized air lines</li><li>Restrictions due to undersized fittings and/or connectors</li><li>Inadequate plant air pressure or capacity</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6VbXip": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "If I block the side ports of a venturi nozzle with tape will I increase the thrust?",
+            "icon": "none",
+            "row_content": "<p>Absolutely not! Blocking the side ports does not provide extra power at the nozzle tip. Thrust is actually reduced because ambient outside air cannot be drawn into the outgoing air stream. In addition, the nozzle is now OSHA non-compliant.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -1122,7 +1149,10 @@
         "collapsible_row_APGXPE",
         "collapsible_row_TDz4fj",
         "collapsible_row_7M7R94",
-        "collapsible_row_QgTMGF"
+        "collapsible_row_QgTMGF",
+        "collapsible_row_Tfxhqq",
+        "collapsible_row_UbGDtY",
+        "collapsible_row_6VbXip"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
