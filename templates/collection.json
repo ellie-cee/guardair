@@ -57,6 +57,7 @@
         "image_valign": "start",
         "pdesc": true,
         "pdesc_shorten": 1,
+        "alt_desc": true,
         "font_style": "inline-richtext",
         "ptitle_fix": "basic",
         "columns_mobile": "1",
