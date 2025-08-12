@@ -1,7 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 24,
         "padding_bottom": 0
@@ -14,21 +24,21 @@
           "type": "Faq",
           "settings": {
             "head": "How can I purchase Guardair products?",
-            "content": "<p>Guardair products can be purchased direct or through our distributors. Contact our Customer Service Department via email at <a href=\"mailto:info@guardaircorp.com\">info@guardaircorp.com<\/a>, by phone at (800) 482-7324, (413) 594-4400, or via fax at (413) 594-4884. A list of distributors can be found on the 'Where To Buy' section of the Guardair website.<\/p>"
+            "content": "<p>Guardair products can be purchased direct or through our distributors. Contact our Customer Service Department via email at <a href=\"mailto:info@guardaircorp.com\">info@guardaircorp.com</a>, by phone at (800) 482-7324, (413) 594-4400, or via fax at (413) 594-4884. A list of distributors can be found on the 'Where To Buy' section of the Guardair website.</p>"
           }
         },
         "c76a110b-a4dd-446e-9c23-92d549da8041": {
           "type": "Faq",
           "settings": {
             "head": "How do I obtain current product pricing and availability?",
-            "content": "<p>Product pricing and availability can be obtained by contacting the Customer Service Department.<\/p>"
+            "content": "<p>Product pricing and availability can be obtained by contacting the Customer Service Department.</p>"
           }
         },
         "bc3ad95b-d072-40f0-b977-e59165de922b": {
           "type": "Faq",
           "settings": {
             "head": "How can I obtain current Guardair product literature?",
-            "content": "<p>Product literature can be downloaded by going to the 'Product Literature' section of the Guardair website. Click on the desired document to view, or to initiate the download.<\/p>"
+            "content": "<p>Product literature can be downloaded by going to the 'Product Literature' section of the Guardair website. Click on the desired document to view, or to initiate the download.</p>"
           }
         }
       },
@@ -37,6 +47,7 @@
         "c76a110b-a4dd-446e-9c23-92d549da8041",
         "bc3ad95b-d072-40f0-b977-e59165de922b"
       ],
+      "disabled": true,
       "settings": {
         "main_head": "General",
         "padding_top": 4,
@@ -59,63 +70,63 @@
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What OSHA standards govern the use of air guns?",
-            "content": "<p>For General Industry, two OSHA standards are of primary relevance to air gun users.<\/p><ol><li>The first standard focuses on permissible noise exposure covered under <em>29CFR Part 1910.95 (a) Occupational Noise Exposure.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=standards&p_id=9735\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><li>The second standard focuses on the use of compressed air used for cleaning covered under <em>29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><\/ol>"
+            "content": "<p>For General Industry, two OSHA standards are of primary relevance to air gun users.</p><ol><li>The first standard focuses on permissible noise exposure covered under <em>29CFR Part 1910.95 (a) Occupational Noise Exposure.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&p_id=9735\" target=\"_blank\">Click</a> for OSHA website link.</li><li>The second standard focuses on the use of compressed air used for cleaning covered under <em>29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">Click</a> for OSHA website link.</li></ol>"
           }
         },
         "bf3b9f83-262b-4641-9342-24dc910b8669": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Please explain OSHA Standard 29CFR Part 1910.95 (a) Occupational Noise Exposure.",
-            "content": "<p>To address the issue of excessive noise in the workplace, OSHA developed permissible daily noise exposure specifications. Since air guns may contribute to high levels of occupational noise, their usage should be factored into daily noise exposure levels.<\/p>"
+            "content": "<p>To address the issue of excessive noise in the workplace, OSHA developed permissible daily noise exposure specifications. Since air guns may contribute to high levels of occupational noise, their usage should be factored into daily noise exposure levels.</p>"
           }
         },
         "85d7280c-ea7f-412c-b127-0f7e09483daa": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Please explain OSHA Standard 29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General.",
-            "content": "<p>Factory air lines normally operate at pressures between 80 and 120 psi and the majority of pneumatic tools, including air guns, require such pressures to operate effectively. However, OSHA requires that in the event an air line is dead-ended (for example, if the tip of an air gun is blocked), the static pressure at the point of blockage must be less than 30 psi.<\/p><p>This standard also states that when blowing off debris with an air gun, workers may be subject to \"chip-fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes, or skin. For operations that produce chip-fly-back, OSHA requires that effective chip guarding be incorporated into the workplace.<\/p><p>For compliance details with this standard, see OSHA Instruction <em>STD 01-13-001 (OSHA PROGRAM DIRECTIVE #100-1).<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">Click<\/a> for OHSA website link.<\/p>"
+            "content": "<p>Factory air lines normally operate at pressures between 80 and 120 psi and the majority of pneumatic tools, including air guns, require such pressures to operate effectively. However, OSHA requires that in the event an air line is dead-ended (for example, if the tip of an air gun is blocked), the static pressure at the point of blockage must be less than 30 psi.</p><p>This standard also states that when blowing off debris with an air gun, workers may be subject to \"chip-fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes, or skin. For operations that produce chip-fly-back, OSHA requires that effective chip guarding be incorporated into the workplace.</p><p>For compliance details with this standard, see OSHA Instruction <em>STD 01-13-001 (OSHA PROGRAM DIRECTIVE #100-1).</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">Click</a> for OHSA website link.</p>"
           }
         },
         "063ab578-32a1-4a0a-87cc-fe1d16230f3e": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Are there any other OSHA standards that I should be aware of?",
-            "content": "<p>Yes. <em>Shipyards, Marine Terminals<\/em> and <em>Construction<\/em> are industries where additional standards apply regarding the use of compressed air and pneumatic tools.<\/p><ul><li>For Shipyards, the relevant standard is <em>29CFR Part 1915.131 General Precautions.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=10261&p_table=STANDARDS\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><li>For Marine Terminals, the relevant standard is <em>29CFR Part 1917.154 Compressed Air.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=10418&p_table=STANDARDS\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><li>For Construction, the relevant standard is <em>29CFR Part 1926.302(b) Pneumatic Power Tools.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=standards&p_id=10690\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><\/ul>"
+            "content": "<p>Yes. <em>Shipyards, Marine Terminals</em> and <em>Construction</em> are industries where additional standards apply regarding the use of compressed air and pneumatic tools.</p><ul><li>For Shipyards, the relevant standard is <em>29CFR Part 1915.131 General Precautions.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=10261&p_table=STANDARDS\" target=\"_blank\">Click</a> for OSHA website link.</li><li>For Marine Terminals, the relevant standard is <em>29CFR Part 1917.154 Compressed Air.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=10418&p_table=STANDARDS\" target=\"_blank\">Click</a> for OSHA website link.</li><li>For Construction, the relevant standard is <em>29CFR Part 1926.302(b) Pneumatic Power Tools.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&p_id=10690\" target=\"_blank\">Click</a> for OSHA website link.</li></ul>"
           }
         },
         "dcc7eb10-4877-4ce0-8e6c-f7f888c79892": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How can Guardair safety air guns help meet the OSHA standard for noise?",
-            "content": "<p>While occupational noise can be generated from a wide variety of sources, the use of a low noise safety air gun can be an important component in moving towards noise compliance. Guardair safety air guns featuring WhisperJet and QuietForce nozzles provide proprietary, noise limiting technology. <a href=\"https:\/\/guardair.com\/pages\/guardair-product-compliance\">Click<\/a>for technical data on Guardair nozzles.<\/p>"
+            "content": "<p>While occupational noise can be generated from a wide variety of sources, the use of a low noise safety air gun can be an important component in moving towards noise compliance. Guardair safety air guns featuring WhisperJet and QuietForce nozzles provide proprietary, noise limiting technology. <a href=\"https://guardair.com/pages/guardair-product-compliance\">Click</a>for technical data on Guardair nozzles.</p>"
           }
         },
         "5f741ee7-06ae-4807-aa4b-c19b32aa73b4": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How do Guardair safety air guns meet the OSHA standard for output pressure?",
-            "content": "<p>All Guardair safety air guns meet this standard by incorporating OSHA compliant, proprietary nozzles into their design. These include Venturi, AirMiser, Air Shield, WhisperJet, and QuietForce type nozzles. <a href=\"https:\/\/guardair.com\/pages\/guardair-product-compliance\">Click<\/a> for technical data on Guardair nozzles.<\/p>"
+            "content": "<p>All Guardair safety air guns meet this standard by incorporating OSHA compliant, proprietary nozzles into their design. These include Venturi, AirMiser, Air Shield, WhisperJet, and QuietForce type nozzles. <a href=\"https://guardair.com/pages/guardair-product-compliance\">Click</a> for technical data on Guardair nozzles.</p>"
           }
         },
         "a9aa992c-79da-4bc7-ac15-545785ee7c72": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Is it necessary to turn my air compressor down to 30 psi to meet OSHA Standard 29CFR Part 1910.242 (b) relating to output pressure?",
-            "content": "<p>No. This is popular misconception and is not necessary for compliance. To meet this requirement, use an air gun that is properly engineered. All Guardair safety air guns meet this standard.<\/p>"
+            "content": "<p>No. This is popular misconception and is not necessary for compliance. To meet this requirement, use an air gun that is properly engineered. All Guardair safety air guns meet this standard.</p>"
           }
         },
         "061091d0-642c-4310-85d2-a08323c56882": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Is it permissible to tape an air gun trigger down (\"always on mode\") to provide constant air flow?",
-            "content": "<p>While the OSHA regulations do not specifically prohibit this practice, Guardair does not recommend doing so. Disabling the \"dead-man\" feature inherent with the trigger mechanism could result in the air tool whipping around and causing serious injury.<\/p>"
+            "content": "<p>While the OSHA regulations do not specifically prohibit this practice, Guardair does not recommend doing so. Disabling the \"dead-man\" feature inherent with the trigger mechanism could result in the air tool whipping around and causing serious injury.</p>"
           }
         },
         "88ff6436-91c3-408b-b489-dd87d618b0d0": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the advantage of Guardair safety air guns versus straight pipes?",
-            "content": "<p>Safety air guns offer numerous advantages over straight pipes.<\/p><ol><li>First, straight pipes are inefficient as they use significantly more compressed air to produce the same amount of thrust versus a properly engineered safety air gun.<\/li><li>Second, straight pipes are often regulated with a ball valve which does not include the \"dead-man\" feature inherent with the trigger mechanism of a safety air gun.<\/li><li>Third, straight pipes are not tools designed with ergonomic features thus over time introduce operator fatigue. Finally, straight pipes are illegal and dangerous because they do not meet the OSHA standard limiting output pressure to less than 30 psi when dead-ended.<\/li><\/ol>"
+            "content": "<p>Safety air guns offer numerous advantages over straight pipes.</p><ol><li>First, straight pipes are inefficient as they use significantly more compressed air to produce the same amount of thrust versus a properly engineered safety air gun.</li><li>Second, straight pipes are often regulated with a ball valve which does not include the \"dead-man\" feature inherent with the trigger mechanism of a safety air gun.</li><li>Third, straight pipes are not tools designed with ergonomic features thus over time introduce operator fatigue. Finally, straight pipes are illegal and dangerous because they do not meet the OSHA standard limiting output pressure to less than 30 psi when dead-ended.</li></ol>"
           }
         },
         "c5a71899-15c6-4b8f-9ad5-3ffbd5cc9ad2": {
@@ -131,83 +142,83 @@
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the difference between Pressure, Flow, and Thrust?",
-            "content": "<p><strong>Pressure<\/strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.<\/p><p><strong>Flow<\/strong> is the volume of compressed air traveling through an air gun during a given period of time. Flow is measured in cubic feet per minute (cfm). In general, the higher the flow, an increased capacity (larger diameter) air line, and an increased capacity (larger horsepower) air compressor will be required. The electrical equivalent of flow is amperage.<\/p><p><strong>Thrust<\/strong> is the effective force produced by an air gun and is generated from the combination of air pressure and air flow. Thrust is measured in pounds (lbs) and the higher the thrust, the more cleaning force is available. Ideally, thrust of say 10 pounds is capable of moving up to a 10 pound object. The electrical equivalent of thrust is wattage.<\/p>"
+            "content": "<p><strong>Pressure</strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.</p><p><strong>Flow</strong> is the volume of compressed air traveling through an air gun during a given period of time. Flow is measured in cubic feet per minute (cfm). In general, the higher the flow, an increased capacity (larger diameter) air line, and an increased capacity (larger horsepower) air compressor will be required. The electrical equivalent of flow is amperage.</p><p><strong>Thrust</strong> is the effective force produced by an air gun and is generated from the combination of air pressure and air flow. Thrust is measured in pounds (lbs) and the higher the thrust, the more cleaning force is available. Ideally, thrust of say 10 pounds is capable of moving up to a 10 pound object. The electrical equivalent of thrust is wattage.</p>"
           }
         },
         "7a7eb2f4-301c-4d2d-a060-2b359b76c3a2": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the recommended operating air pressure for Guardair safety air guns?",
-            "content": "<p>Most in-plant air compressors operate at pressures between 80 and 120 psi. This is the range we recommend for Guardair safety air guns.<\/p>"
+            "content": "<p>Most in-plant air compressors operate at pressures between 80 and 120 psi. This is the range we recommend for Guardair safety air guns.</p>"
           }
         },
         "54622297-a673-4c42-bd7d-6de65b66939e": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the maximum plant air pressure I can use and still be OSHA compliant?",
-            "content": "<p>Guardair does not recommend operating our air guns at pressures over 120 psi. Although the structural integrity of Guardair safety air guns have been tested and proven well above 120 psi, they have been designed to operate most efficiently and to meet the OSHA standard regarding output pressure at air pressures between 80 and 120 psi. Consequently, Guardair cannot certify that our air guns meet this OSHA standard at pressures in excess of 120 psi.<\/p>"
+            "content": "<p>Guardair does not recommend operating our air guns at pressures over 120 psi. Although the structural integrity of Guardair safety air guns have been tested and proven well above 120 psi, they have been designed to operate most efficiently and to meet the OSHA standard regarding output pressure at air pressures between 80 and 120 psi. Consequently, Guardair cannot certify that our air guns meet this OSHA standard at pressures in excess of 120 psi.</p>"
           }
         },
         "73d727b0-1eb6-475b-b9d7-9cf60ea1182c": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What size air line do I need to run my Guardair safety air gun?",
-            "content": "<p>In general, Guardair safety air guns featuring a ¼\" NPT inlets require ¼\" ID or larger air lines. Air guns with a 3\/8\" NPT inlets require 3\/8\" ID or larger air lines. Air guns with a ¾\" NPT inlet require ¾\" ID or larger air lines. To ensure rated thrust, air lines can always be sized larger than required, but not smaller.<\/p>"
+            "content": "<p>In general, Guardair safety air guns featuring a ¼\" NPT inlets require ¼\" ID or larger air lines. Air guns with a 3/8\" NPT inlets require 3/8\" ID or larger air lines. Air guns with a ¾\" NPT inlet require ¾\" ID or larger air lines. To ensure rated thrust, air lines can always be sized larger than required, but not smaller.</p>"
           }
         },
         "e638c146-504f-471a-b85f-63394d387eed": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What about connectors and fittings?",
-            "content": "<p>Be sure that fittings and\/or connectors do not restrict the air flow in any manner. Use fittings that are rated the same size, or larger, for a given air line size. Where recommended use Guardair High Flow connectors.<\/p>"
+            "content": "<p>Be sure that fittings and/or connectors do not restrict the air flow in any manner. Use fittings that are rated the same size, or larger, for a given air line size. Where recommended use Guardair High Flow connectors.</p>"
           }
         },
         "2de282f7-0c6f-42f3-928e-1b1af8d5336b": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What size (capacity) air compressor do I need to operate my Guardair safety air gun?",
-            "content": "<p>A good rule of thumb states that air compressors generate approximately 4.5 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. To size a compressor (HP), divide the air requirement (cfm) by 4.5. Refer to the specification on your compressor for more information.<\/p>"
+            "content": "<p>A good rule of thumb states that air compressors generate approximately 4.5 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. To size a compressor (HP), divide the air requirement (cfm) by 4.5. Refer to the specification on your compressor for more information.</p>"
           }
         },
         "f95ae66a-6043-447d-a9f3-d608da020e74": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Why does my air gun lack power?",
-            "content": "<p>The three most common problems are:<\/p><ul><li>Undersized air lines<\/li><li>Restrictions due to undersized fittings and\/or connectors<\/li><li>Inadequate plant air pressure or capacity<\/li><\/ul>"
+            "content": "<p>The three most common problems are:</p><ul><li>Undersized air lines</li><li>Restrictions due to undersized fittings and/or connectors</li><li>Inadequate plant air pressure or capacity</li></ul>"
           }
         },
         "b1597e2a-fd89-4376-8b98-5b514f654145": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "If I block the side ports of a venturi nozzle with tape will I increase the thrust?",
-            "content": "<p>Absolutely not! Blocking the side ports does not provide extra power at the nozzle tip. Thrust is actually reduced because ambient outside air cannot be drawn into the outgoing air stream. In addition, the nozzle is now OSHA non-compliant.<\/p>"
+            "content": "<p>Absolutely not! Blocking the side ports does not provide extra power at the nozzle tip. Thrust is actually reduced because ambient outside air cannot be drawn into the outgoing air stream. In addition, the nozzle is now OSHA non-compliant.</p>"
           }
         },
         "f605d777-5d15-4432-88b8-eb0d0951f5c7": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the maximum ambient temperature in which I can operate my Guardair safety air gun?",
-            "content": "<p>The maximum ambient temperature in which our air guns can be used is 200°F.<\/p>"
+            "content": "<p>The maximum ambient temperature in which our air guns can be used is 200°F.</p>"
           }
         },
         "16c7633c-7f8e-4913-95bc-dbc21cdc2d0e": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "I recently purchased a HydroForce, hooked up the air and water lines, but only air comes out of the nozzle. Why?",
-            "content": "<p>The probable cause is inadequate air flow and\/or air pressure.<\/p><ol><li>First, be sure to use an air line that provides adequate air flow to the HydroForce.<\/li><li>Second, be sure that all air fittings and connectors are adequately sized and offer no restrictions.<\/li><li>Third, ensure that the operating air pressure measures between 80 and 120 psi.<\/li><\/ol>"
+            "content": "<p>The probable cause is inadequate air flow and/or air pressure.</p><ol><li>First, be sure to use an air line that provides adequate air flow to the HydroForce.</li><li>Second, be sure that all air fittings and connectors are adequately sized and offer no restrictions.</li><li>Third, ensure that the operating air pressure measures between 80 and 120 psi.</li></ol>"
           }
         },
         "79f41324-5667-4353-a76f-e80e1020cc1e": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the maximum ambient temperature in which I can use my HydroForce?",
-            "content": "<p>200°F<\/p>"
+            "content": "<p>200°F</p>"
           }
         },
         "e52285da-4b17-444b-9ed2-bc533fd00640": {
           "type": "Air-Guns-Heading",
           "settings": {
-            "head_top": "Products\/Parts\/Accessories",
+            "head_top": "Products/Parts/Accessories",
             "top_border": true,
             "padding_top": 10,
             "padding_bottom": 0
@@ -216,64 +227,64 @@
         "8af461c4-d348-4898-82eb-fbec44ebef0e": {
           "type": "Air-Gun-Faq",
           "settings": {
-            "head": "Does Guardair offer replacement parts and\/or repair kits for safety air guns?",
-            "content": "<p>We carry replacement parts for the vast majority of our guns. You can purchase replacement nozzles, extensions, and handles, as well as gun rebuild kits.<\/p>"
+            "head": "Does Guardair offer replacement parts and/or repair kits for safety air guns?",
+            "content": "<p>We carry replacement parts for the vast majority of our guns. You can purchase replacement nozzles, extensions, and handles, as well as gun rebuild kits.</p>"
           }
         },
         "99c00438-3685-42a7-bf0f-1feaa4b99fa6": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How are extended reach air guns (ie Long Johns) assembled?",
-            "content": "<p>First, thread locker is applied to the threads of each component (nozzle, extension, and handle). Components are then screwed together and tightened to factory specifications. The result is a semi-permanent connection with structural integrity.<\/p>"
+            "content": "<p>First, thread locker is applied to the threads of each component (nozzle, extension, and handle). Components are then screwed together and tightened to factory specifications. The result is a semi-permanent connection with structural integrity.</p>"
           }
         },
         "d23637dc-6627-4c41-b960-e2d0f6145ca2": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Can I unscrew the extension of my Long John and screw in different extensions?",
-            "content": "<p>While this is possible, Guardair does not recommend this practice. Doing so first requires breaking the bond of the thread locker with heat from a blow torch or the like. Repeated screwing and unscrewing extensions runs the risk of galling the threads which are not designed with this in mind.<\/p>"
+            "content": "<p>While this is possible, Guardair does not recommend this practice. Doing so first requires breaking the bond of the thread locker with heat from a blow torch or the like. Repeated screwing and unscrewing extensions runs the risk of galling the threads which are not designed with this in mind.</p>"
           }
         },
         "8eaa046b-6cde-403f-b39c-7fd0bdd904cc": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How do I make my extended reach air gun longer?",
-            "content": "<p>All of the Ultra, LJ, XT and 80LJ series are compatible with our mid-extension kits and can easily be extended. Mid-extension kits come in 48\", 60\", and 72\" lengths and come complete with a coupler. To add a mid-extension, first break the thread locker bond at the extension\/handle connection using a blow torch. Unscrew the extension. Screw one end of the mid-extension into the handle. Screw the other end of the mid-extension into the coupler. Finally, screw the extension into the coupler.<\/p>"
+            "content": "<p>All of the Ultra, LJ, XT and 80LJ series are compatible with our mid-extension kits and can easily be extended. Mid-extension kits come in 48\", 60\", and 72\" lengths and come complete with a coupler. To add a mid-extension, first break the thread locker bond at the extension/handle connection using a blow torch. Unscrew the extension. Screw one end of the mid-extension into the handle. Screw the other end of the mid-extension into the coupler. Finally, screw the extension into the coupler.</p>"
           }
         },
         "da3cb5d5-6723-45f7-baae-ccfe060961dc": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "We use Guardair extended reach air guns in a particularly rough working environment and I need to ensure that the nozzle never comes apart from the extension. Is there any way to do this?",
-            "content": "<p>Yes. In addition to our standard thread locker, we offer the option to pin the nozzle to the extension. We refer to this as a PERM1 connection. We also offer an optional PERM2 connection where the nozzle is pinned to the extension, and the extension is pinned to the handle. Contact our Customer Service Department at 800-482-7324.<\/p>"
+            "content": "<p>Yes. In addition to our standard thread locker, we offer the option to pin the nozzle to the extension. We refer to this as a PERM1 connection. We also offer an optional PERM2 connection where the nozzle is pinned to the extension, and the extension is pinned to the handle. Contact our Customer Service Department at 800-482-7324.</p>"
           }
         },
         "5b552085-f70b-4110-9b27-bac5172b4a99": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Does Guardair sell replacement parts for the 79SG012 Syphon Spray Gun?",
-            "content": "<p>Guardair offers the replacement nozzle but not the replacement barrel for the 79SG012. The barrel is permanently attached to the body of the gun and is not repairable.<\/p>"
+            "content": "<p>Guardair offers the replacement nozzle but not the replacement barrel for the 79SG012. The barrel is permanently attached to the body of the gun and is not repairable.</p>"
           }
         },
         "191747cc-383e-46e5-952a-9abe20f5be12": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Why can't I purchase an extension only, or nozzle only, for my Force 5 air gun?",
-            "content": "<p>Extensions with permanently attached nozzles are sold as a complete assembly to ensure OSHA compliance.<\/p>"
+            "content": "<p>Extensions with permanently attached nozzles are sold as a complete assembly to ensure OSHA compliance.</p>"
           }
         },
         "a6a1f2e6-7203-402d-b7fd-f8f3c8092f38": {
           "type": "Air-Gun-Faq",
           "settings": {
-            "head": "I need a safety air gun with the ability to clean around and\/or behind an obstruction. Does Guardair offer such a product?",
-            "content": "<p>Yes. Guardair can provide a factory installed angle on the extension of our extended reach air guns. We will bend it to whatever degree you require with some limitations. Please contact our Customer Service Department at 800-482-7324.<\/p>"
+            "head": "I need a safety air gun with the ability to clean around and/or behind an obstruction. Does Guardair offer such a product?",
+            "content": "<p>Yes. Guardair can provide a factory installed angle on the extension of our extended reach air guns. We will bend it to whatever degree you require with some limitations. Please contact our Customer Service Department at 800-482-7324.</p>"
           }
         },
         "8a6f9c55-3cf0-43c9-92ef-9bda7707f159": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Is the Model 86FLX compatible with any of the Guardair safety air gun handles?",
-            "content": "<p>The 86FLX comes complete with a ¼\" NPT (male) fitting for use with ¼\" FNPT (female) connector or fitting. It is not compatible with the outlet thread on any of our air gun handles. For a safety air gun with a flexible extension, see the Guardair Model 80FLEX12.<\/p>"
+            "content": "<p>The 86FLX comes complete with a ¼\" NPT (male) fitting for use with ¼\" FNPT (female) connector or fitting. It is not compatible with the outlet thread on any of our air gun handles. For a safety air gun with a flexible extension, see the Guardair Model 80FLEX12.</p>"
           }
         },
         "61840a8a-d1cf-4681-a09d-bb0f138c245e": {
@@ -289,42 +300,42 @@
           "type": "Vacuums-Faq",
           "settings": {
             "head": "How do PowerQUAD™ compressed air-powered vacuums work?",
-            "content": "<p>Compressed air-powered vacuums (also known as pneumatic vacuums) work on the venturi principle. Compressed air, via the compressed air supply hose, enters the venturi box and travels through the injector nozzle. As the air continues through the surrounding venturi, it accelerates, thereby creating low pressure inside the venturi box. This low pressure induces vacuum flow inside the adjacent canister, and in turn through the attached vacuum hose.<\/p>"
+            "content": "<p>Compressed air-powered vacuums (also known as pneumatic vacuums) work on the venturi principle. Compressed air, via the compressed air supply hose, enters the venturi box and travels through the injector nozzle. As the air continues through the surrounding venturi, it accelerates, thereby creating low pressure inside the venturi box. This low pressure induces vacuum flow inside the adjacent canister, and in turn through the attached vacuum hose.</p>"
           }
         },
         "50a19d20-4962-4dd6-b349-560991bf5b0b": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What are the advantages of compressed air-powered vacuums over electric vacuums?",
-            "content": "<p>Compressed air-powered vacuums offer a number of significant advantages over electric vacuums.<br\/><br\/>These include:<br\/><br\/>(1) Compressed air-powered vacuums have no electric motor to wear out or burnout. Motor failure most often occurs in high demand applications where a motor is strained for long periods of time, for example when vacuuming heavy liquids or operating with a clogged filter.<br\/><br\/>(2) With no electric motor, sparking at the brushes is eliminated, and no electric fields are present. This is important in hazardous locations, for example when combustible fumes are present.<br\/><br\/>(3) Compressed air-powered vacuums require no dangerous, high voltage electric cords. Over time cords often become frayed as they are dragged across shop floors, or run over by mobile equipment, such as carts or forklift trucks. This is an important safety feature particularly on steel surfaces or where floors are wet.<br\/><br\/>(4) Compressed air-powered vacuums generate significantly more vacuum lift than electric vacuums. This enables them to suck up heavier materials a higher vertical distance.<br\/><br\/>(5) Compressed air is often more readily available than electric power in most in-plant and many remote or mobile locations.<br\/><br\/>(6) And finally, since compressed air-powered vacuums feature an unlimited lifespan, their Total Cost of Ownership (TCO) is often lower than equivalent electric vacuums.<\/p>"
+            "content": "<p>Compressed air-powered vacuums offer a number of significant advantages over electric vacuums.<br/><br/>These include:<br/><br/>(1) Compressed air-powered vacuums have no electric motor to wear out or burnout. Motor failure most often occurs in high demand applications where a motor is strained for long periods of time, for example when vacuuming heavy liquids or operating with a clogged filter.<br/><br/>(2) With no electric motor, sparking at the brushes is eliminated, and no electric fields are present. This is important in hazardous locations, for example when combustible fumes are present.<br/><br/>(3) Compressed air-powered vacuums require no dangerous, high voltage electric cords. Over time cords often become frayed as they are dragged across shop floors, or run over by mobile equipment, such as carts or forklift trucks. This is an important safety feature particularly on steel surfaces or where floors are wet.<br/><br/>(4) Compressed air-powered vacuums generate significantly more vacuum lift than electric vacuums. This enables them to suck up heavier materials a higher vertical distance.<br/><br/>(5) Compressed air is often more readily available than electric power in most in-plant and many remote or mobile locations.<br/><br/>(6) And finally, since compressed air-powered vacuums feature an unlimited lifespan, their Total Cost of Ownership (TCO) is often lower than equivalent electric vacuums.</p>"
           }
         },
         "64c4f178-ea32-41ca-9935-31085834fc7b": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the difference between Vacuum Flow and Vacuum Lift?",
-            "content": "<p><strong>Vacuum Flow<\/strong> is the volume of air that passes through a vacuum hose during a given period of time. Vacuum flow is expressed in cubic feet per minute (cfm). With any given diameter vacuum hose, the higher the vacuum flow, the higher the air velocity traveling through that vacuum hose, and the more effective the vacuum unit will be at sucking up and transporting debris.<\/p><p><strong>Vacuum Lift<\/strong> is the height that a vacuum unit can raise a given material or liquid. Vacuum lift (sometimes referred to as vacuum head) is expressed in inches of mercury (in Hg), or inches of water (in H2O). Thus, a vacuum with a rating of 120 inches of water can suck up water from a tank buried 120 inches (10 feet) underground.<\/p>"
+            "content": "<p><strong>Vacuum Flow</strong> is the volume of air that passes through a vacuum hose during a given period of time. Vacuum flow is expressed in cubic feet per minute (cfm). With any given diameter vacuum hose, the higher the vacuum flow, the higher the air velocity traveling through that vacuum hose, and the more effective the vacuum unit will be at sucking up and transporting debris.</p><p><strong>Vacuum Lift</strong> is the height that a vacuum unit can raise a given material or liquid. Vacuum lift (sometimes referred to as vacuum head) is expressed in inches of mercury (in Hg), or inches of water (in H2O). Thus, a vacuum with a rating of 120 inches of water can suck up water from a tank buried 120 inches (10 feet) underground.</p>"
           }
         },
         "27324ff9-74fb-42f2-909d-e92a415b3af5": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the definition of Vacuum Suction?",
-            "content": "<p>Vacuum suction is a non-scientific term referring to the general cleaning power of a vacuum unit. Vacuum suction is an off-hand way to describe a vacuum unit’s ability to generate vacuum flow, vacuum lift, and its overall effectiveness to clean.<\/p>"
+            "content": "<p>Vacuum suction is a non-scientific term referring to the general cleaning power of a vacuum unit. Vacuum suction is an off-hand way to describe a vacuum unit’s ability to generate vacuum flow, vacuum lift, and its overall effectiveness to clean.</p>"
           }
         },
         "f1a06fac-08f2-4d71-aa00-f07daecea11d": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "With respect to compressed air, what is the difference between Pressure and Flow?",
-            "content": "<p><strong>Pressure<\/strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). The higher the pressure, the more energy is stored, and the more work can be performed. In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.<\/p><p><strong>Flow<\/strong> is the volume of air traveling through an air supply line, or through a vacuum hose, during a given period of time. Flow is measured in cubic feet per minute (cfm). The electrical equivalent of flow is amperage.<\/p>"
+            "content": "<p><strong>Pressure</strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). The higher the pressure, the more energy is stored, and the more work can be performed. In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.</p><p><strong>Flow</strong> is the volume of air traveling through an air supply line, or through a vacuum hose, during a given period of time. Flow is measured in cubic feet per minute (cfm). The electrical equivalent of flow is amperage.</p>"
           }
         },
         "2c3e648a-75bc-4702-96b7-8b27707117f7": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "How do vacuums generate static electricity?",
-            "content": "<p>Both electric and compressed air-powered vacuums have the potential to generate static electricity. Static electricity is generated by the movement of air over the internal surface of a vacuum hose. The amount generated is a function of the composition and humidity of the air, air velocity, vacuum hose material, and material being vacuumed.<\/p>"
+            "content": "<p>Both electric and compressed air-powered vacuums have the potential to generate static electricity. Static electricity is generated by the movement of air over the internal surface of a vacuum hose. The amount generated is a function of the composition and humidity of the air, air velocity, vacuum hose material, and material being vacuumed.</p>"
           }
         },
         "094e0d36-173c-48d9-9da6-16d0c49376c1": {
@@ -340,70 +351,70 @@
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What size (capacity) air compressor do I need to operate my PowerQUAD™ vacuum?",
-            "content": "<p>A good rule of thumb states that air compressors generate approximately 4 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. For example, a 50 HP air compressor will generate approximately 200 cfm (4 x 50) on a continuous basis. Refer to the specifications on your air compressor for more information. For a given injector nozzle set, the table below shows the minimum size air compressor required (when run continuously) to supply compressed air to the vacuum.<\/p>"
+            "content": "<p>A good rule of thumb states that air compressors generate approximately 4 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. For example, a 50 HP air compressor will generate approximately 200 cfm (4 x 50) on a continuous basis. Refer to the specifications on your air compressor for more information. For a given injector nozzle set, the table below shows the minimum size air compressor required (when run continuously) to supply compressed air to the vacuum.</p>"
           }
         },
         "4bbea27f-227b-4018-a1a6-983c0afeaf17": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "How do I optimize the performance of my PowerQUAD™ Vacuum?",
-            "content": "<p>PowerQUAD™ vacuums can be configured to maximize compressed air savings, maximize vacuum performance, or a balance between the two. PowerQUAD™ vacuums come with three (3) sets of injector nozzles, all of which provide industry leading vacuum efficiency (vacuum performance per cfm of compressed air consumed). To maximize compressed air savings, install the lowest flowing injector nozzles (Green) and then test the vacuum. If higher vacuum performance is desired, install the next higher flowing injector nozzles (Blue) and test again. To maximize<br\/>vacuum performance, install highest flowing injector nozzles (Yellow) and test the vacuum.<br\/><br\/>If PowerQUAD™ vacuum performance is not as expected, the capacity of the compressed air system may not be sufficient. With the vacuum running, check the pressure gauge which should read between 80 and 90 psi. If the gauge measures lower than 80 psi, considering installing lower flowing injector nozzles. Since vacuum performance is directly related to compressed air consumption, make sure the air supply hose is delivering adequate compressed air to the vacuum for a given injector nozzle set. Refer to TABLE A for compressed air consumption, vacuum performance specifications, and recommended minimum size of the compressed air supply line.<\/p>"
+            "content": "<p>PowerQUAD™ vacuums can be configured to maximize compressed air savings, maximize vacuum performance, or a balance between the two. PowerQUAD™ vacuums come with three (3) sets of injector nozzles, all of which provide industry leading vacuum efficiency (vacuum performance per cfm of compressed air consumed). To maximize compressed air savings, install the lowest flowing injector nozzles (Green) and then test the vacuum. If higher vacuum performance is desired, install the next higher flowing injector nozzles (Blue) and test again. To maximize<br/>vacuum performance, install highest flowing injector nozzles (Yellow) and test the vacuum.<br/><br/>If PowerQUAD™ vacuum performance is not as expected, the capacity of the compressed air system may not be sufficient. With the vacuum running, check the pressure gauge which should read between 80 and 90 psi. If the gauge measures lower than 80 psi, considering installing lower flowing injector nozzles. Since vacuum performance is directly related to compressed air consumption, make sure the air supply hose is delivering adequate compressed air to the vacuum for a given injector nozzle set. Refer to TABLE A for compressed air consumption, vacuum performance specifications, and recommended minimum size of the compressed air supply line.</p>"
           }
         },
         "09643123-1f2d-43e0-bb2a-d7b11750363c": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the recommended operating air pressure for my PowerQUAD™ vacuum?",
-            "content": "<p>Most in-plant air compressors operate at pressures, or are regulated to between 80-120 psi. PowerQUAD™ vacuum are engineered to offer optimal performance at 80-90 psi as read on the pressure gauge located on the rear manifold of the vacuum while the vacuum is running.<\/p>"
+            "content": "<p>Most in-plant air compressors operate at pressures, or are regulated to between 80-120 psi. PowerQUAD™ vacuum are engineered to offer optimal performance at 80-90 psi as read on the pressure gauge located on the rear manifold of the vacuum while the vacuum is running.</p>"
           }
         },
         "10cf03ef-670d-45d3-8a0e-3ed20f2176a0": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What size compressed air supply line do I need to run my PowerQUAD™ vacuum?",
-            "content": "<p>PowerQUAD™ vacuums require compressed air supply lines that range from 3\/8” ID up to 1\/2” ID depending upon the injector nozzles that have been installed within the vacuum generating head. Refer TABLE A for recommended compressed air supply line size. To ensure adequate performance, a larger than required air supply line can always be employed, but never a smaller size.<\/p>"
+            "content": "<p>PowerQUAD™ vacuums require compressed air supply lines that range from 3/8” ID up to 1/2” ID depending upon the injector nozzles that have been installed within the vacuum generating head. Refer TABLE A for recommended compressed air supply line size. To ensure adequate performance, a larger than required air supply line can always be employed, but never a smaller size.</p>"
           }
         },
         "618940d8-3830-4645-8996-ce2fedc35055": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What about connectors and fittings?",
-            "content": "<p>Be sure that fittings and\/or connectors do not restrict the air supply flow in any manner. Use fittings that are rated the same size, or larger, for a given air supply line. For optimal operation, use “High Flow” connectors.<\/p>"
+            "content": "<p>Be sure that fittings and/or connectors do not restrict the air supply flow in any manner. Use fittings that are rated the same size, or larger, for a given air supply line. For optimal operation, use “High Flow” connectors.</p>"
           }
         },
         "f81f8c8c-ae1d-4fab-a42c-86450639702b": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "How does the size of my compressed air receiver size in combination with my air compressor effect vacuum performance?",
-            "content": "<p>Receiver size can also affect the operation of the vacuum. The larger the receiver, the longer the period of time the vacuum can run without calling upon the air compressor to cycle “on” and refill the receiver.<\/p>"
+            "content": "<p>Receiver size can also affect the operation of the vacuum. The larger the receiver, the longer the period of time the vacuum can run without calling upon the air compressor to cycle “on” and refill the receiver.</p>"
           }
         },
         "13dfacaf-07f1-44b8-8e15-2f59dc79e730": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "Can I use any steel drum with my PowerQUAD™ vacuum generating head?",
-            "content": "<p>No. PowerQUAD™ vacuum generating heads produce extremely high head. Generating vacuum lift of up to 255 inches of H2O running on 80-90 psi of compressed air, they have been known to implode.<\/p>"
+            "content": "<p>No. PowerQUAD™ vacuum generating heads produce extremely high head. Generating vacuum lift of up to 255 inches of H2O running on 80-90 psi of compressed air, they have been known to implode.</p>"
           }
         },
         "a1ab8dc0-d88c-4fd3-b5e6-92fa57e5ca88": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the maximum ambient temperature in which I can operate my PowerQUAD™ vacuum?",
-            "content": "<p>150˚ F<\/p>"
+            "content": "<p>150˚ F</p>"
           }
         },
         "c3ed61b6-d173-411d-aa45-f95ce6584db1": {
           "type": "Vacuums-Faq",
           "settings": {
-            "head": "How often do I need to replace the filter and\/or Silencer Foam?",
-            "content": "<p>Filters should be inspected regularly. Shake out and clean, or replace, clogged filters. Immediately replace ripped or torn filters. Silencer foam should also be inspected regularly and does not normally need to be replaced unless dust\/dirt is getting past the filter. Shake out the foam if covered with dirt\/dust and replace if necessary.<\/p>"
+            "head": "How often do I need to replace the filter and/or Silencer Foam?",
+            "content": "<p>Filters should be inspected regularly. Shake out and clean, or replace, clogged filters. Immediately replace ripped or torn filters. Silencer foam should also be inspected regularly and does not normally need to be replaced unless dust/dirt is getting past the filter. Shake out the foam if covered with dirt/dust and replace if necessary.</p>"
           }
         },
         "c4791d68-5cdc-4d88-811b-6b335cf4afd9": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "",
-            "content": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/POWERQUAD_OPERATING_INSTRUCTIONS_v10.pdf?v=1715958123\" target=\"_blank\" title=\"PowerQUAD™ Operating Instructions\">See our PowerQUAD™ Operating Instructions Manual for More Information<\/a><\/p>"
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/2656/7586/files/POWERQUAD_OPERATING_INSTRUCTIONS_v10.pdf?v=1715958123\" target=\"_blank\" title=\"PowerQUAD™ Operating Instructions\">See our PowerQUAD™ Operating Instructions Manual for More Information</a></p>"
           }
         }
       },
@@ -459,6 +470,7 @@
         "c3ed61b6-d173-411d-aa45-f95ce6584db1",
         "c4791d68-5cdc-4d88-811b-6b335cf4afd9"
       ],
+      "disabled": true,
       "settings": {
         "main_head": "",
         "fq_btn_first": "Air Guns",
@@ -483,63 +495,63 @@
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What OSHA standards govern the use of air guns?",
-            "content": "<p>For General Industry, two OSHA standards are of primary relevance to air gun users.<\/p><ol><li>The first standard focuses on permissible noise exposure covered under <em>29CFR Part 1910.95 (a) Occupational Noise Exposure.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=standards&p_id=9735\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><li>The second standard focuses on the use of compressed air used for cleaning covered under <em>29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><\/ol>"
+            "content": "<p>For General Industry, two OSHA standards are of primary relevance to air gun users.</p><ol><li>The first standard focuses on permissible noise exposure covered under <em>29CFR Part 1910.95 (a) Occupational Noise Exposure.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&p_id=9735\" target=\"_blank\">Click</a> for OSHA website link.</li><li>The second standard focuses on the use of compressed air used for cleaning covered under <em>29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">Click</a> for OSHA website link.</li></ol>"
           }
         },
         "air_gun_faq_itJR9q": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Please explain OSHA Standard 29CFR Part 1910.95 (a) Occupational Noise Exposure.",
-            "content": "<p>To address the issue of excessive noise in the workplace, OSHA developed permissible daily noise exposure specifications. Since air guns may contribute to high levels of occupational noise, their usage should be factored into daily noise exposure levels.<\/p>"
+            "content": "<p>To address the issue of excessive noise in the workplace, OSHA developed permissible daily noise exposure specifications. Since air guns may contribute to high levels of occupational noise, their usage should be factored into daily noise exposure levels.</p>"
           }
         },
         "air_gun_faq_mFraMf": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Please explain OSHA Standard 29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General.",
-            "content": "<p>Factory air lines normally operate at pressures between 80 and 120 psi and the majority of pneumatic tools, including air guns, require such pressures to operate effectively. However, OSHA requires that in the event an air line is dead-ended (for example, if the tip of an air gun is blocked), the static pressure at the point of blockage must be less than 30 psi.<\/p><p>This standard also states that when blowing off debris with an air gun, workers may be subject to \"chip-fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes, or skin. For operations that produce chip-fly-back, OSHA requires that effective chip guarding be incorporated into the workplace.<\/p><p>For compliance details with this standard, see OSHA Instruction <em>STD 01-13-001 (OSHA PROGRAM DIRECTIVE #100-1).<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">Click<\/a> for OHSA website link.<\/p>"
+            "content": "<p>Factory air lines normally operate at pressures between 80 and 120 psi and the majority of pneumatic tools, including air guns, require such pressures to operate effectively. However, OSHA requires that in the event an air line is dead-ended (for example, if the tip of an air gun is blocked), the static pressure at the point of blockage must be less than 30 psi.</p><p>This standard also states that when blowing off debris with an air gun, workers may be subject to \"chip-fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes, or skin. For operations that produce chip-fly-back, OSHA requires that effective chip guarding be incorporated into the workplace.</p><p>For compliance details with this standard, see OSHA Instruction <em>STD 01-13-001 (OSHA PROGRAM DIRECTIVE #100-1).</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">Click</a> for OHSA website link.</p>"
           }
         },
         "air_gun_faq_a6CM3e": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Are there any other OSHA standards that I should be aware of?",
-            "content": "<p>Yes. <em>Shipyards, Marine Terminals<\/em> and <em>Construction<\/em> are industries where additional standards apply regarding the use of compressed air and pneumatic tools.<\/p><ul><li>For Shipyards, the relevant standard is <em>29CFR Part 1915.131 General Precautions.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=10261&p_table=STANDARDS\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><li>For Marine Terminals, the relevant standard is <em>29CFR Part 1917.154 Compressed Air.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=10418&p_table=STANDARDS\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><li>For Construction, the relevant standard is <em>29CFR Part 1926.302(b) Pneumatic Power Tools.<\/em> <a href=\"http:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=standards&p_id=10690\" target=\"_blank\">Click<\/a> for OSHA website link.<\/li><\/ul>"
+            "content": "<p>Yes. <em>Shipyards, Marine Terminals</em> and <em>Construction</em> are industries where additional standards apply regarding the use of compressed air and pneumatic tools.</p><ul><li>For Shipyards, the relevant standard is <em>29CFR Part 1915.131 General Precautions.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=10261&p_table=STANDARDS\" target=\"_blank\">Click</a> for OSHA website link.</li><li>For Marine Terminals, the relevant standard is <em>29CFR Part 1917.154 Compressed Air.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=10418&p_table=STANDARDS\" target=\"_blank\">Click</a> for OSHA website link.</li><li>For Construction, the relevant standard is <em>29CFR Part 1926.302(b) Pneumatic Power Tools.</em> <a href=\"http://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=standards&p_id=10690\" target=\"_blank\">Click</a> for OSHA website link.</li></ul>"
           }
         },
         "air_gun_faq_JMNGUB": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How can Guardair safety air guns help meet the OSHA standard for noise?",
-            "content": "<p>While occupational noise can be generated from a wide variety of sources, the use of a low noise safety air gun can be an important component in moving towards noise compliance. Guardair safety air guns featuring WhisperJet and QuietForce nozzles provide proprietary, noise limiting technology. <a href=\"https:\/\/guardair.com\/pages\/guardair-product-compliance\">Click<\/a>for technical data on Guardair nozzles.<\/p>"
+            "content": "<p>While occupational noise can be generated from a wide variety of sources, the use of a low noise safety air gun can be an important component in moving towards noise compliance. Guardair safety air guns featuring WhisperJet and QuietForce nozzles provide proprietary, noise limiting technology. <a href=\"https://guardair.com/pages/guardair-product-compliance\">Click</a>for technical data on Guardair nozzles.</p>"
           }
         },
         "air_gun_faq_AF49PU": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How do Guardair safety air guns meet the OSHA standard for output pressure?",
-            "content": "<p>All Guardair safety air guns meet this standard by incorporating OSHA compliant, proprietary nozzles into their design. These include Venturi, AirMiser, Air Shield, WhisperJet, and QuietForce type nozzles. <a href=\"https:\/\/guardair.com\/pages\/guardair-product-compliance\">Click<\/a> for technical data on Guardair nozzles.<\/p>"
+            "content": "<p>All Guardair safety air guns meet this standard by incorporating OSHA compliant, proprietary nozzles into their design. These include Venturi, AirMiser, Air Shield, WhisperJet, and QuietForce type nozzles. <a href=\"https://guardair.com/pages/guardair-product-compliance\">Click</a> for technical data on Guardair nozzles.</p>"
           }
         },
         "air_gun_faq_iB3m7r": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Is it necessary to turn my air compressor down to 30 psi to meet OSHA Standard 29CFR Part 1910.242 (b) relating to output pressure?",
-            "content": "<p>No. This is popular misconception and is not necessary for compliance. To meet this requirement, use an air gun that is properly engineered. All Guardair safety air guns meet this standard.<\/p>"
+            "content": "<p>No. This is popular misconception and is not necessary for compliance. To meet this requirement, use an air gun that is properly engineered. All Guardair safety air guns meet this standard.</p>"
           }
         },
         "air_gun_faq_tewDWK": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Is it permissible to tape an air gun trigger down (\"always on mode\") to provide constant air flow?",
-            "content": "<p>While the OSHA regulations do not specifically prohibit this practice, Guardair does not recommend doing so. Disabling the \"dead-man\" feature inherent with the trigger mechanism could result in the air tool whipping around and causing serious injury.<\/p>"
+            "content": "<p>While the OSHA regulations do not specifically prohibit this practice, Guardair does not recommend doing so. Disabling the \"dead-man\" feature inherent with the trigger mechanism could result in the air tool whipping around and causing serious injury.</p>"
           }
         },
         "air_gun_faq_bBTMBY": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the advantage of Guardair safety air guns versus straight pipes?",
-            "content": "<p>Safety air guns offer numerous advantages over straight pipes.<\/p><ol><li>First, straight pipes are inefficient as they use significantly more compressed air to produce the same amount of thrust versus a properly engineered safety air gun.<\/li><li>Second, straight pipes are often regulated with a ball valve which does not include the \"dead-man\" feature inherent with the trigger mechanism of a safety air gun.<\/li><li>Third, straight pipes are not tools designed with ergonomic features thus over time introduce operator fatigue. Finally, straight pipes are illegal and dangerous because they do not meet the OSHA standard limiting output pressure to less than 30 psi when dead-ended.<\/li><\/ol>"
+            "content": "<p>Safety air guns offer numerous advantages over straight pipes.</p><ol><li>First, straight pipes are inefficient as they use significantly more compressed air to produce the same amount of thrust versus a properly engineered safety air gun.</li><li>Second, straight pipes are often regulated with a ball valve which does not include the \"dead-man\" feature inherent with the trigger mechanism of a safety air gun.</li><li>Third, straight pipes are not tools designed with ergonomic features thus over time introduce operator fatigue. Finally, straight pipes are illegal and dangerous because they do not meet the OSHA standard limiting output pressure to less than 30 psi when dead-ended.</li></ol>"
           }
         },
         "air_guns_heading_UnE7Ub": {
@@ -555,83 +567,83 @@
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the difference between Pressure, Flow, and Thrust?",
-            "content": "<p><strong>Pressure<\/strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.<\/p><p><strong>Flow<\/strong> is the volume of compressed air traveling through an air gun during a given period of time. Flow is measured in cubic feet per minute (cfm). In general, the higher the flow, an increased capacity (larger diameter) air line, and an increased capacity (larger horsepower) air compressor will be required. The electrical equivalent of flow is amperage.<\/p><p><strong>Thrust<\/strong> is the effective force produced by an air gun and is generated from the combination of air pressure and air flow. Thrust is measured in pounds (lbs) and the higher the thrust, the more cleaning force is available. Ideally, thrust of say 10 pounds is capable of moving up to a 10 pound object. The electrical equivalent of thrust is wattage.<\/p>"
+            "content": "<p><strong>Pressure</strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.</p><p><strong>Flow</strong> is the volume of compressed air traveling through an air gun during a given period of time. Flow is measured in cubic feet per minute (cfm). In general, the higher the flow, an increased capacity (larger diameter) air line, and an increased capacity (larger horsepower) air compressor will be required. The electrical equivalent of flow is amperage.</p><p><strong>Thrust</strong> is the effective force produced by an air gun and is generated from the combination of air pressure and air flow. Thrust is measured in pounds (lbs) and the higher the thrust, the more cleaning force is available. Ideally, thrust of say 10 pounds is capable of moving up to a 10 pound object. The electrical equivalent of thrust is wattage.</p>"
           }
         },
         "air_gun_faq_LkHrUK": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the recommended operating air pressure for Guardair safety air guns?",
-            "content": "<p>Most in-plant air compressors operate at pressures between 80 and 120 psi. This is the range we recommend for Guardair safety air guns.<\/p>"
+            "content": "<p>Most in-plant air compressors operate at pressures between 80 and 120 psi. This is the range we recommend for Guardair safety air guns.</p>"
           }
         },
         "air_gun_faq_8ePxiJ": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the maximum plant air pressure I can use and still be OSHA compliant?",
-            "content": "<p>Guardair does not recommend operating our air guns at pressures over 120 psi. Although the structural integrity of Guardair safety air guns have been tested and proven well above 120 psi, they have been designed to operate most efficiently and to meet the OSHA standard regarding output pressure at air pressures between 80 and 120 psi. Consequently, Guardair cannot certify that our air guns meet this OSHA standard at pressures in excess of 120 psi.<\/p>"
+            "content": "<p>Guardair does not recommend operating our air guns at pressures over 120 psi. Although the structural integrity of Guardair safety air guns have been tested and proven well above 120 psi, they have been designed to operate most efficiently and to meet the OSHA standard regarding output pressure at air pressures between 80 and 120 psi. Consequently, Guardair cannot certify that our air guns meet this OSHA standard at pressures in excess of 120 psi.</p>"
           }
         },
         "air_gun_faq_hxjXBT": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What size air line do I need to run my Guardair safety air gun?",
-            "content": "<p>In general, Guardair safety air guns featuring a ¼\" NPT inlets require ¼\" ID or larger air lines. Air guns with a 3\/8\" NPT inlets require 3\/8\" ID or larger air lines. Air guns with a ¾\" NPT inlet require ¾\" ID or larger air lines. To ensure rated thrust, air lines can always be sized larger than required, but not smaller.<\/p>"
+            "content": "<p>In general, Guardair safety air guns featuring a ¼\" NPT inlets require ¼\" ID or larger air lines. Air guns with a 3/8\" NPT inlets require 3/8\" ID or larger air lines. Air guns with a ¾\" NPT inlet require ¾\" ID or larger air lines. To ensure rated thrust, air lines can always be sized larger than required, but not smaller.</p>"
           }
         },
         "air_gun_faq_t7e8KJ": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What about connectors and fittings?",
-            "content": "<p>Be sure that fittings and\/or connectors do not restrict the air flow in any manner. Use fittings that are rated the same size, or larger, for a given air line size. Where recommended use Guardair High Flow connectors.<\/p>"
+            "content": "<p>Be sure that fittings and/or connectors do not restrict the air flow in any manner. Use fittings that are rated the same size, or larger, for a given air line size. Where recommended use Guardair High Flow connectors.</p>"
           }
         },
         "air_gun_faq_NUbVtA": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What size (capacity) air compressor do I need to operate my Guardair safety air gun?",
-            "content": "<p>A good rule of thumb states that air compressors generate approximately 4.5 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. To size a compressor (HP), divide the air requirement (cfm) by 4.5. Refer to the specification on your compressor for more information.<\/p>"
+            "content": "<p>A good rule of thumb states that air compressors generate approximately 4.5 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. To size a compressor (HP), divide the air requirement (cfm) by 4.5. Refer to the specification on your compressor for more information.</p>"
           }
         },
         "air_gun_faq_Cxd7aY": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Why does my air gun lack power?",
-            "content": "<p>The three most common problems are:<\/p><ul><li>Undersized air lines<\/li><li>Restrictions due to undersized fittings and\/or connectors<\/li><li>Inadequate plant air pressure or capacity<\/li><\/ul>"
+            "content": "<p>The three most common problems are:</p><ul><li>Undersized air lines</li><li>Restrictions due to undersized fittings and/or connectors</li><li>Inadequate plant air pressure or capacity</li></ul>"
           }
         },
         "air_gun_faq_G46jnF": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "If I block the side ports of a venturi nozzle with tape will I increase the thrust?",
-            "content": "<p>Absolutely not! Blocking the side ports does not provide extra power at the nozzle tip. Thrust is actually reduced because ambient outside air cannot be drawn into the outgoing air stream. In addition, the nozzle is now OSHA non-compliant.<\/p>"
+            "content": "<p>Absolutely not! Blocking the side ports does not provide extra power at the nozzle tip. Thrust is actually reduced because ambient outside air cannot be drawn into the outgoing air stream. In addition, the nozzle is now OSHA non-compliant.</p>"
           }
         },
         "air_gun_faq_RbqHpi": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the maximum ambient temperature in which I can operate my Guardair safety air gun?",
-            "content": "<p>The maximum ambient temperature in which our air guns can be used is 200°F.<\/p>"
+            "content": "<p>The maximum ambient temperature in which our air guns can be used is 200°F.</p>"
           }
         },
         "air_gun_faq_CAzqg3": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "I recently purchased a HydroForce, hooked up the air and water lines, but only air comes out of the nozzle. Why?",
-            "content": "<p>The probable cause is inadequate air flow and\/or air pressure.<\/p><ol><li>First, be sure to use an air line that provides adequate air flow to the HydroForce.<\/li><li>Second, be sure that all air fittings and connectors are adequately sized and offer no restrictions.<\/li><li>Third, ensure that the operating air pressure measures between 80 and 120 psi.<\/li><\/ol>"
+            "content": "<p>The probable cause is inadequate air flow and/or air pressure.</p><ol><li>First, be sure to use an air line that provides adequate air flow to the HydroForce.</li><li>Second, be sure that all air fittings and connectors are adequately sized and offer no restrictions.</li><li>Third, ensure that the operating air pressure measures between 80 and 120 psi.</li></ol>"
           }
         },
         "air_gun_faq_LD78bL": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "What is the maximum ambient temperature in which I can use my HydroForce?",
-            "content": "<p>200°F<\/p>"
+            "content": "<p>200°F</p>"
           }
         },
         "air_guns_heading_U7REYa": {
           "type": "Air-Guns-Heading",
           "settings": {
-            "head_top": "Products\/Parts\/Accessories",
+            "head_top": "Products/Parts/Accessories",
             "top_border": true,
             "padding_top": 10,
             "padding_bottom": 0
@@ -640,64 +652,64 @@
         "air_gun_faq_eyA8Ne": {
           "type": "Air-Gun-Faq",
           "settings": {
-            "head": "Does Guardair offer replacement parts and\/or repair kits for safety air guns?",
-            "content": "<p>We carry replacement parts for the vast majority of our guns. You can purchase replacement nozzles, extensions, and handles, as well as gun rebuild kits.<\/p>"
+            "head": "Does Guardair offer replacement parts and/or repair kits for safety air guns?",
+            "content": "<p>We carry replacement parts for the vast majority of our guns. You can purchase replacement nozzles, extensions, and handles, as well as gun rebuild kits.</p>"
           }
         },
         "air_gun_faq_z43yyz": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How are extended reach air guns (ie Long Johns) assembled?",
-            "content": "<p>First, thread locker is applied to the threads of each component (nozzle, extension, and handle). Components are then screwed together and tightened to factory specifications. The result is a semi-permanent connection with structural integrity.<\/p>"
+            "content": "<p>First, thread locker is applied to the threads of each component (nozzle, extension, and handle). Components are then screwed together and tightened to factory specifications. The result is a semi-permanent connection with structural integrity.</p>"
           }
         },
         "air_gun_faq_B348wG": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Can I unscrew the extension of my Long John and screw in different extensions?",
-            "content": "<p>While this is possible, Guardair does not recommend this practice. Doing so first requires breaking the bond of the thread locker with heat from a blow torch or the like. Repeated screwing and unscrewing extensions runs the risk of galling the threads which are not designed with this in mind.<\/p>"
+            "content": "<p>While this is possible, Guardair does not recommend this practice. Doing so first requires breaking the bond of the thread locker with heat from a blow torch or the like. Repeated screwing and unscrewing extensions runs the risk of galling the threads which are not designed with this in mind.</p>"
           }
         },
         "air_gun_faq_WimTik": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "How do I make my extended reach air gun longer?",
-            "content": "<p>All of the Ultra, LJ, XT and 80LJ series are compatible with our mid-extension kits and can easily be extended. Mid-extension kits come in 48\", 60\", and 72\" lengths and come complete with a coupler. To add a mid-extension, first break the thread locker bond at the extension\/handle connection using a blow torch. Unscrew the extension. Screw one end of the mid-extension into the handle. Screw the other end of the mid-extension into the coupler. Finally, screw the extension into the coupler.<\/p>"
+            "content": "<p>All of the Ultra, LJ, XT and 80LJ series are compatible with our mid-extension kits and can easily be extended. Mid-extension kits come in 48\", 60\", and 72\" lengths and come complete with a coupler. To add a mid-extension, first break the thread locker bond at the extension/handle connection using a blow torch. Unscrew the extension. Screw one end of the mid-extension into the handle. Screw the other end of the mid-extension into the coupler. Finally, screw the extension into the coupler.</p>"
           }
         },
         "air_gun_faq_RHnpNE": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "We use Guardair extended reach air guns in a particularly rough working environment and I need to ensure that the nozzle never comes apart from the extension. Is there any way to do this?",
-            "content": "<p>Yes. In addition to our standard thread locker, we offer the option to pin the nozzle to the extension. We refer to this as a PERM1 connection. We also offer an optional PERM2 connection where the nozzle is pinned to the extension, and the extension is pinned to the handle. Contact our Customer Service Department at 800-482-7324.<\/p>"
+            "content": "<p>Yes. In addition to our standard thread locker, we offer the option to pin the nozzle to the extension. We refer to this as a PERM1 connection. We also offer an optional PERM2 connection where the nozzle is pinned to the extension, and the extension is pinned to the handle. Contact our Customer Service Department at 800-482-7324.</p>"
           }
         },
         "air_gun_faq_EEdiNY": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Does Guardair sell replacement parts for the 79SG012 Syphon Spray Gun?",
-            "content": "<p>Guardair offers the replacement nozzle but not the replacement barrel for the 79SG012. The barrel is permanently attached to the body of the gun and is not repairable.<\/p>"
+            "content": "<p>Guardair offers the replacement nozzle but not the replacement barrel for the 79SG012. The barrel is permanently attached to the body of the gun and is not repairable.</p>"
           }
         },
         "air_gun_faq_dzf6Jf": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Why can't I purchase an extension only, or nozzle only, for my Force 5 air gun?",
-            "content": "<p>Extensions with permanently attached nozzles are sold as a complete assembly to ensure OSHA compliance.<\/p>"
+            "content": "<p>Extensions with permanently attached nozzles are sold as a complete assembly to ensure OSHA compliance.</p>"
           }
         },
         "air_gun_faq_6ccfaM": {
           "type": "Air-Gun-Faq",
           "settings": {
-            "head": "I need a safety air gun with the ability to clean around and\/or behind an obstruction. Does Guardair offer such a product?",
-            "content": "<p>Yes. Guardair can provide a factory installed angle on the extension of our extended reach air guns. We will bend it to whatever degree you require with some limitations. Please contact our Customer Service Department at 800-482-7324.<\/p>"
+            "head": "I need a safety air gun with the ability to clean around and/or behind an obstruction. Does Guardair offer such a product?",
+            "content": "<p>Yes. Guardair can provide a factory installed angle on the extension of our extended reach air guns. We will bend it to whatever degree you require with some limitations. Please contact our Customer Service Department at 800-482-7324.</p>"
           }
         },
         "air_gun_faq_eqkC7w": {
           "type": "Air-Gun-Faq",
           "settings": {
             "head": "Is the Model 86FLX compatible with any of the Guardair safety air gun handles?",
-            "content": "<p>The 86FLX comes complete with a ¼\" NPT (male) fitting for use with ¼\" FNPT (female) connector or fitting. It is not compatible with the outlet thread on any of our air gun handles. For a safety air gun with a flexible extension, see the Guardair Model 80FLEX12.<\/p>"
+            "content": "<p>The 86FLX comes complete with a ¼\" NPT (male) fitting for use with ¼\" FNPT (female) connector or fitting. It is not compatible with the outlet thread on any of our air gun handles. For a safety air gun with a flexible extension, see the Guardair Model 80FLEX12.</p>"
           }
         },
         "vacuums_heading_LmcmwA": {
@@ -713,105 +725,105 @@
           "type": "Vacuums-Faq",
           "settings": {
             "head": "How do Guardair compressed air-powered vacuums work?",
-            "content": "<p>Compressed air-powered vacuums (also known as pneumatic vacuums) work on the venturi principle. Compressed air, via the air supply hose, enters the venturi box and travels through the injector. As the air continues through the surrounding venturi, it accelerates, thereby creating low pressure inside the venturi box. This low pressure induces vacuum flow inside the adjacent canister, and in turn through the attached vacuum hose. Click <a href=\"http:\/\/www.guardairvacs.com\/faqs#\">here<\/a> for a compressed air-powered vacuum diagram.<\/p>"
+            "content": "<p>Compressed air-powered vacuums (also known as pneumatic vacuums) work on the venturi principle. Compressed air, via the air supply hose, enters the venturi box and travels through the injector. As the air continues through the surrounding venturi, it accelerates, thereby creating low pressure inside the venturi box. This low pressure induces vacuum flow inside the adjacent canister, and in turn through the attached vacuum hose. Click <a href=\"http://www.guardairvacs.com/faqs#\">here</a> for a compressed air-powered vacuum diagram.</p>"
           }
         },
         "vacuums_faq_iRwBjz": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What are the advantages of compressed air-powered vacuums over electrical powered vacuums?",
-            "content": "<p>Compressed air-powered vacuums offer a number of significant advantages. First, they have no electric motor, or any moving parts for that matter. Therefore, they shine in heavy duty-cycle (on-off-on-off) applications conducive to burning out electric vacs. Second, because there is no electric motor, sparking at the brushes is eliminated, and no electric fields are present. Third, they require no dangerous, high voltage electrical cords, an important feature for wet and\/or hazardous environments. Fourth, they provide significantly more vacuum lift than electric vacs. Finally, compressed air is often more readily available than electric power in some mobile, and in many in-plant locations.<\/p>"
+            "content": "<p>Compressed air-powered vacuums offer a number of significant advantages. First, they have no electric motor, or any moving parts for that matter. Therefore, they shine in heavy duty-cycle (on-off-on-off) applications conducive to burning out electric vacs. Second, because there is no electric motor, sparking at the brushes is eliminated, and no electric fields are present. Third, they require no dangerous, high voltage electrical cords, an important feature for wet and/or hazardous environments. Fourth, they provide significantly more vacuum lift than electric vacs. Finally, compressed air is often more readily available than electric power in some mobile, and in many in-plant locations.</p>"
           }
         },
         "vacuums_faq_EhCAbE": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the difference between Vacuum Flow and Vacuum Lift?",
-            "content": "<p><strong>Vacuum Flow<\/strong> is the volume of air that passes through a vacuum hose during a given period of time. Vacuum flow is expressed in cubic feet per minute (cfm). With any given diameter vacuum hose, the higher the vacuum flow, the higher the air velocity traveling through that vacuum hose, and the more effective the vacuum unit will be at sucking up and transporting debris.<\/p><p><strong>Vacuum Lift<\/strong> is the height that a vacuum unit can raise a given material or liquid. Vacuum lift (sometimes referred to as vacuum head) is expressed in inches of mercury (in Hg), or inches of water (in H2O). Thus a vacuum with a rating of say 120 inches of water would be able to suck up water from a tank buried 120 inches (10 feet) underground.<\/p>"
+            "content": "<p><strong>Vacuum Flow</strong> is the volume of air that passes through a vacuum hose during a given period of time. Vacuum flow is expressed in cubic feet per minute (cfm). With any given diameter vacuum hose, the higher the vacuum flow, the higher the air velocity traveling through that vacuum hose, and the more effective the vacuum unit will be at sucking up and transporting debris.</p><p><strong>Vacuum Lift</strong> is the height that a vacuum unit can raise a given material or liquid. Vacuum lift (sometimes referred to as vacuum head) is expressed in inches of mercury (in Hg), or inches of water (in H2O). Thus a vacuum with a rating of say 120 inches of water would be able to suck up water from a tank buried 120 inches (10 feet) underground.</p>"
           }
         },
         "vacuums_faq_KgAwNa": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the definition of Vacuum Suction?",
-            "content": "<p>Vacuum suction is a non-scientific term referring to the general cleaning power of a vacuum unit. Vacuum suction is an off-hand way to describe a vacuum unit's ability to generate vacuum flow, vacuum lift, and its overall effectiveness.<\/p>"
+            "content": "<p>Vacuum suction is a non-scientific term referring to the general cleaning power of a vacuum unit. Vacuum suction is an off-hand way to describe a vacuum unit's ability to generate vacuum flow, vacuum lift, and its overall effectiveness.</p>"
           }
         },
         "vacuums_faq_Nat9tz": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "With respect to compressed air used to power vacuums, what is the difference between Pressure and Flow?",
-            "content": "<p><strong>Pressure<\/strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). The higher the pressure, the more energy is stored, and the more work can be performed. In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.<\/p><p><strong>Flow<\/strong> is the volume of air traveling through an air supply line, or through a vacuum line, during a given period of time. Flow is measured in cubic feet per minute (cfm). The electrical equivalent of flow is amperage.<\/p>"
+            "content": "<p><strong>Pressure</strong> is the measure of potential energy stored within compressed air. Pressure is measured in pounds per square inch (psi). The higher the pressure, the more energy is stored, and the more work can be performed. In general, most industrial compressed air systems operate at pressures between 80 and 120 psi. The electrical equivalent of pressure is voltage.</p><p><strong>Flow</strong> is the volume of air traveling through an air supply line, or through a vacuum line, during a given period of time. Flow is measured in cubic feet per minute (cfm). The electrical equivalent of flow is amperage.</p>"
           }
         },
         "vacuums_faq_mfyYH3": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What size (capacity) air compressor do I need to operate my Guardair vacuum?",
-            "content": "<p>A good rule of thumb states that air compressors generate approximately 4 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. To size a compressor in HP, divide the air requirement (cfm) of the vacuum by 4. Refer to the specification on your compressor for more information.<\/p>"
+            "content": "<p>A good rule of thumb states that air compressors generate approximately 4 cubic feet per minute (cfm) of compressed air per horsepower (HP) on a continuous basis. To size a compressor in HP, divide the air requirement (cfm) of the vacuum by 4. Refer to the specification on your compressor for more information.</p>"
           }
         },
         "vacuums_faq_T6JaGR": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "How does tank size effect vacuum performance?",
-            "content": "<p>Tank size can also effect the operation of the vacuum. The larger the tank, the longer the period of time the vacuum can run without calling upon the air compressor to cycle \"on\" and refill the tank.<\/p>"
+            "content": "<p>Tank size can also effect the operation of the vacuum. The larger the tank, the longer the period of time the vacuum can run without calling upon the air compressor to cycle \"on\" and refill the tank.</p>"
           }
         },
         "vacuums_faq_8GgfBE": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the recommended operating air pressure for my Guardair vacuum?",
-            "content": "<p>Most in-plant air compressors operate at pressures between 80 and 120 psi. This is the air pressure range we recommend for Guardair vacuums.<\/p>"
+            "content": "<p>Most in-plant air compressors operate at pressures between 80 and 120 psi. This is the air pressure range we recommend for Guardair vacuums.</p>"
           }
         },
         "vacuums_faq_mJkKjV": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What size air supply line do I need to run my Guardair vacuum?",
-            "content": "<p>Guardair vacuums require air supply lines that range from 3\/8\"ID up to 3\/4\"ID in size, depending upon the model. Please refer to the Guardair product catalog or website for recommended air supply line size. To ensure adequate performance, a larger size than required air supply line can always be employed, but never a smaller size.<\/p>"
+            "content": "<p>Guardair vacuums require air supply lines that range from 3/8\"ID up to 3/4\"ID in size, depending upon the model. Please refer to the Guardair product catalog or website for recommended air supply line size. To ensure adequate performance, a larger size than required air supply line can always be employed, but never a smaller size.</p>"
           }
         },
         "vacuums_faq_GncbFj": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What about connectors and fittings?",
-            "content": "<p>Be sure that fittings and\/or connectors do not restrict the air supply flow in any manner. Use fittings that are rated the same size, or larger, for a given air supply line. Whenever recommended, use \"high flow\" connectors.<\/p>"
+            "content": "<p>Be sure that fittings and/or connectors do not restrict the air supply flow in any manner. Use fittings that are rated the same size, or larger, for a given air supply line. Whenever recommended, use \"high flow\" connectors.</p>"
           }
         },
         "vacuums_faq_b6Rphn": {
           "type": "Vacuums-Faq",
           "settings": {
-            "head": "How often do I need to replace the filter and\/or muffler?",
-            "content": "<p>Filters should be inspected regularly. Shake out and clean, or replace, clogged filters. Immediately replace ripped or torn filters.<\/p><p>Mufflers should also be inspected regularly. Mufflers do not normally need to be replaced unless dust\/dirt is getting past the filter. Shake out the muffler if covered with dirt\/dust and replace if necessary.<\/p>"
+            "head": "How often do I need to replace the filter and/or muffler?",
+            "content": "<p>Filters should be inspected regularly. Shake out and clean, or replace, clogged filters. Immediately replace ripped or torn filters.</p><p>Mufflers should also be inspected regularly. Mufflers do not normally need to be replaced unless dust/dirt is getting past the filter. Shake out the muffler if covered with dirt/dust and replace if necessary.</p>"
           }
         },
         "vacuums_faq_LyHtFw": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "Can I use any 55 gallon drum with my Guardair vacuum generating head?",
-            "content": "<p>Guardair vacuum generating heads produce extremely powerful suction. Generating vacuum lift of up to 213 inches of water at 100 psi, they have been known to implode 55 gallon steel drums. Therefore, Guardair recommends that drums be constructed of 19 gauge steel or heavier.<\/p>"
+            "content": "<p>Guardair vacuum generating heads produce extremely powerful suction. Generating vacuum lift of up to 213 inches of water at 100 psi, they have been known to implode 55 gallon steel drums. Therefore, Guardair recommends that drums be constructed of 19 gauge steel or heavier.</p>"
           }
         },
         "vacuums_faq_LNeLiT": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "Does Guardair offer HEPA and ULPA filters?",
-            "content": "<p>Yes.<\/p>"
+            "content": "<p>Yes.</p>"
           }
         },
         "vacuums_faq_PYRagb": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "What is the maximum ambient temperature in which I can operate my Guardair vacuum?",
-            "content": "<p>200°F.<\/p>"
+            "content": "<p>200°F.</p>"
           }
         },
         "vacuums_faq_Ddz3jG": {
           "type": "Vacuums-Faq",
           "settings": {
             "head": "How do vacuums generate static electricity?",
-            "content": "<p>Both electric and compressed air-powered and electric have the potential to generate static electricity. Static electricity is generated by the movement of air over the internal surface of a vacuum hose. The amount generated is a function of the composition and humidity of the air, air velocity, and the vacuum hose material.<\/p>"
+            "content": "<p>Both electric and compressed air-powered and electric have the potential to generate static electricity. Static electricity is generated by the movement of air over the internal surface of a vacuum hose. The amount generated is a function of the composition and humidity of the air, air velocity, and the vacuum hose material.</p>"
           }
         },
         "vacuums_heading_GUAWLm": {
@@ -827,7 +839,7 @@
           "type": "Vacuums-Faq",
           "settings": {
             "head": "Why doesn't my vacuum seem to have any suction?",
-            "content": "<p>By far the most common problem is undersized air supply lines, or restrictions due to undersized fittings and\/or connectors. Some combination of these two issues will result in inadequate air being supplied to the vacuum. In addition, other things to look for include low plant air pressure (less than 80 psi), a dirty filter, a clogged vacuum hose, or a faulty vacuum head gasket.<\/p>"
+            "content": "<p>By far the most common problem is undersized air supply lines, or restrictions due to undersized fittings and/or connectors. Some combination of these two issues will result in inadequate air being supplied to the vacuum. In addition, other things to look for include low plant air pressure (less than 80 psi), a dirty filter, a clogged vacuum hose, or a faulty vacuum head gasket.</p>"
           }
         }
       },
@@ -891,12 +903,138 @@
         "padding_top": 0,
         "padding_bottom": 24
       }
+    },
+    "collapsible_content_PzxX7n": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_yBTmXi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I purchase Guardair products?",
+            "icon": "none",
+            "row_content": "<p>Guardair products can be purchased direct or through our distributors. Contact our Customer Service Department via email at<a href=\"mailto:info@guardair.com\" target=\"_blank\"><strong>info@guardair.com</strong></a>, by phone at (800) 482-7324, (413) 594-4400, or via fax at (413) 594-4884. A list of distributors can be found on the<a href=\"https://guardair.com/pages/where-to-buy\" target=\"_blank\" title=\"Where to Buy\"><strong>Where to Buy</strong></a>section of the Guardair website.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_cDBxjk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I obtain current product pricing and availability?",
+            "icon": "none",
+            "row_content": "<p>Product pricing and availability can be obtained by contacting the Customer Service Department.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gcUAjn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What credit cards do you accept?",
+            "icon": "none",
+            "row_content": "<p>We accept Visa, MasterCard, and American Express. We do not currently accept Discover.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BA9YCc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I obtain current Guardair product literature?",
+            "icon": "none",
+            "row_content": "<p>Product literature can be downloaded by going to the <a href=\"https://guardair.com/pages/product-literature\" title=\"https://guardair.com/pages/product-literature\"><strong>Product Literature</strong></a><strong> </strong>section of the Guardair website. Click on the desired document to view, or to initiate the download.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_yBTmXi",
+        "collapsible_row_cDBxjk",
+        "collapsible_row_gcUAjn",
+        "collapsible_row_BA9YCc"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "GENERAL",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_fQ4qPt": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_tGLDGF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What OSHA standards govern the use of air guns?",
+            "icon": "none",
+            "row_content": "<p>For General Industry, two OSHA standards are of primary relevance to air gun users.</p><ol><li>The first standard focuses on permissible noise exposure covered under <em>29CFR Part 1910.95 (a) Occupational Noise Exposure</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.95\" target=\"_blank\" title=\"29CFR Part 1910.95 (a) Occupational Noise Exposure\"><strong>Click</strong></a> for OSHA website link.</li><li>The second standard focuses on the use of compressed air used for cleaning covered under <em>29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.242\" target=\"_blank\" title=\"29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General\"><strong>Click</strong></a> for OSHA website link.</li></ol>",
+            "page": ""
+          }
+        },
+        "collapsible_row_a9Nn9R": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Please explain OSHA Standard 29CFR Part 1910.95 (a) Occupational Noise Exposure.",
+            "icon": "none",
+            "row_content": "<p>To address the issue of excessive noise in the workplace, OSHA developed permissible daily noise exposure specifications. Since air guns may contribute to high levels of occupational noise, their usage should be factored into daily noise exposure levels.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fNtifK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Please explain OSHA Standard 29CFR Part 1910.242 (b) Hand and Portable Powered Tools and Equipment, General.",
+            "icon": "none",
+            "row_content": "<p>Factory air lines normally operate at pressures between 80 and 120 psi and the majority of pneumatic tools, including air guns, require such pressures to operate effectively. However, OSHA requires that in the event an air line is dead-ended (for example, if the tip of an air gun is blocked), the static pressure at the point of blockage must be less than 30 psi.</p><p>This standard also states that when blowing off debris with an air gun, workers may be subject to \"chip-fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes, or skin. For operations that produce chip-fly-back, OSHA requires that effective chip guarding be incorporated into the workplace.</p><p>For compliance details with this standard, see OSHA Instruction <em>STD 01-13-001 (OSHA PROGRAM DIRECTIVE #100-1)</em>. <a href=\"https://www.osha.gov/enforcement/directives/std-01-13-001\" target=\"_blank\" title=\"OSHA Instruction STD 01-13-001 (OSHA PROGRAM DIRECTIVE #100-1)\"><strong>Click</strong></a> for OSHA website link.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bVniMV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any other OSHA standards that I should be aware of?",
+            "icon": "none",
+            "row_content": "<p>Yes. <em>Shipyards, Marine Terminals</em> and <em>Construction</em> are industries where additional standards apply regarding the use of compressed air and pneumatic tools.</p><ul><li>For Shipyards, the relevant standard is <em>29CFR Part 1915.131 General Precautions</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1915/1915.131\" target=\"_blank\" title=\"29CFR Part 1915.131 General Precautions\"><strong>Click</strong></a> for OSHA website link.</li><li>For Marine Terminals, the relevant standard is <em>29CFR Part 1917.154 Compressed Air</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1917/1917.154\" target=\"_blank\" title=\"29CFR Part 1917.154 Compressed Air\"><strong>Click</strong></a> for OSHA website link.</li><li>For Construction, the relevant standard is <em>29CFR Part 1926.302(b) Pneumatic Power Tools</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.302\" target=\"_blank\" title=\"29CFR Part 1926.302(b) Pneumatic Power Tools\"><strong>Click</strong></a> for OSHA website link.</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_tGLDGF",
+        "collapsible_row_a9Nn9R",
+        "collapsible_row_fNtifK",
+        "collapsible_row_bVniMV"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "Air Gun FAQ",
+        "heading": "Safety",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "e60ded08-2eb1-4fed-a7b1-52b4baf52cb2",
     "8240f399-2672-40dd-8abb-e02fa98a6c81",
-    "tab_faq_section_dqLFQc"
+    "tab_faq_section_dqLFQc",
+    "collapsible_content_PzxX7n",
+    "collapsible_content_fQ4qPt"
   ]
 }
