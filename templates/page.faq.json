@@ -1596,6 +1596,31 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_try8q8": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7BUw73": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>See our <a href=\"https://cdn.shopify.com/s/files/1/2656/7586/files/POWERQUAD_OPERATING_INSTRUCTIONS_v10.pdf?v=1715958123\" target=\"_blank\" title=\"PowerQUAD™ Operating Instructions\"><strong>PowerQUAD™ Operating Instructions Manual</strong></a> for more information.</h2>"
+          }
+        }
+      },
+      "block_order": [
+        "text_7BUw73"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
@@ -1609,6 +1634,7 @@
     "collapsible_content_nyAE6p",
     "collapsible_content_36xEED",
     "collapsible_content_baLFjG",
-    "collapsible_content_with_image_KPYaik"
+    "collapsible_content_with_image_KPYaik",
+    "rich_text_try8q8"
   ]
 }
