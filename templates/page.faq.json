@@ -1004,13 +1004,53 @@
             "row_content": "<p>Yes. <em>Shipyards, Marine Terminals</em> and <em>Construction</em> are industries where additional standards apply regarding the use of compressed air and pneumatic tools.</p><ul><li>For Shipyards, the relevant standard is <em>29CFR Part 1915.131 General Precautions</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1915/1915.131\" target=\"_blank\" title=\"29CFR Part 1915.131 General Precautions\"><strong>Click</strong></a> for OSHA website link.</li><li>For Marine Terminals, the relevant standard is <em>29CFR Part 1917.154 Compressed Air</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1917/1917.154\" target=\"_blank\" title=\"29CFR Part 1917.154 Compressed Air\"><strong>Click</strong></a> for OSHA website link.</li><li>For Construction, the relevant standard is <em>29CFR Part 1926.302(b) Pneumatic Power Tools</em>. <a href=\"https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.302\" target=\"_blank\" title=\"29CFR Part 1926.302(b) Pneumatic Power Tools\"><strong>Click</strong></a> for OSHA website link.</li></ul>",
             "page": ""
           }
+        },
+        "collapsible_row_exchcU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can Guardair safety air guns help meet the OSHA standard for noise?",
+            "icon": "check_mark",
+            "row_content": "<p>While occupational noise can be generated from a wide variety of sources, the use of a low noise safety air gun can be an important component in moving towards noise compliance. Guardair safety air guns featuring WhisperJet and QuietForce nozzles provide proprietary, noise limiting technology. <a href=\"https://guardair.com/pages/osha-compliance-with-guardair-products\" target=\"_blank\" title=\"OSHA Compliance with Guardair Products\"><strong>Click</strong></a> for technical data on Guardair nozzles.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jXXGtL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_jBjKdR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_pWDyUL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_tGLDGF",
         "collapsible_row_a9Nn9R",
         "collapsible_row_fNtifK",
-        "collapsible_row_bVniMV"
+        "collapsible_row_bVniMV",
+        "collapsible_row_exchcU",
+        "collapsible_row_jXXGtL",
+        "collapsible_row_jBjKdR",
+        "collapsible_row_pWDyUL"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
