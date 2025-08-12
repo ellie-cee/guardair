@@ -108,6 +108,7 @@
         },
         "column_7dazHw": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/75LJ006AA_MAIN.jpg",
             "image_link": "",
@@ -119,6 +120,7 @@
         },
         "column_Cr38dW": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/U75LJ006AA2_MAIN_IMAGE.jpg",
             "image_link": "",
