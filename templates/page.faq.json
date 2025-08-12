@@ -1101,18 +1101,18 @@
         "collapsible_row_7M7R94": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What size air line do I need to run my Guardair safety air gun?",
+            "icon": "none",
+            "row_content": "<p>In general, Guardair safety air guns featuring a ¼\" NPT inlets require ¼\" ID or larger air lines. Air guns with a 3/8\" NPT inlets require 3/8\" ID or larger air lines. Air guns with a ¾\" NPT inlet require ¾\" ID or larger air lines. To ensure rated thrust, air lines can always be sized larger than required, but not smaller.</p>",
             "page": ""
           }
         },
         "collapsible_row_QgTMGF": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What about connectors and fittings?",
+            "icon": "none",
+            "row_content": "<p>Be sure that fittings and/or connectors do not restrict the air flow in any manner. Use fittings that are rated the same size, or larger, for a given air line size. Where recommended use Guardair High Flow connectors.</p>",
             "page": ""
           }
         }
