@@ -238,6 +238,27 @@
       "default": "inline-richtext",
       "label": "Font Style"
     },
+  {
+      "type": "checkbox",
+      "id": "pdesc",
+      "default": false,
+      "label": "Show Product Description"
+    },  
+     {
+      "type": "range",
+      "id": "pdesc_shorten",
+      "min": 0,
+      "max": 2,
+      "step": 1,
+      "label": "Trim Description to X sentences.  0 for full.",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "alt_desc",
+      "label": "Override product description when metafield present",
+      "info": "product.metafields.custom.grid_description"
+    },    
     {
       "type": "checkbox",
       "id": "alt_image",
@@ -301,27 +322,7 @@
       "label": "Image Vertical Alignment",
       "info":"Only used for Side by Side Layout"
     },    
-  {
-      "type": "checkbox",
-      "id": "pdesc",
-      "default": false,
-      "label": "Show Product Description"
-    },  
-     {
-      "type": "range",
-      "id": "pdesc_shorten",
-      "min": 0,
-      "max": 2,
-      "step": 1,
-      "label": "Trim Description to X sentences.  0 for full.",
-      "default": 0
-    },
-    {
-      "type": "checkbox",
-      "id": "alt_desc",
-      "label": "Override product description when metafield present",
-      "info": "product.metafields.custom.grid_description"
-    },
+ 
       
      
     {
