@@ -904,6 +904,17 @@
         "padding_bottom": 24
       }
     },
+    "subcollections_with_anchor_XtrhiP": {
+      "type": "subcollections-with-anchor",
+      "name": "YWM Subcollections - Anchor",
+      "settings": {
+        "collection_list": [],
+        "toolbar_bg": "",
+        "tab_bg": "",
+        "toolbar_font": "",
+        "custom_class": ""
+      }
+    },
     "collapsible_content_PzxX7n": {
       "type": "collapsible-content",
       "blocks": {
@@ -962,6 +973,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "custom_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1067,6 +1079,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "custom_class": "air-gun-faq",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1199,6 +1212,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "custom_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1311,6 +1325,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "custom_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1346,6 +1361,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "custom_class": "pneumatic-faq",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1428,6 +1444,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "custom_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1596,6 +1613,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
+        "custom_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1623,17 +1641,6 @@
         "padding_top": 40,
         "padding_bottom": 52,
         "anchor_id": ""
-      }
-    },
-    "subcollections_with_anchor_XtrhiP": {
-      "type": "subcollections-with-anchor",
-      "name": "YWM Subcollections - Anchor",
-      "settings": {
-        "collection_list": [],
-        "toolbar_bg": "",
-        "tab_bg": "",
-        "toolbar_font": "",
-        "custom_class": ""
       }
     }
   },
