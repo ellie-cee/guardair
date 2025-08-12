@@ -1009,7 +1009,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How can Guardair safety air guns help meet the OSHA standard for noise?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>While occupational noise can be generated from a wide variety of sources, the use of a low noise safety air gun can be an important component in moving towards noise compliance. Guardair safety air guns featuring WhisperJet and QuietForce nozzles provide proprietary, noise limiting technology. <a href=\"https://guardair.com/pages/osha-compliance-with-guardair-products\" target=\"_blank\" title=\"OSHA Compliance with Guardair Products\"><strong>Click</strong></a> for technical data on Guardair nozzles.</p>",
             "page": ""
           }
@@ -1017,27 +1017,27 @@
         "collapsible_row_jXXGtL": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is it necessary to turn my air compressor down to 30 psi to meet OSHA Standard 29CFR Part 1910.242 (b) relating to output pressure?",
+            "icon": "none",
+            "row_content": "<p>No. This is popular misconception and is not necessary for compliance. To meet this requirement, use an air gun that is properly engineered. All Guardair safety air guns meet this standard.</p>",
             "page": ""
           }
         },
         "collapsible_row_jBjKdR": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is it permissible to tape an air gun trigger down (\"always on mode\") to provide constant air flow?",
+            "icon": "none",
+            "row_content": "<p>While the OSHA regulations do not specifically prohibit this practice, Guardair does not recommend doing so. Disabling the \"dead-man\" feature inherent with the trigger mechanism could result in the air tool whipping around and causing serious injury.</p>",
             "page": ""
           }
         },
         "collapsible_row_pWDyUL": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "What is the advantage of Guardair safety air guns versus straight pipes?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Safety air guns offer numerous advantages over straight pipes.</p><ol><li>First, straight pipes are inefficient as they use significantly more compressed air to produce the same amount of thrust versus a properly engineered safety air gun.</li><li>Second, straight pipes are often regulated with a ball valve which does not include the \"dead-man\" feature inherent with the trigger mechanism of a safety air gun.</li><li>Third, straight pipes are not tools designed with ergonomic features thus over time introduce operator fatigue. Finally, straight pipes are illegal and dangerous because they do not meet the OSHA standard limiting output pressure to less than 30 psi when dead-ended.</li></ol>",
             "page": ""
           }
         }
