@@ -132,6 +132,7 @@
         },
         "column_C7thbA": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GA4404S_MAIN_IMAGE.jpg",
             "image_link": "",
@@ -143,6 +144,7 @@
         },
         "column_cCawkH": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-corporation-force-5-safety-air-gun-24-inch-with-venturi-nozzle-f5024aa_f891c3f0-74da-4ba6-bedb-a74fddcefd15.jpg",
             "image_link": "",
