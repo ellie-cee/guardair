@@ -9,7 +9,7 @@
             {% if settings.animations_reveal_on_scroll %}
               data-cascade style="--animation-order: {{ forloop.index }};"
             {% endif %}
-          >{{ section.settings.alt_desc }}
+          >
             <div class="multicolumn-card content-container grid__card grid__image--{{ section.settings.image_width }}">
               {%- if product.featured_image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
