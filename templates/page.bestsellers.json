@@ -85,26 +85,10 @@
             "product": "personnel-cleaning-station-5-5-gallon-vacuum"
           }
         },
-        "column_xHfP3n": {
-          "type": "column",
+        "product_AgRxTB": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/CS3000_MAIN_IMAGE.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/personnel-cleaning-station-5-5-gallon-vacuum\" title=\"Personnel Cleaning Station 5.5 Gallon Vacuum\">Personnel Cleaning Station</a>",
-            "text": "<p>The Personnel Cleaning Station pairs an on-demand air-agitator brush attachment with a high-efficiency pneumatic vacuum</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_G4UAWG": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/guardair-corporation-osha-compliance-kit.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/osha-compliance-kit\" title=\"OSHA Compliance Safety Kit\">OSHA Compliance Kit</a>",
-            "text": "<p>With this compliance kit, you’ll be well on your way towards meeting OSHA Standards when cleaning with compressed air in your facility.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "osha-compliance-kit"
           }
         },
         "column_7dazHw": {
@@ -226,6 +210,30 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_xHfP3n": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/CS3000_MAIN_IMAGE.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/personnel-cleaning-station-5-5-gallon-vacuum\" title=\"Personnel Cleaning Station 5.5 Gallon Vacuum\">Personnel Cleaning Station</a>",
+            "text": "<p>The Personnel Cleaning Station pairs an on-demand air-agitator brush attachment with a high-efficiency pneumatic vacuum</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G4UAWG": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-osha-compliance-kit.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/osha-compliance-kit\" title=\"OSHA Compliance Safety Kit\">OSHA Compliance Kit</a>",
+            "text": "<p>With this compliance kit, you’ll be well on your way towards meeting OSHA Standards when cleaning with compressed air in your facility.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -240,8 +248,7 @@
         "product_9LJFXk",
         "product_6drTbm",
         "product_cpEDTt",
-        "column_xHfP3n",
-        "column_G4UAWG",
+        "product_AgRxTB",
         "column_7dazHw",
         "column_Cr38dW",
         "column_C7thbA",
@@ -251,7 +258,9 @@
         "column_9iMXeA",
         "column_biUe4F",
         "column_9qki4D",
-        "column_PxUrTm"
+        "column_PxUrTm",
+        "column_xHfP3n",
+        "column_G4UAWG"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px;}",
@@ -262,7 +271,7 @@
         "a {color: #002395;}"
       ],
       "settings": {
-        "block_style": "side",
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
@@ -270,14 +279,14 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
-        "ptitle_fix": "basic",
+        "ptitle_fix": "none",
         "pdesc": true,
-        "pdesc_shorten": 2,
-        "alt_desc": true,
-        "alt_image": true,
+        "pdesc_shorten": 1,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
         "color_scheme": "scheme-1",
