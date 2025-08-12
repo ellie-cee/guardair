@@ -75,7 +75,7 @@
                 {%- endif -%}
                 {%- if product.description != blank and section.settings.pdesc -%}
                     {% assign desc_parts = product.description | split: '.' %}
-                    {% if section.settings.alt_desc != '' %}{% assign alt_text = product.metafields.custom.grid_description | metafield_text %}{% assign alt_text = alt_text | replace: '&#39;', "'" %}{% assign alt_text = alt_text | replace: '&quot;', '"' %}{% assign alt_text = alt_text | replace: '&amp;', '&' %}
+                    {% if section.settings.alt_desc == true and product.metafields.custom.grid_description != '' %}{% assign alt_text = product.metafields.custom.grid_description | metafield_text %}{% assign alt_text = alt_text | replace: '&#39;', "'" %}{% assign alt_text = alt_text | replace: '&quot;', '"' %}{% assign alt_text = alt_text | replace: '&amp;', '&' %}
                           <div class="rte">{{ alt_text }}</div>
                     {% elsif section.settings.pdesc_shorten == 1 and desc_parts %}
                           <div class="rte">{{ desc_parts[0] }}.</div>
