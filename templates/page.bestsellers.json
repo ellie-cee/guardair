@@ -31,26 +31,16 @@
             "product": "ultra-u75lj-safety-air-gun-6-w-short-trigger"
           }
         },
-        "column_C7thbA": {
-          "type": "column",
+        "product_3kbA3Q": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/GA4404S_MAIN_IMAGE.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/palmjet-ga44-safety-air-gun-4-straight\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Straight\">PalmJet® Safety Air Gun</a>",
-            "text": "<p>The most advanced, thumb-switch style air gun on the market, the PalmJet® features an ergonomic handle and precision volume control.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "palmjet-ga44-safety-air-gun-4-straight"
           }
         },
-        "column_cCawkH": {
-          "type": "column",
+        "product_w6ddNy": {
+          "type": "product",
           "settings": {
-            "image": "shopify://shop_images/guardair-corporation-force-5-safety-air-gun-24-inch-with-venturi-nozzle-f5024aa_f891c3f0-74da-4ba6-bedb-a74fddcefd15.jpg",
-            "image_link": "",
-            "title": "<a href=\"/products/force-5-f5-safety-air-gun-24\" title=\"Force 5® F5 Safety Air Gun - 24&quot;\">Force 5® Safety Air Gun</a>",
-            "text": "<p>The most powerful air gun on the planet, the Force 5® is designed for heavy-duty industrial and construction cleaning applications.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "force-5-f5-safety-air-gun-24"
           }
         },
         "product_MxgMqH": {
@@ -160,6 +150,30 @@
             "link": ""
           }
         },
+        "column_C7thbA": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/GA4404S_MAIN_IMAGE.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/palmjet-ga44-safety-air-gun-4-straight\" title=\"PalmJet® GA44 Safety Air Gun - 4&quot; Straight\">PalmJet® Safety Air Gun</a>",
+            "text": "<p>The most advanced, thumb-switch style air gun on the market, the PalmJet® features an ergonomic handle and precision volume control.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cCawkH": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/guardair-corporation-force-5-safety-air-gun-24-inch-with-venturi-nozzle-f5024aa_f891c3f0-74da-4ba6-bedb-a74fddcefd15.jpg",
+            "image_link": "",
+            "title": "<a href=\"/products/force-5-f5-safety-air-gun-24\" title=\"Force 5® F5 Safety Air Gun - 24&quot;\">Force 5® Safety Air Gun</a>",
+            "text": "<p>The most powerful air gun on the planet, the Force 5® is designed for heavy-duty industrial and construction cleaning applications.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_iF4tK4": {
           "type": "column",
           "disabled": true,
@@ -176,8 +190,8 @@
       "block_order": [
         "product_nfnCnW",
         "product_hrHHYJ",
-        "column_C7thbA",
-        "column_cCawkH",
+        "product_3kbA3Q",
+        "product_w6ddNy",
         "product_MxgMqH",
         "column_VpyJwr",
         "column_9iMXeA",
@@ -188,6 +202,8 @@
         "column_G4UAWG",
         "column_7dazHw",
         "column_Cr38dW",
+        "column_C7thbA",
+        "column_cCawkH",
         "column_iF4tK4"
       ],
       "custom_css": [
