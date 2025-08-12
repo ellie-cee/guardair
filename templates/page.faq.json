@@ -1536,9 +1536,9 @@
         "collapsible_row_CrJVjX": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Does Guardair also offer HEPA and ULPA filters?",
+            "icon": "none",
+            "row_content": "<p>In addition to offering Standard filters, Guardair offers HEPA and ULPA filters for PowerQUAD™Vacuums.</p>",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -1547,9 +1547,9 @@
         "collapsible_row_nf9Lri": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Why does my PowerQUAD™ vacuum seem to have inadequate suction?",
+            "icon": "none",
+            "row_content": "<p>By far the most common problem is undersized compressed air supply lines, or restrictions due to undersized fittings and/or connectors. Some combination of these two issues often results in inadequate compressed air being supplied to the vacuum. When the vacuum is operating, the pressure gage should read between 80 and 90 psi. If the pressure is lower, check for compressed air restrictions. If no restrictions are found, consider changing out the injectors. See the CHANGING INJECTOR NOZZLES section of the <a href=\"https://cdn.shopify.com/s/files/1/2656/7586/files/POWERQUAD_OPERATING_INSTRUCTIONS_v10.pdf?v=1715958123\" target=\"_blank\" title=\"PowerQUAD<sup>™</sup> Operating Instructions\"><strong>operating instructions</strong></a>. In addition, other things to look for include low plant compressed air pressure (less than 80 psi), a dirty filter, a clogged vacuum hose, or a leaky vacuum head gasket.</p>",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
