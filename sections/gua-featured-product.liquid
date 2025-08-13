@@ -506,7 +506,7 @@
                 {% render 'icon-with-text', block: block %}
 
             {%- when 'specifications' -%}
-                {% render 'gua-specifications',product:section.settings.product %}
+                {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product %}
 
 
             {%- endcase -%}
