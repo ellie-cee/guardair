@@ -1552,6 +1552,52 @@
       "id": "product",
       "label": "t:sections.featured-product.settings.product.label"
     },
+{
+      "type": "select",
+      "id": "ptitle_fix",
+      "label": "Clean Product Title Filter",
+       "options": [
+        {
+          "value": "none",
+          "label": "Leave title intact"
+        },
+        {   
+          "value": "basic_series",
+          "label": "Basic with Series"
+        },
+        {
+          "value": "specific_series",
+          "label": "Specific with Series"
+        },
+        {
+          "value": "basic",
+          "label": "Basic"
+        },  
+        {
+          "value": "specific",
+          "label": "Specific"
+        },              
+        {
+          "value": "slice",
+          "label": "Split on Dash"
+        },
+        {
+          "value": "move_model",
+          "label": "Move Model to Beginning"
+        },
+        {
+          "value": "remove_model",
+          "label": "Remove Model"
+        }         
+      ],
+      "default": "none"
+    },       
+    {
+      "type": "checkbox",
+      "id": "alt_image",
+      "label": "Override product image when metafield present",
+      "info": "product.metafields.custom.block_product_image"
+    },           
     {
       "type": "color_scheme",
       "id": "color_scheme",
