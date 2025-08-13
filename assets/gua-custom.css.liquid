@@ -104,6 +104,12 @@ h3.blue-subtitle, h3.blue-subtitle a {color: #002395;text-decoration:none;}
       body.template-index .v2-header__nav-menu.gradient {background:{{ accent_gradient2 | replace:'rgb','rgba' | replace:')',',0.75)' }};}
       body.template-index .section-v2-header.scrolled-past-header .v2-header__nav-menu.gradient {background:{{ accent_gradient2 }};}
  
+{% comment %} --- SPECIFICATIONS --- {% endcomment %}
+table.specifications-table {padding:15px 0px;}
+table.specifications-table, body.template-product table.specifications-table td {text-align:center;line-height:1.2;padding:4px;}
+table.specifications-table tr:nth-child(even) {background:#fafafa;}
+table.specifications-table tr.active, body.template-product table.specifications-table tr.active a {background:{{ accent_color1 }};color:{{ accent_color1_text }};}
+table.specifications-table a {color:#333;font-weight:600;text-decoration:none;}
 
 
 {% comment %} --- PRODUCT --- {% endcomment %}
