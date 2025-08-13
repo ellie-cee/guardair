@@ -122,7 +122,7 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
-        "ptitle_fix": "none",
+        "ptitle_fix": "basic",
         "alt_image": false,
         "color_scheme": "",
         "secondary_background": false,
