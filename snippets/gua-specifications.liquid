@@ -258,7 +258,7 @@
                           {% assign handle = entry.handle %}
                           {% assign currentProduct = all_products[handle] %}       
                           {% assign currentVariant = currentProduct.selected_or_first_available_variant %}                        
-                <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}rr">
+                <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %} -{{highlight }}">
                   {% if show_part_number == true %}
                     <td>
                       <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
