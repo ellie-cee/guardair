@@ -166,7 +166,16 @@
               {%- when 'title' -%}
                 <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                   {%- if product.title != blank -%}
-                    {{ product.title | escape }}
+                        {% case section.settings.ptitle_fix %}
+                            {% when 'none' %}{{ product.title }}
+                            {% when 'basic_series' %}{% render 'gua-title_v3',product:product, text_style:'basic_series' %}
+                            {% when 'specific_series' %}{% render 'gua-title_v3',product:product, text_style:'specific_series' %}
+                            {% when 'basic' %}{% render 'gua-title_v3',product:product, text_style:'basic' %}
+                            {% when 'specific' %}{% render 'gua-title_v3',product:product, text_style:'specific' %}                                  
+                            {% when 'slice' %}{% render 'gua-title_v2',title:product.title %}                                 
+                            {% when 'move_model' %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}                          
+                            {% when 'remove_model' %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}
+                        {% endcase %}
                   {%- else -%}
                     {{ 'onboarding.product_title' | t }}
                   {%- endif -%}
