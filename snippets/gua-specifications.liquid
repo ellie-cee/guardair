@@ -17,6 +17,7 @@
 {% endcomment %}
 {% assign p_entries = product.metafields.custom.linked_products %}
  {% assign currentProduct = product %}
+ {{ product.title }}
       {% for entry in p_entries %}
         {% assign handle = entry.handle %}
                 <ul>
