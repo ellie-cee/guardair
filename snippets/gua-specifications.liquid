@@ -51,7 +51,25 @@
                 <ol>{{ entry.system.id }}</ol>  
                 </ul>
       {% endfor %}  
+{% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 
+{% if linked_products_metaobject.products %}
+  <div class="linked-products">
+    <h3>Related Products:</h3>
+    
+    {% for product_gid in linked_products_metaobject.products %}
+      {% assign linked_product = product_gid %}
+      
+      {% if linked_product.title %}
+        <div class="linked-product-item">
+          <h4>{{ linked_product.title }}</h4>
+          <p>{{ linked_product.price | money }}</p>
+          <a href="{{ linked_product.url }}">View Product</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
 
 {% assign show_part_number = false %}
 {% assign show_spec = false %}
