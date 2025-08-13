@@ -29,10 +29,46 @@
             "link_label": "View",
             "link": "#nyloncoiledairhoseassembly"
           }
+        },
+        "column_TyLqVU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/download1.webp",
+            "image_link": "",
+            "title": "Polyurethane Air Hose Assembly",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_X8xPnH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/download2.webp",
+            "image_link": "",
+            "title": "General Purpose Air Hose Assembly",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_M37Byw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/download4.webp",
+            "image_link": "",
+            "title": "Static Conductive Air Hose Assembly",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_VdebKL"
+        "column_VdebKL",
+        "column_TyLqVU",
+        "column_X8xPnH",
+        "column_M37Byw"
       ],
       "name": "GUA Multicolumns",
       "settings": {
@@ -42,7 +78,7 @@
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "half",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_valign": "start",
         "ptitle_fix": "none",
         "pdesc": false,
