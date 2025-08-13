@@ -58,7 +58,7 @@
               <div class="multicolumn-card__info grid__info">
                 {%- if product.title != blank -%}
                   <h3 class="{{ section.settings.font_style }}">
-                    <a href="{{ product.url }}" class="{{ section.settings.ptitle_fix }}">
+                    <a href="{{ product.url }}" class="{{ section.settings.ptitle_fix }} {{ section.settings.font_style }}">
                         {% case section.settings.ptitle_fix %}
                             {% when 'none' %}{{ product.title }}
                             {% when 'basic_series' %}{% render 'gua-title_v3',product:product, text_style:'basic_series' %}
