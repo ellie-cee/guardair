@@ -626,6 +626,11 @@
   endif
 -%}
 
+
+    {% if section.settings.specifications %}
+                {% render 'gua-specifications',product:section.settings.product,products:block.settings.products,option_name:block.settings.option_name %}
+    {% endif %}
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org/",
@@ -1674,6 +1679,12 @@
     },
     {
       "type": "checkbox",
+      "id": "enable_video_looping",
+      "default": false,
+      "label": "t:sections.featured-product.settings.enable_video_looping.label"
+    },    
+    {
+      "type": "checkbox",
       "id": "hide_variants",
       "default": false,
       "label": "t:sections.main-product.settings.hide_variants.label"
@@ -1688,11 +1699,28 @@
       "label":"Unique section id"
     }, 
     {
-      "type": "checkbox",
-      "id": "enable_video_looping",
-      "default": false,
-      "label": "t:sections.featured-product.settings.enable_video_looping.label"
-    },
+      "type": "header",
+      "content": "Specifications",
+    },          
+     {
+          "type": "text",
+           "id":"specifications_heading",
+          "label": "Specifications Heading",
+          "default": "Specifications"       
+     },
+ 
+        {
+          "type": "product_list",          
+          "id": "products",
+          "label": "Products",
+          "info": "Map to Linked Products",
+        },
+        {
+          "id": "option_name",
+          "label": "Option Name",
+          "type": "text",
+          "default": "Extension Length"
+        },  
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
