@@ -36,7 +36,7 @@
 {% endif %}
 
 
-{% assign product_list =  linked_products_metaobject.product %}
+{% assign product_list =  linked_products_metaobject.product | split:',' %}
 
 
 {%  if product_list or 1 == 1 %} list
