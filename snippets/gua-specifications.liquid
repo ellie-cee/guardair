@@ -16,8 +16,10 @@
       {% endfor %}  
 {% endcomment %}
 {% assign p_entries = product.metafields.custom.linked_products %}
-{{p_entries | json }}
- {{ product.title }}
+{{ p_entries.id }}<br/>
+{{ p_entries.value }}<br/>
+{{ p_entries.title }}<br/>
+ {{ product.title }}<br/>
       {% for entry in p_entries %}
         {% assign handle = entry.handle %}
                 <ul>
