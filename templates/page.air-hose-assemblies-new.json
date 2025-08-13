@@ -486,6 +486,77 @@
         "img": "shopify://shop_images/download_big4.png",
         "content-padding_top": 36
       }
+    },
+    "gua_featured_product_fBeExM": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "text_Q6Wzig": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_EzrpYx": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_9AFAUE": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_Dzxb7y": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_QUQPrB": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_zgjaMw": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_F33VWN": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q6Wzig",
+        "title_EzrpYx",
+        "price_9AFAUE",
+        "variant_picker_Dzxb7y",
+        "quantity_selector_QUQPrB",
+        "buy_buttons_zgjaMw",
+        "share_F33VWN"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "unique_id": "",
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -495,6 +566,7 @@
     "f679ab33-4de8-44ee-ab26-1c833a95a70b",
     "5861a81f-725c-4a94-b00d-f41f55b4d298",
     "7132303b-23b4-4a76-8be5-6a78c739ec7b",
-    "9b2bf8d3-78a8-4d75-931a-1c3d2cc7bca9"
+    "9b2bf8d3-78a8-4d75-931a-1c3d2cc7bca9",
+    "gua_featured_product_fBeExM"
   ]
 }
