@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -7,34 +16,81 @@
         "padding_bottom": 0
       }
     },
+    "gua_multicolumn_EYfL86": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_VdebKL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/download_93841237-666d-470a-a4af-815ecbd8969a.webp",
+            "image_link": "",
+            "title": "Nylon Coiled Air Hose Assembly",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_VdebKL"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
     "1273f009-3d5f-4736-a6f6-2d588f05b3b7": {
       "type": "air-hose-assemblies-toplink",
       "blocks": {
         "d02c582c-13f6-4f85-8518-566ffdf674b1": {
           "type": "block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/download_93841237-666d-470a-a4af-815ecbd8969a.webp",
+            "img": "shopify://shop_images/download_93841237-666d-470a-a4af-815ecbd8969a.webp",
             "heading": "Nylon Coiled Air Hose Assembly"
           }
         },
         "b122f090-a472-4c0f-8338-7416cd266652": {
           "type": "block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/download1.webp",
+            "img": "shopify://shop_images/download1.webp",
             "heading": "Polyurethane Air Hose Assembly"
           }
         },
         "ef3f87d5-861e-4b1a-a5b7-1f1c4a33db32": {
           "type": "block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/download2.webp",
+            "img": "shopify://shop_images/download2.webp",
             "heading": "General Purpose Air Hose Assembly"
           }
         },
         "73cb7483-47fc-496f-ae1e-e818371081bc": {
           "type": "block",
           "settings": {
-            "img": "shopify:\/\/shop_images\/download4.webp",
+            "img": "shopify://shop_images/download4.webp",
             "heading": "Static Conductive Air Hose Assembly"
           }
         }
@@ -58,7 +114,7 @@
           "settings": {
             "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
             "pressure_text": "250 psi",
-            "fittings": "1\/4\" MNPT x 1\/4\" MNPT"
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
           }
         },
         "block_RteqUE": {
@@ -66,7 +122,7 @@
           "settings": {
             "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-25",
             "pressure_text": "250 psi",
-            "fittings": "1\/4\" MNPT x 1\/4\" MNPT"
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
           }
         },
         "block_k66KXE": {
@@ -74,7 +130,7 @@
           "settings": {
             "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-50",
             "pressure_text": "250 psi",
-            "fittings": "1\/4\" MNPT x 1\/4\" MNPT"
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
           }
         },
         "block_6JjTzT": {
@@ -82,7 +138,7 @@
           "settings": {
             "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-12",
             "pressure_text": "200 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         },
         "block_gtTUwe": {
@@ -90,7 +146,7 @@
           "settings": {
             "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-25",
             "pressure_text": "200 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         },
         "block_7DdgPe": {
@@ -98,7 +154,7 @@
           "settings": {
             "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-50",
             "pressure_text": "200 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         },
         "block_McREQd": {
@@ -106,7 +162,7 @@
           "settings": {
             "productid": "nylon-coiled-air-hose-assembly-1-2-id-x-25",
             "pressure_text": "150 psi",
-            "fittings": "1\/2\" MNPT x 1\/2\" MNPT"
+            "fittings": "1/2\" MNPT x 1/2\" MNPT"
           }
         }
       },
@@ -122,8 +178,8 @@
       "settings": {
         "sectionid": "NYLON COILED AIR HOSE ASSEMBLY",
         "heading": "Nylon Coiled Air Hose Assembly",
-        "text": "<p>Lightweight, tough and abrasion resistant, nylon coiled air hose combines flexibility with excellent dimensional stability. Acting as a spring, the coiled hose expands in length as required by the operator, then retracts when released to the original coiled dimensions. Eliminates the need for bulky hose reels. Minimizes clutter and hose dragging.<\/p>",
-        "img": "shopify:\/\/shop_images\/download_big.webp",
+        "text": "<p>Lightweight, tough and abrasion resistant, nylon coiled air hose combines flexibility with excellent dimensional stability. Acting as a spring, the coiled hose expands in length as required by the operator, then retracts when released to the original coiled dimensions. Eliminates the need for bulky hose reels. Minimizes clutter and hose dragging.</p>",
+        "img": "shopify://shop_images/download_big.webp",
         "content-padding_top": 0
       }
     },
@@ -135,7 +191,7 @@
           "settings": {
             "productid": "polyurethane-coiled-air-hose-assembly-1-4-id-x-12",
             "pressure_text": "125 psi",
-            "fittings": "1\/4\" MNPT x 1\/4\" MNPT"
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
           }
         },
         "block_3yi3zr": {
@@ -143,7 +199,7 @@
           "settings": {
             "productid": "polyurethane-coiled-air-hose-assembly-1-4-id-x-25",
             "pressure_text": "125 psi",
-            "fittings": "1\/4\" MNPT x 1\/4\" MNPT"
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
           }
         },
         "block_JyVUfJ": {
@@ -151,7 +207,7 @@
           "settings": {
             "productid": "polyurethane-coiled-air-hose-assembly-3-8-id-x-12",
             "pressure_text": "125 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         },
         "block_x66ye9": {
@@ -159,7 +215,7 @@
           "settings": {
             "productid": "polyurethane-coiled-air-hose-assembly-3-8-id-x-25",
             "pressure_text": "125 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         }
       },
@@ -172,8 +228,8 @@
       "settings": {
         "sectionid": "POLYURETHANE AIR HOSE ASSEMBLY",
         "heading": "Polyurethane Air Hose Assembly",
-        "text": "<p>Finest polyurethane air hose available on the market. Super flexible, 100% kink proof, with low tension retractability. Withstands tough industrial environments while maintaining resiliency. Soft polyurethane will not scratch or mar work surfaces.<\/p>",
-        "img": "shopify:\/\/shop_images\/download_big1.webp",
+        "text": "<p>Finest polyurethane air hose available on the market. Super flexible, 100% kink proof, with low tension retractability. Withstands tough industrial environments while maintaining resiliency. Soft polyurethane will not scratch or mar work surfaces.</p>",
+        "img": "shopify://shop_images/download_big1.webp",
         "content-padding_top": 36
       }
     },
@@ -185,7 +241,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-3-8-id-x-12",
             "pressure_text": "250 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         },
         "block_kP3TxV": {
@@ -193,7 +249,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-3-8-id-x-25",
             "pressure_text": "250 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         },
         "block_MTxtVF": {
@@ -201,7 +257,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-3-8-id-x-50",
             "pressure_text": "250 psi",
-            "fittings": "3\/8\" MNPT x 3\/8\" MNPT"
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
           }
         },
         "block_KV4d8k": {
@@ -209,7 +265,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-1-2-id-x-12",
             "pressure_text": "250 psi",
-            "fittings": "1\/2\" MNPT x 1\/2\" MNPT"
+            "fittings": "1/2\" MNPT x 1/2\" MNPT"
           }
         },
         "block_r4zGyA": {
@@ -217,7 +273,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-1-2-id-x-20",
             "pressure_text": "250 psi",
-            "fittings": "1\/2\" MNPT x 1\/2\" MNPT"
+            "fittings": "1/2\" MNPT x 1/2\" MNPT"
           }
         },
         "block_cPkBfP": {
@@ -225,7 +281,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-1-2-id-x-25",
             "pressure_text": "200 psi",
-            "fittings": "1\/2\" MNPT Swivel x 1\/2\" MNPT Swivel"
+            "fittings": "1/2\" MNPT Swivel x 1/2\" MNPT Swivel"
           }
         },
         "block_dtKJMY": {
@@ -233,7 +289,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-1-2-id-x-50",
             "pressure_text": "250 psi",
-            "fittings": "1\/2\" MNPT x 1\/2\" MNPT"
+            "fittings": "1/2\" MNPT x 1/2\" MNPT"
           }
         },
         "block_jJGirE": {
@@ -249,7 +305,7 @@
           "settings": {
             "productid": "general-purpose-air-hose-assembly-3-4-id-x-25",
             "pressure_text": "200 psi",
-            "fittings": "3\/4\" MNPT Swivel x 3\/4\" MNPT Swivel"
+            "fittings": "3/4\" MNPT Swivel x 3/4\" MNPT Swivel"
           }
         },
         "block_eJz633": {
@@ -294,8 +350,8 @@
       "settings": {
         "sectionid": "GENERAL PURPOSE AIR HOSE ASSEMBLY",
         "heading": "General Purpose Air Hose Assembly",
-        "text": "<p>Tough, abrasion- and ozone-resistant, heavy-duty rubber air hose supplies compressed air to Guardair safety air guns and vacuums. Manufactured by Texcel and tested to industry standards.<\/p>",
-        "img": "shopify:\/\/shop_images\/download_big2.jpg",
+        "text": "<p>Tough, abrasion- and ozone-resistant, heavy-duty rubber air hose supplies compressed air to Guardair safety air guns and vacuums. Manufactured by Texcel and tested to industry standards.</p>",
+        "img": "shopify://shop_images/download_big2.jpg",
         "content-padding_top": 36
       }
     },
@@ -307,7 +363,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-3-8-id-x-12",
             "pressure_text": "200 psi",
-            "fittings": "3\/8\" MNPT Swivel x 3\/8\" MNPT Swivel"
+            "fittings": "3/8\" MNPT Swivel x 3/8\" MNPT Swivel"
           }
         },
         "block_N9EDxK": {
@@ -315,7 +371,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-3-8",
             "pressure_text": "300 psi",
-            "fittings": "3\/8\" Universal Coupler x 3\/8\" MNPT Swivel Fitting"
+            "fittings": "3/8\" Universal Coupler x 3/8\" MNPT Swivel Fitting"
           }
         },
         "block_7kNwKd": {
@@ -323,7 +379,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-3-8-id-x-50",
             "pressure_text": "200 psi",
-            "fittings": "3\/8\" MNPT Swivel x 3\/8\" MNPT Swivel"
+            "fittings": "3/8\" MNPT Swivel x 3/8\" MNPT Swivel"
           }
         },
         "block_VJRtj9": {
@@ -331,7 +387,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-1-2-id-x-12",
             "pressure_text": "200 psi",
-            "fittings": "1\/2\" MNPT Swivel x 1\/2\" MNPT Swivel"
+            "fittings": "1/2\" MNPT Swivel x 1/2\" MNPT Swivel"
           }
         },
         "block_7RhrxX": {
@@ -339,7 +395,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-1-2-id-x-20",
             "pressure_text": "300 psi",
-            "fittings": "3\/8\" Universal Coupler x 3\/8\" MNPT Swivel Fitting"
+            "fittings": "3/8\" Universal Coupler x 3/8\" MNPT Swivel Fitting"
           }
         },
         "block_XL7WPm": {
@@ -347,7 +403,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-1-2",
             "pressure_text": "200 psi",
-            "fittings": "1\/2\" MNPT Swivel x 1\/2\" MNPT Swivel"
+            "fittings": "1/2\" MNPT Swivel x 1/2\" MNPT Swivel"
           }
         },
         "block_qWVyth": {
@@ -355,7 +411,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-1-2-id-x-50",
             "pressure_text": "200 psi",
-            "fittings": "1\/2\" MNPT Swivel x 1\/2\" MNPT Swivel"
+            "fittings": "1/2\" MNPT Swivel x 1/2\" MNPT Swivel"
           }
         },
         "block_TnpVhk": {
@@ -363,7 +419,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-3-4",
             "pressure_text": "300 psi",
-            "fittings": "3\/8\" Universal Coupler x 3\/8\" MNPT Swivel Fitting"
+            "fittings": "3/8\" Universal Coupler x 3/8\" MNPT Swivel Fitting"
           }
         },
         "block_HfR6jU": {
@@ -371,7 +427,7 @@
           "settings": {
             "productid": "static-conductive-air-hose-assembly-3-4-id-x-50",
             "pressure_text": "200 psi",
-            "fittings": "3\/4\" MNPT Swivel x 3\/4\" MNPT Swivel"
+            "fittings": "3/4\" MNPT Swivel x 3/4\" MNPT Swivel"
           }
         }
       },
@@ -389,14 +445,15 @@
       "settings": {
         "sectionid": "STATIC CONDUCTIVE AIR HOSE ASSEMBLY",
         "heading": "Static Conductive Air Hose Assembly",
-        "text": "<p>Ideal for supplying compressed air to Guardair NED and ATEX Vacuums in applications where static electricity is of concern. Reinforced rubber provides excellent ozone resistance and long-term durability. Manufactured and tested to industry standards.<\/p>",
-        "img": "shopify:\/\/shop_images\/download_big4.png",
+        "text": "<p>Ideal for supplying compressed air to Guardair NED and ATEX Vacuums in applications where static electricity is of concern. Reinforced rubber provides excellent ozone resistance and long-term durability. Manufactured and tested to industry standards.</p>",
+        "img": "shopify://shop_images/download_big4.png",
         "content-padding_top": 36
       }
     }
   },
   "order": [
     "main",
+    "gua_multicolumn_EYfL86",
     "1273f009-3d5f-4736-a6f6-2d588f05b3b7",
     "f679ab33-4de8-44ee-ab26-1c833a95a70b",
     "5861a81f-725c-4a94-b00d-f41f55b4d298",
