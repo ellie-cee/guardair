@@ -16,6 +16,12 @@
           "type": "title",
           "settings": {}
         },
+        "custom_liquid_pDMckf": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Part Number: {{ product.first_or_selected_variant.sku }}"
+          }
+        },
         "part_number_CKpjqq": {
           "type": "part_number",
           "settings": {
@@ -92,6 +98,7 @@
       },
       "block_order": [
         "title",
+        "custom_liquid_pDMckf",
         "part_number_CKpjqq",
         "description",
         "klaviyo_reviews_average_rating_KHihtJ",
