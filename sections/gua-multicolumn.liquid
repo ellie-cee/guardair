@@ -50,11 +50,11 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-        <h2 class="title {{ section.settings.font_style }} {{ section.settings.heading_size }}">
+        <h2 class="title {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
-          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide {{ section.settings.font_style }}">
+          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
           </a>
         {%- endif -%}
@@ -158,7 +158,7 @@
                 {%- if block.settings.image_link != blank -%}</a>{% else %}</div>{%- endif -%}
 
               {%- endif -%}
-              <div class="multicolumn-card__info grid__info">
+              <div class="multicolumn-card__info grid__info {{ section.settings.font_style }}">
                 {%- if block.settings.title != blank -%}
                   <h3 class="{{ section.settings.font_style }}">{{ block.settings.title }}</h3>
                 {%- endif -%}
