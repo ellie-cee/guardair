@@ -32,16 +32,14 @@
   <p>Group Name: {{ linked_products_metaobject.group_name }}</p>
   <p>Products: {{ linked_products_metaobject.products }}</p>
   <p>Option Name: {{ linked_products_metaobject.option_name }}</p>
-  
-  <!-- Also try accessing by the handle you see -->
-  <p>Handle-based access: {{ linked_products_metaobject['nylon-coiled-air-hose-assembly'] }}</p>
+ 
 {% endif %}
 
 
 {% assign product_list =  linked_products_metaobject.product %}
 
 
-{%  if product_list %} list
+{%  if product_list or 1 == 1 %} list
             {% for field in product_list %}{{ forloop.index }}
                 <!-- Access each field -->
                 <p>{{ field[0] }}: {{ field[1] }}</p>
