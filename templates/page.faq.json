@@ -1649,6 +1649,9 @@
       "block_order": [
         "text_7BUw73"
       ],
+      "custom_css": [
+        "a {color: #03209a;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",
