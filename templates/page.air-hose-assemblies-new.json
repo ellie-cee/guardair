@@ -75,7 +75,7 @@
         "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
-        "font_style": "inline-richtext",
+        "font_style": "plain-with-buttons",
         "description": "",
         "image_width": "half",
         "image_ratio": "square",
