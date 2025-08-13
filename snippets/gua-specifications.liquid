@@ -15,12 +15,12 @@
 </ul>
       {% endfor %}  
 {% endcomment %}
-{% assign p_entries = product.metafields.custom.linked_products %}
+{% assign p_entries = product.metafields.custom.linked_products.value %}
 {{ p_entries.id }}<br/>
 {{ p_entries.value }}<br/>
 {{ p_entries.title }}<br/>
  {{ product.title }}<br/>
-      {% for entry in p_entries.value %}
+      {% for entry in p_entries %}
         {% assign handle = entry.handle %}
                 <ul>
                 {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
