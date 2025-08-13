@@ -15,7 +15,8 @@
 </ul>
       {% endfor %}  
 {% endcomment %}
-{% assign p_entries = product.metafields.custom.linked_products.title %}
+{% assign product_list = product.metafields.custom.linked_products %}
+{% assign p_entries = product_list.value %}
 {{ p_entries.id }}<br/>
 {{ p_entries.value }}<br/>
 {{ p_entries.title }}<br/>
