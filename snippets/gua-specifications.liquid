@@ -20,6 +20,7 @@
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 {% assign specifications_title =  linked_products_metaobject.group_name  | append: ' Specifications' %}
 {% assign specifications_option =  linked_products_metaobject.option_name %}
+{% assign product_list =  linked_products_metaobject.product | split:',' %}
 
 {% if linked_products_metaobject and 1 == 2 %}
   <p>Handle: {{ linked_products_metaobject.system.handle }}</p>
@@ -57,7 +58,7 @@
 
   <p>Products: {{ linked_products_metaobject.products }}</p>
 
-{% if linked_products_metaobject.products %}
+{% if product_list %}
   <div class="linked-products">
     <h3>Related Products:</h3>
     
