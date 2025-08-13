@@ -14,8 +14,24 @@
   <ol>{{ entry.system.id }}</ol>  
 </ul>
       {% endfor %}  
-{% endcomment %}
-{% assign product_list = product.metafields.custom.linked_products %}
+{% endcomment %}ff
+{% assign entry = product.metafields.custom.linked_products %}
+
+      {% for entry in p_entries %}
+        {% assign handle = entry.handle %}
+                <ul>
+                {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
+                <ol>{{ forloop.index }}: {{ entry.title }}</ol>
+                {       <ol>{{ entry.handle }}</ol>
+                <ol>rr{{ currentProduct.title }}</ol>
+                <ol>{{ entry.option_name }}</ol>    
+                <ol>Product ID: {{ product.id }}</ol>       
+                <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
+                <ol>{{ entry.system.handle }}</ol>
+                <ol>{{ entry.system.id }}</ol>  
+                </ul>
+      {% endfor %}  
+
 
 {% assign show_part_number = false %}
 {% assign show_spec = false %}
