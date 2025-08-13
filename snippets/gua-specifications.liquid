@@ -71,7 +71,7 @@ liquid
 
 {% if linked_products_metaobject %}
   <!-- Check if it's actually a metaobject -->
-  <p>Object exists: {{ linked_products_metaobject != blank }}</p>
+  <p>Object exists: {% if linked_products_metaobject != blank %}true{% endif %}</p>
   
   <!-- Try to access common field names -->
   <p>Title field: {{ linked_products_metaobject.title }}</p>
