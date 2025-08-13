@@ -40,7 +40,7 @@
 
 
 {%  if product_list or 1 == 1 %} list
-            {% for field in product_list %}{{ forloop.index }}
+            {% for field in product_list %}{{ forloop.index }}. {{ field }}
                 <!-- Access each field -->
                 <p>{{ field[0] }}: {{ field[1] }}</p>
             {% endfor %}
