@@ -20,7 +20,7 @@
 {{ p_entries.value }}<br/>
 {{ p_entries.title }}<br/>
  {{ product.title }}<br/>
-      {% for entry in p_entries %}
+      {% for entry in p_entries.value %}
         {% assign handle = entry.handle %}
                 <ul>
                 {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
