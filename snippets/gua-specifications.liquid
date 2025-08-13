@@ -20,10 +20,9 @@
 {% assign specifications_title =  linked_products_metaobject.group_name  | append: ' Specifications' %}
 {% assign specifications_option =  linked_products_metaobject.option_name %}
 {% assign product_list =  linked_products_metaobject.products.value %}
-{% if highlight %}
-{% else %}
+{% unless highlight == false %}
     {% assign highlight = true %}
-{% endif %}
+{% endunless %}
 
 {% assign show_part_number = false %}
 {% assign show_spec = false %}
