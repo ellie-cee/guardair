@@ -490,15 +490,17 @@
     "gua_featured_product_fBeExM": {
       "type": "gua-featured-product",
       "blocks": {
-        "custom_liquid_Hd9GKV": {
-          "type": "custom_liquid",
+        "specifications_HVj4Rh": {
+          "type": "specifications",
           "settings": {
-            "custom_liquid": ""
+            "specifications_heading": "Specifications",
+            "products": [],
+            "option_name": "Extension Length"
           }
         }
       },
       "block_order": [
-        "custom_liquid_Hd9GKV"
+        "specifications_HVj4Rh"
       ],
       "name": "GUA Featured Product",
       "settings": {
