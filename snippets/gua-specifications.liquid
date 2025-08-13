@@ -25,14 +25,11 @@
   <p>Group Name: {{ linked_products_metaobject.group_name }}</p>
   <p>Products: {{ linked_products_metaobject.products }}</p>
   <p>Option Name: {{ linked_products_metaobject.option_name }}</p>
- 
+
+    {% assign product_list =  linked_products_metaobject.product | split:',' %}
 {% endif %}
 
-
-{% assign product_list =  linked_products_metaobject.product | split:',' %}
-
-
-{%  if product_list or 1 == 1 %} list
+{%  if product_list %} list
             {% for field in product_list %}{{ forloop.index }}. {{ field }}
                 <!-- Access each field -->
                 <p>{{ field[0] }}: {{ field[1] }}</p>
