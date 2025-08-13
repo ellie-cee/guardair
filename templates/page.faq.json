@@ -904,44 +904,6 @@
         "padding_bottom": 24
       }
     },
-    "ywm_faq_navigation_4eDUYq": {
-      "type": "ywm-faq-navigation",
-      "blocks": {
-        "faq_link_4fnHUN": {
-          "type": "faq_link",
-          "settings": {
-            "link_text": "Air Gun FAQ",
-            "anchor_id": "air-gun-faq"
-          }
-        },
-        "faq_link_YyHJXp": {
-          "type": "faq_link",
-          "settings": {
-            "link_text": "Pneumatic Vacuum FAQ",
-            "anchor_id": "pneumatic-faq"
-          }
-        },
-        "faq_link_tMbiq8": {
-          "type": "faq_link",
-          "disabled": true,
-          "settings": {
-            "link_text": "Product Care",
-            "anchor_id": "product-care"
-          }
-        }
-      },
-      "block_order": [
-        "faq_link_4fnHUN",
-        "faq_link_YyHJXp",
-        "faq_link_tMbiq8"
-      ],
-      "name": "YWM FAQ Navigation",
-      "settings": {
-        "toolbar_bg": "",
-        "tab_bg": "#f3f3f3",
-        "toolbar_font": ""
-      }
-    },
     "collapsible_content_PzxX7n": {
       "type": "collapsible-content",
       "blocks": {
@@ -1477,7 +1439,7 @@
       }
     },
     "collapsible_content_with_image_KPYaik": {
-      "type": "collapsible-content-with-image",
+      "type": "ywm-collapsible-content-with-image",
       "blocks": {
         "collapsible_row_bzthjN": {
           "type": "collapsible_row",
@@ -1676,7 +1638,6 @@
     "e60ded08-2eb1-4fed-a7b1-52b4baf52cb2",
     "8240f399-2672-40dd-8abb-e02fa98a6c81",
     "tab_faq_section_dqLFQc",
-    "ywm_faq_navigation_4eDUYq",
     "collapsible_content_PzxX7n",
     "collapsible_content_fQ4qPt",
     "collapsible_content_h8NTi9",
