@@ -118,6 +118,7 @@
       "blocks": {
         "column_cNqCtf": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-ultra-xtrathrust-u75xt-6-inch-long-trigger-u75xt006aa3-main.jpg",
             "image_link": "",
@@ -127,8 +128,15 @@
             "link": ""
           }
         },
+        "product_ezjjWh": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-u75lj-safety-air-gun-6-w-long-trigger"
+          }
+        },
         "column_QG4UHh": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
             "image_link": "",
@@ -136,6 +144,12 @@
             "text": "<p><a href=\"#\" title=\"#\">WhisperJet® </a>Safety Air Guns deliver powerful cleaning with low-noise operation, ideal for noise-sensitive environments. Featuring a unique nozzle design, they balance safety, noise reduction, and performance.</p>",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_grecwX": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80wj-safety-air-gun"
           }
         },
         "column_e4azRF": {
@@ -147,6 +161,12 @@
             "text": "<p><a href=\"#\" title=\"#\">Classic+®</a> Safety Air Guns combine our most popular design with enhanced safety features for reliable industrial cleaning. Built for durability, they feature OSHA-compliant nozzles and an ergonomic pistol-style grip for safe, powerful performance</p>",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_ejCNdC": {
+          "type": "product",
+          "settings": {
+            "product": "jetguard-74s-safety-air-gun"
           }
         },
         "column_HPqrkt": {
@@ -163,8 +183,11 @@
       },
       "block_order": [
         "column_cNqCtf",
+        "product_ezjjWh",
         "column_QG4UHh",
+        "product_grecwX",
         "column_e4azRF",
+        "product_ejCNdC",
         "column_HPqrkt"
       ],
       "name": "GUA Multicolumns",
@@ -180,7 +203,8 @@
         "ptitle_fix": "remove_model",
         "pdesc": false,
         "pdesc_shorten": 0,
-        "meta_pimage": "custom.block_product_image",
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "Shop All",
         "button_link": "#",
         "columns_desktop": 4,
@@ -247,7 +271,8 @@
         "ptitle_fix": "none",
         "pdesc": false,
         "pdesc_shorten": 0,
-        "meta_pimage": "custom.block_product_image",
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
@@ -329,7 +354,8 @@
         "ptitle_fix": "remove_model",
         "pdesc": false,
         "pdesc_shorten": 0,
-        "meta_pimage": "custom.block_product_image",
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "Shop All",
         "button_link": "#",
         "columns_desktop": 4,
@@ -817,7 +843,8 @@
         "ptitle_fix": "none",
         "pdesc": false,
         "pdesc_shorten": 0,
-        "meta_pimage": "custom.block_product_image",
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
