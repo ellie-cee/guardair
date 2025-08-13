@@ -146,12 +146,21 @@
     "gua_featured_product_fBeExM": {
       "type": "gua-featured-product",
       "blocks": {
+        "title_nC7kTt": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
         "specifications_HVj4Rh": {
           "type": "specifications",
-          "settings": {}
+          "settings": {
+            "highlight_variant": false
+          }
         }
       },
       "block_order": [
+        "title_nC7kTt",
         "specifications_HVj4Rh"
       ],
       "name": "GUA Featured Product",
@@ -528,7 +537,9 @@
         },
         "specifications_8tLdjB": {
           "type": "specifications",
-          "settings": {}
+          "settings": {
+            "highlight_variant": false
+          }
         }
       },
       "block_order": [
