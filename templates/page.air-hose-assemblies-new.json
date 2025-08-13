@@ -490,60 +490,19 @@
     "gua_featured_product_fBeExM": {
       "type": "gua-featured-product",
       "blocks": {
-        "text_Q6Wzig": {
-          "type": "text",
+        "custom_liquid_Hd9GKV": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_EzrpYx": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_9AFAUE": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_Dzxb7y": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_QUQPrB": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_zgjaMw": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_F33VWN": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "custom_liquid": ""
           }
         }
       },
       "block_order": [
-        "text_Q6Wzig",
-        "title_EzrpYx",
-        "price_9AFAUE",
-        "variant_picker_Dzxb7y",
-        "quantity_selector_QUQPrB",
-        "buy_buttons_zgjaMw",
-        "share_F33VWN"
+        "custom_liquid_Hd9GKV"
       ],
       "name": "GUA Featured Product",
       "settings": {
-        "product": "",
+        "product": "nylon-coiled-air-hose-assembly-1-2-id-x-25",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
