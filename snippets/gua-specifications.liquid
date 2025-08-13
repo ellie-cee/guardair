@@ -19,17 +19,16 @@
 
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 
-{% if linked_products_metaobject %}
+{% if linked_products_metaobject and 1 == 2 %}
   <p>Handle: {{ linked_products_metaobject.system.handle }}</p>
   <p>Type: {{ linked_products_metaobject.system.type }}</p>
   <p>Group Name: {{ linked_products_metaobject.group_name }}</p>
   <p>Products: {{ linked_products_metaobject.products }}</p>
   <p>Option Name: {{ linked_products_metaobject.option_name }}</p>
-
     {% assign product_list =  linked_products_metaobject.product | split:',' %}
 {% endif %}
 
-{%  if product_list %} list - {{ product_list.size }}
+{%  if product_list and 1 == 3%} list - {{ product_list.size }}
             {% for field in product_list %}{{ forloop.index }}. {{ field }}
                 <!-- Access each field -->
                 <p>{{ field[0] }}: {{ field[1] }}</p>
@@ -51,7 +50,6 @@
                 <ol>{{ entry.system.id }}</ol>  
                 </ul>
       {% endfor %}  
-{% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 
 {% if linked_products_metaobject.products %}
   <div class="linked-products">
