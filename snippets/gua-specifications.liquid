@@ -22,7 +22,7 @@
 {% assign specifications_option =  linked_products_metaobject.option_name %}
 {% assign product_list =  linked_products_metaobject.products.value %}
 {% if block and block.settings.highlight_variant %}
-    {% assign highlight = block.settings.highlight_variant %}
+    {% assign highlight = block.settings.highlight_variant %}here
 {%  else %}
     {% assign highlight = true %}
 {% endif %}
@@ -261,10 +261,10 @@
                           {% assign handle = entry.handle %}
                           {% assign currentProduct = all_products[handle] %}       
                           {% assign currentVariant = currentProduct.selected_or_first_available_variant %}                        
-                <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}">
+                <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight == true %}active{% endif %}">
                   {% if show_part_number == true %}
                     <td>
-                      <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ product.title }}">{{ currentVariant.sku }}</a></span>
+                      <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ product.title | escape }}">{{ currentVariant.sku }}</a></span>
                     </td>
                   {% endif %}
                   {% if show_fittings == true %}
