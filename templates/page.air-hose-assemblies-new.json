@@ -151,7 +151,7 @@
           "settings": {
             "specifications_heading": "Specifications",
             "products": "{{ section.settings.product.metafields.custom.linked_products.value.products.value }}",
-            "option_name": "Hose ID"
+            "option_name": "Hose ID x Length"
           }
         }
       },
