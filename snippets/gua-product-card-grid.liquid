@@ -55,7 +55,7 @@
                   </div>
                 </a>
               {%- endif -%}
-              <div class="multicolumn-card__info grid__info">
+              <div class="multicolumn-card__info grid__info {{ section.settings.font_style }}">
                 {%- if product.title != blank -%}
                   <h3 class="{{ section.settings.font_style }}">
                     <a href="{{ product.url }}" class="{{ section.settings.ptitle_fix }} {{ section.settings.font_style }}">
