@@ -16,7 +16,7 @@
       {% endfor %}  
 {% endcomment %}
 
-{{ block.settings.highlight_variant }}
+{{ highlight }}
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 {% assign specifications_title =  linked_products_metaobject.group_name  | append: ' Specifications' %}
 {% assign specifications_option =  linked_products_metaobject.option_name %}
