@@ -50,7 +50,9 @@
                 <ol>{{ entry.system.id }}</ol>  
                 </ul>
       {% endfor %}  
-
+  <p>Group Name: {{ linked_products_metaobject.group_name }}</p>
+  <p>Products: {{ linked_products_metaobject.products }}</p>
+  <p>Option Name: {{ linked_products_metaobject.option_name }}</p>
 {% if linked_products_metaobject.products %}
   <div class="linked-products">
     <h3>Related Products:</h3>
