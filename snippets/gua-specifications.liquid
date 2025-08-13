@@ -31,8 +31,29 @@
   {% endfor %}
 {% endif %}
 
+<!-- Check what's actually in the metafield -->
+<p>Metafield type: {{ product.metafields.custom.linked_products.type }}</p>
+<p>Metafield value type: {{ product.metafields.custom.linked_products.value.type }}</p>
+
+<!-- Try accessing without .value -->
+{% assign direct_access = product.metafields.custom.linked_products %}
+<p>Direct access handle: {{ direct_access.handle }}</p>
+<p>Direct access ID: {{ direct_access.id }}</p>
+{% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 
 
+{% if linked_products_metaobject %}
+  <h3>Direct Field Access Test:</h3>
+  
+  <!-- Try common field names -->
+  <p>Title: {{ linked_products_metaobject.title }}</p>
+  <p>Group Name: {{ linked_products_metaobject.group_name }}</p>
+  <p>Products: {{ linked_products_metaobject.products }}</p>
+  <p>Option Name: {{ linked_products_metaobject.option_name }}</p>
+  
+  <!-- Also try accessing by the handle you see -->
+  <p>Handle-based access: {{ linked_products_metaobject['nylon-coiled-air-hose-assembly'] }}</p>
+{% endif %}
 
 {%  if product_list %}
             {% for field in product_list %}
