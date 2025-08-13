@@ -212,84 +212,6 @@
         "padding_bottom": 36
       }
     },
-    "f679ab33-4de8-44ee-ab26-1c833a95a70b": {
-      "type": "air-hose-assemblies-content",
-      "blocks": {
-        "block_WGkj4U": {
-          "type": "block",
-          "settings": {
-            "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
-            "pressure_text": "250 psi",
-            "fittings": "1/4\" MNPT x 1/4\" MNPT"
-          }
-        },
-        "block_RteqUE": {
-          "type": "block",
-          "settings": {
-            "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-25",
-            "pressure_text": "250 psi",
-            "fittings": "1/4\" MNPT x 1/4\" MNPT"
-          }
-        },
-        "block_k66KXE": {
-          "type": "block",
-          "settings": {
-            "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-50",
-            "pressure_text": "250 psi",
-            "fittings": "1/4\" MNPT x 1/4\" MNPT"
-          }
-        },
-        "block_6JjTzT": {
-          "type": "block",
-          "settings": {
-            "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-12",
-            "pressure_text": "200 psi",
-            "fittings": "3/8\" MNPT x 3/8\" MNPT"
-          }
-        },
-        "block_gtTUwe": {
-          "type": "block",
-          "settings": {
-            "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-25",
-            "pressure_text": "200 psi",
-            "fittings": "3/8\" MNPT x 3/8\" MNPT"
-          }
-        },
-        "block_7DdgPe": {
-          "type": "block",
-          "settings": {
-            "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-50",
-            "pressure_text": "200 psi",
-            "fittings": "3/8\" MNPT x 3/8\" MNPT"
-          }
-        },
-        "block_McREQd": {
-          "type": "block",
-          "settings": {
-            "productid": "nylon-coiled-air-hose-assembly-1-2-id-x-25",
-            "pressure_text": "150 psi",
-            "fittings": "1/2\" MNPT x 1/2\" MNPT"
-          }
-        }
-      },
-      "block_order": [
-        "block_WGkj4U",
-        "block_RteqUE",
-        "block_k66KXE",
-        "block_6JjTzT",
-        "block_gtTUwe",
-        "block_7DdgPe",
-        "block_McREQd"
-      ],
-      "disabled": true,
-      "settings": {
-        "sectionid": "NYLON COILED AIR HOSE ASSEMBLY",
-        "heading": "Nylon Coiled Air Hose Assembly",
-        "text": "<p>Lightweight, tough and abrasion resistant, nylon coiled air hose combines flexibility with excellent dimensional stability. Acting as a spring, the coiled hose expands in length as required by the operator, then retracts when released to the original coiled dimensions. Eliminates the need for bulky hose reels. Minimizes clutter and hose dragging.</p>",
-        "img": "shopify://shop_images/download_big.webp",
-        "content-padding_top": 0
-      }
-    },
     "5861a81f-725c-4a94-b00d-f41f55b4d298": {
       "type": "air-hose-assemblies-content",
       "blocks": {
@@ -556,17 +478,95 @@
         "img": "shopify://shop_images/download_big4.png",
         "content-padding_top": 36
       }
+    },
+    "f679ab33-4de8-44ee-ab26-1c833a95a70b": {
+      "type": "air-hose-assemblies-content",
+      "blocks": {
+        "block_WGkj4U": {
+          "type": "block",
+          "settings": {
+            "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
+            "pressure_text": "250 psi",
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
+          }
+        },
+        "block_RteqUE": {
+          "type": "block",
+          "settings": {
+            "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-25",
+            "pressure_text": "250 psi",
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
+          }
+        },
+        "block_k66KXE": {
+          "type": "block",
+          "settings": {
+            "productid": "nylon-coiled-air-hose-assembly-1-4-id-x-50",
+            "pressure_text": "250 psi",
+            "fittings": "1/4\" MNPT x 1/4\" MNPT"
+          }
+        },
+        "block_6JjTzT": {
+          "type": "block",
+          "settings": {
+            "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-12",
+            "pressure_text": "200 psi",
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
+          }
+        },
+        "block_gtTUwe": {
+          "type": "block",
+          "settings": {
+            "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-25",
+            "pressure_text": "200 psi",
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
+          }
+        },
+        "block_7DdgPe": {
+          "type": "block",
+          "settings": {
+            "productid": "nylon-coiled-air-hose-assembly-3-8-id-x-50",
+            "pressure_text": "200 psi",
+            "fittings": "3/8\" MNPT x 3/8\" MNPT"
+          }
+        },
+        "block_McREQd": {
+          "type": "block",
+          "settings": {
+            "productid": "nylon-coiled-air-hose-assembly-1-2-id-x-25",
+            "pressure_text": "150 psi",
+            "fittings": "1/2\" MNPT x 1/2\" MNPT"
+          }
+        }
+      },
+      "block_order": [
+        "block_WGkj4U",
+        "block_RteqUE",
+        "block_k66KXE",
+        "block_6JjTzT",
+        "block_gtTUwe",
+        "block_7DdgPe",
+        "block_McREQd"
+      ],
+      "disabled": true,
+      "settings": {
+        "sectionid": "NYLON COILED AIR HOSE ASSEMBLY",
+        "heading": "Nylon Coiled Air Hose Assembly",
+        "text": "<p>Lightweight, tough and abrasion resistant, nylon coiled air hose combines flexibility with excellent dimensional stability. Acting as a spring, the coiled hose expands in length as required by the operator, then retracts when released to the original coiled dimensions. Eliminates the need for bulky hose reels. Minimizes clutter and hose dragging.</p>",
+        "img": "shopify://shop_images/download_big.webp",
+        "content-padding_top": 0
+      }
     }
   },
   "order": [
     "main",
     "gua_multicolumn_EYfL86",
-    "1273f009-3d5f-4736-a6f6-2d588f05b3b7",
     "gua_featured_product_fBeExM",
     "gua_featured_product_dN67jm",
-    "f679ab33-4de8-44ee-ab26-1c833a95a70b",
     "5861a81f-725c-4a94-b00d-f41f55b4d298",
     "7132303b-23b4-4a76-8be5-6a78c739ec7b",
-    "9b2bf8d3-78a8-4d75-931a-1c3d2cc7bca9"
+    "9b2bf8d3-78a8-4d75-931a-1c3d2cc7bca9",
+    "1273f009-3d5f-4736-a6f6-2d588f05b3b7",
+    "f679ab33-4de8-44ee-ab26-1c833a95a70b"
   ]
 }
