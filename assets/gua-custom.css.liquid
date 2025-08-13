@@ -3,6 +3,7 @@
 {% assign accent_color2 = '#002395' %}
 {% assign gray_color = '#808285' %}
 {% assign light_gray = '#f1f1f1' %}
+{% assign dark_font = '#001149' %}
 {% assign desktop_max_width = '1200px' %}
 {% assign border_radius = '' %}
 {% assign accent_gradient1 = accent_color2 | color_to_rgb %}
@@ -54,14 +55,13 @@ body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 .block-style-stacked .grid__image--third-width {width: 33%; margin:0 auto !important;}
 
 {% comment %} --- BUILDING BLOCK --- {% endcomment %}
-h3.blue-subtitle, h3.blue-subtitle a {color: #002395;text-decoration:none;}  
+h3.blue-subtitle, h3.blue-subtitle a {color:{{ accent_color2 }};text-decoration:none;}  
 .multicolumn h3.blue-subtitle, .multicolumn h3.blue-subtitle a {font-size: 18px;text-align: center;}  
 .collection2 h3.blue-subtitle, .collection2 h3.blue-subtitle a {font-size: calc(var(--font-heading-scale) * 1.8rem);}  
 .multicolumn-card .rte {font-size:16px;}
 .grid__info.plain-with-buttons {background:none;}
-.grid__info.plain-with-buttons h3 {color: #001149;margin: 0;transition: all .3s linear;}
-.grid__info.plain-with-buttons h3 a {display: inline-block;padding: 7px 15px;background: #002395;color: #fff;text-transform: uppercase;margin-top: 10px;font-size: 15px;transition: all .3s linear;}
-
+.grid__info.plain-with-buttons h3, .grid__info.plain-with-buttons h3 a  {color: #001149;margin: 0;transition: all .3s linear;}
+.grid__info.plain-with-buttons h3 a.link {display: inline-block;padding: 7px 15px;background: #002395;color: #fff;text-transform: uppercase;margin-top: 10px;font-size: 15px;transition: all .3s linear;}
 @media screen and (min-width: 750px) {
     .grid__item.fullwidth, .grid__item.fullwidth .product__info-container {width:100% !important;max-width:100% !important;flex:1 0 100%;}
     .grid__item.fullwidth div[class*="image-size-"] {margin: 0 auto;}
