@@ -20,15 +20,8 @@
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 
 {% if linked_products_metaobject %}
-  <h3>Metaobject Debug:</h3>
-  <p>ID: {{ linked_products_metaobject.id }}</p>
   <p>Handle: {{ linked_products_metaobject.system.handle }}</p>
   <p>Type: {{ linked_products_metaobject.system.type }}</p>
-
-  <h3>Direct Field Access Test:</h3>
-  
-  <!-- Try common field names -->
-  <p>Title: {{ linked_products_metaobject.title }}</p>
   <p>Group Name: {{ linked_products_metaobject.group_name }}</p>
   <p>Products: {{ linked_products_metaobject.products }}</p>
   <p>Option Name: {{ linked_products_metaobject.option_name }}</p>
