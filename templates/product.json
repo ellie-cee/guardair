@@ -19,13 +19,7 @@
         "custom_liquid_pDMckf": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "Part Number: {{ product.first_or_selected_variant.sku }}"
-          }
-        },
-        "part_number_CKpjqq": {
-          "type": "part_number",
-          "settings": {
-            "part_number_heading": "Part Number:"
+            "custom_liquid": "Part Number: {{ product.selected_or_first_available_variant.sku }}"
           }
         },
         "description": {
@@ -99,7 +93,6 @@
       "block_order": [
         "title",
         "custom_liquid_pDMckf",
-        "part_number_CKpjqq",
         "description",
         "klaviyo_reviews_average_rating_KHihtJ",
         "ywm_toggle_yqdhWp",
