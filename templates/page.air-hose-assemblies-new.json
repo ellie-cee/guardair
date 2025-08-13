@@ -143,6 +143,38 @@
       ],
       "settings": {}
     },
+    "gua_featured_product_fBeExM": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "specifications_HVj4Rh": {
+          "type": "specifications",
+          "settings": {
+            "specifications_heading": "Specifications",
+            "products": "{{ section.settings.product.metafields.custom.linked_products.value.products.value }}",
+            "option_name": "Extension Length"
+          }
+        }
+      },
+      "block_order": [
+        "specifications_HVj4Rh"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "unique_id": "",
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "f679ab33-4de8-44ee-ab26-1c833a95a70b": {
       "type": "air-hose-assemblies-content",
       "blocks": {
@@ -486,48 +518,16 @@
         "img": "shopify://shop_images/download_big4.png",
         "content-padding_top": 36
       }
-    },
-    "gua_featured_product_fBeExM": {
-      "type": "gua-featured-product",
-      "blocks": {
-        "specifications_HVj4Rh": {
-          "type": "specifications",
-          "settings": {
-            "specifications_heading": "Specifications",
-            "products": [],
-            "option_name": "Extension Length"
-          }
-        }
-      },
-      "block_order": [
-        "specifications_HVj4Rh"
-      ],
-      "name": "GUA Featured Product",
-      "settings": {
-        "product": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "none",
-        "hide_variants": false,
-        "unique_id": "",
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "gua_multicolumn_EYfL86",
     "1273f009-3d5f-4736-a6f6-2d588f05b3b7",
+    "gua_featured_product_fBeExM",
     "f679ab33-4de8-44ee-ab26-1c833a95a70b",
     "5861a81f-725c-4a94-b00d-f41f55b4d298",
     "7132303b-23b4-4a76-8be5-6a78c739ec7b",
-    "9b2bf8d3-78a8-4d75-931a-1c3d2cc7bca9",
-    "gua_featured_product_fBeExM"
+    "9b2bf8d3-78a8-4d75-931a-1c3d2cc7bca9"
   ]
 }
