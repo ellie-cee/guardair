@@ -1,0 +1,349 @@
+{% comment %}
+      {% for entry in p_entries %}
+        {% assign handle = entry.handle %}
+        {% assign currentProduct = all_products[handle] %}
+<ul>
+  {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
+  <ol>{{ forloop.index }}: {{ entry.title }}</ol>
+ {       <ol>{{ entry.handle }}</ol>
+  <ol>rr{{ currentProduct.title }}</ol>
+  <ol>{{ entry.option_name }}</ol>    
+  <ol>Product ID: {{ product.id }}</ol>       
+  <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
+  <ol>{{ entry.system.handle }}</ol>
+  <ol>{{ entry.system.id }}</ol>  
+</ul>
+      {% endfor %}  
+{% endcomment %}
+      
+{% assign warning65_text = product.metafields.custom.warning65_text.value %}
+{% assign warning65_url = product.metafields.custom.warning65_url.value %}
+{% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
+{% assign sell_sheet_url = product.metafields.custom.literature_sell_sheet_url.value %}
+{% assign show_part_number = false %}
+{% assign show_spec = false %}
+{% assign show_air_inlet_FNPT = false %}
+{% assign show_air_hose_id = false %}
+{% assign show_vacuum_flow = false %}
+{% assign show_Vacuum_Hose_ID = false %}
+{% assign show_steel_drum_guage = false %}
+{% assign show_syphon_flow_rate = false %}
+{% assign show_Inlet-Connection = false %}
+{% assign show_output_thrust = false %}
+{% assign show_grams = false %}
+{% assign show_min_compressor = false %}
+{% assign show_soil_excavation_rate = false %}
+{% assign show_noise_level = false %}
+{% assign show_flow = false %}
+{% assign show_fittings = false %}
+{% assign show_Vacuum_Lift = false %}
+{% assign show_Dimensions = false %}
+{% assign show_weight = false %}
+
+{% for variant in product.variants %}
+  {% if variant.sku != blank %}
+    {% assign show_part_number = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Each-Height'].value != blank
+    and variant.metafields.global['Each-Length'].value != blank
+    and variant.metafields.global['Each-Width'].value != blank
+  %}
+    {% assign show_Dimensions = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Syphon-Flow-Rate'].value != blank %}
+    {% assign show_syphon_flow_rate = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Steel-Drum-Gauge'].value != blank %}
+    {% assign show_steel_drum_guage = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Output-Thrust'].value != blank %}
+    {% assign show_output_thrust = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Noise-Level'].value != blank %}
+    {% assign show_noise_level = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Min-Compressor-Required'].value != blank %}
+    {% assign show_min_compressor = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Inlet-Connection'].value != blank %}
+    {% assign show_Inlet-Connection = true %}
+  {% endif %}
+
+  {% if variant.metafields.global.grams.value != blank %}
+    {% assign show_grams = true %}
+  {% endif %}
+
+  {% if variant.metafields.global.Flow.value != blank %}
+    {% assign show_flow = true %}
+  {% endif %}
+
+  {% if variant.metafields.global.Fittings.value != blank %}
+    {% assign show_fittings = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Each-Weight'].value != blank %}
+    {% assign show_weight = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Air-Hose-ID'].value != blank %}
+    {% assign show_air_hose_id = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Vacuum-Lift'].value != blank %}
+    {% assign show_Vacuum_Lift = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Vacuum-Hose-ID'].value != blank %}
+    {% assign show_Vacuum_Hose_ID = true %}
+  {% endif %}
+
+  {% if variant.metafields.global['Vacuum-Flow'].value != blank %}
+    {% assign show_vacuum_flow = true %}
+  {% endif %}
+
+  {% if variant.metafields.custom.air_inlet_fnpt.value != blank %}
+    {% assign show_air_inlet_FNPT = true %}
+  {% endif %}
+
+  {% if variant.metafields.custom.soil_excavation_rate.value != blank %}
+    {% assign show_soil_excavation_rate = true %}
+  {% endif %}
+{% endfor %}
+
+{% if show_air_inlet_FNPT == true
+  or show_min_compressor == true
+  or show_noise_level == true
+  or show_flow == true
+  or show_vacuum_flow == true
+  or show_Vacuum_Lift == true
+  or show_syphon_flow_rate == true
+  or show_steel_drum_guage == true
+  or show_output_thrust == true
+  or show_Inlet-Connection == true
+  or show_grams == true
+  or show_fittings == true
+  or show_air_hose_id == true
+  or show_Vacuum_Hose_ID == true
+  or show_soil_excavation_rate == true
+  or show_Dimensions == true
+  or show_weight == true
+%}
+  {% assign show_spec = true %}
+{% endif %}
+
+{% if show_spec %}
+<hr><div class="specifications-table page-width">
+  {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
+
+      
+    {% assign p_entries = section.settings.products | sort: 'title' %}    
+
+      <div id="{{ product.selected_or_first_available_variant.sku }}-specifications" class="table-content">
+        <div class="table-container">
+          <table class="specifications-table">
+            <thead>
+              <tr>
+                {% if show_part_number == true %}
+                  <th width="10%">Part Number</th>
+                {% endif %}
+                {% if show_fittings == true %}
+                  <th width="6%">Fittings</th>
+                {% endif %}
+                {% if show_air_hose_id == true %}
+                  <th width="7%">
+                    Air <br>
+                    Hose ID<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_Vacuum_Hose_ID == true %}
+                  <th width="8%">
+                    Vacuum <br>
+                    Hose ID<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_Inlet-Connection == true %}
+                  <th width="7%">
+                    Compressed <br>
+                    Air Inlet<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_flow == true %}
+                  <th width="10%">
+                    Compressed <br>
+                    Air Usage<br>
+                    (cfm)
+                  </th>
+                {% endif %}
+                {% if show_min_compressor == true %}
+                  <th width="10%">
+                    Min. Size <br>
+                    Air Compressor<br>
+                    (hp)
+                  </th>
+                {% endif %}
+                {% if show_vacuum_flow == true %}
+                  <th width="8%">
+                    Vacuum Flow<br>
+                    (cfm)
+                  </th>
+                {% endif %}
+                {% if show_Vacuum_Lift == true %}
+                  <th width="8%">
+                    Vacuum <br>
+                    Lift<br>
+                    (in H20)
+                  </th>
+                {% endif %}
+                {% if show_syphon_flow_rate == true %}
+                  <th width="9%">
+                    Syphon <br>
+                    Flow Rate<br>
+                    (gph)
+                  </th>
+                {% endif %}
+                {% if show_output_thrust == true %}
+                  <th width="8%">
+                    Output <br>
+                    Thrust<br>
+                    (lbs)
+                  </th>
+                {% endif %}
+                {% if show_noise_level == true %}
+                  <th width="8%">
+                    Noise <br>
+                    Level<br>
+                    (dBA)
+                  </th>
+                {% endif %}
+                {% if show_steel_drum_guage == true %}
+                  <th width="8%">
+                    Min.<br>
+                    Steel Drum<br>
+                    (Gauge)
+                  </th>
+                {% endif %}
+                {% if show_Dimensions == true %}
+                  <th width="10%">
+                    Dimensions<br>
+                    (L" x W" x H")
+                  </th>
+                {% endif %}
+                {% if show_weight == true %}
+                  <th width="6%">
+                    Weight<br>
+                    (lbs)
+                  </th>
+                {% endif %}
+              </tr>
+            </thead>
+
+
+           
+            <tbody>
+                    {% for entry in p_entries %}
+                          {% assign handle = entry.handle %}
+                          {% assign currentProduct = all_products[handle] %}       
+                          {% assign currentVariant = currentProduct.selected_or_first_available_variant %}                        
+                <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku %}active{% endif %}">
+                  {% if show_part_number == true %}
+                    <td>
+                      <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ product.title }}">{{ currentVariant.sku }}</a></span>
+                    </td>
+                  {% endif %}
+                  {% if show_fittings == true %}
+                    <td>
+                      <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_air_hose_id == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Air-Hose-ID'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Vacuum_Hose_ID == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Inlet-Connection == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_flow == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global.Flow.value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_min_compressor == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Min-Compressor-Required'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_vacuum_flow == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Flow'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Vacuum_Lift == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Lift'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_syphon_flow_rate == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Syphon-Flow-Rate'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_output_thrust == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Output-Thrust'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_noise_level == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Noise-Level'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_steel_drum_guage == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Steel-Drum-Gauge'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Dimensions == true %}
+                    <td>
+                      <span class="td-value">
+                        {{-
+                          currentVariant.metafields.global['Each-Length'].value
+                          | append: ' X '
+                          | append: currentVariant.metafields.global['Each-Width'].value
+                          | append: ' X '
+                          | append: currentVariant.metafields.global['Each-Height'].value
+                        -}}
+                      </span>
+                    </td>
+                  {% endif %}
+                  {% if show_weight == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Each-Weight'].value }}</span>
+                    </td>
+                  {% endif %}
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+</div>
+{% endif %}
