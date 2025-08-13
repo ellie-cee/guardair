@@ -15,8 +15,113 @@
 </ul>
       {% endfor %}  
 {% endcomment %}
-{% assign product_list = product.metafields.custom.linked_products %}
-{{ product.metafields.custom.linked_products | json }}
+The JSON filter doesn't work on metaobjects in Shopify Liquid. Here are better ways to debug and access your metaobject structure:
+Debug the Metaobject Structure
+liquid
+
+{% assign linked_products_metaobject = product.metafields.custom.linked_products %}
+
+{% if linked_products_metaobject %}
+  <h3>Metaobject Debug Info:</h3>
+  
+  <!-- Show the metaobject type -->
+  <p>Type: {{ linked_products_metaobject.type }}</p>
+  
+  <!-- Show the system fields -->
+  <p>ID: {{ linked_products_metaobject.id }}</p>
+  <p>Handle: {{ linked_products_metaobject.system.handle }}</p>
+  <p>Type Handle: {{ linked_products_metaobject.system.type }}</p>
+  
+  <!-- Loop through all fields to see what's available -->
+  <h4>Available Fields:</h4>
+  {% for field in linked_products_metaobject %}
+    <p>Field: {{ field[0] }} | Value: {{ field[1] }}</p>
+  {% endfor %}
+{% endif %}
+
+Access Metaobject Fields Properly
+
+Once you know the field structure, access them like this:
+liquid
+
+{% assign linked_products_metaobject = product.metafields.custom.linked_products %}
+
+{% if linked_products_metaobject %}
+  <!-- Access specific fields by their keys -->
+  {% if linked_products_metaobject.title %}
+    <h3>{{ linked_products_metaobject.title }}</h3>
+  {% endif %}
+  
+  {% if linked_products_metaobject.description %}
+    <p>{{ linked_products_metaobject.description }}</p>
+  {% endif %}
+  
+  <!-- If you have a product list field -->
+  {% if linked_products_metaobject.products %}
+    {% for product_item in linked_products_metaobject.products %}
+      <div>
+        <h4>{{ product_item.title }}</h4>
+        <p>{{ product_item.price | money }}</p>
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
+Alternative Debug Method
+liquid
+
+{% assign linked_products_metaobject = product.metafields.custom.linked_products %}
+
+{% if linked_products_metaobject %}
+  <!-- Check if it's actually a metaobject -->
+  <p>Object exists: {{ linked_products_metaobject != blank }}</p>
+  
+  <!-- Try to access common field names -->
+  <p>Title field: {{ linked_products_metaobject.title }}</p>
+  <p>Name field: {{ linked_products_metaobject.name }}</p>
+  <p>Products field: {{ linked_products_metaobject.products }}</p>
+  
+  <!-- Show field count -->
+  <p>Field count: {{ linked_products_metaobject.size }}</p>
+{% endif %}
+
+Safe Field Access Pattern
+liquid
+
+{% assign linked_products_metaobject = product.metafields.custom.linked_products %}
+
+{% if linked_products_metaobject %}
+  {% for field in linked_products_metaobject %}
+    {% assign field_name = field[0] %}
+    {% assign field_content = field[1] %}
+    
+    <div class="metaobject-field">
+      <strong>{{ field_name }}:</strong>
+      
+      {% if field_content.size > 0 %}
+        <!-- Check if it's a collection/array -->
+        {% if field_content.first %}
+          {% for item in field_content %}
+            {% if item.title %}
+              <span>{{ item.title }}</span>
+            {% else %}
+              <span>{{ item }}</span>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <!-- Single value -->
+          {{ field_content }}
+        {% endif %}
+      {% else %}
+        {{ field_content }}
+      {% endif %}
+    </div>
+  {% endfor %}
+{% endif %}
+ 
+
+
+
 
 {%  if product_list %}
             {% for field in product_list %}
