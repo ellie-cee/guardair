@@ -504,6 +504,11 @@
                 {%- endif -%}
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+
+                {%- when 'specifications' -%}
+                {% render 'gua-specifications',product:product,products:block.settings.products,option_name:block.settings.option_name %}
+
+                
             {%- endcase -%}
           {%- endfor -%}
           <a
