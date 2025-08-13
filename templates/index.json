@@ -301,6 +301,7 @@
       "blocks": {
         "column_wMRWyJ": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PowerQUAD_55_Gallon_Vacuum_Kit.webp",
             "image_link": "",
@@ -310,8 +311,15 @@
             "link": ""
           }
         },
+        "product_YQhwe6": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-55-gallon-vacuum-kit-w-2-inlet"
+          }
+        },
         "column_MGhJUq": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ55C200NED_ca25b7e6-bc3c-4809-84c7-762624e44d89.jpg",
             "image_link": "",
@@ -321,8 +329,15 @@
             "link": ""
           }
         },
+        "product_nKyAwV": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-55-gallon-ned-vacuum-kit-w-2-inlet"
+          }
+        },
         "column_Qe6RhH": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ30C150ATEX_Main_ae91db30-79c7-4388-ac44-88fbc6084cf4.jpg",
             "image_link": "",
@@ -332,8 +347,15 @@
             "link": ""
           }
         },
+        "product_TXAQzV": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-55-gallon-atex-vacuum-kit-w-2-inlet"
+          }
+        },
         "column_X3Jya3": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ55C200NEDPA_310e486b-9612-4fea-900f-9afac4fe261f.jpg",
             "image_link": "",
@@ -342,13 +364,23 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_UQ8F3b": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-55-gallon-pulseair-vacuum-kit-w-2-inlet"
+          }
         }
       },
       "block_order": [
         "column_wMRWyJ",
+        "product_YQhwe6",
         "column_MGhJUq",
+        "product_nKyAwV",
         "column_Qe6RhH",
-        "column_X3Jya3"
+        "product_TXAQzV",
+        "column_X3Jya3",
+        "product_UQ8F3b"
       ],
       "name": "GUA Multicolumns",
       "settings": {
