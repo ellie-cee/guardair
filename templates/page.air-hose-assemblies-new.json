@@ -149,7 +149,7 @@
         "specifications_HVj4Rh": {
           "type": "specifications",
           "settings": {
-            "specifications_heading": "Specifications",
+            "specifications_heading": "",
             "products": "{{ section.settings.product.metafields.custom.linked_products.value.products.value }}",
             "option_name": "Hose ID x Length"
           }
