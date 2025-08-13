@@ -24,25 +24,7 @@
   <p>ID: {{ linked_products_metaobject.id }}</p>
   <p>Handle: {{ linked_products_metaobject.system.handle }}</p>
   <p>Type: {{ linked_products_metaobject.system.type }}</p>
-  
-  <h4>Fields:</h4>
-  {% for field in linked_products_metaobject %}
-    <p>{{ field[0] }}: {{ field[1] }}</p>
-  {% endfor %}
-{% endif %}
 
-<!-- Check what's actually in the metafield -->
-<p>Metafield type: {{ product.metafields.custom.linked_products.type }}</p>
-<p>Metafield value type: {{ product.metafields.custom.linked_products.value.type }}</p>
-
-<!-- Try accessing without .value -->
-{% assign direct_access = product.metafields.custom.linked_products %}
-<p>Direct access handle: {{ direct_access.handle }}</p>
-<p>Direct access ID: {{ direct_access.id }}</p>
-{% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
-
-
-{% if linked_products_metaobject %}
   <h3>Direct Field Access Test:</h3>
   
   <!-- Try common field names -->
@@ -59,7 +41,7 @@
 {% assign product_list =  linked_products_metaobject.product %}
 
 
-{%  if product_list %} 
+{%  if product_list %} list
             {% for field in product_list %}{{ forloop.index }}
                 <!-- Access each field -->
                 <p>{{ field[0] }}: {{ field[1] }}</p>
