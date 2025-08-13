@@ -21,7 +21,6 @@
       "blocks": {
         "column_VdebKL": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/download_93841237-666d-470a-a4af-815ecbd8969a.webp",
             "image_link": "",
@@ -31,15 +30,8 @@
             "link": "#nyloncoiledairhoseassembly"
           }
         },
-        "product_bjJxjb": {
-          "type": "product",
-          "settings": {
-            "product": "nylon-coiled-air-hose-assembly-1-4-id-x-12"
-          }
-        },
         "column_TyLqVU": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/download1.webp",
             "image_link": "",
@@ -49,15 +41,8 @@
             "link": "#polyurethaneairhoseassembly"
           }
         },
-        "product_mKiprF": {
-          "type": "product",
-          "settings": {
-            "product": "polyurethane-coiled-air-hose-assembly-1-4-id-x-12"
-          }
-        },
         "column_X8xPnH": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/download2.webp",
             "image_link": "",
@@ -67,15 +52,8 @@
             "link": "#generalpurposeairhoseassembly"
           }
         },
-        "product_9BA4mz": {
-          "type": "product",
-          "settings": {
-            "product": "general-purpose-air-hose-assembly-1-2-id-x-12"
-          }
-        },
         "column_M37Byw": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/download4.webp",
             "image_link": "",
@@ -84,23 +62,13 @@
             "link_label": "View",
             "link": "#staticconductiveairhoseassembly"
           }
-        },
-        "product_kBiQmx": {
-          "type": "product",
-          "settings": {
-            "product": "static-conductive-air-hose-assembly-1-2-id-x-12"
-          }
         }
       },
       "block_order": [
         "column_VdebKL",
-        "product_bjJxjb",
         "column_TyLqVU",
-        "product_mKiprF",
         "column_X8xPnH",
-        "product_9BA4mz",
-        "column_M37Byw",
-        "product_kBiQmx"
+        "column_M37Byw"
       ],
       "name": "GUA Multicolumns",
       "settings": {
@@ -154,6 +122,8 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
+        "ptitle_fix": "none",
+        "alt_image": false,
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -192,6 +162,8 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "polyurethane-coiled-air-hose-assembly-1-4-id-x-12",
+        "ptitle_fix": "none",
+        "alt_image": false,
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -230,6 +202,8 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "general-purpose-air-hose-assembly-3-8-id-x-12",
+        "ptitle_fix": "none",
+        "alt_image": false,
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
