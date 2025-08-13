@@ -26,13 +26,13 @@
 
 {% assign show_part_number = false %}
 {% assign show_spec = false %}
-{% assign show_air_inlet_FNPT = false %}
+{% assign show_air_inlet_fnpt = false %}
 {% assign show_air_hose_id = false %}
 {% assign show_vacuum_flow = false %}
-{% assign show_Vacuum_Hose_ID = false %}
+{% assign show_vacuum_hose_id = false %}
 {% assign show_steel_drum_guage = false %}
 {% assign show_syphon_flow_rate = false %}
-{% assign show_Inlet-Connection = false %}
+{% assign show_inlet_connection = false %}
 {% assign show_output_thrust = false %}
 {% assign show_grams = false %}
 {% assign show_min_compressor = false %}
@@ -40,8 +40,8 @@
 {% assign show_noise_level = false %}
 {% assign show_flow = false %}
 {% assign show_fittings = false %}
-{% assign show_Vacuum_Lift = false %}
-{% assign show_Dimensions = false %}
+{% assign show_vacuum_lift = false %}
+{% assign show_dimensions = false %}
 {% assign show_weight = false %}
 
 {% for variant in product.variants %}
@@ -53,7 +53,7 @@
     and variant.metafields.global['Each-Length'].value != blank
     and variant.metafields.global['Each-Width'].value != blank
   %}
-    {% assign show_Dimensions = true %}
+    {% assign show_dimensions = true %}
   {% endif %}
 
   {% if variant.metafields.global['Syphon-Flow-Rate'].value != blank %}
@@ -77,7 +77,7 @@
   {% endif %}
 
   {% if variant.metafields.global['Inlet-Connection'].value != blank %}
-    {% assign show_Inlet-Connection = true %}
+    {% assign show_inlet_connection = true %}
   {% endif %}
 
   {% if variant.metafields.global.grams.value != blank %}
@@ -101,11 +101,11 @@
   {% endif %}
 
   {% if variant.metafields.global['Vacuum-Lift'].value != blank %}
-    {% assign show_Vacuum_Lift = true %}
+    {% assign show_vacuum_lift = true %}
   {% endif %}
 
   {% if variant.metafields.global['Vacuum-Hose-ID'].value != blank %}
-    {% assign show_Vacuum_Hose_ID = true %}
+    {% assign show_vacuum_hose_id = true %}
   {% endif %}
 
   {% if variant.metafields.global['Vacuum-Flow'].value != blank %}
@@ -113,7 +113,7 @@
   {% endif %}
 
   {% if variant.metafields.custom.air_inlet_fnpt.value != blank %}
-    {% assign show_air_inlet_FNPT = true %}
+    {% assign show_air_inlet_fnpt = true %}
   {% endif %}
 
   {% if variant.metafields.custom.soil_excavation_rate.value != blank %}
@@ -121,22 +121,22 @@
   {% endif %}
 {% endfor %}
 
-{% if show_air_inlet_FNPT == true
+{% if show_air_inlet_fnpt == true
   or show_min_compressor == true
   or show_noise_level == true
   or show_flow == true
   or show_vacuum_flow == true
-  or show_Vacuum_Lift == true
+  or show_vacuum_lift == true
   or show_syphon_flow_rate == true
   or show_steel_drum_guage == true
   or show_output_thrust == true
-  or show_Inlet-Connection == true
+  or show_inlet_connection == true
   or show_grams == true
   or show_fittings == true
   or show_air_hose_id == true
-  or show_Vacuum_Hose_ID == true
+  or show_vacuum_hose_id == true
   or show_soil_excavation_rate == true
-  or show_Dimensions == true
+  or show_dimensions == true
   or show_weight == true
 %}
   {% assign show_spec = true %}
@@ -167,14 +167,14 @@
                     (in)
                   </th>
                 {% endif %}
-                {% if show_Vacuum_Hose_ID == true %}
+                {% if show_vacuum_hose_id == true %}
                   <th width="8%">
                     Vacuum <br>
                     Hose ID<br>
                     (in)
                   </th>
                 {% endif %}
-                {% if show_Inlet-Connection == true %}
+                {% if show_inlet_connection == true %}
                   <th width="7%">
                     Compressed <br>
                     Air Inlet<br>
@@ -201,7 +201,7 @@
                     (cfm)
                   </th>
                 {% endif %}
-                {% if show_Vacuum_Lift == true %}
+                {% if show_vacuum_lift == true %}
                   <th width="8%">
                     Vacuum <br>
                     Lift<br>
@@ -236,7 +236,7 @@
                     (Gauge)
                   </th>
                 {% endif %}
-                {% if show_Dimensions == true %}
+                {% if show_dimensions == true %}
                   <th width="10%">
                     Dimensions<br>
                     (L" x W" x H")
@@ -274,12 +274,12 @@
                       <span class="td-value">{{ currentVariant.metafields.global['Air-Hose-ID'].value }}</span>
                     </td>
                   {% endif %}
-                  {% if show_Vacuum_Hose_ID == true %}
+                  {% if show_vacuum_hose_id == true %}
                     <td>
                       <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
                     </td>
                   {% endif %}
-                  {% if show_Inlet-Connection == true %}
+                  {% if show_inlet_connection == true %}
                     <td>
                       <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}</span>
                     </td>
@@ -299,7 +299,7 @@
                       <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Flow'].value }}</span>
                     </td>
                   {% endif %}
-                  {% if show_Vacuum_Lift == true %}
+                  {% if show_vacuum_lift == true %}
                     <td>
                       <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Lift'].value }}</span>
                     </td>
@@ -324,7 +324,7 @@
                       <span class="td-value">{{ currentVariant.metafields.global['Steel-Drum-Gauge'].value }}</span>
                     </td>
                   {% endif %}
-                  {% if show_Dimensions == true %}
+                  {% if show_dimensions == true %}
                     <td>
                       <span class="td-value">
                         {{-
