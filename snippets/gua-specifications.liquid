@@ -14,8 +14,8 @@
   <ol>{{ entry.system.id }}</ol>  
 </ul>
       {% endfor %}  
-{% endcomment %}ff
-{% assign entry = product.metafields.custom.linked_products %}
+{% endcomment %}
+{% assign p_entries = product.metafields.custom.linked_products %}
 
       {% for entry in p_entries %}
         {% assign handle = entry.handle %}
