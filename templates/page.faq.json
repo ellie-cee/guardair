@@ -1379,7 +1379,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_css_class": "",
+        "custom_css_class": "pneumatic-faq",
         "padding_top": 36,
         "padding_bottom": 36
       }
