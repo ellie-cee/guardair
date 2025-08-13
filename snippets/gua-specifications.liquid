@@ -46,10 +46,7 @@
             {% endfor %}
 {% endif %}
 {% assign p_entries = product_list %}
-{{ p_entries.id }}<br/>
-{{ p_entries.value }}<br/>
-{{ p_entries.title }}<br/>
- {{ product.title }}<br/>
+
       {% for entry in p_entries %}
         {% assign handle = entry.handle %}
                 <ul>
