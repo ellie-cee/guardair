@@ -15,74 +15,21 @@
 </ul>
       {% endfor %}  
 {% endcomment %}
-The JSON filter doesn't work on metaobjects in Shopify Liquid. Here are better ways to debug and access your metaobject structure:
-Debug the Metaobject Structure
-liquid
-
-{% assign linked_products_metaobject = product.metafields.custom.linked_products %}
+ {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 
 {% if linked_products_metaobject %}
-  <h3>Metaobject Debug Info:</h3>
+  <h3>Metaobject Contents:</h3>
   
-  <!-- Show the metaobject type -->
-  <p>Type: {{ linked_products_metaobject.type }}</p>
-  
-  <!-- Show the system fields -->
-  <p>ID: {{ linked_products_metaobject.id }}</p>
-  <p>Handle: {{ linked_products_metaobject.system.handle }}</p>
-  <p>Type Handle: {{ linked_products_metaobject.system.type }}</p>
-  
-  <!-- Loop through all fields to see what's available -->
-  <h4>Available Fields:</h4>
+  <!-- Now loop through the actual metaobject fields -->
   {% for field in linked_products_metaobject %}
-    <p>Field: {{ field[0] }} | Value: {{ field[1] }}</p>
+    {% assign field_name = field[0] %}
+    {% assign field_value = field[1] %}
+    
+    <div class="metaobject-field">
+      <strong>{{ field_name }}:</strong> {{ field_value }}
+    </div>
   {% endfor %}
 {% endif %}
-
-Access Metaobject Fields Properly
-
-Once you know the field structure, access them like this:
-liquid
-
-{% assign linked_products_metaobject = product.metafields.custom.linked_products %}
-
-{% if linked_products_metaobject %}
-  <!-- Access specific fields by their keys -->
-  {% if linked_products_metaobject.title %}
-    <h3>{{ linked_products_metaobject.title }}</h3>
-  {% endif %}
-  
-  {% if linked_products_metaobject.description %}
-    <p>{{ linked_products_metaobject.description }}</p>
-  {% endif %}
-  
-  <!-- If you have a product list field -->
-  {% if linked_products_metaobject.products %}
-    {% for product_item in linked_products_metaobject.products %}
-      <div>
-        <h4>{{ product_item.title }}</h4>
-        <p>{{ product_item.price | money }}</p>
-      </div>
-    {% endfor %}
-  {% endif %}
-{% endif %}
- 
- 
-
-{% if linked_products_metaobject %}
-  <!-- Check if it's actually a metaobject -->
-  <p>Object exists: {% if linked_products_metaobject != blank %}true{% endif %}</p>
-  
-  <!-- Try to access common field names -->
-  <p>Title field: {{ linked_products_metaobject.title }}</p>
-  <p>Name field: {{ linked_products_metaobject.name }}</p>
-  <p>Products field: {{ linked_products_metaobject.products }}</p>
-  
-  <!-- Show field count -->
-  <p>Field count: {{ linked_products_metaobject.size }}</p>
-{% endif %}
-
- 
  
  
 
