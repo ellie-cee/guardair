@@ -991,7 +991,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_class": "",
+        "custom_css_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1097,7 +1097,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_class": "air-gun-faq",
+        "custom_css_class": "air-gun-faq",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1230,7 +1230,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_class": "",
+        "custom_css_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1343,7 +1343,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_class": "",
+        "custom_css_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1379,7 +1379,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_class": "pneumatic-faq",
+        "custom_css_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1462,7 +1462,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_class": "",
+        "custom_css_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1631,7 +1631,7 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "custom_class": "",
+        "custom__css_class": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
