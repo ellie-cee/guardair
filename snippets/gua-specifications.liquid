@@ -16,6 +16,14 @@
       {% endfor %}  
 {% endcomment %}
 {% assign product_list = product.metafields.custom.linked_products %}
+{{ product.metafields.custom.linked_products | json }}
+
+{%  if product_list %}
+            {% for field in product_list %}
+                <!-- Access each field -->
+                <p>{{ field[0] }}: {{ field[1] }}</p>
+            {% endfor %}
+{% endif %}
 {% assign p_entries = product_list.value %}
 {{ p_entries.id }}<br/>
 {{ p_entries.value }}<br/>
