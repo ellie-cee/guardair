@@ -56,8 +56,9 @@
     <h3>Related Products:</h3>
     
     {% for product_gid in linked_products_metaobject.products %}
+        {{ forloop.index }}
       {% assign linked_product = product_gid %}
-      
+      {{ linked_product.option_name }}
       {% if linked_product.title %}
         <div class="linked-product-item">
           <h4>{{ linked_product.title }}</h4>
