@@ -55,6 +55,10 @@
   <p>Handle-based access: {{ linked_products_metaobject['nylon-coiled-air-hose-assembly'] }}</p>
 {% endif %}
 
+
+{% assign product_list =  linked_products_metaobject.product %}
+
+
 {%  if product_list %}
             {% for field in product_list %}
                 <!-- Access each field -->
