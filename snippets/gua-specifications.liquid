@@ -59,8 +59,8 @@
 {% assign product_list =  linked_products_metaobject.product %}
 
 
-{%  if product_list %}
-            {% for field in product_list %}
+{%  if product_list %} 
+            {% for field in product_list %}{{ forloop.index }}
                 <!-- Access each field -->
                 <p>{{ field[0] }}: {{ field[1] }}</p>
             {% endfor %}
