@@ -143,7 +143,7 @@
           {%- endif -%}
         </media-gallery>
       </div>
-      <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if section.settings.stack_image %} fullwidth{% endif %}">
         <product-info
           id="ProductInfo-{{ section.id }}"
           class="product__info-container"
