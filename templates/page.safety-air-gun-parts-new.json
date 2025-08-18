@@ -21,6 +21,7 @@
       "blocks": {
         "heading_XwdxkB": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Safety Air Gun Accessories",
             "heading_size": "h1"
@@ -30,6 +31,7 @@
       "block_order": [
         "heading_XwdxkB"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -94,6 +96,12 @@
           "settings": {
             "product": "gunslinger-magnetic-air-gun-holder"
           }
+        },
+        "product_LcaTht": {
+          "type": "product",
+          "settings": {
+            "product": "hydroforce-hyd-nylon-shoulder-strap"
+          }
         }
       },
       "block_order": [
@@ -104,7 +112,8 @@
         "product_UKRNJh",
         "product_NDqXE8",
         "product_hJifkG",
-        "product_RygCf3"
+        "product_RygCf3",
+        "product_LcaTht"
       ],
       "name": "GUA Multicolumns",
       "settings": {
