@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -35,15 +44,106 @@
         "anchor_id": ""
       }
     },
+    "gua_multicolumn_LgU4Q3": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_3hpPCF": {
+          "type": "product",
+          "settings": {
+            "product": "hydroforce-hyd-air-water-pigtail-hose-assembly-5"
+          }
+        },
+        "product_gjWdDR": {
+          "type": "product",
+          "settings": {
+            "product": "classic-slip-on-air-gun-grip-blue"
+          }
+        },
+        "product_XU8ipn": {
+          "type": "product",
+          "settings": {
+            "product": "sidekick-auxiliary-air-gun-support-handle"
+          }
+        },
+        "product_JtzbYN": {
+          "type": "product",
+          "settings": {
+            "product": "quiet-test-silencer-nozzle"
+          }
+        },
+        "product_UKRNJh": {
+          "type": "product",
+          "settings": {
+            "product": "on-guard-chip-shield-palmjet-ga44-models"
+          }
+        },
+        "product_NDqXE8": {
+          "type": "product",
+          "settings": {
+            "product": "magloop-magnetic-air-gun-hanging-loop"
+          }
+        },
+        "product_hJifkG": {
+          "type": "product",
+          "settings": {
+            "product": "maghook-magnetic-air-gun-hanging-hook"
+          }
+        },
+        "product_RygCf3": {
+          "type": "product",
+          "settings": {
+            "product": "gunslinger-magnetic-air-gun-holder"
+          }
+        }
+      },
+      "block_order": [
+        "product_3hpPCF",
+        "product_gjWdDR",
+        "product_XU8ipn",
+        "product_JtzbYN",
+        "product_UKRNJh",
+        "product_NDqXE8",
+        "product_hJifkG",
+        "product_RygCf3"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "Safety Air Gun Accessories",
+        "heading_size": "h2",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
     "multicolumn_y3RJDU": {
       "type": "multicolumn",
       "blocks": {
         "column_zT4wVd": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-pigtail-hose.png",
-            "image_link": "https:\/\/guardair.com\/products\/hydroforce-hyd-air-water-pigtail-hose-assembly-5",
-            "title": "<a href=\"\/products\/pigtail-hose-assembly-for-hydroforce\" title=\"Pigtail Hose Assembly for HydroForce\">Pigtail Hose Assembly for HydroForce<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-pigtail-hose.png",
+            "image_link": "",
+            "title": "<a href=\"/products/pigtail-hose-assembly-for-hydroforce\" title=\"Pigtail Hose Assembly for HydroForce\">Pigtail Hose Assembly for HydroForce</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -52,9 +152,9 @@
         "column_MNGbjG": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-slip-on-grip.png",
-            "image_link": "https:\/\/guardair.com\/products\/classic-slip-on-air-gun-grip-blue",
-            "title": "<a href=\"\/products\/classic-slip-on-air-gun-grip-blue\" title=\"Classic+ Slip-On Air Gun Grip - Blue\">Slip-On Grip<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-slip-on-grip.png",
+            "image_link": "",
+            "title": "<a href=\"/products/classic-slip-on-air-gun-grip-blue\" title=\"Classic+ Slip-On Air Gun Grip - Blue\">Slip-On Grip</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -63,9 +163,9 @@
         "column_WRWw3J": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-sidekick.png",
-            "image_link": "https:\/\/guardair.com\/products\/sidekick-auxiliary-air-gun-support-handle",
-            "title": "<a href=\"\/products\/sidekick-auxiliary-support-handle\" title=\"Sidekick\">Sidekick<\/a>",
+            "image": "shopify://shop_images/guardair-shop-accessories-sidekick.png",
+            "image_link": "",
+            "title": "<a href=\"/products/sidekick-auxiliary-support-handle\" title=\"Sidekick\">Sidekick</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -74,9 +174,9 @@
         "column_6k8TxL": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-quiet-test-silencer-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/quiet-test-silencer-nozzle",
-            "title": "<a href=\"\/products\/quiet-test-silencer-nozzle\" title=\"Quiet-Test Silencer Nozzle\">Quiet-Test Silencer Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-quiet-test-silencer-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/quiet-test-silencer-nozzle\" title=\"Quiet-Test Silencer Nozzle\">Quiet-Test Silencer Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -85,9 +185,9 @@
         "column_jHCLrw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-on-guard-chip-shield.png",
-            "image_link": "https:\/\/guardair.com\/products\/on-guard-chip-shield-palmjet-ga44-models",
-            "title": "<a href=\"\/products\/on-guard-chip-shield-palmjet-ga44-models\" title=\"On-Guard® Chip Shield - PalmJet® GA44 Models\">On-Guard Chip Shield<\/a>",
+            "image": "shopify://shop_images/guardair-shop-accessories-on-guard-chip-shield.png",
+            "image_link": "",
+            "title": "<a href=\"/products/on-guard-chip-shield-palmjet-ga44-models\" title=\"On-Guard® Chip Shield - PalmJet® GA44 Models\">On-Guard Chip Shield</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -96,9 +196,9 @@
         "column_Vm4KHh": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-magloop.png",
-            "image_link": "https:\/\/guardair.com\/products\/magloop-magnetic-air-gun-hanging-loop",
-            "title": "<a href=\"\/products\/magloop-magnetic-air-gun-hanging-loop\" title=\"MagLoop Magnetic Air Gun Hanging Loop\">Magnetic Hanging Loop<\/a>",
+            "image": "shopify://shop_images/guardair-shop-accessories-magloop.png",
+            "image_link": "",
+            "title": "<a href=\"/products/magloop-magnetic-air-gun-hanging-loop\" title=\"MagLoop Magnetic Air Gun Hanging Loop\">Magnetic Hanging Loop</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -107,9 +207,9 @@
         "column_4yPqYY": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-maghook.png",
-            "image_link": "https:\/\/guardair.com\/products\/maghook-magnetic-air-gun-hanging-hook",
-            "title": "<a href=\"\/products\/maghook-magnetic-air-gun-hanging-hook\" title=\"MagHook Magnetic Air Gun Hanging Hook\">Magnetic Hanging Hook<\/a>",
+            "image": "shopify://shop_images/guardair-shop-accessories-maghook.png",
+            "image_link": "",
+            "title": "<a href=\"/products/maghook-magnetic-air-gun-hanging-hook\" title=\"MagHook Magnetic Air Gun Hanging Hook\">Magnetic Hanging Hook</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -118,9 +218,9 @@
         "column_pAX9XL": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-shop-accessories-gunslinger.png",
-            "image_link": "https:\/\/guardair.com\/products\/gunslinger-magnetic-air-gun-holder",
-            "title": "<a href=\"\/products\/gunslinger-magnetic-air-gun-holder\" title=\"Gunslinger® Magnetic Air Gun Holder\">Gunslinger<\/a>",
+            "image": "shopify://shop_images/guardair-shop-accessories-gunslinger.png",
+            "image_link": "",
+            "title": "<a href=\"/products/gunslinger-magnetic-air-gun-holder\" title=\"Gunslinger® Magnetic Air Gun Holder\">Gunslinger</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -129,9 +229,9 @@
         "column_nBjwmF": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-shoulder-strap.png",
-            "image_link": "https:\/\/guardair.com\/products\/hydroforce-hyd-nylon-shoulder-strap",
-            "title": "<a href=\"\/products\/shoulder-strap-for-hydroforce\" title=\"Shoulder Strap for HydroForce\">Shoulder Strap for HydroForce<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-shoulder-strap.png",
+            "image_link": "",
+            "title": "<a href=\"/products/shoulder-strap-for-hydroforce\" title=\"Shoulder Strap for HydroForce\">Shoulder Strap for HydroForce</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -191,7 +291,7 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "bdr_btm": true,
+        "bdr_btm": false,
         "padding_top": 0,
         "padding_bottom": 12,
         "anchor_id": ""
@@ -231,9 +331,9 @@
         "column_7dazHw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75lj-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-alloy-nozzle",
-            "title": "<a href=\"\/products\/long-john-75lj-alloy-nozzle\" title=\"Long John® 75LJ Alloy Nozzle\">75LJ Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75lj-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-alloy-nozzle\" title=\"Long John® 75LJ Alloy Nozzle\">75LJ Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -242,9 +342,9 @@
         "column_C7thbA": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75xt-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-aluminum-nozzle",
-            "title": "<a href=\"\/products\/xtrathrust-75xt-aluminum-nozzle\" title=\"XtraThrust® 75XT Aluminum Nozzle\">75XT Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75xt-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/xtrathrust-75xt-aluminum-nozzle\" title=\"XtraThrust® 75XT Aluminum Nozzle\">75XT Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -253,9 +353,9 @@
         "column_G4UAWG": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-force-5-inforcer-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/force-5-f5-inforcer-inf5-aluminum-nozzle",
-            "title": "<a href=\"\/products\/force-5-f5-inforcer-inf5-aluminum-nozzle\" title=\"Force 5® F5 \/ Inforcer® INF5 Aluminum Nozzle\">Force 5 \/ Inforcer Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-force-5-inforcer-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/force-5-f5-inforcer-inf5-aluminum-nozzle\" title=\"Force 5® F5 / Inforcer® INF5 Aluminum Nozzle\">Force 5 / Inforcer Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -264,9 +364,9 @@
         "column_cCawkH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-79sg-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/syphon-spray-gun-79sg-oil-spray-gun-83sg-brass-nozzle",
-            "title": "<a href=\"\/products\/79sg-nozzle\" title=\"79SG Nozzle\">79SG Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-79sg-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/79sg-nozzle\" title=\"79SG Nozzle\">79SG Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -275,9 +375,9 @@
         "column_iF4tK4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-80lj-whisperjet-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/whisperjet-80lj-aluminum-nozzle",
-            "title": "<a href=\"\/products\/whisperjet-80lj-aluminum-nozzle\" title=\"WhisperJet® 80LJ Aluminum Nozzle\">80LJ WhisperJet Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-80lj-whisperjet-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/whisperjet-80lj-aluminum-nozzle\" title=\"WhisperJet® 80LJ Aluminum Nozzle\">80LJ WhisperJet Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -286,9 +386,9 @@
         "column_VpyJwr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-quietforce-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/quietforce-74g-u74-nozzle-adjustable-air-79-dba",
-            "title": "<a href=\"\/products\/quietforce-74g-u74-nozzle-adjustable-air-79-dba\" title=\"QuietForce® 74G\/U74 Nozzle - Adjustable Air (79 dBA)\">QuietForce Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-quietforce-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/quietforce-74g-u74-nozzle-adjustable-air-79-dba\" title=\"QuietForce® 74G/U74 Nozzle - Adjustable Air (79 dBA)\">QuietForce Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -297,9 +397,9 @@
         "column_xHfP3n": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-80-whisperjet-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/whisperjet-80-aluminum-nozzle",
-            "title": "<a href=\"\/products\/whisperjet-80-aluminum-nozzle\" title=\"WhisperJet® 80 Aluminum Nozzle\">80 WhisperJet Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-80-whisperjet-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/whisperjet-80-aluminum-nozzle\" title=\"WhisperJet® 80 Aluminum Nozzle\">80 WhisperJet Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -308,9 +408,9 @@
         "column_9iMXeA": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-lazer-brass-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/lazer-600-650-brass-venturi-nozzle",
-            "title": "<a href=\"\/products\/lazer-600-650-brass-venturi-nozzle\" title=\"Lazer® 600\/650 Brass Venturi Nozzle\">Lazer Brass Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-lazer-brass-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/lazer-600-650-brass-venturi-nozzle\" title=\"Lazer® 600/650 Brass Venturi Nozzle\">Lazer Brass Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -319,9 +419,9 @@
         "column_biUe4F": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-thumbswitch-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/thumbswitch-900-aluminum-nozzle",
-            "title": "<a href=\"\/products\/thumbswitch-900-aluminum-nozzle\" title=\"ThumbSwitch 900 Aluminum Nozzle\">ThumbSwitch Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-thumbswitch-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/thumbswitch-900-aluminum-nozzle\" title=\"ThumbSwitch 900 Aluminum Nozzle\">ThumbSwitch Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -330,9 +430,9 @@
         "column_MWANrN": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-74-rubber-tip-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/74-rubber-tip-nozzle",
-            "title": "<a href=\"\/products\/74-rubber-tip-nozzle\" title=\"Rubber Tip 74RT Nozzle\">74 Rubber Tip Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-74-rubber-tip-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/74-rubber-tip-nozzle\" title=\"Rubber Tip 74RT Nozzle\">74 Rubber Tip Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -341,9 +441,9 @@
         "column_tDQF7a": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-76-brass-nozzle-tip.png",
-            "image_link": "https:\/\/guardair.com\/products\/booster-76s-brass-nozzle-tip",
-            "title": "<a href=\"\/products\/76-brass-nozzle-tip\" title=\"76 Brass Nozzle Tip\">76 Brass Nozzle Tip<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-76-brass-nozzle-tip.png",
+            "image_link": "",
+            "title": "<a href=\"/products/76-brass-nozzle-tip\" title=\"76 Brass Nozzle Tip\">76 Brass Nozzle Tip</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -352,9 +452,9 @@
         "column_ABkzBK": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-80-flex-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/flex-80-thumbswitch-980-whisperjet-nozzle",
-            "title": "<a href=\"\/products\/flex-safety-air-gun-nozzle\" title=\"Flex Safety Air Gun Nozzle\">80 Flex Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-80-flex-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/flex-safety-air-gun-nozzle\" title=\"Flex Safety Air Gun Nozzle\">80 Flex Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -363,9 +463,9 @@
         "column_ARbQA4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-74h-brass-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/airmiser-74h-brass-nozzle",
-            "title": "<a href=\"\/products\/74h-brass-nozzle\" title=\"74H Brass Nozzle\">74H Brass Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-74h-brass-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/74h-brass-nozzle\" title=\"74H Brass Nozzle\">74H Brass Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -374,9 +474,9 @@
         "column_bGAyVE": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-hydroforce-safety-tip-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/hydroforce-hyd-aluminum-safety-tip-nozzle",
-            "title": "<a href=\"\/products\/hydroforce-safety-tip-nozzle\" title=\"HydroForce Safety Tip Nozzle\">HydroForce Safety Tip Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-hydroforce-safety-tip-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/hydroforce-safety-tip-nozzle\" title=\"HydroForce Safety Tip Nozzle\">HydroForce Safety Tip Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -385,9 +485,9 @@
         "column_BWxAMy": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-inforcer-steel-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/force-5-f5-inforcer-inf5-steel-chisel-point-nozzle",
-            "title": "<a href=\"\/products\/force-5-f5-inforcer-inf5-steel-chisel-point-nozzle\" title=\"Force 5® F5 \/ Inforcer® INF5 Steel Chisel Point Nozzle\">Inforcer Steel Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-inforcer-steel-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/force-5-f5-inforcer-inf5-steel-chisel-point-nozzle\" title=\"Force 5® F5 / Inforcer® INF5 Steel Chisel Point Nozzle\">Inforcer Steel Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -453,7 +553,7 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "bdr_btm": true,
+        "bdr_btm": false,
         "padding_top": 0,
         "padding_bottom": 12,
         "anchor_id": ""
@@ -493,9 +593,9 @@
         "column_aEXTYr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75-series-extension.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-xtrathrust-75xt-aluminum-extension-6",
-            "title": "<a href=\"\/products\/long-john-75lj-xtrathrust-75xt-aluminum-extension-6\" title=\"Long John® 75LJ \/ XtraThrust® 75XT Aluminum Extension - 6&quot;\">75 Series Extension<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75-series-extension.png",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-xtrathrust-75xt-aluminum-extension-6\" title=\"Long John® 75LJ / XtraThrust® 75XT Aluminum Extension - 6&quot;\">75 Series Extension</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -504,9 +604,9 @@
         "column_HXjWE3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75lj-extension-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-aluminum-extension-w-aluminum-nozzle-6",
-            "title": "<a href=\"\/products\/long-john-75lj-aluminum-extension-w-aluminum-nozzle-6\" title=\"Long John® 75LJ Aluminum Extension w\/ Aluminum Nozzle - 6&quot;\">75LJ Extension & Venturi Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75lj-extension-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-aluminum-extension-w-aluminum-nozzle-6\" title=\"Long John® 75LJ Aluminum Extension w/ Aluminum Nozzle - 6&quot;\">75LJ Extension & Venturi Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -515,9 +615,9 @@
         "column_fLCdHn": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75lj-mid-extension-coupler.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-xtrathrust-75xt-aluminum-mid-extension-w-coupler-48",
-            "title": "<a href=\"\/products\/long-john-75lj-xtrathrust-75xt-aluminum-mid-extension-w-coupler-48\" title=\"Long John® 75LJ \/ XtraThrust® 75XT Aluminum Mid Extension w\/ Coupler - 48&quot;\">Mid Extension With Coupler<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75lj-mid-extension-coupler.png",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-xtrathrust-75xt-aluminum-mid-extension-w-coupler-48\" title=\"Long John® 75LJ / XtraThrust® 75XT Aluminum Mid Extension w/ Coupler - 48&quot;\">Mid Extension With Coupler</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -526,9 +626,9 @@
         "column_VeU8Hz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75xt-extension-xtrathrust-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-aluminum-extension-w-alloy-nozzle-6",
-            "title": "<a href=\"\/products\/xtrathrust-75xt-aluminum-extension-w-alloy-nozzle-6\" title=\"XtraThrust® 75XT Aluminum Extension w\/ Alloy Nozzle - 6&quot;\">75XT Extension w\/ XtraThrust Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75xt-extension-xtrathrust-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/xtrathrust-75xt-aluminum-extension-w-alloy-nozzle-6\" title=\"XtraThrust® 75XT Aluminum Extension w/ Alloy Nozzle - 6&quot;\">75XT Extension w/ XtraThrust Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -537,9 +637,9 @@
         "column_CaXi7p": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-palmjet-extension.png",
-            "image_link": "https:\/\/guardair.com\/products\/palmjet-ga44-steel-extension-w-star-tip-nozzle-4-straight",
-            "title": "<a href=\"\/products\/palmjet-ga44-steel-extension-w-star-tip-nozzle-4-straight\" title=\"PalmJet® GA44 Steel Extension w\/ Star-Tip Nozzle - 4&quot; Straight\">PalmJet Extension<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-palmjet-extension.png",
+            "image_link": "",
+            "title": "<a href=\"/products/palmjet-ga44-steel-extension-w-star-tip-nozzle-4-straight\" title=\"PalmJet® GA44 Steel Extension w/ Star-Tip Nozzle - 4&quot; Straight\">PalmJet Extension</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -548,9 +648,9 @@
         "column_THkdQz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-force-5-inforcer-venturi-nozzle-extension.png",
-            "image_link": "https:\/\/guardair.com\/products\/force-5-f5-inforcer-inf5-aluminum-extension-w-aluminum-nozzle-24",
-            "title": "<a href=\"\/products\/force-5-f5-inforcer-inf5-aluminum-extension-w-aluminum-nozzle-24\" title=\"Force 5® F5 \/ Inforcer® INF5 Aluminum Extension w\/ Aluminum Nozzle - 24&quot;\">Force 5 \/ Inforcer Venturi Nozzle & Extension<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-force-5-inforcer-venturi-nozzle-extension.png",
+            "image_link": "",
+            "title": "<a href=\"/products/force-5-f5-inforcer-inf5-aluminum-extension-w-aluminum-nozzle-24\" title=\"Force 5® F5 / Inforcer® INF5 Aluminum Extension w/ Aluminum Nozzle - 24&quot;\">Force 5 / Inforcer Venturi Nozzle & Extension</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -559,9 +659,9 @@
         "column_FJLxcq": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-lazer-extension-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/lazer-600-650-aluminum-extension-w-aluminum-nozzle-6",
-            "title": "<a href=\"\/products\/lazer-600-650-aluminum-extension-w-aluminum-nozzle-6\" title=\"Lazer® 600\/650 Aluminum Extension w\/ Aluminum Nozzle - 6&quot;\">Lazer Extension & Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-lazer-extension-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/lazer-600-650-aluminum-extension-w-aluminum-nozzle-6\" title=\"Lazer® 600/650 Aluminum Extension w/ Aluminum Nozzle - 6&quot;\">Lazer Extension & Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -570,9 +670,9 @@
         "column_CU4VE4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-80lj-extension-whisperjet-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/whisperjet-80lj-aluminum-extension-w-aluminum-nozzle-6",
-            "title": "<a href=\"\/products\/whisperjet-80lj-aluminum-extension-w-aluminum-nozzle-6\" title=\"WhisperJet® 80LJ Aluminum Extension w\/ Aluminum Nozzle - 6&quot;\">80LJ Extension & WhisperJet Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-80lj-extension-whisperjet-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/whisperjet-80lj-aluminum-extension-w-aluminum-nozzle-6\" title=\"WhisperJet® 80LJ Aluminum Extension w/ Aluminum Nozzle - 6&quot;\">80LJ Extension & WhisperJet Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -581,9 +681,9 @@
         "column_P6y3mC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75lj-75xt-brass-coupler.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-xtrathrust-75xt-brass-coupler",
-            "title": "<a href=\"\/products\/75lj-coupler\" title=\"75LJ \/ 75XT Brass Coupler\">75LJ \/ 75XT Brass Coupler<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75lj-75xt-brass-coupler.png",
+            "image_link": "",
+            "title": "<a href=\"/products/75lj-coupler\" title=\"75LJ / 75XT Brass Coupler\">75LJ / 75XT Brass Coupler</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -592,9 +692,9 @@
         "column_weUTn3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-74bh-brass-extension.png",
-            "image_link": "https:\/\/guardair.com\/products\/blind-hole-74bh-brass-extension-6-straight",
-            "title": "<a href=\"\/products\/blind-hole-74bh-brass-extension-6-straight\" title=\"Blind Hole® 74BH Brass Extension - 6&quot; Straight\">74BH Brass Extension<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-74bh-brass-extension.png",
+            "image_link": "",
+            "title": "<a href=\"/products/blind-hole-74bh-brass-extension-6-straight\" title=\"Blind Hole® 74BH Brass Extension - 6&quot; Straight\">74BH Brass Extension</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -603,9 +703,9 @@
         "column_qTVa7D": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-900-extension-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/thumbswitch-900-aluminum-extension-w-aluminum-nozzle-6",
-            "title": "<a href=\"\/products\/thumbswitch-900-aluminum-extension-w-aluminum-nozzle-6\" title=\"ThumbSwitch 900 Aluminum Extension w\/ Aluminum Nozzle - 6&quot;\">900 Extension & Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-900-extension-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/thumbswitch-900-aluminum-extension-w-aluminum-nozzle-6\" title=\"ThumbSwitch 900 Aluminum Extension w/ Aluminum Nozzle - 6&quot;\">900 Extension & Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -614,9 +714,9 @@
         "column_kmybcL": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-lazer-steel-extension-venturi.png",
-            "image_link": "https:\/\/guardair.com\/products\/lazer-600-650-steel-extension-w-venturi-3",
-            "title": "<a href=\"\/products\/lazer-600-650-steel-extension-w-venturi-3\" title=\"Lazer® 600\/650 Steel Extension w\/ Venturi - 3&quot;\">Lazer Steel Extension w\/ Venturi<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-lazer-steel-extension-venturi.png",
+            "image_link": "",
+            "title": "<a href=\"/products/lazer-600-650-steel-extension-w-venturi-3\" title=\"Lazer® 600/650 Steel Extension w/ Venturi - 3&quot;\">Lazer Steel Extension w/ Venturi</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -625,9 +725,9 @@
         "column_eb4b3T": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-76-brass-extension.png",
-            "image_link": "https:\/\/guardair.com\/products\/booster-76s-brass-extension-6",
-            "title": "<a href=\"\/products\/booster-76s-brass-extension-6\" title=\"Booster 76S Brass Extension - 6&quot;\">76 Brass Extension<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-76-brass-extension.png",
+            "image_link": "",
+            "title": "<a href=\"/products/booster-76s-brass-extension-6\" title=\"Booster 76S Brass Extension - 6&quot;\">76 Brass Extension</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -636,9 +736,9 @@
         "column_EADzUz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75lj-steel-extension-venturi-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-steel-extension-w-steel-nozzle-6",
-            "title": "<a href=\"\/products\/long-john-75lj-steel-extension-w-steel-nozzle-6\" title=\"Long John® 75LJ Steel Extension w\/ Steel Nozzle - 6&quot;\">75LJ Steel Extension & Venturi Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75lj-steel-extension-venturi-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-steel-extension-w-steel-nozzle-6\" title=\"Long John® 75LJ Steel Extension w/ Steel Nozzle - 6&quot;\">75LJ Steel Extension & Venturi Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -647,9 +747,9 @@
         "column_Hd6eih": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-4-pc-lazer-steel-extension-kit.png",
-            "image_link": "https:\/\/guardair.com\/products\/4-pc-steel-extension-kit-for-lazer-series",
-            "title": "<a href=\"\/products\/4-pc-steel-extension-kit-for-lazer-series\" title=\"Lazer® 600\/650 Steel Extension w\/ Venturi - 4 Piece Kit\">4 PC. Steel Extension Kit for Lazer Series<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-4-pc-lazer-steel-extension-kit.png",
+            "image_link": "",
+            "title": "<a href=\"/products/4-pc-steel-extension-kit-for-lazer-series\" title=\"Lazer® 600/650 Steel Extension w/ Venturi - 4 Piece Kit\">4 PC. Steel Extension Kit for Lazer Series</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -658,9 +758,9 @@
         "column_Vj8tGd": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75xt-steel-extension-xtrathrust-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-steel-extension-w-steel-nozzle-12",
-            "title": "<a href=\"\/products\/xtrathrust-75xt-steel-extension-w-steel-nozzle-12\" title=\"XtraThrust® 75XT Steel Extension w\/ Steel Nozzle - 12&quot;\">75XT Steel Extension w\/ XtraThrust Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75xt-steel-extension-xtrathrust-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/xtrathrust-75xt-steel-extension-w-steel-nozzle-12\" title=\"XtraThrust® 75XT Steel Extension w/ Steel Nozzle - 12&quot;\">75XT Steel Extension w/ XtraThrust Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -669,9 +769,9 @@
         "column_xbMeTE": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75lj-steel-extension-alloy-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-steel-extension-w-alloy-nozzle-6",
-            "title": "<a href=\"\/products\/long-john-75lj-steel-extension-w-alloy-nozzle-6\" title=\"Long John® 75LJ Steel Extension w\/ Alloy Nozzle - 6&quot;\">75LJ Steel Extension & Alloy Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75lj-steel-extension-alloy-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-steel-extension-w-alloy-nozzle-6\" title=\"Long John® 75LJ Steel Extension w/ Alloy Nozzle - 6&quot;\">75LJ Steel Extension & Alloy Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -680,9 +780,9 @@
         "column_KyhABx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-74-brass-extension_563541a6-f974-4358-b2f7-11487c458d54.png",
-            "image_link": "https:\/\/guardair.com\/products\/jetguard-74s-brass-extension-6",
-            "title": "<a href=\"\/products\/jetguard-74s-brass-extension-6\" title=\"JetGuard 74S Brass Extension - 6&quot;\">74 Brass Extension<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-74-brass-extension_563541a6-f974-4358-b2f7-11487c458d54.png",
+            "image_link": "",
+            "title": "<a href=\"/products/jetguard-74s-brass-extension-6\" title=\"JetGuard 74S Brass Extension - 6&quot;\">74 Brass Extension</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -691,9 +791,9 @@
         "column_3ebBUQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-75xt-extension-steel-nozzle.png",
-            "image_link": "https:\/\/guardair.com\/products\/xtrathrust-75xt-aluminum-extension-w-steel-nozzle-6",
-            "title": "<a href=\"\/products\/xtrathrust-75xt-aluminum-extension-w-steel-nozzle-6\" title=\"XtraThrust® 75XT Aluminum Extension w\/ Steel Nozzle - 6&quot;\">75XT Extension & Steel Nozzle<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-75xt-extension-steel-nozzle.png",
+            "image_link": "",
+            "title": "<a href=\"/products/xtrathrust-75xt-aluminum-extension-w-steel-nozzle-6\" title=\"XtraThrust® 75XT Aluminum Extension w/ Steel Nozzle - 6&quot;\">75XT Extension & Steel Nozzle</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -702,9 +802,9 @@
         "column_x69nWz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-60-inch-steel-mid-extension-coupler.png",
-            "image_link": "https:\/\/guardair.com\/products\/long-john-75lj-xtrathrust-75xt-steel-mid-extension-w-coupler-60",
-            "title": "<a href=\"\/products\/long-john-75lj-xtrathrust-75xt-steel-mid-extension-w-coupler-60\" title=\"Long John® 75LJ \/ XtraThrust® 75XT Steel Mid Extension w\/ Coupler - 60&quot;\">60\" Steel Mid Extension With Coupler<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-60-inch-steel-mid-extension-coupler.png",
+            "image_link": "",
+            "title": "<a href=\"/products/long-john-75lj-xtrathrust-75xt-steel-mid-extension-w-coupler-60\" title=\"Long John® 75LJ / XtraThrust® 75XT Steel Mid Extension w/ Coupler - 60&quot;\">60\" Steel Mid Extension With Coupler</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -775,7 +875,7 @@
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "bdr_btm": true,
+        "bdr_btm": false,
         "padding_top": 0,
         "padding_bottom": 12,
         "anchor_id": ""
@@ -815,9 +915,9 @@
         "column_KFQXLx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-valve-repair-kit.png",
-            "image_link": "https:\/\/guardair.com\/products\/air-gun-valve-repair-kit-force-5-f5-inforcer-inf5-hydroforce-hyd-models",
-            "title": "<a href=\"\/products\/air-gun-valve-repair-kit-force-5-f5-inforcer-inf5-hydroforce-hyd-models\" title=\"Air Gun Valve Repair Kit - Force 5® F5 \/ Inforcer® INF5 \/ HydroForce® HYD Models\">Valve Repair Kit<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-valve-repair-kit.png",
+            "image_link": "",
+            "title": "<a href=\"/products/air-gun-valve-repair-kit-force-5-f5-inforcer-inf5-hydroforce-hyd-models\" title=\"Air Gun Valve Repair Kit - Force 5® F5 / Inforcer® INF5 / HydroForce® HYD Models\">Valve Repair Kit</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -826,9 +926,9 @@
         "column_4B7VLp": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-trigger-repair-kit.png",
-            "image_link": "https:\/\/guardair.com\/products\/air-gun-trigger-repair-kit-classic-models-w-short-trigger",
-            "title": "<a href=\"\/products\/air-gun-trigger-repair-kit-classic-models-w-short-trigger\" title=\"Air Gun Trigger Repair Kit - Classic+ Models w\/ Short Trigger\">Trigger Repair Kit<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-trigger-repair-kit.png",
+            "image_link": "",
+            "title": "<a href=\"/products/air-gun-trigger-repair-kit-classic-models-w-short-trigger\" title=\"Air Gun Trigger Repair Kit - Classic+ Models w/ Short Trigger\">Trigger Repair Kit</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -837,9 +937,9 @@
         "column_3tEHy4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-gun-rebuild-kit.png",
-            "image_link": "https:\/\/guardair.com\/products\/air-gun-rebuild-kit-old-classic-models-prior-to-2008",
-            "title": "<a href=\"\/products\/air-gun-rebuild-kit-old-classic-models-prior-to-2008\" title=\"Air Gun Rebuild Kit - Old Classic Models (Prior to 2008)\">Gun Rebuild Kit<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-gun-rebuild-kit.png",
+            "image_link": "",
+            "title": "<a href=\"/products/air-gun-rebuild-kit-old-classic-models-prior-to-2008\" title=\"Air Gun Rebuild Kit - Old Classic Models (Prior to 2008)\">Gun Rebuild Kit</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -848,9 +948,9 @@
         "column_jctXBn": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-gun-parts-shuttle-valve-repair-kit.png",
-            "image_link": "https:\/\/guardair.com\/products\/air-gun-shuttle-valve-repair-kit-hydroforce-hyd-models-w-3-8-inlet",
-            "title": "<a href=\"\/products\/air-gun-shuttle-valve-repair-kit-hydroforce-hyd-models-w-3-8-inlet\" title=\"Air Gun Shuttle Valve Repair Kit - HydroForce® HYD Models w\/ 3\/8&quot; Inlet\">Shuttle Valve Repair Kit<\/a>",
+            "image": "shopify://shop_images/guardair-gun-parts-shuttle-valve-repair-kit.png",
+            "image_link": "",
+            "title": "<a href=\"/products/air-gun-shuttle-valve-repair-kit-hydroforce-hyd-models-w-3-8-inlet\" title=\"Air Gun Shuttle Valve Repair Kit - HydroForce® HYD Models w/ 3/8&quot; Inlet\">Shuttle Valve Repair Kit</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -891,6 +991,7 @@
   "order": [
     "main",
     "rich_text_Kc4nMk",
+    "gua_multicolumn_LgU4Q3",
     "multicolumn_y3RJDU",
     "rich_text_4LhbKH",
     "rich_text_YXK7Fj",
