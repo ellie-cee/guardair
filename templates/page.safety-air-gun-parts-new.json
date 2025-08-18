@@ -115,6 +115,12 @@
         "product_RygCf3",
         "product_LcaTht"
       ],
+      "custom_css": [
+        ".gua-multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
       "name": "GUA Multicolumns",
       "settings": {
         "block_style": "stacked",
@@ -258,6 +264,7 @@
         "column_pAX9XL",
         "column_nBjwmF"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
         "h2 {font-size: 28px;}",
