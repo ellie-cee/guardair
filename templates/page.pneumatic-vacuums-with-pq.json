@@ -629,6 +629,7 @@
       "blocks": {
         "column_pYmxV4": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ55C200NEDPA.jpg",
             "image_link": "",
@@ -638,8 +639,15 @@
             "link": ""
           }
         },
+        "product_XLzedr": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-55-gallon-pulseair-vacuum-kit-w-1-5-inlet"
+          }
+        },
         "column_zd9PJ8": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ30C200NEDPA.jpg",
             "image_link": "",
@@ -649,8 +657,15 @@
             "link": ""
           }
         },
+        "product_nbknHh": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-30-gallon-pulseair-vacuum-kit-w-1-5-inlet"
+          }
+        },
         "column_DT3eU8": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ20C200NEDPA.jpg",
             "image_link": "",
@@ -660,8 +675,15 @@
             "link": ""
           }
         },
+        "product_kFyTnF": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-20-gallon-pulseair-dust-extractor-kit-w-1-5-inlet"
+          }
+        },
         "column_6UULbi": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ30C200NEDPAD.jpg",
             "image_link": "",
@@ -671,8 +693,15 @@
             "link": ""
           }
         },
+        "product_BwMXp4": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-30-gallon-pulseair-dust-extractor-kit-w-2-inlet"
+          }
+        },
         "column_BkkhUK": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ20C200NEDPAD.jpg",
             "image_link": "",
@@ -681,14 +710,25 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_XEYEU9": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-20-gallon-pulseair-dust-extractor-kit-w-1-5-inlet"
+          }
         }
       },
       "block_order": [
         "column_pYmxV4",
+        "product_XLzedr",
         "column_zd9PJ8",
+        "product_nbknHh",
         "column_DT3eU8",
+        "product_kFyTnF",
         "column_6UULbi",
-        "column_BkkhUK"
+        "product_BwMXp4",
+        "column_BkkhUK",
+        "product_XEYEU9"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
