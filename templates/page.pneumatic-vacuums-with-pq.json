@@ -1023,6 +1023,7 @@
         },
         "column_3tEHy4": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-material-mover.png",
             "image_link": "",
@@ -1142,11 +1143,11 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
-        "ptitle_fix": "none",
+        "ptitle_fix": "basic",
         "pdesc": false,
         "pdesc_shorten": 0,
         "alt_desc": false,
-        "alt_image": false,
+        "alt_image": true,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
