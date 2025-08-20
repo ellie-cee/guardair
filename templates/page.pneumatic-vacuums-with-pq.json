@@ -490,6 +490,7 @@
       "blocks": {
         "column_ibaRDn": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ55C200ATEX.jpg",
             "image_link": "",
@@ -499,8 +500,15 @@
             "link": ""
           }
         },
+        "product_PKcQmV": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet"
+          }
+        },
         "column_azjf7A": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ30C200ATEX_Main.jpg",
             "image_link": "",
@@ -509,11 +517,19 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_YcN6z9": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-30-gallon-atex-vacuum-kit-w-1-5-inlet"
+          }
         }
       },
       "block_order": [
         "column_ibaRDn",
-        "column_azjf7A"
+        "product_PKcQmV",
+        "column_azjf7A",
+        "product_YcN6z9"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
