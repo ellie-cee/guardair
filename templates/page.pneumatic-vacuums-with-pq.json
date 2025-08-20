@@ -987,6 +987,7 @@
       "blocks": {
         "column_KFQXLx": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-personnel-cleaning-station.png",
             "image_link": "",
@@ -996,8 +997,15 @@
             "link": ""
           }
         },
+        "product_hERtDH": {
+          "type": "product",
+          "settings": {
+            "product": "personnel-cleaning-station-5-5-gallon-vacuum"
+          }
+        },
         "column_4B7VLp": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-machinevac.png",
             "image_link": "",
@@ -1005,6 +1013,12 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_ygfYYi": {
+          "type": "product",
+          "settings": {
+            "product": "machinevac-5-5-gallon-vacuum"
           }
         },
         "column_3tEHy4": {
@@ -1018,8 +1032,15 @@
             "link": ""
           }
         },
+        "product_CFEkHb": {
+          "type": "product",
+          "settings": {
+            "product": "material-mover-8-nozzle-vacuum-unit"
+          }
+        },
         "column_jctXBn": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-blind-hole-vacuum.png",
             "image_link": "",
@@ -1029,8 +1050,15 @@
             "link": ""
           }
         },
+        "product_Gh89N3": {
+          "type": "product",
+          "settings": {
+            "product": "blind-hole-5-5-gallon-vacuum"
+          }
+        },
         "column_xYRUzc": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-personnel-cleaning-station-ned.png",
             "image_link": "",
@@ -1040,8 +1068,15 @@
             "link": ""
           }
         },
+        "product_G3zmJc": {
+          "type": "product",
+          "settings": {
+            "product": "personnel-cleaning-station-ned-5-5-gallon-vacuum"
+          }
+        },
         "column_FhGY8J": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-guardair-vacuums-machinevac-ned.png",
             "image_link": "",
@@ -1051,8 +1086,15 @@
             "link": ""
           }
         },
+        "product_fUX8wx": {
+          "type": "product",
+          "settings": {
+            "product": "machinevac-ned-5-5-gallon-vacuum"
+          }
+        },
         "column_fViW9w": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-guardair-vacuums-material-mover-ned.png",
             "image_link": "",
@@ -1061,16 +1103,29 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_gYirg6": {
+          "type": "product",
+          "settings": {
+            "product": "material-mover-ned-4-nozzle-complete-kit"
+          }
         }
       },
       "block_order": [
         "column_KFQXLx",
+        "product_hERtDH",
         "column_4B7VLp",
+        "product_ygfYYi",
         "column_3tEHy4",
+        "product_CFEkHb",
         "column_jctXBn",
+        "product_Gh89N3",
         "column_xYRUzc",
+        "product_G3zmJc",
         "column_FhGY8J",
-        "column_fViW9w"
+        "product_fUX8wx",
+        "column_fViW9w",
+        "product_gYirg6"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
