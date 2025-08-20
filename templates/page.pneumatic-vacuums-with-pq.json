@@ -62,16 +62,19 @@
         "a {color: #002395; text-decoration: none; font-size: 20px;}"
       ],
       "settings": {
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "image_valign": "start",
         "ptitle_fix": "none",
         "pdesc": false,
-        "pdesc_length": 0,
-        "meta_pimage": "custom.block_product_image",
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
@@ -80,6 +83,7 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
+        "row_gap": 0,
         "padding_top": 12,
         "padding_bottom": 16,
         "anchor_id": ""
@@ -159,71 +163,61 @@
         "product_pFW3Pf": {
           "type": "product",
           "settings": {
-            "product": "powerquad-55-gallon-vacuum-kit-w-2-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-55-gallon-vacuum-kit-w-2-inlet"
           }
         },
         "product_bTbqTg": {
           "type": "product",
           "settings": {
-            "product": "powerquad-55-gallon-vacuum-generating-head-w-1-5-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-55-gallon-vacuum-generating-head-w-1-5-inlet"
           }
         },
         "product_DVC3VH": {
           "type": "product",
           "settings": {
-            "product": "powerquad-30-gallon-vacuum-kit-w-1-5-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-30-gallon-vacuum-kit-w-1-5-inlet"
           }
         },
         "product_dz4Uqd": {
           "type": "product",
           "settings": {
-            "product": "powerquad-20-30-gallon-vacuum-generating-head-w-1-5-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-20-30-gallon-vacuum-generating-head-w-1-5-inlet"
           }
         },
         "product_RFwxkn": {
           "type": "product",
           "settings": {
-            "product": "powerquad-20-gallon-vacuum-kit-w-1-5-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-20-gallon-vacuum-kit-w-1-5-inlet"
           }
         },
         "product_fpYUzd": {
           "type": "product",
           "settings": {
-            "product": "powerquad-20-30-gallon-vacuum-generating-head-w-1-5-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-20-30-gallon-vacuum-generating-head-w-1-5-inlet"
           }
         },
         "product_LKtFky": {
           "type": "product",
           "settings": {
-            "product": "powerquad-10-gallon-vacuum-kit-w-1-5-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-10-gallon-vacuum-kit-w-1-5-inlet"
           }
         },
         "product_E6JAB4": {
           "type": "product",
           "settings": {
-            "product": "powerquad-10-gallon-vacuum-generating-head-w-1-5-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-10-gallon-vacuum-generating-head-w-1-5-inlet"
           }
         },
         "product_kmpCyP": {
           "type": "product",
           "settings": {
-            "product": "powerquad-5-gallon-vacuum-generating-head-kit-w-1-25-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-5-gallon-vacuum-generating-head-kit-w-1-25-inlet"
           }
         },
         "product_tEednF": {
           "type": "product",
           "settings": {
-            "product": "powerquad-5-gallon-vacuum-generating-head-w-1-25-inlet",
-            "alt_ptitle": ""
+            "product": "powerquad-5-gallon-vacuum-generating-head-w-1-25-inlet"
           }
         }
       },
@@ -246,16 +240,19 @@
         "a {text-decoration: none;}"
       ],
       "settings": {
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
         "image_ratio": "square",
+        "image_valign": "start",
         "ptitle_fix": "specific_series",
         "pdesc": false,
-        "pdesc_length": 0,
-        "meta_pimage": "custom.block_product_image",
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
@@ -264,6 +261,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "row_gap": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "anchor_id": ""
@@ -333,6 +331,7 @@
       "blocks": {
         "column_x7TdXK": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ55C200NED.jpg",
             "image_link": "",
@@ -342,8 +341,15 @@
             "link": ""
           }
         },
+        "product_3bCcba": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-55-gallon-atex-vacuum-kit-w-1-5-inlet"
+          }
+        },
         "column_HUC7qy": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ30C200NED_Main.jpg",
             "image_link": "",
@@ -353,8 +359,15 @@
             "link": ""
           }
         },
+        "product_6GNMYc": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-30-gallon-atex-vacuum-kit-w-2-inlet"
+          }
+        },
         "column_Pnaidm": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PQ20C200NED.jpg",
             "image_link": "",
@@ -363,12 +376,21 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_ebh674": {
+          "type": "product",
+          "settings": {
+            "product": "powerquad-20-gallon-ned-vacuum-kit-w-2-inlet"
+          }
         }
       },
       "block_order": [
         "column_x7TdXK",
+        "product_3bCcba",
         "column_HUC7qy",
-        "column_Pnaidm"
+        "product_6GNMYc",
+        "column_Pnaidm",
+        "product_ebh674"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
@@ -377,16 +399,19 @@
         "a {text-decoration: none;}"
       ],
       "settings": {
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
         "image_ratio": "square",
+        "image_valign": "start",
         "ptitle_fix": "none",
         "pdesc": false,
-        "pdesc_length": 0,
-        "meta_pimage": "custom.block_product_image",
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
@@ -395,6 +420,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "row_gap": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "anchor_id": ""
@@ -496,16 +522,19 @@
         "a {text-decoration: none;}"
       ],
       "settings": {
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
         "image_ratio": "square",
+        "image_valign": "start",
         "ptitle_fix": "none",
         "pdesc": false,
-        "pdesc_length": 0,
-        "meta_pimage": "custom.block_product_image",
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
@@ -514,6 +543,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "row_gap": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "anchor_id": ""
@@ -651,16 +681,19 @@
         "a {text-decoration: none;}"
       ],
       "settings": {
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
         "image_ratio": "square",
+        "image_valign": "start",
         "ptitle_fix": "none",
         "pdesc": false,
-        "pdesc_length": 0,
-        "meta_pimage": "custom.block_product_image",
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
@@ -669,6 +702,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "row_gap": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "anchor_id": ""
@@ -782,16 +816,19 @@
         "a {text-decoration: none;}"
       ],
       "settings": {
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "image_valign": "start",
         "ptitle_fix": "none",
         "pdesc": false,
-        "pdesc_length": 0,
-        "meta_pimage": "custom.block_product_image",
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
@@ -800,6 +837,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "row_gap": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "anchor_id": ""
@@ -961,16 +999,19 @@
         "a {text-decoration: none;}"
       ],
       "settings": {
+        "block_style": "stacked",
         "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
+        "image_valign": "start",
         "ptitle_fix": "none",
         "pdesc": false,
-        "pdesc_length": 0,
-        "meta_pimage": "custom.block_product_image",
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
@@ -979,6 +1020,7 @@
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "row_gap": 0,
         "padding_top": 0,
         "padding_bottom": 100,
         "anchor_id": ""
