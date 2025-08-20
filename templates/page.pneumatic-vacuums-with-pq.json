@@ -828,6 +828,7 @@
       "blocks": {
         "column_zT4wVd": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-gunvac.png",
             "image_link": "",
@@ -845,6 +846,7 @@
         },
         "column_MNGbjG": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-flexible-gunvac.png",
             "image_link": "",
@@ -862,6 +864,7 @@
         },
         "column_6k8TxL": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/guardair-vacuums-contain-it-kit.png",
             "image_link": "",
@@ -901,7 +904,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
-        "ptitle_fix": "specific_series",
+        "ptitle_fix": "none",
         "pdesc": false,
         "pdesc_shorten": 0,
         "alt_desc": false,
