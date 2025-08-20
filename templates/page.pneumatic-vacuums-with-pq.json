@@ -837,6 +837,12 @@
             "link": ""
           }
         },
+        "product_AcWkqd": {
+          "type": "product",
+          "settings": {
+            "product": "gunvac-handheld-vacuum-kit"
+          }
+        },
         "column_MNGbjG": {
           "type": "column",
           "settings": {
@@ -846,6 +852,12 @@
             "text": "",
             "link_label": "",
             "link": ""
+          }
+        },
+        "product_DnTMY8": {
+          "type": "product",
+          "settings": {
+            "product": "flexible-gunvac-handheld-vacuum-kit"
           }
         },
         "column_6k8TxL": {
@@ -858,12 +870,21 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "product_rm48De": {
+          "type": "product",
+          "settings": {
+            "product": "contain-it-kit-with-gunvac"
+          }
         }
       },
       "block_order": [
         "column_zT4wVd",
+        "product_AcWkqd",
         "column_MNGbjG",
-        "column_6k8TxL"
+        "product_DnTMY8",
+        "column_6k8TxL",
+        "product_rm48De"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
@@ -880,7 +901,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
-        "ptitle_fix": "none",
+        "ptitle_fix": "specific_series",
         "pdesc": false,
         "pdesc_shorten": 0,
         "alt_desc": false,
