@@ -52,7 +52,7 @@
 
 
 {{ product.title }}
-{% for variant in product.variants %}{{ forloop.index }}. 
+{% for variant in product.variants %}{{ forloop.index }}. {{ variant.sku }}
   {{ variant.metafields.custom['max_pressure'].value }}<br/>
     {% if variant.metafields.custom['max_pressure'].value != blank %}
     {% assign show_maxpressure = true %}
