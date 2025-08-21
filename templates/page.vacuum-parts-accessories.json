@@ -48,6 +48,12 @@
           "settings": {
             "collection": ""
           }
+        },
+        "featured_collection_D4ccJz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
@@ -55,8 +61,10 @@
         "featured_collection_RcdqrT",
         "featured_collection_6gxxyJ",
         "featured_collection_ztgc3E",
-        "featured_collection_LTUakF"
+        "featured_collection_LTUakF",
+        "featured_collection_D4ccJz"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Collections",
