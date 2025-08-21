@@ -50,6 +50,7 @@
 <!-- Debug all custom metafields for this variant -->
 {% for metafield in variant.metafields.custom %}
   <p>Custom metafield: {{ metafield[0] }}<br>{{ metafield[1] }}<br>{{ metafield[2] }}</p>
+    <p>Custom metafield: {{ metafield[3] }}<br>{{ metafield[4] }}<br>{{ metafield[5] }}</p>
 {% endfor %}
 <!-- Check product-level metafields -->
 <p>Product max pressure: {{ product.metafields.custom.max_pressure.value }}</p>
