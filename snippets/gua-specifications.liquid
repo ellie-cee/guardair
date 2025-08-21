@@ -121,9 +121,9 @@
     {% assign show_soil_excavation_rate = true %}
   {% endif %}
 
-{% if variant.metafields.custom.max_pressure.value != blank %}
-  {% assign show_maxpressure = true %}
-{% endif %}
+  {% if variant.metafields.custom.max_pressure != blank %}
+    {% assign show_maxpressure = true %}
+  {% endif %}
 
 {% endfor %}
 
