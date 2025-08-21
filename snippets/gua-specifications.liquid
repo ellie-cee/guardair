@@ -50,7 +50,7 @@
   <p>Max pressure metafield: {{ variant.metafields.custom.max_pressure }}</p>
 <p>Max pressure value: {{ variant.metafields.custom.max_pressure.value }}</p>
 <p>Max pressure type: {{ variant.metafields.custom.max_pressure.type }}</p>
-
+<p>Max pressure value: {{ variant.metafields.custom['max_pressure'].value }}</p>
   {% if variant.sku != blank %}
     {% assign show_part_number = true %}
   {% endif %}
