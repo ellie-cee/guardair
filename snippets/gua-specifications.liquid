@@ -17,8 +17,8 @@
 {% endcomment %}
 {% style %}
   {% if request.page_type == 'page' %}
-      #{{ product.selected_or_first_available_variant.sku }}-specifications tr {display:flex;}    
-      #{{ product.selected_or_first_available_variant.sku }}-specifications th, #{{ product.selected_or_first_available_variant.sku }}-specifications td {flex:1 0 auto;}
+      table.specifications-table tr {display:flex;}    
+      table.specifications-table th, table.specifications-table td {flex:1 0 auto;}
   {% endif %}
 {% endstyle %}
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
