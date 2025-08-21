@@ -270,8 +270,7 @@
                     {% for entry in p_entries %}
                           {% assign handle = entry.handle %}
                           {% assign currentProduct = all_products[handle] %}       
-                          {% assign currentVariant = currentProduct.selected_or_first_available_variant %}   
-                          <h2>{{ currentVariant.metafields.custom.max_pressure.value }}</h2>                     
+                          {% assign currentVariant = currentProduct.selected_or_first_available_variant %}                       
                 <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}">
                   {% if show_part_number == true %}
                     <td>
