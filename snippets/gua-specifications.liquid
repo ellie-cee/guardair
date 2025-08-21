@@ -285,7 +285,7 @@
                           {% assign currentVariant = currentProduct.selected_or_first_available_variant %}    
                           
                           {{ currentVariant.metafields.custom.max_pressure.value }}
-                          {% if currentVariant.metafields.custom.max_pressure.value != blank%}
+                          {% if currentVariant.metafields.custom.max_pressure.value %}
                               {% assign show_maxpressure = true %}
                           {% endif %}
 
