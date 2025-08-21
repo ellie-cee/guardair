@@ -58,6 +58,10 @@
     {% assign show_part_number = true %}
   {% endif %}
 
+  {% if variant.metafields.global['Air-Hose-ID'].value != blank %}
+    {% assign show_air_hose_id = true %}
+  {% endif %}  
+
   {% if variant.metafields.global['Syphon-Flow-Rate'].value != blank %}
     {% assign show_syphon_flow_rate = true %}
   {% endif %}
@@ -92,10 +96,6 @@
 
   {% if variant.metafields.global.Fittings.value != blank %}
     {% assign show_fittings = true %}
-  {% endif %}
-
-  {% if variant.metafields.global['Air-Hose-ID'].value != blank %}
-    {% assign show_air_hose_id = true %}
   {% endif %}
 
   {% if variant.metafields.global['Vacuum-Lift'].value != blank %}
