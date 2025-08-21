@@ -100,10 +100,6 @@
     {% assign show_fittings = true %}
   {% endif %}
 
-  {% if variant.metafields.global['Each-Weight'].value != blank %}
-    {% assign show_weight = true %}
-  {% endif %}
-
   {% if variant.metafields.global['Air-Hose-ID'].value != blank %}
     {% assign show_air_hose_id = true %}
   {% endif %}
@@ -126,6 +122,13 @@
 
   {% if variant.metafields.custom.soil_excavation_rate.value != blank %}
     {% assign show_soil_excavation_rate = true %}
+  {% endif %}
+
+
+  {% if request.page_type == 'product' %}
+        {% if variant.metafields.global['Each-Weight'].value != blank %}
+          {% assign show_weight = true %}
+        {% endif %}
   {% endif %}
 
 {% endfor %}
