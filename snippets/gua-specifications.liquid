@@ -50,6 +50,8 @@
     {% assign show_part_number = true %}
   {% endif %}
 
+  -- {{ variant.metafields.custom['max_pressure'].value }}
+  
   {% if variant.metafields.global['Each-Height'].value != blank
     and variant.metafields.global['Each-Length'].value != blank
     and variant.metafields.global['Each-Width'].value != blank
