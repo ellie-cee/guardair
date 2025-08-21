@@ -47,10 +47,13 @@
 
 {% for variant in product.variants %}
 {{ variant.sku }}
-  <p>Max pressure metafield: {{ variant.metafields.custom.max_pressure }}</p>
-<p>Max pressure value: {{ variant.metafields.custom.max_pressure.value }}</p>
-<p>Max pressure type: {{ variant.metafields.custom.max_pressure.type }}</p>
-<p>Max pressure value: {{ variant.metafields.custom['max_pressure'].value }}</p>
+<!-- Debug all custom metafields for this variant -->
+{% for metafield in variant.metafields.custom %}
+  <p>Custom metafield: {{ metafield[0] }} = {{ metafield[1] }}</p>
+{% endfor %}
+<!-- Check product-level metafields -->
+<p>Product max pressure: {{ product.metafields.custom.max_pressure.value }}</p>
+
   {% if variant.sku != blank %}
     {% assign show_part_number = true %}
   {% endif %}
