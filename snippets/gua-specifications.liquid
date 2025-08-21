@@ -52,6 +52,14 @@
 
 {% for variant in product.variants %}
  
+    {% if variant.metafields.custom['max_pressure'].value != blank %}
+    {% assign show_maxpressure = true %}
+  {% endif %}
+
+{% endfor %}
+
+
+{% for variant in product.variants %}
   {% if variant.sku != blank %}
     {% assign show_part_number = true %}
   {% endif %}
