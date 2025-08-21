@@ -46,7 +46,7 @@
 {% assign show_weight = false %}
 
 {% for variant in product.variants %}
-
+{{ variant.sku }}
   <p>Max pressure metafield: {{ variant.metafields.custom.max_pressure }}</p>
 <p>Max pressure value: {{ variant.metafields.custom.max_pressure.value }}</p>
 <p>Max pressure type: {{ variant.metafields.custom.max_pressure.type }}</p>
