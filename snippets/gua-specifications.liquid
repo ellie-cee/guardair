@@ -168,7 +168,7 @@
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 
       
-    {% assign p_entries = product_list | sort: 'title' %}    
+    {% comment %}{% assign p_entries = product_list | sort: 'title' %}{% endcomment %}
 
       <div id="{{ product.selected_or_first_available_variant.sku }}-specifications" class="table-content">
         <div class="table-container">
