@@ -15,7 +15,12 @@
 </ul>custom.hose_length
       {% endfor %}  
 {% endcomment %}
-
+{% style %}
+  {% if request.page_type == 'page' %}
+      #{{ product.selected_or_first_available_variant.sku }}-specifications tr {display:flex;}    
+      #{{ product.selected_or_first_available_variant.sku }}-specifications th, #{{ product.selected_or_first_available_variant.sku }}-specifications td {flex:1 0 auto;}
+  {% endif %}
+{% endstyle %}
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 {% assign specifications_title =  linked_products_metaobject.group_name  | append: ' Specifications' %}
 {% assign specifications_option =  linked_products_metaobject.option_name %}
