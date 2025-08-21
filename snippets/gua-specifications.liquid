@@ -35,6 +35,7 @@
 {% assign show_fittings = false %}
 {% assign show_flow = false %}
 {% assign show_grams = false %}
+{% assign show_hose_length = false %}
 {% assign show_inlet_connection = false %}
 {% assign show_maxpressure = false %}
 {% assign show_min_compressor = false %}
@@ -77,7 +78,7 @@
     {% assign show_min_compressor = true %}
   {% endif %}
 
-  {% if variant.metafields.global['Inlet-Connection'].value != blank %}
+  {% if variant.metafields.global['Inlet-Connection'].value != blank and product.type != 'Air Hoses & Fittings' %}
     {% assign show_inlet_connection = true %}
   {% endif %}
 
@@ -145,23 +146,23 @@
 
 
 {% if show_air_inlet_fnpt == true
+  or show_air_hose_id == true
+  or show_dimensions == true
+  or show_fittings == true
+  or show_flow == true
+  or show_grams == true
+  or show_inlet_connection == true
+  or show_maxpressure == true 
   or show_min_compressor == true
   or show_noise_level == true
-  or show_flow == true
-  or show_vacuum_flow == true
-  or show_vacuum_lift == true
-  or show_syphon_flow_rate == true
-  or show_steel_drum_guage == true
   or show_output_thrust == true
-  or show_inlet_connection == true
-  or show_grams == true
-  or show_fittings == true
-  or show_air_hose_id == true
-  or show_vacuum_hose_id == true
   or show_soil_excavation_rate == true
-  or show_dimensions == true
-  or show_weight == true
-  or show_maxpressure == true  
+  or show_steel_drum_guage == true
+  or show_syphon_flow_rate == true
+  or show_vacuum_flow == true
+  or show_vacuum_hose_id == true
+  or show_vacuum_lift == true
+  or show_weight == true 
 %}
   {% assign show_spec = true %}
 {% endif %}
