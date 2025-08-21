@@ -204,6 +204,12 @@
                     (in)
                   </th>
                 {% endif %}
+                {% if show_hose_length == true %}
+                  <th width="7%">
+                    Hose Length
+                    (in)
+                  </th>
+                {% endif %}                
                 {% if show_inlet_connection == true %}
                   <th width="7%">
                     Compressed <br>
@@ -323,6 +329,11 @@
                       <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
                     </td>
                   {% endif %}
+                  {% if show_hose_length == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.custom.hose_length.value }}'</span>
+                    </td>
+                  {% endif %}                    
                   {% if show_inlet_connection == true %}
                     <td>
                       <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'</span>
