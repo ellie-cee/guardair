@@ -142,6 +142,10 @@
       {% if currentVariant.metafields.custom['max_pressure'].value != blank %}
           {% assign show_maxpressure = true %}
       {% endif %}
+
+      {% if currentVariant.metafields.custom['hose_length'].value != blank %}
+          {% assign show_hose_length = true %}
+      {% endif %}      
 {% endfor %}
 
 
