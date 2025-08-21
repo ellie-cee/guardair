@@ -51,15 +51,6 @@
 {% assign show_weight = false %}
 
 
-{{ product.title }}
-{% for variant in product.variants %}{{ forloop.index }}. {{ variant.sku }}
-  {{ variant.metafields.custom['max_pressure'].value }}<br/>
-    {% if variant.metafields.custom['max_pressure'].value != blank %}
-    {% assign show_maxpressure = true %}
-  {% endif %}
-
-{% endfor %}
-
 
 {% for variant in product.variants %}
   {% if variant.sku != blank %}
@@ -137,11 +128,18 @@
     {% assign show_soil_excavation_rate = true %}
   {% endif %}
 
-  {% if variant.metafields.custom['max_pressure'].value != blank %}
-    {% assign show_maxpressure = true %}
-  {% endif %}
-
 {% endfor %}
+
+{% assign p_entries = product_list | sort: 'title' %} 
+      {% for entry in p_entries %}
+            {% assign handle = entry.handle %}
+            {% assign currentProduct = all_products[handle] %}       
+            {% assign currentVariant = currentProduct.selected_or_first_available_variant %}   
+      {% if currentVariant.metafields.custom['max_pressure'].value != blank %}
+        {% assign show_maxpressure = true %}
+      {% endif %}
+{% endfor %}
+
 
 {% if show_air_inlet_fnpt == true
   or show_min_compressor == true
