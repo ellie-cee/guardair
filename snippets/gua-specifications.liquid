@@ -46,8 +46,10 @@
 {% assign show_weight = false %}
 
 {% for variant in product.variants %}
-{{ variant.sku }}
 
+{% for metafield in variant.metafields.custom %}
+  <p>Custom metafield: {{ metafield[0] }}</p>
+{% endfor %}
   {% if variant.sku != blank %}
     {% assign show_part_number = true %}
   {% endif %}
