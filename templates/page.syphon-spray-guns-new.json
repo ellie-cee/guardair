@@ -106,6 +106,7 @@
         "column_VpyJwr",
         "column_xHfP3n"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
         "h2 {font-size: 28px;}",
@@ -188,7 +189,7 @@
       "name": "GUA Multicolumns",
       "settings": {
         "block_style": "stacked",
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
