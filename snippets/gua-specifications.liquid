@@ -302,7 +302,7 @@
                       <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
                     </td>
                   {% endif %}
-                  {% if show_fittings == true %}
+                {% if show_fittings == true and request.page_type == 'product' %}  
                     <td>
                       <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
                     </td>
@@ -366,7 +366,12 @@
                       <td>
                         <span class="td-value">{{ currentVariant.metafields.custom.max_pressure.value }}</span>
                       </td>
-                  {% endif %}                    
+                  {% endif %}
+                {% if show_fittings == true and request.page_type == 'page' %}  
+                    <td>
+                      <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
+                    </td>
+                  {% endif %}                  
                   {% if show_dimensions == true %}
                     <td>
                       <span class="td-value">
