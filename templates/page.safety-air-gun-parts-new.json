@@ -385,6 +385,54 @@
           "settings": {
             "product": "whisperjet-80-aluminum-nozzle"
           }
+        },
+        "product_EhgdWQ": {
+          "type": "product",
+          "settings": {
+            "product": "lazer-600-650-brass-venturi-nozzle"
+          }
+        },
+        "product_RDxFBe": {
+          "type": "product",
+          "settings": {
+            "product": "thumbswitch-900-aluminum-nozzle"
+          }
+        },
+        "product_FfaXdx": {
+          "type": "product",
+          "settings": {
+            "product": "74-rubber-tip-nozzle"
+          }
+        },
+        "product_3UK3Kj": {
+          "type": "product",
+          "settings": {
+            "product": "booster-76s-brass-nozzle-tip"
+          }
+        },
+        "product_fKUXxx": {
+          "type": "product",
+          "settings": {
+            "product": "flex-80-thumbswitch-980-whisperjet-nozzle"
+          }
+        },
+        "product_r6qrAt": {
+          "type": "product",
+          "settings": {
+            "product": "airmiser-74h-brass-nozzle"
+          }
+        },
+        "product_NN7wMk": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_BK3UzM": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
@@ -394,7 +442,15 @@
         "product_zTXmya",
         "product_egCDEN",
         "product_YWL96g",
-        "product_Uyi47f"
+        "product_Uyi47f",
+        "product_EhgdWQ",
+        "product_RDxFBe",
+        "product_FfaXdx",
+        "product_3UK3Kj",
+        "product_fKUXxx",
+        "product_r6qrAt",
+        "product_NN7wMk",
+        "product_BK3UzM"
       ],
       "name": "GUA Multicolumns",
       "settings": {
