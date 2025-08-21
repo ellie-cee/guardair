@@ -50,8 +50,8 @@
 {% assign show_vacuum_lift = false %}
 {% assign show_weight = false %}
 
-{% for variant in product.variants %}
- 
+{% for variant in product.variants %}{{ forloop.index }}. 
+  {{ variant.metafields.custom['max_pressure'].value }}<br/>
     {% if variant.metafields.custom['max_pressure'].value != blank %}
     {% assign show_maxpressure = true %}
   {% endif %}
