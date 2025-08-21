@@ -49,7 +49,7 @@
 {{ variant.sku }}
 <!-- Debug all custom metafields for this variant -->
 {% for metafield in variant.metafields.custom %}
-  <p>Custom metafield: {{ metafield[0] }} = {{ metafield[1] }}</p>
+  <p>Custom metafield: {{ metafield[0] }}<br>{{ metafield[1] }}<br>{{ metafield[2] }}</p>
 {% endfor %}
 <!-- Check product-level metafields -->
 <p>Product max pressure: {{ product.metafields.custom.max_pressure.value }}</p>
