@@ -30,6 +30,12 @@
             "link": "#nyloncoiledairhoseassembly"
           }
         },
+        "product_7LzFar": {
+          "type": "product",
+          "settings": {
+            "product": "nylon-coiled-air-hose-assembly-1-4-id-x-12"
+          }
+        },
         "column_TyLqVU": {
           "type": "column",
           "settings": {
@@ -39,6 +45,12 @@
             "text": "",
             "link_label": "View",
             "link": "#polyurethaneairhoseassembly"
+          }
+        },
+        "product_xfrmTx": {
+          "type": "product",
+          "settings": {
+            "product": ""
           }
         },
         "column_X8xPnH": {
@@ -52,6 +64,12 @@
             "link": "#generalpurposeairhoseassembly"
           }
         },
+        "product_TA8QJY": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
         "column_M37Byw": {
           "type": "column",
           "settings": {
@@ -62,13 +80,23 @@
             "link_label": "View",
             "link": "#staticconductiveairhoseassembly"
           }
+        },
+        "product_iRdMRq": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
         "column_VdebKL",
+        "product_7LzFar",
         "column_TyLqVU",
+        "product_xfrmTx",
         "column_X8xPnH",
-        "column_M37Byw"
+        "product_TA8QJY",
+        "column_M37Byw",
+        "product_iRdMRq"
       ],
       "name": "GUA Multicolumns",
       "settings": {
