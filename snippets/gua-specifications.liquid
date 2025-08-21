@@ -31,6 +31,7 @@
 {% assign show_flow = false %}
 {% assign show_grams = false %}
 {% assign show_inlet_connection = false %}
+{% assign show_maxpressure = false %}
 {% assign show_min_compressor = false %}
 {% assign show_noise_level = false %}
 {% assign show_output_thrust = false %}
@@ -119,6 +120,11 @@
   {% if variant.metafields.custom.soil_excavation_rate.value != blank %}
     {% assign show_soil_excavation_rate = true %}
   {% endif %}
+
+{% if variant.metafields.custom.max_pressure.value != blank %}
+  {% assign show_maxpressure = true %}
+{% endif %}
+
 {% endfor %}
 
 {% if show_air_inlet_fnpt == true
@@ -138,6 +144,7 @@
   or show_soil_excavation_rate == true
   or show_dimensions == true
   or show_weight == true
+  or show_maxpressure == true  
 %}
   {% assign show_spec = true %}
 {% endif %}
