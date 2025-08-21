@@ -377,13 +377,13 @@
         "product_YWL96g": {
           "type": "product",
           "settings": {
-            "product": ""
+            "product": "quietforce-74g-u74-nozzle-adjustable-air-79-dba"
           }
         },
         "product_Uyi47f": {
           "type": "product",
           "settings": {
-            "product": ""
+            "product": "whisperjet-80-aluminum-nozzle"
           }
         }
       },
@@ -405,7 +405,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "image_valign": "center",
+        "image_valign": "start",
         "ptitle_fix": "move_model",
         "pdesc": false,
         "pdesc_shorten": 0,
