@@ -406,7 +406,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "center",
-        "ptitle_fix": "basic_series",
+        "ptitle_fix": "move_model",
         "pdesc": false,
         "pdesc_shorten": 0,
         "alt_desc": false,
