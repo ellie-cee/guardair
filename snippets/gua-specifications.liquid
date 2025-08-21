@@ -17,8 +17,8 @@
 {% endcomment %}
 {% style %}
   {% if request.page_type == 'page' %}
-      table.specifications-table tr {display:flex;}    
-      table.specifications-table th, table.specifications-table td {flex:1 0 auto;}
+      table.specifications-table tr {}    
+      table.specifications-table th, table.specifications-table td {}
   {% endif %}
 {% endstyle %}
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
