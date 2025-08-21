@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -13,9 +22,9 @@
         "column_7dazHw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-syphon-spray-system.png",
-            "image_link": "https:\/\/guardair.com\/products\/syphon-spray-system-ss2020-w-12-spray-gun",
-            "title": "<a href=\"\/products\/syphon-spray-system\" title=\"Syphon Spray System\">Syphon Spray System<\/a>",
+            "image": "shopify://shop_images/guardair-syphon-spray-system.png",
+            "image_link": "",
+            "title": "<a href=\"/products/syphon-spray-system\" title=\"Syphon Spray System\">Syphon Spray System</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -24,9 +33,9 @@
         "column_C7thbA": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-syphon-gun-79sg.png",
-            "image_link": "https:\/\/guardair.com\/products\/syphon-spray-gun-79sg",
-            "title": "<a href=\"\/products\/syphon-gun-79sg\" title=\"Syphon Gun 79SG\">Syphon Gun 79SG<\/a>",
+            "image": "shopify://shop_images/guardair-syphon-gun-79sg.png",
+            "image_link": "",
+            "title": "<a href=\"/products/syphon-gun-79sg\" title=\"Syphon Gun 79SG\">Syphon Gun 79SG</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -35,9 +44,9 @@
         "column_G4UAWG": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-syphon-spray-gun.png",
-            "image_link": "https:\/\/guardair.com\/products\/syphon-spray-gun-79sg-6",
-            "title": "<a href=\"\/products\/syphon-spray-gun-79sg-6\" title=\"Syphon Spray Gun 79SG - 6&quot;\">Syphon Spray Gun<\/a>",
+            "image": "shopify://shop_images/guardair-syphon-spray-gun.png",
+            "image_link": "",
+            "title": "<a href=\"/products/syphon-spray-gun-79sg-6\" title=\"Syphon Spray Gun 79SG - 6&quot;\">Syphon Spray Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -46,9 +55,9 @@
         "column_cCawkH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-syphon-gun-79sgm.png",
-            "image_link": "https:\/\/guardair.com\/products\/syphon-spray-gun-79sgm-w-1-quart-canister",
-            "title": "<a href=\"\/products\/syphon-gun-79sgm\" title=\"Syphon Gun 79SGM\">Syphon Gun 79SGM<\/a>",
+            "image": "shopify://shop_images/guardair-syphon-gun-79sgm.png",
+            "image_link": "",
+            "title": "<a href=\"/products/syphon-gun-79sgm\" title=\"Syphon Gun 79SGM\">Syphon Gun 79SGM</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -57,9 +66,9 @@
         "column_iF4tK4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-syphon-oil-gun.png",
-            "image_link": "https:\/\/guardair.com\/products\/pneumatic-oil-spray-gun-83sg",
-            "title": "<a href=\"\/products\/pneumatic-oil-gun-83sg\" title=\"Pneumatic Oil Gun 83SG\">Pneumatic Oil Gun 83SG<\/a>",
+            "image": "shopify://shop_images/guardair-syphon-oil-gun.png",
+            "image_link": "",
+            "title": "<a href=\"/products/pneumatic-oil-gun-83sg\" title=\"Pneumatic Oil Gun 83SG\">Pneumatic Oil Gun 83SG</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -68,9 +77,9 @@
         "column_VpyJwr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-syphon-gun-waterjet.png",
-            "image_link": "https:\/\/guardair.com\/products\/waterjet-79wg-cleaning-spray-gun",
-            "title": "<a href=\"\/products\/waterjet-79wg-cleaning-spray-gun\" title=\"WaterJet 79WG Cleaning Spray Gun\">WaterJet Cleaning Gun<\/a>",
+            "image": "shopify://shop_images/guardair-syphon-gun-waterjet.png",
+            "image_link": "",
+            "title": "<a href=\"/products/waterjet-79wg-cleaning-spray-gun\" title=\"WaterJet 79WG Cleaning Spray Gun\">WaterJet Cleaning Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -79,9 +88,9 @@
         "column_xHfP3n": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/guardair-syphon-gun-hydroforce.png",
-            "image_link": "https:\/\/guardair.com\/products\/hydroforce-hyd-power-wash-gun-24",
-            "title": "<a href=\"\/products\/hydroforce-hyd-power-wash-gun-24\" title=\"HydroForce® HYD Power Wash Gun - 24&quot;\">HydroForce Power Wash Gun<\/a>",
+            "image": "shopify://shop_images/guardair-syphon-gun-hydroforce.png",
+            "image_link": "",
+            "title": "<a href=\"/products/hydroforce-hyd-power-wash-gun-24\" title=\"HydroForce® HYD Power Wash Gun - 24&quot;\">HydroForce Power Wash Gun</a>",
             "text": "",
             "link_label": "",
             "link": ""
@@ -120,10 +129,95 @@
         "padding_bottom": 100,
         "anchor_id": ""
       }
+    },
+    "gua_multicolumn_VrPJ6B": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_kpLJRF": {
+          "type": "product",
+          "settings": {
+            "product": "syphon-spray-system-ss2020-w-12-spray-gun"
+          }
+        },
+        "product_kcfejH": {
+          "type": "product",
+          "settings": {
+            "product": "syphon-spray-gun-79sg"
+          }
+        },
+        "product_ddQFPm": {
+          "type": "product",
+          "settings": {
+            "product": "syphon-spray-gun-79sg-12"
+          }
+        },
+        "product_3bUrAp": {
+          "type": "product",
+          "settings": {
+            "product": "syphon-spray-gun-79sgm-w-1-quart-canister"
+          }
+        },
+        "product_bTWjzg": {
+          "type": "product",
+          "settings": {
+            "product": "pneumatic-oil-spray-gun-83sg"
+          }
+        },
+        "product_m3qPAq": {
+          "type": "product",
+          "settings": {
+            "product": "waterjet-79wg-cleaning-spray-gun"
+          }
+        },
+        "product_9DNiCg": {
+          "type": "product",
+          "settings": {
+            "product": "hydroforce-hyd-power-wash-gun-24"
+          }
+        }
+      },
+      "block_order": [
+        "product_kpLJRF",
+        "product_kcfejH",
+        "product_ddQFPm",
+        "product_3bUrAp",
+        "product_bTWjzg",
+        "product_m3qPAq",
+        "product_9DNiCg"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "basic",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
     "main",
-    "multicolumn_xezMVG"
+    "multicolumn_xezMVG",
+    "gua_multicolumn_VrPJ6B"
   ]
 }
