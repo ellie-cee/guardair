@@ -124,7 +124,7 @@
 {% if variant.metafields.custom.max_pressure.value != blank %}
   {% assign show_maxpressure = true %}
 {% endif %}
-
+<h2>{{ show_maxpressure }}</h2>
 {% endfor %}
 
 {% if show_air_inlet_fnpt == true
