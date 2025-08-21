@@ -51,7 +51,7 @@
 {% assign show_weight = false %}
 
 
-{{ product.variants.size }}
+{{ product.title }}
 {% for variant in product.variants %}{{ forloop.index }}. 
   {{ variant.metafields.custom['max_pressure'].value }}<br/>
     {% if variant.metafields.custom['max_pressure'].value != blank %}
