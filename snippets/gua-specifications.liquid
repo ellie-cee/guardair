@@ -282,7 +282,9 @@
                     {% for entry in p_entries %}
                           {% assign handle = entry.handle %}
                           {% assign currentProduct = all_products[handle] %}       
-                          {% assign currentVariant = currentProduct.selected_or_first_available_variant %}        
+                          {% assign currentVariant = currentProduct.selected_or_first_available_variant %}    
+                          
+                          {{ currentVariant.metafields.custom.max_pressure.value }}
                           {% if currentVariant.metafields.custom.max_pressure.value != blank or 1 == 1 %}
                               {% assign show_maxpressure = true %}
                           {% endif %}
