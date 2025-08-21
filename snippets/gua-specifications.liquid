@@ -57,13 +57,6 @@
     {% assign show_part_number = true %}
   {% endif %}
 
-  {% if variant.metafields.global['Each-Height'].value != blank
-    and variant.metafields.global['Each-Length'].value != blank
-    and variant.metafields.global['Each-Width'].value != blank
-  %}
-    {% assign show_dimensions = true %}
-  {% endif %}
-
   {% if variant.metafields.global['Syphon-Flow-Rate'].value != blank %}
     {% assign show_syphon_flow_rate = true %}
   {% endif %}
