@@ -337,6 +337,11 @@
                       <span class="td-value">{{ currentVariant.metafields.global['Steel-Drum-Gauge'].value }}</span>
                     </td>
                   {% endif %}
+                  {% if show_maxpressure == true %}
+                      <td>
+                        <span class="td-value">{{ currentVariant.metafields.global['Max-Pressure'].value }}</span>
+                      </td>
+                  {% endif %}                    
                   {% if show_dimensions == true %}
                     <td>
                       <span class="td-value">
