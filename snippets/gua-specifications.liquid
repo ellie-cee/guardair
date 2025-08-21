@@ -122,6 +122,13 @@
         {% if variant.metafields.global['Each-Weight'].value != blank %}
           {% assign show_weight = true %}
         {% endif %}
+
+        {% if variant.metafields.global['Each-Height'].value != blank
+          and variant.metafields.global['Each-Length'].value != blank
+          and variant.metafields.global['Each-Width'].value != blank
+        %}
+          {% assign show_dimensions = true %}
+        {% endif %}        
   {% endif %}
 
 {% endfor %}
