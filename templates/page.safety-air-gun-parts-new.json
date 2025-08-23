@@ -51,12 +51,14 @@
       "blocks": {
         "product_3hpPCF": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hydroforce-hyd-air-water-pigtail-hose-assembly-5"
           }
         },
         "product_gjWdDR": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "classic-slip-on-air-gun-grip-blue"
           }
