@@ -374,21 +374,20 @@
         },
         "product_egCDEN": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "whisperjet-80lj-aluminum-nozzle"
-          }
-        },
-        "product_YWL96g": {
-          "type": "product",
-          "settings": {
-            "product": "quietforce-74g-u74-nozzle-adjustable-air-79-dba"
           }
         },
         "product_Uyi47f": {
           "type": "product",
           "settings": {
             "product": "whisperjet-80-aluminum-nozzle"
+          }
+        },
+        "product_YWL96g": {
+          "type": "product",
+          "settings": {
+            "product": "quietforce-74g-u74-nozzle-adjustable-air-79-dba"
           }
         },
         "product_EhgdWQ": {
@@ -446,8 +445,8 @@
         "product_9cztjU",
         "product_zTXmya",
         "product_egCDEN",
-        "product_YWL96g",
         "product_Uyi47f",
+        "product_YWL96g",
         "product_EhgdWQ",
         "product_RDxFBe",
         "product_FfaXdx",
