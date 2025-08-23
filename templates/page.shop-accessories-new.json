@@ -63,6 +63,7 @@
         },
         "product_fNEFVH": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "chip-collector-lid"
           }
@@ -209,6 +210,7 @@
         "column_xHfP3n",
         "column_xN93GU"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
         "h2 {font-size: 28px;}",
