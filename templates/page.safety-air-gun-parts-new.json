@@ -374,6 +374,7 @@
         },
         "product_egCDEN": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "whisperjet-80lj-aluminum-nozzle"
           }
