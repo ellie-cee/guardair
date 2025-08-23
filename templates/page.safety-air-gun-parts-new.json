@@ -474,7 +474,7 @@
         "button_label": "",
         "button_link": "",
         "columns_desktop": 5,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "",
         "columns_mobile": "1",
@@ -671,6 +671,7 @@
         "column_bGAyVE",
         "column_BWxAMy"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
         "h2 {font-size: 28px;}",
