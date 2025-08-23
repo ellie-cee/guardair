@@ -466,7 +466,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
-        "ptitle_fix": "move_model",
+        "ptitle_fix": "basic",
         "pdesc": false,
         "pdesc_shorten": 0,
         "alt_desc": false,
