@@ -101,6 +101,7 @@
         },
         "product_LcaTht": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hydroforce-hyd-nylon-shoulder-strap"
           }
@@ -366,6 +367,7 @@
         },
         "product_zTXmya": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "syphon-spray-gun-79sg-oil-spray-gun-83sg-brass-nozzle"
           }
@@ -424,6 +426,12 @@
             "product": "airmiser-74h-brass-nozzle"
           }
         },
+        "product_LNAwfP": {
+          "type": "product",
+          "settings": {
+            "product": "hydroforce-hyd-aluminum-safety-tip-nozzle"
+          }
+        },
         "product_NN7wMk": {
           "type": "product",
           "settings": {
@@ -451,6 +459,7 @@
         "product_3UK3Kj",
         "product_fKUXxx",
         "product_r6qrAt",
+        "product_LNAwfP",
         "product_NN7wMk",
         "product_BK3UzM"
       ],
