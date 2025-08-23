@@ -1003,10 +1003,11 @@
             "product": "inforcer-inf5-steel-safety-air-gun-w-chisel-point-nozzle-24"
           }
         },
-        "product_hhTDaY": {
+        "product_pygGBr": {
           "type": "product",
+          "disabled": true,
           "settings": {
-            "product": "inforcer-inf5-steel-safety-air-gun-w-scraper-nozzle-60"
+            "product": ""
           }
         },
         "product_BccNBr": {
@@ -1022,7 +1023,7 @@
         "product_fGrLBe",
         "product_tT6aGV",
         "product_zF7wqR",
-        "product_hhTDaY",
+        "product_pygGBr",
         "product_BccNBr"
       ],
       "custom_css": [
@@ -1144,13 +1145,20 @@
           "settings": {
             "product": "blind-hole-74bh-safety-air-gun-12-angled-tip"
           }
+        },
+        "product_DUtXFx": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
         "product_rCMttg",
         "product_hXUDFH",
         "product_RnyLLW",
-        "product_w6cgkU"
+        "product_w6cgkU",
+        "product_DUtXFx"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
