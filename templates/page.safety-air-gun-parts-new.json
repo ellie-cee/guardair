@@ -432,16 +432,10 @@
             "product": "hydroforce-hyd-aluminum-safety-tip-nozzle"
           }
         },
-        "product_NN7wMk": {
+        "product_Hx7fmb": {
           "type": "product",
           "settings": {
-            "product": ""
-          }
-        },
-        "product_BK3UzM": {
-          "type": "product",
-          "settings": {
-            "product": ""
+            "product": "force-5-f5-inforcer-inf5-steel-chisel-point-nozzle"
           }
         }
       },
@@ -460,8 +454,7 @@
         "product_fKUXxx",
         "product_r6qrAt",
         "product_LNAwfP",
-        "product_NN7wMk",
-        "product_BK3UzM"
+        "product_Hx7fmb"
       ],
       "name": "GUA Multicolumns",
       "settings": {
