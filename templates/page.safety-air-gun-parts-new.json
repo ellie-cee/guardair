@@ -137,7 +137,7 @@
         "pdesc": false,
         "pdesc_shorten": 0,
         "alt_desc": false,
-        "alt_image": false,
+        "alt_image": true,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
