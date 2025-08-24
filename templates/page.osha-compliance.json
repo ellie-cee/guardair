@@ -61,7 +61,7 @@
         "text_F3NNUh"
       ],
       "custom_css": [
-        ".img {object-fit: contain;}"
+        "img {object-fit: contain;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
