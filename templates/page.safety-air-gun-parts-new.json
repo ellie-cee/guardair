@@ -1350,6 +1350,7 @@
         "column_3tEHy4",
         "column_jctXBn"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
         "h2 {font-size: 28px;}",
