@@ -852,6 +852,12 @@
           "settings": {
             "product": "xtrathrust-75xt-aluminum-extension-w-steel-nozzle-12"
           }
+        },
+        "product_pqVCbp": {
+          "type": "product",
+          "settings": {
+            "product": "75lj-75xt-80lj-steel-mid-extension-w-coupler-60"
+          }
         }
       },
       "block_order": [
@@ -871,7 +877,8 @@
         "product_d8hxEb",
         "product_t78Ja9",
         "product_YcG6bz",
-        "product_g9mmit"
+        "product_g9mmit",
+        "product_pqVCbp"
       ],
       "name": "GUA Multicolumns",
       "settings": {
