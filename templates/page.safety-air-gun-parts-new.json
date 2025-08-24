@@ -751,37 +751,43 @@
     "gua_multicolumn_3mLYiE": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_DV77g9": {
-          "type": "column",
+        "product_jRJAfC": {
+          "type": "product",
           "settings": {
-            "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "product": "75lj-75xt-80lj-aluminum-extension-12"
           }
         },
-        "product_jRJAfC": {
+        "product_XmwDQ8": {
           "type": "product",
           "settings": {
             "product": ""
           }
         },
-        "column_yrfyxK": {
-          "type": "column",
+        "product_CbibVM": {
+          "type": "product",
           "settings": {
-            "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "product": ""
+          }
+        },
+        "product_kbEWHY": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_KRPzqi": {
+          "type": "product",
+          "settings": {
+            "product": ""
           }
         }
       },
       "block_order": [
-        "column_DV77g9",
         "product_jRJAfC",
-        "column_yrfyxK"
+        "product_XmwDQ8",
+        "product_CbibVM",
+        "product_kbEWHY",
+        "product_KRPzqi"
       ],
       "name": "GUA Multicolumns",
       "settings": {
