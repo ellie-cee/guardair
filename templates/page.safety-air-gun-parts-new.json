@@ -810,6 +810,36 @@
           "settings": {
             "product": "thumbswitch-900-aluminum-extension-w-aluminum-nozzle-12"
           }
+        },
+        "product_fed6bp": {
+          "type": "product",
+          "settings": {
+            "product": "lazer-600-650-steel-extension-w-venturi-3"
+          }
+        },
+        "product_K487y3": {
+          "type": "product",
+          "settings": {
+            "product": "booster-76s-brass-extension-12"
+          }
+        },
+        "product_QKzraD": {
+          "type": "product",
+          "settings": {
+            "product": "long-john-75lj-steel-extension-w-alloy-nozzle-12"
+          }
+        },
+        "product_d8hxEb": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_t78Ja9": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
@@ -822,7 +852,12 @@
         "product_jpBkNb",
         "product_xRhmLn",
         "product_em9hcL",
-        "product_wDkFxb"
+        "product_wDkFxb",
+        "product_fed6bp",
+        "product_K487y3",
+        "product_QKzraD",
+        "product_d8hxEb",
+        "product_t78Ja9"
       ],
       "name": "GUA Multicolumns",
       "settings": {
