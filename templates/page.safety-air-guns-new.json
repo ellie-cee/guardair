@@ -1145,20 +1145,13 @@
           "settings": {
             "product": "blind-hole-74bh-safety-air-gun-12-angled-tip"
           }
-        },
-        "product_DUtXFx": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
         }
       },
       "block_order": [
         "product_rCMttg",
         "product_hXUDFH",
         "product_RnyLLW",
-        "product_w6cgkU",
-        "product_DUtXFx"
+        "product_w6cgkU"
       ],
       "custom_css": [
         ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
