@@ -1241,10 +1241,31 @@
           "settings": {
             "product": ""
           }
+        },
+        "product_Cg8Ce7": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_Qap6Dy": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_wVYDz3": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
-        "product_d7jkij"
+        "product_d7jkij",
+        "product_Cg8Ce7",
+        "product_Qap6Dy",
+        "product_wVYDz3"
       ],
       "name": "GUA Multicolumns",
       "settings": {
