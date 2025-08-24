@@ -840,6 +840,18 @@
           "settings": {
             "product": "long-john-75lj-steel-extension-w-alloy-nozzle-12"
           }
+        },
+        "product_YcG6bz": {
+          "type": "product",
+          "settings": {
+            "product": "jetguard-74s-brass-extension-12"
+          }
+        },
+        "product_g9mmit": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
@@ -857,7 +869,9 @@
         "product_K487y3",
         "product_QKzraD",
         "product_d8hxEb",
-        "product_t78Ja9"
+        "product_t78Ja9",
+        "product_YcG6bz",
+        "product_g9mmit"
       ],
       "name": "GUA Multicolumns",
       "settings": {
