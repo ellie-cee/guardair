@@ -31,7 +31,7 @@
           "type": "block",
           "settings": {
             "pro_title": "WHISPERJET NOZZLE",
-            "pro_link": "https://guardair.com/products/whisperjet-80lj-aluminum-extension-w-aluminum-nozzle-6",
+            "pro_link": "shopify://products/whisperjet-80lj-aluminum-nozzle",
             "pro_img": "shopify://shop_images/whisperjet-nozzle.jpg"
           }
         }
@@ -78,6 +78,55 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "gua_multicolumn_rtfGdw": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_8fBRAG": {
+          "type": "product",
+          "settings": {
+            "product": "force-5-f5-inforcer-inf5-quietforce-aluminum-nozzle"
+          }
+        },
+        "product_fPBkai": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_8fBRAG",
+        "product_fPBkai"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
       }
     },
     "53396d03-6a0f-440a-aa70-6c172bd7be36": {
@@ -599,6 +648,7 @@
     "main",
     "864d6054-509d-441a-a14c-3b7a4b1050ee",
     "image_with_text_wW8y9D",
+    "gua_multicolumn_rtfGdw",
     "53396d03-6a0f-440a-aa70-6c172bd7be36",
     "d7940c21-ec59-4b17-ac33-aa3064e8cbc3",
     "71e2bd2a-2303-41d4-8867-b7413c8e6cc9",
