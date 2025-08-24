@@ -1239,7 +1239,7 @@
         "product_d7jkij": {
           "type": "product",
           "settings": {
-            "product": ""
+            "product": "air-gun-valve-repair-kit-classic-ultra-series-models-w-volume-control"
           }
         },
         "product_Cg8Ce7": {
@@ -1285,8 +1285,8 @@
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
+        "column_alignment": "center",
+        "background_style": "none",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
