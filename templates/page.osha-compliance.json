@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,16 +23,16 @@
           "type": "block",
           "settings": {
             "pro_title": "QUIETFORCE NOZZLE",
-            "pro_link": "https:\/\/guardair.com\/products\/force-5-f5-inforcer-inf5-quietforce-aluminum-extension-nozzle-24",
-            "pro_img": "shopify:\/\/shop_images\/1_36de0e78-7c0a-48da-90dc-e7f5f69f6c0e.webp"
+            "pro_link": "https://guardair.com/products/force-5-f5-inforcer-inf5-quietforce-aluminum-extension-nozzle-24",
+            "pro_img": "shopify://shop_images/1_36de0e78-7c0a-48da-90dc-e7f5f69f6c0e.webp"
           }
         },
         "2d81c1e8-b369-4eb4-89ee-5173f5e9af75": {
           "type": "block",
           "settings": {
             "pro_title": "WHISPERJET NOZZLE",
-            "pro_link": "https:\/\/guardair.com\/products\/whisperjet-80lj-aluminum-extension-w-aluminum-nozzle-6",
-            "pro_img": "shopify:\/\/shop_images\/whisperjet-nozzle.jpg"
+            "pro_link": "https://guardair.com/products/whisperjet-80lj-aluminum-extension-w-aluminum-nozzle-6",
+            "pro_img": "shopify://shop_images/whisperjet-nozzle.jpg"
           }
         }
       },
@@ -32,9 +41,9 @@
         "2d81c1e8-b369-4eb4-89ee-5173f5e9af75"
       ],
       "settings": {
-        "img": "shopify:\/\/shop_images\/download_eba4a867-c12d-4bce-9262-1055565c4182.webp",
-        "pera": "<p>All air guns operate on compressed air—compressed air that can be extremely dangerous if misused, or if horse-play in the workplace occurs. Not only can workers be severely injured from the use of non-compliant, illegal air guns, but compliance failures can mean steep fines for violators. Although OSHA Standards pertaining to air guns can be confusing, OSHA's three primary concerns are Noise, Output Pressure and Chip-Guarding.<\/p><p>To address excessive noise in the workplace OSHA has developed permissible daily noise exposure specifications. Since air guns can potentially contribute to high levels of occupational noise, Guardair safety air guns incorporating noise suppression nozzles can be an important component in moving towards noise level compliance.<\/p>",
-        "sidebar_data": "<p><strong>OSHA Standard Related to Noise<\/strong><em>Occupational Noise Exposure<\/em><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=STANDARDS&p_id=9735\" target=\"_blank\">OSHA Standard 1910.95<\/a><\/p>"
+        "img": "shopify://shop_images/Untitled_design_21.png",
+        "pera": "<p>All air guns operate on compressed air—compressed air that can be extremely dangerous if misused, or if horse-play in the workplace occurs. Not only can workers be severely injured from the use of non-compliant, illegal air guns, but compliance failures can mean steep fines for violators. Although OSHA Standards pertaining to air guns can be confusing, OSHA's three primary concerns are Noise, Output Pressure and Chip-Guarding.</p><p>To address excessive noise in the workplace OSHA has developed permissible daily noise exposure specifications. Since air guns can potentially contribute to high levels of occupational noise, Guardair safety air guns incorporating noise suppression nozzles can be an important component in moving towards noise level compliance.</p>",
+        "sidebar_data": "<p><strong>OSHA Standard Related to Noise</strong><em>Occupational Noise Exposure</em><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=STANDARDS&p_id=9735\" target=\"_blank\">OSHA Standard 1910.95</a></p>"
       }
     },
     "53396d03-6a0f-440a-aa70-6c172bd7be36": {
@@ -43,7 +52,7 @@
         "b52de8e4-809b-47a3-aaf4-da5a018c3d93": {
           "type": "block",
           "settings": {
-            "part_number": "80\/80WJ",
+            "part_number": "80/80WJ",
             "description": "WhisperJet",
             "noise_level": "93"
           }
@@ -109,9 +118,9 @@
       "settings": {
         "heading": "Guardair Safety Air Guns Incorporating Noise Suppression Nozzles",
         "heading1": "Part Number",
-        "heading2": "Model \/ Descripton",
+        "heading2": "Model / Descripton",
         "heading3": "Noise Level (db)*",
-        "pera": "<p><em>* Measured at 100 psi inlet pressure.<\/em><\/p>\n\n<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/7.webp?v=1685797710\">  Guardair recommends the use of noise suppression nozzles and\/or hearing protection equipment as part of a comprehensive noise control program.<\/p>"
+        "pera": "<p><em>* Measured at 100 psi inlet pressure.</em></p>\n\n<p><img src=\"https://cdn.shopify.com/s/files/1/2656/7586/files/7.webp?v=1685797710\">  Guardair recommends the use of noise suppression nozzles and/or hearing protection equipment as part of a comprehensive noise control program.</p>"
       }
     },
     "d7940c21-ec59-4b17-ac33-aa3064e8cbc3": {
@@ -121,40 +130,40 @@
           "type": "block",
           "settings": {
             "pro_title": "AIR SHIELD NOZZLE",
-            "pro_link": "shopify:\/\/products\/the-original-57s30xb-safety-air-gun",
-            "pro_img": "shopify:\/\/shop_images\/3_02088dbc-a62e-4359-a0f2-d023d316d896.webp"
+            "pro_link": "shopify://products/the-original-57s30xb-safety-air-gun",
+            "pro_img": "shopify://shop_images/3_02088dbc-a62e-4359-a0f2-d023d316d896.webp"
           }
         },
         "f9dc4e4a-6630-4d06-8130-1b226d8e270b": {
           "type": "block",
           "settings": {
             "pro_title": "AIR MISER NOZZLE",
-            "pro_link": "shopify:\/\/products\/airmiser-74h-safety-air-gun",
-            "pro_img": "shopify:\/\/shop_images\/4.webp"
+            "pro_link": "shopify://products/airmiser-74h-safety-air-gun",
+            "pro_img": "shopify://shop_images/4.webp"
           }
         },
         "9815aad0-3c57-4e17-b0a7-3a5854c0f5c9": {
           "type": "block",
           "settings": {
             "pro_title": "QUIETFORCE NOZZLE",
-            "pro_link": "https:\/\/guardair.com\/products\/force-5-f5-inforcer-inf5-quietforce-aluminum-extension-nozzle-24",
-            "pro_img": "shopify:\/\/shop_images\/1_36de0e78-7c0a-48da-90dc-e7f5f69f6c0e.webp"
+            "pro_link": "https://guardair.com/products/force-5-f5-inforcer-inf5-quietforce-aluminum-extension-nozzle-24",
+            "pro_img": "shopify://shop_images/1_36de0e78-7c0a-48da-90dc-e7f5f69f6c0e.webp"
           }
         },
         "a155b15a-9acf-4192-82ee-ad31cbb9691f": {
           "type": "block",
           "settings": {
             "pro_title": "VENTURI NOZZLE",
-            "pro_link": "https:\/\/guardair.com\/products\/long-john-75lj-aluminum-extension-w-aluminum-nozzle-6",
-            "pro_img": "shopify:\/\/shop_images\/5.webp"
+            "pro_link": "https://guardair.com/products/long-john-75lj-aluminum-extension-w-aluminum-nozzle-6",
+            "pro_img": "shopify://shop_images/5.webp"
           }
         },
         "5cc8e776-35b8-4395-92de-bddb4f7f1a60": {
           "type": "block",
           "settings": {
             "pro_title": "WHISPERJET NOZZLE",
-            "pro_link": "https:\/\/guardair.com\/products\/ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet",
-            "pro_img": "shopify:\/\/shop_images\/whisperjet-nozzle.jpg"
+            "pro_link": "https://guardair.com/products/ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet",
+            "pro_img": "shopify://shop_images/whisperjet-nozzle.jpg"
           }
         }
       },
@@ -166,8 +175,8 @@
         "5cc8e776-35b8-4395-92de-bddb4f7f1a60"
       ],
       "settings": {
-        "pera": "<p>Factory air compressors and air lines nominally operate at pressures between 80 and 120 psi (pounds per square inch). Most pneumatic tools, including air guns, require such high pressures to operate effectively. However, OSHA Standards requires that in the event such air lines are dead-ended (i.e. if the tip of an air gun is blocked) the static output pressure at the point of the blockage may not exceed 30 psi. All Guardair safety air guns incorporate nozzle designs which are engineered to meet, or exceed, this 30 psi requirement.<\/p>",
-        "sidebar_data": "<p><strong>OSHA Standard and Instruction Related to Output Pressure<\/strong><\/p><p><em>Compressed Air Used for Cleaning<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">OSHA Standard 1910.242(b)<\/a><br\/> <\/p><p><em>Reduction of Air Pressure Below 30 psi for Cleaning Purposes<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">STD 01-13-001<\/a><\/p>"
+        "pera": "<p>Factory air compressors and air lines nominally operate at pressures between 80 and 120 psi (pounds per square inch). Most pneumatic tools, including air guns, require such high pressures to operate effectively. However, OSHA Standards requires that in the event such air lines are dead-ended (i.e. if the tip of an air gun is blocked) the static output pressure at the point of the blockage may not exceed 30 psi. All Guardair safety air guns incorporate nozzle designs which are engineered to meet, or exceed, this 30 psi requirement.</p>",
+        "sidebar_data": "<p><strong>OSHA Standard and Instruction Related to Output Pressure</strong></p><p><em>Compressed Air Used for Cleaning</em></p><p><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">OSHA Standard 1910.242(b)</a><br/> </p><p><em>Reduction of Air Pressure Below 30 psi for Cleaning Purposes</em></p><p><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">STD 01-13-001</a></p>"
       }
     },
     "71e2bd2a-2303-41d4-8867-b7413c8e6cc9": {
@@ -194,7 +203,7 @@
           "settings": {
             "part_number": "74H",
             "description": "AirMiser",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "f3eec335-9e9a-43f1-917c-3b204b3d004a": {
@@ -208,7 +217,7 @@
         "22eafc68-2154-42d0-a4c3-5f3854ab2b5a": {
           "type": "block",
           "settings": {
-            "part_number": "74S\/SK",
+            "part_number": "74S/SK",
             "description": "JetGuard",
             "noise_level": "13"
           }
@@ -240,9 +249,9 @@
         "295cfed5-ef70-48b7-aa0f-a6968fe3c211": {
           "type": "block",
           "settings": {
-            "part_number": "80\/80WJ",
+            "part_number": "80/80WJ",
             "description": "WhisperJet",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "8328a16e-4907-4cc2-a8b4-75498f70e48a": {
@@ -250,7 +259,7 @@
           "settings": {
             "part_number": "80LJ Series",
             "description": "WhisperJet Extended Reach",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "69cdbf82-8d97-4412-80f8-14e73d49ea63": {
@@ -258,7 +267,7 @@
           "settings": {
             "part_number": "84CNA",
             "description": "WhisperJet Nozzle",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "56f3c642-2235-4e3b-885e-0322fa586186": {
@@ -266,7 +275,7 @@
           "settings": {
             "part_number": "86FLX",
             "description": "Flextension",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "1c42b9a6-3702-4221-9704-3c512d42cd06": {
@@ -282,7 +291,7 @@
           "settings": {
             "part_number": "86FLX",
             "description": "Flextension",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "8c05adfc-e80a-4149-9550-6b3a2f38b1a3": {
@@ -322,7 +331,7 @@
           "settings": {
             "part_number": "980",
             "description": "Thumbswitch Whisper Jet",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "0b1285ad-6323-4130-8e8c-4e622720f555": {
@@ -426,7 +435,7 @@
           "settings": {
             "part_number": "U80WJ2",
             "description": "ULTRA WhisperJet",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         },
         "4984265f-6034-42ce-994e-ac878d7b5faf": {
@@ -434,7 +443,7 @@
           "settings": {
             "part_number": "U80WJ Series",
             "description": "ULTRA WhisperJet Extended Reach",
-            "noise_level": "N\/A"
+            "noise_level": "N/A"
           }
         }
       },
@@ -476,9 +485,9 @@
       "settings": {
         "heading": "Static Output Pressure for Guardair Safety Air Guns*",
         "heading1": "Part Number",
-        "heading2": "Product \/ Description",
+        "heading2": "Product / Description",
         "heading3": "Static Output Pressure (psi)",
-        "pera": "<p><em>* Measured at 100 psi inlet pressure.<\/em><\/p>\n<p><em>** Static Output Pressure measured at nozzle tip when dead-ended. N\/A indicates nozzle tip cannot physically be blocked.<\/em><\/p>\n<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/7.webp?v=1685797710\">Guardair recommends the use of OSHA compliant safety air guns to insure that static output pressure does not exceed 30 psi.<\/p>"
+        "pera": "<p><em>* Measured at 100 psi inlet pressure.</em></p>\n<p><em>** Static Output Pressure measured at nozzle tip when dead-ended. N/A indicates nozzle tip cannot physically be blocked.</em></p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/2656/7586/files/7.webp?v=1685797710\">Guardair recommends the use of OSHA compliant safety air guns to insure that static output pressure does not exceed 30 psi.</p>"
       }
     },
     "b6bd2c42-5756-4260-a08b-e57f70120782": {
@@ -488,8 +497,8 @@
           "type": "block",
           "settings": {
             "pro_title": "AIR SHIELD NOZZLE",
-            "pro_link": "shopify:\/\/products\/the-original-57s30xb-safety-air-gun",
-            "pro_img": "shopify:\/\/shop_images\/8.webp"
+            "pro_link": "shopify://products/the-original-57s30xb-safety-air-gun",
+            "pro_img": "shopify://shop_images/8.webp"
           }
         }
       },
@@ -497,8 +506,8 @@
         "7a1b8625-b1e3-463a-aedc-896fb9118b90"
       ],
       "settings": {
-        "pera": "<p>When blowing off debris with an air gun in close quarters, workers may be subject to \"chip fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes or skin. For operations that require close-in work, OSHA mandates that \"effective chip guarding\" be incorporated into the workplace. Effective chip guarding means methods or equipment that will prevent chips or particles from flying back at the operator. Guardair offers several safety air gun models incorporating the Air Shield nozzle, which protects the operator from chip fly-back.<\/p>",
-        "sidebar_data": "<p><strong>OSHA Standard and Instruction Related to Chip-Guarding<\/strong><\/p><p><em>Compressed Air Used for Cleaning<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">OSHA Standard 1910.242(b)<\/a><br\/> <\/p><p><em>Reduction of Air Pressure Below 30 psi for Cleaning Purposes<\/em><\/p><p><a href=\"https:\/\/www.osha.gov\/pls\/oshaweb\/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">STD 01-13-001<\/a><\/p>"
+        "pera": "<p>When blowing off debris with an air gun in close quarters, workers may be subject to \"chip fly-back.\" This term refers to the tendency of loose particles or chips to fly back into the operator's face, eyes or skin. For operations that require close-in work, OSHA mandates that \"effective chip guarding\" be incorporated into the workplace. Effective chip guarding means methods or equipment that will prevent chips or particles from flying back at the operator. Guardair offers several safety air gun models incorporating the Air Shield nozzle, which protects the operator from chip fly-back.</p>",
+        "sidebar_data": "<p><strong>OSHA Standard and Instruction Related to Chip-Guarding</strong></p><p><em>Compressed Air Used for Cleaning</em></p><p><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">OSHA Standard 1910.242(b)</a><br/> </p><p><em>Reduction of Air Pressure Below 30 psi for Cleaning Purposes</em></p><p><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">STD 01-13-001</a></p>"
       }
     },
     "9b43de79-fcb6-4f98-aec2-2a47aca463b1": {
@@ -523,7 +532,7 @@
         "128e52dd-aa77-4c8d-a144-4a3ca591749b": {
           "type": "block",
           "settings": {
-            "part_number": "74S\/SK",
+            "part_number": "74S/SK",
             "description": "JetGuard",
             "noise_level": ""
           }
@@ -546,9 +555,9 @@
       "settings": {
         "heading": "Guardair Safety Air Guns Incorporating Air Shield Nozzles",
         "heading1": "Part Number",
-        "heading2": "Model \/ Description",
+        "heading2": "Model / Description",
         "heading3": "",
-        "pera": "<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2656\/7586\/files\/7.webp?v=1685797710\">Guardair recommends the use of air shield nozzles as well as barriers, screens, and\/or personal protective clothing for effective chip-guarding.<\/p>"
+        "pera": "<p><img src=\"https://cdn.shopify.com/s/files/1/2656/7586/files/7.webp?v=1685797710\">Guardair recommends the use of air shield nozzles as well as barriers, screens, and/or personal protective clothing for effective chip-guarding.</p>"
       }
     }
   },
