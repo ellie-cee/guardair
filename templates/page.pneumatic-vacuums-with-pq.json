@@ -248,7 +248,7 @@
         "image_width": "full",
         "image_ratio": "square",
         "image_valign": "start",
-        "ptitle_fix": "none",
+        "ptitle_fix": "specific_series",
         "pdesc": false,
         "pdesc_shorten": 0,
         "alt_desc": false,
