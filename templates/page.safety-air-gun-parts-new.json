@@ -778,6 +778,36 @@
         "product_KRPzqi": {
           "type": "product",
           "settings": {
+            "product": "palmjet-ga44-steel-extension-w-star-tip-nozzle-4-straight"
+          }
+        },
+        "product_AdKtXE": {
+          "type": "product",
+          "settings": {
+            "product": "force-5-f5-inforcer-inf5-aluminum-extension-w-aluminum-nozzle-24"
+          }
+        },
+        "product_jpBkNb": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_xRhmLn": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_em9hcL": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_wDkFxb": {
+          "type": "product",
+          "settings": {
             "product": ""
           }
         }
@@ -787,7 +817,12 @@
         "product_XmwDQ8",
         "product_CbibVM",
         "product_kbEWHY",
-        "product_KRPzqi"
+        "product_KRPzqi",
+        "product_AdKtXE",
+        "product_jpBkNb",
+        "product_xRhmLn",
+        "product_em9hcL",
+        "product_wDkFxb"
       ],
       "name": "GUA Multicolumns",
       "settings": {
