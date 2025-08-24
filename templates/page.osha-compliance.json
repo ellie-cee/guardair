@@ -46,6 +46,40 @@
         "sidebar_data": "<p><strong>OSHA Standard Related to Noise</strong><em>Occupational Noise Exposure</em><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=STANDARDS&p_id=9735\" target=\"_blank\">OSHA Standard 1910.95</a></p>"
       }
     },
+    "image_with_text_wW8y9D": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_F3NNUh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All air guns operate on compressed air—compressed air that can be extremely dangerous if misused, or if horse-play in the workplace occurs. Not only can workers be severely injured from the use of non-compliant, illegal air guns, but compliance failures can mean steep fines for violators. Although OSHA Standards pertaining to air guns can be confusing, OSHA's three primary concerns are Noise, Output Pressure and Chip-Guarding.</p><p>To address excessive noise in the workplace OSHA has developed permissible daily noise exposure specifications. Since air guns can potentially contribute to high levels of occupational noise, Guardair safety air guns incorporating noise suppression nozzles can be an important component in moving towards noise level compliance.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_F3NNUh"
+      ],
+      "custom_css": [
+        ".img {object-fit: contain;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_21.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "53396d03-6a0f-440a-aa70-6c172bd7be36": {
       "type": "incorporating-noise-suppression-nozzles",
       "blocks": {
@@ -564,6 +598,7 @@
   "order": [
     "main",
     "864d6054-509d-441a-a14c-3b7a4b1050ee",
+    "image_with_text_wW8y9D",
     "53396d03-6a0f-440a-aa70-6c172bd7be36",
     "d7940c21-ec59-4b17-ac33-aa3064e8cbc3",
     "71e2bd2a-2303-41d4-8867-b7413c8e6cc9",
