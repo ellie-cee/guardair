@@ -263,6 +263,77 @@
         "sidebar_data": "<p><strong>OSHA Standard and Instruction Related to Output Pressure</strong></p><p><em>Compressed Air Used for Cleaning</em></p><p><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_id=9849&p_table=STANDARDS\" target=\"_blank\">OSHA Standard 1910.242(b)</a><br/> </p><p><em>Reduction of Air Pressure Below 30 psi for Cleaning Purposes</em></p><p><a href=\"https://www.osha.gov/pls/oshaweb/owadisp.show_document?p_table=DIRECTIVES&p_id=1742\" target=\"_blank\">STD 01-13-001</a></p>"
       }
     },
+    "gua_multicolumn_EWkQh7": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_jFJdii": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_GmbyRV": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_LDiTCj": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_4zY9Up": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_w3F7tw": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_jFJdii",
+        "product_GmbyRV",
+        "product_LDiTCj",
+        "product_4zY9Up",
+        "product_w3F7tw"
+      ],
+      "disabled": true,
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
+    },
     "71e2bd2a-2303-41d4-8867-b7413c8e6cc9": {
       "type": "incorporating-noise-suppression-nozzles",
       "blocks": {
@@ -652,6 +723,7 @@
     "gua_multicolumn_rtfGdw",
     "53396d03-6a0f-440a-aa70-6c172bd7be36",
     "d7940c21-ec59-4b17-ac33-aa3064e8cbc3",
+    "gua_multicolumn_EWkQh7",
     "71e2bd2a-2303-41d4-8867-b7413c8e6cc9",
     "b6bd2c42-5756-4260-a08b-e57f70120782",
     "9b43de79-fcb6-4f98-aec2-2a47aca463b1"
