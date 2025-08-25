@@ -113,7 +113,7 @@
           "settings": {
             "pdesc_para": 1,
             "pdesc_shorten": 0,
-            "alt_desc": false,
+            "alt_desc": true,
             "font_style": "inline-richtext"
           }
         },
