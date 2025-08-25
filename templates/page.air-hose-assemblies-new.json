@@ -111,8 +111,10 @@
         "product_description_GW7EAN": {
           "type": "product_description",
           "settings": {
+            "pdesc_para": 1,
             "pdesc_shorten": 0,
-            "alt_desc": false
+            "alt_desc": false,
+            "font_style": "inline-richtext"
           }
         },
         "specifications_HVj4Rh": {
