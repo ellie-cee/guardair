@@ -111,8 +111,8 @@
         "product_description_GW7EAN": {
           "type": "product_description",
           "settings": {
-            "alt_desc": true,
-            "pdesc_para": 0,
+            "alt_desc": false,
+            "pdesc_para": 1,
             "pdesc_shorten": 0,
             "font_style": "inline-richtext"
           }
