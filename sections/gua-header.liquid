@@ -9,9 +9,7 @@
 <script src="{{ 'v2-components-nav-drawer.js' | asset_url }}" defer></script>
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 
-{% liquid
-  assign number_of_rows = section.settings.number_of_rows
-%}
+{% assign number_of_rows = section.settings.number_of_rows %}
 
 {% capture vertical_separator %}
   <span class="header__separator"></span>
