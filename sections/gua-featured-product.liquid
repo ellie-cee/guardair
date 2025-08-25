@@ -927,6 +927,12 @@
       "limit": 1,
       "settings": [
             {
+              "type": "checkbox",
+              "id": "alt_desc",
+              "label": "Override product description when metafield present",
+              "info": "product.metafields.custom.grid_description"
+            },        
+            {
               "type": "range",
               "id": "pdesc_para",
               "min": 0,
@@ -946,12 +952,6 @@
               "default": 0,
               "info":"Only use this or paragraphs, not both"
             },            
-            {
-              "type": "checkbox",
-              "id": "alt_desc",
-              "label": "Override product description when metafield present",
-              "info": "product.metafields.custom.grid_description"
-            },
             {
               "type": "select",
               "id": "font_style",
