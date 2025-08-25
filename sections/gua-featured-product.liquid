@@ -924,19 +924,50 @@
       "settings": [
             {
               "type": "range",
+              "id": "pdesc_para",
+              "min": 0,
+              "max": 4,
+              "step": 1,
+              "label": "Trim Description to X paragraphs.  0 for full.",
+              "default": 0,
+              "info":"Only use this or sentences, not both"
+            },
+            {
+              "type": "range",
               "id": "pdesc_shorten",
               "min": 0,
               "max": 2,
               "step": 1,
               "label": "Trim Description to X sentences.  0 for full.",
-              "default": 0
-            },
+              "default": 0,
+              "info":"Only use this or paragraphs, not both"
+            },            
             {
               "type": "checkbox",
               "id": "alt_desc",
               "label": "Override product description when metafield present",
               "info": "product.metafields.custom.grid_description"
-            }, 
+            },
+            {
+              "type": "select",
+              "id": "font_style",
+              "options": [
+                {
+                  "value": "inline-richtext",
+                  "label": "Default"
+                },
+                {
+                  "value": "plain-with-buttons",
+                  "label": "Plain with Buttons"
+                },        
+                {
+                  "value": "blue-subtitle",
+                  "label": "Blue Subtitles"
+                }
+              ],
+              "default": "inline-richtext",
+              "label": "Font Style"
+            }            
       ]
     },    
     {
