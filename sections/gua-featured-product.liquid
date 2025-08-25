@@ -518,9 +518,9 @@
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product %}
 
             {%- when 'product_description' -%}
-                <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
+                <div class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                     {{ product.description }}
-                </p>    
+                </div>    
 
             {%- when 'custom_text' -%}
                   <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
