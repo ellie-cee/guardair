@@ -883,6 +883,28 @@
       ]
     },
     {
+      "type": "product_description",
+      "name": "Product Description",
+      "limit": 1,
+      "settings": [
+            {
+              "type": "range",
+              "id": "pdesc_shorten",
+              "min": 0,
+              "max": 2,
+              "step": 1,
+              "label": "Trim Description to X sentences.  0 for full.",
+              "default": 0
+            },
+            {
+              "type": "checkbox",
+              "id": "alt_desc",
+              "label": "Override product description when metafield present",
+              "info": "product.metafields.custom.grid_description"
+            }, 
+      ]
+    },    
+    {
       "type": "specifications",
       "name": "Specifications",
       "limit": 1,
