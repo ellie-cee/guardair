@@ -108,6 +108,13 @@
             "heading_size": "h1"
           }
         },
+        "product_description_GW7EAN": {
+          "type": "product_description",
+          "settings": {
+            "pdesc_shorten": 0,
+            "alt_desc": false
+          }
+        },
         "specifications_HVj4Rh": {
           "type": "specifications",
           "settings": {
@@ -117,6 +124,7 @@
       },
       "block_order": [
         "title_nC7kTt",
+        "product_description_GW7EAN",
         "specifications_HVj4Rh"
       ],
       "name": "GUA Featured Product",
