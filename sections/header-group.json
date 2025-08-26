@@ -74,19 +74,6 @@
     "header": {
       "type": "gua-header",
       "blocks": {
-        "logo_ezQrLt": {
-          "type": "logo",
-          "disabled": true,
-          "settings": {
-            "row": 1,
-            "flex_grow": 0,
-            "flex_shrink": 0,
-            "flex_basis": "300",
-            "show_on_desktop": true,
-            "show_on_mobile": false,
-            "logo": "shopify://shop_images/logo.png"
-          }
-        },
         "logo_7aGbfY": {
           "type": "logo",
           "settings": {
@@ -95,7 +82,7 @@
             "flex_shrink": 1,
             "flex_basis": "300px",
             "show_on_desktop": true,
-            "show_on_mobile": true,
+            "show_on_mobile": false,
             "logo": "shopify://shop_images/GA_logo_4C-white-outline.png"
           }
         },
@@ -107,21 +94,8 @@
             "flex_shrink": 1,
             "flex_basis": "auto",
             "show_on_desktop": true,
-            "show_on_mobile": true,
+            "show_on_mobile": false,
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg>"
-          }
-        },
-        "account_9HxGpf": {
-          "type": "account",
-          "settings": {
-            "row": 1,
-            "flex_grow": 0,
-            "flex_shrink": 1,
-            "flex_basis": "auto",
-            "show_on_desktop": false,
-            "show_on_mobile": true,
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z\"></path></svg>",
-            "show_name": true
           }
         },
         "account_gwJN3p": {
@@ -137,19 +111,6 @@
             "show_name": true
           }
         },
-        "cart_8aTQKp": {
-          "type": "cart",
-          "settings": {
-            "row": 1,
-            "flex_grow": 0,
-            "flex_shrink": 1,
-            "flex_basis": "auto",
-            "show_on_desktop": false,
-            "show_on_mobile": true,
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 576 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"></path></svg>",
-            "show_quantity": true
-          }
-        },
         "cart_nhV9iy": {
           "type": "cart",
           "settings": {
@@ -163,11 +124,108 @@
             "show_quantity": true
           }
         },
+        "logo_eLPfqk": {
+          "type": "logo",
+          "settings": {
+            "row": 1,
+            "flex_grow": 1,
+            "flex_shrink": 0,
+            "flex_basis": "350px",
+            "show_on_desktop": false,
+            "show_on_mobile": true,
+            "logo": "shopify://shop_images/GA_logo_4C-white-outline.png"
+          }
+        },
+        "drawer_nav_4xUTbY": {
+          "type": "drawer_nav",
+          "settings": {
+            "row": 1,
+            "flex_grow": 0,
+            "flex_shrink": 1,
+            "flex_basis": "50px",
+            "show_on_desktop": false,
+            "show_on_mobile": true,
+            "text": "Menu",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z\"></path></svg>",
+            "direction": "right"
+          }
+        },
+        "search_faUmMx": {
+          "type": "search",
+          "settings": {
+            "row": 2,
+            "flex_grow": 1,
+            "flex_shrink": 1,
+            "flex_basis": "auto",
+            "show_on_desktop": false,
+            "show_on_mobile": true,
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"></path></svg>"
+          }
+        },
+        "account_9HxGpf": {
+          "type": "account",
+          "settings": {
+            "row": 3,
+            "flex_grow": 0,
+            "flex_shrink": 1,
+            "flex_basis": "auto",
+            "show_on_desktop": false,
+            "show_on_mobile": true,
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z\"></path></svg>",
+            "show_name": true
+          }
+        },
+        "cart_8aTQKp": {
+          "type": "cart",
+          "settings": {
+            "row": 3,
+            "flex_grow": 0,
+            "flex_shrink": 1,
+            "flex_basis": "auto",
+            "show_on_desktop": false,
+            "show_on_mobile": true,
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 576 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z\"></path></svg>",
+            "show_quantity": true
+          }
+        },
+        "text_fBXfp7": {
+          "type": "text",
+          "settings": {
+            "row": 1,
+            "flex_grow": 1,
+            "flex_shrink": 1,
+            "flex_basis": "300",
+            "show_on_desktop": false,
+            "show_on_mobile": true,
+            "text": "",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z\"></path></svg>",
+            "link": "tel:8004827324",
+            "show_left_separator": false,
+            "show_right_separator": false
+          }
+        },
         "spacer_enyXKj": {
           "type": "spacer",
           "disabled": true,
           "settings": {
             "row": 1
+          }
+        },
+        "text_DnWkUV": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "row": 4,
+            "flex_grow": 0,
+            "flex_shrink": 0,
+            "flex_basis": "auto",
+            "show_on_desktop": false,
+            "show_on_mobile": true,
+            "text": "800-482-7324",
+            "icon": "",
+            "link": "tel:8004827324",
+            "show_left_separator": false,
+            "show_right_separator": true
           }
         },
         "text_CpxVBH": {
@@ -200,50 +258,36 @@
             "menu": "header-info"
           }
         },
-        "text_fBXfp7": {
-          "type": "text",
+        "logo_ezQrLt": {
+          "type": "logo",
+          "disabled": true,
           "settings": {
             "row": 1,
-            "flex_grow": 1,
-            "flex_shrink": 1,
-            "flex_basis": "300",
-            "show_on_desktop": false,
-            "show_on_mobile": true,
-            "text": "",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z\"></path></svg>",
-            "link": "tel:8004827324",
-            "show_left_separator": false,
-            "show_right_separator": false
-          }
-        },
-        "drawer_nav_4xUTbY": {
-          "type": "drawer_nav",
-          "settings": {
-            "row": 1,
-            "flex_grow": 1,
+            "flex_grow": 0,
             "flex_shrink": 0,
-            "flex_basis": "auto",
-            "show_on_desktop": false,
-            "show_on_mobile": true,
-            "text": "Menu",
-            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 448 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z\"></path></svg>",
-            "direction": "right"
+            "flex_basis": "300",
+            "show_on_desktop": true,
+            "show_on_mobile": false,
+            "logo": "shopify://shop_images/logo.png"
           }
         }
       },
       "block_order": [
-        "logo_ezQrLt",
         "logo_7aGbfY",
         "search_wRyCAp",
-        "account_9HxGpf",
         "account_gwJN3p",
-        "cart_8aTQKp",
         "cart_nhV9iy",
+        "logo_eLPfqk",
+        "drawer_nav_4xUTbY",
+        "search_faUmMx",
+        "account_9HxGpf",
+        "cart_8aTQKp",
+        "text_fBXfp7",
         "spacer_enyXKj",
+        "text_DnWkUV",
         "text_CpxVBH",
         "menu_aUPFN6",
-        "text_fBXfp7",
-        "drawer_nav_4xUTbY"
+        "logo_ezQrLt"
       ],
       "settings": {
         "disable_predictive_search": false,
