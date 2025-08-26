@@ -226,6 +226,17 @@ var_id:var_id,
     {{ 'mask-arch.svg' | inline_asset_content }}
   {%- endif -%}
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var endlessScroll = new Ajaxinate({
+    container: '#AjaxinateContainer',
+    pagination: '#AjaxinatePagination',
+    method: 'scroll',
+    //loadingText: <img src="{{ 'loading111.gif' | asset_img_url:'master' }}" alt="Loading">,
+    offset: 3000
+  });
+});
+</script>
 
 {% schema %}
 {
