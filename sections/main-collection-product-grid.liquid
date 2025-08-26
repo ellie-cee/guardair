@@ -36,6 +36,7 @@
   }
   #shopify-section-{{ section.id }} .fullwidth-grid {max-width:95vw;margin:0 auto;}
 {%- endstyle -%}
+{% assign card_layout = section.settings.card_layout %}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
@@ -163,7 +164,7 @@
                   {% assign var_sku = variant.sku %}
                   {% assign var_images = variant.image %}
                   <li class="grid__item">
-                    {% case section.settings.card_layout %}
+                    {% case card_layout %}
                     {% when 'default' %}
                             {% render 'collection-card-product',
                                 card_product: product,
@@ -241,7 +242,7 @@
                     skip_styles: skip_card_product_styles,
                     quick_add: section.settings.quick_add,
                     section_id: section.id,
-var_id:var_id,
+                        var_id:var_id,
                         var_price: var_price,
                         var_title: var_title,
                         var_sku: var_sku,
