@@ -205,7 +205,7 @@
                                 section:section
                               %}
                     {% when 'catalog' %}
-                            {% render 'gua-collection-card-product',
+                            {% render 'gua-catalog-card-product',
                                 card_product: product,
                                 media_aspect_ratio: section.settings.image_ratio,
                                 image_shape: section.settings.image_shape,
@@ -224,7 +224,7 @@
                                 section:section
                               %}  
                     {% when 'metafield' %}
-                            {% render 'gua-collection-metafield-card',
+                            {% render 'gua-metafield-card-product',
                                 card_product: product,
                                 media_aspect_ratio: section.settings.image_ratio,
                                 image_shape: section.settings.image_shape,
@@ -311,7 +311,7 @@
                                 var_images: var_images
                               %}  
                     {% when 'metafield' %}
-                            {% render 'gua-collection-metafield-card',
+                            {% render 'gua-metafield-card-product',
                                 card_product: product,
                                 media_aspect_ratio: section.settings.image_ratio,
                                 image_shape: section.settings.image_shape,
