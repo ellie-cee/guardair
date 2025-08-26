@@ -27,6 +27,7 @@
         "@media screen and (max-width: 767px) {.itg_collection_grid {display: grid; gap: 10px; justify-content: center; }}"
       ],
       "settings": {
+        "fullscreen": true,
         "products_per_page": 36,
         "columns_desktop": 3,
         "columns_mobile": "2",
