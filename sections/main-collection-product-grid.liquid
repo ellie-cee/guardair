@@ -162,7 +162,7 @@
                   {% assign var_title = variant.title | split: '(' | first %}
                   {% assign var_sku = variant.sku %}
                   {% assign var_images = variant.image %}
-                  <li class="grid__item itg_with_variant">
+                  <li class="grid__item itg_with_variant--disabled">
                      {% render 'collection-card-product',
                         card_product: product,
                         media_aspect_ratio: section.settings.image_ratio,
