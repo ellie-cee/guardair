@@ -19,7 +19,6 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "disabled": true,
       "custom_css": [
         ".card__media .media img {object-fit: contain;}",
         ".card__inner {background-color: transparent;}",
@@ -45,6 +44,7 @@
     },
     "gua_collection_grid_3yfYEw": {
       "type": "gua-collection-grid",
+      "disabled": true,
       "name": "GUA Product Catalog Grid",
       "settings": {
         "block_style": "side",
@@ -54,13 +54,13 @@
         "color_scheme": "",
         "ptitle_fix": "basic",
         "font_style": "blue-subtitle",
+        "pdesc": true,
+        "pdesc_shorten": 1,
+        "alt_desc": true,
         "alt_image": true,
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
-        "pdesc": true,
-        "pdesc_shorten": 1,
-        "alt_desc": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
