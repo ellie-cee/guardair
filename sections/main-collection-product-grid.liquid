@@ -181,7 +181,9 @@
                                   var_price: var_price,
                                   var_title: var_title,
                                   var_sku: var_sku,
-                                  var_images: var_images
+                                var_images: var_images,
+                                filtered:filters_applied,
+                                section:section
                             %}                     
                     {% when 'itg' %}
                             {% render 'collection-card-product',
@@ -198,10 +200,12 @@
                                 var_price: var_price,
                                 var_title: var_title,
                                 var_sku: var_sku,
-                                var_images: var_images
+                                var_images: var_images,
+                                filtered:filters_applied,
+                                section:section
                               %}
                     {% when 'catalog' %}
-                            {% render 'gua-product-card-grid',
+                            {% render 'gua-collection-card-product',
                                 card_product: product,
                                 media_aspect_ratio: section.settings.image_ratio,
                                 image_shape: section.settings.image_shape,
@@ -215,7 +219,9 @@
                                 var_price: var_price,
                                 var_title: var_title,
                                 var_sku: var_sku,
-                                var_images: var_images
+                                var_images: var_images,
+                                filtered:filters_applied,
+                                section:section
                               %}  
                     {% when 'metafield' %}
                             {% render 'gua-collection-metafield-card',
@@ -232,7 +238,9 @@
                                 var_price: var_price,
                                 var_title: var_title,
                                 var_sku: var_sku,
-                                var_images: var_images
+                                var_images: var_images,
+                                filtered:filters_applied,
+                                section:section
                               %}                                                           
                     {% endcase %}
                  </li>
