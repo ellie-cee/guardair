@@ -117,7 +117,8 @@
   },
   "collection": {
     "filter_menu": {
-      "refine": "Filter"
+      "refine": "Filter",
+      "view_all":"View All"
     }
   },
   "products": {
