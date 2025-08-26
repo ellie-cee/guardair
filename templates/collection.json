@@ -28,7 +28,7 @@
         "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "",
-        "card_layout": "metafield",
+        "card_layout": "default",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
