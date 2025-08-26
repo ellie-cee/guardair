@@ -130,7 +130,7 @@
             "row": 1,
             "flex_grow": 0,
             "flex_shrink": 1,
-            "flex_basis": "150px",
+            "flex_basis": "75px",
             "show_on_desktop": false,
             "show_on_mobile": true,
             "text": "Menu",
