@@ -563,6 +563,11 @@
             >
               {{- 'products.product.on_sale' | t -}}
             </span>
+          {%- else -%}
+            <span
+              id="Badge-{{ section_id }}-{{ card_product.id }}"
+              class="badge badge--bottom-left color-2"
+            >Badge</span>            
           {%- endif -%}
         </div>
       </div>
