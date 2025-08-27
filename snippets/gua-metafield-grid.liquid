@@ -1,11 +1,12 @@
 {% assign limit = 3 %}
 {% assign count = 0 %}
+{% assign variant = product.selected_or_first_available_variant %}
 {% case product.type %}
         {% when 'Vacuums' %}
-                {% assign val1 = product.selected_or_first_available_variant.metafields.global.Vacuum-Flow %}
+                {% assign val1 = variant.metafields.global.Vacuum-Flow %}
         {% when 'Air & Syphon Guns' %}   
-                {% assign val1 = product.selected_or_first_available_variant.metafields.global.Output-Thrust %}                    
-                {% assign val2 = product.selected_or_first_available_variant.metafields.global.Min-Compressor-Required %}                
+                {% assign val1 = variant.metafields.global.Output-Thrust %}                    
+                {% assign val2 = variant.metafields.global.Min-Compressor-Required %}                
 {% endcase %}
 <div class="card-metafields grid">
         {% for row in (1..limit) %}<h3>{{ product.selected_or_first_available_variant.id }}-->{{ val1 }}--{{ val1.type }}--{{ val1.value }}--{{ val1.label }}</h3>
