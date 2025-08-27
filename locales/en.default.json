@@ -118,6 +118,7 @@
   "collection": {
     "filter_menu": {
       "refine": "Filter",
+      "mobile_filter": "Filter",      
       "view_all":"View All"
     }
   },
