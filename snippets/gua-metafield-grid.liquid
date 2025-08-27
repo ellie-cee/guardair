@@ -17,10 +17,11 @@
                 {% assign val4 = variant.metafields.global["Flow"] %}
                     {% if val4.definition.name %}{% assign val4_name = val4.definition.name %}{% else %}{% assign val4_name = 'Flow' %}{% endif %}                    
 {% endcase %}
+{% assign meta_array = meta_list | split:',' %}
 <div class="card-metafields grid">
 
 
- {% for meta in meta_list %}
+ {% for meta in meta_array %}
                 {{ variant.metafields.global[meta] }}
  {% endfor %}
         {% for row in (1..limit) %}
