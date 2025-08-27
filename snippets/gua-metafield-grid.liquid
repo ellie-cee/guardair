@@ -8,7 +8,7 @@
                 {% assign val1 = variant.metafields.global["Output-Thrust"] %}                    
                 {% assign val2 = variant.metafields.global.Min-Compressor-Required %}                
 {% endcase %}
-<div class="card-metafields grid">
+<div class="card-metafields grid">{{ val1 | json }}
         <p>{{ val1 }}--{{ val1.type }}--{{ val1.value }}--{{ val1.definition }}--{{ val1.key }}--{{ val1.name }}</p>
         {% for row in (1..limit) %} 
                 {% if val1 %}<div class="meta__item"><span class="meta-label">{{ val1.definition }}:</span><span class="meta-value">{{  val1.value }}</span></div>{% assign count = count | plus:1 %}{% endif %}
