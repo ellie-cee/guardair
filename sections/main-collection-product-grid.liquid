@@ -180,7 +180,7 @@
                                   var_title: var_title,
                                   var_sku: var_sku,
                                 var_images: var_images,
-                                new_title:new_title,
+                                new_title:new_vtitle,
                                 filtered:filters_applied,
                                 section:section
                             %}                     
@@ -200,7 +200,7 @@
                                 var_title: var_title,
                                 var_sku: var_sku,
                                 var_images: var_images,
-                                new_title:new_title,
+                                new_title:new_vtitle,
                                 filtered:filters_applied,
                                 section:section
                               %}
@@ -220,7 +220,7 @@
                                 var_title: var_title,
                                 var_sku: var_sku,
                                 var_images: var_images,
-                                new_title:new_title,
+                                new_title:new_vtitle,
                                 filtered:filters_applied,
                                 section:section
                               %}  
@@ -240,7 +240,7 @@
                                 var_title: var_title,
                                 var_sku: var_sku,
                                 var_images: var_images,
-                                new_title:new_title,
+                                new_title:new_vtitle,
                                 filtered:filters_applied,
                                 section:section
                               %}                                                           
@@ -276,7 +276,10 @@
                                   var_price: var_price,
                                   var_title: var_title,
                                   var_sku: var_sku,
-                                  var_images: var_images
+                                var_images: var_images,
+                                new_title:new_ptitle,
+                                filtered:filters_applied,
+                                section:section
                             %}                     
                     {% when 'itg' %}
                             {% render 'collection-card-product',
@@ -293,7 +296,10 @@
                                 var_price: var_price,
                                 var_title: var_title,
                                 var_sku: var_sku,
-                                var_images: var_images
+                                var_images: var_images,
+                                new_title:new_ptitle,
+                                filtered:filters_applied,
+                                section:section
                               %}
                     {% when 'catalog' %}
                             {% render 'gua-product-card-grid',
@@ -310,7 +316,10 @@
                                 var_price: var_price,
                                 var_title: var_title,
                                 var_sku: var_sku,
-                                var_images: var_images
+                                var_images: var_images,
+                                new_title:new_ptitle,
+                                filtered:filters_applied,
+                                section:section
                               %}  
                     {% when 'metafield' %}
                             {% render 'gua-metafield-card-product',
@@ -327,7 +336,10 @@
                                 var_price: var_price,
                                 var_title: var_title,
                                 var_sku: var_sku,
-                                var_images: var_images
+                                var_images: var_images,
+                                new_title:new_ptitle,
+                                filtered:filters_applied,
+                                section:section
                               %}                                                           
                     {% endcase %}
                 </li>
