@@ -6,7 +6,7 @@
                 {% assign val1 = variant.metafields.global.Vacuum-Flow %}
         {% when 'Air & Syphon Guns' %}   
                 {% assign val1 = variant.metafields.global["Output-Thrust"] %} 
-                        {% assign val1.name = 'Output Thrust' %}                   
+                        {% assign val1_name = 'Output Thrust' %}                   
                 {% assign val2 = variant.metafields.global.Min-Compressor-Required %}                
 {% endcase %}
 <div class="card-metafields grid">{{ val1 | json }}
