@@ -451,6 +451,38 @@
         "type": "shopify://apps/consentmo-gdpr/blocks/gdpr_cookie_consent/4fbe573f-a377-4fea-9801-3ee0858cae41",
         "disabled": true,
         "settings": {}
+      },
+      "8206438490174621228": {
+        "type": "shopify://apps/snap-compare/blocks/app-embed/9f7c7bcd-04ba-47ae-800e-227777a8d3e3",
+        "disabled": false,
+        "settings": {
+          "btn_main_position": "center-left",
+          "show_toast_notifications": true,
+          "hide_main_button": false,
+          "dark_mode": false,
+          "backdrop_color": "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%)",
+          "target_elements": ".product-form__buttons, .quick-add",
+          "btn_compare_placement": "after-cart-btn",
+          "btn_compare_display": "button",
+          "collection_list": [],
+          "text_product_comparison": "Product comparison",
+          "text_compare_list_empty": "Comparison list is empty",
+          "text_remove_all": "Remove all",
+          "text_compare_add": "Add to compare",
+          "text_compare_added": "Added to comparison list",
+          "text_compare_remove": "Remove from compare",
+          "text_compare_removed": "Removed from comparison list",
+          "text_compare_limit": "Comparison list can contain up to 4 products",
+          "text_add_to_cart": "Add to cart",
+          "text_title": "Title",
+          "text_description": "Description",
+          "text_price": "Price",
+          "text_type": "Type",
+          "text_vendor": "Vendor",
+          "text_tags": "Tags",
+          "text_available": "Available",
+          "text_barcode": "Barcode"
+        }
       }
     },
     "color_schemes": {
