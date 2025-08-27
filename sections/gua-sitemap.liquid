@@ -1,0 +1,236 @@
+{% comment %} SECTIONS: ywm-sitemap.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/c5ee6e769a4086d79efd193eb03f9e143fa679a7/Sections/ywm-sitemap.liquid {% endcomment %}
+{% comment %} LAST UPDATED: 20241212 {% endcomment %}
+ 
+{% style %}
+.sitemap ul {display: flex;display:flex;display: -webkit-flex;display: -moz-box;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap; {% comment %} -- flex-flow: row wrap; -- {% endcomment %}flex-flow: column wrap;align-content: flex-start;justify-content: space-between;align-items: flex-start;}
+.sitemap ul li {list-style:none;padding-right: 1rem;line-height:140%;}
+.sitemap ul li a {color:#333;text-decoration:none;}
+.sitemap ul.one-col li {flex: 1 0 100%;}
+.sitemap ul.two-col li {flex: 1 0 49%;}
+.sitemap ul.three-col li {flex: 1 0 32%;}
+ .sitemap hr {margin:1rem auto;} 
+
+@media screen and (max-width: 480px) {
+    .sitemap ul {max-height:100% !important;flex-wrap: nowrap;}
+}
+@media screen and (min-width: 480px) and (max-width:768px) {
+    .sitemap ul {max-height:100% !important;flex-wrap: nowrap;}
+}
+{% endstyle %}
+
+<div class="{{ section.id }} {{ section.settings.image_align }} {{section.settings.css_class }} {{ section.settings.striped }} {{ section.settings.flipped }}" data-section-id="{{ section.id }}" {{ block.shopify_attributes }}>
+
+{% case section.settings.columns %}
+{% when 4 %}
+{%- assign col_class = 'four-col' -%}
+{% assign collection_height = collections.size | times: 28 | divided_by: 3.7 %}
+{% assign product_height = collections.all.products.size | times: 28 | divided_by: 3.7 %}
+{% when 3 %}
+{%- assign col_class = 'three-col' -%}
+{% assign collection_height = collections.size | times: 28 | divided_by: 2.7 %}
+{% assign product_height = collections.all.products.size | times: 28 | divided_by: 2.7 %}
+{% when 2 %}
+{%- assign col_class = 'two-col' -%}
+{% assign collection_height = collections.size | times: 28 | divided_by: 1.7 %}
+{% assign product_height = collections.all.products.size | times: 110 %}
+{% when 1 %}
+{%- assign col_class = 'one-col' -%}
+{% assign collection_height = '800' %}
+{% assign product_height = '800' %}
+{% else %}
+{%- assign col_class = '' -%}
+{% endcase %}
+
+
+<div class="page-width page-content">
+
+{% if section.settings.title != blank and section.settings.title_enable == true %}
+<div class="section-header">
+<h1 class="section-header--left h1">{{ section.settings.title | escape }}</h1>
+</div>
+{% endif %}
+{% if section.settings.section_intro != blank %}<p class="max-600 text-center">{{ section.settings.section_intro | escape }}</p><br/>{% endif %}
+
+<div class="grid-uniform">
+<div class="grid-item sitemap">
+
+{% if section.settings.collection_enable == true %}
+<hr/>
+<h2 class="text-left">{{ 'shopify.page_titles.collections' | t }}</h2>
+<ul class="text-left {{col_class }}" style="max-height:{{ collection_height }}px;">
+
+{% for c in collections %}
+<li>
+<a href="{{ c.url }}"{% if section.settings.new_window == true %} target="_blank"{% endif %}>{{ c.title | capitalize }}</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if section.settings.product_enable == true %}
+<hr/>
+<h2 class="text-left">{{ 'shopify.page_titles.products' | t }}</h2>
+<ul class="text-left {{col_class }}" style="max-height:{{ product_height }}px;">
+{% paginate collections.all.products by 1000 %}
+{% for product in collections.all.products %}
+<li>
+<a href="{{ product.url }}">{{ product.title | capitalize }}</a>
+</li>
+{% endfor %}
+{% endpaginate %}
+</ul>
+{% endif %}
+
+{% if section.settings.vendor_enable == true %}
+<hr/>
+<h2 class="text-left">Brands</h2>
+<ul class="text-left {{col_class }}">
+{% for product_vendor in shop.vendors %}
+<li>{{ product_vendor | link_to_vendor }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+
+{% if section.settings.page_enable == true %}
+    <hr/>
+    <h2 class="text-left">Pages</h2>
+    <ul class="text-left {{col_class }}" id="page-list"></ul>
+    
+        <script>
+          (function() {
+          // 1. Fetch JSON Data
+          fetch('/pages.json')
+            .then(response => response.json())
+            .then(data => {
+        
+              // 2. Prepare and Sort Menu Items
+              let pagelist = "";
+              let menu = [];
+        
+              for (const handle in data.pages) {
+                const page = data.pages[handle];
+                menu.push(page.title + "_" + page.handle);
+              }
+              menu.sort();
+        
+              // 3. Create List Items and Adjust Height
+              menu.forEach(item => {
+                console.log(item); // (Optional: Keep for debugging)
+                const [title, handle] = item.split('_');
+                pagelist += `<li><a href="${handle}">${title}</a></li>`;
+              });
+        
+              const myHeight = (menu.length * 35) / 2;
+        
+              // 4. Update DOM Elements
+              const pageListElement = document.getElementById('page-list');
+              pageListElement.innerHTML = pagelist;
+              pageListElement.style.maxHeight = `${myHeight}px`;
+            }); 
+        })();
+        </script>
+{% endif %}
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+{% schema %}
+{
+"name": "Sitemap",
+"class": "index-section",
+"tag": "section",
+"disabled_on": {
+  "groups": ["header", "footer"]
+}, 
+"max_blocks": 4,
+"settings": [
+{
+"type": "checkbox",
+"id": "title_enable",
+"label": "Show header",
+"default": true
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Title for Sitemap Section"
+},
+{
+"type": "html",
+"id": "section_intro",
+"label": "Text Above Sitemap"
+},
+{
+"type": "range",
+"id": "columns",
+"label": "Number of Columns",
+"min": 1,
+"max": 4,
+"step": 1,
+"default": 1
+},
+{
+"type": "checkbox",
+"id": "collection_enable",
+"label": "Include Collections",
+"default": false,
+"info": "Output list of collections"
+},
+{
+"type": "checkbox",
+"id": "product_enable",
+"label": "Include Products",
+"default": false,
+"info": "Output list of products under each section"
+},
+{
+"type": "checkbox",
+"id": "vendor_enable",
+"label": "Include Brands",
+"default": false,
+"info": "Output list of brand pages"
+},
+{
+"type": "checkbox",
+"id": "page_enable",
+"label": "Include Pages",
+"default": false,
+"info": "Output list of Shopify pages"
+},
+{
+"type": "html",
+"id": "section_outro",
+"label": "Text Below Sitemap"
+},
+{
+"type": "checkbox",
+"id": "new_window",
+"label": "Open links in new window",
+"default": false
+},
+{
+"type": "text",
+"id": "css_class",
+"label": "CSS Class for Section"
+}
+],
+"blocks": [],
+"presets": [
+{
+"name": "GUA Sitemap",
+"category": "Guardair",
+"blocks": []
+}
+]
+}
+{% endschema %}
