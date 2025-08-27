@@ -7,7 +7,7 @@
         {% when 'Vacuums' %}
                 {% assign val1 = variant.metafields.global.Vacuum-Flow %}
         {% when 'Air & Syphon Guns' %} 
-                {% assign meta_list = 'Output-Thrust,Min-Compressor-Required' %}
+                {% assign meta_list = 'Output Thrust|Output-Thrust,Min. Compressor Req.|Min-Compressor-Required' %}
                 {% assign val1 = variant.metafields.global["Output-Thrust"] %}
                     {% if val1.definition.name %}{% assign val1_name = val1.definition.name %}{% else %}{% assign val1_name = 'Output Thrust' %}{% endif %}
                 {% assign val2 = variant.metafields.global["Min-Compressor-Required"] %}
@@ -22,7 +22,9 @@
 
 
  {% for meta in meta_array %}
-                {{ variant.metafields.global[meta] }}
+        {% assign label = meta | split: '|' | first %}
+        {% assign key = meta | split: '|' | last %}
+                {{ variant.metafields.global[key] }}
  {% endfor %}
         {% for row in (1..limit) %}
                 {% if val1 or val2 %}
