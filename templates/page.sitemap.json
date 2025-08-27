@@ -9,8 +9,26 @@
  */
 {
   "sections": {
+    "gua_sitemap_bCfaMD": {
+      "type": "gua-sitemap",
+      "name": "GUA Sitemap",
+      "settings": {
+        "title_enable": true,
+        "title": "Title for Sitemap Section",
+        "section_intro": "",
+        "columns": 1,
+        "collection_enable": true,
+        "product_enable": false,
+        "vendor_enable": false,
+        "page_enable": true,
+        "section_outro": "",
+        "new_window": false,
+        "css_class": ""
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -18,6 +36,7 @@
     }
   },
   "order": [
+    "gua_sitemap_bCfaMD",
     "main"
   ]
 }
