@@ -8,3 +8,4 @@
     {% when 'move_model' %}{% capture new_title %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}{% endcapture %}
     {% when 'remove_model' %}{% capture new_title %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}{% endcapture %}
 {% endcase %}
+{{ new_title | strip }}
