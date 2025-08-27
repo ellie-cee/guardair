@@ -123,6 +123,7 @@
                 {% if new_title %}{{ new_title | escape }}{% else %}{{ card_product.title | escape }}{% endif %}
               </a>
             </h3>
+            {% if show_sku %}<h4 class="grid-sku">{{ var_sku }}</h4>{% endif %}
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
