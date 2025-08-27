@@ -163,9 +163,8 @@
           <div class="card-information">
             {% if show_sku %}<h4 class="grid-sku">{{ var_sku }}</h4>{% endif %}  
             
-            <div class="card-metafields">
-              
-            </div>
+            {% render 'gua-metafield-grid',product:product %}
+
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
