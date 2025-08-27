@@ -1,5 +1,5 @@
 {% assign accent_color1 = '#328ad2' %}
-  {% assign accent_color1_text = '#fff' %}
+{% assign accent_color1_text = '#fff' %}
 {% assign accent_color2 = '#002395' %}
 {% assign gray_color = '#808285' %}
 {% assign light_gray = '#f1f1f1' %}
@@ -8,15 +8,20 @@
 {% assign border_radius = '' %}
 {% assign accent_gradient1 = accent_color2 | color_to_rgb %}
 {% assign accent_gradient2 = accent_color1 | color_to_rgb %}
-
+body { background: red !important; }
 
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
 
+{% comment %} --- QIKIFY MENU --- {% endcomment %}
+.v2-header__nav-menu, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link a, .v2-header__nav-menu .tmenu_item_text {font-family:'Eurostile-Bol',sans-serif !important;text-transform:uppercase;}
+.v2-header__nav-menu-list a {visibility:hidden !important;} 
+
+
 {% comment %} --- BUTTONS --- {% endcomment %}
 .button, .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded {min-width: calc(12rem + var(--buttons-border-width) * 2);min-height: calc(2.5rem + var(--buttons-border-width) * 2);}
 .button {
-{% if settings.button_vertical_padding != 0 %}padding-top: {{  settings.button_vertical_padding }}px;padding-bottom: {{  settings.button_vertical_padding }}px;{% endif %}  
+{% if settings.button_vertical_padding != 0 %}padding-top: {{ settings.button_vertical_padding }}px;padding-bottom: {{ settings.button_vertical_padding }}px;{% endif %}  
 {% if settings.button_caps %}text-transform:uppercase;{% endif %}
 {% if settings.button_font_size %}font-size:{{ settings.button_font_size }}px;{% endif %}
 {% if settings.button_font_weight == '100'  %}font-family: "Eurostile-Reg", sans-serif;font-weight:{{ settings.button_font_weight }};
@@ -895,4 +900,3 @@ td.cart-item__totals .cart-item__price-wrapper span.price.price--end {font-famil
 .template-search__results .pagination-wrapper {margin-top: 0px;}
 .template-search__results ul.grid {margin-bottom: 0;}
 .template-search__header h1.h2 {text-transform: uppercase; font-size: 48px; line-height: 1;}
-.template-search .template-search__results ul.grid li
