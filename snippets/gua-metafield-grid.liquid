@@ -9,8 +9,7 @@
                 {% assign val2 = variant.metafields.global.Min-Compressor-Required %}                
 {% endcase %}
 <div class="card-metafields grid">
-        <h2>{{ product.title }}</h2>
-        <h3>{{ product.selected_or_first_available_variant.id }}-->{{ val1 }}--{{ val1.type }}--{{ val1.value }}--{{ val1.label }}</h3>
+        <p>{{ product.selected_or_first_available_variant.id }}-->{{ val1 }}--{{ val1.type }}--{{ val1.value }}--{{ val1.label }}</p>
         {% for row in (1..limit) %} 
                 {% if val1 %}<div class="meta__item"><span class="meta-label">{{ val1.label }}:</span><span class="meta-value">{{  val1.value }}</span></div>{% assign count = count | plus:1 %}{% endif %}
                 <div class="meta__item"><span class="meta-label">Title:</span><span class="meta-value"> value</span></div>
