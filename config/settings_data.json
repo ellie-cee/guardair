@@ -454,7 +454,7 @@
       },
       "8206438490174621228": {
         "type": "shopify://apps/snap-compare/blocks/app-embed/9f7c7bcd-04ba-47ae-800e-227777a8d3e3",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "btn_main_position": "center-right",
           "show_toast_notifications": true,
