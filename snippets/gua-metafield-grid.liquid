@@ -3,7 +3,8 @@
 {% case product.type %}
         {% when 'Vacuums' %}
                 {% assign val1 = product.selected_or_first_available_variant.metafields.global.Vacuum-Flow %}
-
+        {% when 'Air & Syphon Guns' %}     
+                {% assign val1 = product.selected_or_first_available_variant.metafields.global.Min-Compressor-Required %}                
 {% endcase %}
 <div class="card-metafields grid">
         {% for row in (1..limit) %}
