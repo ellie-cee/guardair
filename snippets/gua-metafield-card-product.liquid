@@ -157,7 +157,7 @@
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
-              {{ card_product.title | escape }}
+              {% if new_title %}{{ new_title | escape }}{% else %}{{ card_product.title | escape }}{% endif %}
             </a>
           </h3>
           <div class="card-information">
@@ -506,7 +506,7 @@
                       </div>
                       <div class="quick-add-modal__content-info--bulk-details large-up-hide">
                         <a href="{{ card_product.url }}" class="full-unstyled-link">
-                          <h3>{{ card_product.title | escape }}</h3>
+                          <h3>{% if new_title %}{{ new_title | escape }}{% else %}{{ card_product.title | escape }}{% endif %}</h3>
                         </a>
                         {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
                         {%- if card_product.quantity_price_breaks_configured? -%}
@@ -519,9 +519,7 @@
                     <div>
                       <div class="quick-add-modal__content-info--bulk-details small-hide medium-hide">
                         <a href="{{ card_product.url }}" class="full-unstyled-link">
-                          <h3 class="h2">
-                            {{ card_product.title | escape }}
-                          </h3>
+                          <h3 class="h2">{% if new_title %}{{ new_title | escape }}{% else %}{{ card_product.title | escape }}{% endif %}</h3>
                         </a>
                         {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
                         {%- if card_product.quantity_price_breaks_configured? -%}
