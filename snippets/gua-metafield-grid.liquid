@@ -6,12 +6,12 @@
         {% when 'Air & Syphon Guns' %} 
                 {% assign meta_list = 'Inlet Connection|Inlet-Connection,Min. Compressor|Min-Compressor-Required,Flow|Flow,Syphon Flow Rate|Syphon-Flow-Rate,
                         Output Thrust|Output-Thrust,Syphon Flow Rate|Syphon-Flow-Rate,Noise Level|Noise-Level' %}
+        {% when 'Air Hoses & Fittings' %}
+                {% assign meta_list = 'Inlet Connection|Inlet-Connection' %}
+        {% when 'Parts & Accessories' %}
+                {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Vacuum Lift|Vacuum-Lift,Min. Compressor|Min-Compressor-Required,Inlet Connection|Inlet-Connection,Flow|Flow' %}
         {% when 'Vacuums' %}
-                {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Inlet Connection|Inlet-Connection,Flow|Flow' %}
-        {% when 'Vacuums' %}
-                {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Inlet Connection|Inlet-Connection,Flow|Flow' %}
-        {% when 'Vacuums' %}
-                {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Inlet Connection|Inlet-Connection,Flow|Flow' %}                                
+                {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Vacuum Lift|Vacuum-Lift,Inlet Connection|Inlet-Connection,Flow|Flow' %}                                
 {% endcase %}
 {% assign meta_array = meta_list | split:',' %}
 
