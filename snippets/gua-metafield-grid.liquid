@@ -1,25 +1,16 @@
 {% assign limit = 4 %}
 {% assign count = 0 %}
-{% comment %} {% assign meta_list = "" | split: "" %} {% endcomment %}
-{% assign meta_test = 'Output-Thrust' %}
 {% assign variant = product.selected_or_first_available_variant %}
+
 {% case product.type %}
         {% when 'Vacuums' %}
                 {% assign val1 = variant.metafields.global.Vacuum-Flow %}
         {% when 'Air & Syphon Guns' %} 
                 {% assign meta_list = 'Output Thrust|Output-Thrust,Min. Compressor Req.|Min-Compressor-Required,Inlet Connection|Inlet-Connection,Flow|Flow' %}
-                {% assign val1 = variant.metafields.global["Output-Thrust"] %}
-                    {% if val1.definition.name %}{% assign val1_name = val1.definition.name %}{% else %}{% assign val1_name = 'Output Thrust' %}{% endif %}
-                {% assign val2 = variant.metafields.global["Min-Compressor-Required"] %}
-                    {% if val2.definition.name %}{% assign val2_name = val2.definition.name %}{% else %}{% assign val2_name = 'Min. Compressor Req.' %}{% endif %}
-                {% assign val3 = variant.metafields.global["Inlet-Connection"] %}
-                    {% if val3.definition.name %}{% assign val3_name = val3.definition.name %}{% else %}{% assign val3_name = 'Inlet Connection' %}{% endif %}
-                {% assign val4 = variant.metafields.global["Flow"] %}
-                    {% if val4.definition.name %}{% assign val4_name = val4.definition.name %}{% else %}{% assign val4_name = 'Flow' %}{% endif %}                    
 {% endcase %}
 {% assign meta_array = meta_list | split:',' %}
-<div class="card-metafields grid">
 
+<div class="card-metafields grid">
 
  {% for meta in meta_array %}
         {% assign label = meta | split: '|' | first %}
