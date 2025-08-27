@@ -7,7 +7,7 @@
                 {% assign meta_list = 'Inlet Connection|Inlet-Connection,Min. Compressor|Min-Compressor-Required,Flow|Flow,Syphon Flow Rate|Syphon-Flow-Rate,
                         Output Thrust|Output-Thrust,Syphon Flow Rate|Syphon-Flow-Rate,Noise Level|Noise-Level' %}
         {% when 'Air Hoses & Fittings' %}
-                {% assign meta_list = 'Inlet Connection|Inlet-Connection,Hose Length|custom.hose_length' %}
+                {% assign meta_list = 'Inlet Connection|Inlet-Connection,Hose Length|hose_length' %}
         {% when 'Parts & Accessories' %}
                 {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Vacuum Lift|Vacuum-Lift,Min. Compressor|Min-Compressor-Required,Inlet Connection|Inlet-Connection,
                         Flow|Flow,Noise Level|Noise-Level,Steel Drum Gauge|Steel-Drum-Gauge' %}
@@ -23,6 +23,9 @@
         {% assign label = meta | split: '|' | first %}
         {% assign key = meta | split: '|' | last %}
         {% if variant.metafields.global[key] %}
+                <div class="meta__item"><span class="meta-label">{{ label }}:</span><span class="meta-value">{{  variant.metafields.global[key] }}</span></div>
+                {% assign count = count | plus:1 %}
+        {% elsif variant.metafields.custom[key] %}
                 <div class="meta__item"><span class="meta-label">{{ label }}:</span><span class="meta-value">{{  variant.metafields.global[key] }}</span></div>
                 {% assign count = count | plus:1 %}
         {% endif %}
