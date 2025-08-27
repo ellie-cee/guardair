@@ -36,7 +36,7 @@
         "show_vendor": false,
         "show_price": false,
         "show_sku": true,
-        "show_rating": true,
+        "show_rating": false,
         "quick_add": "none",
         "enable_filtering": true,
         "filter_type": "vertical",
