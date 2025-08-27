@@ -163,7 +163,7 @@
           <div class="card-information">
             {% if show_sku %}<h4 class="grid-sku">{% if var_sku %}{{ var_sku }}{% else %}{{ card_product.selected_or_first_available_variant.sku }}{% endif %}</h4>{% endif %}  
             
-            {% render 'gua-metafield-grid',product:product %}
+            {% render 'gua-metafield-grid',product:card_product %}
 
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
