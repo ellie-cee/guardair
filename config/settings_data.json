@@ -463,7 +463,7 @@
           "backdrop_color": "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%)",
           "target_elements": ".product-form__buttons, .quick-add",
           "btn_compare_placement": "after-cart-btn",
-          "btn_compare_display": "button",
+          "btn_compare_display": "checkbox",
           "collection_list": [],
           "text_product_comparison": "Product comparison",
           "text_compare_list_empty": "Comparison list is empty",
