@@ -11,7 +11,7 @@
         {% when 'Parts & Accessories' %}
                 {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Vacuum Lift|Vacuum-Lift,Min. Compressor|Min-Compressor-Required,Inlet Connection|Inlet-Connection,Flow|Flow' %}
         {% when 'Vacuums' %}
-                {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Vacuum Lift|Vacuum-Lift,Inlet Connection|Inlet-Connection,Flow|Flow' %}                                
+                {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Vacuum Lift|Vacuum-Lift,Min. Compressor|Min-Compressor-Required,Inlet Connection|Inlet-Connection,Flow|Flow' %}                                
 {% endcase %}
 {% assign meta_array = meta_list | split:',' %}
 
