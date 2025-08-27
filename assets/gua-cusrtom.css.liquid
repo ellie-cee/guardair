@@ -174,8 +174,12 @@ body.template-product .itg_full_product_info .tab-content table td .td-title { p
 }
  
 {% comment %} --- COLLECTION --- {% endcomment %}
-body.template-collection .card-metafield-layout .card-wrapper { box-shadow: 1px 2px 2px #ddd;border: 1px solid #eee;padding: 1rem;}
-  
+body.template-collection .card-metafield-layout .grid__item{ box-shadow: 1px 2px 2px #ddd;border: 1px solid #eee;padding: 1rem;}
+body.template-collection .card-metafield-layout .card-metafields.grid {display:flex;display:-webkit-flex;flex-flow:column;}
+body.template-collection .card-metafield-layout .card-metafields .grid__item {flex:1;}
+body.template-collection .card-metafield-layout .card-metafields span {font-weight:bold;}
+
+
 div#qab_container {display: none !important;}
 .itg_search_popup {width: 100%; background: #666666; color: #fff; left: 0; padding: 40px 0; display: none;}
 .itg_search_popup.active {display: block;}
