@@ -1,3 +1,4 @@
+{% assign test_version = 1.0 %}
 {% assign accent_color1 = '#328ad2' %}
 {% assign accent_color1_text = '#fff' %}
 {% assign accent_color2 = '#002395' %}
@@ -174,11 +175,13 @@ body.template-product .itg_full_product_info .tab-content table td .td-title { p
 }
  
 {% comment %} --- COLLECTION --- {% endcomment %}
-body.template-collection .card-metafield-layout .grid__item{ box-shadow: 1px 2px 2px #ddd;border: 1px solid #eee;padding: 1rem;}
-body.template-collection .card-metafield-layout .card-metafields.grid {display:flex;display:-webkit-flex;flex-flow:column;}
-body.template-collection .card-metafield-layout .card-metafields .grid__item {flex:1;}
+body.template-collection .card-metafield-layout .grid__item {box-shadow: 1px 2px 2px #babcc5;border: 1px solid #dfe0e3f1;padding: 1rem;   background: #fff;}
+body.template-collection .card-metafield-layout .card-metafields.grid {display:flex;display:-webkit-flex;flex-flow:column;align-items:space-between;}
+body.template-collection .card-metafield-layout .card-metafields .meta__item {flex:1;}
+body.template-collection .card-metafield-layout .card-metafields .meta__item:nth-child(even) {background:#eee;}
 body.template-collection .card-metafield-layout .card-metafields span {font-weight:bold;}
-
+body.template-collection .facets__form-vertical {margin: 0 auto;}
+body.template-collection facet-filters-form { background: #fff;}
 
 div#qab_container {display: none !important;}
 .itg_search_popup {width: 100%; background: #666666; color: #fff; left: 0; padding: 40px 0; display: none;}
