@@ -257,7 +257,7 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                                      {% case card_layout %}
+                {% case card_layout %}
                     {% when 'default' %}
                             {% render 'card-product',
                               card_product: product,
