@@ -6,7 +6,8 @@
         {% when 'Vacuums' %}
                 {% assign meta_list = 'Vacuum Flow|Vacuum-Flow,Inlet Connection|Inlet-Connection,Flow|Flow' %}
         {% when 'Air & Syphon Guns' %} 
-                {% assign meta_list = 'Inlet Connection|Inlet-Connection,Min. Compressor|Min-Compressor-Required,Flow|Flow,Syphon Flow Rate|Syphon-Flow-Rate,Output Thrust|Output-Thrust,Syphon Flow Rate|Syphon-Flow-Rate' %}
+                {% assign meta_list = 'Inlet Connection|Inlet-Connection,Min. Compressor|Min-Compressor-Required,Flow|Flow,Syphon Flow Rate|Syphon-Flow-Rate,
+                        Output Thrust|Output-Thrust,Syphon Flow Rate|Syphon-Flow-Rate' %}
                 {{ variant.metafields.global.Vacuum-Flow }}
 {% endcase %}
 {% assign meta_array = meta_list | split:',' %}
