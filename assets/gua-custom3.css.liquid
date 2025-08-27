@@ -8,7 +8,6 @@
 {% assign border_radius = '' %}
 {% assign accent_gradient1 = accent_color2 | color_to_rgb %}
 {% assign accent_gradient2 = accent_color1 | color_to_rgb %}
-body { background: red !important; }
  
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
@@ -25,8 +24,7 @@ body { background: red !important; }
 {% if settings.button_caps %}text-transform:uppercase;{% endif %}
 {% if settings.button_font_size %}font-size:{{ settings.button_font_size }}px;{% endif %}
 {% if settings.button_font_weight == '100'  %}font-family: "Eurostile-Reg", sans-serif;font-weight:{{ settings.button_font_weight }};
-  {% else %}font-family: "Eurostile-Bol", sans-serif;  font-weight:{{ settings.button_font_weight }};
-{% endif %}
+{% else %}font-family: "Eurostile-Bol", sans-serif;font-weight:{{ settings.button_font_weight }};{% endif %}
 {% if settings.button_letter_spacing %}letter-spacing: 0.0{{ settings.button_letter_spacing }}em;{% endif %}
 }
 .banner__buttons--multiple a.button:first-of-type {}
@@ -341,7 +339,8 @@ ul.popular-items .owl-nav button.owl-next {position: absolute; right: -30px; wid
 .footer .footer-container .footer-right .footer-top .footer-info {padding-bottom: 35px;}
 .footer .footer-container .footer-right h4 {font-size: 16px; line-height: 1.5; text-transform: uppercase; margin: 0; color: #000;}
 .footer .footer-container .footer-right .footer-top .footer-info p {margin: 0; margin-bottom: 18px; font-size: 16px; line-height: 1.5; color: #000; letter-spacing: normal;}
-.footer .footer-container .footer-right .footer-top .footer-info p .btn, .footer .footer-container .footer-right .footer-top .footer-info #page-container .page-sidebar > p > a, #page-container .footer .footer-container .footer-right .footer-top .footer-info .page-sidebar > p > a, .footer .footer-container .footer-right .footer-top .footer-info p .product-container .product-content .product-bottom .product-tabs .tab-content.reviews-content .spr-summary-actions .spr-summary-actions-newreview, .product-container .product-content .product-bottom .product-tabs .tab-content.reviews-content .spr-summary-actions .footer .footer-container .footer-right .footer-top .footer-info p .spr-summary-actions-newreview {margin-bottom: 8px;}
+.footer .footer-container .footer-right .footer-top .footer-info p .btn, .footer .footer-container .footer-right .footer-top .footer-info #page-container .page-sidebar > p > a, 
+#page-container .footer .footer-container .footer-right .footer-top .footer-info .page-sidebar > p > a {margin-bottom: 8px;}
 .footer .footer-container .footer-right .footer-top .footer-connect .social-icons {padding-bottom: 50px;}
 .footer .footer-container .footer-right .footer-top .footer-connect p {margin: 0; margin-bottom: 18px; font-size: 16px; line-height: 1.5; color: #000;}
 {% comment %} --  .footer .footer-container .footer-right .footer-top .footer-connect {padding-bottom: 35px;}  -- {% endcomment %}
