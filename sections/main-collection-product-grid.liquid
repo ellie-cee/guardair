@@ -43,7 +43,7 @@
     {% when 'move_model' %}{% capture new_title %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}{% endcapture %}
     {% when 'remove_model' %}{% capture new_title %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}{% endcapture %}
 {% endcase %}
-
+<h1>{{ new_title }}</h1>
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
