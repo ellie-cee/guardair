@@ -156,7 +156,6 @@
                  {% unless product.has_only_default_variant %}
                 {% for variant in product.variants %}
                   {% capture new_vtitle %}{% render 'gua-title-type', title_type:section.settings.ptitle_fix,product:product %}{% endcapture %}
-                                  <h2>{{ forloop.index }}. {{ new_vtitle }}</h2>
                   {% assign var_id = variant.id %}
                   {% assign var_price = variant.price %}
                   {% assign var_title = variant.title | split: '(' | first %}
