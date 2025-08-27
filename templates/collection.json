@@ -29,7 +29,7 @@
         "columns_mobile": "2",
         "color_scheme": "scheme-2",
         "card_layout": "metafield",
-        "ptitle_fix": "basic",
+        "ptitle_fix": "none",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
