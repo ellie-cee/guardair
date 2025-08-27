@@ -6,13 +6,13 @@
                 {% assign val1 = variant.metafields.global.Vacuum-Flow %}
         {% when 'Air & Syphon Guns' %}   
                 {% assign val1 = variant.metafields.global["Output-Thrust"] %} 
-                        {% assign val1.name  = 'Output Thrust' %}                   
+                    {% if val1.definition.name %}{% assign val1_name = val1.definition.name %}{% else %}{% assign val1_name = 'Output Thrust' %}{% endif %}
                 {% assign val2 = variant.metafields.global.Min-Compressor-Required %}                
 {% endcase %}
 <div class="card-metafields grid">{{ val1 | json }}
         <p>{{ val1 }}--{{ val1.type }}--{{ val1.value }}--{{ val1.definition }}--{{ val1_name }}--{{ val1.name }}</p>
         {% for row in (1..limit) %} 
-                {% if val1 %}<div class="meta__item"><span class="meta-label">{{ val1.name }}:</span><span class="meta-value">{{  val1.value }}</span></div>{% assign count = count | plus:1 %}{% endif %}
+                {% if val1 %}<div class="meta__item"><span class="meta-label">{{ val1_name }}:</span><span class="meta-value">{{  val1.value }}</span></div>{% assign count = count | plus:1 %}{% endif %}
                 <div class="meta__item"><span class="meta-label">Title:</span><span class="meta-value"> value</span></div>
 
                 {% if count > limit %}{% break %}{% endif %}
