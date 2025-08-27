@@ -26,7 +26,7 @@
                 <div class="meta__item"><span class="meta-label">{{ label }}:</span><span class="meta-value">{{  variant.metafields.global[key] }}</span></div>
                 {% assign count = count | plus:1 %}
         {% elsif variant.metafields.custom[key] %}
-                <div class="meta__item"><span class="meta-label">{{ label }}:</span><span class="meta-value">{{  variant.metafields.global[key] }}</span></div>
+                <div class="meta__item"><span class="meta-label">{{ label }}:</span><span class="meta-value">{{  variant.metafields.custom[key] }}</span></div>
                 {% assign count = count | plus:1 %}
         {% endif %}
         {% if forloop.index == limit %}{% break %}{% endif %}
