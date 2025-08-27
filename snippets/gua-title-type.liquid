@@ -1,0 +1,10 @@
+{% case title_type %}
+    {% when 'none' %}{% capture new_title %}{{ product.title }}{% endcapture %}
+    {% when 'basic_series' %}{% capture new_title %}{% render 'gua-title_v3',product:product, text_style:'basic_series' %}{% endcapture %}
+    {% when 'specific_series' %}{% capture new_title %}{% render 'gua-title_v3',product:product, text_style:'specific_series' %}{% endcapture %}
+    {% when 'basic' %}{% capture new_title %}{% render 'gua-title_v3',product:product, text_style:'basic' %}{% endcapture %}
+    {% when 'specific' %}{% capture new_title %}{% render 'gua-title_v3',product:product, text_style:'specific' %}{% endcapture %}
+    {% when 'slice' %}{% capture new_title %}{% render 'gua-title_v2',title:product.title %}{% endcapture %}
+    {% when 'move_model' %}{% capture new_title %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}{% endcapture %}
+    {% when 'remove_model' %}{% capture new_title %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}{% endcapture %}
+{% endcase %}
