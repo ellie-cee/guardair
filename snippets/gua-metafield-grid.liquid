@@ -1,10 +1,13 @@
 {% assign limit = 3 %}
 {% assign count = 0 %}
+{% assign meta_list = "" | split: "" %}
+{% assign meta_test = 'Output-Thrust' %}
 {% assign variant = product.selected_or_first_available_variant %}
 {% case product.type %}
         {% when 'Vacuums' %}
                 {% assign val1 = variant.metafields.global.Vacuum-Flow %}
-        {% when 'Air & Syphon Guns' %}   
+        {% when 'Air & Syphon Guns' %} 
+                {% assign meta_list = 'Output-Thrust' %}
                 {% assign val1 = variant.metafields.global["Output-Thrust"] %}
                     {% if val1.definition.name %}{% assign val1_name = val1.definition.name %}{% else %}{% assign val1_name = 'Output Thrust' %}{% endif %}
                 {% assign val2 = variant.metafields.global["Min-Compressor-Required"] %}
@@ -15,7 +18,7 @@
                     {% if val4.definition.name %}{% assign val4_name = val4.definition.name %}{% else %}{% assign val4_name = 'Flow' %}{% endif %}                    
 {% endcase %}
 <div class="card-metafields grid">
- 
+ {{ variant.metafields.global[meta_test] }}
         {% for row in (1..limit) %}
                 {% if val1 or val2 %}
                         {% if val1 %}<div class="meta__item"><span class="meta-label">{{ val1_name }}:</span><span class="meta-value">{{  val1.value }}</span></div>{% assign count = count | plus:1 %}{% endif %}
