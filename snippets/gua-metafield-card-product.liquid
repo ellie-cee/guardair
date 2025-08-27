@@ -161,7 +161,7 @@
             </a>
           </h3>
           <div class="card-information">
-            {% if show_sku %}<h4 class="grid-sku">{% if var_sku %}{{ var_sku }}{% else %}{{ card_product.selected_or_first_available_variant.sku }}{% endif %}ff</h4>{% endif %}  
+            {% if show_sku or 1 == 1 %}<h4 class="grid-sku">{% if var_sku %}{{ var_sku }}{% else %}{{ card_product.selected_or_first_available_variant.sku }}{% endif %}ff</h4>{% endif %}  
             
             {% render 'gua-metafield-grid',product:product %}
 
