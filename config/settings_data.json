@@ -456,9 +456,9 @@
         "type": "shopify://apps/snap-compare/blocks/app-embed/9f7c7bcd-04ba-47ae-800e-227777a8d3e3",
         "disabled": false,
         "settings": {
-          "btn_main_position": "center-left",
+          "btn_main_position": "center-right",
           "show_toast_notifications": true,
-          "hide_main_button": false,
+          "hide_main_button": true,
           "dark_mode": false,
           "backdrop_color": "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%)",
           "target_elements": ".product-form__buttons, .quick-add",
