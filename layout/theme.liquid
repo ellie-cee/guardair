@@ -285,7 +285,7 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag:preload:true }}
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
-    {{ 'gua-custom.css' | asset_url | stylesheet_tag:preload:true }}
+    {{ 'gua-custom.css.liquid' | asset_url | stylesheet_tag:preload:true }}
     {{ 'responsive.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
