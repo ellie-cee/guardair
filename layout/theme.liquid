@@ -285,11 +285,10 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag:preload:true }}
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
-    {% comment %} {{ 'gua-custom.css' | asset_url | stylesheet_tag: preload:true }} {% endcomment %}
+    {{ 'gua-custom.css' | asset_url | stylesheet_tag: preload:true }}
+    {% comment %} {{ 'gua-custom.css' | asset_url | append: '?v=' | append: 'now' | date: '%s' | stylesheet_tag }} {% endcomment %}
     {{ 'responsive.css' | asset_url | stylesheet_tag }}
 
-    {% assign gua_css = 'gua-custom.css' | asset_url | append: '?v=' | append: 'now' | date: '%s' %}
-    {{ gua_css | stylesheet_tag }}
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
