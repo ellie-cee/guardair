@@ -153,6 +153,7 @@
               {% assign skip_card_product_styles = false %}
               {%- for product in collection.products -%}
                 {% capture new_ptitle %}{% render 'gua-title-type', title_type:section.settings.ptitle_fix,product:product %}{% endcapture %}
+                <h1>{{ new_ptitle }}</h1>
                  {% unless product.has_only_default_variant %}
                 {% for variant in product.variants %}
                   {% capture new_vtitle %}{% render 'gua-title-type', title_type:section.settings.ptitle_fix,product:product %}{% endcapture %}
