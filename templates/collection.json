@@ -37,6 +37,7 @@
         "show_price": false,
         "show_sku": true,
         "show_rating": false,
+        "show_compare": true,
         "font_style": "blue-subtitle",
         "quick_add": "none",
         "enable_filtering": true,
