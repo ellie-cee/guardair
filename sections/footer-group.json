@@ -178,7 +178,7 @@
       "settings": {
         "footer_text": "<p>© {Year} Guardair Corporation</p>",
         "footer_text_mobile": "<p><strong>© {Year} Guardair Corporation<br/>47 Veterans Drive<br/>Chicopee, MA 01022-1062</strong></p>",
-        "color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
+        "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
         "footer_links": "footer-1",
         "enable_connect_panel": false,
         "connect_heading": "",
