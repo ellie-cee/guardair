@@ -208,6 +208,12 @@
               </p>
             {%- endif -%}
 
+
+            {%- if show_compare -%}
+              <div class="caption-with-letter-spacing light compare-checkbox"></div>
+            {%- endif -%}
+
+
             {% if show_price %}
                 {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {% endif %}
