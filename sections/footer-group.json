@@ -38,10 +38,10 @@
             "column_span_mobile": 2,
             "image": "shopify://shop_images/logo.png",
             "image_height": 51,
-            "heading": "Connect with Us",
-            "content": "<h3>Sign up to receive the latest news.</h3><p>Get 10% off your first order when you sign up.</p>",
+            "heading": "",
+            "content": "",
             "button_link": "",
-            "button_text": "Submit"
+            "button_text": ""
           }
         },
         "linklist_ht3rzQ": {
@@ -105,6 +105,26 @@
             "live_chat_onclick": "openLiveChat()"
           }
         },
+        "paragraph_xX4WXN": {
+          "type": "paragraph",
+          "settings": {
+            "show_on_mobile": false,
+            "show_on_desktop": true,
+            "row": 2,
+            "column": 1,
+            "row_mobile": 1,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 2,
+            "row_span_mobile": 2,
+            "column_span_mobile": 2,
+            "image_height": 0,
+            "heading": "",
+            "content": "<h3>Receive the latest news.</h3><p>Sign up to get 10% off your first order</p>",
+            "button_link": "",
+            "button_text": "Submit"
+          }
+        },
         "linklist_m6BjEt": {
           "type": "linklist",
           "settings": {
@@ -139,7 +159,7 @@
             "image_height": 22,
             "division_link_1": "https://www.airspade.com/",
             "division_image_1": "shopify://shop_images/AS_logo.png",
-            "division_link_2": "https://allpaxcorp.com/",
+            "division_link_2": "https://allpaxcorp.com",
             "division_image_2": "shopify://shop_images/AP_logo_RGB_b7edfa12-2be3-4277-9759-6f549af08ca5.png"
           }
         },
@@ -170,6 +190,7 @@
         "linklist_ht3rzQ",
         "linklist_b8ALRM",
         "contact_96cXPU",
+        "paragraph_xX4WXN",
         "linklist_m6BjEt",
         "divisions_Hfb8ti",
         "paragraph_RqVQzp"
