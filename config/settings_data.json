@@ -375,11 +375,6 @@
           "pt_mobile_padding": 0
         }
       },
-      "940650814580334357": {
-        "type": "shopify://apps/product-compare/blocks/app-embed-block/2ec083cc-5677-4d10-a2af-c02464aa361b",
-        "disabled": false,
-        "settings": {}
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": true,
@@ -390,43 +385,12 @@
         "disabled": false,
         "settings": {}
       },
-      "8473482761398679482": {
-        "type": "shopify://apps/power-tools-filter-menu/blocks/sticky/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
-        "disabled": false,
-        "settings": {
-          "pt_sticky_mode": "css",
-          "pt_sticky_selector": ".pt-filter-menu-section",
-          "pt_sticky_offset": "25px",
-          "pt_sticky_min_width": "767px"
-        }
-      },
       "10779661213391871366": {
         "type": "shopify://apps/power-tools-filter-menu/blocks/accordions/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
         "disabled": false,
         "settings": {
           "pt_accordion_mode": "all",
           "pt_accordion_icon_style": "arrows"
-        }
-      },
-      "2255739061241852371": {
-        "type": "shopify://apps/power-tools-filter-menu/blocks/drawer/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
-        "disabled": false,
-        "settings": {
-          "pt_enable_drawer_mobile_only": false,
-          "color_pt_drawer_bg": "#fff",
-          "pt_drawer_padding": 15,
-          "pt_drawer_btn_padding": 5,
-          "color_pt_drawer_btn_border": "#000",
-          "pt_drawer_btn_radius": 3,
-          "color_pt_drawer_btn_background": "#fff",
-          "color_pt_drawer_btn_hover_bg": "#000",
-          "color_pt_drawer_btn_text": "#000",
-          "color_pt_drawer_btn_hover": "#fff",
-          "pt_drawer_btn_size": 13,
-          "pt_drawer_btn_uppercase": true,
-          "pt_drawer_btn_font_override": false,
-          "pt_drawer_btn_font": "work_sans_n6",
-          "pt_drawer_btn_weight": "300"
         }
       },
       "2849316683094106572": {
@@ -436,15 +400,6 @@
           "pt_ajax_selector": "main",
           "pt_ajax_script": ";",
           "pt_ajax_scroll_to_top": false
-        }
-      },
-      "5757554718459800803": {
-        "type": "shopify://apps/power-tools-filter-menu/blocks/sort-by/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
-        "disabled": true,
-        "settings": {
-          "pt_sort_position": "bottom",
-          "pt_sort_by_dropdown": false,
-          "pt_show_sort_by_checkboxes": false
         }
       },
       "2153490007123654574": {
@@ -482,6 +437,63 @@
           "text_tags": "Tags",
           "text_available": "Available",
           "text_barcode": "Barcode"
+        }
+      },
+      "940650814580334357": {
+        "type": "shopify://apps/product-compare/blocks/app-embed-block/2ec083cc-5677-4d10-a2af-c02464aa361b",
+        "disabled": true,
+        "settings": {}
+      },
+      "5757554718459800803": {
+        "type": "shopify://apps/power-tools-filter-menu/blocks/sort-by/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
+        "disabled": true,
+        "settings": {
+          "pt_sort_position": "bottom",
+          "pt_sort_by_dropdown": false,
+          "pt_show_sort_by_checkboxes": false
+        }
+      },
+      "2255739061241852371": {
+        "type": "shopify://apps/power-tools-filter-menu/blocks/drawer/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
+        "disabled": false,
+        "settings": {
+          "pt_enable_drawer_mobile_only": true,
+          "color_pt_drawer_bg": "#ffffff",
+          "pt_drawer_padding": 15,
+          "pt_drawer_btn_padding": 5,
+          "color_pt_drawer_btn_border": "#000000",
+          "pt_drawer_btn_radius": 3,
+          "color_pt_drawer_btn_background": "#ffffff",
+          "color_pt_drawer_btn_hover_bg": "#000000",
+          "color_pt_drawer_btn_text": "#000000",
+          "color_pt_drawer_btn_hover": "#ffffff",
+          "pt_drawer_btn_size": 13,
+          "pt_drawer_btn_uppercase": true,
+          "pt_drawer_btn_font_override": false,
+          "pt_drawer_btn_font": "work_sans_n6",
+          "pt_drawer_btn_weight": "300"
+        }
+      },
+      "17737452033285665800": {
+        "type": "shopify://apps/power-tools-filter-menu/blocks/small-box/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
+        "disabled": true,
+        "settings": {
+          "color_pt_small_box_bg": "#FFFFFF",
+          "color_pt_small_box_bg_hover": "#00a5fd",
+          "color_pt_small_box_text_hover": "#FFFFFF",
+          "pt_small_box_radius": 3,
+          "pt_small_box_border": true,
+          "pt_small_box_shadow": true
+        }
+      },
+      "8473482761398679482": {
+        "type": "shopify://apps/power-tools-filter-menu/blocks/sticky/6ae6bf19-7d76-44e9-9e0e-5df155960acd",
+        "disabled": true,
+        "settings": {
+          "pt_sticky_mode": "css",
+          "pt_sticky_selector": ".pt-filter-menu-section",
+          "pt_sticky_offset": "25px",
+          "pt_sticky_min_width": "767px"
         }
       }
     },
