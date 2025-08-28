@@ -16,8 +16,10 @@
 {% comment %} --- QIKIFY MENU --- {% endcomment %}
 .v2-header__nav-menu, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link a, .v2-header__nav-menu .tmenu_item_text {font-family:'Eurostile-Bol',sans-serif !important;text-transform:uppercase;}
 .v2-header__nav-menu-list a {visibility:hidden !important;} 
+{% comment %} -- FIX WEIRDNESS FROM QIKIFY {% endcomment %}
+body {display:grid !important;width:100vw;padding:0;}
 
-body {display:grid !important;}
+
 {% comment %} --- BUTTONS --- {% endcomment %}
 .button, .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded {min-width: calc(12rem + var(--buttons-border-width) * 2);min-height: calc(2.5rem + var(--buttons-border-width) * 2);}
 .button {
