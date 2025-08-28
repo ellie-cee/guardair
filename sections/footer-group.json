@@ -44,17 +44,51 @@
             "button_text": "Submit"
           }
         },
+        "linklist_ht3rzQ": {
+          "type": "linklist",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 3,
+            "row_mobile": 3,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "ABOUT",
+            "links": "about"
+          }
+        },
+        "linklist_b8ALRM": {
+          "type": "linklist",
+          "settings": {
+            "show_on_mobile": true,
+            "show_on_desktop": true,
+            "row": 1,
+            "column": 4,
+            "row_mobile": 4,
+            "column_mobile": 1,
+            "row_span": 1,
+            "column_span": 1,
+            "row_span_mobile": 1,
+            "column_span_mobile": 1,
+            "heading": "Helpful Links",
+            "links": "info"
+          }
+        },
         "contact_96cXPU": {
           "type": "contact",
           "settings": {
             "show_on_mobile": true,
             "show_on_desktop": true,
             "row": 1,
-            "column": 3,
+            "column": 5,
             "row_mobile": 1,
             "column_mobile": 1,
             "row_span": 1,
-            "column_span": 1,
+            "column_span": 2,
             "row_span_mobile": 1,
             "column_span_mobile": 1,
             "heading": "Contact & Support",
@@ -76,7 +110,7 @@
           "settings": {
             "show_on_mobile": true,
             "show_on_desktop": true,
-            "row": 1,
+            "row": 2,
             "column": 4,
             "row_mobile": 2,
             "column_mobile": 1,
@@ -86,40 +120,6 @@
             "column_span_mobile": 1,
             "heading": "Resources & Tools",
             "links": "useful-link"
-          }
-        },
-        "linklist_ht3rzQ": {
-          "type": "linklist",
-          "settings": {
-            "show_on_mobile": true,
-            "show_on_desktop": true,
-            "row": 1,
-            "column": 5,
-            "row_mobile": 3,
-            "column_mobile": 1,
-            "row_span": 1,
-            "column_span": 1,
-            "row_span_mobile": 1,
-            "column_span_mobile": 1,
-            "heading": "ABOUT",
-            "links": "about"
-          }
-        },
-        "linklist_b8ALRM": {
-          "type": "linklist",
-          "settings": {
-            "show_on_mobile": true,
-            "show_on_desktop": true,
-            "row": 2,
-            "column": 3,
-            "row_mobile": 4,
-            "column_mobile": 1,
-            "row_span": 1,
-            "column_span": 1,
-            "row_span_mobile": 1,
-            "column_span_mobile": 1,
-            "heading": "Helpful Links",
-            "links": "info"
           }
         },
         "divisions_Hfb8ti": {
@@ -167,10 +167,10 @@
       },
       "block_order": [
         "paragraph_xxdELJ",
-        "contact_96cXPU",
-        "linklist_m6BjEt",
         "linklist_ht3rzQ",
         "linklist_b8ALRM",
+        "contact_96cXPU",
+        "linklist_m6BjEt",
         "divisions_Hfb8ti",
         "paragraph_RqVQzp"
       ],
