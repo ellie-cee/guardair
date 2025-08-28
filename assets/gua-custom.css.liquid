@@ -16,6 +16,15 @@
 {% comment %} --- QIKIFY MENU --- {% endcomment %}
 .v2-header__nav-menu, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link a, .v2-header__nav-menu .tmenu_item_text {font-family:'Eurostile-Bol',sans-serif !important;text-transform:uppercase;}
 .v2-header__nav-menu-list a {visibility:hidden !important;} 
+.v2-header__nav-menu-list .collection-button {background:#002295;border: 2px;padding: 18px 36px;border-radius: 30px;font-size: 18px;font-weight: 600;color: white;
+    text-decoration: none;display: inline-flex;align-items: center;gap: 12px;cursor: pointer;transition: all 0.3s ease;text-transform: uppercase;letter-spacing: 1px;}
+.v2-header__nav-menu-list .collection-button:hover {transform: translateY(-5px);background: #002295;}
+.v2-header__nav-menu-list .collection-button:active {transform: translateY(-2px);}
+.v2-header__nav-menu-list .collection-button::before {content: "";font-size: 20px;animation: pulse 2s infinite;}
+  @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+  }
 {% comment %} -- FIX WEIRDNESS FROM QIKIFY {% endcomment %}
 body {display:grid !important;width:100vw;padding:0px !important;}
 
