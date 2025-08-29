@@ -24,8 +24,8 @@
       "custom_css": [],
       "settings": {
         "fullscreen": true,
-        "products_per_page": 36,
-        "columns_desktop": 3,
+        "products_per_page": 20,
+        "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "scheme-2",
         "card_layout": "metafield",
