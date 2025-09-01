@@ -36,7 +36,7 @@
         "ptitle_fix": "none",
         "image_ratio": "square",
         "image_shape": "default",
-        "padding_image": 14,
+        "padding_image": 20,
         "show_secondary_image": true,
         "show_vendor": false,
         "show_price": false,
