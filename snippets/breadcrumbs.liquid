@@ -1,8 +1,8 @@
-<!-- breadcrumbs begins -->
+{% comment %} breadcrumbs begins {% endcomment %}
 <div id="breadcrumbs" class="breadcrumbs" style="opacity: 0; transition: opacity 0.3s ease;">
   <div class="page-width">
     <ul class="breadcrumb">
-      <!-- 1. Home Link -->
+      {% comment %} 1. Home Link {% endcomment %}
       <li><a href="{{ shop.url }}">Home</a></li>
 
       {%- assign menu = linklists['main-menu'] -%}
@@ -198,11 +198,11 @@
     </ul>
   </div>
 </div>
-<!-- breadcrumbs ends -->
+{% comment %} breadcrumbs ends {% endcomment %}
 
 
 
-<!-- JS Cleanup -->
+{% comment %} JS Cleanup {% endcomment %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var breadcrumbsContainer = document.getElementById('breadcrumbs');
