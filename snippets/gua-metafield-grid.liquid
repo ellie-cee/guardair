@@ -18,7 +18,8 @@
 {% assign meta_array = meta_list | split:',' %}
 
 <div class="card-metafields grid">
-
+ <div class="meta__item meta_sku"><span class="meta-label">Part Num:</span><span class="meta-value">{{  variant.sku }}</span></div>
+ 
  {% for meta in meta_array %}
         {% assign label = meta | split: '|' | first %}
         {% assign key = meta | split: '|' | last %}
@@ -31,6 +32,5 @@
         {% endif %}
         {% if forloop.index == limit %}{% break %}{% endif %}
  {% endfor %}
- <div class="meta__item meta_sku"><span class="meta-label">Part Num:</span><span class="meta-value">{{  variant.sku }}</span></div>
         
 </div>
