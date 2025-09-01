@@ -40,7 +40,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_price": false,
-        "show_sku": true,
+        "show_sku": false,
         "show_rating": false,
         "show_compare": true,
         "font_style": "blue-subtitle",
