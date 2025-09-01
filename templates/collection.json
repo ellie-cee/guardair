@@ -31,7 +31,7 @@
         "products_per_page": 20,
         "columns_desktop": 3,
         "columns_mobile": "2",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "card_layout": "metafield",
         "ptitle_fix": "none",
         "image_ratio": "square",
