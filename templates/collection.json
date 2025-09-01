@@ -27,7 +27,7 @@
       "type": "main-collection-product-grid",
       "custom_css": [],
       "settings": {
-        "fullscreen": true,
+        "fullscreen": false,
         "products_per_page": 20,
         "columns_desktop": 3,
         "columns_mobile": "2",
