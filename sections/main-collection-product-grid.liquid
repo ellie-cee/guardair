@@ -27,7 +27,7 @@
 
   .section-{{ section.id }}-padding_image img {padding: {{ section.settings.padding_image | times: 0.75 | round: 0 }}px;}
   .section-{{ section.id }}-padding_image .gradient {background:transparent;}
-  
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {padding-top: {{ section.settings.padding_top }}px;padding-bottom: {{ section.settings.padding_bottom }}px;}
     .section-{{ section.id }}-padding_image img {padding: {{ section.settings.padding_image }}px;}     
@@ -115,6 +115,7 @@
             enable_filtering: section.settings.enable_filtering,
             enable_sorting: section.settings.enable_sorting,
             filter_type: section.settings.filter_type,
+            section:section,
             paginate: paginate
           %}
         </aside>
