@@ -56,8 +56,9 @@
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
 
-              {% if section.settings.show_compare %}<h3>Filter and Comparison</h3>{% endif %}
-              
+              {% if section.settings.show_compare %}<h3>Filter and Comparison</h3>
+            <div class="facet-filter"><a href="#" class="button">Compare</a></div>{% endif %}
+
               <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
                   {%- unless results.filters == empty -%}
