@@ -13,6 +13,7 @@
       "type": "main-page-banner",
       "name": "Page Banner",
       "settings": {
+        "show_page_content": true,
         "show_series_page": true,
         "color_scheme": "scheme-4",
         "show_breadcrumbs": true,
