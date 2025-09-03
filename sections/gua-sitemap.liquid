@@ -72,7 +72,7 @@
 <hr/>
 <h2 class="text-left">{{ 'shopify.page_titles.products' | t }}</h2>
 <ul class="text-left {{col_class }}" style="max-height:{{ product_height }}px;">
-{% paginate collections.all.products by 1000 %}
+{% paginate collections.all.products by 250 %}
 {% for product in collections.all.products %}
 <li>
 <a href="{{ product.url }}">{{ product.title | capitalize }}</a>
