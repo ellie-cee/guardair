@@ -40,7 +40,16 @@
       assign ratio = 1
     endif
   -%}
- 
+  {% capture compare %}<div class="compare-checkbox"><span></span></div><div class="quick-add no-js-hidden cta-btn-group">
+                  <product-form>
+                    <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+                      <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                      <input type="hidden" name="id" value="{{  product.selected_or_first_available_variant.id }}" disabled="">
+                      <input type="hidden" name="product-id" value="{{ product.id }}">
+                      <input type="hidden" name="section-id" value="{{ section.id }}">
+                    </form>
+                  </product-form>
+                </div>{% endcapture %}
   <div class="card-wrapper product-card-wrapper underline-links-hover {{ section.settings.font_style }}">
     <div
       class="
@@ -172,7 +181,8 @@
             {%- endif -%}
 
             {%- if show_compare -%}
-              <div class="compare-checkbox"><span></span></div><div class="quick-add no-js-hidden cta-btn-group">
+              <div class="compare-checkbox"><span></span></div>
+                <div class="quick-add no-js-hidden cta-btn-group">
                   <product-form>
                     <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
                       <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
@@ -181,7 +191,7 @@
                       <input type="hidden" name="section-id" value="{{ section.id }}">
                     </form>
                   </product-form>
-              </div>
+                </div>      
             {%- endif -%}
 
             {% comment %} <span class="caption-large light">{{ block.settings.description | escape }}</span> {% endcomment %}
@@ -223,16 +233,15 @@
             {%- endif -%}
 
             {%- if show_compare -%}
-              <div class="compare-checkbox"><span></span></div><div class="quick-add no-js-hidden cta-btn-group">
+              <div class="compare-checkbox"><span></span></div>
+                <div class="quick-add no-js-hidden cta-btn-group">
                   <product-form>
                     <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-                      <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-                      <input type="hidden" name="id" value="{{  product.selected_or_first_available_variant.id }}" disabled="">
-                      <input type="hidden" name="product-id" value="{{ product.id }}">
-                      <input type="hidden" name="section-id" value="{{ section.id }}">
+                      <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="41080946393206" disabled="">
+                      <input type="hidden" name="product-id" value="7273232564342"><input type="hidden" name="section-id" value="template--17520339157110__product-grid">
                     </form>
                   </product-form>
-              </div>
+                </div>      
             {%- endif -%}
 
 
