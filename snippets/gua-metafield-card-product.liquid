@@ -663,18 +663,6 @@
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
 
-              {%- if show_compare -%}
-              <div class="compare-checkbox"><span></span></div>
-                <div class="quick-add no-js-hidden cta-btn-group">
-                  <product-form>
-                    <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-                      <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" disabled="">
-                      <input type="hidden" name="product-id" value="{{ card_product.id }}"><input type="hidden" name="section-id" value="{{ section.id }}">
-                    </form>
-                  </product-form>
-                </div>      
-            {%- endif -%}
-
             {% render 'price', placeholder: placeholder, show_compare_at_price: true %}
           </div>
         </div>
