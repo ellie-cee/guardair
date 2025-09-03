@@ -10,7 +10,8 @@
 {% assign short_shop = '____________' %}
 {% assign short_words = '____________' %}
 {% assign max_length = 155 %}
- 
+{% assign blog_news = 'Discover innovative air solutions at Guardair – leading the way in industrial air tools and safety. Stay informed with our latest news updates!' %}
+
 {%- if current_page != 1 -%}
 {% capture page_append %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endcapture %} 
 {% else %}
@@ -50,7 +51,9 @@
    {% assign meta_description = page_title | escape | append: " Recipe" %}
 {% elsif page_type == 'article' %}
    {% capture meta_description %}{{ article.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}  
-{% elsif page_type == 'blog' %}
+{% elsif page_type == 'blog' and request.path == '/blogs/news' %}
+       {% assign meta_description = blog_news %}
+{% elsif page_type == 'blog' %}    
    {% capture meta_description %}{{ shop.name }} {{ blog.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}
 {% elsif template == 'cart' %}
   {% assign meta_description =  'View your Shopping Cart from ' | append: short_shop  %} 
