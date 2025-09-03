@@ -1,0 +1,56 @@
+{% comment %} SNIPPET: ywm-seo-title.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/ff43b4ef1a60cb40c1e0d2b2b6635f4957d38f10/Snippets/ywm-seo-title {% endcomment %}
+{% comment %} LAST UPDATED: 20250826 {% endcomment %}
+
+{% comment %} TO DO: Edit Lines 6-9 {% endcomment %}
+{% assign home_title = '________________' %}
+{% assign all_products_title = '___________' %}
+{% assign search_title = '_____________' %}
+{% assign short_shop = '_____________' %}
+{% assign short_words = '_____________' %}
+{% assign max_length = 70 %}
+
+{%- capture seo_title -%}
+{%- if request.page_type == 'search' and search.terms != blank -%}
+{{ search.terms | split: ' AND ' | last | split: 'product_type:' | last }} - {{ shop.name }}
+    {%- elsif request.page_type == 'search' and search.terms == blank -%}{{ search_title }}   
+{% elsif request.path contains 'apps' %}
+    {{ shop.name }} {{ request.path | replace: '-',' ' | remove: '/apps/' | replace: '/' | capitalize }}
+{% elsif request.page_type == 'index' %}{{ home_title }}
+{% elsif request.path contains 'collections/all' and template != 'list-collections' %}{{ all_products_title }}
+{% elsif  template == 'list-collections' %}{{ page_title }}
+{% elsif request.page_type == 'collection' %}{{ page_title }}
+{% comment %}{% elsif request.path contains 'collection' %}{{ collection.title }} - {{ page_title }}{% endcomment %}
+{% elsif request.page_type contains 'policy' %}{{ request.path | remove: "/policies/" | replace: "-", " " }}
+{% elsif request.path contains 'account' %}{{ page_title }}
+{% elsif request.page_type == 'product' %}{{ page_title }}
+{% elsif request.page_type == 'page' %}{{ page_title }}
+{% elsif request.page_type == 'cart' %}Shopping Cart
+{% elsif request.page_type == 'article' %}{{ blog.title }} - {{ page_title }}
+{% elsif request.page_type == 'blog' %}{{ blog.title }}
+{% elsif request.page_type == 'metaobject' %}{{ page_title }}
+{% endif %}
+{%- if current_page != 1 %} — Page {{ current_page }}{% endif -%}
+{%- if template == 'password' -%}
+{{ shop.name }}
+{%- else -%}
+  {%- if current_tags %} — tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+{%- endif -%}
+{%- endcapture -%}
+
+{% assign title_shop_room = max_length | minus: seo_title.size | minus: shop.name.size %}
+{% assign title_words_room = max_length | minus: seo_title.size | minus: short_words.size %}
+{% unless seo_title contains shop.name or seo_title contains short_shop %}{% assign title_needs_shop = true %}{% endunless %}
+
+{% if seo_title.size > max_length %}
+  {% assign seo_title = seo_title | truncate: max_length %}
+
+{% elsif title_shop_room > 0 and title_needs_shop %}
+  {% unless seo_title contains shop.name or seo_title contains short_shop %}
+    {% assign seo_title = seo_title | append: ' — ' | append: shop.name %}    
+  {% endunless %}
+{% elsif title_words_room > 0 %}
+  {% assign seo_title = seo_title | append: ' — ' | append: short_words %}
+
+{% endif %}
+<title>{{ seo_title | lstrip }}</title>
