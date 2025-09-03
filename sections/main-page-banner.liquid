@@ -28,7 +28,7 @@
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {% comment %} {{- collection.title | escape -}} {% endcomment %}{% render 'pt-collection-title' %} 
+         {{- page.title | escape -}}
       </h1>
 
       {% if section.settings.show_series_page %}
@@ -47,7 +47,7 @@
       {%- endif -%}
     </div>
 
-    {%- if section.settings.show_collection_image and collection.image -%}
+    {% comment %} {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media gradient">
         <img
           srcset="
@@ -66,7 +66,7 @@
           height="{{ collection.image.height }}"
         >
       </div>
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
   </div>
 </div>
 
