@@ -423,7 +423,7 @@
                 {% render 'quantity-input', variant: card_product.selected_or_first_available_variant, min: 0 %}
               {% endif %}
             </quick-add-bulk>
-          {% else %}
+          {% else %}THIS IS WHERE IT SHOULD GO
             <div class="quick-add no-js-hidden">
               {%- liquid
                 assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
