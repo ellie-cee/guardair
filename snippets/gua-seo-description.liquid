@@ -1,0 +1,85 @@
+{% comment %} SNIPPET: ywm-seo-description.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/4c8633c3523f0416fd741257f1101fa33104a2d6/Snippets/ywm-seo-description {% endcomment %}
+{% comment %} LAST UPDATED: 20250903 {% endcomment %}
+
+{% comment %} TO DO: Edit Lines 6-8 {% endcomment %}
+{% assign list_collection_meta = '____________' %}
+{% assign all_products_meta = '____________' %}
+{% assign extra_blurb = '____________' %}
+{% assign meta_description = all_products_meta %}
+{% assign short_shop = '____________' %}
+{% assign short_words = '____________' %}
+{% assign max_length = 155 %}
+ 
+{%- if current_page != 1 -%}
+{% capture page_append %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endcapture %} 
+{% else %}
+{% assign page_append = '' %}
+{%- endif -%}
+{% unless page_type %}{% assign page_type = request.page_type %}{% endunless %}
+{% capture current_lang %}{{ request.locale.iso_code }}-{{ localization.country.iso_code}}{% endcapture %}
+{% if current_lang == 'en-US' %}{% assign lang_append = '' %}
+  {% else %}{% assign lang_append = ' - ' | append: localization.country %}
+{% endif %}
+
+{% if page_description %}
+    {% assign meta_description = page_description | escape %}
+{% elsif page_type contains 'index' %}
+    {% assign meta_description = shop.description | escape | rstrip %}
+{% elsif request.path == '/collections/all' and template != 'list-collections' %}
+    {% assign meta_description = all_products_meta | escape  %}  
+{% elsif template == 'list-collections' %}
+  {% assign meta_description =  list_collection_meta | escape  %}    
+{% elsif page_type == 'collection' and collection.description == blank and page_description == blank %}
+   {% capture meta_description %}{{ collection.title }} {{ extra_blurb }}{% endcapture %}
+{% elsif page_type == 'collection' and collection.description.size == 0 %}
+  {% assign meta_description = "View our " | append: collection.title | append: ". " | append: all_products_meta %}  
+{% elsif page_type == 'collection' %}
+   {% capture meta_description %}{{ shop.name }}: {% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %} {{ collection.title }}{% endcapture %}
+{% elsif page_type == 'product' and product.description == blank and page_description == blank %}
+   {% capture meta_description %}{{ product.title }} {{ extra_blurb }}{% endcapture %}
+{% elsif page_type == 'product' and product.description.size == 0 %}
+  {% assign meta_description = "View our " | append: product.title | append: ". " | append: all_products_meta %}  
+{% elsif page_type == 'product' %}
+   {% capture meta_description %}{{ shop.name }}: {% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %} {{ collection.title }}{% endcapture %}      
+{% elsif page_type contains 'policy' %}
+   {% assign meta_description = "View our " | append: request.path | remove: "/policies/" | replace: "-", " " | append:" to answer your questions." %}
+{% elsif path contains 'account' %}
+    {% assign meta_description = page_title | escape | append: "- Log in to view or update your account" %}
+{% elsif template contains 'article.recipe-kit' %}
+   {% assign meta_description = page_title | escape | append: " Recipe" %}
+{% elsif page_type == 'article' %}
+   {% capture meta_description %}{{ article.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}  
+{% elsif page_type == 'blog' %}
+   {% capture meta_description %}{{ shop.name }} {{ blog.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}
+{% elsif template == 'cart' %}
+  {% assign meta_description =  'View your Shopping Cart from ' | append: short_shop  %} 
+{% elsif page_type == 'page' %}
+  {% assign meta_description =   page_title | append: ' ' | append: short_words  %}     
+{% else %}
+    {% assign meta_description = page_description | escape %}
+{% endif %} 
+{% if current_tags %}
+  {% assign tag_append = '' %}
+    {% unless meta_description contains 'tagged' %}
+      {% assign tags = current_tags | join: ', ' %}
+      {% assign tag_append = ' tagged ' | append: tags %}    
+    {% endunless %}
+{% endif %}
+   
+{% assign meta_description = meta_description | append: tag_append | append: page_append %}
+{% assign meta_room = max_length | minus: meta_description.size %}
+
+{% if meta_description.size > max_length %}
+  {% assign meta_description = meta_description | truncate: max_length %}
+{% elsif meta_room > shop.name.size %}
+    {% if meta_description contains shop.name or meta_description contains short_shop %}
+      {% assign meta_description = meta_description | append: ' — ' | append: short_words %}
+    {% else %}
+      {% assign meta_description = meta_description | append: ' — ' | append: shop.name %}    
+    {% endif %}
+{% endif %}
+ 
+{% if tester %}{{ meta_description | lstrip }}{% else %}
+<meta name="description" content="{{ meta_description | lstrip }}" />
+{% endif %}
