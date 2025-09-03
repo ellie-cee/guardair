@@ -423,7 +423,7 @@
                 {% render 'quantity-input', variant: card_product.selected_or_first_available_variant, min: 0 %}
               {% endif %}
             </quick-add-bulk>
-          {% else %}THIS IS WHERE IT SHOULD GO
+          {% else %} 
             <div class="quick-add no-js-hidden">
               {%- liquid
                 assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
@@ -553,6 +553,8 @@
               </modal-dialog>
             </div>
           {% endif %}
+
+        {% else %}HERE
         {% endif %}
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
