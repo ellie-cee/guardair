@@ -237,8 +237,8 @@
                 <div class="quick-add no-js-hidden cta-btn-group">
                   <product-form>
                     <form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-                      <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="41080946393206" disabled="">
-                      <input type="hidden" name="product-id" value="{{ product.id }}"><input type="hidden" name="section-id" value="template--17520339157110__product-grid">
+                      <input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" disabled="">
+                      <input type="hidden" name="product-id" value="{{ card_product.id }}"><input type="hidden" name="section-id" value="template--17520339157110__product-grid">
                     </form>
                   </product-form>
                 </div>      
