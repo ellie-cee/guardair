@@ -31,6 +31,15 @@
         {% comment %} {{- collection.title | escape -}} {% endcomment %}{% render 'pt-collection-title' %} 
       </h1>
 
+      {% if section.settings.show_series_page %}
+          {% assign series_page = pages[collection.handle] %}
+          {% if series_page %}
+                  <a href="">{{ series_page.title }}</a>
+            {% else %}
+              <p>Page not found</p>
+            {% endif %} %}
+      {% endif %}
+
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
