@@ -13,6 +13,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
+        "show_series_page": true,
         "show_collection_image": false,
         "color_scheme": "scheme-4",
         "show_breadcrumbs": true,
