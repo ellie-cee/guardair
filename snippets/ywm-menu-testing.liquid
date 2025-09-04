@@ -169,7 +169,7 @@
         toggle: function() {
           if (firstMenuItem.classList.contains('tmenu_item--open') || 
               firstMenuItem.classList.contains('active')) {
-            closeFirstMenuItem();
+            {% comment %} closeFirstMenuItem(); {% endcomment %}
           } else {
             openFirstMenuItem();
           }
