@@ -12,6 +12,8 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "show_title": true,
+        "show_breadcrumbs": true,
         "padding_top": 28,
         "padding_bottom": 0
       }
@@ -143,6 +145,7 @@
         "heading_XwdxkB",
         "text_hWmUyd"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -241,10 +244,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "PowerQUAD™ Standard Pneumatic Vacuums",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "Our Standard Pneumatic Vacuums provide powerful, versatile solutions for heavy-duty industrial cleaning. Available in complete kits or as generating heads for use with your own drum, these vacuums handle everything from powders to dense debris or liquids with ease.",
         "image_width": "full",
         "image_ratio": "square",
         "image_valign": "start",
