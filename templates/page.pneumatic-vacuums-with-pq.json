@@ -315,6 +315,7 @@
         "heading_MUQFGE",
         "text_A4gEDB"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -403,10 +404,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "PowerQUAD™ Non-Electrical Discharge (NED) Pneumatic Vacuums",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "NED Pneumatic Vacuums eliminate static electricity, making them ideal for static-sensitive environments. Designed for safety and reliability, they operate with no moving parts, ensuring consistent performance in areas where static control is essential.",
         "image_width": "full",
         "image_ratio": "square",
         "image_valign": "start",
@@ -424,7 +425,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "row_gap": 0,
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "anchor_id": ""
       }
