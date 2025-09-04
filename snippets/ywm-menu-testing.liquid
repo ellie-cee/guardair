@@ -17,7 +17,7 @@
       console.log('Starting mega menu opener after 3 second delay...');
       
       // Find the mega menu wrapper
-      const menuWrapper = document.querySelector('.tmenu_nav');
+      const menuWrapper = document.querySelector('.tmenu_wrapper');
       
       if (!menuWrapper) {
         console.warn('Mega menu wrapper not found');
@@ -25,7 +25,7 @@
       }
       
       // Get the first menu item with children
-      const firstMenuItem = menuWrapper.querySelector('.tmenu_item--root:first-of-type');
+      const firstMenuItem = menuWrapper.querySelector('.tmenu_item_has_child');
       
       if (!firstMenuItem) {
         console.warn('No menu items with children found');
@@ -33,8 +33,7 @@
       }
       
       // Get the link element
-      {% comment %} const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link'); {% endcomment %}
-       const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link'); 
+      const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link');
       
       if (!firstMenuLink) {
         console.warn('Menu link not found');
@@ -43,22 +42,119 @@
       
       // Add active/open classes and attributes
       function openFirstMenuItem() {
-        // Add active classes to the menu item
-        firstMenuItem.classList.add('tmenu_item--active', 'tmenu_item--open');
+        console.log('Attempting to open first menu item...');
+        
+        // Try multiple class combinations that might work
+        const classesToAdd = [
+          'tmenu_item--active',
+          'tmenu_item--open', 
+          'tmenu_item--expanded',
+          'tmenu_item--hover',
+          'tmenu_item_active',
+          'tmenu_item_open',
+          'tmenu_item_expanded',
+          'tmenu_item_hover',
+          'active',
+          'open',
+          'expanded',
+          'hover'
+        ];
+        
+        // Add all possible classes
+        classesToAdd.forEach(className => {
+          firstMenuItem.classList.add(className);
+        });
+        
+        // Also add classes to the nav wrapper
+        menuWrapper.classList.add('tmenu_has_open_item', 'tmenu_active');
         
         // Set aria-expanded to true
         firstMenuLink.setAttribute('aria-expanded', 'true');
         
-        // Add any additional classes that might be needed for styling
-        firstMenuItem.classList.add('tmenu_item--expanded');
+        // Try to trigger mouse events that might activate the menu
+        const events = ['mouseenter', 'mouseover', 'hover', 'focus'];
+        events.forEach(eventType => {
+          try {
+            const event = new Event(eventType, { bubbles: true });
+            firstMenuItem.dispatchEvent(event);
+            firstMenuLink.dispatchEvent(event);
+          } catch (e) {
+            console.log(`Could not dispatch ${eventType}:`, e);
+          }
+        });
         
-        console.log('First menu item opened:', firstMenuItem);
+        // Try click event as well
+        try {
+          const clickEvent = new Event('click', { bubbles: true });
+          firstMenuLink.dispatchEvent(clickEvent);
+        } catch (e) {
+          console.log('Could not dispatch click:', e);
+        }
+        
+        // Look for and show any submenu/dropdown elements
+        const possibleSubmenus = [
+          '.tmenu_submenu',
+          '.tmenu_dropdown',
+          '.tmenu_mega',
+          '.submenu',
+          '.dropdown',
+          '.mega_menu',
+          '[data-submenu]'
+        ];
+        
+        possibleSubmenus.forEach(selector => {
+          const submenu = firstMenuItem.querySelector(selector);
+          if (submenu) {
+            submenu.style.display = 'block';
+            submenu.style.visibility = 'visible';
+            submenu.style.opacity = '1';
+            submenu.classList.add('active', 'open', 'visible');
+            console.log('Found and activated submenu:', selector, submenu);
+          }
+        });
+        
+        // Check if there are any data attributes we should modify
+        const dataAttrs = ['data-active', 'data-open', 'data-expanded'];
+        dataAttrs.forEach(attr => {
+          firstMenuItem.setAttribute(attr, 'true');
+          firstMenuLink.setAttribute(attr, 'true');
+        });
+        
+        console.log('Applied classes:', Array.from(firstMenuItem.classList));
+        console.log('First menu item element:', firstMenuItem);
       }
       
       // Function to close the menu item (useful for testing)
       function closeFirstMenuItem() {
-        firstMenuItem.classList.remove('tmenu_item--active', 'tmenu_item--open', 'tmenu_item--expanded');
+        // Remove all classes we added
+        const classesToRemove = [
+          'tmenu_item--active', 'tmenu_item--open', 'tmenu_item--expanded', 'tmenu_item--hover',
+          'tmenu_item_active', 'tmenu_item_open', 'tmenu_item_expanded', 'tmenu_item_hover',
+          'active', 'open', 'expanded', 'hover'
+        ];
+        
+        classesToRemove.forEach(className => {
+          firstMenuItem.classList.remove(className);
+        });
+        
+        menuWrapper.classList.remove('tmenu_has_open_item', 'tmenu_active');
         firstMenuLink.setAttribute('aria-expanded', 'false');
+        
+        // Hide submenus
+        const possibleSubmenus = [
+          '.tmenu_submenu', '.tmenu_dropdown', '.tmenu_mega',
+          '.submenu', '.dropdown', '.mega_menu', '[data-submenu]'
+        ];
+        
+        possibleSubmenus.forEach(selector => {
+          const submenu = firstMenuItem.querySelector(selector);
+          if (submenu) {
+            submenu.style.display = '';
+            submenu.style.visibility = '';
+            submenu.style.opacity = '';
+            submenu.classList.remove('active', 'open', 'visible');
+          }
+        });
         
         console.log('First menu item closed:', firstMenuItem);
       }
@@ -71,17 +167,30 @@
         open: openFirstMenuItem,
         close: closeFirstMenuItem,
         toggle: function() {
-          if (firstMenuItem.classList.contains('tmenu_item--open')) {
+          if (firstMenuItem.classList.contains('tmenu_item--open') || 
+              firstMenuItem.classList.contains('active')) {
             closeFirstMenuItem();
           } else {
             openFirstMenuItem();
           }
         },
-        element: firstMenuItem
+        element: firstMenuItem,
+        link: firstMenuLink,
+        wrapper: menuWrapper,
+        // Debug function to see all applied styles
+        debug: function() {
+          console.log('Menu item classes:', Array.from(firstMenuItem.classList));
+          console.log('Menu item styles:', window.getComputedStyle(firstMenuItem));
+          console.log('Link aria-expanded:', firstMenuLink.getAttribute('aria-expanded'));
+          
+          // Look for any submenu elements
+          const allSubmenus = firstMenuItem.querySelectorAll('*');
+          console.log('All child elements:', allSubmenus);
+        }
       };
       
-      console.log('Mega menu dev tools loaded. Use window.megaMenuDev.toggle() to toggle the first menu item.');
-      {% comment %} window.megaMenuDev.open(); {% endcomment %}
+      console.log('Mega menu dev tools loaded. Use window.megaMenuDev.debug() to see current state.');
+      console.log('Use window.megaMenuDev.toggle() to toggle the first menu item.');
     }, 3000); // 3 second delay
   });
 })();</script>
