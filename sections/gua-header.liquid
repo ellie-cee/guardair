@@ -490,6 +490,10 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
 }
 {% endstyle %}
 
+{% if section.settings.force_menu %}
+    {% render 'ywm-menu-testing' %}
+{% endif %}
+
 {% schema %}
 {
   "name": "Header",
