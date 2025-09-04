@@ -238,30 +238,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_i7yrjL": {
-      "type": "rich-text",
-      "blocks": {
-        "text_Ymgpnq": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_Ymgpnq"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "rich_text_EdVHeU": {
       "type": "rich-text",
       "blocks": {
@@ -283,6 +259,7 @@
         "heading_6G4zBp",
         "text_q9ekF6"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -325,10 +302,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "PalmJet Safety Air Guns",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "Compact and lightweight, PalmJet Safety Air Guns are designed for tight spaces and quick cleaning tasks. Featuring a simple, squeeze-activated design, they deliver effective airflow in a highly portable size. Available with both straight and bent extensions, the built-in volume dial allows easy airflow adjustments, making these air guns a versatile solution in industrial environments.",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
@@ -346,7 +323,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "row_gap": 0,
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "anchor_id": ""
       }
@@ -364,6 +341,7 @@
       "block_order": [
         "text_RQLMeF"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -396,6 +374,7 @@
         "heading_iYFnzH",
         "text_3baGAW"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -466,10 +445,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "Ultra Safety Air Guns",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "Characterized by their ergonomic black handles, <a href=\"/pages/ultra-safety-air-guns\" title=\"Ultra® Safety Air Guns\">Ultra Safety Air Guns</a> deliver the ultimate in comfort and performance. With a cushioned pistol-grip for a secure hold, these air guns are built for long-lasting use in tough environments. With a range of nozzles and extension lengths, Ultra models provide powerful, precise cleaning while maintaining OSHA-compliant safety standards.",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
@@ -487,7 +466,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "row_gap": 0,
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "anchor_id": ""
       }
@@ -505,6 +484,7 @@
       "block_order": [
         "text_d7aGNm"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -537,6 +517,7 @@
         "heading_mBxCM6",
         "text_EY3znn"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -614,10 +595,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "WhisperJet Safety Air Guns",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "WhisperJet Safety Air Guns combine effective cleaning with low-noise operation, thanks to their unique nozzle design. Ideal for noise-sensitive environments, these air guns offer powerful thrust while keeping sound levels low. Choose from several models that feature the WhisperJet nozzle to find a balance of safety, noise reduction, and cleaning power tailored to your needs.",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
@@ -635,7 +616,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "row_gap": 0,
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "anchor_id": ""
       }
@@ -1176,7 +1157,6 @@
     "main",
     "multicolumn_FG7Y9y",
     "multicolumn_xezMVG",
-    "rich_text_i7yrjL",
     "rich_text_EdVHeU",
     "multicolumn_nUa7bn",
     "rich_text_4LhbKH",
