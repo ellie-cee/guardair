@@ -1,0 +1,80 @@
+// Script to open the first mega menu item for CSS development
+(function() {
+  'use strict';
+  
+  // Wait for DOM to be ready
+  function ready(fn) {
+    if (document.readyState !== 'loading') {
+      fn();
+    } else {
+      document.addEventListener('DOMContentLoaded', fn);
+    }
+  }
+  
+  ready(function() {
+    // Find the mega menu wrapper
+    const menuWrapper = document.querySelector('.tmenu_wrapper');
+    
+    if (!menuWrapper) {
+      console.warn('Mega menu wrapper not found');
+      return;
+    }
+    
+    // Get the first menu item with children
+    const firstMenuItem = menuWrapper.querySelector('.tmenu_item_has_child');
+    
+    if (!firstMenuItem) {
+      console.warn('No menu items with children found');
+      return;
+    }
+    
+    // Get the link element
+    const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link');
+    
+    if (!firstMenuLink) {
+      console.warn('Menu link not found');
+      return;
+    }
+    
+    // Add active/open classes and attributes
+    function openFirstMenuItem() {
+      // Add active classes to the menu item
+      firstMenuItem.classList.add('tmenu_item--active', 'tmenu_item--open');
+      
+      // Set aria-expanded to true
+      firstMenuLink.setAttribute('aria-expanded', 'true');
+      
+      // Add any additional classes that might be needed for styling
+      firstMenuItem.classList.add('tmenu_item--expanded');
+      
+      console.log('First menu item opened:', firstMenuItem);
+    }
+    
+    // Function to close the menu item (useful for testing)
+    function closeFirstMenuItem() {
+      firstMenuItem.classList.remove('tmenu_item--active', 'tmenu_item--open', 'tmenu_item--expanded');
+      firstMenuLink.setAttribute('aria-expanded', 'false');
+      
+      console.log('First menu item closed:', firstMenuItem);
+    }
+    
+    // Open the first menu item immediately
+    openFirstMenuItem();
+    
+    // Add to window for manual control in console
+    window.megaMenuDev = {
+      open: openFirstMenuItem,
+      close: closeFirstMenuItem,
+      toggle: function() {
+        if (firstMenuItem.classList.contains('tmenu_item--open')) {
+          closeFirstMenuItem();
+        } else {
+          openFirstMenuItem();
+        }
+      },
+      element: firstMenuItem
+    };
+    
+    console.log('Mega menu dev tools loaded. Use window.megaMenuDev.toggle() to toggle the first menu item.');
+  });
+})();
