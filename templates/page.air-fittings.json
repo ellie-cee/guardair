@@ -1,8 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "settings": {
+        "show_title": true,
+        "show_breadcrumbs": true,
         "padding_top": 28,
         "padding_bottom": 0
       }
@@ -350,11 +361,60 @@
         "padding_top": 60,
         "padding_bottom": 100
       }
+    },
+    "gua_featured_product_wdrMKq": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "title_NHmJBg": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "variant_picker_wHRKwL": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "specifications_jP7b9N": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false
+          }
+        }
+      },
+      "block_order": [
+        "title_NHmJBg",
+        "variant_picker_wHRKwL",
+        "specifications_jP7b9N"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "flex-angle-swivel-fitting-1-4-npt-inlet-1-4-fnpt-outlet",
+        "ptitle_fix": "basic",
+        "alt_image": true,
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "stack_image": true,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "enable_video_looping": false,
+        "hide_variants": false,
+        "unique_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "e2106819-9390-4116-af30-1e7b3f419aa9",
-    "five_table_product_column_yRqWXq"
+    "five_table_product_column_yRqWXq",
+    "gua_featured_product_wdrMKq"
   ]
 }
