@@ -100,6 +100,14 @@
     {% assign show_fittings = true %}
   {% endif %}
 
+  {% if variant.featured_image and block.settings.variant_image %}
+    {% assign show_image = true %}
+  {% endif %}  
+
+  {% if variant.title and block.settings.variant_title %}
+    {% assign show_title = true %}
+  {% endif %}
+
   {% if variant.metafields.global['Vacuum-Lift'].value != blank %}
     {% assign show_vacuum_lift = true %}
   {% endif %}
