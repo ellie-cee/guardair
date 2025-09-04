@@ -475,6 +475,7 @@
         "heading_kEmKEn",
         "text_ztYDWQ"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -543,10 +544,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "PowerQUAD™ ATEX Certified Pneumatic Vacuums",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "ATEX Pneumatic Vacuums are certified for safe use in hazardous environments with flammable dust or gases. Built to meet strict ATEX standards, they ensure compliance and safety in explosive settings while delivering reliable, powerful cleaning performance.",
         "image_width": "full",
         "image_ratio": "square",
         "image_valign": "start",
@@ -564,7 +565,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "row_gap": 0,
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "anchor_id": ""
       }
