@@ -945,6 +945,7 @@
       "block_order": [
         "text_gqBR3J"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -977,6 +978,7 @@
         "heading_dEhKGU",
         "text_Nr4HQY"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -1145,10 +1147,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "Specialty Vacuum Systems",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "Our Specialty Vacuum Systems are tailored for unique tasks such as material handling, debris removal, and cleaning in confined spaces. With features like air-agitators, portability, and vertical mounting, these vacuums ensure efficient, effective performance in specialized environments.",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
