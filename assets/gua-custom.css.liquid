@@ -22,6 +22,12 @@
 .v2-header__nav-menu-list .collection-button:hover {transform: translateY(-5px);background: #002295;}
 .v2-header__nav-menu-list .collection-button:active {transform: translateY(-2px);}
 .v2-header__nav-menu-list .collection-button::before {content: "";font-size: 20px;animation: pulse 2s infinite;}
+
+@media screen and (min-width:960px){
+.tmenu_image>img,.tmenu_collection>img {width: 120px;height: 120px;object-fit: contain;object-position: bottom;}
+}
+ 
+
   @keyframes pulse {
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.1); }
