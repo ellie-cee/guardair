@@ -199,6 +199,11 @@
                 {% if show_part_number == true %}
                   <th width="10%">Part Number</th>
                 {% endif %}
+
+                {% if show_title == true %}
+                  <th width="10%">Description</th>
+                {% endif %}
+
                 {% if show_fittings == true and request.page_type == 'product' %}
                   <th width="6%">Fittings</th>
                 {% endif %}
