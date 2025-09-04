@@ -509,6 +509,11 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
       "type": "header",
       "content": "Menu"
     },
+        {
+          "type": "checkbox",
+          "id":"force_menu",
+          "label": "Force Qikify to stay open"
+        },         
     {
       "id": "event_type",
       "type": "select",
@@ -815,12 +820,7 @@ v2-color {% if section.settings.event_type == "hover" %}v2-header--use-hover{% e
         {
           "type": "header",
           "content": "Layout"
-        },
-        {
-          "type": "checkbox",
-          "id":"force_menu",
-          "label": "Force Qikify to stay open"
-        },        
+        },      
         {
           "id": "row",
           "type": "number",
