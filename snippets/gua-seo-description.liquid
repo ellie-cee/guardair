@@ -1,14 +1,13 @@
 {% comment %} SNIPPET: ywm-seo-description.liquid {% endcomment %}
 {% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/4c8633c3523f0416fd741257f1101fa33104a2d6/Snippets/ywm-seo-description {% endcomment %}
-{% comment %} LAST UPDATED: 20250903 {% endcomment %}
+{% comment %} LAST UPDATED: 20250904 {% endcomment %}
 
-{% comment %} TO DO: Edit Lines 6-8 {% endcomment %}
-{% assign list_collection_meta = '____________' %}
-{% assign all_products_meta = '____________' %}
-{% assign extra_blurb = '____________' %}
+{% assign list_collection_meta = 'Shop premium OSHA-compliant safety air guns, pneumatic vacuums & industrial cleaning tools from Guardair Corporation. Professional-grade equipment for workplace safety.' %}
+{% assign all_products_meta = 'Discover Guardair's complete line of safety air guns, pneumatic vacuums, and industrial cleaning tools. OSHA-compliant equipment trusted by professionals since 1942.' %}
+{% assign extra_blurb = 'Free shipping on orders over $100. Expert support and fast delivery for all industrial cleaning solutions.' %}
 {% assign meta_description = all_products_meta %}
-{% assign short_shop = '____________' %}
-{% assign short_words = '____________' %}
+{% assign short_shop = 'Guardair - Safety Air Guns & Pneumatic Vacuums' %}
+{% assign short_words = 'safety air guns, pneumatic vacuums, industrial cleaning tools, OSHA compliant, workplace safety, compressed air tools' %}
 {% assign max_length = 155 %}
 {% assign blog_news = 'Discover innovative air solutions at Guardair – leading the way in industrial air tools and safety. Stay informed with our latest news updates!' %}
 
@@ -16,20 +15,26 @@
 {% capture page_append %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endcapture %} 
 {% else %}
 {% assign page_append = '' %}
-{%- endif -%}
+{%- endif -%}}
 {% unless page_type %}{% assign page_type = request.page_type %}{% endunless %}
 {% capture current_lang %}{{ request.locale.iso_code }}-{{ localization.country.iso_code}}{% endcapture %}
 {% if current_lang == 'en-US' %}{% assign lang_append = '' %}
   {% else %}{% assign lang_append = ' - ' | append: localization.country %}
 {% endif %}
-
-{% if page_description %}
+{% comment %}
+<meta name="ywm-path" content="{{ request.path }}">
+<meta name="ywm-type" content="{{ page_type }}">
+<meta name="ywm-tpl" content="{{ template }}">
+<meta name="ywm-desc" content="{{ page_description | escape }}">
+<meta name="ywm-shop" content="{{ shop.description | escape }}">
+{% endcomment %}
+{% if page_description and page_description != shop.description %}
     {% assign meta_description = page_description | escape %}
 {% elsif page_type contains 'index' %}
     {% assign meta_description = shop.description | escape | rstrip %}
 {% elsif request.path == '/collections/all' and template != 'list-collections' %}
-    {% assign meta_description = all_products_meta | escape  %}  
-{% elsif template == 'list-collections' %}
+    {% assign meta_description = all_products_meta | escape  %}
+{% elsif template == 'list-collections' or page_type == 'list-collections' %}
   {% assign meta_description =  list_collection_meta | escape  %}    
 {% elsif page_type == 'collection' and collection.description == blank and page_description == blank %}
    {% capture meta_description %}{{ collection.title }} {{ extra_blurb }}{% endcapture %}
@@ -54,7 +59,7 @@
 {% elsif page_type == 'blog' and request.path == '/blogs/news' %}
        {% assign meta_description = blog_news %}
 {% elsif page_type == 'blog' %}    
-   {% capture meta_description %}{{ shop.name }} {{ blog.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}
+  {% capture meta_description %}{{ shop.name }} {{ blog.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}
 {% elsif template == 'cart' %}
   {% assign meta_description =  'View your Shopping Cart from ' | append: short_shop  %} 
 {% elsif page_type == 'page' %}
@@ -83,6 +88,4 @@
     {% endif %}
 {% endif %}
  
-{% if tester %}{{ meta_description | lstrip }}{% else %}
 <meta name="description" content="{{ meta_description | lstrip }}" />
-{% endif %}
