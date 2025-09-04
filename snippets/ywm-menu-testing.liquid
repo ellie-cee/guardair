@@ -165,11 +165,11 @@
       // Add to window for manual control in console
       window.megaMenuDev = {
         open: openFirstMenuItem,
-        {% comment %} close: closeFirstMenuItem, {% endcomment %}
+        close: closeFirstMenuItem,
         toggle: function() {
           if (firstMenuItem.classList.contains('tmenu_item--open') || 
               firstMenuItem.classList.contains('active')) {
-            {% comment %} closeFirstMenuItem(); {% endcomment %}
+            closeFirstMenuItem();
           } else {
             openFirstMenuItem();
           }
@@ -177,6 +177,15 @@
         element: firstMenuItem,
         link: firstMenuLink,
         wrapper: menuWrapper,
+        persistence: persistence,
+        // Stop the persistence system
+        stopPersistence: function() {
+          persistence.stop();
+        },
+        // Restart persistence system
+        startPersistence: function() {
+          return maintainOpenState();
+        },
         // Debug function to see all applied styles
         debug: function() {
           console.log('Menu item classes:', Array.from(firstMenuItem.classList));
