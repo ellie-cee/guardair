@@ -238,42 +238,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_EdVHeU": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_6G4zBp": {
-          "type": "heading",
-          "settings": {
-            "heading": "PalmJet Safety Air Guns",
-            "heading_size": "h1"
-          }
-        },
-        "text_q9ekF6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Compact and lightweight, PalmJet Safety Air Guns are designed for tight spaces and quick cleaning tasks. Featuring a simple, squeeze-activated design, they deliver effective airflow in a highly portable size. Available with both straight and bent extensions, the built-in volume dial allows easy airflow adjustments, making these air guns a versatile solution in industrial environments.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_6G4zBp",
-        "text_q9ekF6"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_nUa7bn": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -325,67 +289,6 @@
         "row_gap": 0,
         "padding_top": 32,
         "padding_bottom": 0,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_4LhbKH": {
-      "type": "rich-text",
-      "blocks": {
-        "text_RQLMeF": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_RQLMeF"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_YXK7Fj": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_iYFnzH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Ultra Safety Air Guns",
-            "heading_size": "h1"
-          }
-        },
-        "text_3baGAW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Characterized by their ergonomic black handles, <a href=\"/pages/ultra-safety-air-guns\" title=\"Ultra® Safety Air Guns\">Ultra Safety Air Guns</a> deliver the ultimate in comfort and performance. With a cushioned pistol-grip for a secure hold, these air guns are built for long-lasting use in tough environments. With a range of nozzles and extension lengths, Ultra models provide powerful, precise cleaning while maintaining OSHA-compliant safety standards.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_iYFnzH",
-        "text_3baGAW"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
         "anchor_id": ""
       }
     },
@@ -468,67 +371,6 @@
         "row_gap": 0,
         "padding_top": 32,
         "padding_bottom": 0,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_dkgGi7": {
-      "type": "rich-text",
-      "blocks": {
-        "text_d7aGNm": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_d7aGNm"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_4NpCpc": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_mBxCM6": {
-          "type": "heading",
-          "settings": {
-            "heading": "WhisperJet Safety Air Guns",
-            "heading_size": "h1"
-          }
-        },
-        "text_EY3znn": {
-          "type": "text",
-          "settings": {
-            "text": "<p>WhisperJet Safety Air Guns combine effective cleaning with low-noise operation, thanks to their unique nozzle design. Ideal for noise-sensitive environments, these air guns offer powerful thrust while keeping sound levels low. Choose from several models that feature the WhisperJet nozzle to find a balance of safety, noise reduction, and cleaning power tailored to your needs.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mBxCM6",
-        "text_EY3znn"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
         "anchor_id": ""
       }
     },
@@ -621,67 +463,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_e6KfPT": {
-      "type": "rich-text",
-      "blocks": {
-        "text_dVCMQf": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_dVCMQf"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_yeLVqe": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_MUQFGE": {
-          "type": "heading",
-          "settings": {
-            "heading": "ThumbSwitch Safety Air Guns",
-            "heading_size": "h1"
-          }
-        },
-        "text_A4gEDB": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Engineered for easy handling and precise control, Thumbswitch Safety Air Guns feature a convenient, thumb-activated trigger for effortless operation. Ideal for quick, repetitive tasks, these air guns deliver effective cleaning and debris removal while promoting user comfort and safety. Their durable design allows users to work efficiently in various industrial environments.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_MUQFGE",
-        "text_A4gEDB"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_7Ge9GP": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -764,67 +545,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_hbwgwC": {
-      "type": "rich-text",
-      "blocks": {
-        "text_gqBR3J": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_gqBR3J"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_LMKtza": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_kEmKEn": {
-          "type": "heading",
-          "settings": {
-            "heading": "Lazer Safety Air Guns",
-            "heading_size": "h1"
-          }
-        },
-        "text_ztYDWQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Designed for precision in demanding environments, Lazer Safety Air Guns offer compact, powerful cleaning and are available in both pistol-grip and palm switch trigger models. Lightweight and OSHA-compliant, these guns excel in detail-oriented tasks, providing controlled air flow and safe, efficient performance across various applications.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_kEmKEn",
-        "text_ztYDWQ"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_Cz9xRa": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -876,67 +596,6 @@
         "row_gap": 0,
         "padding_top": 32,
         "padding_bottom": 0,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_67Er7i": {
-      "type": "rich-text",
-      "blocks": {
-        "text_cd4iKN": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_cd4iKN"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_TzcPFa": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_cTGFmz": {
-          "type": "heading",
-          "settings": {
-            "heading": "Big Air Guns",
-            "heading_size": "h1"
-          }
-        },
-        "text_VEYLXp": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our collection of Big Air Guns deliver the most powerful airflow for heavy-duty cleaning tasks. Built for construction and industrial applications, these guns are designed to tackle the toughest jobs with exceptional thrust and reach. Each model—including the popular Force 5—provides reliable, high-performance cleaning while prioritizing safety with OSHA-compliant nozzles.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_cTGFmz",
-        "text_VEYLXp"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
         "anchor_id": ""
       }
     },
@@ -1030,67 +689,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_KEJqiG": {
-      "type": "rich-text",
-      "blocks": {
-        "text_ta7DNB": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_ta7DNB"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_yFmRQU": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_dEhKGU": {
-          "type": "heading",
-          "settings": {
-            "heading": "Specialty Air Guns",
-            "heading_size": "h1"
-          }
-        },
-        "text_Nr4HQY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our Specialty Air Guns are built for unique industrial tasks, offering versatile for a variety of applications. From the ReverseForce's powerful reverse thrust, to the Filter Cleaning model designed for maintaining air filters, and the Radiator Air Gun optimized for cleaning hard-to-reach surfaces, these tools deliver specialized performance tailored to specific needs.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dEhKGU",
-        "text_Nr4HQY"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_QhMXfn": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -1165,25 +763,12 @@
     "main",
     "multicolumn_FG7Y9y",
     "multicolumn_xezMVG",
-    "rich_text_EdVHeU",
     "multicolumn_nUa7bn",
-    "rich_text_4LhbKH",
-    "rich_text_YXK7Fj",
     "multicolumn_y3RJDU",
-    "rich_text_dkgGi7",
-    "rich_text_4NpCpc",
     "multicolumn_UqBAWA",
-    "rich_text_e6KfPT",
-    "rich_text_yeLVqe",
     "multicolumn_7Ge9GP",
-    "rich_text_hbwgwC",
-    "rich_text_LMKtza",
     "multicolumn_Cz9xRa",
-    "rich_text_67Er7i",
-    "rich_text_TzcPFa",
     "multicolumn_dtEXT8",
-    "rich_text_KEJqiG",
-    "rich_text_yFmRQU",
     "multicolumn_QhMXfn"
   ]
 }
