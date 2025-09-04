@@ -654,67 +654,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_hbwgwC": {
-      "type": "rich-text",
-      "blocks": {
-        "text_gqBR3J": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_gqBR3J"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_yFmRQU": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_dEhKGU": {
-          "type": "heading",
-          "settings": {
-            "heading": "Specialty Vacuum Systems",
-            "heading_size": "h1"
-          }
-        },
-        "text_Nr4HQY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our Specialty Vacuum Systems are tailored for unique tasks such as material handling, debris removal, and cleaning in confined spaces. With features like air-agitators, portability, and vertical mounting, these vacuums ensure efficient, effective performance in specialized environments.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dEhKGU",
-        "text_Nr4HQY"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_QhMXfn": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -905,8 +844,6 @@
     "multicolumn_Cz9xRa",
     "multicolumn_iB8Cjb",
     "multicolumn_y3RJDU",
-    "rich_text_hbwgwC",
-    "rich_text_yFmRQU",
     "multicolumn_QhMXfn"
   ]
 }
