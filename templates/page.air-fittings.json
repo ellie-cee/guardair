@@ -381,7 +381,9 @@
         "specifications_jP7b9N": {
           "type": "specifications",
           "settings": {
-            "highlight_variant": false
+            "highlight_variant": false,
+            "variant_title": true,
+            "variant_image": true
           }
         }
       },
@@ -394,10 +396,11 @@
       "settings": {
         "product": "flex-angle-swivel-fitting-1-4-npt-inlet-1-4-fnpt-outlet",
         "ptitle_fix": "basic",
-        "alt_image": true,
         "color_scheme": "",
         "secondary_background": false,
+        "alt_image": true,
         "media_size": "medium",
+        "hide_image": true,
         "stack_image": true,
         "constrain_to_viewport": true,
         "media_fit": "contain",
