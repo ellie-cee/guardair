@@ -359,6 +359,11 @@
                       <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'</span>
                     </td>
                   {% endif %}
+
+                    {% if show_image == true %}
+                    <th width="10%">{{ currentProduct.featured_image | image_url | image_tag }}</th>
+                    {% endif %}  
+
                   {% if show_flow == true %}
                     <td>
                       <span class="td-value">{{ currentVariant.metafields.global.Flow.value }}</span>
