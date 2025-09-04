@@ -331,6 +331,9 @@
                       <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
                     </td>
                   {% endif %}
+                {% if show_title == true %}
+                    <th width="10%">{{ currentVariant.title }}</th>
+                {% endif %}                  
                 {% if show_fittings == true and request.page_type == 'product' %}  
                     <td>
                       <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
