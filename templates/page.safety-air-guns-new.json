@@ -634,6 +634,7 @@
       "block_order": [
         "text_dVCMQf"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -666,6 +667,7 @@
         "heading_MUQFGE",
         "text_A4gEDB"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -736,10 +738,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "ThumbSwitch Safety Air Guns",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "Engineered for easy handling and precise control, Thumbswitch Safety Air Guns feature a convenient, thumb-activated trigger for effortless operation. Ideal for quick, repetitive tasks, these air guns deliver effective cleaning and debris removal while promoting user comfort and safety. Their durable design allows users to work efficiently in various industrial environments.",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
@@ -757,7 +759,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "row_gap": 0,
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "anchor_id": ""
       }
