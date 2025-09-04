@@ -25,16 +25,16 @@
       }
       
       // Get the first menu item with children
-      const firstMenuItem = menuWrapper.querySelector('.tmenu_item_has_child');
+      {% comment %} const firstMenuItem = menuWrapper.querySelector('.tmenu_item_has_child'); {% endcomment %}
       
-      if (!firstMenuItem) {
+      {% comment %} if (!firstMenuItem) {
         console.warn('No menu items with children found');
         return;
-      }
+      } {% endcomment %}
       
       // Get the link element
       {% comment %} const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link'); {% endcomment %}
-       const firstMenuLink = firstMenuItem.querySelector('.tmenu_item--root:first-of-type'); 
+       const firstMenuLink = menuWrapper.querySelector('.tmenu_item--root:first-of-type'); 
       
       if (!firstMenuLink) {
         console.warn('Menu link not found');
