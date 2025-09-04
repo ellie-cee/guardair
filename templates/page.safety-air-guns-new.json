@@ -892,6 +892,7 @@
       "block_order": [
         "text_cd4iKN"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -924,6 +925,7 @@
         "heading_cTGFmz",
         "text_VEYLXp"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -1002,10 +1004,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "Big Air Guns",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "Our collection of Big Air Guns deliver the most powerful airflow for heavy-duty cleaning tasks. Built for construction and industrial applications, these guns are designed to tackle the toughest jobs with exceptional thrust and reach. Each model—including the popular Force 5—provides reliable, high-performance cleaning while prioritizing safety with OSHA-compliant nozzles.",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
@@ -1023,7 +1025,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "row_gap": 0,
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0,
         "anchor_id": ""
       }
@@ -1041,6 +1043,7 @@
       "block_order": [
         "text_ta7DNB"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -1073,6 +1076,7 @@
         "heading_dEhKGU",
         "text_Nr4HQY"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 28px;}"
       ],
@@ -1129,10 +1133,10 @@
       ],
       "settings": {
         "block_style": "stacked",
-        "title": "",
+        "title": "Specialty Air Guns",
         "heading_size": "h1",
         "font_style": "inline-richtext",
-        "description": "",
+        "description": "Our Specialty Air Guns are built for unique industrial tasks, offering versatile for a variety of applications. From the ReverseForce's powerful reverse thrust, to the Filter Cleaning model designed for maintaining air filters, and the Radiator Air Gun optimized for cleaning hard-to-reach surfaces, these tools deliver specialized performance tailored to specific needs.",
         "image_width": "full",
         "image_ratio": "adapt",
         "image_valign": "start",
