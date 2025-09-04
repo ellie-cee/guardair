@@ -25,16 +25,16 @@
       }
       
       // Get the first menu item with children
-      {% comment %} const firstMenuItem = menuWrapper.querySelector('.tmenu_item_has_child'); {% endcomment %}
+      const firstMenuItem = menuWrapper.querySelector('.tmenu_item--root:first-of-type');
       
-      {% comment %} if (!firstMenuItem) {
+      if (!firstMenuItem) {
         console.warn('No menu items with children found');
         return;
-      } {% endcomment %}
+      }
       
       // Get the link element
       {% comment %} const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link'); {% endcomment %}
-       const firstMenuLink = menuWrapper.querySelector('.tmenu_item--root:first-of-type'); 
+       const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link'); 
       
       if (!firstMenuLink) {
         console.warn('Menu link not found');
@@ -44,7 +44,7 @@
       // Add active/open classes and attributes
       function openFirstMenuItem() {
         // Add active classes to the menu item
-        firstMenuLink.classList.add('tmenu_item--active', 'tmenu_item--open');
+        firstMenuItem.classList.add('tmenu_item--active', 'tmenu_item--open');
         
         // Set aria-expanded to true
         firstMenuLink.setAttribute('aria-expanded', 'true');
