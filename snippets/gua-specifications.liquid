@@ -56,7 +56,7 @@
 
 
 {% for variant in product.variants %}
-  {% if variant.sku != blank %}
+  {% if variant.sku != blank or request.page_type == 'page' %}
     {% assign show_part_number = true %}
   {% endif %}
 
