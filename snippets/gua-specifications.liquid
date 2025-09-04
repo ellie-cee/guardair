@@ -53,10 +53,13 @@
 {% assign show_vacuum_lift = false %}
 {% assign show_weight = false %}
 
+{% if request.page_type == 'page' %}
+  {% assign show_part_number = true %}
+{% endif %}
 
 
 {% for variant in product.variants %}
-  {% if variant.sku != blank or request.page_type == 'page' %}
+  {% if variant.sku != blank %}
     {% assign show_part_number = true %}
   {% endif %}
 
@@ -100,7 +103,7 @@
     {% assign show_fittings = true %}
   {% endif %}
 
-  {% if variant.featured_image and block.settings.variant_image %}
+  {% if block.settings.variant_image %}
     {% assign show_image = true %}
   {% endif %}  
 
