@@ -124,42 +124,6 @@
         "padding_bottom": 40
       }
     },
-    "rich_text_Kc4nMk": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_XwdxkB": {
-          "type": "heading",
-          "settings": {
-            "heading": "PowerQUAD™ Standard Pneumatic Vacuums",
-            "heading_size": "h1"
-          }
-        },
-        "text_hWmUyd": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our Standard Pneumatic Vacuums provide powerful, versatile solutions for heavy-duty industrial cleaning. Available in complete kits or as generating heads for use with your own drum, these vacuums handle everything from powders to dense debris or liquids with ease.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XwdxkB",
-        "text_hWmUyd"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_xezMVG": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -270,66 +234,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_i7yrjL": {
-      "type": "rich-text",
-      "blocks": {
-        "text_Ymgpnq": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_Ymgpnq"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_yeLVqe": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_MUQFGE": {
-          "type": "heading",
-          "settings": {
-            "heading": "PowerQUAD™ Non-Electrical Discharge (NED) Pneumatic Vacuums",
-            "heading_size": "h1"
-          }
-        },
-        "text_A4gEDB": {
-          "type": "text",
-          "settings": {
-            "text": "<p>NED Pneumatic Vacuums eliminate static electricity, making them ideal for static-sensitive environments. Designed for safety and reliability, they operate with no moving parts, ensuring consistent performance in areas where static control is essential.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_MUQFGE",
-        "text_A4gEDB"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_7Ge9GP": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -430,66 +334,6 @@
         "anchor_id": ""
       }
     },
-    "rich_text_dkgGi7": {
-      "type": "rich-text",
-      "blocks": {
-        "text_d7aGNm": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_d7aGNm"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_LMKtza": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_kEmKEn": {
-          "type": "heading",
-          "settings": {
-            "heading": "PowerQUAD™ ATEX Certified Pneumatic Vacuums",
-            "heading_size": "h1"
-          }
-        },
-        "text_ztYDWQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>ATEX Pneumatic Vacuums are certified for safe use in hazardous environments with flammable dust or gases. Built to meet strict ATEX standards, they ensure compliance and safety in explosive settings while delivering reliable, powerful cleaning performance.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_kEmKEn",
-        "text_ztYDWQ"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
     "multicolumn_Cz9xRa": {
       "type": "gua-multicolumn",
       "blocks": {
@@ -567,67 +411,6 @@
         "row_gap": 0,
         "padding_top": 32,
         "padding_bottom": 0,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_KEJqiG": {
-      "type": "rich-text",
-      "blocks": {
-        "text_ta7DNB": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_ta7DNB"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_EdVHeU": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_6G4zBp": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>PowerQUAD™ </strong>PulseAir™ Pneumatic Vacuums & Dust Extractors",
-            "heading_size": "h1"
-          }
-        },
-        "text_q9ekF6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>PulseAir™ Vacuums and Dust Extractors are powerful industrial vacuums incorporating a proprietary, button-activated system engineered to clean the vacuum filter without opening the unit. PulseAir™ Dust Extractors are designed for source capture tools.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_6G4zBp",
-        "text_q9ekF6"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
         "anchor_id": ""
       }
     },
@@ -768,67 +551,6 @@
         "row_gap": 0,
         "padding_top": 32,
         "padding_bottom": 0,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_4LhbKH": {
-      "type": "rich-text",
-      "blocks": {
-        "text_RQLMeF": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_RQLMeF"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "anchor_id": ""
-      }
-    },
-    "rich_text_YXK7Fj": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_iYFnzH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Handheld Pneumatic Vacuums",
-            "heading_size": "h1"
-          }
-        },
-        "text_3baGAW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>GunVac® Handheld Vacuums deliver twice the power of a standard shop vacuum for quick, efficient cleanups in industrial settings. Compact and lightweight, they easily tackle dust and debris in tight spaces, making them ideal for maintenance and production environments.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_iYFnzH",
-        "text_3baGAW"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 28px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "bdr_btm": false,
-        "padding_top": 40,
-        "padding_bottom": 12,
         "anchor_id": ""
       }
     },
@@ -1178,19 +900,10 @@
     "main",
     "multicolumn_kdFQtg",
     "general_industry_section_mPQmH7",
-    "rich_text_Kc4nMk",
     "multicolumn_xezMVG",
-    "rich_text_i7yrjL",
-    "rich_text_yeLVqe",
     "multicolumn_7Ge9GP",
-    "rich_text_dkgGi7",
-    "rich_text_LMKtza",
     "multicolumn_Cz9xRa",
-    "rich_text_KEJqiG",
-    "rich_text_EdVHeU",
     "multicolumn_iB8Cjb",
-    "rich_text_4LhbKH",
-    "rich_text_YXK7Fj",
     "multicolumn_y3RJDU",
     "rich_text_hbwgwC",
     "rich_text_yFmRQU",
