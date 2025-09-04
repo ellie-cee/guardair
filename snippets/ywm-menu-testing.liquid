@@ -33,7 +33,8 @@
       }
       
       // Get the link element
-      const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link');
+      {% comment %} const firstMenuLink = firstMenuItem.querySelector('.tmenu_item_link'); {% endcomment %}
+       const firstMenuLink = firstMenuItem.querySelector('.tmenu_item--root:first-of-type'); 
       
       if (!firstMenuLink) {
         console.warn('Menu link not found');
