@@ -367,7 +367,7 @@
                   {% endif %}
 
                     {% if show_image == true %}
-                    <th width="10%">{{ currentProduct.featured_image | image_url:width:90 | image_tag }}</th>
+                    <th width="10%">{{ currentProduct.featured_image | image_url:width:90 | image_tag }}<br/>{{ currentProduct.type }}</th>
                     {% endif %}  
 
                   {% if show_flow == true %}
