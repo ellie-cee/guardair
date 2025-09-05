@@ -41,6 +41,7 @@
   endif
 -%}
 
+{% assign collection = section.settings.collection %}
 
 <section{% if section.settings.unique_id %} id="{{ section.settings.unique_id }}"{% endif %} data-section-id="{{ section.index }}" class="color-{{ section.settings.color_scheme }} section-count-{{  section.index }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
