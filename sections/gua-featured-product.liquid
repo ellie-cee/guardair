@@ -159,12 +159,16 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                <p
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
-                  {{ block.shopify_attributes }}
-                >
-                  {{- block.settings.text -}}
-                </p>
+                      {% if block.settings.text_style == 'uppercase' %} 
+                          <p class="product__text inline-richtext caption-with-letter-spacing" {{ block.shopify_attributes }}>{{- block.settings.text -}}</p>
+                      {% elsif block.settings.text_style == 'subtitle' %}
+                          <p class="product__text inline-richtext subtitle" {{ block.shopify_attributes }}>{{- block.settings.text -}}</p>
+                      {% elsif block.settings.text_style == 'heading' %}
+                          <h2 class="product__title h1" {{ block.shopify_attributes }}>{{- block.settings.text -}}</h2>   
+                      {% else %}
+                          <p class="product__text inline-richtext" {{ block.shopify_attributes }}>{{- block.settings.text -}}</p>                                               
+                      {% endif %}
+
               {%- when 'title' -%}
                 <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                   {%- if product.title != blank -%}
