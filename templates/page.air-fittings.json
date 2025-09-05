@@ -635,6 +635,13 @@
             "heading_size": "h1"
           }
         },
+        "text_9Bfm6i": {
+          "type": "text",
+          "settings": {
+            "text": "Universal Couplings",
+            "text_style": "subtitle"
+          }
+        },
         "specifications_cBym3a": {
           "type": "specifications",
           "settings": {
@@ -648,6 +655,7 @@
       },
       "block_order": [
         "title_FdCrfz",
+        "text_9Bfm6i",
         "specifications_cBym3a"
       ],
       "name": "GUA Featured Product",
