@@ -34,7 +34,11 @@
   {% assign product_list =  linked_products_metaobject.products.value %}
 {% endif %}
 
-
+{% if section.settings.type_fields %}
+    {% assign show_type_fields = section.settings.type_fields %}
+{% else %}
+      {% assign show_type_fields = true %}
+{% endif %}
 {% unless highlight == false %}
     {% assign highlight = true %}
 {% endunless %}
@@ -232,27 +236,27 @@
                 {% if show_fittings == true and request.page_type == 'product' %}
                   <th width="6%">Fittings</th>
                 {% endif %}
-                {% if show_air_hose_id == true %}
+                {% if show_air_hose_id == true and show_type_fields %}
                   <th width="7%">
                     Air <br>
                     Hose ID<br>
                     (in)
                   </th>
                 {% endif %}
-                {% if show_vacuum_hose_id == true %}
+                {% if show_vacuum_hose_id == true and show_type_fields %}
                   <th width="8%">
                     Vacuum <br>
                     Hose ID<br>
                     (in)
                   </th>
                 {% endif %}
-                {% if show_hose_length == true %}
+                {% if show_hose_length == true and show_type_fields %}
                   <th width="7%">
                     Hose Length
                     (in)
                   </th>
                 {% endif %}                
-                {% if show_inlet_connection == true %}
+                {% if show_inlet_connection == true  and show_type_fields %}
                   <th width="7%">
                     {% unless request.page_type == 'page' %}Compressed <br>
                     Air{% endunless %} Inlet<br>
