@@ -351,6 +351,12 @@
                     (lbs)
                   </th>
                 {% endif %}
+                {% if show_extra_fields == true %}
+                  <th width="6%">
+                    {{  extra_field }}
+                  </th>
+                {% endif %}
+
               </tr>
             </thead>
 
@@ -482,6 +488,12 @@
                       <span class="td-value">{{ currentVariant.metafields.global['Each-Weight'].value }}</span>
                     </td>
                   {% endif %}
+
+                  {% if show_extra_fields == true %}
+                    <td>
+                      <span class="td-value">{{ currentVariant.metafields.global['Each-Weight'].value }}</span>
+                    </td>
+                {% endif %}
                 </tr>
               {% endfor %}
             </tbody>
