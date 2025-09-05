@@ -188,7 +188,7 @@
 {% endif %}
 
 {% if show_spec %}
-<hr><div class="specifications-table page-width">
+<hr><div class="specifications-table page-width {{ request.page_type }}">
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 
       
