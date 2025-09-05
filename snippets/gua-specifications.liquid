@@ -234,7 +234,7 @@
                 {% endif %}                
                 {% if show_inlet_connection == true %}
                   <th width="7%">
-                    {% unless product.type == 'Air Hoses & Fittings' %}Compressed <br>
+                    {% unless request.page_type == 'page' %}Compressed <br>
                     Air{% endunless %} Inlet<br>
                     (in)
                   </th>
