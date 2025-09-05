@@ -78,8 +78,8 @@
             class="product__media-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
           >
             {%- if section.settings.product != blank -%}
-              {%- if product.selected_or_first_available_variant.featured_media != null -%}
-                {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+              {%- if collection.featured_image != null -%}
+                {%- assign media = collection.featured_image -%}
                 <div class="product__media-item image-size-{{ section.settings.media_size }}" data-media-id="{{ section.id }}-{{ media.id }}">
                   {% render 'product-thumbnail',
                     media: media,
@@ -99,24 +99,7 @@
                   assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
                 endfor
               -%}
-              {%- for media in product.media -%}
-                {%- if media_to_render contains media.id
-                  and media.id != product.selected_or_first_available_variant.featured_media.id
-                -%}
-                  <div class="product__media-item image-size-{{ section.settings.media_size }}" data-media-id="{{ section.id }}-{{ media.id }}">
-                    {% render 'product-thumbnail',
-                      media: media,
-                      position: forloop.index,
-                      loop: section.settings.enable_video_looping,
-                      modal_id: section.id,
-                      xr_button: false,
-                      media_width: media_width,
-                      media_fit: section.settings.media_fit,
-                      constrain_to_viewport: section.settings.constrain_to_viewport
-                    %}
-                  </div>
-                {%- endif -%}
-              {%- endfor -%}
+             
             {%- else -%}
               <div class="product__media-item image-size-{{ section.settings.media_size }}">
                 <div
@@ -128,20 +111,7 @@
               </div>
             {%- endif -%}
           </div>
-          {%- if first_3d_model -%}
-            <button
-              class="button button--full-width product__xr-button"
-              type="button"
-              aria-label="{{ 'products.product.xr_button_label' | t }}"
-              data-shopify-xr
-              data-shopify-model3d-id="{{ first_3d_model.id }}"
-              data-shopify-title="{{ product.title | escape }}"
-              data-shopify-xr-hidden
-            >
-              {% render 'icon-3d-model' %}
-              {{ 'products.product.xr_button' | t }}
-            </button>
-          {%- endif -%}
+         
         </media-gallery>
       </div>
     {% endunless %}
