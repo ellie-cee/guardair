@@ -89,6 +89,8 @@
 
   {% if variant.metafields.global['Inlet-Connection'].value != blank and product.type != 'Air Hoses & Fittings' %}
     {% assign show_inlet_connection = true %}
+  {% elsif variant.metafields.global['Inlet-Connection'].value != blank and request.page_type == 'page' %}
+    {% assign show_inlet_connection = true %}    
   {% endif %}
 
   {% if variant.metafields.global.grams.value != blank %}
