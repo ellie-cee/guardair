@@ -495,7 +495,7 @@
         "heading_3QXgBD": {
           "type": "heading",
           "settings": {
-            "heading": "Quick Connect Plugs & Coupling Kits",
+            "heading": "Quick Connect Plugs & Coupling",
             "heading_size": "h2"
           }
         }
@@ -509,6 +509,36 @@
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-910f9ac4-69fe-4943-bab5-8c0b2a36303e",
+        "anchor_id": "quick-disconnect",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "gua_image_banner_yaMxJC": {
+      "type": "gua-image-banner",
+      "blocks": {
+        "heading_NtQqJ9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quick Connect Plugs & Coupling Kits",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NtQqJ9"
+      ],
+      "name": "GUA Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/coupling2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-right",
         "show_text_box": true,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-910f9ac4-69fe-4943-bab5-8c0b2a36303e",
@@ -561,6 +591,79 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "gua_image_banner_fMiTdE": {
+      "type": "gua-image-banner",
+      "blocks": {
+        "heading_HkNaA3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Universal Couplings & Accessories",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HkNaA3"
+      ],
+      "name": "GUA Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/hero_coupling.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-910f9ac4-69fe-4943-bab5-8c0b2a36303e",
+        "anchor_id": "quick-disconnect",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "gua_featured_product_e8Y8pi": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "title_FdCrfz": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "specifications_cBym3a": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": true
+          }
+        }
+      },
+      "block_order": [
+        "title_FdCrfz",
+        "specifications_cBym3a"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "universal-chicago-style-coupler-1-2-mnpt",
+        "ptitle_fix": "basic",
+        "color_scheme": "",
+        "secondary_background": false,
+        "alt_image": false,
+        "media_size": "medium",
+        "hide_image": true,
+        "stack_image": true,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "enable_video_looping": false,
+        "hide_variants": false,
+        "unique_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -571,6 +674,9 @@
     "five_table_product_column_yRqWXq",
     "gua_featured_product_bHUcTV",
     "gua_image_banner_4hpXY3",
-    "gua_featured_product_wdrMKq"
+    "gua_image_banner_yaMxJC",
+    "gua_featured_product_wdrMKq",
+    "gua_image_banner_fMiTdE",
+    "gua_featured_product_e8Y8pi"
   ]
 }
