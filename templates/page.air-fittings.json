@@ -446,6 +446,36 @@
         "padding_bottom": 100
       }
     },
+    "gua_image_banner_4hpXY3": {
+      "type": "gua-image-banner",
+      "blocks": {
+        "heading_3QXgBD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quick Connect Plugs & Coupling",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3QXgBD"
+      ],
+      "name": "GUA Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/hero_coupling.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-910f9ac4-69fe-4943-bab5-8c0b2a36303e",
+        "anchor_id": "quick-disconnect",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "gua_featured_product_bHUcTV": {
       "type": "gua-featured-product",
       "blocks": {
@@ -487,36 +517,6 @@
         "unique_id": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "gua_image_banner_4hpXY3": {
-      "type": "gua-image-banner",
-      "blocks": {
-        "heading_3QXgBD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Quick Connect Plugs & Coupling",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "heading_3QXgBD"
-      ],
-      "name": "GUA Image Banner",
-      "settings": {
-        "image": "shopify://shop_images/hero_coupling.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-910f9ac4-69fe-4943-bab5-8c0b2a36303e",
-        "anchor_id": "quick-disconnect",
-        "image_behavior": "fixed",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "gua_image_banner_yaMxJC": {
@@ -672,8 +672,8 @@
     "gua_multicolumn_xgRhAi",
     "e2106819-9390-4116-af30-1e7b3f419aa9",
     "five_table_product_column_yRqWXq",
-    "gua_featured_product_bHUcTV",
     "gua_image_banner_4hpXY3",
+    "gua_featured_product_bHUcTV",
     "gua_image_banner_yaMxJC",
     "gua_featured_product_wdrMKq",
     "gua_image_banner_fMiTdE",
