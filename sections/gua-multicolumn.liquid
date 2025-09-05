@@ -161,13 +161,15 @@
               <div class="multicolumn-card__info grid__info {{ section.settings.font_style }}">
                 {%- if block.settings.title != blank -%}
                   <h3 class="{{ section.settings.font_style }}">
-                      {% if section.settings.button_link %}<a href="{{ section.settings.button_link }}" class="">{% endif %}
+                      {% if block.settings.link %}<a href="{{ block.settings.link }}" class="">{% endif %}
                       {{ block.settings.title }}
-                      {% if section.settings.button_link %}</a>{% endif %}
+                      {% if block.settings.link %}</a>{% endif %}
                   </h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
+                  <div class="rte">{% if block.settings.link and block.settings.link_label %}<a href="{{ block.settings.link }}" class="">{% endif %}
+                    {{ block.settings.text }}
+                      {% if block.settings.link and block.settings.link_label %}</a>{% endif %}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
