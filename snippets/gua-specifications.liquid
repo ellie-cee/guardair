@@ -373,7 +373,7 @@
                           {% endif %}
                           {% if show_extra_fields %}
                             {% capture clean_title %}{% render 'gua-title_v3',product:currentProduct, text_style:'basic' %}{% endcapture %}
-                            {% assign extra_value = currentProduct.title | remove: clean_title | strip %}
+                            {% assign extra_value = currentProduct.title | remove: clean_title %}
                           {% endif %}
 
                 <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}">
