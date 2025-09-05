@@ -136,23 +136,10 @@
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
-                <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                  {%- if collection.title != blank -%}
-                        {% case section.settings.ptitle_fix %}
-                            {% when 'none' %}{{ product.title }}
-                            {% when 'basic_series' %}{% render 'gua-title_v3',product:collection, text_style:'basic_series' %}
-                            {% when 'specific_series' %}{% render 'gua-title_v3',product:collection, text_style:'specific_series' %}
-                            {% when 'basic' %}{% render 'gua-title_v3',product:collection, text_style:'basic' %}
-                            {% when 'specific' %}{% render 'gua-title_v3',product:collection, text_style:'specific' %}                                  
-                            {% when 'slice' %}{% render 'gua-title_v2',title:collection.title %}                                 
-                            {% when 'move_model' %}{% render 'gua-title_v2',title:collection.title,change_model:'move' %}                          
-                            {% when 'remove_model' %}{% render 'gua-title_v2',title:collection.title,change_model:'remove' %}
-                        {% endcase %}
-                  {%- else -%}
-                    {{ 'onboarding.product_title' | t }}
+                  {%- if collection.title != blank -%}                
+                     <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ collection.title }}</h2>
                   {%- endif -%}
-                </h2>
-            
+
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'rating' -%}
