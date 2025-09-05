@@ -631,6 +631,7 @@
       "blocks": {
         "title_FdCrfz": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "heading_size": "h1"
           }
@@ -639,7 +640,7 @@
           "type": "text",
           "settings": {
             "text": "Universal Couplings",
-            "text_style": "subtitle"
+            "text_style": "heading"
           }
         },
         "specifications_cBym3a": {
@@ -684,8 +685,16 @@
       "blocks": {
         "title_XdyNeV": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "heading_size": "h1"
+          }
+        },
+        "text_mAAgDU": {
+          "type": "text",
+          "settings": {
+            "text": "Accessories",
+            "text_style": "heading"
           }
         },
         "specifications_gXqBHB": {
@@ -701,6 +710,7 @@
       },
       "block_order": [
         "title_XdyNeV",
+        "text_mAAgDU",
         "specifications_gXqBHB"
       ],
       "name": "GUA Collection Chart",
