@@ -261,7 +261,7 @@
         "specifications_fhiNbx": {
           "type": "specifications",
           "settings": {
-            "highlight_variant": true,
+            "highlight_variant": false,
             "variant_title": false,
             "variant_image": false
           }
@@ -288,7 +288,7 @@
         "image_zoom": "lightbox",
         "enable_video_looping": false,
         "hide_variants": false,
-        "unique_id": "",
+        "unique_id": "staticconductiveairhoseassembly",
         "padding_top": 36,
         "padding_bottom": 36
       }
