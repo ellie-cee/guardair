@@ -179,7 +179,7 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "polyurethane-coiled-air-hose-assembly-1-4-id-x-12",
-        "ptitle_fix": "none",
+        "ptitle_fix": "basic",
         "color_scheme": "",
         "secondary_background": false,
         "alt_image": false,
@@ -222,7 +222,7 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "general-purpose-air-hose-assembly-3-8-id-x-12",
-        "ptitle_fix": "basic_series",
+        "ptitle_fix": "basic",
         "color_scheme": "",
         "secondary_background": false,
         "alt_image": false,
@@ -275,7 +275,7 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "static-conductive-air-hose-assembly-3-8-id-x-12",
-        "ptitle_fix": "basic_series",
+        "ptitle_fix": "basic",
         "color_scheme": "",
         "secondary_background": false,
         "alt_image": false,
