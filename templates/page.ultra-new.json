@@ -265,7 +265,7 @@
       "settings": {
         "image": "shopify://shop_images/Ultra_Safety_Air_Guns_Guardair_2025-09-05_at_7.40.14_PM.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
