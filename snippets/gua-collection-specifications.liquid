@@ -1,20 +1,3 @@
-{% comment %}
-      {% for entry in p_entries %}
-        {% assign handle = entry.handle %}
-        {% assign currentProduct = all_products[handle] %}
-<ul>
-  {% if forloop.first %}<ol><pre>{{ entry | json }}</pre></ol>{% endif %}
-  <ol>{{ forloop.index }}: {{ entry.title }}</ol>
- {       <ol>{{ entry.handle }}</ol>
-  <ol>rr{{ currentProduct.title }}</ol>
-  <ol>{{ entry.option_name }}</ol>    
-  <ol>Product ID: {{ product.id }}</ol>       
-  <ol>Variant ID: {{ product.selected_or_first_available_variant.id }}</ol>     
-  <ol>{{ entry.system.handle }}</ol>
-  <ol>{{ entry.system.id }}</ol>  
-</ul>custom.hose_length
-      {% endfor %}  
-{% endcomment %}
 {% style %}
   {% if request.page_type == 'page' %}
       table.specifications-table tr {}    
@@ -24,6 +7,8 @@
 {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
 {% assign specifications_title =  linked_products_metaobject.group_name  | append: ' Specifications' %}
 {% assign specifications_option =  linked_products_metaobject.option_name %}
+
+
 {% assign product_list =  linked_products_metaobject.products.value %}
 {% unless highlight == false %}
     {% assign highlight = true %}
