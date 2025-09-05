@@ -193,8 +193,7 @@
                     </p>
                   </div>
                 {%- endif -%}
-              {%- when 'icon-with-text' -%}
-                {% render 'icon-with-text', block: block %}
+
 
             {%- when 'specifications' -%}
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
@@ -202,13 +201,10 @@
             {%- when 'product_description' -%}
                 <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
 
-                {%- if product.description != blank and product.description or block.settings.alt_desc == true -%}
-                    {% assign desc_sentences = product.description | split: '.' %}
-                    {% assign desc_paragraphs = product.description | split: '</p>' %}                    
-                    {% if block.settings.alt_desc == true and product.metafields.custom.grid_description != '' %}
-                        {% assign alt_text = product.metafields.custom.grid_description | metafield_text %}{% assign alt_text = alt_text | replace: '&#39;', "'" %}{% assign alt_text = alt_text | replace: '&quot;', '"' %}{% assign alt_text = alt_text | replace: '&amp;', '&' %}
-                          <div class="rte {{ section.settings.font_style }}">{{ alt_text }}</div>
-                    {% elsif block.settings.pdesc_para == 1 and desc_paragraphs %}
+                {%- if collection.description != blank and collection.description -%}
+                    {% assign desc_sentences = collection.description | split: '.' %}
+                    {% assign desc_paragraphs = collection.description | split: '</p>' %}                    
+                    {% if block.settings.pdesc_para == 1 and desc_paragraphs %}
                           <div class="rte {{ section.settings.font_style }}">{{ desc_paragraphs[0] }}</div>
                     {% elsif block.settings.pdesc_para == 2 and desc_paragraphs %}
                           <div class="rte {{ section.settings.font_style }}">{{ desc_paragraphs[0] }}{{ desc_paragraphs[1] }}</div>                            
@@ -217,7 +213,7 @@
                     {% elsif block.settings.pdesc_shorten == 2 and desc_sentences %}
                           <div class="rte {{ section.settings.font_style }}">{{ desc_sentences[1] }}.</div>
                     {% else %}                       
-                      <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
+                      <div class="rte {{ section.settings.font_style }}">{{ collection.description }}</div>
                     {% endif %}                  
                 {%- endif -%}                          
                 </div>    
@@ -245,8 +241,8 @@
                 id="GalleryViewer-{{ section.id }}-right"
                 class="product__media-list{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
               >
-                {%- if product.selected_or_first_available_variant.featured_media != null -%}
-                  {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+                {%- if collection.featured_image != null -%}
+                  {%- assign media = collection.featured_image -%}
                   <div class="product__media-item image-size-{{ section.settings.media_size }}" data-media-id="{{ section.id }}-{{ media.id }}">
                     {% render 'product-thumbnail',
                       media: media,
@@ -260,39 +256,7 @@
                     %}
                   </div>
                 {%- endif -%}
-                {%- for media in product.media -%}
-                  {%- if media_to_render contains media.id
-                    and media.id != product.selected_or_first_available_variant.featured_media.id
-                  -%}
-                    <div class="product__media-item image-size-{{ section.settings.media_size }}" data-media-id="{{ section.id }}-{{ media.id }}">
-                      {% render 'product-thumbnail',
-                        media: media,
-                        position: forloop.index,
-                        loop: section.settings.enable_video_looping,
-                        modal_id: section.id,
-                        xr_button: false,
-                        media_width: media_width,
-                        media_fit: section.settings.media_fit,
-                        constrain_to_viewport: section.settings.constrain_to_viewport
-                      %}
-                    </div>
-                  {%- endif -%}
-                {%- endfor -%}
               </div>
-              {%- if first_3d_model -%}
-                <button
-                  class="button button--full-width product__xr-button"
-                  type="button"
-                  aria-label="{{ 'products.product.xr_button_label' | t }}"
-                  data-shopify-xr
-                  data-shopify-model3d-id="{{ first_3d_model.id }}"
-                  data-shopify-title="{{ product.title | escape }}"
-                  data-shopify-xr-hidden
-                >
-                  {% render 'icon-3d-model' %}
-                  {{ 'products.product.xr_button' | t }}
-                </button>
-              {%- endif -%}
             </media-gallery>
           {%- else -%}
             <div class="product__media-item image-size-{{ section.settings.media_size }}">
@@ -307,7 +271,6 @@
         </div>
       {%- endif -%}
     </div>
-    {% render 'product-media-modal', product: product, variant_images: media_to_render %}
   </div>
 </section>
 
@@ -335,80 +298,6 @@
 -%}
 
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org/",
-    "@type": "Product",
-    "name": {{ product.title | json }},
-    "url": {{ request.origin | append: product.url | json }},
-    {% if seo_media -%}
-      "image": [
-        {{ seo_media | image_url: width: 1920 | prepend: "https:" | json }}
-      ],
-    {%- endif %}
-    "description": {{ product.description | strip_html | json }},
-    {% if product.selected_or_first_available_variant.sku != blank -%}
-      "sku": {{ product.selected_or_first_available_variant.sku | json }},
-    {%- endif %}
-    "brand": {
-      "@type": "Brand",
-      "name": {{ product.vendor | json }}
-    },
-    "offers": [
-      {%- for variant in product.variants -%}
-        {
-          "@type" : "Offer",
-          {%- if variant.sku != blank -%}
-            "sku": {{ variant.sku | json }},
-          {%- endif -%}
-          {%- if variant.barcode.size == 12 -%}
-              "gtin12": {{ variant.barcode | json }},
-          {%- endif -%}
-          {%- if variant.barcode.size == 13 -%}
-            "gtin13": {{ variant.barcode | json }},
-          {%- endif -%}
-          {%- if variant.barcode.size == 14 -%}
-            "gtin14": {{ variant.barcode | json }},
-          {%- endif -%}
-          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-          "price" : {{ variant.price | divided_by: 100.00 | json }},
-          "priceCurrency" : {{ cart.currency.iso_code | json }},
-          "url" : {{ request.origin | append: variant.url | json }}
-        }{% unless forloop.last %},{% endunless %}
-      {%- endfor -%}
-    ]
-  }
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    function isIE() {
-      const ua = window.navigator.userAgent;
-      const msie = ua.indexOf('MSIE ');
-      const trident = ua.indexOf('Trident/');
-
-      return msie > 0 || trident > 0;
-    }
-
-    if (!isIE()) return;
-    const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
-    const noScriptInputWrapper = document.createElement('div');
-    const variantPicker = document.querySelector('variant-selects[data-section="{{ section.id }}"]');
-    noScriptInputWrapper.innerHTML = document.querySelector(
-      '.product-form__noscript-wrapper-{{ section.id }}'
-    ).textContent;
-    variantPicker.outerHTML = noScriptInputWrapper.outerHTML;
-
-    document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function (event) {
-      hiddenInput.value = event.currentTarget.value;
-    });
-  });
-</script>
-
-{% if product.media.size > 0 %}
-  <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
-{% endif %}
 
 {% schema %}
 {
