@@ -374,7 +374,7 @@
                           {% if show_extra_fields %}
                             {% capture clean_title %}{% render 'gua-title_v3',product:currentProduct, text_style:'basic' %}{% endcapture %}
                             {% assign clean_title = clean_title | strip %}
-                            {% assign extra_value = currentProduct.title | remove: clean_title %}
+                            {% assign extra_value = currentProduct.title | remove: clean_title | remove: '- ' %}
                           {% endif %}
 
                 <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}">
@@ -496,7 +496,7 @@
 
                   {% if show_extra_fields == true %}
                     <td>
-                      <span class="td-value">Extra:{{ extra_value }}</span>
+                      <span class="td-value">{{ extra_value }}</span>
                     </td>
                 {% endif %}
                 </tr>
