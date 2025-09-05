@@ -34,7 +34,7 @@
   {% assign product_list =  linked_products_metaobject.products.value %}
 {% endif %}
 
-{% if section.settings.type_fields %}
+{% if section.settings.type_fields %}<h2>{{ section.settings.type_fields }}</h2>
     {% assign show_type_fields = section.settings.type_fields %}
 {% else %}
       {% assign show_type_fields = true %}
