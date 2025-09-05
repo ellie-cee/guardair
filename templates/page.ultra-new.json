@@ -216,6 +216,9 @@
         "icon_VYjiJW",
         "icon_gfcFCP"
       ],
+      "custom_css": [
+        "* {object-fit: cover;}"
+      ],
       "name": "GUA Icon Bar",
       "settings": {
         "background_color": "#ffffff",
