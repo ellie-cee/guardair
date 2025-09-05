@@ -362,6 +362,49 @@
         "padding_bottom": 100
       }
     },
+    "gua_featured_product_bHUcTV": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "title_X7r3Qd": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "specifications_EAe7cP": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": true
+          }
+        }
+      },
+      "block_order": [
+        "title_X7r3Qd",
+        "specifications_EAe7cP"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "1-4-quick-disconnect-industrial-interchange-plug-1-4-mnpt",
+        "ptitle_fix": "basic",
+        "color_scheme": "",
+        "secondary_background": false,
+        "alt_image": false,
+        "media_size": "medium",
+        "hide_image": true,
+        "stack_image": true,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "enable_video_looping": false,
+        "hide_variants": false,
+        "unique_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "gua_featured_product_wdrMKq": {
       "type": "gua-featured-product",
       "blocks": {
@@ -418,6 +461,7 @@
     "main",
     "e2106819-9390-4116-af30-1e7b3f419aa9",
     "five_table_product_column_yRqWXq",
+    "gua_featured_product_bHUcTV",
     "gua_featured_product_wdrMKq"
   ]
 }
