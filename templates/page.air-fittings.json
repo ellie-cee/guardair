@@ -9,13 +9,97 @@
  */
 {
   "sections": {
+    "main_page_banner_fjYtLd": {
+      "type": "main-page-banner",
+      "name": "Page Banner",
+      "settings": {
+        "show_page_content": false,
+        "show_series_page": false,
+        "color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
+        "show_breadcrumbs": true,
+        "color_scheme_breadcrumbs": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
+        "padding_top_breadcrumbs": 8,
+        "padding_bottom_breadcrumbs": 8,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_title": true,
         "show_breadcrumbs": true,
         "padding_top": 28,
         "padding_bottom": 0
+      }
+    },
+    "gua_multicolumn_xgRhAi": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_DYUMzN": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Quick Disconnect",
+            "text": "<p>Plugs & Couplers</p>",
+            "link_label": "",
+            "link": "#quick-disconnect"
+          }
+        },
+        "column_yieAUt": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Quick Disconnect",
+            "text": "<p>Plugs & Coupler Kits</p>",
+            "link_label": "",
+            "link": "#quick-disconnect-kits"
+          }
+        },
+        "column_YbCTgq": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Universal",
+            "text": "<p>Couplings & Accessories</p>",
+            "link_label": "",
+            "link": "#universal"
+          }
+        }
+      },
+      "block_order": [
+        "column_DYUMzN",
+        "column_yieAUt",
+        "column_YbCTgq"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "anchor_id": "#fittings"
       }
     },
     "e2106819-9390-4116-af30-1e7b3f419aa9": {
@@ -405,6 +489,35 @@
         "padding_bottom": 36
       }
     },
+    "gua_image_banner_4hpXY3": {
+      "type": "gua-image-banner",
+      "blocks": {
+        "heading_3QXgBD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quick Connect Plugs & Coupling Kits",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3QXgBD"
+      ],
+      "name": "GUA Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/hero_coupling.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-910f9ac4-69fe-4943-bab5-8c0b2a36303e",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "gua_featured_product_wdrMKq": {
       "type": "gua-featured-product",
       "blocks": {
@@ -412,13 +525,6 @@
           "type": "title",
           "settings": {
             "heading_size": "h1"
-          }
-        },
-        "variant_picker_wHRKwL": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
           }
         },
         "specifications_jP7b9N": {
@@ -432,7 +538,6 @@
       },
       "block_order": [
         "title_NHmJBg",
-        "variant_picker_wHRKwL",
         "specifications_jP7b9N"
       ],
       "name": "GUA Featured Product",
@@ -458,10 +563,13 @@
     }
   },
   "order": [
+    "main_page_banner_fjYtLd",
     "main",
+    "gua_multicolumn_xgRhAi",
     "e2106819-9390-4116-af30-1e7b3f419aa9",
     "five_table_product_column_yRqWXq",
     "gua_featured_product_bHUcTV",
+    "gua_image_banner_4hpXY3",
     "gua_featured_product_wdrMKq"
   ]
 }
