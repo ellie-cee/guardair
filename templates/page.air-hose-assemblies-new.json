@@ -261,7 +261,7 @@
         "specifications_fhiNbx": {
           "type": "specifications",
           "settings": {
-            "highlight_variant": false,
+            "highlight_variant": true,
             "variant_title": false,
             "variant_image": false
           }
