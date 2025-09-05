@@ -490,7 +490,9 @@
           "settings": {
             "highlight_variant": false,
             "variant_title": false,
-            "variant_image": true
+            "variant_image": true,
+            "type_fields": true,
+            "special_field": ""
           }
         }
       },
@@ -563,7 +565,9 @@
           "settings": {
             "highlight_variant": false,
             "variant_title": true,
-            "variant_image": true
+            "variant_image": true,
+            "type_fields": true,
+            "special_field": ""
           }
         }
       },
@@ -636,7 +640,9 @@
           "settings": {
             "highlight_variant": false,
             "variant_title": false,
-            "variant_image": true
+            "variant_image": true,
+            "type_fields": false,
+            "special_field": "Male Thread"
           }
         }
       },
