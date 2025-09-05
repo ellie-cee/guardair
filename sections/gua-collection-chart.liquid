@@ -41,26 +41,6 @@
   endif
 -%}
 
-{% comment %} TODO: assign `product.selected_or_first_available_variant` to variable and replace usage to reduce verbosity {% endcomment %}
-
-{%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
-{%- if first_3d_model -%}
-  {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
-  <link
-    id="ModelViewerStyle"
-    rel="stylesheet"
-    href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css"
-    media="print"
-    onload="this.media='all'"
-  >
-  <link
-    id="ModelViewerOverride"
-    rel="stylesheet"
-    href="{{ 'component-model-viewer-ui.css' | asset_url }}"
-    media="print"
-    onload="this.media='all'"
-  >
-{%- endif -%}
 
 <section{% if section.settings.unique_id %} id="{{ section.settings.unique_id }}"{% endif %} data-section-id="{{ section.index }}" class="color-{{ section.settings.color_scheme }} section-count-{{  section.index }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
