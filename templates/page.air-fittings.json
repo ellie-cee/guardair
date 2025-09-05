@@ -721,7 +721,7 @@
           "type": "specifications",
           "settings": {
             "highlight_variant": false,
-            "variant_title": false,
+            "variant_title": true,
             "variant_image": true,
             "type_fields": false,
             "special_field": "Male Thread"
