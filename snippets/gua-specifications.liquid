@@ -39,7 +39,7 @@
     {% assign show_type_fields = block.settings.type_fields %}
 {% endif %}
 {% assign show_extra_fields = false %}
-{% if block.settings.special_field %}
+{% if block.settings.special_field != blank %}
     {% assign show_extra_fields = true %}  
     {% assign extra_field = block.settings.special_field %}
 {% endif %}
