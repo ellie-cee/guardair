@@ -521,6 +521,74 @@
         "padding_bottom": 36
       }
     },
+    "gua_multicolumn_CjWERt": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_jXzkrc": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Quick Disconnect",
+            "text": "<p>Plugs & Couplers</p>",
+            "link_label": "",
+            "link": "#quick-disconnect"
+          }
+        },
+        "column_qVqGBe": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Quick Disconnect",
+            "text": "<p>Plugs & Coupler Kits</p>",
+            "link_label": "",
+            "link": "#quick-disconnect-kits"
+          }
+        },
+        "column_Qz9djL": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Universal",
+            "text": "<p>Couplings & Accessories</p>",
+            "link_label": "",
+            "link": "#universal"
+          }
+        }
+      },
+      "block_order": [
+        "column_jXzkrc",
+        "column_qVqGBe",
+        "column_Qz9djL"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "anchor_id": "#fittings"
+      }
+    },
     "gua_image_banner_yaMxJC": {
       "type": "gua-image-banner",
       "blocks": {
@@ -740,6 +808,7 @@
     "five_table_product_column_yRqWXq",
     "gua_image_banner_4hpXY3",
     "gua_featured_product_bHUcTV",
+    "gua_multicolumn_CjWERt",
     "gua_image_banner_yaMxJC",
     "gua_featured_product_wdrMKq",
     "gua_image_banner_fMiTdE",
