@@ -213,7 +213,7 @@
 {% endif %}
 
 {% if show_spec or show_basics %}
-<hr><div class="specifications-table page-width"><h2>{{ show_type_fields }}</h2>
+<hr><div class="specifications-table page-width">
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
 
       
@@ -265,73 +265,73 @@
                 {% if show_image == true %}
                   <th width="10%">Product</th>
                 {% endif %}                
-                {% if show_flow == true %}
+                {% if show_flow == true  and show_type_fields %}
                   <th width="10%">
                     Compressed <br>
                     Air Usage<br>
                     (cfm)
                   </th>
                 {% endif %}
-                {% if show_min_compressor == true %}
+                {% if show_min_compressor == true  and show_type_fields %}
                   <th width="10%">
                     Min. Size <br>
                     Air Compressor<br>
                     (hp)
                   </th>
                 {% endif %}
-                {% if show_vacuum_flow == true %}
+                {% if show_vacuum_flow == true  and show_type_fields %}
                   <th width="8%">
                     Vacuum Flow<br>
                     (cfm)
                   </th>
                 {% endif %}
-                {% if show_vacuum_lift == true %}
+                {% if show_vacuum_lift == true and show_type_fields %}
                   <th width="8%">
                     Vacuum <br>
                     Lift<br>
                     (in H20)
                   </th>
                 {% endif %}
-                {% if show_syphon_flow_rate == true %}
+                {% if show_syphon_flow_rate == true and show_type_fields %}
                   <th width="9%">
                     Syphon <br>
                     Flow Rate<br>
                     (gph)
                   </th>
                 {% endif %}
-                {% if show_output_thrust == true %}
+                {% if show_output_thrust == true and show_type_fields %}
                   <th width="8%">
                     Output <br>
                     Thrust<br>
                     (lbs)
                   </th>
                 {% endif %}
-                {% if show_noise_level == true %}
+                {% if show_noise_level == true and show_type_fields %}
                   <th width="8%">
                     Noise <br>
                     Level<br>
                     (dBA)
                   </th>
                 {% endif %}
-                {% if show_steel_drum_guage == true %}
+                {% if show_steel_drum_guage == true and show_type_fields %}
                   <th width="8%">
                     Min.<br>
                     Steel Drum<br>
                     (Gauge)
                   </th>
                 {% endif %}
-                {% if show_maxpressure == true %}
+                {% if show_maxpressure == true and show_type_fields %}
                   <th width="6%">
                     Max<br>
                     Pressure
                   </th>
                 {% endif %}
-                {% if show_inlet_connection == true and request.page_type == 'page' %}
+                {% if show_inlet_connection == true and request.page_type == 'page' and show_type_fields %}
                   <th width="7%">
                       Outlet<br>
                   </th>
                 {% endif %}                
-                {% if show_fittings == true and request.page_type == 'page' %}
+                {% if show_fittings == true and request.page_type == 'page' and show_type_fields %}
                   <th width="8%">Fittings</th>
                 {% endif %}                
                 {% if show_dimensions == true %}
