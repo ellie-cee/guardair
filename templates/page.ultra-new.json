@@ -222,6 +222,39 @@
         "text_color": "#ffffff",
         "max_width": 1000
       }
+    },
+    "rich_text_NzhdKm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AYN4EJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built for Every Industry",
+            "heading_size": "h2"
+          }
+        },
+        "text_rETLxY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Automotive • Building Products • Food Processing • Government & Military • Manufacturing • Petrochemical • Primary Metals • Printing • Pulp & Paper • Rubber & Plastics • Transportation • Wood & Forest Products</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AYN4EJ",
+        "text_rETLxY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
@@ -230,6 +263,7 @@
     "rich_text_yJD6mT",
     "image_with_text_RJMxdi",
     "rich_text_Tjdm8F",
-    "gua_icon_bar_3qmmzh"
+    "gua_icon_bar_3qmmzh",
+    "rich_text_NzhdKm"
   ]
 }
