@@ -119,7 +119,7 @@
                       {% else %}
                           <p class="product__text inline-richtext" {{ block.shopify_attributes }}>{{- block.settings.text -}}</p>                                               
                       {% endif %}
-                      
+
               {%- when 'title' -%}
                   {%- if collection.title != blank -%}                
                      <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ collection.title }}</h2>
@@ -308,7 +308,11 @@
             {
               "value": "uppercase",
               "label": "t:sections.featured-product.blocks.text.settings.text_style.options__3.label"
-            }
+            },
+            {
+              "value": "heading",
+              "label": "Heading"
+            }             
           ],
           "default": "body",
           "label": "t:sections.featured-product.blocks.text.settings.text_style.label"
