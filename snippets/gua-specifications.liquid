@@ -332,10 +332,14 @@
                           {% endif %}
 
                 <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}">
-                  {% if show_part_number == true %}
+                  {% if show_part_number == true and currentVariant.sku%}
                     <td>
                       <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
                     </td>
+                  {% elsif show_part_number == true and currentProduct.sku%}
+                    <td>
+                      <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ currentProduct.sku }}">{{ currentProduct.sku }}</a></span>
+                    </td>                    
                   {% endif %}
                 {% if show_title == true %}
                     <th width="10%">{{ currentProduct.title }}</th>
