@@ -189,6 +189,39 @@
         "padding_bottom": 52,
         "anchor_id": ""
       }
+    },
+    "gua_icon_bar_3qmmzh": {
+      "type": "gua-icon-bar",
+      "blocks": {
+        "icon_VYjiJW": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/master_icons_002395_Assembled_USA.png",
+            "text": "",
+            "text-line-2": "",
+            "main": false
+          }
+        },
+        "icon_gfcFCP": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/master_icons_002395_OSHA.png",
+            "text": "",
+            "text-line-2": "",
+            "main": false
+          }
+        }
+      },
+      "block_order": [
+        "icon_VYjiJW",
+        "icon_gfcFCP"
+      ],
+      "name": "GUA Icon Bar",
+      "settings": {
+        "background_color": "#ffffff",
+        "text_color": "#ffffff",
+        "max_width": 1000
+      }
     }
   },
   "order": [
@@ -196,6 +229,7 @@
     "image_with_text_P9Xby8",
     "rich_text_yJD6mT",
     "image_with_text_RJMxdi",
-    "rich_text_Tjdm8F"
+    "rich_text_Tjdm8F",
+    "gua_icon_bar_3qmmzh"
   ]
 }
