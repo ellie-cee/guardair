@@ -34,10 +34,9 @@
   {% assign product_list =  linked_products_metaobject.products.value %}
 {% endif %}
 
-{% if block.settings.type_fields != blank %}<h2>{{ block.settings.type_fields }}</h2>
+ {% assign show_type_fields = true %}
+{% if block.settings.type_fields %}
     {% assign show_type_fields = block.settings.type_fields %}
-{% else %}
-      {% assign show_type_fields = true %}
 {% endif %}
 {% unless highlight == false %}
     {% assign highlight = true %}
