@@ -722,7 +722,7 @@
           "settings": {
             "highlight_variant": false,
             "variant_title": false,
-            "variant_image": false
+            "variant_image": true
           }
         }
       },
