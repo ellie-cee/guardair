@@ -68,10 +68,108 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_yJD6mT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LB6GdA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PRECISION CONTROL, ULTRA RESULTS</p>"
+          }
+        },
+        "heading_6dmWAP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet the Ultra Family",
+            "heading_size": "h1"
+          }
+        },
+        "text_hWDhnk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet the Ultra Series Safety Air Guns — Guardair's most versatile lineup yet. Whether you need raw power, quiet performance, or extended reach, there's an Ultra for every job. All Ultras are OSHA Compliant and assembled in the USA.</p>"
+          }
+        },
+        "button_wCixpa": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_LB6GdA",
+        "heading_6dmWAP",
+        "text_hWDhnk",
+        "button_wCixpa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "anchor_id": ""
+      }
+    },
+    "image_with_text_RJMxdi": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_mjdBX7": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "text_DcWYPF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Three models to choose from:</strong></p><ul><li><a href=\"https://guardair.com/pages/ultra-safety-air-guns#ultra-long-john\" title=\"Ultra Long John\"><strong>Ultra Long John</strong></a><strong><br/>Standard power with Venturi nozzle for efficient airflow.</strong></li><li><a href=\"https://guardair.com/pages/ultra-safety-air-guns#ultra-xtrathrust\" title=\"Ultra XtraThrust\"><strong>Ultra XtraThrust</strong></a><strong><br/>Delivers maximum force for the toughest debris.</strong></li><li><a href=\"https://guardair.com/pages/ultra-safety-air-guns#ultra-whisperjet\" title=\"Ultra WhisperJet\"><strong>Ultra WhisperJet</strong></a><strong><br/>Features a quiet nozzle for noise-sensitive environments.</strong></li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_mjdBX7",
+        "text_DcWYPF"
+      ],
+      "custom_css": [
+        "* {object-fit: contain;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/guardair-ultra-air-guns-video-thumbnail-youtube.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "image_with_text_P9Xby8"
+    "image_with_text_P9Xby8",
+    "rich_text_yJD6mT",
+    "image_with_text_RJMxdi"
   ]
 }
