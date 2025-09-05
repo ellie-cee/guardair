@@ -349,7 +349,7 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Ultra Bestsellers",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_product_full_data": true,
         "show_description": false,
