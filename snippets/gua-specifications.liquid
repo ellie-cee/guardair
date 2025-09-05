@@ -21,12 +21,20 @@
       table.specifications-table th, table.specifications-table td {}
   {% endif %}
 {% endstyle %}
-{% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
-{% assign specifications_title =  linked_products_metaobject.group_name  | append: ' Specifications' %}
-{% assign specifications_option =  linked_products_metaobject.option_name %}
-{% unless product_list %}
+
+{% if collection %}
+  {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
+  {% assign specifications_title =  collection.title  | append: ' Specifications' %}
+  {% assign specifications_option =  'Size' %}
+  {% assign product_list =  collection.products %}
+{% else %}
+  {% assign linked_products_metaobject = product.metafields.custom.linked_products.value %}
+  {% assign specifications_title =  linked_products_metaobject.group_name  | append: ' Specifications' %}
+  {% assign specifications_option =  linked_products_metaobject.option_name %}
   {% assign product_list =  linked_products_metaobject.products.value %}
-{% endunless %}
+{% endif %}
+
+
 {% unless highlight == false %}
     {% assign highlight = true %}
 {% endunless %}
