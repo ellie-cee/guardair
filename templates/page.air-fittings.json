@@ -664,6 +664,89 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "gua_featured_product_fkU7bn": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "specifications_7Uqmzp": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": false
+          }
+        },
+        "title_8fJf4V": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "specifications_7Uqmzp",
+        "title_8fJf4V"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "safety-pins-for-universal-chicago-style-coupler",
+        "ptitle_fix": "none",
+        "color_scheme": "",
+        "secondary_background": false,
+        "alt_image": false,
+        "media_size": "medium",
+        "hide_image": false,
+        "stack_image": false,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "enable_video_looping": false,
+        "hide_variants": false,
+        "unique_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gua_collection_chart_KrzbN9": {
+      "type": "gua-collection-chart",
+      "blocks": {
+        "title_XdyNeV": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "specifications_gXqBHB": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": false
+          }
+        }
+      },
+      "block_order": [
+        "title_XdyNeV",
+        "specifications_gXqBHB"
+      ],
+      "name": "GUA Collection Chart",
+      "settings": {
+        "collection": "chicago-style-couplings",
+        "ptitle_fix": "none",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "hide_image": true,
+        "stack_image": true,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "hide_variants": false,
+        "unique_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -677,6 +760,8 @@
     "gua_image_banner_yaMxJC",
     "gua_featured_product_wdrMKq",
     "gua_image_banner_fMiTdE",
-    "gua_featured_product_e8Y8pi"
+    "gua_featured_product_e8Y8pi",
+    "gua_featured_product_fkU7bn",
+    "gua_collection_chart_KrzbN9"
   ]
 }
