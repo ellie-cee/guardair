@@ -250,7 +250,7 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "bdr_btm": false,
+        "bdr_btm": true,
         "padding_top": 40,
         "padding_bottom": 52,
         "anchor_id": ""
