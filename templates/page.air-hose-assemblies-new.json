@@ -12,6 +12,8 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "show_title": true,
+        "show_breadcrumbs": true,
         "padding_top": 28,
         "padding_bottom": 0
       }
@@ -120,7 +122,9 @@
         "specifications_HVj4Rh": {
           "type": "specifications",
           "settings": {
-            "highlight_variant": false
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": false
           }
         }
       },
@@ -133,10 +137,11 @@
       "settings": {
         "product": "nylon-coiled-air-hose-assembly-1-4-id-x-12",
         "ptitle_fix": "basic",
-        "alt_image": false,
         "color_scheme": "",
         "secondary_background": false,
+        "alt_image": false,
         "media_size": "medium",
+        "hide_image": false,
         "stack_image": true,
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -161,7 +166,9 @@
         "specifications_8tLdjB": {
           "type": "specifications",
           "settings": {
-            "highlight_variant": false
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": false
           }
         }
       },
@@ -173,10 +180,11 @@
       "settings": {
         "product": "polyurethane-coiled-air-hose-assembly-1-4-id-x-12",
         "ptitle_fix": "none",
-        "alt_image": false,
         "color_scheme": "",
         "secondary_background": false,
+        "alt_image": false,
         "media_size": "medium",
+        "hide_image": false,
         "stack_image": true,
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -201,7 +209,9 @@
         "specifications_jDL9hU": {
           "type": "specifications",
           "settings": {
-            "highlight_variant": false
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": false
           }
         }
       },
@@ -213,10 +223,64 @@
       "settings": {
         "product": "general-purpose-air-hose-assembly-3-8-id-x-12",
         "ptitle_fix": "none",
-        "alt_image": false,
         "color_scheme": "",
         "secondary_background": false,
+        "alt_image": false,
         "media_size": "medium",
+        "hide_image": false,
+        "stack_image": true,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "enable_video_looping": false,
+        "hide_variants": false,
+        "unique_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gua_featured_product_xNytem": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "title_DyJb3V": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "product_description_mDnGcJ": {
+          "type": "product_description",
+          "settings": {
+            "alt_desc": false,
+            "pdesc_para": 0,
+            "pdesc_shorten": 0,
+            "font_style": "inline-richtext"
+          }
+        },
+        "specifications_fhiNbx": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false,
+            "variant_title": false,
+            "variant_image": false
+          }
+        }
+      },
+      "block_order": [
+        "title_DyJb3V",
+        "product_description_mDnGcJ",
+        "specifications_fhiNbx"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "static-conductive-air-hose-assembly-3-8-id-x-12",
+        "ptitle_fix": "basic_series",
+        "color_scheme": "",
+        "secondary_background": false,
+        "alt_image": false,
+        "media_size": "medium",
+        "hide_image": false,
         "stack_image": true,
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -343,6 +407,7 @@
         "block_KQXWz4",
         "block_HkaPha"
       ],
+      "disabled": true,
       "settings": {
         "sectionid": "GENERAL PURPOSE AIR HOSE ASSEMBLY",
         "heading": "General Purpose Air Hose Assembly",
@@ -438,6 +503,7 @@
         "block_TnpVhk",
         "block_HfR6jU"
       ],
+      "disabled": true,
       "settings": {
         "sectionid": "STATIC CONDUCTIVE AIR HOSE ASSEMBLY",
         "heading": "Static Conductive Air Hose Assembly",
@@ -626,6 +692,7 @@
     "gua_featured_product_fBeExM",
     "gua_featured_product_dN67jm",
     "gua_featured_product_URgBwV",
+    "gua_featured_product_xNytem",
     "7132303b-23b4-4a76-8be5-6a78c739ec7b",
     "9b2bf8d3-78a8-4d75-931a-1c3d2cc7bca9",
     "1273f009-3d5f-4736-a6f6-2d588f05b3b7",
