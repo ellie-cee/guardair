@@ -723,6 +723,7 @@
             "highlight_variant": false,
             "variant_title": false,
             "variant_image": true,
+            "type_fields": false,
             "special_field": "Male Thread"
           }
         }
