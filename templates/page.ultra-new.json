@@ -256,6 +256,32 @@
         "anchor_id": ""
       }
     },
+    "rich_text_JENxhJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6xx9fm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Performance Specs",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6xx9fm"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
     "image_banner_kgEU43": {
       "type": "image-banner",
       "custom_css": [
@@ -405,6 +431,7 @@
     "rich_text_Tjdm8F",
     "gua_icon_bar_3qmmzh",
     "rich_text_NzhdKm",
+    "rich_text_JENxhJ",
     "image_banner_kgEU43",
     "rich_text_n6yXyH",
     "multirow_6MXQEc",
