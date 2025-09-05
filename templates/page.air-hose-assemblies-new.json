@@ -272,7 +272,7 @@
         "product_description_mDnGcJ": {
           "type": "product_description",
           "settings": {
-            "alt_desc": false,
+            "alt_desc": true,
             "pdesc_para": 0,
             "pdesc_shorten": 0,
             "font_style": "inline-richtext"
@@ -281,7 +281,7 @@
         "specifications_fhiNbx": {
           "type": "specifications",
           "settings": {
-            "highlight_variant": false,
+            "highlight_variant": true,
             "variant_title": false,
             "variant_image": false
           }
