@@ -196,7 +196,7 @@
 
 
             {%- when 'specifications' -%}
-                {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block,product_list:collection.products %}
+                {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:collection.products.first,block:block,collection:collection %}
 
             {%- when 'product_description' -%}
                 <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
