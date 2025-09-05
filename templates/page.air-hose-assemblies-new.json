@@ -163,6 +163,15 @@
             "heading_size": "h1"
           }
         },
+        "product_description_A3gXTe": {
+          "type": "product_description",
+          "settings": {
+            "alt_desc": false,
+            "pdesc_para": 0,
+            "pdesc_shorten": 0,
+            "font_style": "inline-richtext"
+          }
+        },
         "specifications_8tLdjB": {
           "type": "specifications",
           "settings": {
@@ -174,6 +183,7 @@
       },
       "block_order": [
         "title_4dfWGR",
+        "product_description_A3gXTe",
         "specifications_8tLdjB"
       ],
       "name": "GUA Featured Product",
@@ -206,6 +216,15 @@
             "heading_size": "h1"
           }
         },
+        "product_description_nxLVLr": {
+          "type": "product_description",
+          "settings": {
+            "alt_desc": false,
+            "pdesc_para": 0,
+            "pdesc_shorten": 0,
+            "font_style": "inline-richtext"
+          }
+        },
         "specifications_jDL9hU": {
           "type": "specifications",
           "settings": {
@@ -217,6 +236,7 @@
       },
       "block_order": [
         "title_YtwEpw",
+        "product_description_nxLVLr",
         "specifications_jDL9hU"
       ],
       "name": "GUA Featured Product",
