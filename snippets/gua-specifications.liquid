@@ -234,8 +234,8 @@
                 {% endif %}                
                 {% if show_inlet_connection == true %}
                   <th width="7%">
-                    Compressed <br>
-                    Air Inlet<br>
+                    {% unless product.type == 'Air Hoses & Fittings' %}Compressed <br>
+                    Air{% endunless %} Inlet<br>
                     (in)
                   </th>
                 {% endif %}
