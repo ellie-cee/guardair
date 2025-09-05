@@ -34,9 +34,14 @@
   {% assign product_list =  linked_products_metaobject.products.value %}
 {% endif %}
 
- {% assign show_type_fields = true %}
+{% assign show_type_fields = true %}
 {% if block.settings.type_fields == false %}
     {% assign show_type_fields = block.settings.type_fields %}
+{% endif %}
+{% assign show_extra_fields = false %}
+{% if block.settings.special_field %}
+    {% assign show_extra_fields = true %}  
+    {% assign extra_field = block.settings.special_field %}
 {% endif %}
 {% unless highlight == false %}
     {% assign highlight = true %}
