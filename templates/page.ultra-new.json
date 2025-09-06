@@ -217,7 +217,7 @@
         "icon_gfcFCP"
       ],
       "custom_css": [
-        "* {width: 60%;}"
+        "* {width: 60%; justify-content: center;}"
       ],
       "name": "GUA Icon Bar",
       "settings": {
