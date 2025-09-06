@@ -372,7 +372,8 @@
         "row_jqqhRP"
       ],
       "custom_css": [
-        "* {object-fit: contain;}"
+        "* {object-fit: contain;}",
+        ".button {background-color: #002395;}"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
@@ -385,7 +386,7 @@
         "desktop_content_alignment": "left",
         "image_layout": "alternate-right",
         "section_color_scheme": "",
-        "row_color_scheme": "",
+        "row_color_scheme": "scheme-2",
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 0
