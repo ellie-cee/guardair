@@ -199,7 +199,7 @@
             "icon": "shopify://shop_images/master_icons_002395_Assembled_USA.png",
             "text": "",
             "text-line-2": "",
-            "main": false
+            "main": true
           }
         },
         "icon_gfcFCP": {
@@ -208,7 +208,7 @@
             "icon": "shopify://shop_images/master_icons_002395_OSHA.png",
             "text": "",
             "text-line-2": "",
-            "main": false
+            "main": true
           }
         }
       },
