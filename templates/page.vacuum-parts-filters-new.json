@@ -283,9 +283,9 @@
             "variant_title": true,
             "variant_image": true,
             "type_fields": true,
-            "special_field": "Fits",
+            "special_field": "Includes",
             "variant_metafield_namespace": "custom",
-            "variant_metafield_key": "fits_field_for_pages"
+            "variant_metafield_key": "includes"
           }
         }
       },
@@ -295,7 +295,7 @@
       ],
       "name": "GUA Featured Product",
       "settings": {
-        "product": "standard-cartridge-filter",
+        "product": "1-4-quick-disconnect-high-flow-plug-3-8-mnpt",
         "ptitle_fix": "none",
         "color_scheme": "",
         "secondary_background": false,
