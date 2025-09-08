@@ -124,7 +124,13 @@
           "settings": {
             "highlight_variant": false,
             "variant_title": false,
-            "variant_image": false
+            "variant_image": false,
+            "variant_image_size": 90,
+            "type_fields": true,
+            "special_field": "",
+            "variant_metafield_label": "",
+            "variant_metafield_namespace": "",
+            "variant_metafield_key": ""
           }
         }
       },
@@ -177,7 +183,13 @@
           "settings": {
             "highlight_variant": false,
             "variant_title": false,
-            "variant_image": false
+            "variant_image": false,
+            "variant_image_size": 90,
+            "type_fields": true,
+            "special_field": "",
+            "variant_metafield_label": "",
+            "variant_metafield_namespace": "",
+            "variant_metafield_key": ""
           }
         }
       },
@@ -230,7 +242,13 @@
           "settings": {
             "highlight_variant": false,
             "variant_title": false,
-            "variant_image": false
+            "variant_image": false,
+            "variant_image_size": 90,
+            "type_fields": true,
+            "special_field": "",
+            "variant_metafield_label": "",
+            "variant_metafield_namespace": "",
+            "variant_metafield_key": ""
           }
         }
       },
@@ -283,7 +301,13 @@
           "settings": {
             "highlight_variant": true,
             "variant_title": false,
-            "variant_image": false
+            "variant_image": false,
+            "variant_image_size": 90,
+            "type_fields": true,
+            "special_field": "",
+            "variant_metafield_label": "Max Pressure",
+            "variant_metafield_namespace": "custom",
+            "variant_metafield_key": "max_pressure"
           }
         }
       },
