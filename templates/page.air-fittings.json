@@ -749,6 +749,7 @@
             "highlight_variant": false,
             "variant_title": true,
             "variant_image": true,
+            "variant_image_size": 240,
             "type_fields": false,
             "special_field": ""
           }
