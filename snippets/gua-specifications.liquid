@@ -490,8 +490,8 @@
                   {% endif %}
                   {%- if has_variant_metafield -%}
                     <td>
-                      {%- assign metafield_value = variant.metafields[metafield_namespace][metafield_key] -%}
-                      {%- assign metafield_value = variant.metafields['custom']['fits_field_for_pages'] -%}
+                      {%- assign metafield_value = currentVariant.metafields[metafield_namespace][metafield_key] -%}
+                      {%- assign metafield_value = currentVariant.metafields['custom']['fits_field_for_pages'] -%}
                       {{ metafield_value | default: '-' }}
                     </td>
                   {%- endif -%}                  
