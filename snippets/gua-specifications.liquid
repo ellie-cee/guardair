@@ -361,13 +361,13 @@
                     (lbs)
                   </th>
                 {% endif %}
-                {% if show_extra_fields == true %}
+                {% if show_extra_fields == true and 1 == 2%}
                   <th width="6%">
                     {{  extra_field }}
                   </th>
                 {% endif %}
                 {%- if has_variant_metafield and block.settings.special_field != blank -%}
-                    <th>{{ block.settings.special_field }}</th>
+                    <th width="6%">{{ block.settings.special_field }}</th>
                   {%- endif -%}              
 
               </tr>
