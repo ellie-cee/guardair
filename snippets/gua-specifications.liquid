@@ -430,7 +430,8 @@
                   {% endif %}
 
                     {% if show_image == true %}
-                    <td width="10%">{{ currentProduct.featured_image | image_url:width:90 | image_tag }}</td>
+                      {% assign img_size = block.settings.variant_image_size | default: 90 %}
+                    <td width="10%">{{ currentProduct.featured_image | image_url:width:img_size | image_tag }}</td>
                     {% endif %}  
 
                   {% if show_flow == true and show_type_fields %}
