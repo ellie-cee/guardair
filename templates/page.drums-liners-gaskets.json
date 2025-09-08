@@ -25,28 +25,28 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "",
-            "text": "<ul><li><a href=\"#standard-vacuum-drums\" title=\"Standard Vacuum Drums\"><strong>Standard Vacuum Drums</strong></a></li><li><a href=\"#atex-vacuum-drums\" title=\"ATEX Vacuum Drums\"><strong>ATEX Vacuum Drums</strong></a></li></ul>",
+            "title": "Standard Vacuum Drums",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "#standard-vacuum-drums"
           }
         },
         "column_maxCzi": {
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "",
-            "text": "<ul><li><a href=\"#disposable-drum-liners\" title=\"Disposable Drum Liners\"><strong>Disposable Drum Liners</strong></a></li><li><a href=\"#reusable-drum-liners\" title=\"Reusable Drum Liners\"><strong>Reusable Drum Liners</strong></a></li></ul>",
+            "title": "Disposable Drum Liners",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "#disposable-drum-liners"
           }
         },
         "column_q47tcz": {
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "",
-            "text": "<ul><li><a href=\"#vacuum-lid-gaskets\" title=\"Vacuum Lid Gaskets\"><strong>Vacuum Lid Gaskets</strong></a></li></ul>",
+            "title": "Vacuum Lid Gaskets",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -93,7 +93,7 @@
         "description": "",
         "image_width": "full",
         "image_ratio": "adapt",
-        "image_valign": "start",
+        "image_valign": "center",
         "ptitle_fix": "none",
         "pdesc": false,
         "pdesc_shorten": 0,
@@ -103,7 +103,7 @@
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
