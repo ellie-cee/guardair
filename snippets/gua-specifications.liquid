@@ -361,13 +361,13 @@
                     (lbs)
                   </th>
                 {% endif %}
-                {% if show_extra_fields == true and 1 == 2%}
+                {% if show_extra_fields == true %}
                   <th width="6%">
                     {{  extra_field }}
                   </th>
                 {% endif %}
-                {%- if has_variant_metafield and block.settings.special_field != blank -%}
-                    <th width="6%">{{ block.settings.special_field }}</th>
+                {%- if has_variant_metafield and block.settings.variant_metafield_label != blank -%}
+                    <th width="6%">{{ block.settings.variant_metafield_label }}</th>
                   {%- endif -%}              
 
               </tr>
@@ -384,7 +384,7 @@
                           {% if currentVariant.metafields.custom.max_pressure.value != blank %}
                               {% assign show_maxpressure = true %}
                           {% endif %}
-                          {% if show_extra_fields and 1 == 2 %}
+                          {% if show_extra_fields %}
                             {% capture clean_title %}{% render 'gua-title_v3',product:currentProduct, text_style:'basic' %}{% endcapture %}
                             {% assign clean_title = clean_title | strip %}
                             {% assign extra_value = currentProduct.title | remove: clean_title | remove: '- ' %}
