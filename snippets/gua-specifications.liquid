@@ -217,6 +217,16 @@
   {% assign show_spec = true %}
 {% endif %}
 
+{%- liquid
+  assign has_variant_metafield = false
+  assign metafield_namespace = block.settings.variant_metafield_namespace
+  assign metafield_key = block.settings.variant_metafield_key
+  
+  if metafield_namespace != blank and metafield_key != blank
+    assign has_variant_metafield = true
+  endif
+-%}
+
 {% if show_spec or show_basics %}
 <hr><div class="specifications-table page-width">
   {% if section.settings.specifications_heading %}<h2>{{ section.settings.specifications_heading }}</h2>{% endif %}
@@ -356,6 +366,9 @@
                     {{  extra_field }}
                   </th>
                 {% endif %}
+                {%- if has_variant_metafield and block.settings.special_field != blank -%}
+                    <th>{{ block.settings.special_field }}</th>
+                  {%- endif -%}              
 
               </tr>
             </thead>
@@ -474,7 +487,13 @@
                     <td>
                       <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
                     </td>
-                  {% endif %}                  
+                  {% endif %}
+                  {%- if has_variant_metafield -%}
+                    <td>
+                      {%- assign metafield_value = variant.metafields[metafield_namespace][metafield_key] -%}
+                      {{ metafield_value | default: '-' }}
+                    </td>
+                  {%- endif -%}                  
                   {% if show_dimensions == true %}
                     <td>
                       <span class="td-value">
