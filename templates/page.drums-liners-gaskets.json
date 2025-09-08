@@ -337,6 +337,60 @@
         "padding_bottom": 100,
         "anchor_id": "vacuum-lid-gaskets"
       }
+    },
+    "gua_featured_product_qDHixq": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "title_bkLaan": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_iPNLWV": {
+          "type": "text",
+          "settings": {
+            "text": "Vacuum Lid Gaskets",
+            "text_style": "heading"
+          }
+        },
+        "specifications_kbyXG7": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false,
+            "variant_title": true,
+            "variant_image": true,
+            "type_fields": true,
+            "special_field": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_bkLaan",
+        "text_iPNLWV",
+        "specifications_kbyXG7"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "55-gallon-drum-lid-gasket",
+        "ptitle_fix": "none",
+        "color_scheme": "",
+        "secondary_background": false,
+        "alt_image": false,
+        "media_size": "medium",
+        "hide_image": true,
+        "stack_image": true,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "enable_video_looping": false,
+        "hide_variants": false,
+        "unique_id": "vacuum-lid-gaskets",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -346,6 +400,7 @@
     "2d86d457-3cdc-47f4-be13-8986689d0282",
     "e03db847-2fbf-4f99-abb1-8b8401d38a87",
     "f3aa3894-0498-4d96-b9ac-8f3f20dd3b72",
-    "de87c53b-8ce9-4740-a953-ced631946aa9"
+    "de87c53b-8ce9-4740-a953-ced631946aa9",
+    "gua_featured_product_qDHixq"
   ]
 }
