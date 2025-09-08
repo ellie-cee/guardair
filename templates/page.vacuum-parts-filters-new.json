@@ -1,8 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "settings": {
+        "show_title": true,
+        "show_breadcrumbs": true,
         "padding_top": 28,
         "padding_bottom": 0
       }
@@ -17,7 +28,7 @@
         "@media (max-width: 768px) {.button-container {flex-direction: column; gap: 8px; } .link-button {flex: none; width: auto; }}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"page-width button-container\">\n\n<div class=\"link-button\"><a title=\"PowerQUAD Vacuum Filters\" href=\"#powerquad-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">PowerQUAD™ Vacuum Filters<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Vertical Mount Vac & Contain-It Kit Filters\" href=\"#vertical-mount-contain-kit-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Vertical Mount & Contain-It Kit Filters<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Legacy Standard & NED Vacuum Filters\" href=\"#legacy-standard-ned-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Legacy Standard & NED Vacuum Filters<\/span>\n<\/button><\/a><\/div>\n\n<div class=\"link-button\"><a title=\"Legacy ATEX Vacuum Filters\" href=\"#legacy-atex-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Legacy ATEX Vacuum Filters<\/span>\n<\/button><\/a><\/div>\n\n<\/div>",
+        "custom_liquid": "<div class=\"page-width button-container\">\n\n<div class=\"link-button\"><a title=\"PowerQUAD Vacuum Filters\" href=\"#powerquad-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">PowerQUAD™ Vacuum Filters</span>\n</button></a></div>\n\n<div class=\"link-button\"><a title=\"Vertical Mount Vac & Contain-It Kit Filters\" href=\"#vertical-mount-contain-kit-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Vertical Mount & Contain-It Kit Filters</span>\n</button></a></div>\n\n<div class=\"link-button\"><a title=\"Legacy Standard & NED Vacuum Filters\" href=\"#legacy-standard-ned-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Legacy Standard & NED Vacuum Filters</span>\n</button></a></div>\n\n<div class=\"link-button\"><a title=\"Legacy ATEX Vacuum Filters\" href=\"#legacy-atex-filters\"> <button type=\"button\" class=\"column-button\">\n<span class=\"line-1\">Legacy ATEX Vacuum Filters</span>\n</button></a></div>\n\n</div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 16
@@ -255,6 +266,53 @@
         "padding_bottom": 100,
         "anchor_id": "legacy-atex-filters"
       }
+    },
+    "gua_featured_product_hDm6PA": {
+      "type": "gua-featured-product",
+      "blocks": {
+        "title_6Ga9FL": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "specifications_gnXAGk": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": false,
+            "variant_title": true,
+            "variant_image": true,
+            "type_fields": true,
+            "special_field": "Fits",
+            "variant_metafield_namespace": "",
+            "variant_metafield_key": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_6Ga9FL",
+        "specifications_gnXAGk"
+      ],
+      "name": "GUA Featured Product",
+      "settings": {
+        "product": "standard-cartridge-filter",
+        "ptitle_fix": "none",
+        "color_scheme": "",
+        "secondary_background": false,
+        "alt_image": false,
+        "media_size": "medium",
+        "hide_image": true,
+        "stack_image": true,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "enable_video_looping": false,
+        "hide_variants": false,
+        "unique_id": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -263,6 +321,7 @@
     "four_table_product_zeNfDE",
     "four_table_product_jUq9BQ",
     "four_table_product_aB87Fc",
-    "four_table_product_RwfPh3"
+    "four_table_product_RwfPh3",
+    "gua_featured_product_hDm6PA"
   ]
 }
