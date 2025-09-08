@@ -284,8 +284,8 @@
             "variant_image": true,
             "type_fields": true,
             "special_field": "Fits",
-            "variant_metafield_namespace": "",
-            "variant_metafield_key": ""
+            "variant_metafield_namespace": "custom",
+            "variant_metafield_key": "fits_field_for_pages"
           }
         }
       },
