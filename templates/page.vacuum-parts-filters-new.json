@@ -316,20 +316,31 @@
     },
     "gua_featured_collection_slider_3tihRe": {
       "type": "gua-featured-collection-slider",
+      "blocks": {
+        "product_gceqhx": {
+          "type": "product",
+          "settings": {
+            "additional_product": "powerquad-standard-filter"
+          }
+        }
+      },
+      "block_order": [
+        "product_gceqhx"
+      ],
       "name": "GUA Featured collection with image",
       "settings": {
-        "title": "Featured collection",
+        "collection": "",
+        "title": "PowerQUAD™ Vacuum Filters",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection_image": "no_image",
         "disable_mobile_image": true,
-        "collection": "",
         "products_to_show": 4,
         "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
+        "full_width": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
