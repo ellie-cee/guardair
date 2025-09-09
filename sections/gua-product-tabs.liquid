@@ -204,13 +204,6 @@
               <li>{{ text }}</li>
             {% endfor %}
           </ul>
-          {% comment %}
-            {% for text in varinat_featured %}
-              <li>
-                {{ text }}
-              </li>
-            {% endfor %}
-          {% endcomment %}
         </div>
       {% endif %}
     {% endfor %}
@@ -564,33 +557,52 @@
               <div id="tab{{ forloop.index }}" class="tab-content">              
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
               </div>
+
             {%- when 'product_description' -%}
-              <div id="tab{{ forloop.index }}" class="tab-content">                
-                <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
+              <div id="tab{{ forloop.index }}" class="tab-content">    
+                <div id="details-left">            
+                      <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
 
-                    {%- if product.description != blank  -%}                 
-                      <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
-                    {% endif %}                                         
-                </div> 
-                {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
-                      <div id="tab8" class="tab-content">
-                        <p>
-                          <img
-                            src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
-                            alt=""
-                            width="32"
-                            height="29"
+                          {%- if product.description != blank  -%}                 
+                            <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
+                          {% endif %}                                         
+                      </div> 
+                </div>
+                <div id="details-right">
+                    {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
+                          <div id="tab8" class="tab-content">
+                            <p>
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
+                                alt=""
+                                width="32"
+                                height="29"
 
-                          >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
-                            {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
-                          </a>
-                        </p>
-                      </div>
-                {% endif %}         
-                
-                {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
-                      {{ product.metafields.custom.delivery_time.value }}
-                {%  endif %}
+                              >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
+                                {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
+                              </a>
+                            </p>
+                          </div>
+                    {% endif %}         
+                    
+                    {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
+                          <h3>Lead Time</h3>                      
+                          {{ product.metafields.custom.delivery_time.value }}
+                    {%  endif %}
+
+                      {%- for variant in product.variants -%}
+                        {% if variant.metafields.custom.featured.value != blank %}
+                          <h3>Features</h3>
+                            <ul>
+                              {%- assign current_variant = product.selected_or_first_available_variant -%}
+
+                              {% for text in variant.metafields.custom.featured.value %}
+                                <li>{{ text }}</li>
+                              {% endfor %}
+                            </ul>
+                        {% endif %}
+                      {% endfor %}                    
+                </div>
               </div>
 
             {%- when 'custom_text' -%}
