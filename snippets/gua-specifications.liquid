@@ -380,9 +380,9 @@
                           {% assign handle = entry.handle %}
                           {% assign currentProduct = all_products[handle] %}       
                           {% assign currentVariant = currentProduct.selected_or_first_available_variant %}    
-                          
+                          {{ currentVarian.title }}
                           {% if currentVariant.metafields.custom.max_pressure.value != blank %}
-                              {% assign show_maxpressure = true %}{{ currentVariant.metafields.custom.max_pressure.value }}
+                              {% assign show_maxpressure = true %} 
                           {% endif %}
                           {% if show_extra_fields %}
                             {% capture clean_title %}{% render 'gua-title_v3',product:currentProduct, text_style:'basic' %}{% endcapture %}
