@@ -395,7 +395,7 @@
                 <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}" data-handle="{{ forloop.index}} {{ currentProduct.sku }}--{{ currentVariant.sku }}">
                   {% if show_part_number == true and currentVariant.sku %}
                     <td>
-                      <span class="td-value td-noBr here"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
+                      <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
                     </td>
                   {% elsif show_part_number == true %}
                     <td>
@@ -427,7 +427,7 @@
                   {% endif %}                    
                   {% if show_inlet_connection == true and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'</span>
+                      <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'here</span>
                     </td>
                   {% endif %}
 
