@@ -423,7 +423,7 @@
 
               {%- when 'rating' -%}
                 <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
-                          <h3 class="h2">Reviews</h3>                       
+                          <h3 class="h2 tab-heading">Reviews</h3>                       
                     <div id="klaviyo-reviews-all" data-id="{{ product.id }}"></div>
                     </div>
 
@@ -535,7 +535,7 @@
 
             {%- when 'custom_text' -%}
               <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">    
-                      <h3>TITLE</h3>              
+                  <h3 class="h2 tab-heading">TITLE</h3>              
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
                       {{ block.settings.custom_text }}
                   </p>    
@@ -545,7 +545,7 @@
                   {%- for variant in product.variants limit: 1 -%}
                   {% if variant.metafields.custom.replacement_parts.value != blank and block.settings.show_parts %}
               <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
-                      <h3>Replacement Parts</h3>
+                  <h3 class="h2 tab-heading">Replacement Parts</h3>
                       <ul>
                         {%- for variant in product.variants -%}
                           {%- assign current_variant = product.selected_or_first_available_variant -%}
