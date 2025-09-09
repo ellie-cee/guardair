@@ -461,10 +461,11 @@
                     <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                       <div class="grid__item">
                             {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
+                              {%  assign tab_title = "Prop. 65 Warning" %}
                             <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
                             <details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.first %}open{% endif %}>
                               <summary id="Summary-{{ block.id }}-{{ section.id }}">{% render 'icon-accordion', icon: block.settings.icon %}
-                                <h3 class="accordion__title inline-richtext h4">{{ block.settings.heading | default: block.settings.page.title | escape }}</h3>{% render 'icon-caret' %}
+                                <h3 class="accordion__title inline-richtext h4">{{ tab_title }}</h3>{% render 'icon-caret' %}
                               </summary>
                               <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
                                   <p>
