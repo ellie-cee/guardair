@@ -624,8 +624,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Hide all tab contents
     tabContents.forEach(content => {
-      content.style.display = 'none';
-      content.classList.remove('active');
+      content.classList.add('tab-hidden');
+      content.classList.remove('active', 'tab-visible');
     });
     
     // Add active class to clicked tab list item
@@ -640,8 +640,8 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Found content:', activeContent);
     
     if (activeContent) {
-      activeContent.style.display = 'block';
-      activeContent.classList.add('active');
+      activeContent.classList.remove('tab-hidden');
+      activeContent.classList.add('active', 'tab-visible');
       console.log('Set display to block for:', activeContent);
     } else {
       console.log('No content found for tab:', targetTab);
