@@ -380,7 +380,7 @@
                           {% assign handle = entry.handle %}
                           {% assign pid = entry.id %}
                           {% assign currentProduct = all_products[handle] %}
-                          {% if currentProduct.sku == blank  %}{{ pid }}{% assign currentProduct = entry %}{{ entry.title }}{% endif %}
+                          {% if currentProduct.sku == blank  %}{% assign currentProduct = entry %}{% endif %}
                           {% assign currentVariant = currentProduct.selected_or_first_available_variant %}    
                           
                           {% if currentVariant.metafields.custom.max_pressure.value != blank %}
