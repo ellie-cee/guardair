@@ -176,7 +176,7 @@
         {%- case block.type -%}
               {%- when '@app' -%}
                 <li><a href="#tab-{{ forloop.index }}">App{{  block.title }}</a></li>
-              {%- when 'description' -%}
+              {%- when 'product_description' -%}
                 <li><a href="#tab-{{ forloop.index }}">Product Details</a></li>                     
               {%- when 'custom_liquid' -%}
                 <li><a href="#tab-{{ forloop.index }}">Custom {{ block.title }}</a></li>
