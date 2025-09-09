@@ -153,9 +153,6 @@
         "product_description_gxqeth": {
           "type": "product_description",
           "settings": {
-            "alt_desc": false,
-            "pdesc_para": 0,
-            "pdesc_shorten": 0,
             "font_style": "inline-richtext",
             "show_propwarning": true,
             "show_leadtime": true
@@ -175,6 +172,10 @@
             "variant_metafield_key": ""
           }
         },
+        "parts_ynQeCi": {
+          "type": "parts",
+          "settings": {}
+        },
         "rating_fnx9yp": {
           "type": "rating",
           "settings": {}
@@ -183,6 +184,7 @@
       "block_order": [
         "product_description_gxqeth",
         "specifications_gVXQmL",
+        "parts_ynQeCi",
         "rating_fnx9yp"
       ],
       "name": "GUA Product Tabs",
