@@ -101,7 +101,15 @@
             {%- for block in section.blocks -%}
               {% if block.settings.row_content_variant %}
                 {% assign metafield_namespace = block.settings.row_content_variant | split:'.' | first %}
-                {% assign metafield_key = block.settings.row_content_variant | split:'.' | last %}  
+                {% assign metafield_key = block.settings.row_content_variant | split:'.' | last %} 
+                    {% if metafield_namespace %}{% capture variant_content %}{%- for variant in product.variants -%}
+                         {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
+                        {% if metafield.value != blank %}
+                            <ul>{% for text in metafield.value.value %}
+                                <li>{{ text }}</li>
+                              {% endfor %}</ul>
+                        {% endif %}
+                      {% endfor %}{% endcapture %}{% endif %}  
               {% endif %}
               <div
                 class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
@@ -143,16 +151,7 @@
                     {%- endif -%}
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
-                    {% if metafield_namespace %}{%- for variant in product.variants -%}
-                         {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
-                      {{ metafield.value | default: '-' }}
-                        {% if metafield.value != blank %}
-                          <h3>{{ metafield.label }}</h3>
-                            <ul>{% for text in metafield.value.value %}
-                                <li>{{ text }}</li>
-                              {% endfor %}</ul>
-                        {% endif %}
-                      {% endfor %}{% endif %}   
+                    {{ variant_content }}
                   </div>
                 </details>
               </div>
