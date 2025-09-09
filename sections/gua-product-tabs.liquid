@@ -443,6 +443,19 @@
                             <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
                           {% endif %}                                         
                       </div> 
+                          {% if operation_manual_url != blank or sell_sheet_url != blank %}
+                          <h3 class="h2 tab-heading">Documents</h3>          
+                          <ul>
+                            {% if operation_manual_url != blank %}
+                              <li>
+                                <a href="{{ operation_manual_url }}" target="_blank">Operating Instructions</a>
+                              </li>
+                            {% endif %}
+                            {% if sell_sheet_url != blank %}
+                              <li><a href="{{ sell_sheet_url }}" target="_blank">Sell Sheet</a></li>
+                            {% endif %}
+                          </ul>
+                      {% endif %}
                 </div>
                 <div id="details-right">
                     {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
@@ -565,22 +578,6 @@
 
             {%- endcase -%}
           {% endfor %}
-    {% if operation_manual_url != blank or sell_sheet_url != blank %}
-      <div id="tab4" class="tab-content">
-        <ul>
-          {% if operation_manual_url != blank %}
-            <li>
-              <a href="{{ operation_manual_url }}" target="_blank">Operating Instructions</a>
-            </li>
-          {% endif %}
-          {% if sell_sheet_url != blank %}
-            <li><a href="{{ sell_sheet_url }}" target="_blank">Sell Sheet</a></li>
-          {% endif %}
-        </ul>
-      </div>
-    {% endif %}
-  
-
 
     </div>
     
