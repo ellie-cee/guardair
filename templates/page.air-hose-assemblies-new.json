@@ -305,9 +305,9 @@
             "variant_image_size": 90,
             "type_fields": true,
             "special_field": "",
-            "variant_metafield_label": "Max Pressure",
-            "variant_metafield_namespace": "custom",
-            "variant_metafield_key": "max_pressure"
+            "variant_metafield_label": "",
+            "variant_metafield_namespace": "",
+            "variant_metafield_key": ""
           }
         }
       },
