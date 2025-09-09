@@ -319,7 +319,7 @@
       "name": "GUA Featured Product",
       "settings": {
         "product": "static-conductive-air-hose-assembly-3-8-id-x-12",
-        "ptitle_fix": "basic",
+        "ptitle_fix": "none",
         "color_scheme": "",
         "secondary_background": false,
         "alt_image": false,
