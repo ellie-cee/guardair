@@ -458,8 +458,8 @@
                       {% endif %}
                 </div>
                 <div id="details-right" class="grid__item">
-                    <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                       {% if 1 == 4 %}
+                       <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                       <div class="grid__item">
                             {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
                               {%  assign tab_title = "Prop. 65 Warning" %}
@@ -485,7 +485,7 @@
                           </div>
                           {% endif %}  
                         </div>
-                      </div>
+                      </div></div>
                     {% endif %}
 
                     {% if block.settings.include_collapsible_tabs %}
@@ -565,7 +565,7 @@
                         {% endfor %}                    
                 </div>
               </div>
-            </div>
+
           {% endif %}
 
             {%- when 'custom_text' -%}
