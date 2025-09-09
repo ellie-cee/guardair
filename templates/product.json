@@ -161,10 +161,6 @@
             "show_leadtime": true
           }
         },
-        "rating_fnx9yp": {
-          "type": "rating",
-          "settings": {}
-        },
         "specifications_gVXQmL": {
           "type": "specifications",
           "settings": {
@@ -178,12 +174,16 @@
             "variant_metafield_namespace": "",
             "variant_metafield_key": ""
           }
+        },
+        "rating_fnx9yp": {
+          "type": "rating",
+          "settings": {}
         }
       },
       "block_order": [
         "product_description_gxqeth",
-        "rating_fnx9yp",
-        "specifications_gVXQmL"
+        "specifications_gVXQmL",
+        "rating_fnx9yp"
       ],
       "name": "GUA Product Tabs",
       "settings": {
