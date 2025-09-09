@@ -150,6 +150,19 @@
     "gua_product_tabs_6VXzLn": {
       "type": "gua-product-tabs",
       "blocks": {
+        "product_description_gxqeth": {
+          "type": "product_description",
+          "settings": {
+            "alt_desc": false,
+            "pdesc_para": 0,
+            "pdesc_shorten": 0,
+            "font_style": "inline-richtext"
+          }
+        },
+        "rating_fnx9yp": {
+          "type": "rating",
+          "settings": {}
+        },
         "specifications_gVXQmL": {
           "type": "specifications",
           "settings": {
@@ -166,6 +179,8 @@
         }
       },
       "block_order": [
+        "product_description_gxqeth",
+        "rating_fnx9yp",
         "specifications_gVXQmL"
       ],
       "name": "GUA Product Tabs",
