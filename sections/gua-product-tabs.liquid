@@ -191,19 +191,6 @@
               {% endcase %}
       {% endfor %}
 
-
-
-      {% if product.metafields.custom.delivery_time.value != blank %}
-      <li><a href="#tab7">Lead Time</a></li>
-    {% endif %}
-
-    
-    {%- comment -%}
-      <li><a href="#tab7">Reviews</a></li>
-    {%- endcomment -%}
-    {% if warning65_text != blank and warning65_url != blank %}
-      <li><a href="#tab8">Prop. 65 Warning</a></li>
-    {% endif %}
   </ul></div>
   <!-- END tabs-nav -->
   <div class="itg_variant_data hide">
@@ -609,7 +596,11 @@
                           </a>
                         </p>
                       </div>
-                    {% endif %}                   
+                {% endif %}         
+                
+                {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
+                      {{ product.metafields.custom.delivery_time.value }}
+                {%  endif %}
 
             {%- when 'custom_text' -%}
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
@@ -948,7 +939,13 @@
               "id": "show_propwarning",
               "label": "Show Proposition 65 Warning",
               "info": "Tied to product metafield"
-            }
+            },
+            {
+              "type": "checkbox",
+              "id": "show_leadtime",
+              "label": "Show Lead Time",
+              "info": "Tied to product metafield custom.delivery_time"
+            }            
       ]
     },    
     {
