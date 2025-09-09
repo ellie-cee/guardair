@@ -737,6 +737,49 @@
 
       ],
       "blocks":[
+        {
+      "type": "product_description",
+      "name": "Product Description",
+      "limit": 1,
+      "settings": [           
+            {
+              "type": "select",
+              "id": "font_style",
+              "options": [
+                {
+                  "value": "inline-richtext",
+                  "label": "Default"
+                },
+                {
+                  "value": "plain-with-buttons",
+                  "label": "Plain with Buttons"
+                },        
+                {
+                  "value": "blue-subtitle",
+                  "label": "Blue Subtitles"
+                }
+              ],
+              "default": "inline-richtext",
+              "label": "Font Style"
+            },
+            {
+              "type": "header",
+              "content": "Accordion Content"
+            },  
+            {
+              "type": "checkbox",
+              "id": "show_propwarning",
+              "label": "Show Proposition 65 Warning",
+              "info": "Tied to product metafield"
+            },
+            {
+              "type": "checkbox",
+              "id": "show_leadtime",
+              "label": "Show Lead Time",
+              "info": "Tied to product metafield custom.delivery_time"
+            }            
+      ]
+    },         
           {
             "type": "specifications",
             "name": "Specifications",
@@ -875,76 +918,7 @@
           "label": "t:sections.featured-product.blocks.text.settings.text_style.label"
         }
       ]
-    },    
-        {
-      "type": "product_description",
-      "name": "Product Description",
-      "limit": 1,
-      "settings": [
-            {
-              "type": "checkbox",
-              "id": "alt_desc",
-              "label": "Override product description when metafield present",
-              "info": "product.metafields.custom.grid_description"
-            },        
-            {
-              "type": "range",
-              "id": "pdesc_para",
-              "min": 0,
-              "max": 2,
-              "step": 1,
-              "label": "Trim Description to X paragraphs.  0 for full.",
-              "default": 0,
-              "info":"Only use this or sentences, not both"
-            },
-            {
-              "type": "range",
-              "id": "pdesc_shorten",
-              "min": 0,
-              "max": 2,
-              "step": 1,
-              "label": "Trim Description to X sentences.  0 for full.",
-              "default": 0,
-              "info":"Only use this or paragraphs, not both"
-            },            
-            {
-              "type": "select",
-              "id": "font_style",
-              "options": [
-                {
-                  "value": "inline-richtext",
-                  "label": "Default"
-                },
-                {
-                  "value": "plain-with-buttons",
-                  "label": "Plain with Buttons"
-                },        
-                {
-                  "value": "blue-subtitle",
-                  "label": "Blue Subtitles"
-                }
-              ],
-              "default": "inline-richtext",
-              "label": "Font Style"
-            },
-            {
-              "type": "header",
-              "content": "Accordion Content"
-            },  
-            {
-              "type": "checkbox",
-              "id": "show_propwarning",
-              "label": "Show Proposition 65 Warning",
-              "info": "Tied to product metafield"
-            },
-            {
-              "type": "checkbox",
-              "id": "show_leadtime",
-              "label": "Show Lead Time",
-              "info": "Tied to product metafield custom.delivery_time"
-            }            
-      ]
-    },    
+    },      
     {
       "type": "custom_text",
       "name": "Custom Text",
