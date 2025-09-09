@@ -414,7 +414,7 @@
     {% endif %}
 
       {%- for block in section.blocks -%}
-          {% if forloop.index == 1 %}{% assign active_class = 'active' %}{% else %}{% assign active_class = '' %}{% endif %}
+          {% if forloop.index == 1 %}{% assign display = 'block' %}{% else %}{% assign display = 'none' %}{% endif %}
         {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
@@ -467,7 +467,7 @@
               </div>
 
             {%- when 'product_description' -%}
-              <div id="tab{{ forloop.index }}"  class="tab-content{{ active_class }} product-details">    
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content product-details" style="display: {{ display }};">    
                 <div id="details-left">
                   <h2 class="h1">Product Details</h2>
                       <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
