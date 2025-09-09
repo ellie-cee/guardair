@@ -562,6 +562,7 @@
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
             </div>
             {%- when 'product_description' -%}
+              <div id="tab{{ forloop.index }}" class="tab-content">                
                 <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
 
                 {%- if product.description != blank and product.description or block.settings.alt_desc == true -%}
@@ -602,7 +603,7 @@
                 {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
                       {{ product.metafields.custom.delivery_time.value }}
                 {%  endif %}
-
+              </div>
             {%- when 'custom_text' -%}
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
                       {{ block.settings.custom_text }}
