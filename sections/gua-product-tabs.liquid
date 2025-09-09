@@ -636,8 +636,57 @@
   });
 </script>
 
-<!-- END tabs-content -->
-<!-- END tabs -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const tabsNav = document.querySelector('#tabs-nav');
+  
+  if (!tabsNav) return;
+  
+  const tabButtons = tabsNav.querySelectorAll('[data-tab]');
+  const tabContents = document.querySelectorAll('[data-tab-content]');
+  
+  function switchTab(targetTab) {
+    // Remove active class from all tab buttons
+    tabButtons.forEach(button => {
+      button.classList.remove('active');
+    });
+    
+    // Hide all tab contents
+    tabContents.forEach(content => {
+      content.style.display = 'none';
+      content.classList.remove('active');
+    });
+    
+    // Add active class to clicked tab button
+    const activeButton = tabsNav.querySelector(`[data-tab="${targetTab}"]`);
+    if (activeButton) {
+      activeButton.classList.add('active');
+    }
+    
+    // Show corresponding tab content
+    const activeContent = document.querySelector(`[data-tab-content="${targetTab}"]`);
+    if (activeContent) {
+      activeContent.style.display = 'block';
+      activeContent.classList.add('active');
+    }
+  }
+  
+  // Add click event listeners to all tab buttons
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetTab = this.getAttribute('data-tab');
+      switchTab(targetTab);
+    });
+  });
+  
+  // Initialize first tab as active on page load
+  if (tabButtons.length > 0) {
+    const firstTab = tabButtons[0].getAttribute('data-tab');
+    switchTab(firstTab);
+  }
+});
+</script>
 
 
 {% schema %}
