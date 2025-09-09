@@ -12,25 +12,25 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
         "custom_liquid_pDMckf": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "Part Number: {{ product.selected_or_first_available_variant.sku }}"
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "klaviyo_reviews_average_rating_KHihtJ": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
             "product": "{{product}}"
           }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         },
         "ywm_toggle_yqdhWp": {
           "type": "ywm-toggle",
@@ -91,10 +91,10 @@
         }
       },
       "block_order": [
-        "title",
         "custom_liquid_pDMckf",
-        "description",
         "klaviyo_reviews_average_rating_KHihtJ",
+        "title",
+        "description",
         "ywm_toggle_yqdhWp",
         "features_JCcDdi",
         "sku_tEbYhb",
@@ -114,7 +114,7 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
-        "media_position": "left",
+        "media_position": "right",
         "enable_breadcrumbs": false,
         "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
