@@ -458,7 +458,7 @@
                     </div>
 
             {%- when 'specifications' -%}
-              <div id="tab{{ forloop.index }}" class="tab-content">              
+              <div id="tab{{ forloop.index }}" class="tab-content">   here           
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
               </div>
 
@@ -544,9 +544,34 @@
               </div>
 
             {%- when 'custom_text' -%}
+                <div id="tab{{ forloop.index }}" class="tab-content">
+                      <h3>Replacement Parts</h3>              
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
                       {{ block.settings.custom_text }}
                   </p>    
+                </div>
+
+            {%- when 'parts' -%}                  
+                  {%- for variant in product.variants limit: 1 -%}
+                  {% if variant.metafields.custom.replacement_parts.value != blank and block.settings.show_parts %}
+                    <div id="tab{{ forloop.index }}" class="tab-content">
+                      <h3>Replacement Parts</h3>
+                      <ul>
+                        {%- for variant in product.variants -%}
+                          {%- assign current_variant = product.selected_or_first_available_variant -%}
+                          {% if current_variant.title == variant.title %}
+                            {% for text in variant.metafields.custom.replacement_parts.value %}
+                              <li>
+                                {% assign clean_title = text.title | split: ' - ' | first %}
+                                <a href="{{ text.url }}" target="_blank">{{ clean_title }}</a>
+                              </li>
+                            {% endfor %}
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                    {% endif %}
+                {% endfor %}
 
             {%- endcase -%}
           {% endfor %}
@@ -579,60 +604,12 @@
               {% endif %}
             {% endfor %}
           </ul>
-          {% comment %}
-            <ul>
-              {% assign slider = product.metafields.custom.replacement_parts.value %}
-              {% for product in slider %}
-                <li>
-                  <a href="{{ product.url }}" target="_blank">{{ product.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          {% endcomment %}
+
         </div>
       {% endif %}
     {% endfor %}
-    {%- for variant in product.variants limit: 1 -%}
-      {% if variant.metafields.custom.replacement_parts.value != blank %}
-        <div id="tab6" class="tab-content">
-          <ul>
-            {%- for variant in product.variants -%}
-              {%- assign current_variant = product.selected_or_first_available_variant -%}
-              {% if current_variant.title == variant.title %}
-                {% for text in variant.metafields.custom.replacement_parts.value %}
-                  <li>
-                    {% assign clean_title = text.title | split: ' - ' | first %}
-                    <a href="{{ text.url }}" target="_blank">{{ clean_title }}</a>
-                  </li>
-                {% endfor %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
 
-        {% endif %}
-      
-    {% if product.metafields.custom.delivery_time.value != blank %}
-      <div id="tab7" class="tab-content">Lead Time: {{ product.metafields.custom.delivery_time.value }}</div>
-    {% endif %}
-        
-          
-          {% comment %}
-            <ul>
-              {% assign slider = product.metafields.custom.replacement_parts.value %}
-              {% for product in slider %}
-                <li>
-                  <a href="{{ product.url }}" target="_blank">{{ product.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          {% endcomment %}
-        
-     
-    {% endfor %}
-   {%- comment -%} <div id="tab7" class="tab-content">
-      <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>{%- endcomment -%}
-      {% comment %}<div></div>{% endcomment %}
+
     </div>
     
   </div>
