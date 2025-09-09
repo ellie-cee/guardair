@@ -173,11 +173,14 @@
 {% endif %}
 
       {%- for block in section.blocks -%}
+        {% if forloop.index == 1 %}{% assign active_class = 'active' %}{% else %}{% assign active_class = '' %}{% endif %}
         {%- case block.type -%}
               {%- when '@app' -%}
                 <li><a href="#tab{{ forloop.index }}">App{{  block.title }}</a></li>
               {%- when 'product_description' -%}
-                <li><a href="#tab{{ forloop.index }}">Product Details</a></li>                     
+                <li><button data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Tab 1</button>
+                  <a href="#tab{{ forloop.index }}">Product Details</a>
+                </li>                     
               {%- when 'custom_liquid' -%}
                 <li><a href="#tab{{ forloop.index }}">Custom {{ block.title }}</a></li>
               {%- when 'rating' -%}
