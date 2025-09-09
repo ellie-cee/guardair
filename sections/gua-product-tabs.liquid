@@ -429,7 +429,7 @@
 
             {%- when 'specifications' -%}
               <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">     
-                          <h3 class="h2">Specifications</h3>                           
+                          <h3 class="h2 tab-heading">Specifications</h3>                           
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:product,block:block %}
               </div>
 
