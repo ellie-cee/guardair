@@ -150,16 +150,20 @@
     {% if section.settings.show_specs == true %}
       <li><a href="#tab3">Specifications</a></li>
     {% endif %}
-    {%- for variant in product.variants limit: 1 -%}
-      {% if variant.metafields.custom.accessories.value != blank %}
-        <li><a href="#tab5">Accessories</a></li>
+    {% if section.settings.show_accessories %}    
+        {%- for variant in product.variants limit: 1 -%}
+          {% if variant.metafields.custom.accessories.value != blank %}
+            <li><a href="#tab5">Accessories</a></li>
+          {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if section.settings.show_parts %}
+        {%- for variant in product.variants limit: 1 -%}
+          {% if variant.metafields.custom.replacement_parts.value != blank %}
+            <li><a href="#tab6">Replacement Parts</a></li>
+          {% endif %}
+        {% endfor %}
       {% endif %}
-    {% endfor %}
-    {%- for variant in product.variants limit: 1 -%}
-      {% if variant.metafields.custom.replacement_parts.value != blank %}
-        <li><a href="#tab6">Replacement Parts</a></li>
-      {% endif %}
-    {% endfor %}
 
 
       {% if product.metafields.custom.delivery_time.value != blank %}
