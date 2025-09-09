@@ -207,6 +207,7 @@
             "heading": "Features",
             "icon": "clipboard",
             "row_content": "{{ product.metafields.custom.benefit_texts | metafield_tag }}",
+            "row_content_variant": "",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -218,6 +219,7 @@
             "heading": "Delivery Time",
             "icon": "truck",
             "row_content": "<p>{{ product.metafields.custom.delivery_time | metafield_tag }}</p>",
+            "row_content_variant": "",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -229,6 +231,7 @@
             "heading": "Prop. 65 Warning",
             "icon": "fire",
             "row_content": "<p>{{ product.metafields.custom.warning65_text.value }}</p>",
+            "row_content_variant": "",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -237,9 +240,10 @@
         "collapsible_row_YWE7PW": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Features",
             "icon": "check_mark",
             "row_content": "",
+            "row_content_variant": "custom.featured",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
