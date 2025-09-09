@@ -562,11 +562,10 @@
                               </ul>
 
                           {% endif %}
-                        {% endfor %}                    
+                        {% endfor %}         
+{% endif %}           
                 </div>
               </div>
-
-          {% endif %}
 
             {%- when 'custom_text' -%}
               <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">    
