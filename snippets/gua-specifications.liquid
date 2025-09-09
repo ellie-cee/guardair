@@ -397,15 +397,15 @@
                     </td>
                   {% elsif show_part_number == true %}
                     <td>
-                      <span class="td-value td-noBr {{ currentProduct.title }}"><a href="{{ product.url }}" title="{{ product.sku }}">{{ product.sku }}</a></span>
-                    </td>                    
-                  {% endif %}
-                {% if show_title == true %}
-                    <td width="10%">{{ currentProduct.title }}<br>                {%- if currentVariant.title == 'Default Title' -%}
+                      <span class="td-value td-noBr {{ currentProduct.title }}"><a href="{{ product.url }}" title="{{ product.sku }}">{{ product.sku }}</a><br/>{%- if currentVariant.title == 'Default Title' -%}
                   {{ currentProduct.title }}
                 {%- else -%}
                   {{ currentVariant.title }}
-                {%- endif -%}</td>
+                {%- endif -%}</span>
+                    </td>                    
+                  {% endif %}
+                {% if show_title == true %}
+                    <td width="10%">{{ currentProduct.title }}</td>
                 {% endif %}                  
                 {% if show_fittings == true and request.page_type == 'product'  and show_type_fields %} 
                     <td>
