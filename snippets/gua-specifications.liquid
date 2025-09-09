@@ -343,7 +343,7 @@
                 {% endif %}
                 {% if show_inlet_connection == true and request.page_type == 'page' and show_type_fields %}
                   <th width="7%">
-                      Outlet<br>{{ p_entries.size }}
+                      Outlet<br>
                   </th>
                 {% endif %}                
                 {% if show_fittings == true and request.page_type == 'page' and show_type_fields %}
@@ -380,7 +380,7 @@
                           {% assign handle = entry.handle %}
                           {% assign currentProduct = all_products[handle] %}       
                           {% assign currentVariant = currentProduct.selected_or_first_available_variant %}    
-                          
+                          {{ handle }}
                           {% if currentVariant.metafields.custom.max_pressure.value != blank %}
                               {% assign show_maxpressure = true %}
                           {% endif %}
