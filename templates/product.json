@@ -201,13 +201,25 @@
     "ywm_collapsible_content_with_image_hzbDHa": {
       "type": "ywm-collapsible-content-with-image",
       "blocks": {
-        "collapsible_row_TtrAtb": {
+        "collapsible_row_YWE7PW": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Features",
+            "icon": "check_mark",
+            "row_content": "",
+            "row_content_variant": "custom.featured",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_TtrAtb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Includes",
             "icon": "clipboard",
-            "row_content": "{{ product.metafields.custom.benefit_texts | metafield_tag }}",
-            "row_content_variant": "",
+            "row_content": "",
+            "row_content_variant": "custom.includes",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -236,25 +248,13 @@
             "block_image_alt": "",
             "block_image_size": "medium"
           }
-        },
-        "collapsible_row_YWE7PW": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Features",
-            "icon": "check_mark",
-            "row_content": "",
-            "row_content_variant": "custom.featured",
-            "page": "",
-            "block_image_alt": "",
-            "block_image_size": "medium"
-          }
         }
       },
       "block_order": [
+        "collapsible_row_YWE7PW",
         "collapsible_row_TtrAtb",
         "collapsible_row_YzJGQp",
-        "collapsible_row_TbGHqj",
-        "collapsible_row_YWE7PW"
+        "collapsible_row_TbGHqj"
       ],
       "name": "GUA Collapsible Content with Images",
       "settings": {
