@@ -545,12 +545,32 @@
                           </div>
                         {% endif %}
                     {% endfor %}
+
+                    {%- for variant in product.variants limit: 1 -%}
+                          {% if variant.metafields.custom.accessories.value != blank and block.settings.show_advantages %}
+                            <div id="tab5" class="tab-content">
+                              <ul>
+                                {%- for variant in product.variants -%}
+                                  {%- assign current_variant = product.selected_or_first_available_variant -%}
+                                  {% if current_variant.title == variant.title %}
+                                    {% for text in variant.metafields.custom.accessories.value %}
+                                      <li>
+                                        <a href="{{ text.url }}" target="_blank">{{ text.title }}</a>
+                                      </li>
+                                    {% endfor %}
+                                  {% endif %}
+                                {% endfor %}
+                              </ul>
+
+                            </div>
+                          {% endif %}
+                        {% endfor %}                    
                 </div>
               </div>
 
             {%- when 'custom_text' -%}
-                <div id="tab{{ forloop.index }}"  class="tab-content{{ active_class }}">    
-                      <h3>Replacement Parts</h3>              
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">    
+                      <h3>TITLE</h3>              
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
                       {{ block.settings.custom_text }}
                   </p>    
@@ -559,7 +579,7 @@
             {%- when 'parts' -%}                  
                   {%- for variant in product.variants limit: 1 -%}
                   {% if variant.metafields.custom.replacement_parts.value != blank and block.settings.show_parts %}
-                    <div id="tab{{ forloop.index }}" class="tab-content">
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">   
                       <h3>Replacement Parts</h3>
                       <ul>
                         {%- for variant in product.variants -%}
@@ -594,25 +614,7 @@
         </ul>
       </div>
     {% endif %}
-    {%- for variant in product.variants limit: 1 -%}
-      {% if variant.metafields.custom.accessories.value != blank %}
-        <div id="tab5" class="tab-content">
-          <ul>
-            {%- for variant in product.variants -%}
-              {%- assign current_variant = product.selected_or_first_available_variant -%}
-              {% if current_variant.title == variant.title %}
-                {% for text in variant.metafields.custom.accessories.value %}
-                  <li>
-                    <a href="{{ text.url }}" target="_blank">{{ text.title }}</a>
-                  </li>
-                {% endfor %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-
-        </div>
-      {% endif %}
-    {% endfor %}
+  
 
 
     </div>
@@ -758,7 +760,13 @@ document.addEventListener('DOMContentLoaded', function() {
               "id": "show_advantages",
               "label": "Show Advantages",
               "info": "Product metafield: Advantages new (custom.advantages_new)"
-            },                        
+            },   
+            {
+              "type": "checkbox",
+              "id": "show_accessories",
+              "label": "Show Accessories",
+              "info": "Product metafield: Accessories (custom.accessories)"
+            },                                 
             {
               "type": "checkbox",
               "id": "show_propwarning",
