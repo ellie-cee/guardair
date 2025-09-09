@@ -1,0 +1,971 @@
+{% assign warning65_text = product.metafields.custom.warning65_text.value %}
+{% assign warning65_url = product.metafields.custom.warning65_url.value %}
+{% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
+{% assign sell_sheet_url = product.metafields.custom.literature_sell_sheet_url.value %}
+
+
+{% if 1 == 2 %}
+          {% assign show_part_number = false %}
+          {% assign show_spec_tab = false %}
+          {% assign show_air_inlet_FNPT = false %}
+          {% assign show_air_hose_id = false %}
+          {% assign show_vacuum_flow = false %}
+          {% assign show_Vacuum_Hose_ID = false %}
+          {% assign show_steel_drum_guage = false %}
+          {% assign show_syphon_flow_rate = false %}
+          {% assign show_Inlet-Connection = false %}
+          {% assign show_output_thrust = false %}
+          {% assign show_grams = false %}
+          {% assign show_min_compressor = false %}
+          {% assign show_soil_excavation_rate = false %}
+          {% assign show_noise_level = false %}
+          {% assign show_flow = false %}
+          {% assign show_fittings = false %}
+          {% assign show_Vacuum_Lift = false %}
+          {% assign show_Dimensions = false %}
+          {% assign show_weight = false %}
+
+          {% for variant in product.variants %}
+            {% if variant.sku != blank %}
+              {% assign show_part_number = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Each-Height'].value != blank
+              and variant.metafields.global['Each-Length'].value != blank
+              and variant.metafields.global['Each-Width'].value != blank
+            %}
+              {% assign show_Dimensions = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Syphon-Flow-Rate'].value != blank %}
+              {% assign show_syphon_flow_rate = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Steel-Drum-Gauge'].value != blank %}
+              {% assign show_steel_drum_guage = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Output-Thrust'].value != blank %}
+              {% assign show_output_thrust = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Noise-Level'].value != blank %}
+              {% assign show_noise_level = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Min-Compressor-Required'].value != blank %}
+              {% assign show_min_compressor = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Inlet-Connection'].value != blank %}
+              {% assign show_Inlet-Connection = true %}
+            {% endif %}
+
+            {% if variant.metafields.global.grams.value != blank %}
+              {% assign show_grams = true %}
+            {% endif %}
+
+            {% if variant.metafields.global.Flow.value != blank %}
+              {% assign show_flow = true %}
+            {% endif %}
+
+            {% if variant.metafields.global.Fittings.value != blank %}
+              {% assign show_fittings = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Each-Weight'].value != blank %}
+              {% assign show_weight = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Air-Hose-ID'].value != blank %}
+              {% assign show_air_hose_id = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Vacuum-Lift'].value != blank %}
+              {% assign show_Vacuum_Lift = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Vacuum-Hose-ID'].value != blank %}
+              {% assign show_Vacuum_Hose_ID = true %}
+            {% endif %}
+
+            {% if variant.metafields.global['Vacuum-Flow'].value != blank %}
+              {% assign show_vacuum_flow = true %}
+            {% endif %}
+
+            {% if variant.metafields.custom.air_inlet_fnpt.value != blank %}
+              {% assign show_air_inlet_FNPT = true %}
+            {% endif %}
+
+            {% if variant.metafields.custom.soil_excavation_rate.value != blank %}
+              {% assign show_soil_excavation_rate = true %}
+            {% endif %}
+          {% endfor %}
+
+          {% if show_part_number == true
+            or show_air_inlet_FNPT == true
+            or show_min_compressor == true
+            or show_noise_level == true
+            or show_flow == true
+            or show_vacuum_flow == true
+            or show_Vacuum_Lift == true
+            or show_syphon_flow_rate == true
+            or show_steel_drum_guage == true
+            or show_output_thrust == true
+            or show_Inlet-Connection == true
+            or show_grams == true
+            or show_fittings == true
+            or show_air_hose_id == true
+            or show_Vacuum_Hose_ID == true
+            or show_soil_excavation_rate == true
+            or show_Dimensions == true
+            or show_weight == true
+          %}
+            {% assign show_spec_tab = false %}
+          {% endif %}
+{% endif %}
+
+<div class="gua_product_info itg_full_product_info--disabled">
+<div class="tabs"><div class="nav-wrapper">
+  <ul id="tabs-nav">
+    {% if 1 == 2 %}
+          {%- for variant in product.variants limit: 1 -%}
+            {% if variant.metafields.custom.advantages.value != blank %}
+              <li><a href="#tab0">Advantages</a></li>
+            {% endif %}
+          {% endfor %}
+          {%- for variant in product.variants limit: 1 -%}
+            {% if variant.metafields.custom.featured.value != blank %}
+              <li><a href="#tab1">Features</a></li>
+            {% endif %}
+          {% endfor %}
+          {%- for variant in product.variants limit: 1 -%}
+            {% if variant.metafields.custom.includes.value != blank %}
+              <li><a href="#tab2">Includes</a></li>
+            {% endif %}
+          {% endfor %}
+          {% if operation_manual_url != blank or sell_sheet_url != blank %}
+              <li><a href="#tab4">Literature</a></li>
+          {% endif %}
+    {% endif %}
+{% if 1 == 3 %}
+    {% if section.settings.show_description == true %}
+      <li><a href="#tab3">Product Details</a></li>
+    {% endif %}
+
+    {% if section.settings.show_specs == true %}
+      <li><a href="#tab3">Specifications</a></li>
+    {% endif %}
+    {% if section.settings.show_accessories %}    
+        {%- for variant in product.variants limit: 1 -%}
+          {% if variant.metafields.custom.accessories.value != blank %}
+            <li><a href="#tab5">Accessories</a></li>
+          {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if section.settings.show_parts %}
+        {%- for variant in product.variants limit: 1 -%}
+          {% if variant.metafields.custom.replacement_parts.value != blank %}
+            <li><a href="#tab6">Replacement Parts</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+{% endif %}
+
+      {%- for block in section.blocks -%}
+        {% if forloop.index == 1 %}{% assign active_class = 'active' %}{% else %}{% assign active_class = '' %}{% endif %}
+        {%- case block.type -%}
+              {%- when '@app' -%}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">App{{  block.title }}</a></li>
+              {%- when 'product_description' -%}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Product Details</li>                     
+              {%- when 'custom_liquid' -%}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Custom {{ block.title }}</a></li>
+              {%- when 'rating' -%}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Reviews</a></li>       
+              {%- when 'specifications' -%}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</a></li>         
+              {%- when 'parts' -%}
+                {% if variant.metafields.custom.replacement_parts.value %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</a></li>{% endif %}
+              {%- when 'accessories' -%}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</a></li>                                           
+              {% endcase %}
+      {% endfor %}
+
+  </ul></div>
+
+  <div id="tabs-content">
+
+
+    {% if show_spec_tab == true and 1 == 2 %}
+      <div id="tab3" class="tab-content">
+        <div class="table-container">
+          <table class="dynamic-table">
+            <thead>
+              <tr>
+                {% if show_part_number == true %}
+                  <th width="10%">Part Number</th>
+                {% endif %}
+                {% if show_fittings == true %}
+                  <th width="6%">Fittings</th>
+                {% endif %}
+                {% if show_air_hose_id == true %}
+                  <th width="7%">
+                    Air <br>
+                    Hose ID<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_Vacuum_Hose_ID == true %}
+                  <th width="8%">
+                    Vacuum <br>
+                    Hose ID<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_Inlet-Connection == true %}
+                  <th width="7%">
+                    Compressed <br>
+                    Air Inlet<br>
+                    (in)
+                  </th>
+                {% endif %}
+                {% if show_flow == true %}
+                  <th width="10%">
+                    Compressed <br>
+                    Air Usage<br>
+                    (cfm)
+                  </th>
+                {% endif %}
+                {% if show_min_compressor == true %}
+                  <th width="10%">
+                    Min. Size <br>
+                    Air Compressor<br>
+                    (hp)
+                  </th>
+                {% endif %}
+                {% if show_vacuum_flow == true %}
+                  <th width="8%">
+                    Vacuum Flow<br>
+                    (cfm)
+                  </th>
+                {% endif %}
+                {% if show_Vacuum_Lift == true %}
+                  <th width="8%">
+                    Vacuum <br>
+                    Lift<br>
+                    (in H20)
+                  </th>
+                {% endif %}
+                {% if show_syphon_flow_rate == true %}
+                  <th width="9%">
+                    Syphon <br>
+                    Flow Rate<br>
+                    (gph)
+                  </th>
+                {% endif %}
+                {% if show_output_thrust == true %}
+                  <th width="8%">
+                    Output <br>
+                    Thrust<br>
+                    (lbs)
+                  </th>
+                {% endif %}
+                {% if show_noise_level == true %}
+                  <th width="8%">
+                    Noise <br>
+                    Level<br>
+                    (dBA)
+                  </th>
+                {% endif %}
+                {% if show_steel_drum_guage == true %}
+                  <th width="8%">
+                    Min.<br>
+                    Steel Drum<br>
+                    (Gauge)
+                  </th>
+                {% endif %}
+                {% if show_Dimensions == true %}
+                  <th width="10%">
+                    Dimensions<br>
+                    (L" x W" x H")
+                  </th>
+                {% endif %}
+                {% if show_weight == true %}
+                  <th width="6%">
+                    Weight<br>
+                    (lbs)
+                  </th>
+                {% endif %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for variant in product.variants %}
+                <tr>
+                  {% if show_part_number == true %}
+                    <td>
+                      <span class="td-title">Part Number</span>
+                      <span class="td-value td-noBr">{{ variant.sku }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_fittings == true %}
+                    <td>
+                      <span class="td-title">Fittings</span>
+                      <span class="td-value td-noBr">{{ variant.metafields.global.Fittings.value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_air_hose_id == true %}
+                    <td>
+                      <span class="td-title">Air Hose ID</span>
+                      <span class="td-value">{{ variant.metafields.global['Air-Hose-ID'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Vacuum_Hose_ID == true %}
+                    <td>
+                      <span class="td-title">Vacuum Hose ID</span>
+                      <span class="td-value">{{ variant.metafields.global['Vacuum-Hose-ID'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Inlet-Connection == true %}
+                    <td>
+                      <span class="td-title">Inlet Connection</span>
+                      <span class="td-value">{{ variant.metafields.global['Inlet-Connection'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_flow == true %}
+                    <td>
+                      <span class="td-title">Flow (cfm)</span>
+                      <span class="td-value">{{ variant.metafields.global.Flow.value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_min_compressor == true %}
+                    <td>
+                      <span class="td-title">Min. Compressor Required (hp)</span>
+                      <span class="td-value">{{ variant.metafields.global['Min-Compressor-Required'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_vacuum_flow == true %}
+                    <td>
+                      <span class="td-title">Vacuum Flow (cfm)</span>
+                      <span class="td-value">{{ variant.metafields.global['Vacuum-Flow'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Vacuum_Lift == true %}
+                    <td>
+                      <span class="td-title">Vacuum Lift (in H20)</span>
+                      <span class="td-value">{{ variant.metafields.global['Vacuum-Lift'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_syphon_flow_rate == true %}
+                    <td>
+                      <span class="td-title">Syphon Flow Rate (gph)</span>
+                      <span class="td-value">{{ variant.metafields.global['Syphon-Flow-Rate'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_output_thrust == true %}
+                    <td>
+                      <span class="td-title">Output Thrust (lbs)</span>
+                      <span class="td-value">{{ variant.metafields.global['Output-Thrust'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_noise_level == true %}
+                    <td>
+                      <span class="td-title">Noise Level (dB)</span>
+                      <span class="td-value">{{ variant.metafields.global['Noise-Level'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_steel_drum_guage == true %}
+                    <td>
+                      <span class="td-title">Steel Drum Gauge</span>
+                      <span class="td-value">{{ variant.metafields.global['Steel-Drum-Gauge'].value }}</span>
+                    </td>
+                  {% endif %}
+                  {% if show_Dimensions == true %}
+                    <td>
+                      <span class="td-title"
+                        >Dimensions <br>
+                        (L" x W" x H")</span
+                      >
+                      <span class="td-value">
+                        {{-
+                          variant.metafields.global['Each-Length'].value
+                          | append: ' X '
+                          | append: variant.metafields.global['Each-Width'].value
+                          | append: ' X '
+                          | append: variant.metafields.global['Each-Height'].value
+                        -}}
+                      </span>
+                    </td>
+                  {% endif %}
+                  {% if show_weight == true %}
+                    <td>
+                      <span class="td-title">Weight (lbs)</span>
+                      <span class="td-value">{{ variant.metafields.global['Each-Weight'].value }}</span>
+                    </td>
+                  {% endif %}
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    {% endif %}
+
+      {%- for block in section.blocks -%}
+          {% if forloop.index == 1 %}{% assign display = 'block' %}{% else %}{% assign display = 'none' %}{% endif %}
+        {%- case block.type -%}
+              {%- when '@app' -%}
+                {% render block %}
+              {%- when 'custom_liquid' -%}
+                <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">                   
+                  {{ block.settings.custom_liquid }}
+                </div>
+
+              {%- when 'rating' -%}
+                <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">                       
+                    <div id="klaviyo-reviews-all" data-id="{{ product.id }}"></div>
+                    </div>
+
+            {%- when 'specifications' -%}
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">     
+                          <h3 class="h2 tab-heading">Specifications</h3>                           
+                {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:product,block:block %}
+              </div>
+
+            {%- when 'product_description' -%}
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content product-details" style="display: {{ display }};">   
+                <div class="grid grid--1-col grid--2-col-tablet">
+                <div id="details-left" class="grid__item">
+                  <h2 class="h1">Product Details</h2>
+                      <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
+
+                          {%- if product.description != blank  -%}                 
+                            <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
+                          {% endif %}                                         
+                      </div> 
+                          {% if operation_manual_url != blank or sell_sheet_url != blank %}
+                          <h3 class="h2 tab-heading">Documents</h3>          
+                          <ul>
+                            {% if operation_manual_url != blank %}
+                              <li>
+                                <a href="{{ operation_manual_url }}" target="_blank">Operating Instructions</a>
+                              </li>
+                            {% endif %}
+                            {% if sell_sheet_url != blank %}
+                              <li><a href="{{ sell_sheet_url }}" target="_blank">Sell Sheet</a></li>
+                            {% endif %}
+                          </ul>
+                      {% endif %}
+                </div>
+                <div id="details-right" class="grid__item">
+                      {% if 1 == 4 %}
+                       <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                      <div class="grid__item">
+                            {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
+                              {%  assign tab_title = "Prop. 65 Warning" %}
+                            <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
+                            <details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.first %}open{% endif %}>
+                              <summary id="Summary-{{ block.id }}-{{ section.id }}">{% render 'icon-accordion', icon: block.settings.icon %}
+                                <h3 class="accordion__title inline-richtext h4">{{ tab_title }}</h3>{% render 'icon-caret' %}
+                              </summary>
+                              <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
+                                  <p>
+                                    <img
+                                      src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
+                                      alt=""
+                                      width="32"
+                                      height="29"
+
+                                    >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
+                                      {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
+                                    </a>
+                                  </p>
+                              </div>
+                            </details>
+                          </div>
+                          {% endif %}  
+                        </div>
+                      </div></div>
+                    {% endif %}
+
+                    {% if block.settings.include_collapsible_tabs %}
+                      <div id="collapsible-tab-content"></div>
+                    {% endif %}
+                  </div>
+
+{% if 1 == 5 %}
+                    {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
+                          <h3>Lead Time</h3>                      
+                          {{ product.metafields.custom.delivery_time.value }}
+                    {%  endif %}
+
+                      {%- for variant in product.variants -%}
+                        {% if variant.metafields.custom.featured.value != blank %}
+                          <h3>Features</h3>
+                            <ul>
+                              {%- assign current_variant = product.selected_or_first_available_variant -%}
+
+                              {% for text in variant.metafields.custom.featured.value %}
+                                <li>{{ text }}</li>
+                              {% endfor %}
+                            </ul>
+                        {% endif %}
+                      {% endfor %}     
+                      
+                      {%- for variant in product.variants limit: 1 -%}
+                        {% if variant.metafields.custom.includes.value != blank and block.settings.show_includes %}
+                          <h3>Includes</h3>
+                          <ul>
+                            {%- assign current_variant = product.selected_or_first_available_variant -%}
+                            {%- for variant in product.variants -%}
+                              {% if current_variant.title == variant.title %}
+                                {% for text in variant.metafields.custom.includes.value %}
+                                  <li>{{ text }}</li>
+                                {% endfor %}
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      {% endfor %}          
+                      
+                      {%- for variant in product.variants limit: 1 -%}
+                        {% if variant.metafields.custom.advantages.value != blank and block.settings.show_advantages %}
+                          <h3>Advantages</h3>
+                          <ul>
+                              {%- assign current_variant = product.selected_or_first_available_variant -%}
+                              {%- for variant in product.variants -%}
+                                {% if current_variant.title == variant.title %}
+                                  {% for text in variant.metafields.custom.advantages.value %}
+                                    <li>{{ text }}</li>
+                                  {% endfor %}
+                                {% endif %}
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        {% endif %}
+                    {% endfor %}
+
+                    {%- for variant in product.variants limit: 1 -%}
+                          {% if variant.metafields.custom.accessories.value != blank and block.settings.show_accessories %}
+                          <h3>Accessories</h3>
+                              <ul>
+                                {%- for variant in product.variants -%}
+                                  {%- assign current_variant = product.selected_or_first_available_variant -%}
+                                  {% if current_variant.title == variant.title %}
+                                    {% for text in variant.metafields.custom.accessories.value %}
+                                      <li>
+                                        <a href="{{ text.url }}" target="_blank">{{ text.title }}</a>
+                                      </li>
+                                    {% endfor %}
+                                  {% endif %}
+                                {% endfor %}
+                              </ul>
+
+                          {% endif %}
+                        {% endfor %}         
+{% endif %}           
+                </div>
+              </div>
+
+            {%- when 'custom_text' -%}
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">    
+                  <h3 class="h2 tab-heading">TITLE</h3>              
+                  <p class="rich-text__caption" {{ block.shopify_attributes }}>
+                      {{ block.settings.custom_text }}
+                  </p>    
+                </div>
+
+            {%- when 'parts' -%}                  
+                  {%- for variant in product.variants limit: 1 -%}
+                  {% if variant.metafields.custom.replacement_parts.value != blank and block.settings.show_parts %}
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
+                  <h3 class="h2 tab-heading">Replacement Parts</h3>
+                      <ul>
+                        {%- for variant in product.variants -%}
+                          {%- assign current_variant = product.selected_or_first_available_variant -%}
+                          {% if current_variant.title == variant.title %}
+                            {% for text in variant.metafields.custom.replacement_parts.value %}
+                              <li>
+                                {% assign clean_title = text.title | split: ' - ' | first %}
+                                <a href="{{ text.url }}" target="_blank">{{ clean_title }}</a>
+                              </li>
+                            {% endfor %}
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+
+            {%- endcase -%}
+          {% endfor %}
+
+    </div>
+    
+  </div>
+</div>
+
+<script>
+/*  document.addEventListener("DOMContentLoaded", function() {
+      const table = document.querySelector(".dynamic-table");
+      const headers = table.querySelectorAll("th");
+      let visibleColumnCount = 0;
+
+      headers.forEach(header => {
+          if (window.getComputedStyle(header).display !== "none") {
+              visibleColumnCount++;
+          }
+      });
+
+      // Set a data attribute to the table for CSS targeting
+      table.setAttribute("data-column-count", visibleColumnCount);
+  });*/
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tabsNav = document.querySelector('#tabs-nav');
+  
+  if (!tabsNav) return;
+  
+  const tabItems = tabsNav.querySelectorAll('li[data-tab]');
+  const tabContents = document.querySelectorAll('[data-tab-content]');
+  
+  // Debug: Log what we found
+  console.log('Tab items found:', tabItems.length);
+  console.log('Tab contents found:', tabContents.length);
+  
+  function switchTab(targetTab) {
+    // Remove active class from all tab list items
+    tabItems.forEach(item => {
+      item.classList.remove('active');
+    });
+    
+    // Hide all tab contents
+    tabContents.forEach(content => {
+      content.classList.add('tab-hidden');
+      content.classList.remove('active', 'tab-visible');
+    });
+    
+    // Add active class to clicked tab list item
+    const activeItem = tabsNav.querySelector(`li[data-tab="${targetTab}"]`);
+    if (activeItem) {
+      activeItem.classList.add('active');
+    }
+    
+    // Show corresponding tab content
+    const activeContent = document.querySelector(`[data-tab-content="${targetTab}"]`);
+    console.log('Looking for content with data-tab-content="' + targetTab + '"');
+    console.log('Found content:', activeContent);
+    
+    if (activeContent) {
+      activeContent.classList.remove('tab-hidden');
+      activeContent.classList.add('active', 'tab-visible');
+      console.log('Set display to block for:', activeContent);
+    } else {
+      console.log('No content found for tab:', targetTab);
+    }
+  }
+  
+  // Add click event listeners to all tab list items
+  tabItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetTab = this.getAttribute('data-tab');
+      console.log('Tab clicked:', targetTab);
+      switchTab(targetTab);
+    });
+  });
+  
+  // Initialize first tab as active on page load
+  if (tabItems.length > 0) {
+    const firstTab = tabItems[0].getAttribute('data-tab');
+    switchTab(firstTab);
+  }
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sourceContent = document.getElementById('collapsible-block');
+  const targetContainer = document.getElementById('collapsible-tab-content');
+  
+  if (sourceContent && targetContainer) {
+    // Clone the content to preserve event listeners if needed
+    const clonedContent = sourceContent.cloneNode(true);
+    clonedContent.style.display = 'block';
+    clonedContent.id = 'moved-collapsible-tabs'; // Change ID to avoid duplicates
+    
+    // Move the content
+    targetContainer.appendChild(clonedContent);
+    sourceContent.style.display = 'none';
+  }
+});
+</script>
+
+{% schema %}
+  {
+    "name": "GUA Product Tabs",
+    "enabled_on": {
+      "templates": ["product"]
+    },
+   "settings": [
+        {
+          "type": "product_list",          
+          "id": "products",
+          "label": "Products",
+          "info": "Select products"
+        },
+        {
+          "id": "option_name",
+          "label": "Option Name",
+          "type": "text",
+          "default": "Extension Length"
+        }
+
+      ],
+      "blocks":[
+        {
+      "type": "product_description",
+      "name": "Product Description",
+      "limit": 1,
+      "settings": [           
+            {
+              "type": "select",
+              "id": "font_style",
+              "options": [
+                {
+                  "value": "inline-richtext",
+                  "label": "Default"
+                },
+                {
+                  "value": "plain-with-buttons",
+                  "label": "Plain with Buttons"
+                },        
+                {
+                  "value": "blue-subtitle",
+                  "label": "Blue Subtitles"
+                }
+              ],
+              "default": "inline-richtext",
+              "label": "Font Style"
+            },
+            {
+              "type": "header",
+              "content": "Accordion Content"
+            },           
+            {
+              "type": "checkbox",
+              "id": "include_collapsible_tabs",
+              "label": "Show Collapsible Tabs section",
+              "info": "Pulls from Tab Section below Product Tabs",
+              "default":false
+            },  
+            {
+              "type": "checkbox",
+              "id": "show_features",
+              "label": "Show Features",
+              "info": "Variant metafield: featured (custom.featured)"
+            },
+            {
+              "type": "checkbox",
+              "id": "show_includes",
+              "label": "Show Includes",
+              "info": "Variant metafield: includes (custom.includes)"
+            },  
+            {
+              "type": "checkbox",
+              "id": "show_advantages",
+              "label": "Show Advantages",
+              "info": "Product metafield: Advantages new (custom.advantages_new)"
+            },   
+            {
+              "type": "checkbox",
+              "id": "show_accessories",
+              "label": "Show Accessories",
+              "info": "Product metafield: Accessories (custom.accessories)"
+            },                                 
+            {
+              "type": "checkbox",
+              "id": "show_propwarning",
+              "label": "Show Proposition 65 Warning",
+              "info": "Product metafield: Warning65 Text (custom.warning65_text)"
+            },
+            {
+              "type": "checkbox",
+              "id": "show_leadtime",
+              "label": "Show Lead Time",
+              "info": "Product metafield: Delivery Time (custom.delivery_time)"
+            }             
+      ]
+    },         
+          {
+            "type": "specifications",
+            "name": "Specifications",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "checkbox",
+                "id": "highlight_variant",
+                "default": false,
+                "label": "Highlight current variant"
+              },
+              {
+                "type": "header",
+                "content": "Fields"
+              },
+              {
+                "type": "paragraph",
+                "content": "By default, the specific fields are determined by the product type.  The below fields can be added."
+              },        
+              {
+                "type": "checkbox",
+                "id": "variant_title",
+                "default": false,
+                "label": "Variant Title"
+              },
+              {
+                "type": "checkbox",
+                "id": "variant_image",
+                "default": false,
+                "label": "Variant Image"
+              },
+              {
+                "type": "range",
+                "id": "variant_image_size",
+                "default": 90,
+                "label": "Variant Image Size",
+                "min":45,
+                "max":300,
+                "step":15
+              },        
+              {
+                "type": "checkbox",
+                "id": "type_fields",
+                "default": true,
+                "label": "Show Product Type Specific Fields",
+                "info":"Example Inlet, Max Pressure, etx"
+              },
+              {
+                "type": "header",
+                "content": "Section Specific Fields"
+              },        
+              {
+                "type": "text",
+                "id": "special_field",
+                "label": "Rename Title Info",
+                "info":"Add Label for information trailing the dash in title"
+              },
+              {
+                "type": "text",
+                "id": "variant_metafield_label",
+                "label": "Variant Field Label",
+                "info":"Add Label"
+              },        
+            {
+                "type": "text",
+                "id": "variant_metafield_namespace",
+                "label": "Variant Metafield Namespace",
+                "info": "Enter the namespace for the variant metafield (e.g., 'custom' or 'app')"
+              },
+              {
+                "type": "text",
+                "id": "variant_metafield_key",
+                "label": "Variant Metafield Key",
+                "info": "Enter the key for the variant metafield (e.g., 'material' or 'weight')"
+              }        
+            ]
+          },
+    {
+      "type": "custom_liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+          "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "parts",
+      "name": "Replacement Parts",
+      "settings": [
+      ]
+    },    
+    {
+      "type": "rating",
+      "name": "t:sections.featured-product.blocks.rating.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.featured-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "@app"
+    },
+    {
+      "type": "text",
+      "name": "t:sections.featured-product.blocks.text.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "default": "Text block",
+          "label": "t:sections.featured-product.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.featured-product.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.featured-product.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "uppercase",
+              "label": "t:sections.featured-product.blocks.text.settings.text_style.options__3.label"
+            },
+            {
+              "value": "heading",
+              "label": "Heading"
+            }            
+          ],
+          "default": "body",
+          "label": "t:sections.featured-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },      
+    {
+      "type": "custom_text",
+      "name": "Custom Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "custom_text",
+          "label": "Custom Text",
+        }
+      ]
+    },    
+  ],     
+  "presets": [
+    {
+      "name": "GUA Product Tabs",
+      "category":"Guardair Catalog",
+      "blocks": [
+        {
+          "type": "product_description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
