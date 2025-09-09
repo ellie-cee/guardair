@@ -411,13 +411,14 @@
     {% endif %}
 
       {%- for block in section.blocks -%}
+          {% if forloop.index == 1 %}{% assign active_class = 'active' %}{% else %}{% assign active_class = '' %}{% endif %}
         {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'rating' -%}
-                  <div id="tab{{ forloop.index }}" class="tab-content">  
+                  <div id="tab{{ forloop.index }}" class="tab-content{{ active_class }}">    
                     {%- if product.metafields.reviews.rating.value != blank -%}
                           <div class="rating-wrapper">
                             {% liquid
@@ -458,12 +459,12 @@
                     </div>
 
             {%- when 'specifications' -%}
-              <div id="tab{{ forloop.index }}" class="tab-content">   here           
+              <div id="tab{{ forloop.index }}"  class="tab-content{{ active_class }}">             
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
               </div>
 
             {%- when 'product_description' -%}
-              <div id="tab{{ forloop.index }}" class="tab-content product-details">    
+              <div id="tab{{ forloop.index }}"  class="tab-content{{ active_class }} product-details">    
                 <div id="details-left">
                   <h2 class="h1">Product Details</h2>
                       <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
@@ -544,7 +545,7 @@
               </div>
 
             {%- when 'custom_text' -%}
-                <div id="tab{{ forloop.index }}" class="tab-content">
+                <div id="tab{{ forloop.index }}"  class="tab-content{{ active_class }}">    
                       <h3>Replacement Parts</h3>              
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
                       {{ block.settings.custom_text }}
