@@ -509,7 +509,7 @@
                       {% endfor %}     
                       
                       {%- for variant in product.variants limit: 1 -%}
-                        {% if variant.metafields.custom.includes.value != blank %}
+                        {% if variant.metafields.custom.includes.value != blank and block.settings.show_includes %}
                           <h3>Includes</h3>
                           <ul>
                             {%- assign current_variant = product.selected_or_first_available_variant -%}
@@ -525,7 +525,7 @@
                       {% endfor %}          
                       
                       {%- for variant in product.variants limit: 1 -%}
-                        {% if variant.metafields.custom.advantages.value != blank %}
+                        {% if variant.metafields.custom.advantages.value != blank and block.settings.show_advantages %}
                           <h3>Advantages</h3>
                           <ul>
                               {%- assign current_variant = product.selected_or_first_available_variant -%}
