@@ -401,7 +401,7 @@
                     </td>                    
                   {% endif %}
                 {% if show_title == true %}
-                    <td width="10%">{{ currentProduct.title }}</td>
+                    <td width="10%">{{ currentProduct.title | escape }}</td>
                 {% endif %}                  
                 {% if show_fittings == true and request.page_type == 'product'  and show_type_fields %} 
                     <td>
