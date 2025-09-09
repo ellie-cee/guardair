@@ -111,7 +111,9 @@
                         {% endif %}
                       {% endfor %}{% endcapture %}{% endif %}  
               {% endif %}
-              {% if block.settings.row_content or block.settings.page.content or variant_content %}{% else %}{% break %}{% endif %}
+              {% assign content_check = block.settings.row_content | append: block.settings.page.content | append: variant_content | strip %}
+              ---{{ content_check }}--
+              {% if content_check == '' %}{% break %}{% endif %}
                
               <div
                 class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
