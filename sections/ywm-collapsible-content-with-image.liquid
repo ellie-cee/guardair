@@ -111,8 +111,10 @@
                         {% endif %}
                       {% endfor %}{% endcapture %}{% endif %}  
               {% endif %}
-              {% assign content_check = block.settings.row_content | append: block.settings.page.content | append: variant_content | strip %}
-              ---{{ content_check }}--
+              {% assign content_check = block.settings.row_content | strip_html %}
+              {% assign content_check = content_check | append: block.settings.page.content | strip_html %}
+              {% assign content_check = content_check | append: variant_content | strip_html %}
+              {% comment %} ---{{ content_check }}-- {% endcomment %}
               {% if content_check == '' %}{% break %}{% endif %}
                
               <div
