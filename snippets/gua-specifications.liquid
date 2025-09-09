@@ -111,6 +111,8 @@
 
   {% if variant.metafields.global['Inlet-Connection'].value != blank and product.type != 'Air Hoses & Fittings' %}
     {% assign show_inlet_connection = true %}
+  {% elsif variant.metafields.global['Inlet-Connection'].value != blank and product.type == 'Air Hoses & Fittings' %}
+    {% assign show_inlet_connection = false %}    
   {% elsif variant.metafields.global['Inlet-Connection'].value != blank and request.page_type == 'page' %}
     {% assign show_inlet_connection = true %}    
   {% endif %}
@@ -483,7 +485,7 @@
                   {% endif %}
                   {% if show_inlet_connection == true and request.page_type == 'page' and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'rrr</span>
+                      <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'</span>
                     </td>
                   {% endif %}                  
                 {% if show_fittings == true and request.page_type == 'page'  and show_type_fields %} 
