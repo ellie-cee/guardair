@@ -148,23 +148,7 @@
               <li><a href="#tab4">Literature</a></li>
           {% endif %}
     {% endif %}
-
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-              {%- when '@app' -%}
-                <li><a href="#app-{{ forloop.index }}">App{{  block.title }}</a></li>
-              {%- when 'custom_liquid' -%}
-                <li><a href="#custom-{{ forloop.index }}">Custom {{ block.title }}</a></li>
-              {%- when 'rating' -%}
-                <li><a href="#reviews-{{ forloop.index }}">Reviews</a></li>       
-              {%- when 'specifications' -%}
-                <li><a href="#specs-{{ forloop.index }}">Specifications</a></li>         
-              {%- when 'parts' -%}
-                <li><a href="#parts-{{ forloop.index }}">Replacement Parts</a></li>       
-              {%- when 'accessories' -%}
-                <li><a href="#accessories-{{ forloop.index }}">Accessories</a></li>                                           
-              {% endcase %}
-      {% endfor %}
+{% if 1 == 3 %}
     {% if section.settings.show_description == true %}
       <li><a href="#tab3">Product Details</a></li>
     {% endif %}
@@ -186,6 +170,27 @@
           {% endif %}
         {% endfor %}
       {% endif %}
+{% endif %}
+
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+              {%- when '@app' -%}
+                <li><a href="#app-{{ forloop.index }}">App{{  block.title }}</a></li>
+              {%- when 'description' -%}
+                <li><a href="#description-{{ forloop.index }}">Product Details</a></li>                     
+              {%- when 'custom_liquid' -%}
+                <li><a href="#custom-{{ forloop.index }}">Custom {{ block.title }}</a></li>
+              {%- when 'rating' -%}
+                <li><a href="#reviews-{{ forloop.index }}">Reviews</a></li>       
+              {%- when 'specifications' -%}
+                <li><a href="#specs-{{ forloop.index }}">Specifications</a></li>         
+              {%- when 'parts' -%}
+                <li><a href="#parts-{{ forloop.index }}">Replacement Parts</a></li>       
+              {%- when 'accessories' -%}
+                <li><a href="#accessories-{{ forloop.index }}">Accessories</a></li>                                           
+              {% endcase %}
+      {% endfor %}
+
 
 
       {% if product.metafields.custom.delivery_time.value != blank %}
