@@ -210,12 +210,23 @@
     "ywm_collapsible_content_with_image_hzbDHa": {
       "type": "ywm-collapsible-content-with-image",
       "blocks": {
+        "collapsible_row_TtrAtb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features",
+            "icon": "clipboard",
+            "row_content": "{{ product.metafields.custom.benefit_texts | metafield_tag }}",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
         "collapsible_row_YzJGQp": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Delivery Time",
+            "icon": "truck",
+            "row_content": "<p>{{ product.metafields.custom.delivery_time | metafield_tag }}</p>",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -224,20 +235,9 @@
         "collapsible_row_TbGHqj": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": "",
-            "block_image_alt": "",
-            "block_image_size": "medium"
-          }
-        },
-        "collapsible_row_TtrAtb": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Prop. 65 Warning",
+            "icon": "fire",
+            "row_content": "<p>{{ product.metafields.custom.warning65_text.value }}</p>",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -256,21 +256,21 @@
         }
       },
       "block_order": [
+        "collapsible_row_TtrAtb",
         "collapsible_row_YzJGQp",
         "collapsible_row_TbGHqj",
-        "collapsible_row_TtrAtb",
         "collapsible_row_YWE7PW"
       ],
       "name": "GUA Collapsible Content with Images",
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "custom_css_class": "",
