@@ -178,9 +178,7 @@
               {%- when '@app' -%}
                 <li><a href="#tab{{ forloop.index }}">App{{  block.title }}</a></li>
               {%- when 'product_description' -%}
-                <li><button data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Tab 1</button>
-                  <a href="#tab{{ forloop.index }}">Product Details</a>
-                </li>                     
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Product Details</li>                     
               {%- when 'custom_liquid' -%}
                 <li><a href="#tab{{ forloop.index }}">Custom {{ block.title }}</a></li>
               {%- when 'rating' -%}
@@ -637,18 +635,18 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const tabsNav = document.querySelector('#tabs-nav');
   
   if (!tabsNav) return;
   
-  const tabButtons = tabsNav.querySelectorAll('[data-tab]');
+  const tabItems = tabsNav.querySelectorAll('li[data-tab]');
   const tabContents = document.querySelectorAll('[data-tab-content]');
   
   function switchTab(targetTab) {
-    // Remove active class from all tab buttons
-    tabButtons.forEach(button => {
-      button.classList.remove('active');
+    // Remove active class from all tab list items
+    tabItems.forEach(item => {
+      item.classList.remove('active');
     });
     
     // Hide all tab contents
@@ -657,10 +655,10 @@
       content.classList.remove('active');
     });
     
-    // Add active class to clicked tab button
-    const activeButton = tabsNav.querySelector(`[data-tab="${targetTab}"]`);
-    if (activeButton) {
-      activeButton.classList.add('active');
+    // Add active class to clicked tab list item
+    const activeItem = tabsNav.querySelector(`li[data-tab="${targetTab}"]`);
+    if (activeItem) {
+      activeItem.classList.add('active');
     }
     
     // Show corresponding tab content
@@ -671,9 +669,9 @@
     }
   }
   
-  // Add click event listeners to all tab buttons
-  tabButtons.forEach(button => {
-    button.addEventListener('click', function(e) {
+  // Add click event listeners to all tab list items
+  tabItems.forEach(item => {
+    item.addEventListener('click', function(e) {
       e.preventDefault();
       const targetTab = this.getAttribute('data-tab');
       switchTab(targetTab);
@@ -681,8 +679,8 @@
   });
   
   // Initialize first tab as active on page load
-  if (tabButtons.length > 0) {
-    const firstTab = tabButtons[0].getAttribute('data-tab');
+  if (tabItems.length > 0) {
+    const firstTab = tabItems[0].getAttribute('data-tab');
     switchTab(firstTab);
   }
 });
