@@ -12,11 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "custom_liquid_pDMckf": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "Part Number: {{ product.selected_or_first_available_variant.sku }} <span class=\"klaviyo-star-rating-widget\" data-id=\"{{product.id}}\" data-product-title=\"{{product.title}}\" data-product-type=\"{{product.type}}\"></span>"
-          }
+        "part_review_kRUDNy": {
+          "type": "part_review",
+          "settings": {}
         },
         "klaviyo_reviews_average_rating_KHihtJ": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
@@ -86,11 +84,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "product_image_meta_7VKecY": {
-          "type": "product_image_meta",
-          "disabled": true,
-          "settings": {}
-        },
         "ywm_toggle_kFYHrJ": {
           "type": "ywm-toggle",
           "settings": {
@@ -101,10 +94,22 @@
             "padding_bottom": 20,
             "debug": false
           }
+        },
+        "product_image_meta_7VKecY": {
+          "type": "product_image_meta",
+          "disabled": true,
+          "settings": {}
+        },
+        "custom_liquid_pDMckf": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "Part Number: {{ product.selected_or_first_available_variant.sku }} <span class=\"klaviyo-star-rating-widget\" data-id=\"{{product.id}}\" data-product-title=\"{{product.title}}\" data-product-type=\"{{product.type}}\"></span>"
+          }
         }
       },
       "block_order": [
-        "custom_liquid_pDMckf",
+        "part_review_kRUDNy",
         "klaviyo_reviews_average_rating_KHihtJ",
         "title",
         "description",
@@ -116,8 +121,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "ywm_toggle_kFYHrJ",
         "product_image_meta_7VKecY",
-        "ywm_toggle_kFYHrJ"
+        "custom_liquid_pDMckf"
       ],
       "custom_css": [],
       "settings": {
