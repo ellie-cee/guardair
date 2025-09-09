@@ -156,7 +156,9 @@
             "alt_desc": false,
             "pdesc_para": 0,
             "pdesc_shorten": 0,
-            "font_style": "inline-richtext"
+            "font_style": "inline-richtext",
+            "show_propwarning": true,
+            "show_leadtime": true
           }
         },
         "rating_fnx9yp": {
@@ -186,12 +188,7 @@
       "name": "GUA Product Tabs",
       "settings": {
         "products": [],
-        "option_name": "Extension Length",
-        "show_desc": true,
-        "show_specs": true,
-        "show_accessories": false,
-        "show_parts": true,
-        "show_reviews": true
+        "option_name": "Extension Length"
       }
     },
     "gua_specifications_table_ttEDji": {
