@@ -111,7 +111,7 @@
                         {% endif %}
                       {% endfor %}{% endcapture %}{% endif %}  
               {% endif %}
-              {% assign content_check = block.settings.row_content | append: block.settings.page.content | append: variant_content | strip_html | strip %}
+              {% assign content_check = block.settings.row_content | append: block.settings.page.content | append: variant_content | strip %}
               ---{{ content_check }}--
               {% if content_check == '' %}{% break %}{% endif %}
                
