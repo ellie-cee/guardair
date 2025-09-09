@@ -143,18 +143,14 @@
                     {%- endif -%}
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
-                    {% if block.settings.row_content_variant %}{%- for variant in product.variants -%}
-                         {%- assign metafield_value = variant.metafields[metafield_namespace][metafield_key].value -%}
-                      {{ metafield_value | default: '-' }}
-                        {% if variant.metafields.custom.featured.value != blank %}
-                          <h3>Features</h3>
-                            <ul>
-                              {%- assign current_variant = product.selected_or_first_available_variant -%}
-
-                              {% for text in variant.metafields.custom.featured.value %}
+                    {% if metafield_namespace %}{%- for variant in product.variants -%}
+                         {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
+                      {{ metafield.value | default: '-' }}
+                        {% if metafield.value != blank %}
+                          <h3>{{ metafield.label }}</h3>
+                            <ul>{% for text in metafield.value.value %}
                                 <li>{{ text }}</li>
-                              {% endfor %}
-                            </ul>
+                              {% endfor %}</ul>
                         {% endif %}
                       {% endfor %}{% endif %}   
                   </div>
