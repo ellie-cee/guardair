@@ -594,7 +594,22 @@
                       <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
                     {% endif %}                  
                 {%- endif -%}                          
-                </div>    
+                </div> 
+                {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
+                      <div id="tab8" class="tab-content">
+                        <p>
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
+                            alt=""
+                            width="32"
+                            height="29"
+
+                          >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
+                            {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
+                          </a>
+                        </p>
+                      </div>
+                    {% endif %}                   
 
             {%- when 'custom_text' -%}
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
@@ -687,21 +702,7 @@
       <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>{%- endcomment -%}
       {% comment %}<div></div>{% endcomment %}
     </div>
-    {% if warning65_text != blank and warning65_url != blank %}
-      <div id="tab8" class="tab-content">
-        <p>
-          <img
-            src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
-            alt=""
-            width="32"
-            height="29"
-
-          >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
-            {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
-          </a>
-        </p>
-      </div>
-    {% endif %}
+    
   </div>
 </div>
 
