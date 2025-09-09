@@ -559,7 +559,7 @@
                           </div>
                      {%- endif -%}
                     </div>
-                    
+
             {%- when 'specifications' -%}
               <div id="tab{{ forloop.index }}" class="tab-content">              
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
@@ -568,24 +568,9 @@
               <div id="tab{{ forloop.index }}" class="tab-content">                
                 <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
 
-                {%- if product.description != blank and product.description or block.settings.alt_desc == true -%}
-                    {% assign desc_sentences = product.description | split: '.' %}
-                    {% assign desc_paragraphs = product.description | split: '</p>' %}                    
-                    {% if block.settings.alt_desc == true and product.metafields.custom.grid_description != '' %}
-                        {% assign alt_text = product.metafields.custom.grid_description | metafield_text %}{% assign alt_text = alt_text | replace: '&#39;', "'" %}{% assign alt_text = alt_text | replace: '&quot;', '"' %}{% assign alt_text = alt_text | replace: '&amp;', '&' %}
-                          <div class="rte {{ section.settings.font_style }}">{{ alt_text }}</div>
-                    {% elsif block.settings.pdesc_para == 1 and desc_paragraphs %}
-                          <div class="rte {{ section.settings.font_style }}">{{ desc_paragraphs[0] }}</div>
-                    {% elsif block.settings.pdesc_para == 2 and desc_paragraphs %}
-                          <div class="rte {{ section.settings.font_style }}">{{ desc_paragraphs[0] }}{{ desc_paragraphs[1] }}</div>                            
-                    {% elsif block.settings.pdesc_shorten == 1 and desc_sentences %}
-                          <div class="rte {{ section.settings.font_style }}">{{ desc_sentences[0] }}.</div>
-                    {% elsif block.settings.pdesc_shorten == 2 and desc_sentences %}
-                          <div class="rte {{ section.settings.font_style }}">{{ desc_sentences[1] }}.</div>
-                    {% else %}                       
+                    {%- if product.description != blank  -%}                 
                       <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
-                    {% endif %}                  
-                {%- endif -%}                          
+                    {% endif %}                                         
                 </div> 
                 {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
                       <div id="tab8" class="tab-content">
