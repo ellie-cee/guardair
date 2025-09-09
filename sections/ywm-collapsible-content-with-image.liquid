@@ -99,6 +99,10 @@
           {% endif %}
           <div class="grid__item">
             {%- for block in section.blocks -%}
+              {% if block.settings.row_content_variant %}
+                {% assign metafield_namespace = block.settings.row_content_variant | split:'.' | first %}
+                {% assign metafield_key = block.settings.row_content_variant | split:'.' | last %}  
+              {% endif %}
               <div
                 class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
                 {{ block.shopify_attributes }}
@@ -140,6 +144,8 @@
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
                     {% if block.settings.row_content_variant %}{%- for variant in product.variants -%}
+                         {%- assign metafield_value = variant.metafields[metafield_namespace][metafield_key].value -%}
+                      {{ metafield_value | default: '-' }}
                         {% if variant.metafields.custom.featured.value != blank %}
                           <h3>Features</h3>
                             <ul>
