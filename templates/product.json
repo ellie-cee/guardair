@@ -39,7 +39,7 @@
             "blocks": "part_number_CKpjqq, Aa3lTV1ZRQjg5Z0tMM__klaviyo_reviews_average_rating_KHihtJ, features_JCcDdi",
             "padding_top": 20,
             "padding_bottom": 20,
-            "debug": false
+            "debug": true
           }
         },
         "features_JCcDdi": {
@@ -50,6 +50,7 @@
         },
         "sku_tEbYhb": {
           "type": "sku",
+          "disabled": true,
           "settings": {
             "text_style": "body"
           }
@@ -144,6 +145,14 @@
         "padding_bottom": 12
       }
     },
+    "gua_product_tabs_6VXzLn": {
+      "type": "gua-product-tabs",
+      "name": "GUA Product Tabs",
+      "settings": {
+        "products": [],
+        "option_name": "Extension Length"
+      }
+    },
     "gua_specifications_table_ttEDji": {
       "type": "gua-specifications-table",
       "name": "GUA Specifications Chart",
@@ -151,14 +160,6 @@
         "specifications_heading": "{{ product.metafields.custom.linked_products.value.group_name.value }} Specifications",
         "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
         "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
-      }
-    },
-    "gua_product_tabs_6VXzLn": {
-      "type": "gua-product-tabs",
-      "name": "GUA Product Tabs",
-      "settings": {
-        "products": [],
-        "option_name": "Extension Length"
       }
     },
     "1721751086101a9e7e": {
