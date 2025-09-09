@@ -125,7 +125,7 @@
           {% endif %}
 {% endif %}
 
-<div class="itg_full_product_info">
+<div class="itg_full_product_info--disabled">
 <div class="tabs"><div class="nav-wrapper">
   <ul id="tabs-nav">
     {% if 1 == 2 %}
@@ -463,7 +463,7 @@
               </div>
 
             {%- when 'product_description' -%}
-              <div id="tab{{ forloop.index }}" class="tab-content">    
+              <div id="tab{{ forloop.index }}" class="tab-content product-details">    
                 <div id="details-left">
                   <h2 class="h1">Product Details</h2>
                       <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
