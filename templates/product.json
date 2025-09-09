@@ -154,6 +154,8 @@
           "type": "product_description",
           "settings": {
             "font_style": "inline-richtext",
+            "show_features": true,
+            "show_includes": true,
             "show_propwarning": true,
             "show_leadtime": true
           }
