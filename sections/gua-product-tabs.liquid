@@ -124,6 +124,7 @@
             {% assign show_spec_tab = false %}
           {% endif %}
 {% endif %}
+
 <div class="itg_full_product_info">
 <div class="tabs"><div class="nav-wrapper">
   <ul id="tabs-nav">
@@ -147,6 +148,11 @@
               <li><a href="#tab4">Literature</a></li>
           {% endif %}
     {% endif %}
+
+    {% if section.settings.show_description == true %}
+      <li><a href="#tab3">Product Details</a></li>
+    {% endif %}
+
     {% if section.settings.show_specs == true %}
       <li><a href="#tab3">Specifications</a></li>
     {% endif %}
