@@ -433,7 +433,8 @@
               </div>
 
             {%- when 'product_description' -%}
-              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content product-details grid" style="display: {{ display }};">    
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content product-details" style="display: {{ display }};">   
+                <div class="grid grid--1-col grid--2-col-tablet                    
                 <div id="details-left grid__item">
                   <h2 class="h1">Product Details</h2>
                       <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
@@ -487,7 +488,9 @@
 
                       
           </div>
-                                
+
+
+
                     {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
                           <h3>Lead Time</h3>                      
                           {{ product.metafields.custom.delivery_time.value }}
@@ -559,6 +562,7 @@
                         {% endfor %}                    
                 </div>
               </div>
+            </div>
 
             {%- when 'custom_text' -%}
               <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">    
