@@ -15,7 +15,7 @@
         "custom_liquid_pDMckf": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "Part Number: {{ product.selected_or_first_available_variant.sku }}"
+            "custom_liquid": "Part Number: {{ product.selected_or_first_available_variant.sku }} <span class=\"klaviyo-star-rating-widget\" data-id=\"{{product.id}}\" data-product-title=\"{{product.title}}\" data-product-type=\"{{product.type}}\"></span>"
           }
         },
         "klaviyo_reviews_average_rating_KHihtJ": {
@@ -63,16 +63,16 @@
             "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
         },
         "quantity_selector": {
           "type": "quantity_selector",
@@ -87,7 +87,19 @@
         },
         "product_image_meta_7VKecY": {
           "type": "product_image_meta",
+          "disabled": true,
           "settings": {}
+        },
+        "ywm_toggle_kFYHrJ": {
+          "type": "ywm-toggle",
+          "settings": {
+            "desktop_only": false,
+            "custom_block": "",
+            "blocks": "",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "debug": false
+          }
         }
       },
       "block_order": [
@@ -99,11 +111,12 @@
         "features_JCcDdi",
         "sku_tEbYhb",
         "linked_products_picker_Qq9Ayh",
-        "variant_picker",
         "price",
+        "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "product_image_meta_7VKecY"
+        "product_image_meta_7VKecY",
+        "ywm_toggle_kFYHrJ"
       ],
       "custom_css": [],
       "settings": {
