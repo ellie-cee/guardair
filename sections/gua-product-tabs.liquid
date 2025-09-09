@@ -459,6 +459,7 @@
                 </div>
                 <div id="details-right" class="grid__item">
                     <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                      {% if 1 == 4 %}
                       <div class="grid__item">
                             {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
                               {%  assign tab_title = "Prop. 65 Warning" %}
@@ -485,15 +486,12 @@
                           {% endif %}  
                         </div>
                       </div>
-         
+                    {% endif %}
 
-                      
-                </div>
- {% if block.settings.include_collapsible_tabs %}
-      <div id="collapsible-tab-content"></div>
-    {% endif %}
-  </div>
-
+                    {% if block.settings.include_collapsible_tabs %}
+                      <div id="collapsible-tab-content"></div>
+                    {% endif %}
+ 
 
 
                     {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
