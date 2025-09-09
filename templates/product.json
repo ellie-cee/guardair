@@ -152,7 +152,11 @@
       "name": "GUA Product Tabs",
       "settings": {
         "products": [],
-        "option_name": "Extension Length"
+        "option_name": "Extension Length",
+        "show_desc": true,
+        "show_specs": true,
+        "show_parts": true,
+        "show_reviews": true
       }
     },
     "gua_specifications_table_ttEDji": {
