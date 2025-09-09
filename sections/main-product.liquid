@@ -508,6 +508,11 @@
                       section_id: section.id,
                     -%}            
                 {% endif %}
+
+           {%- when 'part_review' -%}
+                <div class="part-review">Part Number: {{ product.selected_or_first_available_variant.sku }}
+                  <span class="klaviyo-star-rating-widget" data-id="{{ product.id }}" data-product-title="{{ product.title }}" data-product-type="{{ product.type }}"></span>
+                </div>       
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
