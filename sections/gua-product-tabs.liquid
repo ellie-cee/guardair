@@ -2,148 +2,153 @@
 {% assign warning65_url = product.metafields.custom.warning65_url.value %}
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
 {% assign sell_sheet_url = product.metafields.custom.literature_sell_sheet_url.value %}
-{% assign show_part_number = false %}
-{% assign show_spec_tab = false %}
-{% assign show_air_inlet_FNPT = false %}
-{% assign show_air_hose_id = false %}
-{% assign show_vacuum_flow = false %}
-{% assign show_Vacuum_Hose_ID = false %}
-{% assign show_steel_drum_guage = false %}
-{% assign show_syphon_flow_rate = false %}
-{% assign show_Inlet-Connection = false %}
-{% assign show_output_thrust = false %}
-{% assign show_grams = false %}
-{% assign show_min_compressor = false %}
-{% assign show_soil_excavation_rate = false %}
-{% assign show_noise_level = false %}
-{% assign show_flow = false %}
-{% assign show_fittings = false %}
-{% assign show_Vacuum_Lift = false %}
-{% assign show_Dimensions = false %}
-{% assign show_weight = false %}
 
-{% for variant in product.variants %}
-  {% if variant.sku != blank %}
-    {% assign show_part_number = true %}
-  {% endif %}
 
-  {% if variant.metafields.global['Each-Height'].value != blank
-    and variant.metafields.global['Each-Length'].value != blank
-    and variant.metafields.global['Each-Width'].value != blank
-  %}
-    {% assign show_Dimensions = true %}
-  {% endif %}
+{% if 1 == 2 %}
+          {% assign show_part_number = false %}
+          {% assign show_spec_tab = false %}
+          {% assign show_air_inlet_FNPT = false %}
+          {% assign show_air_hose_id = false %}
+          {% assign show_vacuum_flow = false %}
+          {% assign show_Vacuum_Hose_ID = false %}
+          {% assign show_steel_drum_guage = false %}
+          {% assign show_syphon_flow_rate = false %}
+          {% assign show_Inlet-Connection = false %}
+          {% assign show_output_thrust = false %}
+          {% assign show_grams = false %}
+          {% assign show_min_compressor = false %}
+          {% assign show_soil_excavation_rate = false %}
+          {% assign show_noise_level = false %}
+          {% assign show_flow = false %}
+          {% assign show_fittings = false %}
+          {% assign show_Vacuum_Lift = false %}
+          {% assign show_Dimensions = false %}
+          {% assign show_weight = false %}
 
-  {% if variant.metafields.global['Syphon-Flow-Rate'].value != blank %}
-    {% assign show_syphon_flow_rate = true %}
-  {% endif %}
+          {% for variant in product.variants %}
+            {% if variant.sku != blank %}
+              {% assign show_part_number = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Steel-Drum-Gauge'].value != blank %}
-    {% assign show_steel_drum_guage = true %}
-  {% endif %}
+            {% if variant.metafields.global['Each-Height'].value != blank
+              and variant.metafields.global['Each-Length'].value != blank
+              and variant.metafields.global['Each-Width'].value != blank
+            %}
+              {% assign show_Dimensions = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Output-Thrust'].value != blank %}
-    {% assign show_output_thrust = true %}
-  {% endif %}
+            {% if variant.metafields.global['Syphon-Flow-Rate'].value != blank %}
+              {% assign show_syphon_flow_rate = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Noise-Level'].value != blank %}
-    {% assign show_noise_level = true %}
-  {% endif %}
+            {% if variant.metafields.global['Steel-Drum-Gauge'].value != blank %}
+              {% assign show_steel_drum_guage = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Min-Compressor-Required'].value != blank %}
-    {% assign show_min_compressor = true %}
-  {% endif %}
+            {% if variant.metafields.global['Output-Thrust'].value != blank %}
+              {% assign show_output_thrust = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Inlet-Connection'].value != blank %}
-    {% assign show_Inlet-Connection = true %}
-  {% endif %}
+            {% if variant.metafields.global['Noise-Level'].value != blank %}
+              {% assign show_noise_level = true %}
+            {% endif %}
 
-  {% if variant.metafields.global.grams.value != blank %}
-    {% assign show_grams = true %}
-  {% endif %}
+            {% if variant.metafields.global['Min-Compressor-Required'].value != blank %}
+              {% assign show_min_compressor = true %}
+            {% endif %}
 
-  {% if variant.metafields.global.Flow.value != blank %}
-    {% assign show_flow = true %}
-  {% endif %}
+            {% if variant.metafields.global['Inlet-Connection'].value != blank %}
+              {% assign show_Inlet-Connection = true %}
+            {% endif %}
 
-  {% if variant.metafields.global.Fittings.value != blank %}
-    {% assign show_fittings = true %}
-  {% endif %}
+            {% if variant.metafields.global.grams.value != blank %}
+              {% assign show_grams = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Each-Weight'].value != blank %}
-    {% assign show_weight = true %}
-  {% endif %}
+            {% if variant.metafields.global.Flow.value != blank %}
+              {% assign show_flow = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Air-Hose-ID'].value != blank %}
-    {% assign show_air_hose_id = true %}
-  {% endif %}
+            {% if variant.metafields.global.Fittings.value != blank %}
+              {% assign show_fittings = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Vacuum-Lift'].value != blank %}
-    {% assign show_Vacuum_Lift = true %}
-  {% endif %}
+            {% if variant.metafields.global['Each-Weight'].value != blank %}
+              {% assign show_weight = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Vacuum-Hose-ID'].value != blank %}
-    {% assign show_Vacuum_Hose_ID = true %}
-  {% endif %}
+            {% if variant.metafields.global['Air-Hose-ID'].value != blank %}
+              {% assign show_air_hose_id = true %}
+            {% endif %}
 
-  {% if variant.metafields.global['Vacuum-Flow'].value != blank %}
-    {% assign show_vacuum_flow = true %}
-  {% endif %}
+            {% if variant.metafields.global['Vacuum-Lift'].value != blank %}
+              {% assign show_Vacuum_Lift = true %}
+            {% endif %}
 
-  {% if variant.metafields.custom.air_inlet_fnpt.value != blank %}
-    {% assign show_air_inlet_FNPT = true %}
-  {% endif %}
+            {% if variant.metafields.global['Vacuum-Hose-ID'].value != blank %}
+              {% assign show_Vacuum_Hose_ID = true %}
+            {% endif %}
 
-  {% if variant.metafields.custom.soil_excavation_rate.value != blank %}
-    {% assign show_soil_excavation_rate = true %}
-  {% endif %}
-{% endfor %}
+            {% if variant.metafields.global['Vacuum-Flow'].value != blank %}
+              {% assign show_vacuum_flow = true %}
+            {% endif %}
 
-{% if show_part_number == true
-  or show_air_inlet_FNPT == true
-  or show_min_compressor == true
-  or show_noise_level == true
-  or show_flow == true
-  or show_vacuum_flow == true
-  or show_Vacuum_Lift == true
-  or show_syphon_flow_rate == true
-  or show_steel_drum_guage == true
-  or show_output_thrust == true
-  or show_Inlet-Connection == true
-  or show_grams == true
-  or show_fittings == true
-  or show_air_hose_id == true
-  or show_Vacuum_Hose_ID == true
-  or show_soil_excavation_rate == true
-  or show_Dimensions == true
-  or show_weight == true
-%}
-  {% assign show_spec_tab = false %}
+            {% if variant.metafields.custom.air_inlet_fnpt.value != blank %}
+              {% assign show_air_inlet_FNPT = true %}
+            {% endif %}
+
+            {% if variant.metafields.custom.soil_excavation_rate.value != blank %}
+              {% assign show_soil_excavation_rate = true %}
+            {% endif %}
+          {% endfor %}
+
+          {% if show_part_number == true
+            or show_air_inlet_FNPT == true
+            or show_min_compressor == true
+            or show_noise_level == true
+            or show_flow == true
+            or show_vacuum_flow == true
+            or show_Vacuum_Lift == true
+            or show_syphon_flow_rate == true
+            or show_steel_drum_guage == true
+            or show_output_thrust == true
+            or show_Inlet-Connection == true
+            or show_grams == true
+            or show_fittings == true
+            or show_air_hose_id == true
+            or show_Vacuum_Hose_ID == true
+            or show_soil_excavation_rate == true
+            or show_Dimensions == true
+            or show_weight == true
+          %}
+            {% assign show_spec_tab = false %}
+          {% endif %}
 {% endif %}
-
 <div class="itg_full_product_info">
 <div class="tabs"><div class="nav-wrapper">
   <ul id="tabs-nav">
-    {%- for variant in product.variants limit: 1 -%}
-      {% if variant.metafields.custom.advantages.value != blank %}
-        <li><a href="#tab0">Advantages</a></li>
-      {% endif %}
-    {% endfor %}
-    {%- for variant in product.variants limit: 1 -%}
-      {% if variant.metafields.custom.featured.value != blank %}
-        <li><a href="#tab1">Features</a></li>
-      {% endif %}
-    {% endfor %}
-    {%- for variant in product.variants limit: 1 -%}
-      {% if variant.metafields.custom.includes.value != blank %}
-        <li><a href="#tab2">Includes</a></li>
-      {% endif %}
-    {% endfor %}
-    {% if show_spec_tab == true %}
-      <li><a href="#tab3">Specifications</a></li>
+    {% if 1 == 2 %}
+          {%- for variant in product.variants limit: 1 -%}
+            {% if variant.metafields.custom.advantages.value != blank %}
+              <li><a href="#tab0">Advantages</a></li>
+            {% endif %}
+          {% endfor %}
+          {%- for variant in product.variants limit: 1 -%}
+            {% if variant.metafields.custom.featured.value != blank %}
+              <li><a href="#tab1">Features</a></li>
+            {% endif %}
+          {% endfor %}
+          {%- for variant in product.variants limit: 1 -%}
+            {% if variant.metafields.custom.includes.value != blank %}
+              <li><a href="#tab2">Includes</a></li>
+            {% endif %}
+          {% endfor %}
+          {% if operation_manual_url != blank or sell_sheet_url != blank %}
+              <li><a href="#tab4">Literature</a></li>
+          {% endif %}
     {% endif %}
-    {% if operation_manual_url != blank or sell_sheet_url != blank %}
-      <li><a href="#tab4">Literature</a></li>
+    {% if section.settings.show_specs == true %}
+      <li><a href="#tab3">Specifications</a></li>
     {% endif %}
     {%- for variant in product.variants limit: 1 -%}
       {% if variant.metafields.custom.accessories.value != blank %}
