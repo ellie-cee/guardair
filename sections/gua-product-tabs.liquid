@@ -175,19 +175,19 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
               {%- when '@app' -%}
-                <li><a href="#app-{{ forloop.index }}">App{{  block.title }}</a></li>
+                <li><a href="#tab-{{ forloop.index }}">App{{  block.title }}</a></li>
               {%- when 'description' -%}
-                <li><a href="#description-{{ forloop.index }}">Product Details</a></li>                     
+                <li><a href="#tab-{{ forloop.index }}">Product Details</a></li>                     
               {%- when 'custom_liquid' -%}
-                <li><a href="#custom-{{ forloop.index }}">Custom {{ block.title }}</a></li>
+                <li><a href="#tab-{{ forloop.index }}">Custom {{ block.title }}</a></li>
               {%- when 'rating' -%}
-                <li><a href="#reviews-{{ forloop.index }}">Reviews</a></li>       
+                <li><a href="#tab-{{ forloop.index }}">Reviews</a></li>       
               {%- when 'specifications' -%}
-                <li><a href="#specs-{{ forloop.index }}">Specifications</a></li>         
+                <li><a href="#tab-{{ forloop.index }}">Specifications</a></li>         
               {%- when 'parts' -%}
-                <li><a href="#parts-{{ forloop.index }}">Replacement Parts</a></li>       
+                <li><a href="#tab-{{ forloop.index }}">Replacement Parts</a></li>       
               {%- when 'accessories' -%}
-                <li><a href="#accessories-{{ forloop.index }}">Accessories</a></li>                                           
+                <li><a href="#tab-{{ forloop.index }}">Accessories</a></li>                                           
               {% endcase %}
       {% endfor %}
 
