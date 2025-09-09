@@ -532,37 +532,38 @@
                                 assign rating_decimal = 1
                               endif
                             %}
-                            <div
-                              class="rating"
-                              role="img"
-                              aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
-                            >
-                              <span
-                                aria-hidden="true"
-                                class="rating-star"
-                                style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
-                              ></span>
-                            </div>
-                            <p class="rating-text caption">
-                              <span aria-hidden="true">
-                                {{- product.metafields.reviews.rating.value }} /
-                                {{ product.metafields.reviews.rating.value.scale_max -}}
-                              </span>
-                            </p>
-                            <p class="rating-count caption">
-                              <span aria-hidden="true">({{ product.metafields.reviews.rating_count }})</span>
-                              <span class="visually-hidden">
-                                {{- product.metafields.reviews.rating_count }}
-                                {{ 'accessibility.total_reviews' | t -}}
-                              </span>
-                            </p>
+                              <div
+                                class="rating"
+                                role="img"
+                                aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  class="rating-star"
+                                  style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
+                                ></span>
+                              </div>
+                              <p class="rating-text caption">
+                                <span aria-hidden="true">
+                                  {{- product.metafields.reviews.rating.value }} /
+                                  {{ product.metafields.reviews.rating.value.scale_max -}}
+                                </span>
+                              </p>
+                              <p class="rating-count caption">
+                                <span aria-hidden="true">({{ product.metafields.reviews.rating_count }})</span>
+                                <span class="visually-hidden">
+                                  {{- product.metafields.reviews.rating_count }}
+                                  {{ 'accessibility.total_reviews' | t -}}
+                                </span>
+                              </p>
                           </div>
-                        </div>
-                {%- endif -%}
+                     {%- endif -%}
+                    </div>
+                    
             {%- when 'specifications' -%}
               <div id="tab{{ forloop.index }}" class="tab-content">              
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
-            </div>
+              </div>
             {%- when 'product_description' -%}
               <div id="tab{{ forloop.index }}" class="tab-content">                
                 <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
@@ -606,6 +607,7 @@
                       {{ product.metafields.custom.delivery_time.value }}
                 {%  endif %}
               </div>
+
             {%- when 'custom_text' -%}
                   <p class="rich-text__caption" {{ block.shopify_attributes }}>
                       {{ block.settings.custom_text }}
