@@ -184,9 +184,20 @@ body.template-product .product-form__input.product-form__input--dropdown,.produc
 body.template-product .product-form__input .select__select {font-size:inherit;}
 
 
-body.template-product .itg_full_product_info {padding-top:10px;}
-body.template-product .itg_full_product_info .tabs {background:#fff;margin: 20px 0; border: 1px solid #ddd; overflow: hidden; }
-body.template-product .itg_full_product_info .tabs-nav {background-color: #f9f9f9;}
+body.template-product .gua_product_info {padding-top:10px;}
+body.template-product .gua_product_info .tabs {background:#fff;margin: 20px 0; border: 1px solid #ddd; overflow: hidden; }
+body.template-product .gua_product_info .tabs-nav {background-color: #f9f9f9;}
+body.template-product .gua_product_info .nav-wrapper { background-color: {{ accent_color2 }}; border-bottom: 1px solid #ddd; }
+body.template-product .gua_product_info #tabs-nav { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap;max-width:{{ desktop_max_width }};margin:0 auto;}
+body.template-product .gua_product_info #tabs-nav li { margin: 0; padding: 0; flex-grow: 1; text-align: center; }
+body.template-product .gua_product_info #tabs-nav li a {display: block; padding: 15px 20px; text-decoration: none; color: {{ accent_color2_text }}; font-weight: 600; font-size: 16px; transition: all 0.3s ease; 
+border-right: 0px solid #eee; white-space: nowrap;text-transform:uppercase; }
+body.template-product .gua_product_info #tabs-nav li:last-child a { border-right: none; }
+body.template-product .gua_product_info #tabs-nav li:hover a {background-color: {{ accent_color2 | color_darken: 6 }}; color:{{ accent_color2_text }}; }
+body.template-product .gua_product_info #tabs-nav li.active a {background-color: {{ accent_color2 | color_darken: 4 }};color:{{ accent_color2_text }}; border-bottom: 6px solid {{ accent_color1 }}; padding-bottom: 12px; position: relative; z-index: 2;}
+body.template-product .gua_product_info #tabs-nav li.active:first-child a {}
+body.template-product .gua_product_info #tabs-nav li.active:last-child a {}
+
 
 {% comment %}
 body.template-product .itg_full_product_info .nav-wrapper { background-color: {{ light_gray }}; border-bottom: 1px solid #ddd; }
@@ -197,17 +208,6 @@ body.template-product .itg_full_product_info #tabs-nav li:last-child a { border-
 body.template-product .itg_full_product_info #tabs-nav li a:hover { background-color: {{ light_gray | darken: 20 }}; color: #000; }
 body.template-product .itg_full_product_info #tabs-nav li.active a { color: {{ accent_color2 }}; border-bottom: 5px solid {{ accent_color1 }}; padding-bottom: 12px; position: relative; z-index: 2;}
 {% endcomment %}
-
-body.template-product .itg_full_product_info .nav-wrapper { background-color: {{ accent_color2 }}; border-bottom: 1px solid #ddd; }
-body.template-product .itg_full_product_info #tabs-nav { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap;max-width:{{ desktop_max_width }};margin:0 auto;}
-body.template-product .itg_full_product_info #tabs-nav li { margin: 0; padding: 0; flex-grow: 1; text-align: center; }
-body.template-product .itg_full_product_info #tabs-nav li a {display: block; padding: 15px 20px; text-decoration: none; color: {{ accent_color2_text }}; font-weight: 600; font-size: 16px; transition: all 0.3s ease; 
-border-right: 0px solid #eee; white-space: nowrap;text-transform:uppercase; }
-body.template-product .itg_full_product_info #tabs-nav li:last-child a { border-right: none; }
-body.template-product .itg_full_product_info #tabs-nav li:hover a {background-color: {{ accent_color2 | color_darken: 5 }}; color:{{ accent_color1 | color_lighten: 15 }}; }
-body.template-product .itg_full_product_info #tabs-nav li.active a { color:#fff; border-bottom: 6px solid {{ accent_color1 }}; padding-bottom: 12px; position: relative; z-index: 2;}
-body.template-product .itg_full_product_info #tabs-nav li.active:first-child a {}
-body.template-product .itg_full_product_info #tabs-nav li.active:last-child a {}
 
 
 body.template-product .itg_full_product_info #tabs-nav li.active:first-child a {}
