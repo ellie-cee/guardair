@@ -417,9 +417,12 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'custom_liquid' -%}
-                {{ block.settings.custom_liquid }}
+                <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">                   
+                  {{ block.settings.custom_liquid }}
+                </div>
+
               {%- when 'rating' -%}
-                  <div id="tab{{ forloop.index }}" class="tab-content{{ active_class }}">    
+                <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">     
                     {%- if product.metafields.reviews.rating.value != blank -%}
                           <div class="rating-wrapper">
                             {% liquid
