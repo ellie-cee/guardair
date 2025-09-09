@@ -149,18 +149,39 @@
     },
     "gua_product_tabs_6VXzLn": {
       "type": "gua-product-tabs",
+      "blocks": {
+        "specifications_gVXQmL": {
+          "type": "specifications",
+          "settings": {
+            "highlight_variant": true,
+            "variant_title": false,
+            "variant_image": false,
+            "variant_image_size": 90,
+            "type_fields": true,
+            "special_field": "",
+            "variant_metafield_label": "",
+            "variant_metafield_namespace": "",
+            "variant_metafield_key": ""
+          }
+        }
+      },
+      "block_order": [
+        "specifications_gVXQmL"
+      ],
       "name": "GUA Product Tabs",
       "settings": {
         "products": [],
         "option_name": "Extension Length",
         "show_desc": true,
         "show_specs": true,
+        "show_accessories": false,
         "show_parts": true,
         "show_reviews": true
       }
     },
     "gua_specifications_table_ttEDji": {
       "type": "gua-specifications-table",
+      "disabled": true,
       "name": "GUA Specifications Chart",
       "settings": {
         "specifications_heading": "{{ product.metafields.custom.linked_products.value.group_name.value }} Specifications",
