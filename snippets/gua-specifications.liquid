@@ -176,7 +176,8 @@
 {% assign p_entries = product_list | sort: 'title' %} 
       {% for entry in p_entries %}
             {% assign handle = entry.handle %}
-            {% assign currentProduct = all_products[handle] %}       
+            {% comment %} {% assign currentProduct = all_products[handle] %} {% endcomment %}
+            {% assign currentProduct = entry %}
             {% assign currentVariant = currentProduct.selected_or_first_available_variant %}   
       {% if currentVariant.metafields.custom['max_pressure'].value != blank %}
           {% assign show_maxpressure = true %}
