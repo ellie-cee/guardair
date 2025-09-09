@@ -433,8 +433,8 @@
               </div>
 
             {%- when 'product_description' -%}
-              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content product-details" style="display: {{ display }};">    
-                <div id="details-left">
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content product-details grid" style="display: {{ display }};">    
+                <div id="details-left grid__item">
                   <h2 class="h1">Product Details</h2>
                       <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
 
@@ -456,22 +456,32 @@
                           </ul>
                       {% endif %}
                 </div>
-                <div id="details-right">
-                    {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
-                          <div id="tab8" class="tab-content">
-                            <p>
-                              <img
-                                src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
-                                alt=""
-                                width="32"
-                                height="29"
+                <div id="details-right grid__item">
 
-                              >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
-                                {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
-                              </a>
-                            </p>
-                          </div>
-                    {% endif %}         
+                {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
+                <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
+                <details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.first %}open{% endif %}>
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}">{% render 'icon-accordion', icon: block.settings.icon %}
+                    <h3 class="accordion__title inline-richtext h4">{{ block.settings.heading | default: block.settings.page.title | escape }}</h3>{% render 'icon-caret' %}
+                  </summary>
+                  <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
+                      <p>
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
+                          alt=""
+                          width="32"
+                          height="29"
+
+                        >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
+                          {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
+                        </a>
+                      </p>
+                  </div>
+                </details>
+              </div>
+              {% endif %}  
+
+         
                     
                     {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
                           <h3>Lead Time</h3>                      
