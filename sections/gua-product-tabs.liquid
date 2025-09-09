@@ -291,7 +291,7 @@
         </div>
       {% endif %}
     {% endfor %}
-    {% if show_spec_tab == true %}
+    {% if show_spec_tab == true and 1 == 2 %}
       <div id="tab3" class="tab-content">
         <div class="table-container">
           <table class="dynamic-table">
@@ -504,6 +504,84 @@
         </div>
       </div>
     {% endif %}
+
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+              {%- when '@app' -%}
+                {% render block %}
+              {%- when 'custom_liquid' -%}
+                {{ block.settings.custom_liquid }}
+              {%- when 'rating' -%}
+                {%- if product.metafields.reviews.rating.value != blank -%}
+                  <div class="rating-wrapper">
+                    {% liquid
+                      assign rating_decimal = 0
+                      assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
+                      if decimal >= 0.3 and decimal <= 0.7
+                        assign rating_decimal = 0.5
+                      elsif decimal > 0.7
+                        assign rating_decimal = 1
+                      endif
+                    %}
+                    <div
+                      class="rating"
+                      role="img"
+                      aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="rating-star"
+                        style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
+                      ></span>
+                    </div>
+                    <p class="rating-text caption">
+                      <span aria-hidden="true">
+                        {{- product.metafields.reviews.rating.value }} /
+                        {{ product.metafields.reviews.rating.value.scale_max -}}
+                      </span>
+                    </p>
+                    <p class="rating-count caption">
+                      <span aria-hidden="true">({{ product.metafields.reviews.rating_count }})</span>
+                      <span class="visually-hidden">
+                        {{- product.metafields.reviews.rating_count }}
+                        {{ 'accessibility.total_reviews' | t -}}
+                      </span>
+                    </p>
+                  </div>
+                {%- endif -%}
+            {%- when 'specifications' -%}
+                {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
+
+            {%- when 'product_description' -%}
+                <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
+
+                {%- if product.description != blank and product.description or block.settings.alt_desc == true -%}
+                    {% assign desc_sentences = product.description | split: '.' %}
+                    {% assign desc_paragraphs = product.description | split: '</p>' %}                    
+                    {% if block.settings.alt_desc == true and product.metafields.custom.grid_description != '' %}
+                        {% assign alt_text = product.metafields.custom.grid_description | metafield_text %}{% assign alt_text = alt_text | replace: '&#39;', "'" %}{% assign alt_text = alt_text | replace: '&quot;', '"' %}{% assign alt_text = alt_text | replace: '&amp;', '&' %}
+                          <div class="rte {{ section.settings.font_style }}">{{ alt_text }}</div>
+                    {% elsif block.settings.pdesc_para == 1 and desc_paragraphs %}
+                          <div class="rte {{ section.settings.font_style }}">{{ desc_paragraphs[0] }}</div>
+                    {% elsif block.settings.pdesc_para == 2 and desc_paragraphs %}
+                          <div class="rte {{ section.settings.font_style }}">{{ desc_paragraphs[0] }}{{ desc_paragraphs[1] }}</div>                            
+                    {% elsif block.settings.pdesc_shorten == 1 and desc_sentences %}
+                          <div class="rte {{ section.settings.font_style }}">{{ desc_sentences[0] }}.</div>
+                    {% elsif block.settings.pdesc_shorten == 2 and desc_sentences %}
+                          <div class="rte {{ section.settings.font_style }}">{{ desc_sentences[1] }}.</div>
+                    {% else %}                       
+                      <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
+                    {% endif %}                  
+                {%- endif -%}                          
+                </div>    
+
+            {%- when 'custom_text' -%}
+                  <p class="rich-text__caption" {{ block.shopify_attributes }}>
+                      {{ block.settings.custom_text }}
+                  </p>    
+
+            {%- endcase -%}
+          {% endfor %}
     {% if operation_manual_url != blank or sell_sheet_url != blank %}
       <div id="tab4" class="tab-content">
         <ul>
@@ -680,6 +758,85 @@
           "label": "Show Reviews",
           "default": true
         }
+      ],
+      "blocks":[
+          {
+            "type": "specifications",
+            "name": "Specifications",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "checkbox",
+                "id": "highlight_variant",
+                "default": false,
+                "label": "Highlight current variant"
+              },
+              {
+                "type": "header",
+                "content": "Fields"
+              },
+              {
+                "type": "paragraph",
+                "content": "By default, the specific fields are determined by the product type.  The below fields can be added."
+              },        
+              {
+                "type": "checkbox",
+                "id": "variant_title",
+                "default": false,
+                "label": "Variant Title"
+              },
+              {
+                "type": "checkbox",
+                "id": "variant_image",
+                "default": false,
+                "label": "Variant Image"
+              },
+              {
+                "type": "range",
+                "id": "variant_image_size",
+                "default": 90,
+                "label": "Variant Image Size",
+                "min":45,
+                "max":300,
+                "step":15
+              },        
+              {
+                "type": "checkbox",
+                "id": "type_fields",
+                "default": true,
+                "label": "Show Product Type Specific Fields",
+                "info":"Example Inlet, Max Pressure, etx"
+              },
+              {
+                "type": "header",
+                "content": "Section Specific Fields"
+              },        
+              {
+                "type": "text",
+                "id": "special_field",
+                "label": "Rename Title Info",
+                "info":"Add Label for information trailing the dash in title"
+              },
+              {
+                "type": "text",
+                "id": "variant_metafield_label",
+                "label": "Variant Field Label",
+                "info":"Add Label"
+              },        
+            {
+                "type": "text",
+                "id": "variant_metafield_namespace",
+                "label": "Variant Metafield Namespace",
+                "info": "Enter the namespace for the variant metafield (e.g., 'custom' or 'app')"
+              },
+              {
+                "type": "text",
+                "id": "variant_metafield_key",
+                "label": "Variant Metafield Key",
+                "info": "Enter the key for the variant metafield (e.g., 'material' or 'weight')"
+              }        
+            ]
+          }
       ],
   "presets": [
     {
