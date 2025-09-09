@@ -687,6 +687,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sourceContent = document.getElementById('source-collapsible-tabs');
+  const targetContainer = document.getElementById('collapsible-tab-content');
+  
+  if (sourceContent && targetContainer) {
+    // Clone the content to preserve event listeners if needed
+    const clonedContent = sourceContent.cloneNode(true);
+    clonedContent.style.display = 'block';
+    clonedContent.id = 'moved-collapsible-tabs'; // Change ID to avoid duplicates
+    
+    // Move the content
+    targetContainer.appendChild(clonedContent);
+  }
+});
+</script>
 
 {% schema %}
   {
