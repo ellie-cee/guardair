@@ -176,19 +176,19 @@
         {% if forloop.index == 1 %}{% assign active_class = 'active' %}{% else %}{% assign active_class = '' %}{% endif %}
         {%- case block.type -%}
               {%- when '@app' -%}
-                <li><a href="#tab{{ forloop.index }}">App{{  block.title }}</a></li>
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">App{{  block.title }}</a></li>
               {%- when 'product_description' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Product Details</li>                     
               {%- when 'custom_liquid' -%}
-                <li><a href="#tab{{ forloop.index }}">Custom {{ block.title }}</a></li>
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Custom {{ block.title }}</a></li>
               {%- when 'rating' -%}
-                <li><a href="#tab-{{ forloop.index }}">Reviews</a></li>       
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Reviews</a></li>       
               {%- when 'specifications' -%}
-                <li><a href="#tab{{ forloop.index }}">Specifications</a></li>         
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</a></li>         
               {%- when 'parts' -%}
-                <li><a href="#tab{{ forloop.index }}">Replacement Parts</a></li>       
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</a></li>       
               {%- when 'accessories' -%}
-                <li><a href="#tab{{ forloop.index }}">Accessories</a></li>                                           
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</a></li>                                           
               {% endcase %}
       {% endfor %}
 
