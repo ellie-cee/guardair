@@ -397,7 +397,7 @@
                     </td>
                   {% elsif show_part_number == true %}
                     <td>{{ currentProduct.variants.size }}
-                      <span class="td-value td-noBr {{ currentProduct.title }}"><a href="{{ product.url }}" title="{{ currentProduct.sku }}">{{ currentProduct.sku }}</a></span>
+                      <span class="td-value td-noBr {{ currentProduct.title }}"><a href="{{ product.url }}" title="{{ product.sku }}">{{ product.sku }}</a></span>
                     </td>                    
                   {% endif %}
                 {% if show_title == true %}
