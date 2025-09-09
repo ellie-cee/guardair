@@ -390,7 +390,7 @@
                             {% assign extra_value = currentProduct.title | remove: clean_title | remove: '- ' %}
                           {% endif %}
 
-                <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}" data-handle="{{ currentProduct.sku }}--{{ currentVariant.sku }}">
+                <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}" data-handle="{{ forloop.index}} {{ currentProduct.sku }}--{{ currentVariant.sku }}">
                   {% if show_part_number == true and currentVariant.sku %}
                     <td>
                       <span class="td-value td-noBr here"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
