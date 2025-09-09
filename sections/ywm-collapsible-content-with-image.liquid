@@ -111,6 +111,8 @@
                         {% endif %}
                       {% endfor %}{% endcapture %}{% endif %}  
               {% endif %}
+              {% if block.settings.row_content or block.settings.page.content or variant_content %}{% else %}{% break %}{% endif %}
+               
               <div
                 class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
                 {{ block.shopify_attributes }}
