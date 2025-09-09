@@ -156,11 +156,11 @@
             {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
               <h1>{{ product.title | escape | replace: "®", "<sup>®</sup>" | replace: "™", "<sup>™</sup>" }} {% if current_variant.title != 'Default Title' %} - <span>{{ current_variant.title | split: '(' | first }}</span>{% endif %}</h1>
-              <a href="{{ current_variant.url }}" class="product__title">
+              {% comment %} <a href="{{ current_variant.url }}" class="product__title">
                 <h2 class="h1">
                   {{ product.title | escape | replace: "®", "<sup>®</sup>" | replace: "™", "<sup>™</sup>" }} <span>{% if current_variant.title != 'Default Title' %} - {{ current_variant.title | split: '(' | first }}{% endif %}</span>
                 </h2>
-              </a>
+              </a> {% endcomment %}
             </div>
 
             {%- when 'part_number' -%}
