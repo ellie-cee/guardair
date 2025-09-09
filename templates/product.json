@@ -154,6 +154,7 @@
           "type": "product_description",
           "settings": {
             "font_style": "inline-richtext",
+            "include_collapsible_tabs": true,
             "show_features": true,
             "show_includes": true,
             "show_advantages": true,
