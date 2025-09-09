@@ -198,16 +198,6 @@
         "option_name": "Extension Length"
       }
     },
-    "gua_specifications_table_ttEDji": {
-      "type": "gua-specifications-table",
-      "disabled": true,
-      "name": "GUA Specifications Chart",
-      "settings": {
-        "specifications_heading": "{{ product.metafields.custom.linked_products.value.group_name.value }} Specifications",
-        "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
-        "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
-      }
-    },
     "ywm_collapsible_content_with_image_hzbDHa": {
       "type": "ywm-collapsible-content-with-image",
       "blocks": {
@@ -269,7 +259,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "container_color_scheme": "scheme-1",
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
@@ -295,6 +285,16 @@
         "include_margins": true
       }
     },
+    "gua_specifications_table_ttEDji": {
+      "type": "gua-specifications-table",
+      "disabled": true,
+      "name": "GUA Specifications Chart",
+      "settings": {
+        "specifications_heading": "{{ product.metafields.custom.linked_products.value.group_name.value }} Specifications",
+        "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
+        "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -317,9 +317,9 @@
   "order": [
     "main",
     "gua_product_tabs_6VXzLn",
-    "gua_specifications_table_ttEDji",
     "ywm_collapsible_content_with_image_hzbDHa",
     "1721751086101a9e7e",
+    "gua_specifications_table_ttEDji",
     "related-products"
   ]
 }
