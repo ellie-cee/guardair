@@ -378,7 +378,9 @@
             <tbody>
                     {% for entry in p_entries %}
                           {% assign handle = entry.handle %}
-                          {% assign currentProduct = all_products[handle] %}       
+                          {% assign pid = entry.id %}
+                          {% assign currentProduct = all_products[handle] %}
+                          {% if currentProduct.sku == blank  %}{% assign currentProduct = all_products[pid] %}{% endif %}
                           {% assign currentVariant = currentProduct.selected_or_first_available_variant %}    
                           
                           {% if currentVariant.metafields.custom.max_pressure.value != blank %}
