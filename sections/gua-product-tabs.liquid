@@ -547,8 +547,8 @@
                     {% endfor %}
 
                     {%- for variant in product.variants limit: 1 -%}
-                          {% if variant.metafields.custom.accessories.value != blank and block.settings.show_advantages %}
-                            <div id="tab5" class="tab-content">
+                          {% if variant.metafields.custom.accessories.value != blank and block.settings.show_accessories %}
+                          <h3>Accessories</h3>
                               <ul>
                                 {%- for variant in product.variants -%}
                                   {%- assign current_variant = product.selected_or_first_available_variant -%}
@@ -562,7 +562,6 @@
                                 {% endfor %}
                               </ul>
 
-                            </div>
                           {% endif %}
                         {% endfor %}                    
                 </div>
