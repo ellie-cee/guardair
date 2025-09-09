@@ -427,8 +427,9 @@
                     </div>
 
             {%- when 'specifications' -%}
-              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">             
-                {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
+              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">     
+                          <h3>Specificatations</h3>                           
+                {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:product,block:block %}
               </div>
 
             {%- when 'product_description' -%}
