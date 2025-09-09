@@ -186,7 +186,7 @@
               {%- when 'specifications' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</a></li>         
               {%- when 'parts' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</a></li>       
+                {% if variant.metafields.custom.replacement_parts.value %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</a></li>{% endif %}
               {%- when 'accessories' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</a></li>                                           
               {% endcase %}
