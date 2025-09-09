@@ -57,6 +57,10 @@
             "debug": true
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "linked_products_picker_Qq9Ayh": {
           "type": "linked_products_picker",
           "source": "{{ product.metafields.custom.linked_products.value }}",
@@ -64,10 +68,6 @@
             "products": "{{ product.metafields.custom.linked_products.value.products.value }}",
             "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
           }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -119,8 +119,8 @@
         "features_JCcDdi",
         "sku_tEbYhb",
         "ywm_toggle_yqdhWp",
-        "linked_products_picker_Qq9Ayh",
         "price",
+        "linked_products_picker_Qq9Ayh",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
