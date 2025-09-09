@@ -558,8 +558,9 @@
                   </div>
                 {%- endif -%}
             {%- when 'specifications' -%}
+              <div id="tab{{ forloop.index }}" class="tab-content">              
                 {% render 'gua-specifications',highlight:block.settings.highlight_variant,product:section.settings.product,block:block %}
-
+            </div>
             {%- when 'product_description' -%}
                 <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
 
