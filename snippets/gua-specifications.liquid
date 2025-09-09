@@ -392,7 +392,7 @@
 
                 <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}">
                   {% if show_part_number == true and currentVariant.sku %}
-                    <td>
+                    <td>{{ currentProduct.variants.size }}
                       <span class="td-value td-noBr here"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
                     </td>
                   {% elsif show_part_number == true %}
