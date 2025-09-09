@@ -113,7 +113,7 @@
               {% endif %}
               {% assign content_check = block.settings.row_content | strip_html %}
               {% assign content_check = content_check | append: block.settings.page.content | strip_html %}
-              {% assign content_check = content_check | append: variant_content | strip_html %}
+              {% assign content_check = content_check | append: variant_content | strip_html | strip  %}
               {% comment %} ---{{ content_check }}-- {% endcomment %}
               {% if content_check == '' %}{% break %}{% endif %}
                
