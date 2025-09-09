@@ -579,7 +579,23 @@
                               {% endfor %}
                             </ul>
                         {% endif %}
-                      {% endfor %}                    
+                      {% endfor %}     
+                      
+                      {%- for variant in product.variants limit: 1 -%}
+                        {% if variant.metafields.custom.includes.value != blank %}
+                          <h3>Includes</h3>
+                          <ul>
+                            {%- assign current_variant = product.selected_or_first_available_variant -%}
+                            {%- for variant in product.variants -%}
+                              {% if current_variant.title == variant.title %}
+                                {% for text in variant.metafields.custom.includes.value %}
+                                  <li>{{ text }}</li>
+                                {% endfor %}
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      {% endfor %}                      
                 </div>
               </div>
 
