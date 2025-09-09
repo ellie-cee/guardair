@@ -300,7 +300,7 @@
           "type": "specifications",
           "settings": {
             "highlight_variant": true,
-            "variant_title": false,
+            "variant_title": true,
             "variant_image": false,
             "variant_image_size": 90,
             "type_fields": true,
