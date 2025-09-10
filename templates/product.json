@@ -155,12 +155,7 @@
           "settings": {
             "font_style": "inline-richtext",
             "include_collapsible_tabs": true,
-            "show_features": true,
-            "show_includes": true,
-            "show_advantages": true,
-            "show_accessories": true,
-            "show_propwarning": true,
-            "show_leadtime": true
+            "show_accessories": true
           }
         },
         "specifications_gVXQmL": {
@@ -225,6 +220,18 @@
             "block_image_size": "medium"
           }
         },
+        "collapsible_row_FRHFLM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Accessories",
+            "icon": "pepper",
+            "row_content": "",
+            "row_content_variant": "custom.accessories",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
         "collapsible_row_TtrAtb": {
           "type": "collapsible_row",
           "settings": {
@@ -265,6 +272,7 @@
       "block_order": [
         "collapsible_row_YWE7PW",
         "collapsible_row_kwyCgP",
+        "collapsible_row_FRHFLM",
         "collapsible_row_TtrAtb",
         "collapsible_row_YzJGQp",
         "collapsible_row_TbGHqj"
