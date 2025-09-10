@@ -104,10 +104,14 @@
                 {% assign metafield_key = block.settings.row_content_variant | split:'.' | last %}
                     {% if metafield_namespace %}{% capture variant_content %}{%- for variant in product.variants -%}
                          {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
-                        {% if metafield.value != blank %}{{ metafield.type }}
+                        {% if metafield.value != blank and metafield.type contains 'text' %}
                             <ul>{% for text in metafield.value %}
                                 <li>{{ text }}</li>
                               {% endfor %}</ul>
+                            {% elsif metafield.value != blank and metafield.type contains 'product' %}                              
+                            <ul>{% for product in metafield.value %}
+                                <li>{{ product.title }}</li>
+                              {% endfor %}</ul>                              
                         {% endif %}
                       {% endfor %}{% endcapture %}{% endif %}  
               {% endif %}
