@@ -3,7 +3,7 @@
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
 {% assign sell_sheet_url = product.metafields.custom.literature_sell_sheet_url.value %}
 {% assign parts = product.selected_or_first_available_variant.metafields.custom.replacement_parts.value  %}
-
+{% assign accessories = product.selected_or_first_available_variant.metafields.custom.accessories.value  %}
 
 <div class="gua_product_info itg_full_product_info--disabled">
 <div class="tabs"><div class="nav-wrapper">
@@ -25,7 +25,7 @@
               {%- when 'parts' -%}
                 {% if parts %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</li>{% endif %}
               {%- when 'accessories' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</li>                                           
+                {% if accessories %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</li>{% endif %}
               {% endcase %}
       {% endfor %}
 
