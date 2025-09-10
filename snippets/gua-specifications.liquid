@@ -496,7 +496,9 @@
                   {% endif %}
                   {%- if has_variant_metafield -%}
                     <td data-label="{{ block.settings.variant_metafield_label }}">
-                      {%- assign metafield_value = currentVariant.metafields[metafield_namespace][metafield_key].value -%}
+                      {% assign variant_metafield_namespace = block.settings.variant_metafield | split:'.' | first %}
+                      {% assign variant_metafield_key = block.settings.variant_metafield | split:'.' | last %}
+                      {%- assign metafield_value = currentVariant.metafields[variant_metafield_namespace][variant_metafield_key].value -%}
                       {{ metafield_value | default: '-' }}
                     </td>
                   {%- endif -%}
