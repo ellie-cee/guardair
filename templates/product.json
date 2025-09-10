@@ -212,6 +212,18 @@
             "block_image_size": "medium"
           }
         },
+        "collapsible_row_dB8xqq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warranty",
+            "icon": "check_mark",
+            "row_content": "",
+            "row_content_variant": "",
+            "page": "warranty",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
         "collapsible_row_YWE7PW": {
           "type": "collapsible_row",
           "settings": {
@@ -219,18 +231,6 @@
             "icon": "check_mark",
             "row_content": "",
             "row_content_variant": "custom.featured",
-            "page": "",
-            "block_image_alt": "",
-            "block_image_size": "medium"
-          }
-        },
-        "collapsible_row_dB8xqq": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "this is a new row",
-            "icon": "check_mark",
-            "row_content": "<p>this is the content</p>",
-            "row_content_variant": "",
             "page": "",
             "block_image_alt": "",
             "block_image_size": "medium"
@@ -275,8 +275,8 @@
       },
       "block_order": [
         "collapsible_row_YzJGQp",
-        "collapsible_row_YWE7PW",
         "collapsible_row_dB8xqq",
+        "collapsible_row_YWE7PW",
         "collapsible_row_kwyCgP",
         "collapsible_row_TtrAtb",
         "collapsible_row_TbGHqj"
