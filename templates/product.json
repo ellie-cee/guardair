@@ -154,8 +154,7 @@
           "type": "product_description",
           "settings": {
             "font_style": "inline-richtext",
-            "include_collapsible_tabs": true,
-            "show_accessories": true
+            "include_collapsible_tabs": true
           }
         },
         "specifications_gVXQmL": {
@@ -195,7 +194,7 @@
       "name": "GUA Product Tabs",
       "settings": {
         "products": [],
-        "option_name": "Extension Length"
+        "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
       }
     },
     "ywm_collapsible_content_with_image_hzbDHa": {
