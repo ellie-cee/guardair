@@ -173,6 +173,21 @@ table.specifications-table a {color:#333;font-weight:600;text-decoration:none;}
 .featured-product table.specifications-table a {color:{{ accent_color2 }};}
 table.specifications-table .active a {color:#fff;}
 
+@media screen and (max-width: 768px) {.specifications-table, .specifications-table thead, 
+  .specifications-table tbody, .specifications-table th, .specifications-table td, .specifications-table tr {display: block;} 
+.specifications-table thead tr {position: absolute; top: -9999px; left: -9999px;} 
+.specifications-table tr {border: 1px solid #ccc; margin-bottom: 20px; padding: 10px; border-radius: 8px; background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);} 
+.specifications-table tr.active {border-color: #007bff; background-color: #e8f4fd;} 
+.specifications-table td {border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50% !important; padding-top: 8px; padding-bottom: 8px;} 
+.specifications-table td:before {content: attr(data-label); position: absolute; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap; font-weight: bold; color: #333;} 
+.specifications-table td:last-child {border-bottom: 0;} 
+.specifications-table td:first-child {font-size: 1.1em; font-weight: bold; background-color: #f8f9fa; margin-bottom: 10px; border-radius: 4px;} 
+.specifications-table td:first-child:before {content: "Product: ";}
+} 
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .specifications-table {font-size: 0.9em;} .specifications-table th, .specifications-table td {padding: 8px;}}
+
 {% comment %} --- PRODUCT --- {% endcomment %}
 body.template-product .product {margin-top:2rem;}
 body.template-product .product__title h1 {font-size: calc(var(--font-heading-scale) * 3rem);}
