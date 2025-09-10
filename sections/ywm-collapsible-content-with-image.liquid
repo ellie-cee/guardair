@@ -105,7 +105,7 @@
                     {% if metafield_namespace %}{% capture variant_content %}{%- for variant in product.variants -%}
                          {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}{{ metafield.value }}--{{  metafield.type }}
                         {% if metafield.value != blank %}
-                            <ul>{% for text in metafield.value.value %}
+                            <ul>{% for text in metafield.value %}
                                 <li>{{ text }}</li>
                               {% endfor %}</ul>
                         {% endif %}
