@@ -80,112 +80,12 @@
                       {% endif %}
                 </div>
                 <div id="details-right" class="grid__item">
-                      {% if 1 == 4 %}
-                       <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-                      <div class="grid__item">
-                            {% if warning65_text != blank and warning65_url != blank and block.settings.show_propwarning %}
-                              {%  assign tab_title = "Prop. 65 Warning" %}
-                            <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
-                            <details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.first %}open{% endif %}>
-                              <summary id="Summary-{{ block.id }}-{{ section.id }}">{% render 'icon-accordion', icon: block.settings.icon %}
-                                <h3 class="accordion__title inline-richtext h4">{{ tab_title }}</h3>{% render 'icon-caret' %}
-                              </summary>
-                              <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
-                                  <p>
-                                    <img
-                                      src="https://cdn.shopify.com/s/files/1/2656/7538/t/2/assets/cautionlogo-1536324387328.png?7929381987511505442"
-                                      alt=""
-                                      width="32"
-                                      height="29"
-
-                                    >&nbsp;WARNING >: {{ warning65_text }} -&nbsp;<a href="{{ warning65_url }}" target="_blank" rel="noopener">
-                                      {{- warning65_url | remove: 'http://' | remove: 'https://' -}}
-                                    </a>
-                                  </p>
-                              </div>
-                            </details>
-                          </div>
-                          {% endif %}  
-                        </div>
-                      </div></div>
-                    {% endif %}
 
                     {% if block.settings.include_collapsible_tabs %}
                       <div id="collapsible-tab-content"></div>
                     {% endif %}
                   </div>
-
-{% if 1 == 5 %}
-                    {% if product.metafields.custom.delivery_time.value != blank and block.settings.show_leadtime %}
-                          <h3>Lead Time</h3>                      
-                          {{ product.metafields.custom.delivery_time.value }}
-                    {%  endif %}
-
-                      {%- for variant in product.variants -%}
-                        {% if variant.metafields.custom.featured.value != blank %}
-                          <h3>Features</h3>
-                            <ul>
-                              {%- assign current_variant = product.selected_or_first_available_variant -%}
-
-                              {% for text in variant.metafields.custom.featured.value %}
-                                <li>{{ text }}</li>
-                              {% endfor %}
-                            </ul>
-                        {% endif %}
-                      {% endfor %}     
-                      
-                      {%- for variant in product.variants limit: 1 -%}
-                        {% if variant.metafields.custom.includes.value != blank and block.settings.show_includes %}
-                          <h3>Includes</h3>
-                          <ul>
-                            {%- assign current_variant = product.selected_or_first_available_variant -%}
-                            {%- for variant in product.variants -%}
-                              {% if current_variant.title == variant.title %}
-                                {% for text in variant.metafields.custom.includes.value %}
-                                  <li>{{ text }}</li>
-                                {% endfor %}
-                              {% endif %}
-                            {% endfor %}
-                          </ul>
-                        {% endif %}
-                      {% endfor %}          
-                      
-                      {%- for variant in product.variants limit: 1 -%}
-                        {% if variant.metafields.custom.advantages.value != blank and block.settings.show_advantages %}
-                          <h3>Advantages</h3>
-                          <ul>
-                              {%- assign current_variant = product.selected_or_first_available_variant -%}
-                              {%- for variant in product.variants -%}
-                                {% if current_variant.title == variant.title %}
-                                  {% for text in variant.metafields.custom.advantages.value %}
-                                    <li>{{ text }}</li>
-                                  {% endfor %}
-                                {% endif %}
-                              {% endfor %}
-                            </ul>
-                          </div>
-                        {% endif %}
-                    {% endfor %}
-
-                    {%- for variant in product.variants limit: 1 -%}
-                          {% if variant.metafields.custom.accessories.value != blank and block.settings.show_accessories %}
-                          <h3>Accessories</h3>
-                              <ul>
-                                {%- for variant in product.variants -%}
-                                  {%- assign current_variant = product.selected_or_first_available_variant -%}
-                                  {% if current_variant.title == variant.title %}
-                                    {% for text in variant.metafields.custom.accessories.value %}
-                                      <li>
-                                        <a href="{{ text.url }}" target="_blank">{{ text.title }}</a>
-                                      </li>
-                                    {% endfor %}
-                                  {% endif %}
-                                {% endfor %}
-                              </ul>
-
-                          {% endif %}
-                        {% endfor %}         
-{% endif %}           
+       
                 </div>
               </div>
 
@@ -227,22 +127,6 @@
   </div>
 </div>
 
-<script>
-/*  document.addEventListener("DOMContentLoaded", function() {
-      const table = document.querySelector(".dynamic-table");
-      const headers = table.querySelectorAll("th");
-      let visibleColumnCount = 0;
-
-      headers.forEach(header => {
-          if (window.getComputedStyle(header).display !== "none") {
-              visibleColumnCount++;
-          }
-      });
-
-      // Set a data attribute to the table for CSS targeting
-      table.setAttribute("data-column-count", visibleColumnCount);
-  });*/
-</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
