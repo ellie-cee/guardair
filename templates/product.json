@@ -224,7 +224,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Accessories",
-            "icon": "pepper",
+            "icon": "return",
             "row_content": "",
             "row_content_variant": "custom.accessories",
             "page": "",
