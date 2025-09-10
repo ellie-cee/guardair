@@ -397,20 +397,20 @@
 
                 <tr class="{% if currentVariant.sku == product.selected_or_first_available_variant.sku and highlight %}active{% endif %}" data-handle="{{ currentProduct.sku }}{{ currentVariant.sku }}">
                   {% if show_part_number == true and currentVariant.sku %}
-                    <td>
-                      <span class="td-value td-noBr" data-label="Part Number"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
+                    <td data-label="Part Number">
+                      <span class="td-value td-noBr"><a href="{{ currentProduct.url }}" title="{{ currentVariant.sku }}">{{ currentVariant.sku }}</a></span>
                     </td>
                   {% elsif show_part_number == true %}
-                    <td>
-                      <span class="td-value td-noBr" data-label="Part Number"><a href="{{ product.url }}" title="{{ currentProduct.sku }}">{{ currentProduct.sku }}</a></span>
+                    <td data-label="Part Number">
+                      <span class="td-value td-noBr"><a href="{{ product.url }}" title="{{ currentProduct.sku }}">{{ currentProduct.sku }}</a></span>
                     </td>                    
                   {% endif %}
                 {% if show_title == true %}
                     <td width="10%">{{ currentProduct.title | escape }}</td>
                 {% endif %}                  
                 {% if show_fittings == true and request.page_type == 'product'  and show_type_fields %} 
-                    <td>
-                      <span class="td-value td-noBr" data-label="Description">{{ currentVariant.metafields.global.Fittings.value }}</span>
+                    <td data-label="Description">
+                      <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
                     </td>
                   {% endif %}
                   {% if show_air_hose_id == true and show_type_fields %}
