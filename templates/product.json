@@ -9,13 +9,35 @@
  */
 {
   "sections": {
+    "rich_text_tQKL8T": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wqmKME": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.title }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wqmKME"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
-        "part_review_kRUDNy": {
-          "type": "part_review",
-          "settings": {}
-        },
         "klaviyo_reviews_average_rating_KHihtJ": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "disabled": true,
@@ -25,6 +47,11 @@
         },
         "title": {
           "type": "title",
+          "disabled": true,
+          "settings": {}
+        },
+        "part_review_kRUDNy": {
+          "type": "part_review",
           "settings": {}
         },
         "description": {
@@ -112,9 +139,9 @@
         }
       },
       "block_order": [
-        "part_review_kRUDNy",
         "klaviyo_reviews_average_rating_KHihtJ",
         "title",
+        "part_review_kRUDNy",
         "description",
         "features_JCcDdi",
         "sku_tEbYhb",
@@ -137,7 +164,7 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
-        "media_position": "right",
+        "media_position": "left",
         "enable_breadcrumbs": false,
         "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
@@ -167,8 +194,7 @@
             "type_fields": true,
             "special_field": "",
             "variant_metafield_label": "",
-            "variant_metafield_namespace": "",
-            "variant_metafield_key": ""
+            "variant_metafield": ""
           }
         },
         "accessories_bRVzrF": {
@@ -331,6 +357,7 @@
     }
   },
   "order": [
+    "rich_text_tQKL8T",
     "main",
     "gua_product_tabs_6VXzLn",
     "ywm_collapsible_content_with_image_hzbDHa",
