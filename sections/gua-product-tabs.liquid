@@ -61,9 +61,9 @@
                   <h2 class="h1">Product Details</h2>
                       <div class="rich-text__caption {{ block.settings.font_style }}" {{ block.shopify_attributes }}>
 
-                          {%- if product.description != blank  -%}                 
+                          {%- if product.description != blank  -%}
                             <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
-                          {% endif %}                                         
+                          {% endif %}
                       </div> 
                           {% if operation_manual_url != blank or sell_sheet_url != blank %}
                           <h3 class="h2 tab-heading">Documents</h3>          
@@ -109,9 +109,9 @@
                               <div class="grid">                        
                             {% for product in parts %}
                                  <div class="grid__item">{% render 'card-product', card_product:product %}</div>
-                              {% endfor %}     
+                              {% endfor %}
                             </div>                       
-                        {% endif %}                            
+                        {% endif %}
 
                         {% endfor %}
                       </ul>
@@ -131,14 +131,14 @@
                             <div class="grid">                        
                             {% for product in accessories %}
                                  <div class="grid__item">{% render 'card-product', card_product:product %}</div>
-                              {% endfor %}     
+                              {% endfor %}
                             </div>     
                           {% endif %}
                         {% endfor %}
                       </ul>
                     </div>
                     {% endif %}
-                {% endfor %}{% endif %}                
+                {% endfor %}{% endif %}
 
             {%- endcase -%}
           {% endfor %}
@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "id": "variant_metafield_key",
                 "label": "Variant Metafield Key",
                 "info": "Enter the key for the variant metafield (e.g., 'material' or 'weight')"
-              }        
+              }
             ]
           },
     {
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
               "value": "heading",
               "label": "Heading"
-            }            
+            }
           ],
           "default": "body",
           "label": "t:sections.featured-product.blocks.text.settings.text_style.label"
