@@ -14,7 +14,7 @@
               {%- if product.featured_image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
-                  {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}                  
+                  {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}
                 {% endif %}
                   <a href="{{ product.url }}" class="grid__image">
                <div class="grid__image-wrapper{% if section.settings.block_style == 'stacked' %} grid__image--{{ section.settings.image_width }}-width{% endif %}{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
@@ -64,9 +64,9 @@
                             {% when 'basic_series' %}{% render 'gua-title_v3',product:product, text_style:'basic_series' %}
                             {% when 'specific_series' %}{% render 'gua-title_v3',product:product, text_style:'specific_series' %}
                             {% when 'basic' %}{% render 'gua-title_v3',product:product, text_style:'basic' %}
-                            {% when 'specific' %}{% render 'gua-title_v3',product:product, text_style:'specific' %}                                  
-                            {% when 'slice' %}{% render 'gua-title_v2',title:product.title %}                                 
-                            {% when 'move_model' %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}                          
+                            {% when 'specific' %}{% render 'gua-title_v3',product:product, text_style:'specific' %}
+                            {% when 'slice' %}{% render 'gua-title_v2',title:product.title %}
+                            {% when 'move_model' %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}
                             {% when 'remove_model' %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}
                         {% endcase %}
                     </a>
@@ -80,10 +80,10 @@
                           <div class="rte {{ section.settings.font_style }}">{{ desc_parts[0] }}.</div>
                     {% elsif section.settings.pdesc_shorten == 2 and desc_parts %}
                           <div class="rte {{ section.settings.font_style }}">{{ desc_parts[1] }}.</div>
-                    {% else %}                       
+                    {% else %}
                       <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
-                    {% endif %}                  
-                {%- endif -%}                
+                    {% endif %}
+                {%- endif -%}
 
               </div>
             </div>
