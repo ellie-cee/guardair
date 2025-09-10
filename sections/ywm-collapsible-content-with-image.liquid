@@ -110,7 +110,7 @@
                               {% endfor %}</ul>
                             {% elsif metafield.value != blank and metafield.type contains 'product' %}                              
                             <ul>{% for product in metafield.value %}
-                                <li>{{ product.title }}</li>
+                                <li><a href="{{product.url }}">{{ product.title }}</a></li>
                               {% endfor %}</ul>                              
                         {% endif %}
                       {% endfor %}{% endcapture %}{% endif %}  
