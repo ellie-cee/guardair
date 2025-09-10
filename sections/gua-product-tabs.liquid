@@ -2,7 +2,7 @@
 {% assign warning65_url = product.metafields.custom.warning65_url.value %}
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
 {% assign sell_sheet_url = product.metafields.custom.literature_sell_sheet_url.value %}
-
+{% assign parts = product.selected_or_first_available_variant.metafields.custom.replacement_parts.value  %}
 
 
 <div class="gua_product_info itg_full_product_info--disabled">
@@ -23,7 +23,7 @@
               {%- when 'specifications' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</li>         
               {%- when 'parts' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</li>
+                {% if parts %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</li>{% endif %}
               {%- when 'accessories' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</li>                                           
               {% endcase %}
@@ -97,7 +97,7 @@
                   </p>    
                 </div>
 
-            {%- when 'parts' -%}{% assign tab_index = forloop.index %}
+            {%- when 'parts' -%}{% if parts %}{% assign tab_index = forloop.index %}
                   {%- for variant in product.variants limit: 1 -%}
                   {% if variant.metafields.custom.replacement_parts.value != blank %}
               <div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
@@ -117,7 +117,7 @@
                       </ul>
                     </div>
                     {% endif %}
-                {% endfor %}
+                {% endfor %}{% endif %}
 
             {%- endcase -%}
           {% endfor %}
