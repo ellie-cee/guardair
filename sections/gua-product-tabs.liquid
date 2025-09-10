@@ -106,13 +106,13 @@
                         {%- for variant in product.variants -%}
                           {%- assign current_variant = product.selected_or_first_available_variant -%}
                           {% if current_variant.title == variant.title %}
-                            {% for text in variant.metafields.custom.replacement_parts.value %}
-                              <li>
-                                {% assign clean_title = text.title | split: ' - ' | first %}
-                                <a href="{{ text.url }}" target="_blank">{{ clean_title }}</a>
-                              </li>
-                            {% endfor %}
-                          {% endif %}
+                              <div class="grid">                        
+                            {% for product in parts %}
+                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
+                              {% endfor %}     
+                            </div>                       
+                        {% endif %}                            
+
                         {% endfor %}
                       </ul>
                     </div>
