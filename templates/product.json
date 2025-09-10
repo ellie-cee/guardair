@@ -242,7 +242,7 @@
           "settings": {
             "heading": "Prop. 65 Warning",
             "icon": "fire",
-            "row_content": "<p>{{ product.metafields.custom.warning65_text.value }}</p>",
+            "row_content": "<p>⚠️ WARNING: {{ product.metafields.custom.warning65_text.value }}</p>",
             "row_content_variant": "",
             "page": "",
             "block_image_alt": "",
