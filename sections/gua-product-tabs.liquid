@@ -19,11 +19,11 @@
               {%- when 'custom_liquid' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Custom {{ block.title }}</li>
               {%- when 'rating' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Reviews/li>       
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Reviews</li>       
               {%- when 'specifications' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</li>         
               {%- when 'parts' -%}
-                {% if variant.metafields.custom.replacement_parts.value %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</li>{% endif %}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</li>
               {%- when 'accessories' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</li>                                           
               {% endcase %}
