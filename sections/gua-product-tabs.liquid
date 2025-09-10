@@ -119,6 +119,28 @@
                     {% endif %}
                 {% endfor %}{% endif %}
 
+            {%- when 'accessories' -%}{% if accessories %}{% assign tab_index = forloop.index %}
+                  {%- for variant in product.variants limit: 1 -%}
+                  {% if variant.metafields.custom.accessories.value != blank %}
+              <div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
+                  <h3 class="h2 tab-heading">Accessories</h3>
+                      <ul>
+                        {%- for variant in product.variants -%}
+                          {%- assign current_variant = product.selected_or_first_available_variant -%}
+                          {% if current_variant.title == variant.title %}
+                            {% for text in variant.metafields.custom.accessories.value %}
+                              <li>
+                                {% assign clean_title = text.title | split: ' - ' | first %}
+                                <a href="{{ text.url }}" target="_blank">{{ clean_title }}</a>
+                              </li>
+                            {% endfor %}
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                    {% endif %}
+                {% endfor %}{% endif %}                
+
             {%- endcase -%}
           {% endfor %}
 
