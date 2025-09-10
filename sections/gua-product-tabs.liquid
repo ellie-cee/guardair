@@ -102,7 +102,7 @@
                   {% if variant.metafields.custom.replacement_parts.value != blank %}
               <div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
                   <h3 class="h2 tab-heading">Replacement Parts</h3>
-                      <ul>
+                      <ul class="product-grid">
                         {%- for variant in product.variants -%}
                           {%- assign current_variant = product.selected_or_first_available_variant -%}
                           {% if current_variant.title == variant.title %}
