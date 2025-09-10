@@ -200,6 +200,30 @@
     "ywm_collapsible_content_with_image_hzbDHa": {
       "type": "ywm-collapsible-content-with-image",
       "blocks": {
+        "collapsible_row_YzJGQp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Delivery Time",
+            "icon": "truck",
+            "row_content": "<p>{{ product.metafields.custom.delivery_time | metafield_tag }}</p>",
+            "row_content_variant": "",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
+        "collapsible_row_V6kJ48": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "New row",
+            "icon": "check_mark",
+            "row_content": "",
+            "row_content_variant": "",
+            "page": "distributor-contacts",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
         "collapsible_row_YWE7PW": {
           "type": "collapsible_row",
           "settings": {
@@ -236,18 +260,6 @@
             "block_image_size": "medium"
           }
         },
-        "collapsible_row_YzJGQp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Delivery Time",
-            "icon": "truck",
-            "row_content": "<p>{{ product.metafields.custom.delivery_time | metafield_tag }}</p>",
-            "row_content_variant": "",
-            "page": "",
-            "block_image_alt": "",
-            "block_image_size": "medium"
-          }
-        },
         "collapsible_row_TbGHqj": {
           "type": "collapsible_row",
           "settings": {
@@ -262,10 +274,11 @@
         }
       },
       "block_order": [
+        "collapsible_row_YzJGQp",
+        "collapsible_row_V6kJ48",
         "collapsible_row_YWE7PW",
         "collapsible_row_kwyCgP",
         "collapsible_row_TtrAtb",
-        "collapsible_row_YzJGQp",
         "collapsible_row_TbGHqj"
       ],
       "name": "GUA Collapsible Content with Images",
@@ -277,7 +290,7 @@
         "layout": "none",
         "color_scheme": "scheme-1",
         "container_color_scheme": "scheme-1",
-        "open_first_collapsible_row": true,
+        "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "custom_css_class": "",
