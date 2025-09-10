@@ -164,7 +164,7 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
-        "media_position": "left",
+        "media_position": "right",
         "enable_breadcrumbs": false,
         "image_zoom": "lightbox",
         "mobile_thumbnails": "show",
