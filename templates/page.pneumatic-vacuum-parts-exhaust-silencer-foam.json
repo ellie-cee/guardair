@@ -76,8 +76,16 @@
       "blocks": {
         "title_cgkCrg": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "heading_size": "h1"
+          }
+        },
+        "text_paD6ni": {
+          "type": "text",
+          "settings": {
+            "text": "Pneumatic Vacuum Parts - Exhaust Silencer Foam Inserts",
+            "text_style": "heading"
           }
         },
         "specifications_A6cCwk": {
@@ -94,6 +102,7 @@
       },
       "block_order": [
         "title_cgkCrg",
+        "text_paD6ni",
         "specifications_A6cCwk"
       ],
       "name": "GUA Collection Chart",
