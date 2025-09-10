@@ -109,10 +109,9 @@
                                 <li>{{ text }}</li>
                               {% endfor %}</ul>
                             {% elsif metafield.value != blank and metafield.type contains 'product' %}                              
-                            <ul>{% for product in metafield.value %}
-                                <li><a href="{{product.url }}">{{ product.title }}</a></li>
+                            {% for product in metafield.value %}
                                   {% render 'card-product', card_product:product %}
-                              {% endfor %}</ul>                              
+                              {% endfor %}                            
                         {% endif %}
                       {% endfor %}{% endcapture %}{% endif %}  
               {% endif %}
