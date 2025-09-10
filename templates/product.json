@@ -150,14 +150,6 @@
     "gua_product_tabs_6VXzLn": {
       "type": "gua-product-tabs",
       "blocks": {
-        "product_description_gxqeth": {
-          "type": "product_description",
-          "settings": {
-            "font_style": "inline-richtext",
-            "include_collapsible_tabs": true,
-            "show_accessories": true
-          }
-        },
         "specifications_gVXQmL": {
           "type": "specifications",
           "settings": {
@@ -170,6 +162,14 @@
             "variant_metafield_label": "",
             "variant_metafield_namespace": "",
             "variant_metafield_key": ""
+          }
+        },
+        "product_description_gxqeth": {
+          "type": "product_description",
+          "settings": {
+            "font_style": "inline-richtext",
+            "include_collapsible_tabs": true,
+            "show_accessories": true
           }
         },
         "accessories_bRVzrF": {
@@ -186,8 +186,8 @@
         }
       },
       "block_order": [
-        "product_description_gxqeth",
         "specifications_gVXQmL",
+        "product_description_gxqeth",
         "accessories_bRVzrF",
         "parts_ynQeCi",
         "rating_fnx9yp"
