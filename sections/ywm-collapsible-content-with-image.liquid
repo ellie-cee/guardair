@@ -103,7 +103,7 @@
                 {% assign metafield_namespace = block.settings.row_content_variant | split:'.' | first %}
                 {% assign metafield_key = block.settings.row_content_variant | split:'.' | last %}
                     {% if metafield_namespace %}{% capture variant_content %}{%- for variant in product.variants -%}
-                         {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}{{ metafield.value }}--{{  metafield.type }}
+                         {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
                         {% if metafield.value != blank %}
                             <ul>{% for text in metafield.value %}
                                 <li>{{ text }}</li>
