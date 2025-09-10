@@ -94,9 +94,11 @@
             "highlight_variant": false,
             "variant_title": true,
             "variant_image": true,
-            "variant_image_size": 105,
+            "variant_image_size": 135,
             "type_fields": true,
-            "special_field": ""
+            "special_field": "",
+            "variant_metafield_label": "Fits",
+            "variant_metafield": "custom.fits_field_for_pages"
           }
         }
       },
