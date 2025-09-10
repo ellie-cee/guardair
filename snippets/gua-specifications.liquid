@@ -441,7 +441,7 @@
 
                   {% if show_flow == true and show_type_fields %}
                     <td data-label="Flow">
-                      <span class="td-value">{{ currentVariant.metafields.global.Flow.value }}</span>
+                      <span class="td-value">{{ currentVariant.metafields.global.Flow.value | default:'-' }}</span>
                     </td>
                   {% endif %}
                   {% if show_min_compressor == true and show_type_fields %}
