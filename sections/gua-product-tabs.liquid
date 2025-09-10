@@ -100,7 +100,7 @@
             {%- when 'parts' -%}
                   {%- for variant in product.variants limit: 1 -%}
                   {% if variant.metafields.custom.replacement_parts.value != blank %}
-              <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
+              <div data-tab-content="tab{{ forloop.index }} gg" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
                   <h3 class="h2 tab-heading">Replacement Parts</h3>
                       <ul>
                         {%- for variant in product.variants -%}
