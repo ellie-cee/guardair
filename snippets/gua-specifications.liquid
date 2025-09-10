@@ -414,13 +414,13 @@
                     </td>
                   {% endif %}
                   {% if show_air_hose_id == true and show_type_fields %}
-                    <td>
-                      <span class="td-value" data-label="Air Hose ID">{{ currentVariant.metafields.global['Air-Hose-ID'].value }}"</span>
+                    <td data-label="Air Hose ID">
+                      <span class="td-value">{{ currentVariant.metafields.global['Air-Hose-ID'].value }}"</span>
                     </td>
                   {% endif %}
                   {% if show_vacuum_hose_id == true and show_type_fields %}
-                    <td>
-                      <span class="td-value" data-label="Vacuum Hose ID">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
+                    <td data-label="Vacuum Hose ID">
+                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_hose_length == true and show_type_fields %}
@@ -440,68 +440,68 @@
                     {% endif %}  
 
                   {% if show_flow == true and show_type_fields %}
-                    <td>
-                      <span class="td-value" data-label="{{ currentVariant.metafields.global.Flow.label }}">{{ currentVariant.metafields.global.Flow.value }}</span>
+                    <td data-label="{{ currentVariant.metafields.global.Flow.label }}">
+                      <span class="td-value">{{ currentVariant.metafields.global.Flow.value }}</span>
                     </td>
                   {% endif %}
                   {% if show_min_compressor == true and show_type_fields %}
-                    <td>
-                      <span class="td-value" data-label="Min. Compressor Req.">{{ currentVariant.metafields.global['Min-Compressor-Required'].value }}</span>
+                    <td data-label="Min. Compressor Req.">
+                      <span class="td-value">{{ currentVariant.metafields.global['Min-Compressor-Required'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_vacuum_flow == tru and show_type_fields %}
-                    <td>
-                      <span class="td-value" data-label="Vacuum Flow">{{ currentVariant.metafields.global['Vacuum-Flow'].value }}</span>
+                    <td data-label="Vacuum Flow">
+                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Flow'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_vacuum_lift == true and show_type_fields %}
-                    <td>
-                      <span class="td-value" data-label="Vacuum Lift">{{ currentVariant.metafields.global['Vacuum-Lift'].value }}</span>
+                    <td data-label="Vacuum Lift">
+                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Lift'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_syphon_flow_rate == true and show_type_fields %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">{{ currentVariant.metafields.global['Syphon-Flow-Rate'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_output_thrust == true and show_type_fields %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">{{ currentVariant.metafields.global['Output-Thrust'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_noise_level == true and show_type_fields %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">{{ currentVariant.metafields.global['Noise-Level'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_steel_drum_guage == true and show_type_fields %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">{{ currentVariant.metafields.global['Steel-Drum-Gauge'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_maxpressure == true and show_type_fields %}
-                      <td>
+                    <td data-label="Label">
                         <span class="td-value">{{ currentVariant.metafields.custom.max_pressure.value }}</span>
                       </td>
                   {% endif %}
                   {% if show_inlet_connection == true and request.page_type == 'page' and show_type_fields %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'</span>
                     </td>
                   {% endif %}                  
                 {% if show_fittings == true and request.page_type == 'page'  and show_type_fields %} 
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value td-noBr">{{ currentVariant.metafields.global.Fittings.value }}</span>
                     </td>
                   {% endif %}
                   {%- if has_variant_metafield -%}
-                    <td class="">
+                    <td data-label="Label">
                       {%- assign metafield_value = currentVariant.metafields[metafield_namespace][metafield_key].value -%}
                       {{ metafield_value | default: '-' }}
                     </td>
                   {%- endif -%}                  
                   {% if show_dimensions == true %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">
                         {{-
                           currentVariant.metafields.global['Each-Length'].value
@@ -514,13 +514,13 @@
                     </td>
                   {% endif %}
                   {% if show_weight == true %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">{{ currentVariant.metafields.global['Each-Weight'].value }}</span>
                     </td>
                   {% endif %}
 
                   {% if show_extra_fields == true %}
-                    <td>
+                    <td data-label="Label">
                       <span class="td-value">{{ extra_value }}</span>
                     </td>
                 {% endif %}
