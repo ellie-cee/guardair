@@ -420,43 +420,43 @@
                   {% endif %}
                   {% if show_vacuum_hose_id == true and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
+                      <span class="td-value" data-label="Vacuum Hose ID">{{ currentVariant.metafields.global['Vacuum-Hose-ID'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_hose_length == true and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.custom.hose_length.value }}'</span>
+                      <span class="td-value" data-label="Hose Length">{{ currentVariant.metafields.custom.hose_length.value }}'</span>
                     </td>
                   {% endif %}                    
                   {% if show_inlet_connection == true and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'</span>
+                      <span class="td-value" data-label="Inlet Connection">{{ currentVariant.metafields.global['Inlet-Connection'].value }}'</span>
                     </td>
                   {% endif %}
 
                     {% if show_image == true %}
                       {% assign img_size = block.settings.variant_image_size | default: 90 %}
-                    <td width="10%">{{ currentProduct.featured_image | image_url:width:img_size | image_tag }}</td>
+                    <td width="10%" data-label="Image">{{ currentProduct.featured_image | image_url:width:img_size | image_tag }}</td>
                     {% endif %}  
 
                   {% if show_flow == true and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global.Flow.value }}</span>
+                      <span class="td-value" data-label="{{ currentVariant.metafields.global.Flow.label }}">{{ currentVariant.metafields.global.Flow.value }}</span>
                     </td>
                   {% endif %}
                   {% if show_min_compressor == true and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global['Min-Compressor-Required'].value }}</span>
+                      <span class="td-value" data-label="Min. Compressor Req.">{{ currentVariant.metafields.global['Min-Compressor-Required'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_vacuum_flow == tru and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Flow'].value }}</span>
+                      <span class="td-value" data-label="Vacuum Flow">{{ currentVariant.metafields.global['Vacuum-Flow'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_vacuum_lift == true and show_type_fields %}
                     <td>
-                      <span class="td-value">{{ currentVariant.metafields.global['Vacuum-Lift'].value }}</span>
+                      <span class="td-value" data-label="Vacuum Lift">{{ currentVariant.metafields.global['Vacuum-Lift'].value }}</span>
                     </td>
                   {% endif %}
                   {% if show_syphon_flow_rate == true and show_type_fields %}
