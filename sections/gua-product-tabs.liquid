@@ -13,19 +13,19 @@
         {% if forloop.index == 1 %}{% assign active_class = 'active' %}{% else %}{% assign active_class = '' %}{% endif %}
         {%- case block.type -%}
               {%- when '@app' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">App{{  block.title }}</a></li>
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">App{{  block.title }}</li>
               {%- when 'product_description' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Product Details</li>                     
               {%- when 'custom_liquid' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Custom {{ block.title }}</a></li>
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Custom {{ block.title }}</li>
               {%- when 'rating' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Reviews</a></li>       
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Reviews/li>       
               {%- when 'specifications' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</a></li>         
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</li>         
               {%- when 'parts' -%}
-                {% if variant.metafields.custom.replacement_parts.value %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</a></li>{% endif %}
+                {% if variant.metafields.custom.replacement_parts.value %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</li>{% endif %}
               {%- when 'accessories' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</a></li>                                           
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</li>                                           
               {% endcase %}
       {% endfor %}
 
