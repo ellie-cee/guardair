@@ -262,6 +262,18 @@
             "block_image_size": "medium"
           }
         },
+        "collapsible_row_8Jqk96": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Typical Applications",
+            "icon": "check_mark",
+            "row_content": "<p>Typical Applications</p>",
+            "row_content_variant": "",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
         "collapsible_row_YzJGQp": {
           "type": "collapsible_row",
           "settings": {
@@ -291,6 +303,7 @@
         "collapsible_row_YWE7PW",
         "collapsible_row_kwyCgP",
         "collapsible_row_TtrAtb",
+        "collapsible_row_8Jqk96",
         "collapsible_row_YzJGQp",
         "collapsible_row_TbGHqj"
       ],
