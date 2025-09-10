@@ -114,6 +114,7 @@
               {% assign content_check = block.settings.row_content | strip_html %}
               {% assign content_check = content_check | append: block.settings.page.content | strip_html %}
               {% assign content_check = content_check | append: variant_content | strip_html | strip  %}
+              {{ content_check }}--{{ content_check.size }}
               {% comment %} ---{{ content_check }}-- {% endcomment %}
               {% comment %} {% if content_check.size == 0  %}{% break %}{% endif %} {% endcomment %}
                
