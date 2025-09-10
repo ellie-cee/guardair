@@ -213,6 +213,18 @@
             "block_image_size": "medium"
           }
         },
+        "collapsible_row_kwyCgP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Advantages",
+            "icon": "star",
+            "row_content": "{{ product.metafields.custom.advantages_new | metafield_tag }}",
+            "row_content_variant": "",
+            "page": "",
+            "block_image_alt": "",
+            "block_image_size": "medium"
+          }
+        },
         "collapsible_row_TtrAtb": {
           "type": "collapsible_row",
           "settings": {
@@ -252,6 +264,7 @@
       },
       "block_order": [
         "collapsible_row_YWE7PW",
+        "collapsible_row_kwyCgP",
         "collapsible_row_TtrAtb",
         "collapsible_row_YzJGQp",
         "collapsible_row_TbGHqj"
