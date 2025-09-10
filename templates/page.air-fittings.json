@@ -455,14 +455,13 @@
           "type": "specifications",
           "settings": {
             "highlight_variant": false,
-            "variant_title": false,
+            "variant_title": true,
             "variant_image": true,
-            "variant_image_size": 90,
+            "variant_image_size": 135,
             "type_fields": true,
             "special_field": "",
             "variant_metafield_label": "",
-            "variant_metafield_namespace": "",
-            "variant_metafield_key": ""
+            "variant_metafield": ""
           }
         }
       },
@@ -608,8 +607,7 @@
             "type_fields": true,
             "special_field": "",
             "variant_metafield_label": "",
-            "variant_metafield_namespace": "",
-            "variant_metafield_key": ""
+            "variant_metafield": ""
           }
         }
       },
@@ -695,8 +693,7 @@
             "type_fields": false,
             "special_field": "Male Thread",
             "variant_metafield_label": "",
-            "variant_metafield_namespace": "",
-            "variant_metafield_key": ""
+            "variant_metafield": ""
           }
         }
       },
@@ -751,7 +748,9 @@
             "variant_image": true,
             "variant_image_size": 240,
             "type_fields": false,
-            "special_field": ""
+            "special_field": "",
+            "variant_metafield_label": "",
+            "variant_metafield": ""
           }
         }
       },
