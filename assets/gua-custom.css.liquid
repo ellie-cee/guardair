@@ -9,11 +9,10 @@
 {% assign soft_gray = '#f8f9fa' %}
 {% assign mid_gray = '#ececec' %}
 {% assign dark_font = '#001149' %} 
-{% assign desktop_max_width = '1200px' %}
+{% assign desktop_max_width = '1350px' %}
 {% assign border_radius = '' %}
 {% assign accent_gradient1 = accent_color2 | hex_to_rgba %}
 {% assign accent_gradient2 = accent_color1 | hex_to_rgba %}
-{% assign max_width = '1350px' %}
  
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
@@ -77,7 +76,7 @@ body {display:grid !important;width:100vw;padding:0px !important;}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;letter-spacing:0.05em;}
 body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;}
 
-.page-width {width: auto; max-width: 1350px; padding: 0 10px;}
+.page-width {width: auto; max-width: {{ desktop_max_width }}; padding: 0 10px;}
 .breadcrumbs ul.breadcrumb li, .breadcrumbs ul.breadcrumb li a {font-family: "Eurostile-Reg",sans-serif !important;font-weight:100;font-size:1.4rem;}
 .breadcrumbs ul.breadcrumb li:last-of-type a:after {content:none;}
 
