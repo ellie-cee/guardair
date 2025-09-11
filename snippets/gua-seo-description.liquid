@@ -11,7 +11,7 @@
 {% assign max_length = 155 %}
 {% assign blog_news = 'Discover innovative air solutions at Guardair – leading the way in industrial air tools and safety. Stay informed with our latest news updates!' %}
 
-{%- if current_page != 1 -%}
+{% comment %} {%- if current_page != 1 -%}
 {% capture page_append %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endcapture %}
 {% else %}
 {% assign page_append = '' %}
@@ -20,7 +20,7 @@
 {% capture current_lang %}{{ request.locale.iso_code }}-{{ localization.country.iso_code}}{% endcapture %}
 {% if current_lang == 'en-US' %}{% assign lang_append = '' %}
   {% else %}{% assign lang_append = ' - ' | append: localization.country %}
-{% endif %}
+{% endif %} {% endcomment %}
 {% comment %}
 <meta name="ywm-path" content="{{ request.path }}">
 <meta name="ywm-type" content="{{ page_type }}">
@@ -78,7 +78,7 @@
 {% assign meta_description = meta_description | append: tag_append | append: page_append %}
 {% assign meta_room = max_length | minus: meta_description.size %}
 
-{% comment %} {% if meta_description.size > max_length %}
+{% if meta_description.size > max_length %}
   {% assign meta_description = meta_description | truncate: max_length %}
 {% elsif meta_room > shop.name.size %}
     {% if meta_description contains shop.name or meta_description contains short_shop %}
@@ -86,6 +86,6 @@
     {% else %}
       {% assign meta_description = meta_description | append: ' — ' | append: shop.name %}
     {% endif %}
-{% endif %} {% endcomment %}
+{% endif %}
  
 <meta name="description" content="{{ meta_description | lstrip }}" />
