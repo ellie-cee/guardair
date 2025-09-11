@@ -451,6 +451,12 @@ document.addEventListener('DOMContentLoaded', function() {
       "name": "t:sections.featured-product.blocks.text.name",
       "settings": [
         {
+          "type": "text",
+          "id": "text_tab",
+          "default": "Tab Name",
+          "label": "Tab Name"
+        },        
+        {
           "type": "inline_richtext",
           "id": "text",
           "default": "Text block",
@@ -481,18 +487,7 @@ document.addEventListener('DOMContentLoaded', function() {
           "label": "t:sections.featured-product.blocks.text.settings.text_style.label"
         }
       ]
-    },      
-    {
-      "type": "custom_text",
-      "name": "Custom Text",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "custom_text",
-          "label": "Custom Text",
-        }
-      ]
-    },    
+    }  
   ],     
   "presets": [
     {
