@@ -12,12 +12,18 @@ Use as a product block: https://github.com/yellowwebmonkey/shopify-features/blob
   {% if block.settings.icon_all1 %}
         <div class="trust-icon">
           <img src="{{ block.settings.icon_all1 | img_url: dimension }}" alt="{{ tag }}" />
-        </div>{% endif %}
-        {% if block.settings.icon_all2 %}
-        <div class="trust-icon">
-          <img src="{{ block.settings.icon_all2 | img_url: dimension }}" alt="{{ tag }}" />
         </div>
   {% endif %}
+  {% if block.settings.icon_all2 %}
+        <div class="trust-icon">
+          <img src="{{ block.settings.icon_all2 | img_url: dimension }}" alt="{{ tag }}" />
+        </div> 
+  {% endif %}
+  {% if block.settings.icon_all3 %}
+        <div class="trust-icon">
+          <img src="{{ block.settings.icon_all3 | img_url: dimension }}" alt="{{ tag }}" />
+        </div> 
+  {% endif %}  
   
   {% for i in (1..12) %} 
       {% assign icon_id = 'icon_' | append: i %}
