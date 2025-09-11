@@ -118,8 +118,8 @@
                                           {%- case block.type -%}
                                                 {%- when '@app' -%}{% render block %}
                                                 {%- when 'custom' -%}<div class="product-block" {{ block.shopify_attributes }}>{{ block.settings.code }}</div>     
-                                                {%- when 'ywm_product_info' -%}{% render 'ywm-product-info' %}
-                                                {%- when 'gua-trust-icons' %}{% render 'gua-trust-icon-tags', block:block %}                                                
+                                                {%- when 'gua_product_info' -%}{% render 'gua-product-info' %}
+                                                {%- when 'gua-trust-icons' %}{% render 'gua-trust-icons', block:block %}                                                
                                           {% endcase %}                        
                                      {% endif %}
                                 {% endfor %}
@@ -153,7 +153,7 @@
             {%- when '@app' -%}
               {% render block %}
 
-            {%- when 'gua-trust-icon-tags' %}
+            {%- when 'gua-trust-icon' %}
                 {% render 'gua-trust-icons', block:block %}
             
             {%- when 'title' -%}
