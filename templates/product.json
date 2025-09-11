@@ -200,6 +200,13 @@
             "variant_metafield": ""
           }
         },
+        "text_tPHKYX": {
+          "type": "text",
+          "settings": {
+            "text": "Shipping & Returns",
+            "text_style": "body"
+          }
+        },
         "parts_ynQeCi": {
           "type": "parts",
           "settings": {
@@ -216,6 +223,7 @@
       "block_order": [
         "product_description_gxqeth",
         "specifications_gVXQmL",
+        "text_tPHKYX",
         "parts_ynQeCi",
         "rating_fnx9yp"
       ],
