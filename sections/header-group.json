@@ -292,7 +292,7 @@
       "settings": {
         "disable_predictive_search": false,
         "force_menu": true,
-        "menu_css": true,
+        "menu_css": false,
         "event_type": "click",
         "show_link_arrow": true,
         "show_sublink_arrow": true,

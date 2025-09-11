@@ -3,8 +3,9 @@
 /* .tmenu_navbar, .nav-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; position: relative; height: 60px; } */
 
 .tmenu_alignment_center .tmenu_nav {justify-content: space-between;}
-
-
+@media (min-width: 1349px) {
+    .tmenu_app--horizontal .tmenu_submenu_type_tab {max-width: 1350px;left: calc((100vw - 1350px) / 2);}
+}
 .nav-menu { display: flex; list-style: none; margin: 0; padding: 0; }
 .nav-item { position: relative; }
 .nav-link { color: white; text-decoration: none; padding: 16px 20px; display: block; font-weight: 500; font-size: 14px; transition: background-color 0.2s; border-bottom: 3px solid transparent; }
