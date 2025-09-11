@@ -181,6 +181,9 @@
           "type": "product_description",
           "settings": {
             "font_style": "inline-richtext",
+            "resource_label": "Resources",
+            "include_literature": true,
+            "include_landing_pages": true,
             "include_collapsible_tabs": true
           }
         },
