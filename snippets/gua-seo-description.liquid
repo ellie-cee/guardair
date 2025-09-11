@@ -78,7 +78,7 @@
 {% assign meta_description = meta_description | append: tag_append | append: page_append %}
 {% assign meta_room = max_length | minus: meta_description.size %}
 
-{% if meta_description.size > max_length %}
+{% comment %} {% if meta_description.size > max_length %}
   {% assign meta_description = meta_description | truncate: max_length %}
 {% elsif meta_room > shop.name.size %}
     {% if meta_description contains shop.name or meta_description contains short_shop %}
@@ -86,6 +86,6 @@
     {% else %}
       {% assign meta_description = meta_description | append: ' — ' | append: shop.name %}
     {% endif %}
-{% endif %}
+{% endif %} {% endcomment %}
  
 <meta name="description" content="{{ meta_description | lstrip }}" />
