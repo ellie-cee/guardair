@@ -76,28 +76,6 @@
           "type": "price",
           "settings": {}
         },
-        "gua_trust_icon_tags_n3Rgyj": {
-          "type": "gua-trust-icon-tags",
-          "settings": {
-            "icon_all1": "shopify://shop_images/master_icons_002395_Assembled_USA.png",
-            "icon_all2": "shopify://shop_images/GA_icon_dcc56d07-08e3-407d-8562-2efc7e1c8aeb.svg",
-            "icon_1": "shopify://shop_images/quiet_ear.png",
-            "tag_1": "quiet",
-            "tag_2": "",
-            "tag_3": "",
-            "tag_4": "",
-            "tag_5": "",
-            "tag_6": "",
-            "tag_8": "",
-            "tag_10": "",
-            "image_style": "fixed",
-            "max_width_icon": 96,
-            "desktop_columns": 3,
-            "mobile_columns": 2,
-            "icon_align": "center",
-            "grayscale": false
-          }
-        },
         "linked_products_picker_Qq9Ayh": {
           "type": "linked_products_picker",
           "source": "{{ product.metafields.custom.linked_products.value }}",
@@ -111,6 +89,29 @@
           "settings": {
             "picker_type": "dropdown",
             "swatch_shape": "circle"
+          }
+        },
+        "gua_trust_icons_mxf7Ee": {
+          "type": "gua-trust-icons",
+          "settings": {
+            "icon_all1": "shopify://shop_images/master_icons_002395_Assembled_USA.png",
+            "icon_all2": "shopify://shop_images/master_icons_002395_OSHA.png",
+            "icon_1": "shopify://shop_images/icon__shield_check__1.png",
+            "tag_1": "quietforce",
+            "icon_2": "shopify://shop_images/READ_ME_GA_Read_repositioned-crop.png",
+            "tag_2": "",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
+            "tag_6": "",
+            "tag_8": "",
+            "tag_10": "",
+            "image_style": "fixed",
+            "max_width_icon": 48,
+            "desktop_columns": 3,
+            "mobile_columns": 2,
+            "icon_align": "center",
+            "grayscale": false
           }
         },
         "gua_toggle_QnEgB6": {
@@ -156,9 +157,9 @@
         "features_JCcDdi",
         "sku_tEbYhb",
         "price",
-        "gua_trust_icon_tags_n3Rgyj",
         "linked_products_picker_Qq9Ayh",
         "variant_picker",
+        "gua_trust_icons_mxf7Ee",
         "gua_toggle_QnEgB6",
         "quantity_selector",
         "buy_buttons",
