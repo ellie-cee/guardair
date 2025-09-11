@@ -54,18 +54,6 @@
           "type": "part_review",
           "settings": {}
         },
-        "icon_with_text_7ngLLY": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "heart",
-            "heading_1": "Made in USA",
-            "icon_2": "return",
-            "heading_2": "Heading",
-            "icon_3": "truck",
-            "heading_3": "Heading"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -134,7 +122,7 @@
             "blocks": "gua_trust_icons_mxf7Ee",
             "padding_top": 20,
             "padding_bottom": 20,
-            "debug": false
+            "debug": true
           }
         },
         "quantity_selector": {
@@ -146,6 +134,18 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
+          }
+        },
+        "icon_with_text_7ngLLY": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "heart",
+            "heading_1": "Made in USA",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
           }
         },
         "product_image_meta_7VKecY": {
@@ -165,7 +165,6 @@
         "klaviyo_reviews_average_rating_KHihtJ",
         "title",
         "part_review_kRUDNy",
-        "icon_with_text_7ngLLY",
         "description",
         "features_JCcDdi",
         "sku_tEbYhb",
@@ -176,6 +175,7 @@
         "gua_toggle_QnEgB6",
         "quantity_selector",
         "buy_buttons",
+        "icon_with_text_7ngLLY",
         "product_image_meta_7VKecY",
         "custom_liquid_pDMckf"
       ],
