@@ -44,18 +44,7 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    {% comment %} <title>
-      {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-    </title> {% endcomment %}
-    {% comment %} {% if request.path == '/blogs/news' %}
-      <meta name="description" content="Discover innovative air solutions at Guardair – leading the way in industrial air tools and safety. Stay informed with our latest news updates!">
-    {% elsif page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
-    {% endif %} {% endcomment %}
-
-    {%  render 'gua-seo-title' %}     
+    {%  render 'gua-seo-title' %}
     {%  render 'gua-seo-description' %}
 
     {% render 'meta-tags' %}
