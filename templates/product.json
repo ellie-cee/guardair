@@ -91,17 +91,6 @@
             "swatch_shape": "circle"
           }
         },
-        "gua_toggle_QnEgB6": {
-          "type": "gua-toggle",
-          "settings": {
-            "desktop_only": false,
-            "custom_block": "",
-            "blocks": "icon_with_text_7ngLLY,gua_trust_icons_mxf7Ee",
-            "padding_top": 20,
-            "padding_bottom": 20,
-            "debug": true
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -123,6 +112,17 @@
             "heading_2": "Heading",
             "icon_3": "truck",
             "heading_3": "Heading"
+          }
+        },
+        "gua_toggle_QnEgB6": {
+          "type": "gua-toggle",
+          "settings": {
+            "desktop_only": false,
+            "custom_block": "",
+            "blocks": "gua_trust_icons_mxf7Ee",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "debug": true
           }
         },
         "gua_trust_icons_mxf7Ee": {
@@ -171,10 +171,10 @@
         "price",
         "linked_products_picker_Qq9Ayh",
         "variant_picker",
-        "gua_toggle_QnEgB6",
         "quantity_selector",
         "buy_buttons",
         "icon_with_text_7ngLLY",
+        "gua_toggle_QnEgB6",
         "gua_trust_icons_mxf7Ee",
         "product_image_meta_7VKecY",
         "custom_liquid_pDMckf"
@@ -403,6 +403,51 @@
         "padding_top": 0,
         "padding_bottom": 28
       }
+    },
+    "video_with_text_RPK3MW": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_7jxGVy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video with text",
+            "heading_size": "h2"
+          }
+        },
+        "text_P4izyg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with a video to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_3yXAMM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7jxGVy",
+        "text_P4izyg",
+        "button_3yXAMM"
+      ],
+      "name": "Video with Text",
+      "settings": {
+        "video_url": "",
+        "description": "",
+        "layout": "image_first",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -412,6 +457,7 @@
     "ywm_collapsible_content_with_image_hzbDHa",
     "1721751086101a9e7e",
     "gua_specifications_table_ttEDji",
-    "related-products"
+    "related-products",
+    "video_with_text_RPK3MW"
   ]
 }
