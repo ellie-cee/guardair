@@ -107,11 +107,11 @@
             "tag_8": "",
             "tag_10": "",
             "image_style": "fixed",
-            "max_width_icon": 48,
+            "max_width_icon": 72,
             "desktop_columns": 3,
             "mobile_columns": 2,
             "icon_align": "center",
-            "grayscale": false
+            "grayscale": true
           }
         },
         "gua_toggle_QnEgB6": {
