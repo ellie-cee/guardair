@@ -103,7 +103,7 @@
               <div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
                   <h3 class="h2 tab-heading">Replacement Parts</h3>
                       <ul class="product-grid">
-                        {%- for variant in product.variants -%}
+                        {% comment %}{%- for variant in product.variants -%}
                           {%- assign current_variant = product.selected_or_first_available_variant -%}
                           {% if current_variant.title == variant.title %}
                               <div class="grid">                        
@@ -112,8 +112,8 @@
                               {% endfor %}
                             </div>                       
                         {% endif %}
-
-                        {% endfor %}
+                        {% endfor %}{% endcomment %}
+                         {% render 'gua-variant-metafield',variant_metafield:'custom.replacement_parts',product:product %}
                       </ul>
                     </div>
                     {% endif %}
