@@ -119,10 +119,10 @@
           "settings": {
             "desktop_only": false,
             "custom_block": "",
-            "blocks": "",
+            "blocks": "gua_trust_icons_mxf7Ee",
             "padding_top": 20,
             "padding_bottom": 20,
-            "debug": true
+            "debug": false
           }
         },
         "quantity_selector": {
