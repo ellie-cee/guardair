@@ -97,7 +97,7 @@
           {% assign left_blocks = '' %}
           {% assign hide_right = true %}
                     {% for block in section.blocks %}
-                      {% if block.type == 'ywm-toggle' %}
+                      {% if block.type == 'gua-toggle' %}
                           {% assign left_blocks = block.settings.blocks %}
                           {% if block.settings.debug %}{% assign debug = true %}{% endif %}
                           {% assign id = block.id %}
@@ -2634,7 +2634,7 @@
       ]
     },
      {
-      "type": "ywm-toggle",
+      "type": "gua-toggle",
       "name": "GUA Block Switch",
       "settings": [
         {
