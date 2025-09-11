@@ -83,7 +83,9 @@
                         {% endif %}
                         {% if landing_pages != blank %} 
                           <h3 class="h3">Series Information</h3>    
-                                                
+                            {% if landing_pages != blank %}
+                              <li><a href="{{ landing_pages }}" target="_blank">Series Information</a></li>
+                            {% endif %}                                                
                         {% endif %}
                       {% endif %}
                 </div>
