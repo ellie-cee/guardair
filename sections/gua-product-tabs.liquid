@@ -65,7 +65,8 @@
                             <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
                           {% endif %}
                       </div> 
-                          {% if operation_manual_url != blank or sell_sheet_url != blank %}
+                      {% if block.settings.include_literature or block.settings.include_landing_pages %}
+                        {% if operation_manual_url != blank or sell_sheet_url != blank %}
                           <h3 class="h2 tab-heading">Documents</h3>          
                           <ul>
                             {% if operation_manual_url != blank %}
@@ -77,6 +78,7 @@
                               <li><a href="{{ sell_sheet_url }}" target="_blank">Sell Sheet</a></li>
                             {% endif %}
                           </ul>
+                        {% endif %}
                       {% endif %}
                 </div>
                 <div id="details-right" class="grid__item">
