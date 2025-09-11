@@ -203,6 +203,8 @@
         "text_tPHKYX": {
           "type": "text",
           "settings": {
+            "text_tab": "Shipping & Returns",
+            "text_heading": "Shipping & Returns",
             "text": "Shipping & Returns",
             "text_style": "body"
           }
