@@ -100,7 +100,7 @@
           <div class="grid__item">
             {%- for block in section.blocks -%}
               {% if block.settings.row_content_variant %}
-                  {% render 'gua-variant-metafield',variant_metafield:block.settings.row_content_variant,product:product %}
+                {% capture variant_content %}{% render 'gua-variant-metafield',variant_metafield:block.settings.row_content_variant,product:product %}{% endcapture %}
               {% endif %}
               {% assign content_check = block.settings.row_content | strip_html %}
               {% assign content_check = content_check | append: block.settings.page.content | strip_html %}
