@@ -11,16 +11,16 @@
 {% assign max_length = 155 %}
 {% assign blog_news = 'Discover innovative air solutions at Guardair – leading the way in industrial air tools and safety. Stay informed with our latest news updates!' %}
 
-{% comment %} {%- if current_page != 1 -%}
+{%- if current_page != 1 -%}
 {% capture page_append %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endcapture %}
 {% else %}
 {% assign page_append = '' %}
-{%- endif -%}}
+{%- endif -%}
 {% unless page_type %}{% assign page_type = request.page_type %}{% endunless %}
 {% capture current_lang %}{{ request.locale.iso_code }}-{{ localization.country.iso_code}}{% endcapture %}
 {% if current_lang == 'en-US' %}{% assign lang_append = '' %}
   {% else %}{% assign lang_append = ' - ' | append: localization.country %}
-{% endif %} {% endcomment %}
+{% endif %}
 {% comment %}
 <meta name="ywm-path" content="{{ request.path }}">
 <meta name="ywm-type" content="{{ page_type }}">
