@@ -103,7 +103,7 @@
             "tag_8": "",
             "tag_10": "",
             "image_style": "fixed",
-            "max_width_icon": 48,
+            "max_width_icon": 96,
             "desktop_columns": 3,
             "mobile_columns": 2,
             "icon_align": "center",
@@ -144,7 +144,7 @@
             "blocks": "",
             "padding_top": 20,
             "padding_bottom": 20,
-            "debug": false
+            "debug": true
           }
         },
         "product_image_meta_7VKecY": {
