@@ -1,0 +1,215 @@
+{% comment %} SECTION: ywm-trust-icon-tags.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/218cf59b7a256d627f279e3cfe4ffb1c366af0f1/Sections/ywm-trust-icon-tags.liquid {% endcomment %}
+{% comment %} LAST UPDATED: 20250217 {% endcomment %}
+
+{% comment %}
+Use with snippet: https://github.com/yellowwebmonkey/shopify-features/blob/330f786c2e93deb7fb43800ca3fd11be885d8c58/Snippets/ywm-trust-icon-tags.liquid
+
+Alternatively, use as product block:
+https://github.com/yellowwebmonkey/shopify-features/blob/d86be603109f801f5532c6d91c6e8fc5a7302d84/Block%20Types/Product/ywm-trust-icons-tags.liquid
+{% endcomment %}
+
+
+{% render 'ywm-trust-icon-tags', block:section %}
+
+{% schema %}
+  {
+    "name": "YWM Trust Icons",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "icon_1",
+        "label": "Icon 1"
+      },
+      {
+        "type": "text",
+        "id": "tag_1",
+        "label": "Tag for Icon 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_2",
+        "label": "Icon 2"
+      },
+      {
+        "type": "text",
+        "id": "tag_2",
+        "label": "Tag for Icon 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_3",
+        "label": "Icon 3"
+      },
+      {
+        "type": "text",
+        "id": "tag_3",
+        "label": "Tag for Icon 3"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_4",
+        "label": "Icon 4"
+      },
+      {
+        "type": "text",
+        "id": "tag_4",
+        "label": "Tag for Icon 4"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_5",
+        "label": "Icon 5"
+      },
+      {
+        "type": "text",
+        "id": "tag_5",
+        "label": "Tag for Icon 5"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_6",
+        "label": "Icon 6"
+      },
+      {
+        "type": "text",
+        "id": "tag_6",
+        "label": "Tag for Icon 6"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_7",
+        "label": "Icon 7"
+      },
+      {
+        "type": "text",
+        "id": "tag_7",
+        "label": "Tag for Icon 7"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_8",
+        "label": "Icon 8"
+      },
+      {
+        "type": "text",
+        "id": "tag_8",
+        "label": "Tag for Icon 8"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_9",
+        "label": "Icon 9"
+      },
+      {
+        "type": "text",
+        "id": "tag_9",
+        "label": "Tag for Icon 9"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_10",
+        "label": "Icon 10"
+      },
+      {
+        "type": "text",
+        "id": "tag_10",
+        "label": "Tag for Icon 10",
+        "info":"_____"        
+      }, 
+      {
+        "type": "image_picker",
+        "id": "icon_11",
+        "label": "Icon 11"
+      },
+      {
+        "type": "text",
+        "id": "tag_11",
+        "label": "Tag for Icon 11"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_12",
+        "label": "Icon 12"
+      },
+      {
+        "type": "text",
+        "id": "tag_12",
+        "label": "Tag for Icon 12"
+      },  
+      {
+        "type": "image_picker",
+        "id": "icon_13",
+        "label": "Icon 13"
+      },
+      {
+        "type": "text",
+        "id": "tag_13",
+        "label": "Tag for Icon 13"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_14",
+        "label": "Icon 14"
+      },
+      {
+        "type": "text",
+        "id": "tag_14",
+        "label": "Tag for Icon 14"
+      },  
+      {
+        "type": "image_picker",
+        "id": "icon_15",
+        "label": "Icon 15"
+      },
+      {
+        "type": "text",
+        "id": "tag_15",
+        "label": "Tag for Icon 15"
+      },         
+      {
+        "type": "header",
+        "content": "Settings"
+      },        
+      {
+        "type": "select",
+        "id": "image_style",
+        "label": "Image Style",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to Height"
+          },
+          {
+            "value": "fixed",
+            "label": "Set Size"
+          }
+        ],
+        "default": "adapt"
+      },
+      {
+        "type": "number",
+        "id": "desktop_columns",
+        "label": "Desktop Columns",
+        "default": 3
+      },
+      {
+        "type": "number",
+        "id": "mobile_columns",
+        "label": "Mobile Columns",
+        "default": 2
+      },
+      {
+        "type": "checkbox",
+        "id": "grayscale",
+        "label": "Enable Grayscale",
+        "default": false
+      }
+    ],
+       "presets": [
+    {
+      "name": "YWM Trust Icons by Tag"
+    }
+       ]
+  }
+{% endschema %}
