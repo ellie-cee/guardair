@@ -84,6 +84,13 @@
             "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "circle"
+          }
+        },
         "icon_with_text_7ngLLY": {
           "type": "icon-with-text",
           "settings": {
@@ -94,13 +101,6 @@
             "heading_2": "Heading",
             "icon_3": "truck",
             "heading_3": "Heading"
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown",
-            "swatch_shape": "circle"
           }
         },
         "gua_trust_icons_mxf7Ee": {
@@ -170,8 +170,8 @@
         "sku_tEbYhb",
         "price",
         "linked_products_picker_Qq9Ayh",
-        "icon_with_text_7ngLLY",
         "variant_picker",
+        "icon_with_text_7ngLLY",
         "gua_trust_icons_mxf7Ee",
         "gua_toggle_QnEgB6",
         "quantity_selector",
