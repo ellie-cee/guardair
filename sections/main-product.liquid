@@ -110,7 +110,7 @@
                 {% if debug %}{%- for block in section.blocks -%}{{ block.id }}    ({{ block.type }})<br/>{% endfor %}Debug: {{ debug }}<br/>Left Blocks: {{ left_blocks }}<br/>{% endif %}
 
                 {% capture left_content %}
-                            <div class="product-block" {{ block.shopify_attributes }}>
+                            <div class="product-block toggle-content" {{ block.shopify_attributes }}>
                               {{ custom_content }}
                             </div>
                                {%- for block in section.blocks -%}
