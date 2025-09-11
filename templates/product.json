@@ -72,18 +72,6 @@
             "text_style": "body"
           }
         },
-        "ywm_toggle_yqdhWp": {
-          "type": "ywm-toggle",
-          "disabled": true,
-          "settings": {
-            "desktop_only": true,
-            "custom_block": "",
-            "blocks": "part_number_CKpjqq, Aa3lTV1ZRQjg5Z0tMM__klaviyo_reviews_average_rating_KHihtJ, features_JCcDdi",
-            "padding_top": 20,
-            "padding_bottom": 20,
-            "debug": true
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -125,6 +113,17 @@
             "swatch_shape": "circle"
           }
         },
+        "gua_toggle_QnEgB6": {
+          "type": "gua-toggle",
+          "settings": {
+            "desktop_only": false,
+            "custom_block": "",
+            "blocks": "",
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "debug": true
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -134,17 +133,6 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "ywm_toggle_kFYHrJ": {
-          "type": "ywm-toggle",
-          "settings": {
-            "desktop_only": false,
-            "custom_block": "",
-            "blocks": "",
-            "padding_top": 20,
-            "padding_bottom": 20,
-            "debug": true
           }
         },
         "product_image_meta_7VKecY": {
@@ -167,14 +155,13 @@
         "description",
         "features_JCcDdi",
         "sku_tEbYhb",
-        "ywm_toggle_yqdhWp",
         "price",
         "gua_trust_icon_tags_n3Rgyj",
         "linked_products_picker_Qq9Ayh",
         "variant_picker",
+        "gua_toggle_QnEgB6",
         "quantity_selector",
         "buy_buttons",
-        "ywm_toggle_kFYHrJ",
         "product_image_meta_7VKecY",
         "custom_liquid_pDMckf"
       ],
