@@ -12,7 +12,7 @@
 {%- capture seo_title -%}
 {%- if request.page_type == 'search' and search.terms != blank -%}
 {{ search.terms | split: ' AND ' | last | split: 'product_type:' | last }} - {{ shop.name }}
-    {%- elsif request.page_type == 'search' and search.terms == blank -%}{{ search_title }}   
+    {%- elsif request.page_type == 'search' and search.terms == blank -%}{{ search_title }}
 {% elsif request.path contains 'apps' %}
     {{ shop.name }} {{ request.path | replace: '-',' ' | remove: '/apps/' | replace: '/' | capitalize }}
 {% elsif request.page_type == 'index' %}{{ home_title }}
@@ -46,7 +46,7 @@
 
 {% elsif title_shop_room > 0 and title_needs_shop %}
   {% unless seo_title contains shop.name or seo_title contains short_shop %}
-    {% assign seo_title = seo_title | append: ' — ' | append: shop.name %}    
+    {% assign seo_title = seo_title | append: ' — ' | append: shop.name %}
   {% endunless %}
 {% elsif title_words_room > 0 %}
   {% assign seo_title = seo_title | append: ' — ' | append: short_words %}
