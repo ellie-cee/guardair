@@ -197,13 +197,13 @@
             "variant_metafield": ""
           }
         },
-        "accessories_bRVzrF": {
-          "type": "accessories",
-          "settings": {}
-        },
         "parts_ynQeCi": {
           "type": "parts",
-          "settings": {}
+          "settings": {
+            "parts_tab": "Parts & Accessories",
+            "parts_label": "Replacement Parts",
+            "accesories_label": "Accessories"
+          }
         },
         "rating_fnx9yp": {
           "type": "rating",
@@ -213,7 +213,6 @@
       "block_order": [
         "product_description_gxqeth",
         "specifications_gVXQmL",
-        "accessories_bRVzrF",
         "parts_ynQeCi",
         "rating_fnx9yp"
       ],
