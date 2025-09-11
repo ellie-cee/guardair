@@ -119,7 +119,8 @@
                                                 {%- when '@app' -%}{% render block %}
                                                 {%- when 'custom' -%}<div class="product-block" {{ block.shopify_attributes }}>{{ block.settings.code }}</div>     
                                                 {%- when 'gua_product_info' -%}{% render 'gua-product-info' %}
-                                                {%- when 'gua-trust-icons' %}{% render 'gua-trust-icons', block:block %}                                                
+                                                {%- when 'gua-trust-icons' %}{% render 'gua-trust-icons', block:block %}
+                                                {%- when 'icon-with-text' %}{% render 'icon-with-text', block:block %}
                                           {% endcase %}                        
                                      {% endif %}
                                 {% endfor %}
@@ -155,6 +156,9 @@
 
             {%- when 'gua-trust-icons' %}
                 {% render 'gua-trust-icons', block:block %}
+
+            {%- when 'icon-with-text' %}
+                {% render 'icon-with-text', block:block %}                
             
             {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
