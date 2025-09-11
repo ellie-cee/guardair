@@ -23,7 +23,7 @@
               {%- when 'specifications' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</li>         
               {%- when 'parts' -%}
-                {% if parts %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">{{ block.settings.parts_label }}</li>{% endif %}
+                {% if parts %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">{{ block.settings.parts_tab }}</li>{% endif %}
               {%- when 'accessories' -%}
                 {% if accessories %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</li>{% endif %}
               {% endcase %}
@@ -120,7 +120,7 @@
                         {% endif %}
                     {% endfor %}{% endif %}
             {% if parts or accessories %}</div>{% endif %} 
-            
+
 
             {%- when 'accessories' -%}{% if accessories %}{% assign tab_index = forloop.index %}
                   {%- for variant in product.variants limit: 1 -%}
