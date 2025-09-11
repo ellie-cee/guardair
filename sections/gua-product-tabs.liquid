@@ -70,7 +70,7 @@
                           <h3 class="h2 tab-heading">{{ block.settings.resource_label }}</h3>                          
                         {% if operation_manual_url != blank or sell_sheet_url != blank %} 
                           <h3 class="h3">Literature</h3>
-                          <ul>
+                          <ul class="documents">
                             {% if operation_manual_url != blank %}
                               <li>
                                 <a href="{{ operation_manual_url }}" target="_blank">Operating Instructions</a>
@@ -83,8 +83,8 @@
                         {% endif %}
                         {% if landing_pages != blank %} 
                           <h3 class="h3">Series Information</h3>    
-                            {% if landing_pages != blank %}
-                              <li><a href="{{ landing_pages }}" target="_blank">Series Information</a></li>
+                            {% if landing_pages != blank %}<ul class="related">
+                              <li><a href="{{ landing_pages }}" target="_blank">Series Information</a></li></ul>
                             {% endif %}                                                
                         {% endif %}
                       {% endif %}
