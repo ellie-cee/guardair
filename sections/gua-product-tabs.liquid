@@ -2,6 +2,7 @@
 {% assign warning65_url = product.metafields.custom.warning65_url.value %}
 {% assign operation_manual_url = product.metafields.custom.literature_operation_manual_url.value %}
 {% assign sell_sheet_url = product.metafields.custom.literature_sell_sheet_url.value %}
+{% assign landing_pages = product.metafields.custom.product_info_image_url %}
 {% assign parts = product.selected_or_first_available_variant.metafields.custom.replacement_parts.value  %}
 {% assign accessories = product.selected_or_first_available_variant.metafields.custom.accessories.value  %}
 
@@ -66,8 +67,9 @@
                           {% endif %}
                       </div> 
                       {% if block.settings.include_literature or block.settings.include_landing_pages %}
-                        {% if operation_manual_url != blank or sell_sheet_url != blank %}
-                          <h3 class="h2 tab-heading">Documents</h3>          
+                          <h3 class="h2 tab-heading">{{ block.settings.resource_label }}</h3>                          
+                        {% if operation_manual_url != blank or sell_sheet_url != blank %} 
+                          <h3 class="h3">Literature</h3>
                           <ul>
                             {% if operation_manual_url != blank %}
                               <li>
@@ -78,6 +80,10 @@
                               <li><a href="{{ sell_sheet_url }}" target="_blank">Sell Sheet</a></li>
                             {% endif %}
                           </ul>
+                        {% endif %}
+                        {% if landing_pages != blank %} 
+                          <h3 class="h3">Series Information</h3>    
+                                                
                         {% endif %}
                       {% endif %}
                 </div>
@@ -276,7 +282,13 @@ document.addEventListener('DOMContentLoaded', function() {
             {
               "type": "header",
               "content": "Resources"
-            },           
+            },
+              {
+                "type": "text",
+                "id": "resource_label",
+                "label": "Resource Section Heading",
+                "default":"Resources"
+              },             
             {
               "type": "checkbox",
               "id": "include_literature",
