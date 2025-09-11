@@ -113,7 +113,7 @@
                     {% if accessories %}
                       {%- for variant in product.variants limit: 1 -%}
                       {% if variant.metafields.custom.accessories.value != blank %}
-                      <h3 class="h2 tab-heading">{{ block.settings.accessories_label }}</h3>
+                      <h3 class="h2 tab-heading">{{ block.settings.accesories_label }}</h3>
                           <ul class="product-grid">
                             {% render 'gua-variant-metafield',variant_metafield:'custom.accessories',product:product %}
                           </ul>
