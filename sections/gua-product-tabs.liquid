@@ -103,16 +103,6 @@
               <div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
                   <h3 class="h2 tab-heading">Replacement Parts</h3>
                       <ul class="product-grid">
-                        {% comment %}{%- for variant in product.variants -%}
-                          {%- assign current_variant = product.selected_or_first_available_variant -%}
-                          {% if current_variant.title == variant.title %}
-                              <div class="grid">                        
-                            {% for product in parts %}
-                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
-                              {% endfor %}
-                            </div>                       
-                        {% endif %}
-                        {% endfor %}{% endcomment %}
                          {% render 'gua-variant-metafield',variant_metafield:'custom.replacement_parts',product:product %}
                       </ul>
                     </div>
@@ -125,16 +115,7 @@
               <div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
                   <h3 class="h2 tab-heading">Accessories</h3>
                       <ul class="product-grid">
-                        {%- for variant in product.variants -%}
-                          {%- assign current_variant = product.selected_or_first_available_variant -%}
-                          {% if current_variant.title == variant.title %}
-                            <div class="grid">                        
-                            {% for product in accessories %}
-                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
-                              {% endfor %}
-                            </div>     
-                          {% endif %}
-                        {% endfor %}
+                         {% render 'gua-variant-metafield',variant_metafield:'custom.accessories',product:product %}
                       </ul>
                     </div>
                     {% endif %}
