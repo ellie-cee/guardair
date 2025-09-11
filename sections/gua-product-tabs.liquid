@@ -105,8 +105,8 @@
             {%- when 'text' -%}
               <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">    
                   <h3 class="h2 tab-heading">{{ block.settings.text_heading }}</h3>              
-                  <p class="rich-text__caption {{  block.settings.font_style }}" {{ block.shopify_attributes }}>
-                      {{ block.settings.custom_text }}
+                  <p class="rich-text__caption {{  block.settings.text_style }}" {{ block.shopify_attributes }}>
+                      {{ block.settings.text }}
                   </p>    
                 </div>
 
