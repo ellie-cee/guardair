@@ -312,6 +312,7 @@
         },
         "collapsible_row_YzJGQp": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Delivery Time",
             "icon": "truck",
@@ -324,6 +325,7 @@
         },
         "collapsible_row_TbGHqj": {
           "type": "collapsible_row",
+          "disabled": true,
           "settings": {
             "heading": "Prop. 65 Warning",
             "icon": "fire",
