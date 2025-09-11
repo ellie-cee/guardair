@@ -101,7 +101,7 @@
                   {%- for variant in product.variants limit: 1 -%}
                   {% if variant.metafields.custom.replacement_parts.value != blank %}
               <div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">   
-                  <h3 class="h2 tab-heading">Replacement Parts</h3>
+                  <h3 class="h2 tab-heading">{{ block.settings.parts_tab }}</h3>
                       <ul class="product-grid">
                          {% render 'gua-variant-metafield',variant_metafield:'custom.replacement_parts',product:product %}
                       </ul>
