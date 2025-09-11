@@ -12,7 +12,7 @@
 {% assign blog_news = 'Discover innovative air solutions at Guardair – leading the way in industrial air tools and safety. Stay informed with our latest news updates!' %}
 
 {%- if current_page != 1 -%}
-{% capture page_append %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endcapture %} 
+{% capture page_append %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endcapture %}
 {% else %}
 {% assign page_append = '' %}
 {%- endif -%}}
@@ -35,11 +35,11 @@
 {% elsif request.path == '/collections/all' and template != 'list-collections' %}
     {% assign meta_description = all_products_meta | escape  %}
 {% elsif template == 'list-collections' or page_type == 'list-collections' %}
-  {% assign meta_description =  list_collection_meta | escape  %}    
+  {% assign meta_description =  list_collection_meta | escape  %}
 {% elsif page_type == 'collection' and collection.description == blank and page_description == blank %}
    {% capture meta_description %}{{ collection.title }} {{ extra_blurb }}{% endcapture %}
 {% elsif page_type == 'collection' and collection.description.size == 0 %}
-  {% assign meta_description = "View our " | append: collection.title | append: ". " | append: all_products_meta %}  
+  {% assign meta_description = "View our " | append: collection.title | append: ". " | append: all_products_meta %}
 {% elsif page_type == 'collection' %}
    {% capture meta_description %}{{ shop.name }}: {% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %} {{ collection.title }}{% endcapture %}
 {% elsif page_type == 'product' and product.description == blank and page_description == blank %}
@@ -47,7 +47,7 @@
 {% elsif page_type == 'product' and product.description.size == 0 %}
   {% assign meta_description = "View our " | append: product.title | append: ". " | append: all_products_meta %}  
 {% elsif page_type == 'product' %}
-   {% capture meta_description %}{{ shop.name }}: {% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %} {{ collection.title }}{% endcapture %}      
+   {% capture meta_description %}{{ shop.name }}: {% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %} {{ collection.title }}{% endcapture %}
 {% elsif page_type contains 'policy' %}
    {% assign meta_description = "View our " | append: request.path | remove: "/policies/" | replace: "-", " " | append:" to answer your questions." %}
 {% elsif path contains 'account' %}
@@ -55,23 +55,23 @@
 {% elsif template contains 'article.recipe-kit' %}
    {% assign meta_description = page_title | escape | append: " Recipe" %}
 {% elsif page_type == 'article' %}
-   {% capture meta_description %}{{ article.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}  
+   {% capture meta_description %}{{ article.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}
 {% elsif page_type == 'blog' and request.path == '/blogs/news' %}
        {% assign meta_description = blog_news %}
-{% elsif page_type == 'blog' %}    
+{% elsif page_type == 'blog' %}
   {% capture meta_description %}{{ shop.name }} {{ blog.title }}{% if current_tags %} tagged {{ current_tags | join: ', ' }}{% endif %}{% endcapture %}
 {% elsif template == 'cart' %}
-  {% assign meta_description =  'View your Shopping Cart from ' | append: short_shop  %} 
+  {% assign meta_description =  'View your Shopping Cart from ' | append: short_shop  %}
 {% elsif page_type == 'page' %}
-  {% assign meta_description =   page_title | append: ' ' | append: short_words  %}     
+  {% assign meta_description =   page_title | append: ' ' | append: short_words  %}
 {% else %}
     {% assign meta_description = page_description | escape %}
-{% endif %} 
+{% endif %}
 {% if current_tags %}
   {% assign tag_append = '' %}
     {% unless meta_description contains 'tagged' %}
       {% assign tags = current_tags | join: ', ' %}
-      {% assign tag_append = ' tagged ' | append: tags %}    
+      {% assign tag_append = ' tagged ' | append: tags %}
     {% endunless %}
 {% endif %}
    
@@ -84,7 +84,7 @@
     {% if meta_description contains shop.name or meta_description contains short_shop %}
       {% assign meta_description = meta_description | append: ' — ' | append: short_words %}
     {% else %}
-      {% assign meta_description = meta_description | append: ' — ' | append: shop.name %}    
+      {% assign meta_description = meta_description | append: ' — ' | append: shop.name %}
     {% endif %}
 {% endif %}
  
