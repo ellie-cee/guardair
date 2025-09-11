@@ -76,18 +76,18 @@
                           <ul class="documents">
                             {% if operation_manual_url != blank %}
                               <li>
-                                <a href="{{ operation_manual_url }}" target="_blank">{% if sell_sheet_url contains 'pdf' %}{{ pdf_icon }}{% endif %} Operating Instructions</a>
+                                <a href="{{ operation_manual_url }}" target="_blank">{% render 'gua-file-icon',url:operation_manual_url %} Operating Instructions</a>
                               </li>
                             {% endif %}
                             {% if sell_sheet_url != blank %}
-                              <li><a href="{{ sell_sheet_url }}" target="_blank">{% if sell_sheet_url contains 'pdf' %}{{ pdf_icon }}{% endif %} Sell Sheet</a></li>
+                              <li><a href="{{ sell_sheet_url }}" target="_blank">{% render 'gua-file-icon',url:sell_sheet_url %} Sell Sheet</a></li>
                             {% endif %}
                           </ul>
                         {% endif %}
                         {% if landing_pages != blank %} 
                           <h3 class="h3">Additional Information</h3>    
                             {% if landing_pages != blank %}<ul class="related">
-                              <li><a href="{{ landing_pages }}" target="_blank">Series Information</a></li></ul>
+                              <li><a href="{{ landing_pages }}" target="_blank">{% render 'gua-file-icon',url:landing_pages %} Series Information</a></li></ul>
                             {% endif %}                                                
                         {% endif %}
                       {% endif %}
