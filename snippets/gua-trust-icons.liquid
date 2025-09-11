@@ -1,0 +1,51 @@
+{% comment %} SNIPPET: ywm-trust-icon-tags.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/330f786c2e93deb7fb43800ca3fd11be885d8c58/Snippets/ywm-trust-icon-tags.liquid {% endcomment %}
+{% comment %} LAST UPDATED: 20250131 {% endcomment %}
+
+{% comment %}
+Use as a product block: https://github.com/yellowwebmonkey/shopify-features/blob/d86be603109f801f5532c6d91c6e8fc5a7302d84/Block%20Types/Product/ywm-trust-icons-tags.liquid
+{% endcomment %}
+
+<div class="trust-icons sizing-{{ block.settings.image_style }} align-{{ block.settings.icon_align }}{% if block.settings.grayscale %} grayscale{% endif %}"> 
+  {% if block.settings.image_style == 'fixed' %}{% assign dimension = block.settings.max_width_icon | append:'x' %}{% else %}{% assign dimension = '128x128' %}{% endif %}
+
+  {% if block.settings.icon_all1 %}
+        <div class="trust-icon">
+          <img src="{{ block.settings.icon_all1 | img_url: dimension }}" alt="{{ tag }}" />
+        </div>{% endif %}
+        {% if block.settings.icon_all2 %}
+        <div class="trust-icon">
+          <img src="{{ block.settings.icon_all2 | img_url: dimension }}" alt="{{ tag }}" />
+        </div>
+  {% endif %}
+  
+  {% for i in (1..12) %} 
+      {% assign icon_id = 'icon_' | append: i %}
+      {% assign tag_id = 'tag_' | append: i %}
+    {% assign icon = block.settings[icon_id] %}
+    {% assign tag = block.settings[tag_id] %}
+    
+    {% if icon and tag %}
+      {% if product.tags contains tag %}
+        <div class="trust-icon">
+          <img src="{{ icon | img_url: dimension }}" alt="{{ tag }}" />
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% style %}
+  .trust-icons {display: flex; flex-wrap: wrap; justify-content: center;flex-flow: row wrap;}
+  .trust-icons.align-left {justify-content: start;}
+  .trust-icons.align-center {justify-content: center;}  
+  .trust-icons.sizing-fixed .trust-icon {width: {{ block.settings.max_width_icon }}px;}  
+  .trust-icon {flex: 0 1 calc(100% / {{ block.settings.desktop_columns }} - 10px);padding: 5px;width:calc(100% / {{ block.settings.desktop_columns }} - 10px);text-align: center;}
+  .trust-icons.sizing-adapt .trust-icon img {height: {{ icon.height }}px; width: auto;}
+  .trust-icons.grayscale img {filter: grayscale(100%);opacity: 0.5;}
+  @media (max-width: 768px) {
+    .trust-icons .trust-icon {
+      flex-basis: calc(100% / {{ settings.mobile_columns }} - 10px);
+    }
+  }
+{% endstyle %}
