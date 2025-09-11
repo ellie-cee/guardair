@@ -23,7 +23,7 @@
               {%- when 'specifications' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Specifications</li>         
               {%- when 'parts' -%}
-                {% if parts %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Replacement Parts</li>{% endif %}
+                {% if parts %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">{{ block.settings.parts_label }}</li>{% endif %}
               {%- when 'accessories' -%}
                 {% if accessories %}<li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Accessories</li>{% endif %}
               {% endcase %}
