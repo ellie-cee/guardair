@@ -16,7 +16,11 @@
                             {% for product in metafield.value %}
                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
                             {% endfor %}
-                        </div>                       
+                        </div>
+                    {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
+                        <li>
+                            <a href="{{ metafield.value }}" target="_blank">More information</a>
+                        </li>
                 {% endif %}
             {% endfor %}
         {% endcapture %}
