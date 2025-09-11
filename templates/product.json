@@ -91,35 +91,12 @@
             "swatch_shape": "circle"
           }
         },
-        "gua_trust_icons_mxf7Ee": {
-          "type": "gua-trust-icons",
-          "settings": {
-            "icon_all1": "shopify://shop_images/master_icons_002395_Assembled_USA.png",
-            "icon_all2": "shopify://shop_images/master_icons_002395_OSHA.png",
-            "icon_1": "shopify://shop_images/icon__shield_check__1.png",
-            "tag_1": "quietforce",
-            "icon_2": "shopify://shop_images/READ_ME_GA_Read_repositioned-crop.png",
-            "tag_2": "",
-            "tag_3": "",
-            "tag_4": "",
-            "tag_5": "",
-            "tag_6": "",
-            "tag_8": "",
-            "tag_10": "",
-            "image_style": "fixed",
-            "max_width_icon": 72,
-            "desktop_columns": 3,
-            "mobile_columns": 2,
-            "icon_align": "center",
-            "grayscale": true
-          }
-        },
         "gua_toggle_QnEgB6": {
           "type": "gua-toggle",
           "settings": {
             "desktop_only": false,
             "custom_block": "",
-            "blocks": "gua_trust_icons_mxf7Ee",
+            "blocks": "icon_with_text_7ngLLY,gua_trust_icons_mxf7Ee",
             "padding_top": 20,
             "padding_bottom": 20,
             "debug": true
@@ -148,6 +125,29 @@
             "heading_3": "Heading"
           }
         },
+        "gua_trust_icons_mxf7Ee": {
+          "type": "gua-trust-icons",
+          "settings": {
+            "icon_all1": "shopify://shop_images/master_icons_002395_Assembled_USA.png",
+            "icon_all2": "shopify://shop_images/master_icons_002395_OSHA.png",
+            "icon_1": "shopify://shop_images/icon__shield_check__1.png",
+            "tag_1": "quietforce",
+            "icon_2": "shopify://shop_images/READ_ME_GA_Read_repositioned-crop.png",
+            "tag_2": "",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
+            "tag_6": "",
+            "tag_8": "",
+            "tag_10": "",
+            "image_style": "fixed",
+            "max_width_icon": 72,
+            "desktop_columns": 3,
+            "mobile_columns": 2,
+            "icon_align": "center",
+            "grayscale": true
+          }
+        },
         "product_image_meta_7VKecY": {
           "type": "product_image_meta",
           "disabled": true,
@@ -171,11 +171,11 @@
         "price",
         "linked_products_picker_Qq9Ayh",
         "variant_picker",
-        "gua_trust_icons_mxf7Ee",
         "gua_toggle_QnEgB6",
         "quantity_selector",
         "buy_buttons",
         "icon_with_text_7ngLLY",
+        "gua_trust_icons_mxf7Ee",
         "product_image_meta_7VKecY",
         "custom_liquid_pDMckf"
       ],
