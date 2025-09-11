@@ -9,6 +9,8 @@
 <script src="{{ 'v2-components-nav-drawer.js' | asset_url }}" defer></script>
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 
+{% if section.settings.menu_css %}{{ 'gua-menu.css' | asset_url | stylesheet_tag }}{% endif %}
+
 {% assign number_of_rows = section.settings.number_of_rows %}
 
 {% capture vertical_separator %}
