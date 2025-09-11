@@ -74,11 +74,11 @@
                           <ul class="documents">
                             {% if operation_manual_url != blank %}
                               <li>
-                                <a href="{{ operation_manual_url }}" target="_blank">Operating Instructions</a>
+                                <a href="{{ operation_manual_url }}" target="_blank">{% if sell_sheet_url contains 'pdf' %}{{ pdf_icon }}{% endif %} Operating Instructions</a>
                               </li>
                             {% endif %}
                             {% if sell_sheet_url != blank %}
-                              <li><a href="{{ sell_sheet_url }}" target="_blank">{{ pdf_icon }} Sell Sheet</a></li>
+                              <li><a href="{{ sell_sheet_url }}" target="_blank">{% if sell_sheet_url contains 'pdf' %}{{ pdf_icon }}{% endif %} Sell Sheet</a></li>
                             {% endif %}
                           </ul>
                         {% endif %}
