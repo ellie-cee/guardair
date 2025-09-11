@@ -100,22 +100,7 @@
           <div class="grid__item">
             {%- for block in section.blocks -%}
               {% if block.settings.row_content_variant %}
-                {% assign metafield_namespace = block.settings.row_content_variant | split:'.' | first %}
-                {% assign metafield_key = block.settings.row_content_variant | split:'.' | last %}
-                    {% if metafield_namespace %}{% capture variant_content %}{%- for variant in product.variants -%}
-                         {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
-                        {% if metafield.value != blank and metafield.type contains 'text' %}
-                            <ul>{% for text in metafield.value %}
-                                <li>{{ text }}</li>
-                              {% endfor %}</ul>
-                            {% elsif metafield.value != blank and metafield.type contains 'product' %}
-                              <div class="grid">                        
-                            {% for product in metafield.value %}
-                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
-                              {% endfor %}
-                            </div>                       
-                        {% endif %}
-                      {% endfor %}{% endcapture %}{% endif %}
+                  {% render 'gua-variant-metafield',variant_metafield:block.settings.row_content_variant,product:product %}
               {% endif %}
               {% assign content_check = block.settings.row_content | strip_html %}
               {% assign content_check = content_check | append: block.settings.page.content | strip_html %}
