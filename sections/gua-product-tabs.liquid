@@ -19,7 +19,9 @@
               {%- when 'product_description' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Product Details</li>                     
               {%- when 'custom_liquid' -%}
-                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Custom {{ block.title }}</li>
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">{{ block.settings.liquid_tab }}</li>
+              {%- when 'text' -%}
+                <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">{{ block.settings.text_tab }}</li>                
               {%- when 'rating' -%}
                 <li data-tab="tab{{ forloop.index }}" class="{{ active_class }}">Reviews</li>       
               {%- when 'specifications' -%}
@@ -100,10 +102,10 @@
                 </div>
               </div>
 
-            {%- when 'custom_text' -%}
+            {%- when 'text' -%}
               <div data-tab-content="tab{{ forloop.index }}" id="tab{{ forloop.index }}" class="tab-content specifications" style="display: {{ display }};">    
-                  <h3 class="h2 tab-heading">TITLE</h3>              
-                  <p class="rich-text__caption" {{ block.shopify_attributes }}>
+                  <h3 class="h2 tab-heading">{{ block.settings.text_heading }}</h3>              
+                  <p class="rich-text__caption {{  block.settings.font_style }}" {{ block.shopify_attributes }}>
                       {{ block.settings.custom_text }}
                   </p>    
                 </div>
