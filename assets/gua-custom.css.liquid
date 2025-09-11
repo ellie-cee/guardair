@@ -238,8 +238,8 @@ body.template-product .gua_product_info .product-details .grid div[id*="details-
 body.template-product .gua_product_info .accordion .card-wrapper, body.template-product .gua_product_info .tab-content .card-wrapper {max-width: 250px;}
 body.template-product .gua_product_info .tab-content .card-wrapper {padding: 2rem;   -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);text-align: center;margin: 0 auto;}
 body.template-product .gua_product_info .tab-content .product-grid .grid__item {flex-grow: 0;}
-body.template-product .gua_product_info li:has(a[href*=".pdf"])::marker {content: "📄 ";font-size: 1.2em;content:"{{ pdf_icon }}";}
-body.template-product ul.documents li a {display: inline-block;background: #f8f9fa;border: 2px solid #dee2e6;padding: 10px 15px;border-radius: 6px;transition: all 0.3s ease;}
+body.template-product .gua_product_info li:has(a[href*=".pdf"])::marker {content: "📄 ";font-size: 1.2em;content:"{{ pdf_icon }}";display: inline-block;}
+body.template-product ul.documents li {background: #f8f9fa;border: 2px solid #dee2e6;padding: 10px 15px;border-radius: 6px;transition: all 0.3s ease;}
 a[href*=".pdf"] {
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23e74c3c" d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>') no-repeat left center;
   background-size: 16px;
