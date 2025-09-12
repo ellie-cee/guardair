@@ -107,6 +107,9 @@
         "icon_GhjaQm",
         "icon_igaCAc"
       ],
+      "custom_css": [
+        "img {}"
+      ],
       "name": "GUA Icon Bar",
       "settings": {
         "background_color": "#ddd92a",
