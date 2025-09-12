@@ -26,7 +26,7 @@
         "show_page_content": true,
         "show_series_page": true,
         "color_scheme": "scheme-4",
-        "show_breadcrumbs": false,
+        "show_breadcrumbs": true,
         "color_scheme_breadcrumbs": "scheme-4",
         "padding_top_breadcrumbs": 8,
         "padding_bottom_breadcrumbs": 8,
