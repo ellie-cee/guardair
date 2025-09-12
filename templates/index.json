@@ -53,6 +53,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-4",
+        "anchor_id": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -108,8 +109,8 @@
       ],
       "name": "GUA Icon Bar",
       "settings": {
-        "background_color": "#002395",
-        "text_color": "#ffffff",
+        "background_color": "#ddd92a",
+        "text_color": "#121212",
         "max_width": 1160
       }
     },
