@@ -305,7 +305,7 @@
         "padding_block": 25,
         "primary_color": "scheme-1",
         "secondary_color": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
-        "nav_color_scheme": "scheme-4",
+        "nav_color_scheme": "scheme-4f572dbc-8558-48b3-90c3-51a913d10417",
         "sub_menu_border_color": "#4b92db",
         "accent_color": "scheme-4",
         "menu_color_scheme": "",
