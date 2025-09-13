@@ -157,7 +157,8 @@
                               </div>
 
                       {% when 'faq_set' %}
-                                {% assign faq_set = block.settings.question_set | escape  %}
+                                {% assign faq_set = block.settings.question_set | escape %}
+                                {% assign faq_set = faq_set | split:'|' %}                                
 {{ faq_set }}
                                 {% for faq in faq_set %}
                                   {% assign question = faq | first %}
