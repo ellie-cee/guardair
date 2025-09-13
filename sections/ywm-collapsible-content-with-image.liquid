@@ -101,7 +101,7 @@
             {%- for block in section.blocks -%}
               {% case block.type %}
 
-              {% when 'collapsible_row' %}
+                    {% when 'collapsible_row' %}
                               {% if block.settings.row_content_variant %}
                                 {% capture variant_content %}{% render 'gua-variant-metafield',variant_metafield:block.settings.row_content_variant,product:product %}{% endcapture %}
                               {% endif %}
@@ -156,10 +156,10 @@
                                 </details>
                               </div>
 
-                            {% when 'faq_set' %}
-                                {% assign faq_set = block.settings.question_set %}
+                      {% when 'faq_set' %}
+                                {% assign faq_set = block.settings.question_set %}here
 
-                                {% for faq in faq_set %}
+                                {% for faq in faq_set %}{{ forloop.index }}
                                   {% assign question = faq | first %}
                                   {% assign answer = faq | last %}
                                 <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
