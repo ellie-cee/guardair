@@ -157,9 +157,10 @@
                               </div>
 
                       {% when 'faq_set' %}
-                                {% assign faq_set = block.settings.question_set %}here
-{{ faq_set.name }}--{{ faq_set.value }}--{{ faq_set.type }}
+                                {% assign faq_set = block.settings.question_set | split:'|'%}
+
                                 {% for faq in faq_set %}{{ forloop.index }}
+                                  {% assign faq = faq | first %}
                                   {% assign question = faq | first %}
                                   {% assign answer = faq | last %}
                                 <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
