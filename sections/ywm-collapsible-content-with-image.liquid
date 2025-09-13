@@ -14,7 +14,6 @@
     }
   }
 
-  /* Custom styles for block images */
   .accordion__block-image {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
@@ -42,6 +41,8 @@
   .accordion__block-image--adapt {
     max-width: 100%;
   }
+
+  .accordion__content {padding-left: 3rem;}
 {%- endstyle -%}
 
 <div id="Banner-{{ section.id }}" class="color-{{ section.settings.color_scheme }} gradient {% if section.settings.custom_css_class %} {{ section.settings.custom_css_class }}{% endif %}">
