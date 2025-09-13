@@ -159,8 +159,8 @@
                       {% when 'faq_set' %}
                                 {% assign faq_set = block.settings.question_set %}
                                 {% comment %} {% assign faq_set = faq_set | split:'|' %}                                 {% endcomment %}
-{% comment %} {{ faq_set }}<br/> {% endcomment %}
-                                {% for faq in faq_set.value %}{{ faq }}
+{{ faq_set }}<br/>
+                                {% for faq in faq_set.value %}
                                   {% assign question = faq | first %}
                                   {% assign answer = faq | last %}
                                 <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
