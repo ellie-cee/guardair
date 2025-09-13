@@ -173,7 +173,7 @@
                                       {% render 'icon-caret' %}
                                     </summary>
                                     <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                                      role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">{% if forloop.last %}{{ answer | remove_first:'and ' }}{% else %}{{ answer }}{% endif %}
+                                      role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">{% if forloop.last %}ff{{ answer | remove_first:'and ' }}{% else %}{{ answer }}{% endif %}
                                     </div>
                                   </details>
                                 </div>
