@@ -161,9 +161,9 @@
                                 {% comment %} {% assign faq_set = faq_set | split:'|' %} {% endcomment %}
 {{ faq_set }}<br/>
                                 {% for faq in faq_set %}
-                                  {% assign faq = faq | split: '|' %}                                  
-                                  {% assign question = faq | first %}
-                                  {% assign answer = faq | last %}
+                                  {% assign f = faq | split: '|' %}                                  
+                                  {% assign question = f | first %}
+                                  {% assign answer = f | last %}
                                 <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
                                   <details id="Details-{{ block.id }}-{{ section.id }}" {% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
                                     <summary id="Summary-{{ block.id }}-{{ section.id }}">{% render 'icon-accordion', icon: block.settings.icon %}
