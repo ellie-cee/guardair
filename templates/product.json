@@ -394,7 +394,7 @@
         "faq_set_GiPXQ7": {
           "type": "faq_set",
           "settings": {
-            "question_set": "",
+            "question_set": "{{ product.metafields.custom.faq | metafield_text }}",
             "separator": "|"
           }
         }
