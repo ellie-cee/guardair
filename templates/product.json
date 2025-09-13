@@ -388,6 +388,37 @@
         "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
       }
     },
+    "ywm_collapsible_content_with_image_jeW4tY": {
+      "type": "ywm-collapsible-content-with-image",
+      "blocks": {
+        "faq_set_GiPXQ7": {
+          "type": "faq_set",
+          "settings": {
+            "question_set": "",
+            "separator": "|"
+          }
+        }
+      },
+      "block_order": [
+        "faq_set_GiPXQ7"
+      ],
+      "name": "GUA Collapsible Content with Images",
+      "settings": {
+        "caption": "{{ product.title }}",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "custom_css_class": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -459,6 +490,7 @@
     "ywm_collapsible_content_with_image_hzbDHa",
     "1721751086101a9e7e",
     "gua_specifications_table_ttEDji",
+    "ywm_collapsible_content_with_image_jeW4tY",
     "related-products",
     "video_with_text_RPK3MW"
   ]

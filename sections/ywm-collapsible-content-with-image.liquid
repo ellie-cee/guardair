@@ -99,59 +99,63 @@
           {% endif %}
           <div class="grid__item">
             {%- for block in section.blocks -%}
-              {% if block.settings.row_content_variant %}
-                {% capture variant_content %}{% render 'gua-variant-metafield',variant_metafield:block.settings.row_content_variant,product:product %}{% endcapture %}
-              {% endif %}
-              {% assign content_check = block.settings.row_content | strip_html %}
-              {% assign content_check = content_check | append: block.settings.page.content | strip_html %}
-              {% assign content_check = content_check | append: variant_content | strip_html | strip  %}
+              {% case block.type %}
 
-              {% if content_check.size == 0  %}{% continue %}{% endif %}
-               
-              <div
-                class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                {{ block.shopify_attributes }}
-              >
-                <details
-                  id="Details-{{ block.id }}-{{ section.id }}"
-                  {% if section.settings.open_first_collapsible_row and forloop.first %}
-                    open
-                  {% endif %}
-                >
-                  <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                    {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h3 class="accordion__title inline-richtext h4">
-                      {{ block.settings.heading | default: block.settings.page.title | escape }}
-                    </h3>
-                    {% render 'icon-caret' %}
-                  </summary>
-                  <div
-                    class="accordion__content rte"
-                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                    role="region"
-                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                  >
-                    {%- if block.settings.block_image != blank -%}
-                      <div class="accordion__block-image accordion__block-image--{{ block.settings.block_image_size }}">
-                        {%- capture block_image_sizes -%}
-                          (min-width: 750px) 600px, 100vw
-                        {%- endcapture -%}
-                        {{
-                          block.settings.block_image
-                          | image_url: width: 1200
-                          | image_tag:
-                            sizes: block_image_sizes,
-                            widths: '200, 300, 400, 500, 600, 700, 800, 900, 1000, 1200',
-                            alt: block.settings.block_image_alt
-                        }}
-                      </div>
-                    {%- endif -%}
-                    {{ block.settings.row_content }}
-                    {{ block.settings.page.content }}
-                    {{ variant_content }}
-                  </div>{% assign variant_content = '' %}
-                </details>
-              </div>
+              {% when 'collapsible_row' %}
+                              {% if block.settings.row_content_variant %}
+                                {% capture variant_content %}{% render 'gua-variant-metafield',variant_metafield:block.settings.row_content_variant,product:product %}{% endcapture %}
+                              {% endif %}
+                              {% assign content_check = block.settings.row_content | strip_html %}
+                              {% assign content_check = content_check | append: block.settings.page.content | strip_html %}
+                              {% assign content_check = content_check | append: variant_content | strip_html | strip  %}
+
+                              {% if content_check.size == 0  %}{% continue %}{% endif %}
+                              
+                              <div
+                                class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                                {{ block.shopify_attributes }}
+                              >
+                                <details
+                                  id="Details-{{ block.id }}-{{ section.id }}"
+                                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                                    open
+                                  {% endif %}
+                                >
+                                  <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                                    {% render 'icon-accordion', icon: block.settings.icon %}
+                                    <h3 class="accordion__title inline-richtext h4">
+                                      {{ block.settings.heading | default: block.settings.page.title | escape }}
+                                    </h3>
+                                    {% render 'icon-caret' %}
+                                  </summary>
+                                  <div
+                                    class="accordion__content rte"
+                                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                                    role="region"
+                                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                                  >
+                                    {%- if block.settings.block_image != blank -%}
+                                      <div class="accordion__block-image accordion__block-image--{{ block.settings.block_image_size }}">
+                                        {%- capture block_image_sizes -%}
+                                          (min-width: 750px) 600px, 100vw
+                                        {%- endcapture -%}
+                                        {{
+                                          block.settings.block_image
+                                          | image_url: width: 1200
+                                          | image_tag:
+                                            sizes: block_image_sizes,
+                                            widths: '200, 300, 400, 500, 600, 700, 800, 900, 1000, 1200',
+                                            alt: block.settings.block_image_alt
+                                        }}
+                                      </div>
+                                    {%- endif -%}
+                                    {{ block.settings.row_content }}
+                                    {{ block.settings.page.content }}
+                                    {{ variant_content }}
+                                  </div>{% assign variant_content = '' %}
+                                </details>
+                              </div>
+                {% endcase %}
             {%- endfor -%}
           </div>
         </div>
