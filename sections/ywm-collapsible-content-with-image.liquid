@@ -158,12 +158,12 @@
 
                       {% when 'faq_set' %}
                                 {% assign faq_set = block.settings.question_set | split: ',' %}
-                                {% comment %} {% assign faq_set = faq_set | split:'|' %} {% endcomment %}
 
                                 {% for faq in faq_set %}
                                   {% assign f = faq | split: '|' %}                                  
                                   {% assign question = f | first %}
                                   {% assign answer = f | last %}
+                                  {% if forloop.last %}{% assign answer = answer | split:'and ' | last %}{% endif %}
                                 <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
                                   <details id="Details-{{ block.id }}-{{ section.id }}" {% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
                                     <summary id="Summary-{{ block.id }}-{{ section.id }}">{% render 'icon-accordion', icon: block.settings.icon %}
