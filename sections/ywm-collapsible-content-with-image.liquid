@@ -158,7 +158,7 @@
 
                       {% when 'faq_set' %}
                                 {% assign faq_set = block.settings.question_set %}
-                                {% assign faq_set = faq_set | split:'|' %}
+                                {% comment %} {% assign faq_set = faq_set | split:'|' %} {% endcomment %}
 {{ faq_set }}<br/>
                                 {% for faq in faq_set %}
                                   {% assign question = faq | first %}
