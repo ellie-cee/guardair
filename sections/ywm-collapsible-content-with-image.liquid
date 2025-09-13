@@ -168,7 +168,7 @@
                                   <details id="Details-{{ block.id }}-{{ section.id }}" {% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
                                     <summary id="Summary-{{ block.id }}-{{ section.id }}">{% render 'icon-accordion', icon: block.settings.icon %}
                                       <h3 class="accordion__title inline-richtext h4">
-                                       {{ forloop.index }} {{ faq }} {{ question | escape }}
+                                       {{ forloop.index }}{{ question | escape }}
                                       </h3>
                                       {% render 'icon-caret' %}
                                     </summary>
