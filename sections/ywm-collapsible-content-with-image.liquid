@@ -157,8 +157,8 @@
                               </div>
 
                       {% when 'faq_set' %}
-                                {% assign faq_set = block.settings.question_set.value %}here
-
+                                {% assign faq_set = block.settings.question_set %}here
+{{ faq_set.name }}--{{ faq_set.value }}--{{ faq_set.type }}
                                 {% for faq in faq_set %}{{ forloop.index }}
                                   {% assign question = faq | first %}
                                   {% assign answer = faq | last %}
