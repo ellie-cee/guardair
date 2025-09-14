@@ -161,7 +161,7 @@
                                 {% assign faq_set = block.settings.question_set | split: ',' %}
 
                                 {% for faq in faq_set %}
-                                  {% assign f = faq | split: '|' %}                                  
+                                  {% assign f = faq | split: block.settings.separator %}                                  
                                   {% assign question = f | first %}
                                   {% assign answer = f | last %}
  
