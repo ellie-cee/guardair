@@ -395,7 +395,7 @@
           "type": "faq_set",
           "settings": {
             "question_set": "{{ product.metafields.custom.faq | metafield_text }}",
-            "separator": "|"
+            "separator": "-"
           }
         }
       },
