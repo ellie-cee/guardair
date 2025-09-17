@@ -48,7 +48,7 @@
         "quick_add": "none",
         "enable_filtering": true,
         "filter_type": "vertical",
-        "enable_sorting": false,
+        "enable_sorting": true,
         "padding_top": 8,
         "padding_bottom": 72
       }
