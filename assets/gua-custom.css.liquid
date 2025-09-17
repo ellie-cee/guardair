@@ -109,7 +109,7 @@ li.tmenu_item_level_1.tmenu_item_display_header role["button"] .tmenu_item_text 
 body {display:grid !important;width:100vw;padding:0px !important;}
 
 
-{% comment %} --- BUTTONS --- {% endcomment %}
+{% comment %} --- BUTTONS AND BREADCRUMBS--- {% endcomment %}
 .button, .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded {min-width: calc(12rem + var(--buttons-border-width) * 2);min-height: calc(2.5rem + var(--buttons-border-width) * 2);}
 .button {
 {% if settings.button_vertical_padding != 0 %}padding-top: {{ settings.button_vertical_padding }}px;padding-bottom: {{ settings.button_vertical_padding }}px;{% endif %}  
@@ -122,8 +122,10 @@ body {display:grid !important;width:100vw;padding:0px !important;}
 .banner__buttons--multiple a.button:first-of-type {}
 .banner__buttons--multiple a.button:last-of-type {background: {{ accent_color1 }};color:#fff;}           
 
-
 .test-border li, .test-border li a, .test-border li img {border:1px solid red;}
+
+.breadcrumbs ul.breadcrumb li a {color: rgba(var(--color-foreground), 0.9) !important;font-size:1.3rem; display: inline-block; position: relative; padding-right: 10px; background: transparent; -webkit-transition: 0.5s; 
+  -o-transition: 0.5s; -ms-transition: 0.5s; -moz-transition: 0.5s; transition: 0.5s; text-decoration: none; letter-spacing: normal;}
 
 {% comment %} --- MULTICOLUMN --- {% endcomment %}
 .block-style-side .grid__card, .block-style-stacked .grid__card {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;}
