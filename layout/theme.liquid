@@ -117,8 +117,8 @@
         background-color: rgb(var(--color-background));
       }
 
-      {% assign settings.type_body_font.family = '' %}
-       {% assign settings.type_header_font.family = '' %}     
+      {% assign settings.type_body_font.family = 'Eurostile-Reg' %}
+       {% assign settings.type_header_font.family = 'Eurostile-Bol' %}     
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
