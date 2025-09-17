@@ -31,7 +31,7 @@ Use as a product block: https://github.com/yellowwebmonkey/shopify-features/blob
     {% assign icon = block.settings[icon_id] %}
     {% assign tag = block.settings[tag_id] %}
     
-    {% if icon and tag %}-- {{ tag }}
+    {% if icon and tag %}--{{ tag }}--
       {% if tag contains ',' %}
           {% assign tags = tag | split:',' %}
           {% assign tag_count = tags.size %}
