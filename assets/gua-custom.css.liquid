@@ -29,13 +29,12 @@ h1, h2, h3, h4, h5, h6 {font-family: "Eurostile-Bol", sans-serif !important; let
 .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurostile-Reg", sans-serif; letter-spacing: normal;letter-spacing:0.05em;} 
 /* body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;} */
 
+{% comment %}
 body.template-product ul.documents li a, body.template-product ul.related li a,
 .breadcrumbs ul.breadcrumb li, .breadcrumbs ul.breadcrumb li a  {font-family: "Eurostile-Reg", sans-serif;}
-
+{% endcomment %}
 
 .page-width {width: auto; max-width: {{ desktop_max_width }}; padding: 0 10px;}
-.breadcrumbs ul.breadcrumb li, .breadcrumbs ul.breadcrumb li a {font-weight:100;font-size:1.4rem;}
-.breadcrumbs ul.breadcrumb li:last-of-type a:after {content:none;}
 
 
 {% comment %} --- QIKIFY MENU --- {% endcomment %}
@@ -126,6 +125,11 @@ body {display:grid !important;width:100vw;padding:0px !important;}
 
 .breadcrumbs ul.breadcrumb li a {color: rgba(var(--color-foreground), 0.9) !important;font-size:1.3rem; display: inline-block; position: relative; padding-right: 10px; background: transparent; -webkit-transition: 0.5s; 
   -o-transition: 0.5s; -ms-transition: 0.5s; -moz-transition: 0.5s; transition: 0.5s; text-decoration: none; letter-spacing: normal;}
+.breadcrumbs ul.breadcrumb li a:after {position: absolute; content: ">"; display: inline-block; vertical-align: middle; right: -5px;}
+.breadcrumbs ul.breadcrumb li {list-style: none; margin-right: 10px; font-family: Eurostile-Bol, sans-serif; letter-spacing: normal; text-transform: capitalize;}
+.breadcrumbs ul.breadcrumb li, .breadcrumbs ul.breadcrumb li a {font-weight:100;font-size:1.4rem;}
+.breadcrumbs ul.breadcrumb li:last-of-type a:after {content:none;}
+
 
 {% comment %} --- MULTICOLUMN --- {% endcomment %}
 .block-style-side .grid__card, .block-style-stacked .grid__card {display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;}
