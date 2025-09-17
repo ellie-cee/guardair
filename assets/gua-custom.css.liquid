@@ -50,14 +50,14 @@ body.template-product ul.documents li a, body.template-product ul.related li a,
 .v2-header__nav-menu .tmenu_submenu_tab_control .tmenu_submenu_tab_active a span.tmenu_item_text {color:{{ accent_color2_text }} !important;}
 .v2-header__nav-menu .tmenu_submenu_tab_control .tmenu_submenu_tab_active .tmenu_indicator_icon svg {fill: {{ accent_color2_text }} !important;}
 .v2-header__nav-menu-list a {visibility:hidden !important;} 
-.v2-header__nav-menu .tmenu_col.tmenu_submenu_tab_control.tmenu_col-3 li a {font-family:'Eurostile-Bol',sans-serif;font-size:130%;}
+.v2-header__nav-menu .tmenu_col.tmenu_submenu_tab_control.tmenu_col-3 li a {font-family:{{ header_font }};font-size:130%;}
 .v2-header__nav-menu-list .collection-button {background:#002295;border: 2px;padding: 18px 36px;border-radius: 3px;font-size: 18px;font-weight: 600;color: white !important;
     text-decoration: none;display: inline-flex;align-items: center;gap: 12px;cursor: pointer;transition: all 0.3s ease;text-transform: uppercase;letter-spacing: 1px;}
 .v2-header__nav-menu-list .collection-button:hover {transform: translateY(-5px);background: #002295;}
 .v2-header__nav-menu-list .collection-button:active {transform: translateY(-2px);}
 .v2-header__nav-menu-list .collection-button::before {content: "";font-size: 20px;animation: pulse 2s infinite;}
 .v2-header__nav-menu .tmenu_nav .tmenu_submenu_type_mega .tmenu_item_link {padding-top: 2px !important;  padding-bottom: 2px !important;}
-.v2-header__nav-menu-list .tmenu_item {font-family:'Eurostile-Reg', sans-serif !important;}
+.v2-header__nav-menu-list .tmenu_item {font-family:{{ body_font }} !important;}
 .v2-header__nav-menu .tmenu_submenu_type_mega .tmenu_submenu {justify-content: space-between;}
 .v2-header__nav-menu .tmenu_app .tmenu_nav .tmenu_item--root.tmenu_item_active > .tmenu_item_link, .v2-header__nav-menu .tmenu_app .tmenu_nav .tmenu_item--root:hover > .tmenu_item_link {background:inherit !important;}
 .v2-header__nav-menu .tmenu_app .tmenu_nav .tmenu_item--root.tmenu_item_active > .tmenu_item_link {border-bottom:3px solid {{ contrast_color1 }};}
@@ -75,7 +75,7 @@ li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_
    li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_collection a,
    li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_image a,
 .tmenu_item--root .tmenu_item_display_header>.tmenu_item_link,li:not(.tmenu_item_mobile) .tmenu_item_display_header > .tmenu_item_link {border-width:0px !important;font-size:1.75rem;}
-li:not(.tmenu_item_mobile) .tmenu_item_display_header:not(.tmenu_item_level_2):not(.tmenu_item_level_3):not(.tmenu_item_level_4) > .tmenu_item_link {font-size:2rem;font-family: "Eurostile-Bol"}
+li:not(.tmenu_item_mobile) .tmenu_item_display_header:not(.tmenu_item_level_2):not(.tmenu_item_level_3):not(.tmenu_item_level_4) > .tmenu_item_link {font-size:2rem;font-family: {{ header_font }};}
 li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_collection .tmenu_collection.tmenu_collection--above, 
 li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_collection .tmenu_item--root:not(.tmenu_item_active) .tmenu_submenu { max-width: 150px !important;margin: 0 auto;}
 li.tmenu_item.tmenu_item_level_2.tmenu_col-3.tmenu_item_submenu_type_automatic.tmenu_item_has_child.tmenu_item_layout_text.tmenu_item_display_header:last-child {border-left:2px solid {{ accent_color2}};
@@ -211,7 +211,7 @@ h3.blue-subtitle, h3.blue-subtitle a,.blue-subtitle h3, .blue-subtitle h3 a {col
 .header__icon svg {max-height: 16px;}
 .header__icon, .header__icon svg path {fill: {{ gray_color }} !important;}
 .header__icon-title .header__text {color: {{ gray_color }} !important;}
-.v2-header__nav-menu-link, .v2-header__nav-menu-submenu-link {font-family: "Eurostile-Reg", sans-serif !important;font-weight:normal !important;letter-spacing: 0.025em;font-size: 17px !important;}
+.v2-header__nav-menu-link, .v2-header__nav-menu-submenu-link {font-family: {{ body_font }} !important;font-weight:normal !important;letter-spacing: 0.025em;font-size: 17px !important;}
 .v2-header .icon-arrow-alt {height: 1rem;padding-bottom: 1px;margin-left: -5px;transform: rotate(90deg);color: #b7c3cf;}
 .v2-header__nav-menu-item:is(:hover,.v2-header--is-active)>a .icon-arrow-alt {transform:none;color: #1d2395;}
 .v2-header__row:not(:last-child) {margin-bottom:0px !important;padding-bottom: 10px;}
