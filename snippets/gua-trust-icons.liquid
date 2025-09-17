@@ -41,7 +41,7 @@ Use as a product block: https://github.com/yellowwebmonkey/shopify-features/blob
           {% endfor %}
     {% elsif tag contains '|' %}
           {% assign tags = tag | split:'|' %}
-          {% for tag_item in tags %}{{ forloop.index }}
+          {% for tag_item in tags %}
                  {% if product.tags contains tag_item %}<div class="trust-icon"><img src="{{ icon | img_url: dimension }}" alt="{{ tag_item }}" /></div>{% break %}{% endif %}
           {% endfor %}
     {% elsif product.tags contains tag %}
