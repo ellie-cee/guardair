@@ -24,8 +24,14 @@ body.template-index .single_logo_logo img {filter:brightness(0.0);}
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
  
-.snap-compare  {display:none;}
-body.template-product .snap-compare, body.template-collection .snap-compare  {display:block;}
+h1, h2, h3, h4, h5, h6 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;letter-spacing:0.05em;}
+/* .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;letter-spacing:0.05em;} */
+/* body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;} */
+
+.page-width {width: auto; max-width: {{ desktop_max_width }}; padding: 0 10px;}
+.breadcrumbs ul.breadcrumb li, .breadcrumbs ul.breadcrumb li a {font-family: "Eurostile-Reg",sans-serif !important;font-weight:100;font-size:1.4rem;}
+.breadcrumbs ul.breadcrumb li:last-of-type a:after {content:none;}
+
 
 {% comment %} --- QIKIFY MENU --- {% endcomment %}
 /* .v2-header__nav-menu, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link a,  .v2-header__nav-menu > .tmenu_nav > .tmenu_item, */
@@ -110,15 +116,6 @@ body {display:grid !important;width:100vw;padding:0px !important;}
 }
 .banner__buttons--multiple a.button:first-of-type {}
 .banner__buttons--multiple a.button:last-of-type {background: {{ accent_color1 }};color:#fff;}           
-
-h1, h2, h3, h4, h5, h6 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;letter-spacing:0.05em;}
-/* .h1, .h2, .h3, .h4, .h5, .h6, .h0 {font-family: "Eurostile-Bol", sans-serif; letter-spacing: normal;letter-spacing:0.05em;} */
-/* body {font-family: "Eurostile-Reg", sans-serif;letter-spacing:0.05em;} */
-
-.page-width {width: auto; max-width: {{ desktop_max_width }}; padding: 0 10px;}
-.breadcrumbs ul.breadcrumb li, .breadcrumbs ul.breadcrumb li a {font-family: "Eurostile-Reg",sans-serif !important;font-weight:100;font-size:1.4rem;}
-.breadcrumbs ul.breadcrumb li:last-of-type a:after {content:none;}
-
 
 
 .test-border li, .test-border li a, .test-border li img {border:1px solid red;}
@@ -393,6 +390,15 @@ body.template-page .featured-series a {}
 /* .footer__content-image {filter: brightness(5) grayscale(1) contrast(4.5);} */
 /* .footer.footer a[href^="https://allpaxcorp.com"] .footer__content-image {filter: brightness(5) grayscale(1) contrast(4.5) invert(1) !important;} */
 /* .footer.footer a[href^="https://allpaxcorp.com"] {} */
+
+
+
+{% comment %} --- COMPARE --- {% endcomment %}
+.snap-compare  {display:none;}
+body.template-product .snap-compare, body.template-collection .snap-compare  {display:block;}
+
+
+
 
 div#qab_container {display: none !important;}
 .itg_search_popup {width: 100%; background: #666666; color: #fff; left: 0; padding: 40px 0; display: none;}
