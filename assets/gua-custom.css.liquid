@@ -83,15 +83,14 @@ li.tmenu_item.tmenu_item_level_2.tmenu_col-3.tmenu_item_submenu_type_automatic.t
 li.tmenu_item_level_1.tmenu_item_display_header role["button"] .tmenu_item_text {font-size:2rem !important;}
 .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link:not([tmenu-disabled-link]) {font-size:1.2rem;}
 
-/* .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link:not([tmenu-disabled-link]) a[href*='collections'] .tmenu_item_text {background:{{ light_gray }};border:1px solid {{ mid_gray }};border-radius:3px;padding:2px 5px;} */
-/* .tmenu_nav .tmenu_item.tmenu_item_level_3 .tmenu_item_link[href*='collections'] .tmenu_item_text, .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link[href*='collections'] .tmenu_item_text, */
-
-/* .v2-header__nav-menu .tmenu_item_level_2 a[title="Shop By Specifications"] ~ .tmenu_submenu  .tmenu_item_link[href*='collections'] .tmenu_item_text
-{background:{{ light_gray }};border:1px solid {{ light_gray | darken_color:40 }};border-radius:3px;margin-bottom:2px !important;display:block !important;height:100%;font-size:12px !important;
-    padding: 3px 8px !important;
-    border-image: initial;
-    transition: 0.2s;} */
-    .v2-header__nav-menu .spec-group  {}
+{% comment %}
+    .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link:not([tmenu-disabled-link]) a[href*='collections'] .tmenu_item_text {background:{{ light_gray }};border:1px solid {{ mid_gray }};border-radius:3px;padding:2px 5px;}
+    .tmenu_nav .tmenu_item.tmenu_item_level_3 .tmenu_item_link[href*='collections'] .tmenu_item_text, .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link[href*='collections'] .tmenu_item_text,
+    .v2-header__nav-menu .tmenu_item_level_2 a[title="Shop By Specifications"] ~ .tmenu_submenu  .tmenu_item_link[href*='collections'] .tmenu_item_text
+    {background:{{ light_gray }};border:1px solid {{ light_gray | darken_color:40 }};border-radius:3px;margin-bottom:2px !important;display:block !important;height:100%;font-size:12px !important;
+        padding: 3px 8px !important;border-image: initial;transition: 0.2s;} 
+{% endcomment %}
+.v2-header__nav-menu .spec-group  {}
 .v2-header__nav-menu .spec-group ~ .tmenu_submenu, .v2-header__nav-menu .tmenu_item_level_2 a[title="Shop By Specifications"] ~ .tmenu_submenu, .v2-header__nav-menu .tmenu_item_level_2 a[title="Shop By Specifications"] > .tmenu_submenu  {display:flex !important;flex-flow: row wrap;}
 .v2-header__nav-menu .spec-button {background:{{ light_gray }};border:1px solid {{ light_gray | darken_color:40 }};border-radius:3px;margin-bottom:2px !important;display:block !important;height:100%;font-size:12px !important;
     padding: 3px 8px !important;border-image: initial;transition: 0.2s;}    
