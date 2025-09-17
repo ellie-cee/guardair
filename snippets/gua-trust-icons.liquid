@@ -36,7 +36,7 @@ Use as a product block: https://github.com/yellowwebmonkey/shopify-features/blob
       {% if tag contains ',' %}
           {% assign tags = tag | split:',' %}
           {% assign tag_count = tags.size %}
-          {% for tag_item in tags %}
+          {% for tag_item in tags %}{{ forloop.index }}
             {% unless product.tags contains tag_item %}{{ break }}{% endunless %}
             {% if forloop.last %}<img src="{{ icon | img_url: dimension }}" alt="{{ tag_item }}" />{% endif %}
           {% endfor %}
