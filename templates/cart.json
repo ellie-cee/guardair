@@ -41,6 +41,10 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
         "coupon_zMPNC7": {
           "type": "coupon",
           "settings": {
@@ -49,10 +53,6 @@
             "placeholder": "Enter coupon code",
             "button_text": "Apply"
           }
-        },
-        "subtotal": {
-          "type": "subtotal",
-          "settings": {}
         },
         "buttons": {
           "type": "buttons",
@@ -64,8 +64,8 @@
         }
       },
       "block_order": [
-        "coupon_zMPNC7",
         "subtotal",
+        "coupon_zMPNC7",
         "buttons",
         "secure_icon_p7qpq4"
       ],
