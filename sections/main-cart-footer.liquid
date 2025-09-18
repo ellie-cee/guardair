@@ -17,9 +17,6 @@
   }
 {%- endstyle -%}
 
-{%- comment -%} Load coupon cart JavaScript {%- endcomment -%}
-<script src="{{ 'coupon-cart.js' | asset_url }}" defer="defer"></script>
-
 
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
@@ -51,15 +48,18 @@
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
-  {%- when 'coupon' -%}
-              {% render 'coupon-form', block: block %}              
-                {% when 'secure_icon' %}
+
+            {%- when 'coupon' -%}
+              {% render 'gua-cart-coupon', block: block %}        
+
+            {% when 'secure_icon' %}
                 <div>
                   <div class="secure_icon_container">
                     {% render 'secure-icon' %}
                     <span>Secure Transaction</span>
                   </div>
                 </div>
+
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
