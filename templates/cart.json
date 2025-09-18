@@ -58,6 +58,10 @@
           "type": "buttons",
           "settings": {}
         },
+        "payment_icon_xXb4At": {
+          "type": "payment_icon",
+          "settings": {}
+        },
         "secure_icon_p7qpq4": {
           "type": "secure_icon",
           "settings": {}
@@ -67,6 +71,7 @@
         "subtotal",
         "coupon_zMPNC7",
         "buttons",
+        "payment_icon_xXb4At",
         "secure_icon_p7qpq4"
       ],
       "custom_css": [
