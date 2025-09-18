@@ -229,6 +229,74 @@
         "padding_bottom": 12
       }
     },
+    "gua_multicolumn_fGzKnj": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_Ji9yBB": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Why We Recommend It",
+            "text": "<p>Our safest option for combustible environments, featuring fully static-safe construction.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_necFRe": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "<strong>Key Features</strong>",
+            "text": "<ul><li>NED (Non-Electrical Discharge) system</li><li>Static conductive attachments</li><li>Energy efficient</li><li>Reduced noise</li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rwRAnP": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Best For",
+            "text": "{{ product.metafields.custom.benefit_texts | metafield_tag }}",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Ji9yBB",
+        "column_necFRe",
+        "column_rwRAnP"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "anchor_id": ""
+      }
+    },
     "gua_product_tabs_6VXzLn": {
       "type": "gua-product-tabs",
       "blocks": {
@@ -547,6 +615,7 @@
   "order": [
     "rich_text_tQKL8T",
     "main",
+    "gua_multicolumn_fGzKnj",
     "gua_product_tabs_6VXzLn",
     "ywm_collapsible_content_with_image_hzbDHa",
     "175814459680ff282f",
