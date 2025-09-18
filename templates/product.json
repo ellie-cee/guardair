@@ -143,8 +143,7 @@
             "tag_1": "test",
             "icon_2": "shopify://shop_images/ISA_seal.png",
             "tag_2": "powerquad|Vacuums",
-            "icon_3": "shopify://shop_images/ISA_horiz_2025.png",
-            "tag_3": "powerquad|Vacuums",
+            "tag_3": "",
             "tag_4": "",
             "tag_5": "",
             "tag_6": "",
@@ -156,6 +155,26 @@
             "mobile_columns": 2,
             "icon_align": "center",
             "grayscale": true
+          }
+        },
+        "gua_trust_icons_zRPbiP": {
+          "type": "gua-trust-icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/ISA_horiz_2025.png",
+            "tag_1": "powerquad|Vacuums",
+            "tag_2": "",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
+            "tag_6": "",
+            "tag_8": "",
+            "tag_10": "",
+            "image_style": "fixed",
+            "max_width_icon": 256,
+            "desktop_columns": 3,
+            "mobile_columns": 2,
+            "icon_align": "center",
+            "grayscale": false
           }
         },
         "product_image_meta_7VKecY": {
@@ -187,6 +206,7 @@
         "icon_with_text_7ngLLY",
         "gua_toggle_QnEgB6",
         "gua_trust_icons_mxf7Ee",
+        "gua_trust_icons_zRPbiP",
         "product_image_meta_7VKecY",
         "custom_liquid_pDMckf"
       ],
