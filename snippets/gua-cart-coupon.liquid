@@ -2,8 +2,8 @@
 
 <div class="cart__footer-coupon" {{ block.shopify_attributes }}>
   {% if block.settings.heading != blank %}<h3 class="cart__footer-heading">{{ block.settings.heading | default: 'Add a coupon code' }}</h3>{% endif %}
-  <form action="{{ routes.cart_url }}" method="post" class="cart__coupon-form">
-    <div class="field">
+  <form action="{{ routes.cart_url }}" method="post" class="cart__coupon-form" style="display:flex;">
+    <div class="field" style="flex:1 0 150px;">
       <input
         type="text"
         name="discount"
@@ -17,7 +17,7 @@
         {{ block.settings.label | default: 'Coupon code' }}
       </label>
     </div>
-    <button type="submit" class="btn button button--secondary" name="add" value="1">
+    <button type="submit" class="btn button button--secondary" name="add" value="1" style="flex:0 0 50px;">
       {{ block.settings.button_text | default: 'Apply' }}
     </button>
   </form>
