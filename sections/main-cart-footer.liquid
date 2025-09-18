@@ -60,9 +60,9 @@
                   </div>
                 </div>
             {% when 'payment_icons' %}
-              <div class="footer__payment" style="justify-content:center;">
+              <div class="footer__payment">
                 <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-                <ul class="list list-payment" role="list">
+                <ul class="list list-payment" role="list" style="justify-content:center;">
                   {%- for type in shop.enabled_payment_types -%}
                     <li class="list-payment__item">
                       {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
