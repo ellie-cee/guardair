@@ -58,12 +58,12 @@
           "type": "buttons",
           "settings": {}
         },
-        "payment_icon_xXb4At": {
-          "type": "payment_icon",
-          "settings": {}
-        },
         "secure_icon_p7qpq4": {
           "type": "secure_icon",
+          "settings": {}
+        },
+        "payment_icons_YmabYn": {
+          "type": "payment_icons",
           "settings": {}
         }
       },
@@ -71,8 +71,8 @@
         "subtotal",
         "coupon_zMPNC7",
         "buttons",
-        "payment_icon_xXb4At",
-        "secure_icon_p7qpq4"
+        "secure_icon_p7qpq4",
+        "payment_icons_YmabYn"
       ],
       "custom_css": [
         ".secure_icon_container {margin: auto;}"
