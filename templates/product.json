@@ -335,11 +335,10 @@
         },
         "collapsible_row_TbGHqj": {
           "type": "collapsible_row",
-          "disabled": true,
           "settings": {
             "heading": "Prop. 65 Warning",
             "icon": "fire",
-            "row_content": "<p>⚠️ WARNING: {{ product.metafields.custom.warning65_text.value }}</p><p><a href=\"https://www.P65warnings.ca.gov\" title=\"https://www.P65warnings.ca.gov\">Learn more...</a></p>",
+            "row_content": "<p>⚠️ WARNING: Cancer and Reproductive Harm</p><p><a href=\"https://www.P65warnings.ca.gov\" title=\"https://www.P65warnings.ca.gov\">Learn more...</a></p>",
             "row_content_variant": "",
             "page": "",
             "block_image_alt": "",
