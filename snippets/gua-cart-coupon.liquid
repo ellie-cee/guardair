@@ -1,0 +1,28 @@
+<div class="cart__footer-coupon" {{ block.shopify_attributes }}>
+  <h3 class="cart__footer-heading">{{ block.settings.heading | default: 'Add a coupon code' }}</h3>
+  <form action="{{ routes.cart_url }}" method="post" class="cart__coupon-form">
+    <div class="field">
+      <input
+        type="text"
+        name="discount"
+        id="CartCoupon"
+        class="field__input"
+        placeholder="{{ block.settings.placeholder | default: 'Enter coupon code' }}"
+        autocomplete="off"
+        {% if cart.attributes.coupon_code %}value="{{ cart.attributes.coupon_code }}"{% endif %}
+      >
+      <label class="field__label" for="CartCoupon">
+        {{ block.settings.label | default: 'Coupon code' }}
+      </label>
+    </div>
+    <button type="submit" class="button button--secondary" name="add" value="1">
+      {{ block.settings.button_text | default: 'Apply' }}
+    </button>
+  </form>
+  
+  {%- if cart.attributes.coupon_error -%}
+    <div class="cart__coupon-error">
+      <p class="form__message">{{ cart.attributes.coupon_error }}</p>
+    </div>
+  {%- endif -%}
+</div>
