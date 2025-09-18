@@ -41,6 +41,15 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
+        "coupon_zMPNC7": {
+          "type": "coupon",
+          "settings": {
+            "heading": "",
+            "label": "Coupon code",
+            "placeholder": "Enter coupon code",
+            "button_text": "Apply"
+          }
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {}
@@ -49,24 +58,15 @@
           "type": "buttons",
           "settings": {}
         },
-        "coupon_zMPNC7": {
-          "type": "coupon",
-          "settings": {
-            "heading": "Add a coupon code",
-            "label": "Coupon code",
-            "placeholder": "Enter coupon code",
-            "button_text": "Apply"
-          }
-        },
         "secure_icon_p7qpq4": {
           "type": "secure_icon",
           "settings": {}
         }
       },
       "block_order": [
+        "coupon_zMPNC7",
         "subtotal",
         "buttons",
-        "coupon_zMPNC7",
         "secure_icon_p7qpq4"
       ],
       "custom_css": [
