@@ -1,0 +1,11 @@
+    {% if request.path == '/collections/pneumatic-vacuums/single' %}
+      <link rel="canonical" href="https://guardair.com/pages/pneumatic-vacuums">
+    {% elsif request.path == '/collections/dollies' %}
+      <link rel="canonical" href="https://guardair.com/products/drum-dollies">
+    {% elsif request.path == '/products/12-pvc-crevice-tool' or request.path == '/products/plastic-crevice-tool-1-x-11' or request.path == '/products/crevice-tool' %}
+      <link rel="canonical" href="https://guardair.com/products/crevice-tool-1-x-9">
+    {% elsif request.path == '/products/nylon-hose-3-8' or request.path == '/pages/air-hose-assemblies' or request.path == '/products/nylon-hose-1-2' %}
+      <link rel="canonical" href="https://guardair.com/products/nylon-hose-1-4">
+    {% else %}
+      <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
