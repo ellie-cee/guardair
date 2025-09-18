@@ -18,18 +18,10 @@
             "heading": "{{ product.title }}",
             "heading_size": "h1"
           }
-        },
-        "heading_wqmKME": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.title }}",
-            "heading_size": "h1"
-          }
         }
       },
       "block_order": [
-        "h1_heading_BLUxGQ",
-        "heading_wqmKME"
+        "h1_heading_BLUxGQ"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -139,7 +131,7 @@
             "blocks": "gua_trust_icons_mxf7Ee",
             "padding_top": 20,
             "padding_bottom": 20,
-            "debug": true
+            "debug": false
           }
         },
         "gua_trust_icons_mxf7Ee": {
