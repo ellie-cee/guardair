@@ -23,17 +23,6 @@
     <meta name="robots" content="follow, index">
     <meta name="format-detection" content="telephone=no">
 
-    {% if request.path == '/collections/pneumatic-vacuums/single' %}
-      <link rel="canonical" href="https://guardair.com/pages/pneumatic-vacuums">
-    {% elsif request.path == '/collections/dollies' %}
-      <link rel="canonical" href="https://guardair.com/products/drum-dollies">
-    {% elsif request.path == '/products/12-pvc-crevice-tool' or request.path == '/products/plastic-crevice-tool-1-x-11' or request.path == '/products/crevice-tool' %}
-      <link rel="canonical" href="https://guardair.com/products/crevice-tool-1-x-9">
-    {% elsif request.path == '/products/nylon-hose-3-8' or request.path == '/pages/air-hose-assemblies' or request.path == '/products/nylon-hose-1-2' %}
-      <link rel="canonical" href="https://guardair.com/products/nylon-hose-1-4">
-    {% else %}
-      <link rel="canonical" href="{{ canonical_url }}">
-    {% endif %}
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
     {%- if settings.favicon != blank -%}
@@ -46,6 +35,7 @@
 
     {%  render 'gua-seo-title' %}
     {%  render 'gua-seo-description' %}
+    {% render 'gua-canonical' %}    
 
     {% render 'meta-tags' %}
     {{ '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' | stylesheet_tag }}
