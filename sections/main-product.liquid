@@ -339,6 +339,7 @@
                 </details>
               </share-button>
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+              
             {%- when 'linked_products_picker' %}
             
               {% assign block_settings_products_size = block.settings.products | join : '||' | split: '||' | size %}
