@@ -654,19 +654,6 @@
         </a>
       </div>
     </div>
-    {%- if section.settings.media_position == 'right' -%}
-      <div class="grid__item product__media-wrapper small-hide">
-                  {% if left_blocks or custom_content %}
-                <div class="block-{{ id }}-padding{% if desktop_only %} hidden-mobile{% endif %}">{{ left_content }}
-                   {% style %}.block-{{ id }}-padding {padding-top: {{ padding_top | times: 0.75 | round: 0 }}px;padding-bottom: {{ padding_bottom | times: 0.75 | round: 0 }}px;}
-                         @media screen and (min-width: 750px) {.block-{{ id }}-padding {padding-top: {{ padding_top }}px;padding-bottom: {{ padding_bottom }}px;}}
-                         @media screen and (max-width: 480px) {.hidden-mobile {display:none;}.visible-mobile {display:block;}}
-                         @media screen and (min-width: 480px) {.visible-mobile {display:none;}}
-                   {% endstyle %}
-                </div>
-          {% endif %}
-      </div>
-    {%- endif -%}
   </div>
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
