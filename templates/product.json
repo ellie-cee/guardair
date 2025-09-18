@@ -12,6 +12,13 @@
     "rich_text_tQKL8T": {
       "type": "rich-text",
       "blocks": {
+        "h1_heading_BLUxGQ": {
+          "type": "h1_heading",
+          "settings": {
+            "heading": "{{ product.title }}",
+            "heading_size": "h1"
+          }
+        },
         "heading_wqmKME": {
           "type": "heading",
           "settings": {
@@ -21,6 +28,7 @@
         }
       },
       "block_order": [
+        "h1_heading_BLUxGQ",
         "heading_wqmKME"
       ],
       "name": "t:sections.rich-text.presets.name",
