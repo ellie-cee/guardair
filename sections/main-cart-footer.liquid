@@ -17,6 +17,10 @@
   }
 {%- endstyle -%}
 
+{%- comment -%} Load coupon cart JavaScript {%- endcomment -%}
+<script src="{{ 'coupon-cart.js' | asset_url }}" defer="defer"></script>
+
+
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
   id="main-cart-footer"
@@ -47,6 +51,8 @@
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
+  {%- when 'coupon' -%}
+              {% render 'coupon-form', block: block %}              
                 {% when 'secure_icon' %}
                 <div>
                   <div class="secure_icon_container">
