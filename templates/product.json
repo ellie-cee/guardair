@@ -257,7 +257,17 @@
           "settings": {
             "image_link": "",
             "title": "Best For",
-            "text": "{{ product.metafields.custom.benefit_texts | metafield_tag }}",
+            "text": "<ul><li>Static-sensitive zones</li><li>Combustible dust</li><li>Wet/Dry cleanup</li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_a3TU9h": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Quick Look",
+            "text": "<p>{{ product.metafields.custom.delivery_time | metafield_tag }}</p>",
             "link_label": "",
             "link": ""
           }
@@ -266,7 +276,8 @@
       "block_order": [
         "column_Ji9yBB",
         "column_necFRe",
-        "column_rwRAnP"
+        "column_rwRAnP",
+        "column_a3TU9h"
       ],
       "name": "GUA Multicolumns",
       "settings": {
@@ -285,7 +296,7 @@
         "alt_image": false,
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-2",
