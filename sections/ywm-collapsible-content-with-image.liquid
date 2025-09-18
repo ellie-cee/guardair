@@ -131,7 +131,7 @@
                               </div>
 
                       {% when 'faq_set' %}
-                              {% if block.settings.question_set %}Yes set
+                              {% if block.settings.question_set %}
                                  {% assign content_check = block.settings.question_set | strip_html %}
                                 {% if content_check.size == 0  %}{% continue %}{% endif %}    
                               {% endif %}
