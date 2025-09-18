@@ -1,3 +1,5 @@
+<script src="{{ 'gua-apply-coupon.js' | asset_url }}" defer="defer"></script>
+
 <div class="cart__footer-coupon" {{ block.shopify_attributes }}>
   <h3 class="cart__footer-heading">{{ block.settings.heading | default: 'Add a coupon code' }}</h3>
   <form action="{{ routes.cart_url }}" method="post" class="cart__coupon-form">
