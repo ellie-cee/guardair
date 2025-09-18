@@ -415,6 +415,10 @@ body.template-page .featured-series a {}
 body.template-product .snap-compare, body.template-collection .snap-compare  {display:block;}
 
 
+{% comment %} --- APPS --- {% endcomment %}
+#klaviyo-product-reviews-wrapper .kl_reviews__button {text-transform: uppercase; font-family: "Eurostile-Bol", "Eurostile-Reg", "Calibri", "Trebuchet MS", Helvetica, Arial, Sans-serif;} 
+.kl_reviews__summary__header {text-transform: uppercase; font-size: 24px; font-family: "Eurostile-Bol", "Eurostile-Reg", "Calibri", "Trebuchet MS", Helvetica, Arial, Sans-serif;} 
+.kl_reviews__list__tab {text-transform: uppercase; font-size: 16px; font-family: "Eurostile-Bol", "Eurostile-Reg", "Calibri", "Trebuchet MS", Helvetica, Arial, Sans-serif;}
 
 
 div#qab_container {display: none !important;}
@@ -467,6 +471,7 @@ header.header {padding-top: 12px !important; padding-bottom: 7px !important;}
 .slideshow__controls .slider-counter.slider-counter--dots button.slider-counter__link {padding: 7px;}
 .slideshow__controls .slider-counter.slider-counter--dots button.slider-counter__link span {background: white; width: 13px; height: 13px; border: 0;}
 {% comment %} -- slideshow section css end -- {% endcomment %}
+
 {% comment %} -- quick find section css start -- {% endcomment %}
 .itg_quick_find_wrapper {display: inline-block; width: 100%; padding: 10px 0;}
 .itg_quick_find_div {display: flex; width: 100%; flex-wrap: wrap;}
@@ -480,11 +485,11 @@ header.header {padding-top: 12px !important; padding-bottom: 7px !important;}
 .itg_quick_find_menu ul li {display: flex; list-style: none;}
 .itg_quick_find_menu ul li a {display: inline-block; min-width: 150px; border-radius: 0; border: none; font-size: 18px; color: #fff; text-transform: uppercase; padding: 8px 20px 7px; outline: 0 !important; background: #4b92db; text-decoration: none; }
 {% comment %} -- quick find section css end -- {% endcomment %}
+
 {% comment %} -- featured collection section css start -- {% endcomment %}
 .popular-items.grid--4-col-desktop .grid__item {width: 100%; max-width: 100%;}
 .itg_featured_collection .collection__description p a {text-align: center; text-decoration: none; width: 100%; color: #002395; font-weight: 700 !important; font-size: 18px; transition: 0.3s all linear; }
 .itg_featured_collection .collection__description p a:hover {color: #4b92db;}
-{% comment %} --  .itg_featured_collection .collection__description {text-align: center;}  -- {% endcomment %}
 .collection__bottom_description.page-width.body.rte {text-align: center;}
 .collection__bottom_description p {font-size: 18px; color: #000;}
 .collection__bottom_description a {text-decoration: none; color: #002395 !important; font-size: 18px; font-weight: 700; }
@@ -510,6 +515,7 @@ ul.popular-items .owl-nav button.owl-next {position: absolute; right: -30px; wid
 .itg_featured_collection ul.popular-items {margin-top: 0 !important;}
 .popular-items.grid--4-col-desktop .grid__item .card-wrapper:hover .card__content h3.card__heading a {text-decoration: none;}
 {% comment %} -- featured collection section css end -- {% endcomment %}
+
 {% comment %} -- featured block css start -- {% endcomment %}
 .featured-container {display: table; width: 100%;}
 .featured-container .featured-box {display: table-cell; width: 50%; vertical-align: middle;}
@@ -521,6 +527,7 @@ ul.popular-items .owl-nav button.owl-next {position: absolute; right: -30px; wid
 .featured-container .featured-box .box-desc p {margin-bottom: 13px; margin-top: 0; letter-spacing: normal; }
 .featured-container .featured-box .box-link {padding-bottom: 5px;}
 {% comment %} -- featured block css end -- {% endcomment %}
+
 {% comment %} -- locator block section css start -- {% endcomment %}
 .locator-container {background: black;}
 .locator-container .locator-box {background-image: url(https://cdn.shopify.com/s/files/1/2656/7610/files/world-map.webp?v=1672917429); background-repeat: no-repeat; background-position: top left; padding: 29px 0 28px;}
@@ -531,6 +538,7 @@ ul.popular-items .owl-nav button.owl-next {position: absolute; right: -30px; wid
 .locator-container .locator-box .locator-desc .text a {color: #d52b1e; text-decoration: none;}
 .itg_featured_collection ul.product-grid li.grid__item .card__inner .card__media .media, .itg_featured_collection ul.product-grid li.grid__item .card__inner .card__media .media img.motion-reduce {position: relative;}
 {% comment %} -- locator block section css end -- {% endcomment %}
+
 {% comment %} -- shield block section css start -- {% endcomment %}
 .support-container {padding: 0 0 70px;  background-repeat: no-repeat; background-size: auto; background-position: 50% 45px;}
 .support-container .support-box {padding-top: 60px; min-height: 345px; padding-bottom: 40px;}
@@ -541,6 +549,7 @@ ul.popular-items .owl-nav button.owl-next {position: absolute; right: -30px; wid
 .support-container .row {margin-left: -10px; margin-right: -10px; display: flex; flex-wrap: wrap;}
 .support-container .col-sm-12 {width: 50%; padding-left: 10px; padding-right: 10px;}
 {% comment %} -- shield block section css end -- {% endcomment %}
+
 {% comment %} -- featured article section css start -- {% endcomment %}
 .education-container {background: #666666; position: relative; margin-top: 30px;}
 .education-container .education-title {position: absolute; width: 100%; top: -88px; background: transparent; margin: 0 -10px; padding: 0 10px;}
@@ -561,6 +570,7 @@ ul.popular-items .owl-nav button.owl-next {position: absolute; right: -30px; wid
 .education-container .article-box .article-image img {max-width: 100%;}
 .education-container .article-box .article-detail .article-desc p {margin-top: 0; line-height: 1.5; margin-bottom: 11px; letter-spacing: normal;}
 {% comment %} -- featured article section css end -- {% endcomment %}
+
 {% comment %} -- footer css start -- {% endcomment %}
 .footer .footer-container {text-align: left; padding: 45px 0 15px;}
 .footer .footer-container .row {margin-left: -10px; margin-right: -10px; display: flex; flex-wrap: wrap;}
@@ -615,16 +625,18 @@ ul.popular-items .owl-nav button.owl-next {position: absolute; right: -30px; wid
 .footer-divisions a.itg_division_img:last-child {margin-bottom: 0 !important;}
 .footer-divisions a.itg_division_img {display: flex !important;}
 {% comment %} -- footer css end -- {% endcomment %}
+
 {% comment %} -- bottom popup css start -- {% endcomment %}
 #cookieconsent-modal {position: fixed; top: auto; right: auto; bottom: 0px; left: 0px; text-align: center; max-width: 320px; background: white; padding: 20px; z-index: 1000; -webkit-box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 10%); -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1); box-shadow: 0 0 5px 3px #0000001a;}
 #cookieconsent-modal {bottom: 25px; left: 25px;}
 #cookieconsent-modal p { font-size: 18px; line-height: 1.67; text-align: center;}
 .hide {display: none !important;}
 {% comment %} -- bottom popup css end -- {% endcomment %}
-{% comment %} --  pages css start  -- {% endcomment %}
 
+{% comment %} --  pages css start  -- {% endcomment %}
 h1.itg_main_page.main-page-title.page-title.h0 {margin-bottom: 18px; font-size: 42px; line-height: 1;}
 {% comment %} --  pages css end  -- {% endcomment %}
+
 {% comment %} --  custom image with text css start  -- {% endcomment %}
 .itg_image_with_text {width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .itg_img_box {width: calc(49.333333333333336% - 15px); display: flex;}
@@ -791,24 +803,7 @@ body.gradient.page :where(#MainContent).vacuum-warranties p {color: #000; font-s
 .itg_collection_pagination a {display: inline-block; width: 100px; height: 100px; text-decoration: none; background-image: url(https://cdn.shopify.com/s/files/1/2656/7586/files/loading111.gif?v=1681912119); background-size: cover;}
 .itg_theme_filter {display: none;}
 .facets-vertical .facets-wrapper {padding-right: 3rem; width: 35%;}
-{% comment %} --  .filter-group {display: block !important; margin: 0px; min-width: 150px; max-width: 250px; vertical-align: text-top; position: relative;}
-.filter-menu {display: inline-block; width: 100%;}
-.filter-menu ul {padding: 0; margin: 0; display: inline-block; width: 100%;}
-.filter-menu ul li {display: inline-block; width: 100%;}
-.filter-menu ul li a {position: relative; margin-left: 0; padding-left: 25px; text-indent: 0; font-weight: 400; text-decoration: none; color: #000; font-size: 16px;}
-.filter-menu ul li a i.check-icon {display: inline-block !important;}
-.filter-menu ul li a i.check-icon:before {position: absolute; content: " "; left: 0; top: 1px; border: solid 1px #d9d9d9; width: 15px; height: 15px;}
-.filter-group .collection-count {display: none !important;}
-.itg_collections .filter-menu ul li.active.selected a i.check-icon:before {content: "\d7"; padding-top: 2px; font-size: 21px; padding-left: 0px; line-height: 0.5; background: #002395; color: #fff;}
-.itg_collections .filter-menu ul li a i.check-icon:before {position: absolute; content: " "; left: 0; top: 1px; border: solid 1px #d9d9d9; width: 16px; height: 16px;}
-.list-container .filter-menu .filter-group .filter-clear {padding: 3px 8px; font-size: 14px; border-radius: 0; right: 0; top: -2px;}
-.list-container .filter-menu li a i:before {position: absolute; content: " "; left: 0; top: 7px; border: solid 1px #d9d9d9; width: 18px !important; height: 15px;}
-.filter-group li div {line-height: 30px !important;}
-.filter-clear {display: none;}
-.pt-mobile-header a {color: #000; text-decoration: none; text-transform: uppercase; font-size: 18px; margin: 0;}
-.filter-menu .filter-group h4 {font-weight: 400; margin-bottom: 25px; margin-top: 0; padding-top: 0; padding-bottom: 12px; border-bottom: 1px solid #ddd;}
-.filter-menu .filter-group .scroll-content {padding-bottom: 35px;}
- -- {% endcomment %}
+
 {% comment %} --  .filter-menu ul li.active.selected a i.check-icon::before {content: "\e818"; padding-left: 0px; font-size: 16px; line-height: 15px; background: #fff; color: #d52b1e; z-index: 1;}  -- {% endcomment %}
 /* h1.collection-hero__title {text-transform: none; font-size: 40px; line-height: 1; margin: 25px 0 0;} */
 {% comment %} --  Collection page css end  -- {% endcomment %}
@@ -904,7 +899,7 @@ ul#tabs-nav li.active a {background: black; color: #fff;}
 .tabset .tab-panels .tab-panel .tab-content.reviews-content .spr-content .spr-form fieldset.spr-form-review .spr-form-input.spr-starrating {border: none; padding: 0; height: auto;}
 .tabset .tab-panels .tab-panel .tab-content.reviews-content .spr-content .spr-form fieldset.spr-form-review .spr-form-input.spr-starrating a.spr-icon {text-decoration: none; display: inline-block; float: left; color: #fecb00;}
 -- {% endcomment %}
-
+{% comment %}
 .product-recommendations ul.grid.product-grid {width: 100%; column-gap: 20px;}
 .product-recommendations ul.grid.product-grid li.grid__item {list-style: none; position: relative; border: solid 1px #d9d9d9; text-align: center; width: 100%; max-width: 100%;}
 .product-recommendations ul.grid.product-grid li.grid__item .card-wrapper {padding: 0 7px 18px;}
@@ -925,11 +920,12 @@ ul#tabs-nav li.active a {background: black; color: #fff;}
 .product-recommendations ul.grid.product-grid .owl-nav button.owl-prev {left: -30px;}
 .product-recommendations ul.grid.product-grid .owl-nav button.owl-prev span, .product-recommendations ul.grid.product-grid .owl-nav button.owl-next span {display: inline-block; font-size: 70px; font-weight: 600;}
 .product-recommendations ul.grid.product-grid .owl-nav button.owl-next {right: -30px;}
-slider-component.slider-mobile-gutter {position: relative;}
+{% endcomment %}
+
+{% comment %}
 slider-component.slider-mobile-gutter .itg_variant_sku {position: absolute; z-index: 1; bottom: 10px; padding: 5px 10px; background: #666666; color: #fff; min-width: 180px; text-align: left; left: 0;}
 slider-component.slider-mobile-gutter .itg_variant_sku p {margin: 0; font-size: 16px; line-height: 1.428571429;}
 .product--thumbnail .product__media-gallery {z-index: 0 !important;}
-{% comment %}
 .itg_product_img.grid__item.product__media-wrapper {max-width: 50% !important; width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2) !important;}
 .itg_product_data.product__info-wrapper.grid__item {max-width: 50% !important; width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2) !important; padding-left: 30px !important;}
 {% endcomment %}
@@ -938,10 +934,10 @@ slider-component.slider-mobile-gutter .itg_variant_sku p {margin: 0; font-size: 
 .product--xsmallm:not(.product--no-media) .product__info-wrapper, 
 .product--xsmall:not(.product--no-media) .product__media-wrapper {max-width: 35%;width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);}
 .itg_product_data.product__info-wrapper.grid__item {max-width: 65%;width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);}
-
-
 .product__info-wrapper .product-form__input.product-form__input--dropdown .select:after {z-index: 0;}
 .product-form__input .product-form__quantity .quantity:after {z-index: 0;}
+
+{% comment %}
 .spr-container .spr-review-header {display: flex; gap: 10px;}
 .spr-container .spr-review-header .spr-icon {color: #fecb00;}
 .spr-container .spr-review-header-byline {display: none;}
@@ -952,9 +948,8 @@ slider-component.slider-mobile-gutter .itg_variant_sku p {margin: 0; font-size: 
 .spr-container .spr-review-content-body {font-size: 16px; color: #000; line-height: 1.67; letter-spacing: normal;}
 .spr-container .spr-review-content {margin: 0;}
 .product__media-item.grid__item.slider__slide.hide.is-active {display: block !important;}
-#klaviyo-product-reviews-wrapper .kl_reviews__button {text-transform: uppercase; font-family: "Eurostile-Bol", "Eurostile-Reg", "Calibri", "Trebuchet MS", Helvetica, Arial, Sans-serif;} 
-.kl_reviews__summary__header {text-transform: uppercase; font-size: 24px; font-family: "Eurostile-Bol", "Eurostile-Reg", "Calibri", "Trebuchet MS", Helvetica, Arial, Sans-serif;} 
-.kl_reviews__list__tab {text-transform: uppercase; font-size: 16px; font-family: "Eurostile-Bol", "Eurostile-Reg", "Calibri", "Trebuchet MS", Helvetica, Arial, Sans-serif;}
+{% endcomment %}
+ 
 {% comment %} -- product page custom tab css start -- {% endcomment %}
 {% comment %} --  Tabs  -- {% endcomment %}
 {% comment %} -- 
@@ -1144,3 +1139,26 @@ td.cart-item__totals .cart-item__price-wrapper span.price.price--end {font-famil
 .template-search__results .pagination-wrapper {margin-top: 0px;}
 .template-search__results ul.grid {margin-bottom: 0;}
 .template-search__header h1.h2 {text-transform: uppercase; font-size: 48px; line-height: 1;}
+
+
+
+{% comment %} ----------------------------------------- {% endcomment %}
+
+{% comment %} --  .filter-group {display: block !important; margin: 0px; min-width: 150px; max-width: 250px; vertical-align: text-top; position: relative;}
+.filter-menu {display: inline-block; width: 100%;}
+.filter-menu ul {padding: 0; margin: 0; display: inline-block; width: 100%;}
+.filter-menu ul li {display: inline-block; width: 100%;}
+.filter-menu ul li a {position: relative; margin-left: 0; padding-left: 25px; text-indent: 0; font-weight: 400; text-decoration: none; color: #000; font-size: 16px;}
+.filter-menu ul li a i.check-icon {display: inline-block !important;}
+.filter-menu ul li a i.check-icon:before {position: absolute; content: " "; left: 0; top: 1px; border: solid 1px #d9d9d9; width: 15px; height: 15px;}
+.filter-group .collection-count {display: none !important;}
+.itg_collections .filter-menu ul li.active.selected a i.check-icon:before {content: "\d7"; padding-top: 2px; font-size: 21px; padding-left: 0px; line-height: 0.5; background: #002395; color: #fff;}
+.itg_collections .filter-menu ul li a i.check-icon:before {position: absolute; content: " "; left: 0; top: 1px; border: solid 1px #d9d9d9; width: 16px; height: 16px;}
+.list-container .filter-menu .filter-group .filter-clear {padding: 3px 8px; font-size: 14px; border-radius: 0; right: 0; top: -2px;}
+.list-container .filter-menu li a i:before {position: absolute; content: " "; left: 0; top: 7px; border: solid 1px #d9d9d9; width: 18px !important; height: 15px;}
+.filter-group li div {line-height: 30px !important;}
+.filter-clear {display: none;}
+.pt-mobile-header a {color: #000; text-decoration: none; text-transform: uppercase; font-size: 18px; margin: 0;}
+.filter-menu .filter-group h4 {font-weight: 400; margin-bottom: 25px; margin-top: 0; padding-top: 0; padding-bottom: 12px; border-bottom: 1px solid #ddd;}
+.filter-menu .filter-group .scroll-content {padding-bottom: 35px;}
+ -- {% endcomment %}
