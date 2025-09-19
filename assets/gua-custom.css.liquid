@@ -26,7 +26,8 @@ body.template-index .single_logo_logo img {filter:brightness(0.0);}
 
       {% assign header_font = 'Eurostile-Bol,sans-serif' %}
       {% assign body_font =  'Eurostile-Reg,sans-serif' %}
-
+      {% assign body_font =  'Avenir' %}
+      
 {% comment %} Moved font families to theme.liquid {% endcomment %}
 {% comment %}
 h1, h2, h3, h4, h5, h6, h1, .h2, .h3, .h4, .h5, .h6, .h0  {font-family: "Eurostile-Bol", sans-serif !important; letter-spacing: normal;letter-spacing:0.05em;}
@@ -330,7 +331,7 @@ body.template-product .gua_product_info .tab-content .card-wrapper {padding: 2re
 body.template-product .gua_product_info .tab-content .product-grid .grid__item {flex-grow: 0;}
 /* body.template-product .gua_product_info li:has(a[href*=".pdf"])::marker {content: "📄 ";font-size: 1.2em;content:"{{ pdf_icon }}";display: inline-block;}*/
 body.template-product ul.documents, body.template-product ul.related {padding-left:0px;}
-body.template-product ul.documents li, body.template-product ul.related li {display:inline-block;list-style:none;background: #fff;border: 2px solid #dee2e6;padding: 10px 15px;border-radius: 6px;transition: all 0.3s ease;}
+body.template-product ul.documents li, body.template-product ul.related li {display:inline-block;list-style:none;background: #fff;border: 0px solid #dee2e6;padding: 10px 15px;border-radius: 6px;transition: all 0.3s ease;}
 body.template-product ul.documents li a, body.template-product ul.related li a {font-family:{{ body_font }};display:flex;padding-left:5px;flex:1;}
 
 @media screen and (max-width: 768px) {
