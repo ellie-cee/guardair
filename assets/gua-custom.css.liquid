@@ -290,9 +290,13 @@ body.template-product .product__media-list { flex: 1; order: 1; }
 body.template-product .product__media-toggle { display: flex; flex-direction: column; gap: 0.5rem; order: 2; width: 80px; flex-shrink: 0; }
 body.template-product .product__media-toggle .product__media-toggle-button { width: 100%; aspect-ratio: 1; border: 2px solid transparent; overflow: hidden; border-radius: 4px; }
 body.template-product .product__media-toggle .product__media-toggle-button.is-active { border-color: rgb(var(--color-foreground)); }
-@media screen and (max-width: 749px) { body.template-product .product__media-wrapper { flex-direction: column; } body.template-product .product__media-toggle { flex-direction: row; width: 100%; order: 2; overflow-x: auto; } }
+@media screen and (max-width: 749px) { 
+  body.template-product .product__media-wrapper { flex-direction: column; } 
+  body.template-product .product__media-toggle { flex-direction: row; width: 100%; order: 2; overflow-x: auto; } 
+}
 @media screen and (min-width: 900px) {
   body.template-product .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {width: 65px;}
+  body.template-product .thumbnail-list  { flex-direction: column;}
 }
 
 
