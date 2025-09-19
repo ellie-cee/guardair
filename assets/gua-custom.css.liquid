@@ -36,6 +36,12 @@ body.template-product ul.documents li a, body.template-product ul.related li a,
 
 .page-width {width: auto; max-width: {{ desktop_max_width }}; padding: 0 10px;}
 
+@font-face {
+  font-family: 'avenir';
+  src: url(https:{{ 'Avenir-Regular.woff' | file_url }}) format('woff')
+  font-weight: normal;
+  font-style: normal;
+}
 
 {% comment %} --- QIKIFY MENU --- {% endcomment %}
 /* .v2-header__nav-menu, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link a,  .v2-header__nav-menu > .tmenu_nav > .tmenu_item, */
