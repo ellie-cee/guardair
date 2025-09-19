@@ -136,6 +136,7 @@
         },
         "gua_trust_icons_mxf7Ee": {
           "type": "gua-trust-icons",
+          "disabled": true,
           "settings": {
             "icon_all1": "shopify://shop_images/Made_in_USA.jpg",
             "icon_1": "shopify://shop_images/Silica.jpg",
