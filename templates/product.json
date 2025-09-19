@@ -137,28 +137,30 @@
         "gua_trust_icons_mxf7Ee": {
           "type": "gua-trust-icons",
           "settings": {
-            "icon_all1": "shopify://shop_images/master_icons_002395_Assembled_USA.png",
-            "icon_all2": "shopify://shop_images/master_icons_002395_OSHA.png",
-            "icon_1": "shopify://shop_images/icon__shield_check__1.png",
-            "tag_1": "test",
-            "icon_2": "shopify://shop_images/ISA_seal.png",
+            "icon_all1": "shopify://shop_images/Made_in_USA.jpg",
+            "icon_1": "shopify://shop_images/Silica.jpg",
+            "tag_1": "pulseair",
+            "icon_2": "shopify://shop_images/ISA_Award.jpg",
             "tag_2": "powerquad|Vacuums",
-            "tag_3": "",
-            "tag_4": "",
+            "icon_3": "shopify://shop_images/OSHA.jpg",
+            "tag_3": "osha-compliant",
+            "icon_4": "shopify://shop_images/Warranty.jpg",
+            "tag_4": "powerquad",
             "tag_5": "",
             "tag_6": "",
             "tag_8": "",
             "tag_10": "",
             "image_style": "fixed",
-            "max_width_icon": 72,
-            "desktop_columns": 3,
+            "max_width_icon": 104,
+            "desktop_columns": 4,
             "mobile_columns": 2,
             "icon_align": "center",
-            "grayscale": true
+            "grayscale": false
           }
         },
         "gua_trust_icons_zRPbiP": {
           "type": "gua-trust-icons",
+          "disabled": true,
           "settings": {
             "icon_1": "shopify://shop_images/ISA_horiz_2025.png",
             "tag_1": "powerquad|Vacuums",
