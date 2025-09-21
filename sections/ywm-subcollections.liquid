@@ -36,10 +36,9 @@
             {% comment %} {% assign collections = collections | split: ',' %} {% endcomment %}
              {% assign collections = collection_meta.value | parse_json %}
         {% endif %}
-{{ collections }}
  
-{{ collections.size }}here
-          {% if collections %}there
+{{ collections.size }}
+          {% if collections %}
                 <div class="toolbar__item toolbar__item--menu"><ul class="inline-list toolbar__menu">
             {% for collection in collections %}
  
