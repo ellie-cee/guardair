@@ -31,11 +31,11 @@
       "settings": {
         "collection_list": [],
         "metafield_name": "custom.subcollections",
-        "toolbar_bg": "#ddd92a",
-        "tab_bg": "#c6c321",
-        "toolbar_font": "#121212",
-        "padding_top": 4,
-        "padding_bottom": 4
+        "toolbar_bg": "#ffffff",
+        "tab_bg": "#3f78b2",
+        "toolbar_font": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "product-grid": {
