@@ -63,7 +63,7 @@
             {% assign collections = collection_meta.value | parse_json %}
 
             <div class="toolbar__item toolbar__item--menu"><ul class="inline-list toolbar__menu">
-                {% for collection in collections %}{{ collection }}
+                {% for collection in collections %}
                     <li class="tab-item {% if collection.handle != '' and canonical_url contains collection.handle %}tab-item--active{% endif %} tab-item--{{ block.id }} tab-item--border tab-item--text" {{ block.shopify_attributes }}>
                       {% if collection.url != blank %}<a href="{{ collection.url }}" class="tab-item__link">{% endif %}
                           {% if link.text != blank %}{{ collection.text }}{% endif %}
