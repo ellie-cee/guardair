@@ -29,9 +29,10 @@
       "name": "GUA Subcollections",
       "settings": {
         "collection_list": [],
-        "toolbar_bg": "",
-        "tab_bg": "",
-        "toolbar_font": ""
+        "metafield_name": "custom.subcollections",
+        "toolbar_bg": "#ddd92a",
+        "tab_bg": "#4b92db",
+        "toolbar_font": "#121212"
       }
     },
     "product-grid": {
