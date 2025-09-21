@@ -26,6 +26,9 @@
     },
     "ywm_subcollections_kcEPRH": {
       "type": "ywm-subcollections",
+      "custom_css": [
+        "* {height:60px;}"
+      ],
       "name": "GUA Subcollections",
       "settings": {
         "collection_list": [],
