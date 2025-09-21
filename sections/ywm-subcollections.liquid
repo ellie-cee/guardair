@@ -35,7 +35,8 @@
             {% assign collections = collection.metafields[metafield_namespace][metafield_key] %}
             {% assign collections = collections | split: ',' %}
         {% endif %}
-        {{ collections }}
+{{ collections | json }}        
+{{ collections }}
 {{ collections.size }}here
           {% if collections %}there
                 <div class="toolbar__item toolbar__item--menu"><ul class="inline-list toolbar__menu">
