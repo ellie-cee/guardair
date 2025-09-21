@@ -27,7 +27,7 @@
   <div class="page-width">
     <div class="toolbar__content">
  
-        {% if section.settings.collection_list %}--{{ section.settings.metafield_name }}--
+        {% if section.settings.collection_list != blank %}
             {% assign collections = section.settings.collection_list %}
         {% elsif section.settings.collection_list %}--{{ section.settings.metafield_name }}--
             {% assign metafield_namespace = section.settings.metafield_name | first %}
