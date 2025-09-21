@@ -66,7 +66,7 @@
                 {% for collection in collections %}{{ collection }}
                     <li class="tab-item {% if collection.handle != '' and canonical_url contains collection.handle %}tab-item--active{% endif %} tab-item--{{ block.id }} tab-item--border tab-item--text" {{ block.shopify_attributes }}>
                       {% if collection.url != blank %}<a href="{{ collection.url }}" class="tab-item__link">{% endif %}
-                          {% if link.text != blank %}{{ collection.text }}{% endif %}
+                          {% if collection.text != blank %}{{ collection.text }}{% endif %}
                       {% if collection.url != blank %}</a>{% endif %}
                     </li>
                 {% endfor %}
