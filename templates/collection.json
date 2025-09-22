@@ -31,8 +31,8 @@
       "settings": {
         "collection_list": [],
         "metafield_name": "custom.subcollections",
-        "toolbar_bg": "#ddd92a",
-        "tab_bg": "#cecb28",
+        "toolbar_bg": "#d6d6d6",
+        "tab_bg": "#bdbdbd",
         "toolbar_font": "#121212",
         "padding_top": 4,
         "padding_bottom": 8
