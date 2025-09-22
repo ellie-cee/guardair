@@ -272,8 +272,6 @@ function setupContinuousMonitoring() {
     
     return { observer, documentObserver, periodicCheck, monitoredElements };
 }
-
-// Enhanced addMenuClasses that tracks elements for monitoring
 function addMenuClasses() {
     console.log('=== Starting addMenuClasses ===');
     
