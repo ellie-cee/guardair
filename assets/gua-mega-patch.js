@@ -112,6 +112,14 @@ function addMenuClasses() {
                         li.classList.add('spec-item');
                         console.log(`Added "spec-item" to <li> ${liIndex + 1}`);
                     }
+                    
+                    // Check if this <li> contains an <a> with "Essentials" in the title
+                    const essentialsLink = li.querySelector('a[title*="Essentials"]');
+                    if (essentialsLink) {
+                        li.classList.add('featured-list');
+                        console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
+                    }
+                    
                     totalLisModified++;
                 });
             });
@@ -186,6 +194,11 @@ function setupContinuousMonitoring() {
                         const childLis = ul.querySelectorAll(':scope > li');
                         childLis.forEach(li => {
                             if (!li.classList.contains('spec-header') && !li.classList.contains('spec-item')) {
+                                needsProcessing = true;
+                            }
+                            // Check if "Essentials" links need the featured-list class
+                            const essentialsLink = li.querySelector('a[title*="Essentials"]');
+                            if (essentialsLink && !li.classList.contains('featured-list')) {
                                 needsProcessing = true;
                             }
                         });
