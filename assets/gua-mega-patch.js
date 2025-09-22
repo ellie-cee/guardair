@@ -99,14 +99,20 @@ function addMenuClasses() {
                 totalUlsModified++;
                 console.log(`Added "spec-list" to <ul> ${ulIndex + 1}`);
                 
-                // Add "spec-group" class to immediate <li> children
+                // Add "spec-item" or "spec-header" class to immediate <li> children
                 const immediateLiChildren = ul.querySelectorAll(':scope > li');
                 console.log(`Found ${immediateLiChildren.length} immediate <li> children in <ul> ${ulIndex + 1}`);
                 
                 immediateLiChildren.forEach((li, liIndex) => {
-                    li.classList.add('spec-group');
+                    // Check if this <li> has the "tmenu_item_display_header" class
+                    if (li.classList.contains('tmenu_item_display_header')) {
+                        li.classList.add('spec-header');
+                        console.log(`Added "spec-header" to <li> ${liIndex + 1} (has tmenu_item_display_header)`);
+                    } else {
+                        li.classList.add('spec-item');
+                        console.log(`Added "spec-item" to <li> ${liIndex + 1}`);
+                    }
                     totalLisModified++;
-                    console.log(`Added "spec-group" to <li> ${liIndex + 1}`);
                 });
             });
             
@@ -176,6 +182,13 @@ function setupContinuousMonitoring() {
                         if (!ul.classList.contains('spec-list')) {
                             needsProcessing = true;
                         }
+                        // Also check if child <li> elements need processing
+                        const childLis = ul.querySelectorAll(':scope > li');
+                        childLis.forEach(li => {
+                            if (!li.classList.contains('spec-header') && !li.classList.contains('spec-item')) {
+                                needsProcessing = true;
+                            }
+                        });
                     });
                 }
             });
