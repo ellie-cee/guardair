@@ -147,7 +147,7 @@ function setupContinuousMonitoring() {
             if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                 const target = mutation.target;
                 if (monitoredElements.has(target)) {
-                    console.log('Detected class change on monitored element, scheduling recheck');
+                    // console.log('Detected class change on monitored element, scheduling recheck');
                     shouldCheck = true;
                 }
             }
@@ -174,7 +174,7 @@ function setupContinuousMonitoring() {
             mutation.addedNodes.forEach((node) => {
                 if (node.nodeType === Node.ELEMENT_NODE && 
                     (node.classList?.contains('tmenu_wrapper') || node.querySelector?.('.tmenu_wrapper'))) {
-                    console.log('New menu wrapper detected, adding to monitoring');
+                    // console.log('New menu wrapper detected, adding to monitoring');
                     observer.observe(node, {
                         childList: true,
                         subtree: true,
@@ -207,7 +207,7 @@ function setupContinuousMonitoring() {
             });
             
             if (needsCheck) {
-                console.log('Periodic safety check found missing classes');
+                // console.log('Periodic safety check found missing classes');
                 throttledAddMenuClasses();
             }
         }
@@ -216,24 +216,24 @@ function setupContinuousMonitoring() {
     // Stop periodic checks after 5 minutes to avoid infinite running
     setTimeout(() => {
         clearInterval(periodicCheck);
-        console.log('Stopped periodic safety checks after 5 minutes');
+        // console.log('Stopped periodic safety checks after 5 minutes');
     }, 300000);
     
-    console.log('Optimized monitoring active - watching menu containers only');
+    // console.log('Optimized monitoring active - watching menu containers only');
     
     return { observer, documentObserver, periodicCheck, monitoredElements };
 }
 
 // Function to trigger submenus (in case they need to be activated)
 function triggerSubmenus() {
-    console.log('=== Attempting to trigger submenus ===');
+    // console.log('=== Attempting to trigger submenus ===');
     
     // Look for main menu items that might contain the "Shop By Specifications" submenu
     const potentialParents = document.querySelectorAll('a[title="Safety Air Guns"], .lv1-safety-air a, a[title*="Air Gun"]');
-    console.log(`Found ${potentialParents.length} potential parent menu items`);
+    // console.log(`Found ${potentialParents.length} potential parent menu items`);
     
     potentialParents.forEach((parent, index) => {
-        console.log(`Checking parent ${index + 1}: ${parent.getAttribute('title') || parent.textContent}`);
+        // console.log(`Checking parent ${index + 1}: ${parent.getAttribute('title') || parent.textContent}`);
         
         // Try hovering to trigger submenu
         parent.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true }));
