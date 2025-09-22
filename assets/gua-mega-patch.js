@@ -1,3 +1,5 @@
+console.log('mega patch');
+
 // Find the "Shop By Specifications" link and modify the menu structure
 function addMenuClasses() {
     // Find the <a> element with title "Shop By Specifications"
