@@ -2,7 +2,14 @@
 {% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/24f232a72d929ac4b536f14939ed547b3f9722c1/Sections/ywm-subcollections.liquid {% endcomment %}
 {% comment %} LAST UPDATED: 20250106 {% endcomment %}
 
-{%  unless section.settings.collection_list == blank and section.settings.metafield_name.size != 0 %}
+{{ section.settings.metafield_name }}
+{{ section.settings.metafield_name.size }}
+
+                  {% assign metafield_namespace = section.settings.metafield_name | split: '.' | first %}
+                  {% assign metafield_key = section.settings.metafield_name | split: '.' | last %}
+                  {% assign collection_meta = collection.metafields[metafield_namespace][metafield_key] %}
+
+{%  unless section.settings.collection_list == blank and collection_meta != blank %}
       {% style %}
       #shopify-section-{{ section.id }} .toolbar__menu {flex-flow: row nowrap;;display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap; justify-content:center;}
       #shopify-section-{{ section.id }} .toolbar__menu .toolbar__item--menu {display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap;}
