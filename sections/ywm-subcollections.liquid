@@ -55,7 +55,7 @@
                         </ul></div>
                     {% endif %}
 
-        {% elsif section.settings.collection_list %}
+        {% elsif section.settings.metafield_name %}
 
             {% assign metafield_namespace = section.settings.metafield_name | split: '.' | first %}
             {% assign metafield_key = section.settings.metafield_name | split: '.' | last %}
