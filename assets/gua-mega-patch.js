@@ -152,7 +152,7 @@ function setupContinuousMonitoring() {
     
     let processedCount = 0;
     
-    // Set up MutationObserver to watch for any new content
+    // Set up MutationObserver to watch for any changes that might remove our classes
     const observer = new MutationObserver((mutations) => {
         let shouldCheck = false;
         
@@ -160,9 +160,10 @@ function setupContinuousMonitoring() {
             // Check if new nodes were added that might contain our target links
             mutation.addedNodes.forEach((node) => {
                 if (node.nodeType === Node.ELEMENT_NODE) {
-                    // Check if the new node contains "Shop By Specifications" links
+                    // Check if the new node contains "Shop By Specifications" links or "Essentials" links
                     if (node.querySelector && 
                         (node.querySelector('a[title="Shop By Specifications"]') || 
+                         node.querySelector('a[title*="Essentials"]') ||
                          node.querySelector('a[title*="Spec"]') ||
                          node.classList?.contains('tmenu_submenu') ||
                          node.querySelector('.tmenu_submenu'))) {
@@ -170,33 +171,53 @@ function setupContinuousMonitoring() {
                     }
                 }
             });
+            
+            // Check if attributes were modified (classes being removed/changed)
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                const target = mutation.target;
+                if (target.nodeType === Node.ELEMENT_NODE) {
+                    // Check if this element should have our classes but doesn't
+                    const essentialsLink = target.querySelector('a[title*="Essentials"]');
+                    if (essentialsLink && !target.classList.contains('featured-list')) {
+                        console.log('Detected featured-list class removal, will re-apply');
+                        shouldCheck = true;
+                    }
+                    
+                    // Check for spec-list, spec-header, spec-item class removals
+                    if ((target.tagName === 'UL' && target.closest('li')?.querySelector('a[title="Shop By Specifications"]') && !target.classList.contains('spec-list')) ||
+                        (target.tagName === 'LI' && target.closest('ul')?.classList.contains('spec-list') && 
+                         !target.classList.contains('spec-header') && !target.classList.contains('spec-item'))) {
+                        console.log('Detected spec class removal, will re-apply');
+                        shouldCheck = true;
+                    }
+                }
+            }
         });
         
         if (shouldCheck) {
-            console.log('New content detected that might contain "Shop By Specifications" - running addMenuClasses');
+            console.log('DOM changes detected that affect our classes - running addMenuClasses');
             const result = addMenuClasses();
             if (result) {
                 processedCount++;
-                console.log(`Successfully processed dynamic content (attempt ${processedCount})`);
+                console.log(`Successfully reprocessed content after DOM changes (attempt ${processedCount})`);
             }
         }
     });
     
-    // Observe the entire document for changes
+    // Observe the entire document for changes, including attribute changes
     observer.observe(document.body, {
         childList: true,
-        subtree: true
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['class'] // Only watch for class attribute changes
     });
     
-    // Also set up periodic checks as a fallback
+    // Enhanced periodic check that also verifies class persistence
     const periodicCheck = setInterval(() => {
         const shopBySpecsLinks = document.querySelectorAll('a[title="Shop By Specifications"]');
         const essentialsLinks = document.querySelectorAll('a[title*="Essentials"]');
         
         if (shopBySpecsLinks.length > 0 || essentialsLinks.length > 0) {
-            console.log(`Periodic check found ${shopBySpecsLinks.length} "Shop By Specifications" and ${essentialsLinks.length} "Essentials" links`);
-            
-            // Check if any of them don't have the classes applied yet
             let needsProcessing = false;
             
             // Check Shop By Specifications links
@@ -228,16 +249,17 @@ function setupContinuousMonitoring() {
             essentialsLinks.forEach(essentialsLink => {
                 const parentLi = essentialsLink.closest('li');
                 if (parentLi && !parentLi.classList.contains('featured-list')) {
+                    console.log(`Re-applying featured-list to "${essentialsLink.getAttribute('title')}" - class was removed`);
                     needsProcessing = true;
                 }
             });
             
             if (needsProcessing) {
-                console.log('Found unprocessed menu content - processing now');
+                console.log('Found missing classes during periodic check - reprocessing now');
                 addMenuClasses();
             }
         }
-    }, 1000); // Check every second
+    }, 500); // Check every 500ms for faster response to class removal
     
     // Stop periodic checks after 2 minutes to avoid infinite running
     setTimeout(() => {
