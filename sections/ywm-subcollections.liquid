@@ -2,13 +2,11 @@
 {% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/24f232a72d929ac4b536f14939ed547b3f9722c1/Sections/ywm-subcollections.liquid {% endcomment %}
 {% comment %} LAST UPDATED: 20250106 {% endcomment %}
 
-{{ section.settings.metafield_name }}
-{{ section.settings.metafield_name.size }}
-
+{% if section.settings.metafield_name %}
                   {% assign metafield_namespace = section.settings.metafield_name | split: '.' | first %}
                   {% assign metafield_key = section.settings.metafield_name | split: '.' | last %}
                   {% assign collection_meta = collection.metafields[metafield_namespace][metafield_key] %}
-
+{% endif %}
 {%  unless section.settings.collection_list == blank and collection_meta == blank %}
       {% style %}
       #shopify-section-{{ section.id }} .toolbar__menu {flex-flow: row nowrap;;display:flex;display: -webkit-flex;display: -moz-flexbox;display: -ms-flexbox;display: -ms-flexbox;-webkit-flex-wrap: wrap; justify-content:center;}
@@ -62,12 +60,8 @@
                               </ul></div>
                           {% endif %}
 
-              {% elsif section.settings.metafield_name %}
+              {% elsif collection_meta %}
 
-                  {% assign metafield_namespace = section.settings.metafield_name | split: '.' | first %}
-                  {% assign metafield_key = section.settings.metafield_name | split: '.' | last %}
-                  {% assign collection_meta = collection.metafields[metafield_namespace][metafield_key] %}
-                  {% comment %} {% assign collections = collections | split: ',' %} {% endcomment %}
                   {% assign collections = collection_meta.value | parse_json %}
 
                   <div class="toolbar__item toolbar__item--menu"><ul class="inline-list toolbar__menu">
