@@ -1,6 +1,6 @@
 // Enhanced script to handle dynamically loaded submenus with optimized performance
 function addMenuClasses() {
-    console.log('=== Starting addMenuClasses ===');
+    // console.log('=== Starting addMenuClasses ===');
     
     // Find all tmenu_wrapper containers
     const menuWrappers = document.querySelectorAll('.tmenu_wrapper');
@@ -30,13 +30,13 @@ function addMenuClasses() {
             if (parentLi && !parentLi.classList.contains('featured-list')) {
                 parentLi.classList.add('featured-list');
                 monitoredElements.add(parentLi); // Track this element
-                console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
+                // console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
                 totalLisModified++;
             }
         });
         
         shopBySpecsLinks.forEach((link, linkIndex) => {
-            console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
+            // console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
             
             // Get the parent <li> element
             const parentLi = link.closest('li');
@@ -77,7 +77,7 @@ function addMenuClasses() {
                     if (essentialsLink && !li.classList.contains('featured-list')) {
                         li.classList.add('featured-list');
                         monitoredElements.add(li); // Track this element
-                        console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
+                        // console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
                     }
                     
                     if (classAdded) {
@@ -93,13 +93,13 @@ function addMenuClasses() {
     // Store monitored elements globally for access by the observer
     window.menuClassMonitoredElements = monitoredElements;
     
-    console.log(`=== Results: Processed ${totalProcessed} instances, modified ${totalUlsModified} <ul>s and ${totalLisModified} <li>s ===`);
+    // console.log(`=== Results: Processed ${totalProcessed} instances, modified ${totalUlsModified} <ul>s and ${totalLisModified} <li>s ===`);
     return totalProcessed > 0;
 }
 
 // Function to set up efficient monitoring for class persistence
 function setupContinuousMonitoring() {
-    console.log('=== Setting up optimized monitoring ===');
+    // console.log('=== Setting up optimized monitoring ===');
     
     let processedCount = 0;
     let lastProcessTime = 0;
@@ -115,7 +115,7 @@ function setupContinuousMonitoring() {
         }
         lastProcessTime = now;
         
-        console.log('Running throttled class reapplication');
+        // console.log('Running throttled class reapplication');
         const result = addMenuClasses();
         if (result) {
             processedCount++;
