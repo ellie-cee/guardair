@@ -42,10 +42,12 @@
             {% else %}
 
             {% endif %}
-
+            
+            {% if series_link %}
               <div class="featured-series">
                   <a href="{{ series_link }}" class="button">View {{ series_title }} Series</a>
               </div>
+            {% endif %}
 
       {% endif %}
 
