@@ -45,7 +45,6 @@ body.template-product ul.documents li a, body.template-product ul.related li a,
 
 .v2-header__nav-menu .tmenu_alignment_center .tmenu_nav {justify-content: space-between;}
 .v2-header__nav-menu > .tmenu_nav > .tmenu_item, .tmenu_item--root > .tmenu_item_link > .tmenu_item_text {font-family:{{ header_font }} !important;text-transform:uppercase !important;}
-/* .v2-header__nav-menu li.tmenu_item_display_header > .tmenu_item_text:first-of-type {font-family:{{ header_font }};} */
 .v2-header__nav-menu .tmenu_submenu_type_mega .tmenu_item_display_header>.tmenu_item_link {font-family:{{ header_font }};font-size:130%;}
 
 .v2-header__nav-menu .tmenu_submenu_type_tab .tmenu_submenu_tab_control {border-color: #fff !important;}
@@ -64,7 +63,7 @@ li:not(.tmenu_item_mobile) .tmenu_item_display_heade.tmenu_item_level_2 > .tmenu
 
 .v2-header__nav-menu .tmenu_app .tmenu_nav .tmenu_item--root.tmenu_item_active > .tmenu_item_link {border-bottom:3px solid {{ contrast_color1 }};}
 
-/* .v2-header__nav-menu, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link, .v2-header__nav-menu ul.tmenu_nav .tmenu_item_link a,  .v2-header__nav-menu > .tmenu_nav > .tmenu_item, */
+
 @media (min-width: {{ desktop_max_width }}) {
     /* .tmenu_app--horizontal .tmenu_submenu_type_tab {max-width: {{ desktop_max_width }};left: calc((100vw - {{ desktop_max_width }}) / 2);} */
     /* .v2-header__nav-menu .tmenu_app--horizontal .tmenu_submenu_type_tab, .v2-header__nav-menu .tmenu_app--horizontal .tmenu_submenu_type_mega {padding: 2rem calc((100vw - {{ desktop_max_width }}) / 2) 5%;} */
@@ -74,8 +73,7 @@ li:not(.tmenu_item_mobile) .tmenu_item_display_heade.tmenu_item_level_2 > .tmenu
 
 ul.tmenu_submenu_type_automatic.tmenu_submenu--desktop.tmenu_submenu.spec-list {display: flex !important;flex-flow: row wrap;}
 li.tmenu_item.tmenu_col.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_text.spec-item {flex: 0 1 auto;width: auto !important;}
-.tmenu_col.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_text.spec-item .tmenu_item_text {background:{{ light_gray }};border:1px solid {{ mid_gray }};border-radius:3px;padding:2px 5px;}
-
+.tmenu_col.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_text.spec-item .tmenu_item_text {background:{{ light_gray }};border:1px solid {{ mid_gray }};border-radius:3px;padding: 2px 5px !important;margin-right: 1rem;}
 
 
 
@@ -122,7 +120,6 @@ li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_
    li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_image a,
 .tmenu_item--root .tmenu_item_display_header>.tmenu_item_link,li:not(.tmenu_item_mobile) .tmenu_item_display_header > .tmenu_item_link {border-width:0px !important;font-size:1.75rem;}
 li:not(.tmenu_item_mobile) .tmenu_item_display_header:not(.tmenu_item_level_2):not(.tmenu_item_level_3):not(.tmenu_item_level_4) > .tmenu_item_link {font-size:2rem;font-family: {{ header_font }};}
-
 li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_collection .tmenu_collection.tmenu_collection--above, 
 li.tmenu_col-3.tmenu_item_has_child.tmenu_item_display_header.tmenu_item_layout_collection .tmenu_item--root:not(.tmenu_item_active) .tmenu_submenu { max-width: 150px !important;margin: 0 auto;}
 li.tmenu_item.tmenu_item_level_2.tmenu_col-3.tmenu_item_submenu_type_automatic.tmenu_item_has_child.tmenu_item_layout_text.tmenu_item_display_header:last-child {border-left:2px solid {{ accent_color2}};
@@ -130,6 +127,7 @@ li.tmenu_item.tmenu_item_level_2.tmenu_col-3.tmenu_item_submenu_type_automatic.t
 li.tmenu_item_level_1.tmenu_item_display_header role["button"] .tmenu_item_text {font-size:2rem !important;}
 .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link:not([tmenu-disabled-link]) {font-size:1.2rem;}
 {% endcomment %}
+
 {% comment %}
     .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link:not([tmenu-disabled-link]) a[href*='collections'] .tmenu_item_text {background:{{ light_gray }};border:1px solid {{ mid_gray }};border-radius:3px;padding:2px 5px;}
     .tmenu_nav .tmenu_item.tmenu_item_level_3 .tmenu_item_link[href*='collections'] .tmenu_item_text, .tmenu_nav .tmenu_item.tmenu_item_level_4 .tmenu_item_link[href*='collections'] .tmenu_item_text,
@@ -137,8 +135,6 @@ li.tmenu_item_level_1.tmenu_item_display_header role["button"] .tmenu_item_text 
     {background:{{ light_gray }};border:1px solid {{ light_gray | darken_color:40 }};border-radius:3px;margin-bottom:2px !important;display:block !important;height:100%;font-size:12px !important;
         padding: 3px 8px !important;border-image: initial;transition: 0.2s;} 
 {% endcomment %}
-
- 
 
 {% comment %}
 .v2-header__nav-menu a[title="Shop By Specifications"] {color:blue;}
