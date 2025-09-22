@@ -24,8 +24,8 @@ function addMenuClasses() {
         // Also find any links with "Essentials" in the title for featured-list processing
         const essentialsLinks = wrapper.querySelectorAll('a[title*="Essentials"]');
         
-        // Also find any links with "Shop All" in the title for shop-all-button processing
-        const shopAllLinks = wrapper.querySelectorAll('a[title*="Shop All"]');
+        // Also find any links with "Shop All" or "View All" in the title for shop-all-button processing
+        const shopAllLinks = wrapper.querySelectorAll('a[title*="Shop All"], a[title*="View All"]');
         
         // Process all "Essentials" parent menu items
         essentialsLinks.forEach((essentialsLink, essIndex) => {
@@ -38,7 +38,7 @@ function addMenuClasses() {
             }
         });
         
-        // Process all "Shop All" parent menu items
+        // Process all "Shop All" or "View All" parent menu items
         shopAllLinks.forEach((shopAllLink, shopAllIndex) => {
             const parentLi = shopAllLink.closest('li');
             if (parentLi && !parentLi.classList.contains('shop-all-button')) {
@@ -94,12 +94,12 @@ function addMenuClasses() {
                         console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
                     }
                     
-                    // Check if this <li> contains an <a> with "Shop All" in the title
-                    const shopAllLink = li.querySelector('a[title*="Shop All"]');
+                    // Check if this <li> contains an <a> with "Shop All" or "View All" in the title
+                    const shopAllLink = li.querySelector('a[title*="Shop All"], a[title*="View All"]');
                     if (shopAllLink && !li.classList.contains('shop-all-button')) {
                         li.classList.add('shop-all-button');
                         monitoredElements.add(li); // Track this element
-                        console.log(`Added "shop-all-button" to <li> ${liIndex + 1} (contains "Shop All" link: "${shopAllLink.getAttribute('title')}")`);
+                        console.log(`Added "shop-all-button" to <li> ${liIndex + 1} (contains "Shop All/View All" link: "${shopAllLink.getAttribute('title')}")`);
                     }
                     
                     if (classAdded) {
@@ -159,7 +159,7 @@ function setupContinuousMonitoring() {
                     if (node.querySelector && 
                         (node.querySelector('a[title="Shop By Specifications"]') || 
                          node.querySelector('a[title*="Essentials"]') ||
-                         node.querySelector('a[title*="Shop All"]') ||
+                         node.querySelector('a[title*="Shop All"], a[title*="View All"]') ||
                          node.classList?.contains('tmenu_submenu'))) {
                         shouldCheck = true;
                     }
@@ -219,7 +219,7 @@ function setupContinuousMonitoring() {
         // Only run if we haven't processed recently
         if (Date.now() - lastProcessTime > 5000) { // 5 seconds since last check
             const essentialsLinks = document.querySelectorAll('a[title*="Essentials"]');
-            const shopAllLinks = document.querySelectorAll('a[title*="Shop All"]');
+            const shopAllLinks = document.querySelectorAll('a[title*="Shop All"], a[title*="View All"]');
             let needsCheck = false;
             
             // Quick check - just verify a few key elements
