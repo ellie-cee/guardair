@@ -70,9 +70,28 @@ li:not(.tmenu_item_mobile) .tmenu_item_display_heade.tmenu_item_level_2 > .tmenu
     /* .v2-header__nav-menu .tmenu_app--horizontal .tmenu_submenu_type_tab, .v2-header__nav-menu .tmenu_app--horizontal .tmenu_submenu_type_mega {padding: 2rem calc((100vw - {{ desktop_max_width }}) / 2) 5%;} */
 }
 
+.v2-header__nav-menu .spec-group  {background:#fff;}
+.v2-header__nav-menu .spec-group ~ ul, .v2-header__nav-menu .spec-group ~ .tmenu_submenu, .v2-header__nav-menu .tmenu_item a[title="Shop By Specifications"] ~ .tmenu_submenu, 
+.v2-header__nav-menu .tmenu_item a[title="Shop By Specifications"] > .tmenu_submenu  {display:flex !important;flex-flow: row wrap;}
+
 ul.tmenu_submenu_type_automatic.tmenu_submenu--desktop.tmenu_submenu.spec-list {display: flex !important;flex-flow: row wrap;}
-li.tmenu_item.tmenu_item_level_4.tmenu_col.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_text.spec-item {flex: 0 1 auto;width: auto !important;}
+li.tmenu_item.tmenu_col.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_text.spec-item {flex: 0 1 auto;width: auto !important;}
 .tmenu_col.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_text.spec-item .tmenu_item_text {background:{{ light_gray }};border:1px solid {{ mid_gray }};border-radius:3px;padding:2px 5px;}
+
+
+
+
+.v2-header__nav-menu .shop-button {color:{{ accent_color1 }};border-bottom:3px solid {{ contrast_color1 }};padding: 1rem 2rem !important;transition: 0.2s;width:100%;margin-top:1rem;display:flex;font-family: {{ header_font}};}    
+.v2-header__nav-menu .shop-button:after {content:"→";font-size:14px;padding:0 3px;}
+
+
+
+  @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+  }
+{% comment %} -- FIX WEIRDNESS FROM QIKIFY {% endcomment %}
+body {display:grid !important;width:100vw;padding:0px !important;}
 
 
 {% comment %}
@@ -118,19 +137,7 @@ li.tmenu_item_level_1.tmenu_item_display_header role["button"] .tmenu_item_text 
         padding: 3px 8px !important;border-image: initial;transition: 0.2s;} 
 {% endcomment %}
 
-
-
-.v2-header__nav-menu .spec-group  {background:#fff;}
-.v2-header__nav-menu .spec-group ~ ul, .v2-header__nav-menu .spec-group ~ .tmenu_submenu, .v2-header__nav-menu .tmenu_item a[title="Shop By Specifications"] ~ .tmenu_submenu, 
-.v2-header__nav-menu .tmenu_item a[title="Shop By Specifications"] > .tmenu_submenu  {display:flex !important;flex-flow: row wrap;}
-.v2-header__nav-menu .spec-button {background:{{ light_gray }};border:1px solid {{ light_gray | darken_color:40 }};border-radius:3px;margin-bottom:2px !important;display:block !important;height:100%;font-size:12px !important;
-    padding: 3px 8px !important;border-image: initial;transition: 0.2s;}    
-
-
-.v2-header__nav-menu .shop-button {color:{{ accent_color1 }};border-bottom:3px solid {{ contrast_color1 }};padding: 1rem 2rem !important;transition: 0.2s;width:100%;margin-top:1rem;display:flex;font-family: {{ header_font}};}    
-
-
-.v2-header__nav-menu .shop-button:after {content:"→";font-size:14px;padding:0 3px;}
+ 
 
 {% comment %}
 .v2-header__nav-menu a[title="Shop By Specifications"] {color:blue;}
@@ -140,14 +147,10 @@ li.tmenu_item_level_1.tmenu_item_display_header role["button"] .tmenu_item_text 
 .v2-header__nav-menu .tmenu_item_level_2 a[title="Shop By Specifications"] ~ .tmenu_submenu {}
 .tmenu_item_level_2 .tmenu_item_link:not(.tmenu_item_content_alignment_center) {padding-left:2rem;}
 {% endcomment %}
- 
+  
 
-  @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-  }
-{% comment %} -- FIX WEIRDNESS FROM QIKIFY {% endcomment %}
-body {display:grid !important;width:100vw;padding:0px !important;}
+
+
 
 
 {% comment %} --- BUTTONS AND BREADCRUMBS--- {% endcomment %}
