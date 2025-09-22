@@ -247,45 +247,45 @@ function triggerSubmenus() {
     
     // Give a moment for submenus to load, then check
     setTimeout(() => {
-        console.log('Checking for "Shop By Specifications" after triggering submenus...');
+        // console.log('Checking for "Shop By Specifications" after triggering submenus...');
         addMenuClasses();
     }, 500);
 }
 
 // Main initialization
 function initialize() {
-    console.log('=== Initializing menu class script ===');
+    // console.log('=== Initializing menu class script ===');
     
     // First, look for tmenu_wrapper
     const menuWrappers = document.querySelectorAll('.tmenu_wrapper');
-    console.log(`Found ${menuWrappers.length} menu wrappers`);
+    // console.log(`Found ${menuWrappers.length} menu wrappers`);
     
     if (menuWrappers.length === 0) {
-        console.log('No menu wrappers found, will wait...');
+        // console.log('No menu wrappers found, will wait...');
         setTimeout(initialize, 500);
         return;
     }
     
     // Try immediate processing
-    console.log('Menu wrappers found, attempting immediate processing...');
+    // console.log('Menu wrappers found, attempting immediate processing...');
     const immediateResult = addMenuClasses();
     
     if (!immediateResult) {
-        console.log('No "Shop By Specifications" links found initially, trying to trigger submenus...');
+        // console.log('No "Shop By Specifications" links found initially, trying to trigger submenus...');
         triggerSubmenus();
         
         // Start continuous monitoring for dynamically loaded content
         setupContinuousMonitoring();
     } else {
-        console.log('Successfully processed immediately!');
+        // console.log('Successfully processed immediately!');
         // Still set up monitoring in case there are more instances that load later
         setupContinuousMonitoring();
     }
 }
 
 // Start when DOM is ready
-console.log('=== Menu class script loaded ===');
-console.log('Document ready state:', document.readyState);
+// console.log('=== Menu class script loaded ===');
+// console.log('Document ready state:', document.readyState);
 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initialize);
