@@ -37,8 +37,8 @@
             {% assign series_link = series_page.url %}
             {% assign series_title = series_page.title %}     
           {% elsif collection.handle contains 'powerquad' %}
-              {% assign series_link = 'pages/powerquad-pneumatic-vacuums' %}
-              {% assign series_title = 'PowerQuad Series' %}             
+              {% assign series_link = shop.secure_url | append: 'pages/powerquad-pneumatic-vacuums' %}
+              {% assign series_title = 'PowerQuad' %}             
             {% else %}
 
             {% endif %}
