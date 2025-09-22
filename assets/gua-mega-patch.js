@@ -79,6 +79,20 @@ function addMenuClasses() {
         const shopBySpecsLinks = wrapper.querySelectorAll('a[title="Shop By Specifications"]');
         console.log(`Found ${shopBySpecsLinks.length} "Shop By Specifications" links in wrapper ${wrapperIndex + 1}`);
         
+        // Also find any links with "Essentials" in the title for featured-list processing
+        const essentialsLinks = wrapper.querySelectorAll('a[title*="Essentials"]');
+        console.log(`Found ${essentialsLinks.length} "Essentials" links in wrapper ${wrapperIndex + 1}`);
+        
+        // Process all "Essentials" parent menu items
+        essentialsLinks.forEach((essentialsLink, essIndex) => {
+            const parentLi = essentialsLink.closest('li');
+            if (parentLi && !parentLi.classList.contains('featured-list')) {
+                parentLi.classList.add('featured-list');
+                console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
+                totalLisModified++;
+            }
+        });
+        
         shopBySpecsLinks.forEach((link, linkIndex) => {
             console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
             
@@ -177,11 +191,15 @@ function setupContinuousMonitoring() {
     // Also set up periodic checks as a fallback
     const periodicCheck = setInterval(() => {
         const shopBySpecsLinks = document.querySelectorAll('a[title="Shop By Specifications"]');
-        if (shopBySpecsLinks.length > 0) {
-            console.log(`Periodic check found ${shopBySpecsLinks.length} "Shop By Specifications" links`);
+        const essentialsLinks = document.querySelectorAll('a[title*="Essentials"]');
+        
+        if (shopBySpecsLinks.length > 0 || essentialsLinks.length > 0) {
+            console.log(`Periodic check found ${shopBySpecsLinks.length} "Shop By Specifications" and ${essentialsLinks.length} "Essentials" links`);
             
             // Check if any of them don't have the classes applied yet
             let needsProcessing = false;
+            
+            // Check Shop By Specifications links
             shopBySpecsLinks.forEach(link => {
                 const parentLi = link.closest('li');
                 if (parentLi) {
@@ -206,8 +224,16 @@ function setupContinuousMonitoring() {
                 }
             });
             
+            // Check Essentials parent links
+            essentialsLinks.forEach(essentialsLink => {
+                const parentLi = essentialsLink.closest('li');
+                if (parentLi && !parentLi.classList.contains('featured-list')) {
+                    needsProcessing = true;
+                }
+            });
+            
             if (needsProcessing) {
-                console.log('Found unprocessed "Shop By Specifications" content - processing now');
+                console.log('Found unprocessed menu content - processing now');
                 addMenuClasses();
             }
         }
