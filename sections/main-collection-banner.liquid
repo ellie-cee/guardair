@@ -35,11 +35,14 @@
           {% assign series_page = pages[collection.handle] %}
           {% if series_page.url != blank %}
             {% assign series_link = series_page.url %}
-            {% assign series_title = series_page.title %}            
+            {% assign series_title = series_page.title %}     
+          {% elsif collection.handle contains 'powerquad' %}
+              {% assign series_link = 'pages/powerquad-pneumatic-vacuums' %}
+              {% assign series_title = 'PowerQuad Series' %}             
             {% else %}
 
             {% endif %}
-            
+
               <div class="featured-series">
                   <a href="{{ series_link }}" class="button">View {{ series_title }} Series</a>
               </div>
