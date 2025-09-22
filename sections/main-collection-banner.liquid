@@ -33,7 +33,7 @@
 
       {% if section.settings.show_series_page %}
           {% assign series_page = pages[collection.handle] %}
-          {% if series_page %}
+          {% if series_page.url %}
               <div class="featured-series">
                   <a href="{{ series_page.url }}" class="button">View {{ series_page.title }} Series</a>
               </div>
