@@ -146,120 +146,231 @@ function addMenuClasses() {
     return totalProcessed > 0;
 }
 
-// Function to set up continuous monitoring for dynamically loaded content
+// Function to set up efficient monitoring for class persistence
 function setupContinuousMonitoring() {
-    console.log('=== Setting up continuous monitoring ===');
+    console.log('=== Setting up optimized monitoring ===');
     
     let processedCount = 0;
+    let lastProcessTime = 0;
+    const THROTTLE_DELAY = 100; // Throttle rapid-fire changes
     
-    // Set up MutationObserver to watch for any changes that might remove our classes
+    // Keep track of elements we're monitoring to avoid unnecessary checks
+    const monitoredElements = new Set();
+    
+    function throttledAddMenuClasses() {
+        const now = Date.now();
+        if (now - lastProcessTime < THROTTLE_DELAY) {
+            return; // Skip if called too frequently
+        }
+        lastProcessTime = now;
+        
+        console.log('Running throttled class reapplication');
+        const result = addMenuClasses();
+        if (result) {
+            processedCount++;
+        }
+    }
+    
+    // More targeted MutationObserver - only watch menu containers
     const observer = new MutationObserver((mutations) => {
         let shouldCheck = false;
         
         mutations.forEach((mutation) => {
-            // Check if new nodes were added that might contain our target links
+            // Only process if the change is within a menu container
+            const isInMenu = mutation.target.closest('.tmenu_wrapper, .tmenu_submenu') !== null;
+            if (!isInMenu) return;
+            
+            // Check for new nodes that might need processing
             mutation.addedNodes.forEach((node) => {
                 if (node.nodeType === Node.ELEMENT_NODE) {
-                    // Check if the new node contains "Shop By Specifications" links or "Essentials" links
                     if (node.querySelector && 
                         (node.querySelector('a[title="Shop By Specifications"]') || 
                          node.querySelector('a[title*="Essentials"]') ||
-                         node.querySelector('a[title*="Spec"]') ||
-                         node.classList?.contains('tmenu_submenu') ||
-                         node.querySelector('.tmenu_submenu'))) {
+                         node.classList?.contains('tmenu_submenu'))) {
                         shouldCheck = true;
                     }
                 }
             });
             
-            // Check if attributes were modified (classes being removed/changed)
+            // Check for class attribute changes, but only on our monitored elements
             if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                 const target = mutation.target;
-                if (target.nodeType === Node.ELEMENT_NODE) {
-                    // Check if this element should have our classes but doesn't
-                    const essentialsLink = target.querySelector('a[title*="Essentials"]');
-                    if (essentialsLink && !target.classList.contains('featured-list')) {
-                        console.log('Detected featured-list class removal, will re-apply');
-                        shouldCheck = true;
-                    }
-                    
-                    // Check for spec-list, spec-header, spec-item class removals
-                    if ((target.tagName === 'UL' && target.closest('li')?.querySelector('a[title="Shop By Specifications"]') && !target.classList.contains('spec-list')) ||
-                        (target.tagName === 'LI' && target.closest('ul')?.classList.contains('spec-list') && 
-                         !target.classList.contains('spec-header') && !target.classList.contains('spec-item'))) {
-                        console.log('Detected spec class removal, will re-apply');
-                        shouldCheck = true;
-                    }
+                if (monitoredElements.has(target)) {
+                    console.log('Detected class change on monitored element, scheduling recheck');
+                    shouldCheck = true;
                 }
             }
         });
         
         if (shouldCheck) {
-            console.log('DOM changes detected that affect our classes - running addMenuClasses');
-            const result = addMenuClasses();
-            if (result) {
-                processedCount++;
-                console.log(`Successfully reprocessed content after DOM changes (attempt ${processedCount})`);
-            }
+            throttledAddMenuClasses();
         }
     });
     
-    // Observe the entire document for changes, including attribute changes
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true,
-        attributes: true,
-        attributeFilter: ['class'] // Only watch for class attribute changes
+    // Only observe menu containers, not the entire document
+    document.querySelectorAll('.tmenu_wrapper').forEach(wrapper => {
+        observer.observe(wrapper, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['class']
+        });
     });
     
-    // Enhanced periodic check that also verifies class persistence
-    const periodicCheck = setInterval(() => {
-        const shopBySpecsLinks = document.querySelectorAll('a[title="Shop By Specifications"]');
-        const essentialsLinks = document.querySelectorAll('a[title*="Essentials"]');
-        
-        if (shopBySpecsLinks.length > 0 || essentialsLinks.length > 0) {
-            let needsProcessing = false;
-            
-            // Check Shop By Specifications links
-            shopBySpecsLinks.forEach(link => {
-                const parentLi = link.closest('li');
-                if (parentLi) {
-                    const uls = parentLi.querySelectorAll('ul');
-                    uls.forEach(ul => {
-                        if (!ul.classList.contains('spec-list')) {
-                            needsProcessing = true;
-                        }
-                        // Also check if child <li> elements need processing
-                        const childLis = ul.querySelectorAll(':scope > li');
-                        childLis.forEach(li => {
-                            if (!li.classList.contains('spec-header') && !li.classList.contains('spec-item')) {
-                                needsProcessing = true;
-                            }
-                            // Check if "Essentials" links need the featured-list class
-                            const essentialsLink = li.querySelector('a[title*="Essentials"]');
-                            if (essentialsLink && !li.classList.contains('featured-list')) {
-                                needsProcessing = true;
-                            }
-                        });
+    // Fallback observer for new menu wrappers
+    const documentObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === Node.ELEMENT_NODE && 
+                    (node.classList?.contains('tmenu_wrapper') || node.querySelector?.('.tmenu_wrapper'))) {
+                    console.log('New menu wrapper detected, adding to monitoring');
+                    observer.observe(node, {
+                        childList: true,
+                        subtree: true,
+                        attributes: true,
+                        attributeFilter: ['class']
                     });
                 }
             });
+        });
+    });
+    
+    documentObserver.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    
+    // Much less frequent periodic check as final safety net
+    const periodicCheck = setInterval(() => {
+        // Only run if we haven't processed recently
+        if (Date.now() - lastProcessTime > 5000) { // 5 seconds since last check
+            const essentialsLinks = document.querySelectorAll('a[title*="Essentials"]');
+            let needsCheck = false;
             
-            // Check Essentials parent links
+            // Quick check - just verify a few key elements
             essentialsLinks.forEach(essentialsLink => {
                 const parentLi = essentialsLink.closest('li');
                 if (parentLi && !parentLi.classList.contains('featured-list')) {
-                    console.log(`Re-applying featured-list to "${essentialsLink.getAttribute('title')}" - class was removed`);
-                    needsProcessing = true;
+                    needsCheck = true;
                 }
             });
             
-            if (needsProcessing) {
-                console.log('Found missing classes during periodic check - reprocessing now');
-                addMenuClasses();
+            if (needsCheck) {
+                console.log('Periodic safety check found missing classes');
+                throttledAddMenuClasses();
             }
         }
-    }, 500); // Check every 500ms for faster response to class removal
+    }, 5000); // Only check every 5 seconds as a safety net
+    
+    // Stop periodic checks after 5 minutes to avoid infinite running
+    setTimeout(() => {
+        clearInterval(periodicCheck);
+        console.log('Stopped periodic safety checks after 5 minutes');
+    }, 300000);
+    
+    console.log('Optimized monitoring active - watching menu containers only');
+    
+    return { observer, documentObserver, periodicCheck, monitoredElements };
+}
+
+// Enhanced addMenuClasses that tracks elements for monitoring
+function addMenuClasses() {
+    console.log('=== Starting addMenuClasses ===');
+    
+    // Find all tmenu_wrapper containers
+    const menuWrappers = document.querySelectorAll('.tmenu_wrapper');
+    
+    if (menuWrappers.length === 0) {
+        return false;
+    }
+    
+    let totalProcessed = 0;
+    let totalUlsModified = 0;
+    let totalLisModified = 0;
+    
+    // Get the monitoring set from our setup function (stored globally)
+    const monitoredElements = window.menuClassMonitoredElements || new Set();
+    
+    // Process each menu wrapper
+    menuWrappers.forEach((wrapper, wrapperIndex) => {
+        // Find all "Shop By Specifications" links within this wrapper
+        const shopBySpecsLinks = wrapper.querySelectorAll('a[title="Shop By Specifications"]');
+        
+        // Also find any links with "Essentials" in the title for featured-list processing
+        const essentialsLinks = wrapper.querySelectorAll('a[title*="Essentials"]');
+        
+        // Process all "Essentials" parent menu items
+        essentialsLinks.forEach((essentialsLink, essIndex) => {
+            const parentLi = essentialsLink.closest('li');
+            if (parentLi && !parentLi.classList.contains('featured-list')) {
+                parentLi.classList.add('featured-list');
+                monitoredElements.add(parentLi); // Track this element
+                console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
+                totalLisModified++;
+            }
+        });
+        
+        shopBySpecsLinks.forEach((link, linkIndex) => {
+            console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
+            
+            // Get the parent <li> element
+            const parentLi = link.closest('li');
+            if (!parentLi) {
+                return;
+            }
+            
+            // Find all submenu <ul> elements
+            const submenuUls = parentLi.querySelectorAll('ul');
+            
+            submenuUls.forEach((ul, ulIndex) => {
+                // Add "spec-list" class
+                if (!ul.classList.contains('spec-list')) {
+                    ul.classList.add('spec-list');
+                    monitoredElements.add(ul); // Track this element
+                    totalUlsModified++;
+                }
+                
+                // Add "spec-item" or "spec-header" class to immediate <li> children
+                const immediateLiChildren = ul.querySelectorAll(':scope > li');
+                
+                immediateLiChildren.forEach((li, liIndex) => {
+                    let classAdded = false;
+                    
+                    // Check if this <li> has the "tmenu_item_display_header" class
+                    if (li.classList.contains('tmenu_item_display_header') && !li.classList.contains('spec-header')) {
+                        li.classList.add('spec-header');
+                        monitoredElements.add(li); // Track this element
+                        classAdded = true;
+                    } else if (!li.classList.contains('tmenu_item_display_header') && !li.classList.contains('spec-item')) {
+                        li.classList.add('spec-item');
+                        monitoredElements.add(li); // Track this element
+                        classAdded = true;
+                    }
+                    
+                    // Check if this <li> contains an <a> with "Essentials" in the title
+                    const essentialsLink = li.querySelector('a[title*="Essentials"]');
+                    if (essentialsLink && !li.classList.contains('featured-list')) {
+                        li.classList.add('featured-list');
+                        monitoredElements.add(li); // Track this element
+                        console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
+                    }
+                    
+                    if (classAdded) {
+                        totalLisModified++;
+                    }
+                });
+            });
+            
+            totalProcessed++;
+        });
+    });
+    
+    // Store monitored elements globally for access by the observer
+    window.menuClassMonitoredElements = monitoredElements;
+    
+    console.log(`=== Results: Processed ${totalProcessed} instances, modified ${totalUlsModified} <ul>s and ${totalLisModified} <li>s ===`);
+    return totalProcessed > 0;
+}
     
     // Stop periodic checks after 2 minutes to avoid infinite running
     setTimeout(() => {
