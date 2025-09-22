@@ -282,6 +282,7 @@
         "column_rwRAnP",
         "column_a3TU9h"
       ],
+      "disabled": true,
       "name": "GUA Multicolumns",
       "settings": {
         "block_style": "stacked",
