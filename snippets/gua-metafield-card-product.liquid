@@ -50,6 +50,8 @@
                     </form>
                   </product-form>
                 </div>{% endcapture %}
+  
+  {% assign product_tags = product.tags | join:',' | downcase %}
   <div class="card-wrapper product-card-wrapper underline-links-hover {{ section.settings.font_style }}">
     <div
       class="
@@ -149,6 +151,13 @@
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
+            {%- elsif product_tags contains 'new' -%}
+              <span id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}">New</span>   
+
+            {%- elsif product_tags contains 'bestsell' -%}
+              <span id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.bestselling_badge_color_scheme }}">Bestseller</span>                
             {%- endif -%}
           </div>
         </div>
