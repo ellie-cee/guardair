@@ -1,3 +1,101 @@
+// Enhanced script to handle dynamically loaded submenus with optimized performance
+function addMenuClasses() {
+    console.log('=== Starting addMenuClasses ===');
+    
+    // Find all tmenu_wrapper containers
+    const menuWrappers = document.querySelectorAll('.tmenu_wrapper');
+    
+    if (menuWrappers.length === 0) {
+        return false;
+    }
+    
+    let totalProcessed = 0;
+    let totalUlsModified = 0;
+    let totalLisModified = 0;
+    
+    // Get the monitoring set from our setup function (stored globally)
+    const monitoredElements = window.menuClassMonitoredElements || new Set();
+    
+    // Process each menu wrapper
+    menuWrappers.forEach((wrapper, wrapperIndex) => {
+        // Find all "Shop By Specifications" links within this wrapper
+        const shopBySpecsLinks = wrapper.querySelectorAll('a[title="Shop By Specifications"]');
+        
+        // Also find any links with "Essentials" in the title for featured-list processing
+        const essentialsLinks = wrapper.querySelectorAll('a[title*="Essentials"]');
+        
+        // Process all "Essentials" parent menu items
+        essentialsLinks.forEach((essentialsLink, essIndex) => {
+            const parentLi = essentialsLink.closest('li');
+            if (parentLi && !parentLi.classList.contains('featured-list')) {
+                parentLi.classList.add('featured-list');
+                monitoredElements.add(parentLi); // Track this element
+                console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
+                totalLisModified++;
+            }
+        });
+        
+        shopBySpecsLinks.forEach((link, linkIndex) => {
+            console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
+            
+            // Get the parent <li> element
+            const parentLi = link.closest('li');
+            if (!parentLi) {
+                return;
+            }
+            
+            // Find all submenu <ul> elements
+            const submenuUls = parentLi.querySelectorAll('ul');
+            
+            submenuUls.forEach((ul, ulIndex) => {
+                // Add "spec-list" class
+                if (!ul.classList.contains('spec-list')) {
+                    ul.classList.add('spec-list');
+                    monitoredElements.add(ul); // Track this element
+                    totalUlsModified++;
+                }
+                
+                // Add "spec-item" or "spec-header" class to immediate <li> children
+                const immediateLiChildren = ul.querySelectorAll(':scope > li');
+                
+                immediateLiChildren.forEach((li, liIndex) => {
+                    let classAdded = false;
+                    
+                    // Check if this <li> has the "tmenu_item_display_header" class
+                    if (li.classList.contains('tmenu_item_display_header') && !li.classList.contains('spec-header')) {
+                        li.classList.add('spec-header');
+                        monitoredElements.add(li); // Track this element
+                        classAdded = true;
+                    } else if (!li.classList.contains('tmenu_item_display_header') && !li.classList.contains('spec-item')) {
+                        li.classList.add('spec-item');
+                        monitoredElements.add(li); // Track this element
+                        classAdded = true;
+                    }
+                    
+                    // Check if this <li> contains an <a> with "Essentials" in the title
+                    const essentialsLink = li.querySelector('a[title*="Essentials"]');
+                    if (essentialsLink && !li.classList.contains('featured-list')) {
+                        li.classList.add('featured-list');
+                        monitoredElements.add(li); // Track this element
+                        console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
+                    }
+                    
+                    if (classAdded) {
+                        totalLisModified++;
+                    }
+                });
+            });
+            
+            totalProcessed++;
+        });
+    });
+    
+    // Store monitored elements globally for access by the observer
+    window.menuClassMonitoredElements = monitoredElements;
+    
+    console.log(`=== Results: Processed ${totalProcessed} instances, modified ${totalUlsModified} <ul>s and ${totalLisModified} <li>s ===`);
+    return totalProcessed > 0;
+}
 
 // Function to set up efficient monitoring for class persistence
 function setupContinuousMonitoring() {
@@ -124,112 +222,6 @@ function setupContinuousMonitoring() {
     console.log('Optimized monitoring active - watching menu containers only');
     
     return { observer, documentObserver, periodicCheck, monitoredElements };
-}
-function addMenuClasses() {
-    console.log('=== Starting addMenuClasses ===');
-    
-    // Find all tmenu_wrapper containers
-    const menuWrappers = document.querySelectorAll('.tmenu_wrapper');
-    
-    if (menuWrappers.length === 0) {
-        return false;
-    }
-    
-    let totalProcessed = 0;
-    let totalUlsModified = 0;
-    let totalLisModified = 0;
-    
-    // Get the monitoring set from our setup function (stored globally)
-    const monitoredElements = window.menuClassMonitoredElements || new Set();
-    
-    // Process each menu wrapper
-    menuWrappers.forEach((wrapper, wrapperIndex) => {
-        // Find all "Shop By Specifications" links within this wrapper
-        const shopBySpecsLinks = wrapper.querySelectorAll('a[title="Shop By Specifications"]');
-        
-        // Also find any links with "Essentials" in the title for featured-list processing
-        const essentialsLinks = wrapper.querySelectorAll('a[title*="Essentials"]');
-        
-        // Process all "Essentials" parent menu items
-        essentialsLinks.forEach((essentialsLink, essIndex) => {
-            const parentLi = essentialsLink.closest('li');
-            if (parentLi && !parentLi.classList.contains('featured-list')) {
-                parentLi.classList.add('featured-list');
-                monitoredElements.add(parentLi); // Track this element
-                console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
-                totalLisModified++;
-            }
-        });
-        
-        shopBySpecsLinks.forEach((link, linkIndex) => {
-            console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
-            
-            // Get the parent <li> element
-            const parentLi = link.closest('li');
-            if (!parentLi) {
-                return;
-            }
-            
-            // Find all submenu <ul> elements
-            const submenuUls = parentLi.querySelectorAll('ul');
-            
-            submenuUls.forEach((ul, ulIndex) => {
-                // Add "spec-list" class
-                if (!ul.classList.contains('spec-list')) {
-                    ul.classList.add('spec-list');
-                    monitoredElements.add(ul); // Track this element
-                    totalUlsModified++;
-                }
-                
-                // Add "spec-item" or "spec-header" class to immediate <li> children
-                const immediateLiChildren = ul.querySelectorAll(':scope > li');
-                
-                immediateLiChildren.forEach((li, liIndex) => {
-                    let classAdded = false;
-                    
-                    // Check if this <li> has the "tmenu_item_display_header" class
-                    if (li.classList.contains('tmenu_item_display_header') && !li.classList.contains('spec-header')) {
-                        li.classList.add('spec-header');
-                        monitoredElements.add(li); // Track this element
-                        classAdded = true;
-                    } else if (!li.classList.contains('tmenu_item_display_header') && !li.classList.contains('spec-item')) {
-                        li.classList.add('spec-item');
-                        monitoredElements.add(li); // Track this element
-                        classAdded = true;
-                    }
-                    
-                    // Check if this <li> contains an <a> with "Essentials" in the title
-                    const essentialsLink = li.querySelector('a[title*="Essentials"]');
-                    if (essentialsLink && !li.classList.contains('featured-list')) {
-                        li.classList.add('featured-list');
-                        monitoredElements.add(li); // Track this element
-                        console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
-                    }
-                    
-                    if (classAdded) {
-                        totalLisModified++;
-                    }
-                });
-            });
-            
-            totalProcessed++;
-        });
-    });
-    
-    // Store monitored elements globally for access by the observer
-    window.menuClassMonitoredElements = monitoredElements;
-    
-    console.log(`=== Results: Processed ${totalProcessed} instances, modified ${totalUlsModified} <ul>s and ${totalLisModified} <li>s ===`);
-    return totalProcessed > 0;
-}
-    
-    // Stop periodic checks after 2 minutes to avoid infinite running
-    setTimeout(() => {
-        clearInterval(periodicCheck);
-        console.log('Stopped periodic checking after 2 minutes');
-    }, 120000);
-    
-    console.log('Continuous monitoring active - watching for "Shop By Specifications" links');
 }
 
 // Function to trigger submenus (in case they need to be activated)
