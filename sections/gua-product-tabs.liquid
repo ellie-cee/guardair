@@ -112,7 +112,7 @@
 
             {%- when 'parts' -%}
               {% assign tab_index = forloop.index %}
-              {% if parts or accessories %}<div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content" style="display: {{ display }};">{% endif %}
+              {% if parts or accessories %}<div data-tab-content="tab{{ tab_index }}" id="tab{{ forloop.index }}" class="tab-content tab-parts" style="display: {{ display }};">{% endif %}
                   {% if parts %}
                       {%- for variant in product.variants limit: 1 -%}
                       {% if variant.metafields.custom.replacement_parts.value != blank %}
