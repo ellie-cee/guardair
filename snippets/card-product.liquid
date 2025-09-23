@@ -551,7 +551,7 @@
             </div>
           {% endif %}
         {% endif %}
-          <div class="card__badge {{ settings.badge_position }}" data-tags="{{ product_tags | escape }}">
+          <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
