@@ -166,8 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const tabContents = document.querySelectorAll('[data-tab-content]');
   
   // Debug: Log what we found
-  console.log('Tab items found:', tabItems.length);
-  console.log('Tab contents found:', tabContents.length);
+  {% comment %} console.log('Tab items found:', tabItems.length); {% endcomment %}
+  {% comment %} console.log('Tab contents found:', tabContents.length); {% endcomment %}
   
   function switchTab(targetTab) {
     // Remove active class from all tab list items
