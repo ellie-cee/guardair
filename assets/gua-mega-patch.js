@@ -1,6 +1,6 @@
 // Enhanced script to handle dynamically loaded submenus with optimized performance
 function addMenuClasses() {
-    console.log('=== Starting addMenuClasses ===');
+    // console.log('=== Starting addMenuClasses ===');
     
     // Find all tmenu_wrapper containers
     const menuWrappers = document.querySelectorAll('.tmenu_wrapper');
@@ -33,7 +33,7 @@ function addMenuClasses() {
             if (parentLi && !parentLi.classList.contains('featured-list')) {
                 parentLi.classList.add('featured-list');
                 monitoredElements.add(parentLi); // Track this element
-                console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
+                // console.log(`Added "featured-list" to parent <li> of "${essentialsLink.getAttribute('title')}" link`);
                 totalLisModified++;
             }
         });
@@ -44,13 +44,13 @@ function addMenuClasses() {
             if (parentLi && !parentLi.classList.contains('shop-all-button')) {
                 parentLi.classList.add('shop-all-button');
                 monitoredElements.add(parentLi); // Track this element
-                console.log(`Added "shop-all-button" to parent <li> of "${shopAllLink.getAttribute('title')}" link`);
+                // console.log(`Added "shop-all-button" to parent <li> of "${shopAllLink.getAttribute('title')}" link`);
                 totalLisModified++;
             }
         });
         
         shopBySpecsLinks.forEach((link, linkIndex) => {
-            console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
+            // console.log(`Processing "Shop By Specifications" link ${linkIndex + 1}`);
             
             // Get the parent <li> element
             const parentLi = link.closest('li');
@@ -91,7 +91,7 @@ function addMenuClasses() {
                     if (essentialsLink && !li.classList.contains('featured-list')) {
                         li.classList.add('featured-list');
                         monitoredElements.add(li); // Track this element
-                        console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
+                        // console.log(`Added "featured-list" to <li> ${liIndex + 1} (contains "Essentials" link: "${essentialsLink.getAttribute('title')}")`);
                     }
                     
                     // Check if this <li> contains an <a> with "Shop All" or "View All" in the title
@@ -99,7 +99,7 @@ function addMenuClasses() {
                     if (shopAllLink && !li.classList.contains('shop-all-button')) {
                         li.classList.add('shop-all-button');
                         monitoredElements.add(li); // Track this element
-                        console.log(`Added "shop-all-button" to <li> ${liIndex + 1} (contains "Shop All/View All" link: "${shopAllLink.getAttribute('title')}")`);
+                        // console.log(`Added "shop-all-button" to <li> ${liIndex + 1} (contains "Shop All/View All" link: "${shopAllLink.getAttribute('title')}")`);
                     }
                     
                     if (classAdded) {
@@ -115,13 +115,13 @@ function addMenuClasses() {
     // Store monitored elements globally for access by the observer
     window.menuClassMonitoredElements = monitoredElements;
     
-    console.log(`=== Results: Processed ${totalProcessed} instances, modified ${totalUlsModified} <ul>s and ${totalLisModified} <li>s ===`);
+    // console.log(`=== Results: Processed ${totalProcessed} instances, modified ${totalUlsModified} <ul>s and ${totalLisModified} <li>s ===`);
     return totalProcessed > 0;
 }
 
 // Function to set up efficient monitoring for class persistence
 function setupContinuousMonitoring() {
-    console.log('=== Setting up optimized monitoring ===');
+    // console.log('=== Setting up optimized monitoring ===');
     
     let processedCount = 0;
     let lastProcessTime = 0;
@@ -137,7 +137,7 @@ function setupContinuousMonitoring() {
         }
         lastProcessTime = now;
         
-        console.log('Running throttled class reapplication');
+        // console.log('Running throttled class reapplication');
         const result = addMenuClasses();
         if (result) {
             processedCount++;
@@ -170,7 +170,7 @@ function setupContinuousMonitoring() {
             if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                 const target = mutation.target;
                 if (monitoredElements.has(target)) {
-                    console.log('Detected class change on monitored element, scheduling recheck');
+                    // console.log('Detected class change on monitored element, scheduling recheck');
                     shouldCheck = true;
                 }
             }
@@ -197,7 +197,7 @@ function setupContinuousMonitoring() {
             mutation.addedNodes.forEach((node) => {
                 if (node.nodeType === Node.ELEMENT_NODE && 
                     (node.classList?.contains('tmenu_wrapper') || node.querySelector?.('.tmenu_wrapper'))) {
-                    console.log('New menu wrapper detected, adding to monitoring');
+                    // console.log('New menu wrapper detected, adding to monitoring');
                     observer.observe(node, {
                         childList: true,
                         subtree: true,
@@ -238,7 +238,7 @@ function setupContinuousMonitoring() {
             });
             
             if (needsCheck) {
-                console.log('Periodic safety check found missing classes');
+                // console.log('Periodic safety check found missing classes');
                 throttledAddMenuClasses();
             }
         }
@@ -247,24 +247,24 @@ function setupContinuousMonitoring() {
     // Stop periodic checks after 5 minutes to avoid infinite running
     setTimeout(() => {
         clearInterval(periodicCheck);
-        console.log('Stopped periodic safety checks after 5 minutes');
+        // console.log('Stopped periodic safety checks after 5 minutes');
     }, 300000);
     
-    console.log('Optimized monitoring active - watching menu containers only');
+    // console.log('Optimized monitoring active - watching menu containers only');
     
     return { observer, documentObserver, periodicCheck, monitoredElements };
 }
 
 // Function to trigger submenus (in case they need to be activated)
 function triggerSubmenus() {
-    console.log('=== Attempting to trigger submenus ===');
+    // console.log('=== Attempting to trigger submenus ===');
     
     // Look for main menu items that might contain the "Shop By Specifications" submenu
     const potentialParents = document.querySelectorAll('a[title="Safety Air Guns"], .lv1-safety-air a, a[title*="Air Gun"]');
-    console.log(`Found ${potentialParents.length} potential parent menu items`);
+    // console.log(`Found ${potentialParents.length} potential parent menu items`);
     
     potentialParents.forEach((parent, index) => {
-        console.log(`Checking parent ${index + 1}: ${parent.getAttribute('title') || parent.textContent}`);
+        // console.log(`Checking parent ${index + 1}: ${parent.getAttribute('title') || parent.textContent}`);
         
         // Try hovering to trigger submenu
         parent.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true }));
@@ -278,45 +278,45 @@ function triggerSubmenus() {
     
     // Give a moment for submenus to load, then check
     setTimeout(() => {
-        console.log('Checking for "Shop By Specifications" after triggering submenus...');
+        // console.log('Checking for "Shop By Specifications" after triggering submenus...');
         addMenuClasses();
     }, 500);
 }
 
 // Main initialization
 function initialize() {
-    console.log('=== Initializing menu class script ===');
+    // console.log('=== Initializing menu class script ===');
     
     // First, look for tmenu_wrapper
     const menuWrappers = document.querySelectorAll('.tmenu_wrapper');
-    console.log(`Found ${menuWrappers.length} menu wrappers`);
+    // console.log(`Found ${menuWrappers.length} menu wrappers`);
     
     if (menuWrappers.length === 0) {
-        console.log('No menu wrappers found, will wait...');
+        // console.log('No menu wrappers found, will wait...');
         setTimeout(initialize, 500);
         return;
     }
     
     // Try immediate processing
-    console.log('Menu wrappers found, attempting immediate processing...');
+    // console.log('Menu wrappers found, attempting immediate processing...');
     const immediateResult = addMenuClasses();
     
     if (!immediateResult) {
-        console.log('No "Shop By Specifications" links found initially, trying to trigger submenus...');
+        // console.log('No "Shop By Specifications" links found initially, trying to trigger submenus...');
         triggerSubmenus();
         
         // Start continuous monitoring for dynamically loaded content
         setupContinuousMonitoring();
     } else {
-        console.log('Successfully processed immediately!');
+        // console.log('Successfully processed immediately!');
         // Still set up monitoring in case there are more instances that load later
         setupContinuousMonitoring();
     }
 }
 
 // Start when DOM is ready
-console.log('=== Menu class script loaded ===');
-console.log('Document ready state:', document.readyState);
+// console.log('=== Menu class script loaded ===');
+// console.log('Document ready state:', document.readyState);
 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initialize);
