@@ -20,6 +20,7 @@
         @media screen and (min-width: 750px) {.section-{{ section.id }}-padding {padding-top: {{ section.settings.padding_top }}px;padding-bottom: {{ section.settings.padding_bottom }}px;}}
         
       @media screen and (max-width:480px) {
+        #shopify-section-{{ section.id }} ul.inline-list.toolbar__menu {padding-left:0px;}
         #shopify-section-{{ section.id }} .toolbar__menu .toolbar__item--menu {flex-basis:150px;}
         #shopify-section-{{ section.id }} .page-width {text-align: left;margin: 0 10px !important}
         #shopify-section-{{ section.id }} .tab-item {flex: 0 1 auto;margin: 0 5px 10px;}
