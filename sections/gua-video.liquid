@@ -29,7 +29,8 @@
 {% endif %}
 {% if section.settings.variant_thumbnail %}{% assign variant_metafield = section.settings.variant_thumbnail %}
         {% capture poster_thumb %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
-        {% if poster_thumb %}{% assign poster = poster_thumb %}{% endif %}
+        {% if poster_thumb %}{% assign poster2 = poster_thumb %}{% endif %}
+        {{ poster_thumb }}
 {% endif %}
 
 {%- capture sizes -%}
