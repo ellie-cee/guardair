@@ -21,6 +21,8 @@
                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
                             {% endfor %}
                         </div>
+                {% elsif metafield.value != blank and metafield.type contains 'url'  %}
+                    {{ metafield.value }}                          
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'cdn.shopify.com' %}
                     {% assign step1 = metafield.value | split: 'files/' | last %}{% assign step2 = step1 | split: '?' | first %}{% assign image_path = 'files/' | append: step2 %}{{ image_path }}                
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'png' %}                        
