@@ -8,7 +8,7 @@
             {%- for variant in product.variants -%}
                 {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
                 {% if metafield.value != blank and metafield.type contains 'text' and metafield.value contains 'yout'  %}
-                    {{ metafield.value }}              
+                    {{ metafield.value }}  here            
                 {% elsif metafield.value != blank and metafield.type contains 'text' %}
                     <ul>{% for text in metafield.value %}
                         <li>{{ text }}</li>
