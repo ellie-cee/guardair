@@ -24,8 +24,8 @@
         "padding_bottom": 36
       }
     },
-    "ywm_subcollections_kcEPRH": {
-      "type": "ywm-subcollections",
+    "gua_subcollections_kcEPRH": {
+      "type": "gua-subcollections",
       "custom_css": [],
       "name": "GUA Subcollections",
       "settings": {
@@ -95,7 +95,7 @@
   },
   "order": [
     "banner",
-    "ywm_subcollections_kcEPRH",
+    "gua_subcollections_kcEPRH",
     "product-grid",
     "gua_collection_grid_3yfYEw"
   ]
