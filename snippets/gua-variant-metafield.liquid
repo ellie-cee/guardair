@@ -21,8 +21,12 @@
                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
                             {% endfor %}
                         </div>
+                {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'jpg' %}                        
+                        {{ metafield.value }}
+                {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'png' %}                        
+                        {{ metafield.value }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
-                        {{ metafield.value }}                 
+                        {{ metafield.value }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
                         <li>
                             <a href="{{ metafield.value }}" target="_blank">More information</a>
