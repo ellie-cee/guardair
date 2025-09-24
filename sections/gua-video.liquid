@@ -9,10 +9,6 @@
   }
 {%- endstyle -%}
 
-{% if section.settings.variant_video %}{% assign variant_metafield = section.settings.variant_video %}
-        {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
-{% endif %}
-
 {%- liquid
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
@@ -26,6 +22,11 @@
     endif
   endif
 -%}
+
+{% if section.settings.variant_video %}{% assign variant_metafield = section.settings.variant_video %}
+        {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
+        {% assign video_id = variant_video | strip %}
+{% endif %}
 
 {%- capture sizes -%}
   {% if section.settings.full_width -%}
