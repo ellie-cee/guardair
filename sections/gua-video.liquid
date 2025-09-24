@@ -13,9 +13,7 @@
         {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
 {% endif %}
 
-<p>{{ variant_video }}</p>
 {%- liquid
-
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
   assign alt = 'sections.video.load_video' | t: description: video_alt | escape
