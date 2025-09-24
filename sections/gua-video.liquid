@@ -9,10 +9,12 @@
   }
 {%- endstyle -%}
 
+{% if section.settings.variant_video %}
+        {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:section.setting.var, product:product %}{% endcapture %}
+{% endif %}
+<h1>{{ variant_video }}</h1>
 {%- liquid
-    if section.settings.variant_video 
 
-    endif
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
   assign alt = 'sections.video.load_video' | t: description: video_alt | escape
