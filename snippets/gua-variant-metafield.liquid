@@ -24,7 +24,7 @@
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'jpg' %}                        
                     {% assign stepwise = metafield.value | split: 'files/' | last %}files/{{ stepwise | split:'?' | first }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'png' %}                        
-                        {{ metafield.value }}
+                    {% assign stepwise = metafield.value | split: 'files/' | last %}files/{{ stepwise | split:'?' | first }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
                         {{ metafield.value }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
