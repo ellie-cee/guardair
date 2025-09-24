@@ -526,51 +526,6 @@
         "padding_bottom": 36
       }
     },
-    "video_with_text_RPK3MW": {
-      "type": "video-with-text",
-      "blocks": {
-        "heading_7jxGVy": {
-          "type": "heading",
-          "settings": {
-            "heading": "Video with text",
-            "heading_size": "h2"
-          }
-        },
-        "text_P4izyg": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with a video to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_3yXAMM": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_7jxGVy",
-        "text_P4izyg",
-        "button_3yXAMM"
-      ],
-      "name": "Video with Text",
-      "settings": {
-        "video_url": "",
-        "description": "",
-        "layout": "image_first",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1721751086101a9e7e": {
       "type": "apps",
       "blocks": {
@@ -625,6 +580,22 @@
         "padding_top": 0,
         "padding_bottom": 28
       }
+    },
+    "gua_video_LHHYAg": {
+      "type": "gua-video",
+      "name": "GUA Video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
@@ -635,9 +606,9 @@
     "gua_collapsible_content_with_image_hzbDHa",
     "175814459680ff282f",
     "gua_collapsible_content_with_image_jeW4tY",
-    "video_with_text_RPK3MW",
     "1721751086101a9e7e",
     "gua_specifications_table_ttEDji",
-    "related-products"
+    "related-products",
+    "gua_video_LHHYAg"
   ]
 }
