@@ -373,8 +373,8 @@
         "option_name": "{{ product.metafields.custom.linked_products.value.option_name.value }}"
       }
     },
-    "ywm_collapsible_content_with_image_hzbDHa": {
-      "type": "ywm-collapsible-content-with-image",
+    "gua_collapsible_content_with_image_hzbDHa": {
+      "type": "gua-collapsible-content-with-image",
       "blocks": {
         "collapsible_row_YWE7PW": {
           "type": "collapsible_row",
@@ -495,8 +495,8 @@
         "include_margins": true
       }
     },
-    "ywm_collapsible_content_with_image_jeW4tY": {
-      "type": "ywm-collapsible-content-with-image",
+    "gua_collapsible_content_with_image_jeW4tY": {
+      "type": "gua-collapsible-content-with-image",
       "blocks": {
         "faq_set_GiPXQ7": {
           "type": "faq_set",
@@ -632,9 +632,9 @@
     "main",
     "gua_multicolumn_fGzKnj",
     "gua_product_tabs_6VXzLn",
-    "ywm_collapsible_content_with_image_hzbDHa",
+    "gua_collapsible_content_with_image_hzbDHa",
     "175814459680ff282f",
-    "ywm_collapsible_content_with_image_jeW4tY",
+    "gua_collapsible_content_with_image_jeW4tY",
     "video_with_text_RPK3MW",
     "1721751086101a9e7e",
     "gua_specifications_table_ttEDji",
