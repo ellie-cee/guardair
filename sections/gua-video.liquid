@@ -13,7 +13,8 @@
         {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:section.setting.variant_video, product:product %}{% endcapture %}
 {% endif %}
 
-<p>{{ section.settings.variant_video }} --- {{ variant_video }}</p>
+<p>{{ section.settings.variant_video }}</p>
+<h1>{{ variant_video }}</h1>
 {%- liquid
 
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
