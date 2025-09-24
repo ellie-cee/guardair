@@ -22,9 +22,9 @@
                             {% endfor %}
                         </div>
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'jpg' %}                        
-                    {% assign step1 = metafield.value | split: 'files/' | last %}{% assign step2 = step1 | split:'?' | first %}{% assign step3 = 'files' | append: step2 %}{{ step1 }}-{{ step2 }}-{{ step3 }}
+                    {% assign step1 = metafield.value | split: 'files/' | last %}{% assign step2 = step1 | split:'?' | first %}{% assign step3 = 'files/' | append: step2 %}{{ step3 }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'png' %}                        
-                    {% assign step1 = metafield.value | split: 'files/' | last %}{% assign step2 = step1 | split:'?' | first %}{% assign step3 = 'files' | append: step2 %}{{ step3 }}
+                    {% assign step1 = metafield.value | split: 'files/' | last %}{% assign step2 = step1 | split:'?' | first %}{% assign step3 = 'files/' | append: step2 %}{{ step3 }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
                         {{ metafield.value }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
