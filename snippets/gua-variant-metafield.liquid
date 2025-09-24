@@ -2,7 +2,7 @@
 
 {% assign metafield_namespace = variant_metafield | split:'.' | first %}
 {% assign metafield_key = variant_metafield | split:'.' | last %}
-
+{{metafield_namespace }}-- {{ metafield_key }}
     {% if metafield_namespace %}
         {% capture variant_content %}
             {%- for variant in product.variants -%}
