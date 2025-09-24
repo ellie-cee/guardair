@@ -7,17 +7,19 @@
         {% capture variant_content %}
             {%- for variant in product.variants -%}
                 {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
-                {% if metafield.value != blank and metafield.type contains 'text' %}
+                {% if metafield.value != blank and metafield.type contains 'text' and metafield.value contains 'yout'  %}
+                    {{ metafield.value }}              
+                {% elsif metafield.value != blank and metafield.type contains 'text' %}
                     <ul>{% for text in metafield.value %}
                         <li>{{ text }}</li>
                         {% endfor %}</ul>
-                    {% elsif metafield.value != blank and metafield.type contains 'product' %}
+                {% elsif metafield.value != blank and metafield.type contains 'product' %}
                         <div class="grid">
                             {% for product in metafield.value %}
                                 <div class="grid__item">{% render 'card-product', card_product:product %}</div>
                             {% endfor %}
                         </div>
-                    {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
+                {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
                         <li>
                             <a href="{{ metafield.value }}" target="_blank">More information</a>
                         </li>
