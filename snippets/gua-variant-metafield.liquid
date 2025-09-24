@@ -22,7 +22,7 @@
                             {% endfor %}
                         </div>
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'jpg' %}                        
-                        {{ metafield.value }}
+                        {{ metafield.value | split: 'files/' | last }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' and metafield.value contains 'png' %}                        
                         {{ metafield.value }}
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
