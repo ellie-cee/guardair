@@ -22,9 +22,7 @@
                             {% endfor %}
                         </div>
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
-                        <li>
-                            <a href="{{ metafield.value }}" target="_blank">More information</a>
-                        </li>                     
+                        {{ metafield.value }}                 
                 {% elsif metafield.value != blank and metafield.type contains 'url' %}                        
                         <li>
                             <a href="{{ metafield.value }}" target="_blank">More information</a>
