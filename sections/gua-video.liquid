@@ -21,6 +21,9 @@
       assign fix_ratio = true
     endif
   endif
+  if poster
+    assign ratio = poster.aspect_ratio
+  endif
 -%}
 
 {% if section.settings.variant_video %}{% assign variant_metafield = section.settings.variant_video %}
@@ -39,7 +42,7 @@
                     {{ poster_thumb | file_img_url: '1200x' }} 2000w,
                     {{ poster_thumb | file_img_url: '1400x' }} 3000w,
                     {{ poster_thumb | file_img_url: '3840x' }} 3840w
-            {% endcapture %}  
+            {% endcapture %}{% assign ratio = '0.5625' %}
         {% endif %}
 {% endif %}
 {%- capture sizes -%}
@@ -60,7 +63,7 @@
         </div>
       {%- endunless -%}
     </div>
-    <div class="video-section__media"{% if poster != null %}style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"{% endif %}>
+    <div class="video-section__media"{% if poster != null %}style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"{% endif %}>
       <div class="video-container" data-video-id="{{ video_id }}" id="youtube-video-{{ section.id }}">
         <button
           id="Deferred-Poster-Modal-{{ video_id }}"
