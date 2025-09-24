@@ -534,7 +534,6 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "",
-        "cover_image": "shopify://shop_images/XT_SS_Thumb_2025_v2.png",
         "description": "",
         "variant_video": "custom.video",
         "variant_thumbnail": "custom.video_image",
