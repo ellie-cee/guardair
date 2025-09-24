@@ -70,7 +70,7 @@
           aria-label="{{ alt }}"
           onclick="playVideo('{{ video_id }}', '{{ section.id }}')"
         >
-          {%- if poster_thumb2 != null -%}
+          {%- if poster_thumb != null -%}
               <img src="{{ poster_thumb }}" width="3840" height="auto" alt="Video Thumbnail" loading="lazy" imagesizes="auto" imagesrcset="{{ srcset }}">
         {%- elsif poster != null -%}
             {{
