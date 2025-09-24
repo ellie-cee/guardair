@@ -73,7 +73,7 @@
           onclick="playVideo('{{ video_id }}', '{{ section.id }}')"
         >
           {%- if poster_thumb != null -%}
-              <img src="{{ poster_thumb }}" width="3840" alt="Video Thumbnail" loading="lazy" imagesizes="auto" imagesrcset="{{ srcset }}" style="height:56%;">
+              <img src="{{ poster_thumb }}" width="3840" alt="Video Thumbnail" loading="lazy" imagesizes="auto" imagesrcset="{{ srcset }}" style="object-fit:contain;">
         {%- elsif poster != null -%}
             {{
               poster
