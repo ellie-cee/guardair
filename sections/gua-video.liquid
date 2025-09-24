@@ -29,7 +29,7 @@
 {% endif %}
 {% if section.settings.variant_thumbnail %}{% assign variant_metafield = section.settings.variant_thumbnail %}
         {% capture poster_thumb %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
-        {% if poster_thumb %}
+        {% if poster_thumb %}{% assign poster_thumb = poster_thumb | strip %}
                 {% capture srcset %}
                     {{ poster_thumb | file_img_url: '375x' }} 375w,
                     {{ poster_thumb | file_img_url: '720x' }} 750w,
