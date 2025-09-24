@@ -9,8 +9,8 @@
   }
 {%- endstyle -%}
 
-{% if section.settings.variant_video %}
-        {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:'custom.video', product:product %}{% endcapture %}
+{% if section.settings.variant_video %}{% assign variant_metafield = section.settings.variant_video %}
+        {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
 {% endif %}
 
 <p>{{ section.settings.variant_video }}</p>
