@@ -27,6 +27,9 @@
         {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
         {% assign video_id = variant_video | strip %}
 {% endif %}
+{% if section.settings.variant_thumbnail %}
+        {% assign poster = section.settings.variant_thumbnail %}
+{% endif %}
 
 {%- capture sizes -%}
   {% if section.settings.full_width -%}
