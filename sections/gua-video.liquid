@@ -29,7 +29,20 @@
 {% endif %}
 {% if section.settings.variant_thumbnail %}{% assign variant_metafield = section.settings.variant_thumbnail %}
         {% capture poster_thumb %}{% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcapture %}
-        {% if poster_thumb %}{% assign poster = poster_thumb %}{% endif %}
+        {% if poster_thumb %}
+                {% capture srcset %}
+                    {{ poster_thumb | file_img_url: '165x' }} 165w,
+                    {{ poster_thumb | file_img_url: '360x' }} 360w,
+                    {{ poster_thumb | file_img_url: '375x' }} 375w,
+                    {{ poster_thumb | file_img_url: '533x' }} 533w{% unless half == true %},
+                    {{ poster_thumb | file_img_url: '720x' }} 720w,
+                    {{ poster_thumb | file_img_url: '940x' }} 940w,
+                    {{ poster_thumb | file_img_url: '1066x' }} 1066w,
+                    {{ poster_thumb | file_img_url: '1200x' }} 1200w,
+                    {{ poster_thumb | file_img_url: '1400x' }} 1400w,
+                    {{ poster_thumb | file_img_url: '3840x' }} 3840w{% endunless %}
+            {% endcapture %}  
+        {% endif %}
         {{ poster_thumb }}
 {% endif %}
 {%- capture sizes -%}
@@ -59,7 +72,9 @@
           aria-label="{{ alt }}"
           onclick="playVideo('{{ video_id }}', '{{ section.id }}')"
         >
-          {%- if poster != null -%}
+          {%- if poster_thumb2 != null -%}
+              <img src="{{ poster_thumb }}" alt="{{ alt }}" loading="lazy" imagesizes="auto" imagesrcset="{{ srcset }}">
+        {%- elsif poster != null -%}
             {{
               poster
               | image_url: width: 3840
