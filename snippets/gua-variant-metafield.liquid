@@ -7,8 +7,9 @@
         {% capture variant_content %}
             {%- for variant in product.variants -%}
                 {%- assign metafield = variant.metafields[metafield_namespace][metafield_key] -%}
-                {% if metafield.value != blank and metafield.type contains 'text' and metafield.value contains 'yout'  %}here
-                    {{ metafield.value }}            
+                {% if metafield.value != blank and metafield.type contains 'text' and metafield.value contains 'yout'  %}
+                    {% assign yt_string = 'https://www.youtube.com/watch?v=' %}
+                    {{ metafield.value | remove: yt_string }}            
                 {% elsif metafield.value != blank and metafield.type contains 'text' %}
                     <ul>{% for text in metafield.value %}
                         <li>{{ text }}</li>
