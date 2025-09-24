@@ -28,7 +28,8 @@
         {% assign video_id = variant_video | strip %}
 {% endif %}
 {% if section.settings.variant_thumbnail %}
-        {% comment %} {% assign poster = section.settings.variant_thumbnail %} {% endcomment %}
+        {% assign poster_thumb = section.settings.variant_thumbnail %}
+        {{ poster_thumb }}
 {% endif %}
 
 {%- capture sizes -%}
