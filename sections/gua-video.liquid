@@ -9,7 +9,7 @@
   }
 {%- endstyle -%}
 
-{% if section.settings.variant_video %}here
+{% if section.settings.variant_video %}
         {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:section.setting.variant_video, product:product %}{% endcapture %}
 {% endif %}
 
