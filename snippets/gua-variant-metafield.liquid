@@ -1,8 +1,8 @@
 {% comment %}USAGE: {% render 'gua-variant-metafield',variant_metafield:variant_metafield, product:product %}{% endcomment %}
-{{  variant_metafield }}
+
 {% assign metafield_namespace = variant_metafield | split:'.' | first %}
 {% assign metafield_key = variant_metafield | split:'.' | last %}
-{{ variant_metafield }} --- {{metafield_namespace }}-- {{ metafield_key }}
+
     {% if metafield_namespace %}
         {% capture variant_content %}
             {%- for variant in product.variants -%}
