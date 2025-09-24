@@ -9,10 +9,10 @@
   }
 {%- endstyle -%}
 
-{% if section.settings.variant_video %}here
-        {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:section.setting.var, product:product %}{% endcapture %}
+{% if section.settings.variant_video %}
+        {% capture variant_video %}{% render 'gua-variant-metafield',variant_metafield:section.setting.variant_video, product:product %}{% endcapture %}
 {% endif %}
-<h1>{{section.settings.variant_video }} --- {{ variant_video }}</h1>
+<h1>{{ variant_video }}</h1>
 {%- liquid
 
   assign video_id = section.settings.video.id | default: section.settings.video_url.id
