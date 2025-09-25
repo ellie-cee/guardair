@@ -1387,6 +1387,29 @@
     ]
   },
   {
+    "name": "Tables",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "table_alternating",
+        "label": "Alternate Row Backgrounds",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "table_odd",
+        "label": "Odd Row Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "table_even",
+        "label": "Even Row Color",
+        "default": "#f1f1f1"
+      }      
+    ]
+  },  
+  {
     "name": "t:settings_schema.brand_information.name",
     "settings": [
       {
