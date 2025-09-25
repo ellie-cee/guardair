@@ -138,7 +138,13 @@
             "id": "contrast_text",
             "label": "Contrast Text",
             "default": "#ffffff"
-          },               
+          },
+          {
+            "type": "color",
+            "id": "light_gray",
+            "label": "Light Gray",
+            "default": "#f1f1f1"
+          }
     ]
   },
   {
