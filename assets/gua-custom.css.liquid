@@ -488,6 +488,21 @@ body.template-product .snap-compare, body.template-collection .snap-compare  {di
 .rebuy-widget .super-title {text-transform: unset !important;font-size: 150%;}
 
 
+.itg_flex_wrpr { display: flex; flex-wrap: wrap; width: 100%; }
+.itg_table_wrpr { width: calc(75% - 10px); }
+.itg_product_wrpr { width: calc(25% - 10px); }
+.itg_table_wrpr table { box-shadow: none; width: 100%; }
+.itg_table_wrpr h2 { margin: 0; padding: 10px 0; text-align: center; background: #666; color: #fff; border-bottom: 1px solid #fff; }
+.itg_table_wrpr table tr th { vertical-align: bottom; border-bottom: 0; background: #666; color: #fff; text-align: center; font-weight: 400; padding: 10px; border-color: #fff; }
+.itg_table_wrpr table tr td { text-align: center; vertical-align: middle; background-color: #f0f1f2; color: #000; border-bottom: 1px solid #d9d9d9; padding: 10px; border-left: 0; border-right: 0; }
+.itg_product_wrpr { padding: 20px; text-align: center; border: solid 1px #d9d9d9; height: 100%; min-height: fit-content; }
+.itg_product_wrpr h3 { font-size: 18px; line-height: 1.33; }
+.itg_product_data a { text-decoration: none; }
+.itg_product_data a h1, .itg_product_data a h2 { color: #002395; font-size: 18px; line-height: normal; }
+.sku-link { text-decoration: none; color: #3838ef; }
+@media screen and (max-width: 989px) { .itg_table_wrpr, .itg_product_wrpr { width: 100%; } }
+
+
 {% comment %} --- --- ------ --- ------ --- ------ --- ------ --- --- {% endcomment %}
 
 div#qab_container {display: none !important;}
