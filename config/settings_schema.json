@@ -111,16 +111,34 @@
           },
           {
             "type": "color",
+            "id": "primary_text",
+            "label": "Primary Text",
+            "default": "#ffffff"
+          },          
+          {
+            "type": "color",
             "id": "secondary_color",
             "label": "Secondary Color",
             "default": "#4B92DB"
-          },          
+          },
+          {
+            "type": "color",
+            "id": "secondary_text",
+            "label": "Secondary Text",
+            "default": "#ffffff"
+          },
           {
             "type": "color",
             "id": "contrast_color",
             "label": "Contrast Color",
             "default": "#DDD92A"
-          }      
+          },
+          {
+            "type": "color",
+            "id": "contrast_text",
+            "label": "Contrast Text",
+            "default": "#ffffff"
+          },               
     ]
   },
   {
