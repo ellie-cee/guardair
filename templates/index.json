@@ -221,7 +221,7 @@
         "button_label": "Shop All",
         "button_link": "#",
         "columns_desktop": 4,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
