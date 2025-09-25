@@ -111,6 +111,7 @@
     "badge_corner_radius": 20,
     "sale_badge_color_scheme": "scheme-bc473e42-7c92-450c-bb40-888499dffff0",
     "sold_out_badge_color_scheme": "scheme-14641472-9d04-478c-88ca-0fac7f4aef46",
+    "table_alternating": true,
     "brand_headline": "",
     "brand_description": "<p></p>",
     "brand_image_width": 100,
@@ -625,6 +626,17 @@
           "background": "#ddd92a",
           "background_gradient": "",
           "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-f08e5e75-16d4-4515-ac69-d5f3270963f8": {
+        "settings": {
+          "background": "#eb8c2b",
+          "background_gradient": "",
+          "text": "#ffffff",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",

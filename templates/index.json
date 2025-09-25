@@ -112,8 +112,8 @@
       ],
       "name": "GUA Icon Bar",
       "settings": {
-        "background_color": "#ddd92a",
-        "text_color": "#121212",
+        "background_color": "#eb8c2b",
+        "text_color": "#ffffff",
         "max_width": 1160
       }
     },
