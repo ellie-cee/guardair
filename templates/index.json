@@ -275,7 +275,7 @@
       "settings": {
         "block_style": "stacked",
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "font_style": "inline-richtext",
         "description": "",
         "image_width": "full",
