@@ -160,7 +160,7 @@
               {%- endif -%}
               <div class="multicolumn-card__info grid__info {{ section.settings.font_style }}">
                 {%- if block.settings.title != blank -%}
-                  <h3 class="{{ section.settings.font_style }}">{% if section.settings.font_style == 'block-quote' %}{% endif %}
+                  <h3 class="{{ section.settings.font_style }}">{% if section.settings.font_style == 'block-quote' %}{% render 'icon-quote' %}{% endif %}
                       {% if block.settings.link %}<a href="{{ block.settings.link }}" class="">{% endif %}
                       {{ block.settings.title }}
                       {% if block.settings.link %}</a>{% endif %}
