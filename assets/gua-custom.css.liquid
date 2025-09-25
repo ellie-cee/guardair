@@ -25,7 +25,7 @@ body.template-index .single_logo_logo img {filter:brightness(0.0);}
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: 'Avenir';src: url(https:{{ 'Avenir-Regular.woff' | file_url }}) format('woff')font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Keep-Calm';src: url(https:{{ 'KeepCalm-Medium.woff' | file_url }}) format('woff')font-weight: normal;font-style: bold;}
+@font-face {font-family: 'Keep-Calm';src: url(https:{{ 'KeepCalm-Medium.woff' | file_url }}) format('woff')font-weight: normal;font-style: 600;}
 
       {% assign header_font = 'Eurostile-Bol,sans-serif' %}
       {% assign body_font =  'Eurostile-Reg,sans-serif' %}
@@ -41,7 +41,7 @@ body.template-product ul.documents li a, body.template-product ul.related li a,
 {% endcomment %}
 
 .page-width {width: auto; max-width: {{ desktop_max_width }}; padding: 0 10px;}
-h2.title.h1 {font-family:'Keep-Calm',sans-serif !important;}
+h2.title.h1 {font-family:'Keep-Calm',sans-serif !important;font-weight:600;}
  
 
 {% comment %} --- QIKIFY MENU --- {% endcomment %}
