@@ -120,34 +120,10 @@
     "gua_multicolumn_fD7AFm": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_cNqCtf": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-ultra-xtrathrust-u75xt-6-inch-long-trigger-u75xt006aa3-main.jpg",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">Ultra® </a>Safety Air Guns feature an ergonomic cushioned grip for comfort and durability. Available with a wide assortment of extensions and nozzles, they deliver the ultimate in OSHA compliant cleaning.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_ezjjWh": {
           "type": "product",
           "settings": {
             "product": "ultra-u75lj-safety-air-gun-6-w-long-trigger"
-          }
-        },
-        "column_QG4UHh": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-whisperjet_2fefc54a-1605-4382-a8f2-d70a24c79890.png",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">WhisperJet® </a>Safety Air Guns deliver powerful cleaning with low-noise operation, ideal for noise-sensitive environments. Featuring a unique nozzle design, they balance safety, noise reduction, and performance.</p>",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_grecwX": {
@@ -156,34 +132,10 @@
             "product": "whisperjet-80wj-safety-air-gun"
           }
         },
-        "column_e4azRF": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-safety-air-guns-xtrathrust-75xxt.png",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">Classic+®</a> Safety Air Guns combine our most popular design with enhanced safety features for reliable industrial cleaning. Built for durability, they feature OSHA-compliant nozzles and an ergonomic pistol-style grip for safe, powerful performance</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_ejCNdC": {
           "type": "product",
           "settings": {
             "product": "xtrathrust-75xxt-safety-air-gun"
-          }
-        },
-        "column_HPqrkt": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/guardair-palmjet-ga44-safety-air-gun-4-inch-straight-ga4404s-main.jpg",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">PalmJet®</a> Safety Air Guns are compact, lightweight, and perfect for cleaning tight spaces. With a comfortable, palm-style grip, adjustable airflow, and straight or bent extensions, they offer</p><p>exceptional cleaning power</p>",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_gAjFVA": {
@@ -194,13 +146,9 @@
         }
       },
       "block_order": [
-        "column_cNqCtf",
         "product_ezjjWh",
-        "column_QG4UHh",
         "product_grecwX",
-        "column_e4azRF",
         "product_ejCNdC",
-        "column_HPqrkt",
         "product_gAjFVA"
       ],
       "name": "GUA Multicolumns",
@@ -208,7 +156,7 @@
         "block_style": "stacked",
         "title": "Safety Air Guns",
         "heading_size": "h1",
-        "font_style": "plain-with-buttons",
+        "font_style": "inline-richtext",
         "description": "Guardair Safety Air Guns provide exceptional performance, maximize operator comfort, and meet OSHA Standards.",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -303,34 +251,10 @@
     "gua_multicolumn_Tj6HwR": {
       "type": "gua-multicolumn",
       "blocks": {
-        "column_wMRWyJ": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/PowerQUAD_55_Gallon_Vacuum_Kit.webp",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">Standard Pneumatic Vacuums</a>  provide powerful, versatile solutions for heavy-duty industrial cleaning.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_YQhwe6": {
           "type": "product",
           "settings": {
             "product": "powerquad-55-gallon-vacuum-kit-w-2-inlet"
-          }
-        },
-        "column_MGhJUq": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/PQ55C200NED_ca25b7e6-bc3c-4809-84c7-762624e44d89.jpg",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">Non-Electrical Discharge (NED) Pneumatic Vacuums</a> eliminate static electricity, making them ideal for static-sensitive environments.</p>",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_nKyAwV": {
@@ -339,34 +263,10 @@
             "product": "powerquad-55-gallon-ned-vacuum-kit-w-2-inlet"
           }
         },
-        "column_Qe6RhH": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/PQ30C150ATEX_Main_ae91db30-79c7-4388-ac44-88fbc6084cf4.jpg",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">ATEX Certified Pneumatic Vacuums</a> are certified for safe use in hazardous environments with flammable dust or gases.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "product_TXAQzV": {
           "type": "product",
           "settings": {
             "product": "powerquad-55-gallon-atex-vacuum-kit-w-2-inlet"
-          }
-        },
-        "column_X3Jya3": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/PQ55C200NEDPA_310e486b-9612-4fea-900f-9afac4fe261f.jpg",
-            "image_link": "",
-            "title": "",
-            "text": "<p><a href=\"#\" title=\"#\">PulseAir™ Pneumatic Vacuums & Dust Extractors</a> are powerful industrial vacuums incorporating a proprietary, button-activated system engineered to clean the vacuum filter without opening the unit.</p>",
-            "link_label": "",
-            "link": ""
           }
         },
         "product_UQ8F3b": {
@@ -377,13 +277,9 @@
         }
       },
       "block_order": [
-        "column_wMRWyJ",
         "product_YQhwe6",
-        "column_MGhJUq",
         "product_nKyAwV",
-        "column_Qe6RhH",
         "product_TXAQzV",
-        "column_X3Jya3",
         "product_UQ8F3b"
       ],
       "name": "GUA Multicolumns",
@@ -404,7 +300,7 @@
         "button_label": "Shop All",
         "button_link": "#",
         "columns_desktop": 4,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
