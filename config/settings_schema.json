@@ -100,6 +100,22 @@
         }
       },
           {
+            "type": "header",
+            "content": "Custom CSS Colors"
+          },
+          {
+            "type": "color",
+            "id": "primary_color",
+            "label": "Primary Color",
+            "default": "#DDD92A"
+          },
+          {
+            "type": "color",
+            "id": "secondary_color",
+            "label": "Secondary Color",
+            "default": "#DDD92A"
+          },          
+          {
             "type": "color",
             "id": "contrast_color",
             "label": "Contrast Color",
