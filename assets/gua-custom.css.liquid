@@ -13,7 +13,7 @@
 {% assign border_radius = '' %}
 {% assign accent_gradient1 = accent_color2 | hex_to_rgba %}
 {% assign accent_gradient2 = accent_color1 | hex_to_rgba %}
-{% assign contrast_color1 = '#DDD92A' %} 
+{% assign contrast_color1 = setting.contrast_color %} 
 
 {% comment %} --- INITIAL LOAD --- {% endcomment %}
 .v2-header__nav-menu-list {visibility:hidden !important;} 
