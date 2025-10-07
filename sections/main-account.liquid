@@ -1,4 +1,4 @@
-{{ 'customer.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'customer.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -14,7 +14,7 @@
   }
 {%- endstyle -%}
 
-<div class="customer account section-{{ section.id }}-padding">
+<div class="customer account section-{{ section.id }}-padding page-width">
   <div>
     <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
     <a href="{{ routes.account_logout_url }}">
