@@ -105,10 +105,10 @@
             "live_chat_onclick": "openLiveChat()"
           }
         },
-        "paragraph_xX4WXN": {
-          "type": "paragraph",
+        "newsletter_gw4bYw": {
+          "type": "newsletter",
           "settings": {
-            "show_on_mobile": false,
+            "show_on_mobile": true,
             "show_on_desktop": true,
             "row": 2,
             "column": 1,
@@ -118,11 +118,11 @@
             "column_span": 2,
             "row_span_mobile": 2,
             "column_span_mobile": 2,
-            "image_height": 0,
-            "heading": "",
-            "content": "<h3>Receive the latest news.</h3><p>Sign up to get 10% off your first order</p>",
-            "button_link": "",
-            "button_text": "Subscribe"
+            "heading": "Receive the latest news",
+            "content": "<p>Sign up to get 10% off your first order</p>",
+            "connect_button_link": "",
+            "connect_button_onclick": "window._klOnsite = window._klOnsite || []; window._klOnsite.push(['openForm', 'TsMBgR']);",
+            "connect_button_text": "Subscribe"
           }
         },
         "linklist_m6BjEt": {
@@ -190,7 +190,7 @@
         "linklist_ht3rzQ",
         "linklist_b8ALRM",
         "contact_96cXPU",
-        "paragraph_xX4WXN",
+        "newsletter_gw4bYw",
         "linklist_m6BjEt",
         "divisions_Hfb8ti",
         "paragraph_RqVQzp"
