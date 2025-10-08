@@ -18,9 +18,19 @@
 
 {% comment %} --- INITIAL LOAD --- {% endcomment %}
 .v2-header__nav-menu-list {visibility:hidden !important;} 
-
 .collection-hero.color-scheme-4 a.button {background-color:{{ contrast_color1 }};color:{{ contrast_color1_text }};}
 /* body.template-index .single_logo_logo img {filter:brightness(0.0);} */
+
+{% comment %} --  COLOR SCHEME ADJUSTMENTS   -- {% endcomment %}
+.shopify-section-header-sticky:not(.scrolled-past-header) .header__menu-item a {color:#fff;}
+{% if settings.bg_image1 %}.color-{{ settings.color_scheme_bg1 }}.gradient {background:url('{{ settings.bg_image1 | remove: 'files/' | file_url }}'){% if settings.bg_image1_style == 'repeat' %} repeat{% else %} no-repeat{% endif %} center center;{% endif %}
+{% if settings.bg_image1_style == 'cover' %}background-size:cover;{% endif %}}
+{% if settings.bg_image2 %}.color-{{ settings.color_scheme_bg2 }}.gradient {background:url('{{ settings.bg_image2 | remove: 'files/' | file_url }}'){% if settings.bg_image2_style == 'repeat' %} repeat{% else %} no-repeat{% endif %} center center;{% endif %}
+{% if settings.bg_image2_style == 'cover' %}background-size:cover;{% endif %}}
+{% if settings.bg_image3 %}.color-{{ settings.color_scheme_bg3 }}.gradient {background:url('{{ settings.bg_image3 | remove: 'files/' | file_url }}'){% if settings.bg_image3_style == 'repeat' %} repeat{% else %} no-repeat{% endif %} center center;{% endif %}
+{% if settings.bg_image3_style == 'cover' %}background-size:cover;{% endif %}}
+{% if settings.bg_image4 %}.color-{{ settings.color_scheme_bg4 }}.gradient {background:url('{{ settings.bg_image4 | remove: 'files/' | file_url }}'){% if settings.bg_image4_style == 'repeat' %} repeat{% else %} no-repeat{% endif %} center center;{% endif %}
+{% if settings.bg_image4_style == 'cover' %}background-size:cover;{% endif %}}
 
 @font-face {font-family: "Eurostile-Reg"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-regular.woff?v=1680790069") format("woff"); font-weight: normal; font-style: normal;}
 @font-face {font-family: "Eurostile-Bol"; src: url("https://cdn.shopify.com/s/files/1/2656/7586/files/eurostile-bold.woff?v=1680790056") format("woff"); font-weight: normal; font-style: normal;}
