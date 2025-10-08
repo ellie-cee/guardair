@@ -107,8 +107,8 @@
                     <div class="footer__content-block__contact-item footer__content-block__contact__phone">
                       {{ block.settings.phone_icon }}
                       <a href="tel:{{ block.settings.phone_number }}">{{ block.settings.phone_number }}</a>
-                      {% if block.settings.phone_hours != blank %}
-                        <span>{{ block.settings.phone_hours }}</span>
+                      {% if block.settings.phone_hours != blank %}<br/>
+                        <small>{{ block.settings.phone_hours }}</small>
                       {% endif %}
                     </div>
                   {% endif %}
