@@ -90,6 +90,24 @@
                   </a>
                 {% endif %}
               </div>
+
+            {% when 'newsletter' %}
+              <div class="footer__content-block__content">
+
+                <h3 class="footer__content-block__heading">{{ block.settings.heading }}</h3>
+                <div class="footer__content-block__text">{{ block.settings.content }}</div>
+                {% if block.settings.connect_button_text != blank %}
+                      <a href="{{ block.settings.connect_button_link | default: 'javascript:void(0);' }}"
+                        {% if block.settings.connect_button_onclick != blank %}
+                          onclick="{{ block.settings.connect_button_onclick }}"
+                        {% endif %}
+                        class="footer__content-block__button button button--round">
+                        {{- block.settings.connect_button_text -}}
+                      </a>
+                {% endif %}
+              </div>
+              
+              
             {% when 'contact' %}
               <div class="footer__content-block__content hide-on-mobile">
                 {% capture header_content %}
