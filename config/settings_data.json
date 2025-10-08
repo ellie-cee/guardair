@@ -13,6 +13,8 @@
     "logo_width": 300,
     "favicon": "shopify://shop_images/GA-favicon.png",
     "contrast_color": "#e71e10",
+    "color_scheme_bg1": "scheme-15b999d8-91e3-451a-8ec9-0a18a0f06079",
+    "bg_image1": "shopify://shop_images/Graph.jpg",
     "type_header_font": "open_sans_n4",
     "heading_scale": 100,
     "type_body_font": "pt_sans_n4",
@@ -651,6 +653,17 @@
           "button": "#ffffff",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-15b999d8-91e3-451a-8ec9-0a18a0f06079": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#002395",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#002395",
           "shadow": "#121212"
         }
       }
