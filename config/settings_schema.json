@@ -147,6 +147,135 @@
           }
     ]
   },
+ {
+    "name": "Backgrounds",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Backgrounds"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme_bg1",
+        "label": "Color Scheme for Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image1",
+        "label": "Background Image"
+      },
+      {
+        "type": "select",
+        "id": "bg_image1_style",
+        "options": [
+          {
+            "value": "repeat",
+            "label": "Tile"
+          },
+          {
+            "value": "cover",
+            "label": "Cover"
+          }
+        ],
+        "default": "repeat",
+        "label": "Background Style",
+        "info": "Repeat background or stretch to cover"
+      },
+      {
+        "type": "paragraph",
+        "content": "-------"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme_bg2",
+        "label": "Color Scheme for Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image2",
+        "label": "Background Image"
+      },
+ {
+        "type": "select",
+        "id": "bg_image2_style",
+        "options": [
+          {
+            "value": "repeat",
+            "label": "Tile"
+          },
+          {
+            "value": "cover",
+            "label": "Cover"
+          }
+        ],
+        "default": "repeat",
+        "label": "Background Style",
+        "info": "Repeat background or stretch to cover"
+      },      
+      {
+        "type": "paragraph",
+        "content": "-------"
+      },
+     {
+        "type": "color_scheme",
+        "id": "color_scheme_bg3",
+        "label": "Color Scheme for Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image3",
+        "label": "Background Image"
+      },
+      {
+        "type": "select",
+        "id": "bg_image3_style",
+        "options": [
+          {
+            "value": "repeat",
+            "label": "Tile"
+          },
+          {
+            "value": "cover",
+            "label": "Cover"
+          }
+        ],
+        "default": "repeat",
+        "label": "Background Style",
+        "info": "Repeat background or stretch to cover"
+      },      
+      {
+        "type": "paragraph",
+        "content": "-------"
+      },
+     {
+        "type": "color_scheme",
+        "id": "color_scheme_bg4",
+        "label": "Color Scheme for Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image4",
+        "label": "Background Image"
+      },
+      {
+        "type": "select",
+        "id": "bg_image4_style",
+        "options": [
+          {
+            "value": "repeat",
+            "label": "Tile"
+          },
+          {
+            "value": "cover",
+            "label": "Cover"
+          }
+        ],
+        "default": "repeat",
+        "label": "Background Style",
+        "info": "Repeat background or stretch to cover"
+      },        
+    ]
+  },    
   {
     "name": "t:settings_schema.typography.name",
     "settings": [
