@@ -863,6 +863,56 @@
         "padding_top": 12,
         "padding_bottom": 24
       }
+    },
+    "gua_flex_section_Grqcp3": {
+      "type": "gua-flex-section",
+      "blocks": {
+        "heading_JqnrPg": {
+          "type": "heading",
+          "settings": {
+            "row": 1,
+            "flex_grow": "0",
+            "flex_shrink": "0",
+            "flex_basis": "300",
+            "show_on_desktop": true,
+            "show_on_mobile": true,
+            "heading": "Connect with Us",
+            "subheading": "<p>Follow us on social media to stay up to date on the latest news and events.</p>",
+            "seo_heading": "h3",
+            "heading_class": "h3"
+          }
+        },
+        "paragraph_UNTdXt": {
+          "type": "paragraph",
+          "settings": {
+            "row": 1,
+            "flex_grow": "0",
+            "flex_shrink": "0",
+            "flex_basis": "300",
+            "show_on_desktop": true,
+            "show_on_mobile": true,
+            "image_height": 54,
+            "heading": "Paragraph Heading",
+            "content": "<p>Paragraph Content</p>",
+            "button_link": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_JqnrPg",
+        "paragraph_UNTdXt"
+      ],
+      "name": "GUA Flex Section",
+      "settings": {
+        "color_scheme": "scheme-15b999d8-91e3-451a-8ec9-0a18a0f06079",
+        "number_of_rows": 2,
+        "justify_content": "center",
+        "justify_content_mobile": "center",
+        "align_content": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -880,6 +930,7 @@
     "gua_mixed_content_rhKwgm",
     "video_with_text_HyfDyC",
     "gua_multicolumn_nXUXUT",
-    "gua_flex_section_AQxr9j"
+    "gua_flex_section_AQxr9j",
+    "gua_flex_section_Grqcp3"
   ]
 }
