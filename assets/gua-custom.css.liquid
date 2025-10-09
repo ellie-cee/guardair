@@ -482,14 +482,17 @@ footer {border-top:3px solid {{ contrast_color1 }};}
 .footer__content-block__links a, footer.footer p, .footer__content-block__contact-item a {color:#333 !important;}
 .footer__bottom {background: {{ accent_color1 }};}
 .footer.footer,.footer__content,.footer__content a, .footer__content-block, .footer__content-block a {font-size: 1.5rem;}
-.footer__content-block__heading, .footer.footer h3 {font-size: 1.85rem;padding-bottom:8px;border-bottom:1px solid rgba(75,146,219,0.7);}
-/* .footer.footer .footer__content-block__button.button {color:{{ accent_color2 }} !important;} */
-/* .footer.footer,.footer__content {background:{{ better_blue }};background:{{ accent_color2 }};} */
-/* .footer.footer,.footer__content,.footer__content a, .footer__content-block, .footer__content-block a, .footer__content-block__heading, .footer.footer h3 {color: #fff !important;} */
-/* .footer__content-image {filter: brightness(5) grayscale(1) contrast(4.5);} */
-/* .footer.footer a[href^="https://allpaxcorp.com"] .footer__content-image {filter: brightness(5) grayscale(1) contrast(4.5) invert(1) !important;} */
-/* .footer.footer a[href^="https://allpaxcorp.com"] {} */
+.footer__content-block__heading, .footer.footer h3 {font-size: 1.85rem;padding-bottom:8px;border-bottom:1px solid rgba(75,146,219,0.7);text-transform:uppercase;}
 
+
+{% comment %}
+  .footer.footer .footer__content-block__button.button {color:{{ accent_color2 }} !important;} 
+ .footer.footer,.footer__content {background:{{ better_blue }};background:{{ accent_color2 }};} 
+ .footer.footer,.footer__content,.footer__content a, .footer__content-block, .footer__content-block a, .footer__content-block__heading, .footer.footer h3 {color: #fff !important;} */
+ .footer__content-image {filter: brightness(5) grayscale(1) contrast(4.5);} 
+ .footer.footer a[href^="https://allpaxcorp.com"] .footer__content-image {filter: brightness(5) grayscale(1) contrast(4.5) invert(1) !important;} 
+ .footer.footer a[href^="https://allpaxcorp.com"] {}
+{% endcomment %}
 
 
 {% comment %} --- COMPARE --- {% endcomment %}
