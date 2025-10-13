@@ -54,7 +54,7 @@
         "padding_image": 20,
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_price": false,
+        "show_price": "rounded",
         "show_sku": false,
         "show_rating": true,
         "show_compare": true,
