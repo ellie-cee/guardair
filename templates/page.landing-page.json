@@ -54,7 +54,7 @@
         "buttons_apqrtK"
       ],
       "custom_css": [
-        ".rte {font-weight: bolder;color: white;}"
+        ".rte {font-weight: bolder; color: white;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -70,10 +70,95 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
+    },
+    "gua_image_banner_8zCHKi": {
+      "type": "gua-image-banner",
+      "blocks": {
+        "heading_cNzbMB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ultra Safety Air Guns",
+            "heading_size": "h0"
+          }
+        },
+        "text_NwC8FK": {
+          "type": "text",
+          "settings": {
+            "text": "Our Most Versatile Line of Air Guns",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_w8gwBA": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy Now",
+            "button_link_1": "shopify://collections/ultra",
+            "button_style_secondary_1": false,
+            "button_label_2": "Watch Video",
+            "button_link_2": "shopify://pages/30-psi-explained-video",
+            "button_style_secondary_2": false,
+            "display_inline": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_cNzbMB",
+        "text_NwC8FK",
+        "buttons_w8gwBA"
+      ],
+      "name": "GUA Image Banner",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "anchor_id": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_RWrhWt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NfJXef": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_tWFmkM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NfJXef",
+        "text_tWFmkM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_GnnqTc"
+    "image_banner_GnnqTc",
+    "gua_image_banner_8zCHKi",
+    "rich_text_RWrhWt"
   ]
 }
