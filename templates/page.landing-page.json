@@ -547,9 +547,9 @@
       ],
       "name": "GUA Flex Section",
       "settings": {
-        "color_scheme": "",
-        "number_of_rows": 2,
-        "justify_content": "center",
+        "color_scheme": "scheme-4",
+        "number_of_rows": 1,
+        "justify_content": "space-between",
         "justify_content_mobile": "center",
         "align_content": "center",
         "padding_top": 36,
