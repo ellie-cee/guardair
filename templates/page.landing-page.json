@@ -300,6 +300,39 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_BREYXi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8PjFVE": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Ultra Advantage: High Performance, High Safety.",
+            "heading_size": "h1"
+          }
+        },
+        "text_wAqV8b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Guardair Ultra Series air guns deliver a powerful cleaning performance engineered for tough industrial applications while maintaining operator well-being through <strong>OSHA-compliant safety features</strong> like <strong>pressure-regulating nozzles</strong> and a comfortable, <strong>ergonomic grip</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8PjFVE",
+        "text_wAqV8b"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "anchor_id": ""
+      }
+    },
     "gua_featured_collection_slider_hfTpzA": {
       "type": "gua-featured-collection-slider",
       "name": "GUA Featured collection with main image",
@@ -340,6 +373,7 @@
     "image_with_text_TXVWcp",
     "rich_text_g3VTNN",
     "image_with_text_CxrBiF",
+    "rich_text_BREYXi",
     "gua_featured_collection_slider_hfTpzA"
   ]
 }
