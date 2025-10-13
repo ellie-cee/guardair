@@ -53,6 +53,7 @@
         "text_eR39ie",
         "buttons_apqrtK"
       ],
+      "disabled": true,
       "custom_css": [
         ".rte {font-weight: bolder; color: white;}"
       ],
@@ -105,6 +106,9 @@
         "heading_cNzbMB",
         "text_NwC8FK",
         "buttons_w8gwBA"
+      ],
+      "custom_css": [
+        ".rte {font-weight: bolder; color: white;}"
       ],
       "name": "GUA Image Banner",
       "settings": {
