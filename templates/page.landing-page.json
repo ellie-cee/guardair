@@ -129,21 +129,30 @@
     "rich_text_RWrhWt": {
       "type": "rich-text",
       "blocks": {
+        "caption_QDDeY6": {
+          "type": "caption",
+          "settings": {
+            "caption": "Precision Control, Ultra Results",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
         "heading_NfJXef": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Meet the Ultra Family",
             "heading_size": "h1"
           }
         },
         "text_tWFmkM": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Meet the Ultra Series Safety Air Guns — Guardair's most versatile lineup yet. Whether you need raw power, quiet performance, or extended reach, there's an Ultra for every job. All Ultras are OSHA Compliant and assembled in the USA.</p>"
           }
         }
       },
       "block_order": [
+        "caption_QDDeY6",
         "heading_NfJXef",
         "text_tWFmkM"
       ],
@@ -158,12 +167,138 @@
         "padding_bottom": 52,
         "anchor_id": ""
       }
+    },
+    "image_with_text_TXVWcp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Xzg6zw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Key Features",
+            "heading_size": "h1"
+          }
+        },
+        "text_H9nerD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_X7MXcf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xzg6zw",
+        "text_H9nerD",
+        "button_X7MXcf"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/guardair-ultra-u75lj-u75xt-u80-spec.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_g3VTNN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EWeTDe": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Take Safety Seriously",
+            "heading_size": "h1"
+          }
+        },
+        "text_VjQ8cH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Guardair Ultra Series</strong> safety air guns are engineered with several key features to prioritize user safety and maintain compliance with <strong>OSHA standards</strong>. A core safety mechanism is the specially designed nozzle—such as the Venturi and XtraThrust nozzles—which is designed to <strong>limit the static pressure to less than 30 psi</strong> (pounds per square inch) should the tip become blocked. This feature is crucial for preventing severe injury from blocked air flow, a primary concern with compressed air. Furthermore, models like the Ultra QuietForce and Ultra WhisperJet are designed to reduce noise exposure, contributing to a safer working environment by offering <strong>low-noise operation</strong> to protect the operator's hearing. The entire series also features an <strong>ergonomic, cushioned pistol-grip handle</strong> for a secure hold, which minimizes user fatigue and enhances control.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EWeTDe",
+        "text_VjQ8cH"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "bdr_btm": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "anchor_id": ""
+      }
+    },
+    "image_with_text_CxrBiF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JB6WUd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ultra Series vs Competitors",
+            "heading_size": "h1"
+          }
+        },
+        "text_4ebRzd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JB6WUd",
+        "text_4ebRzd"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/guardair-ultra-air-guns-video-thumbnail-youtube.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_banner_GnnqTc",
     "gua_image_banner_8zCHKi",
-    "rich_text_RWrhWt"
+    "rich_text_RWrhWt",
+    "image_with_text_TXVWcp",
+    "rich_text_g3VTNN",
+    "image_with_text_CxrBiF"
   ]
 }
