@@ -333,6 +333,57 @@
         "anchor_id": ""
       }
     },
+    "image_with_text_bEFftU": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jBFpCw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_yaVTTP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_MBfzQf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jBFpCw",
+        "text_yaVTTP",
+        "button_MBfzQf"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/guardair-ultra-whisperjet-u80lj-48-inch-long-trigger-u80lj048aa3-main.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "gua_featured_collection_slider_hfTpzA": {
       "type": "gua-featured-collection-slider",
       "name": "GUA Featured collection with main image",
@@ -374,6 +425,7 @@
     "rich_text_g3VTNN",
     "image_with_text_CxrBiF",
     "rich_text_BREYXi",
+    "image_with_text_bEFftU",
     "gua_featured_collection_slider_hfTpzA"
   ]
 }
