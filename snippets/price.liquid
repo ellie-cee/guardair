@@ -38,7 +38,7 @@
     assign money_price_min = price_min | money_with_currency
     assign money_price_max = price_max | money_with_currency
   elsif money_style == 'rounded'
-    assign money_price = price | money_without_decimals
+    assign money_price = target.price | money_without_decimals
     assign money_price_min = price_min | money_without_decimals
     assign money_price_max = price_max | money_without_decimals
   endif
