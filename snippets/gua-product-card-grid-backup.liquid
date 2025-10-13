@@ -1,0 +1,90 @@
+  {% if section.settings.alt_image == true and product.metafields.custom.block_product_image %}
+     {% assign product_image = product.metafields.custom.block_product_image %}
+  {% else %}
+     {% assign product_image = product.featured_image %}
+  {% endif %}
+
+   <li id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            <div class="multicolumn-card content-container grid__card grid__image--{{ section.settings.image_width }}">
+              {%- if product.featured_image != blank -%}
+                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+                  {% assign spaced_image = true %}
+                  {% style %}#shopify-section-{{ section.id }} .media > img {object-fit: contain;}{% endstyle %}
+                {% endif %}
+                  <a href="{{ product.url }}" class="grid__image">
+               <div class="grid__image-wrapper{% if section.settings.block_style == 'stacked' %} grid__image--{{ section.settings.image_width }}-width{% endif %}{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                  <div
+                    class="media media--transparent media--{{ section.settings.image_ratio }}"
+                    {% if section.settings.image_ratio == 'adapt' %}
+                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                    {% endif %}
+                  >
+                    {%- liquid
+                      assign number_of_columns = section.settings.columns_desktop
+                      assign number_of_columns_mobile = section.settings.columns_mobile
+                      assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                      assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                      assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+                      if section.settings.image_width == 'half'
+                        assign image_width = 0.5
+                      elsif section.settings.image_width == 'third'
+                        assign image_width = 0.33
+                      else
+                        assign image_width = 1
+                      endif
+                    -%}
+                    {% capture sizes %}
+                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
+                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
+                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
+                      calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
+                    {% endcapture %}
+                    {{
+                      product_image
+                      | image_url: width: 3200
+                      | image_tag:
+                        widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                        sizes: sizes,
+                        class: 'multicolumn-card__image'
+                    }}</div>
+                  </div>
+                </a>
+              {%- endif -%}
+              <div class="multicolumn-card__info grid__info {{ section.settings.font_style }}">
+                {%- if product.title != blank -%}
+                  <h3 class="{{ section.settings.font_style }}">
+                    <a href="{{ product.url }}" class="{{ section.settings.ptitle_fix }} {{ section.settings.font_style }}">
+                        {% case section.settings.ptitle_fix %}
+                            {% when 'none' %}{{ product.title }}
+                            {% when 'basic_series' %}{% render 'gua-title_v3',product:product, text_style:'basic_series' %}
+                            {% when 'specific_series' %}{% render 'gua-title_v3',product:product, text_style:'specific_series' %}
+                            {% when 'basic' %}{% render 'gua-title_v3',product:product, text_style:'basic' %}
+                            {% when 'specific' %}{% render 'gua-title_v3',product:product, text_style:'specific' %}
+                            {% when 'slice' %}{% render 'gua-title_v2',title:product.title %}
+                            {% when 'move_model' %}{% render 'gua-title_v2',title:product.title,change_model:'move' %}
+                            {% when 'remove_model' %}{% render 'gua-title_v2',title:product.title,change_model:'remove' %}
+                        {% endcase %}
+                    </a>
+                  </h3>
+                {%- endif -%}
+                {%- if product.description != blank and section.settings.pdesc or section.settings.alt_desc == true -%}
+                    {% assign desc_parts = product.description | split: '.' %}
+                    {% if section.settings.alt_desc == true and product.metafields.custom.grid_description != '' %}{% assign alt_text = product.metafields.custom.grid_description | metafield_text %}{% assign alt_text = alt_text | replace: '&#39;', "'" %}{% assign alt_text = alt_text | replace: '&quot;', '"' %}{% assign alt_text = alt_text | replace: '&amp;', '&' %}
+                          <div class="rte {{ section.settings.font_style }}">{{ alt_text }}</div>
+                    {% elsif section.settings.pdesc_shorten == 1 and desc_parts %}
+                          <div class="rte {{ section.settings.font_style }}">{{ desc_parts[0] }}.</div>
+                    {% elsif section.settings.pdesc_shorten == 2 and desc_parts %}
+                          <div class="rte {{ section.settings.font_style }}">{{ desc_parts[1] }}.</div>
+                    {% else %}
+                      <div class="rte {{ section.settings.font_style }}">{{ product.description }}</div>
+                    {% endif %}
+                {%- endif -%}
+
+              </div>
+            </div>
+          </li>
