@@ -920,6 +920,7 @@
       "name": "GUA Featured collection with main image",
       "settings": {
         "collection": "pneumatic-vacuums",
+        "collection_filter": "20",
         "title": "Featured collection",
         "heading_size": "h1",
         "description": "",
