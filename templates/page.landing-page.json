@@ -490,6 +490,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "video_hekxri": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Meet the Ultra Family",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/nym6W_5zyqU?si=tX6ouDgMFVgsXFbE",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": ""
+      }
     }
   },
   "order": [
@@ -504,6 +520,7 @@
     "image_with_text_bEFftU",
     "gua_featured_collection_slider_hfTpzA",
     "rich_text_iMyemc",
-    "gua_featured_collection_slider_67apFe"
+    "gua_featured_collection_slider_67apFe",
+    "video_hekxri"
   ]
 }
