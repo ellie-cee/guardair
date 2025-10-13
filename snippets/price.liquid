@@ -38,9 +38,9 @@
     assign money_price_min = price_min | money_with_currency
     assign money_price_max = price_max | money_with_currency
   elsif money_style == 'rounded'     and 1 == 2  
-    assign money_price = price | money_without_currency | amount_no_decimals_with_comma_separator
-    assign money_price_min = price_min | money_without_currency | amount_no_decimals_with_comma_separator
-    assign money_price_max = price_max | money_without_currency | amount_no_decimals_with_comma_separator
+    assign money_price = price | divided_by: 100.0 | round
+    assign money_price_min = price_min | divided_by: 100.0 | round
+    assign money_price_max = price_max | divided_by: 100.0 | round
   endif
 
   if target == product and product.price_varies
