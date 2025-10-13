@@ -255,6 +255,14 @@
     "image_with_text_CxrBiF": {
       "type": "image-with-text",
       "blocks": {
+        "caption_iPqmjQ": {
+          "type": "caption",
+          "settings": {
+            "caption": "The Smarter Choice for Compressed Air",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
         "heading_JB6WUd": {
           "type": "heading",
           "settings": {
@@ -271,6 +279,7 @@
         }
       },
       "block_order": [
+        "caption_iPqmjQ",
         "heading_JB6WUd",
         "text_4ebRzd"
       ],
