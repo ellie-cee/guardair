@@ -526,10 +526,24 @@
             "connect_button_onclick": "javascript:void(0)",
             "connect_button_text": "Subscribe Now"
           }
+        },
+        "social_GipMeU": {
+          "type": "social",
+          "settings": {
+            "row": 1,
+            "flex_grow": "0",
+            "flex_shrink": "0",
+            "flex_basis": "300",
+            "show_on_desktop": true,
+            "show_on_mobile": true,
+            "social_heading": "Follow us",
+            "social_text": "<p>Follow us on social media to stay up to date on the latest news and events.</p>"
+          }
         }
       },
       "block_order": [
-        "subscribe_i4fmdk"
+        "subscribe_i4fmdk",
+        "social_GipMeU"
       ],
       "name": "GUA Flex Section",
       "settings": {
