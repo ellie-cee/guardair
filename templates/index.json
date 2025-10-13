@@ -939,6 +939,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "show_price": "rounded",
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
