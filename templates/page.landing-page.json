@@ -53,10 +53,13 @@
         "text_eR39ie",
         "buttons_apqrtK"
       ],
+      "custom_css": [
+        ".rte {font-weight: bolder;color: white;}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/guardair-ultra-whisperjet-u80wj-application-machinist-with-air-hose_254ce749-8980-4a22-b3ec-c24264b01e64.png",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 30,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
