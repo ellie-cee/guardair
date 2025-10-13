@@ -11,13 +11,66 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_title": true,
+        "show_breadcrumbs": true,
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "image_banner_GnnqTc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xt9YTj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ultra Safety Air Guns",
+            "heading_size": "h0"
+          }
+        },
+        "text_eR39ie": {
+          "type": "text",
+          "settings": {
+            "text": "Our Most Versatile Line of Air Guns",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_apqrtK": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy Now",
+            "button_link_1": "shopify://collections/ultra",
+            "button_style_secondary_1": false,
+            "button_label_2": "Watch Video",
+            "button_link_2": "shopify://pages/30-psi-explained-video",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xt9YTj",
+        "text_eR39ie",
+        "buttons_apqrtK"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/guardair-ultra-whisperjet-u80wj-application-machinist-with-air-hose_254ce749-8980-4a22-b3ec-c24264b01e64.png",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_GnnqTc"
   ]
 }
