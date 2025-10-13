@@ -511,8 +511,8 @@
     "gua_flex_section_Gx6QFd": {
       "type": "gua-flex-section",
       "blocks": {
-        "heading_RnFH8h": {
-          "type": "heading",
+        "subscribe_i4fmdk": {
+          "type": "subscribe",
           "settings": {
             "row": 1,
             "flex_grow": "0",
@@ -520,32 +520,16 @@
             "flex_basis": "300",
             "show_on_desktop": true,
             "show_on_mobile": true,
-            "heading": "Connect with Us",
-            "subheading": "<p>Follow us on social media to stay up to date on the latest news and events.</p>",
-            "seo_heading": "h3",
-            "heading_class": "h3"
-          }
-        },
-        "paragraph_PPbwdV": {
-          "type": "paragraph",
-          "settings": {
-            "row": 1,
-            "flex_grow": "0",
-            "flex_shrink": "0",
-            "flex_basis": "300",
-            "show_on_desktop": true,
-            "show_on_mobile": true,
-            "image_height": 54,
-            "heading": "Paragraph Heading",
-            "content": "<p>Paragraph Content</p>",
-            "button_link": "",
-            "button_text": ""
+            "connect_heading": "Connect with us",
+            "connect_text": "<p>Get 10% off when you sign up for our Newsletter:</p>",
+            "connect_button_link": "shopify://policies/contact-information",
+            "connect_button_onclick": "javascript:void(0)",
+            "connect_button_text": "Subscribe Now"
           }
         }
       },
       "block_order": [
-        "heading_RnFH8h",
-        "paragraph_PPbwdV"
+        "subscribe_i4fmdk"
       ],
       "name": "GUA Flex Section",
       "settings": {
