@@ -607,11 +607,25 @@ document.addEventListener("DOMContentLoaded", function() {
       "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
     },
     {
-      "type": "checkbox",
+      "type": "select",
       "id": "show_price",
-      "default": true,
-      "label": "Show Price"
-    },
+      "default": "default",
+      "label": "Show Price",
+      "options": [
+        {
+          "value": "none",
+          "label": "No"
+        },
+        {
+          "value": "default",
+          "label": "Default Format"
+        },
+        {
+          "value": "rounded",
+          "label": "Rounded"
+        }
+      ]
+    }, 
     {
       "type": "checkbox",
       "id": "show_sku",
@@ -631,7 +645,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "default": false ,
       "label": "Show Compare",
       "info":"This only provides a target location on the collection grid.  You must also enable the Compare app."
-    },     
+    },         
     { 
       "type": "select",
       "id": "font_style",
