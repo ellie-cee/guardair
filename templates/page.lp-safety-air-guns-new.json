@@ -1,0 +1,774 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_page_banner_8Mcrd7": {
+      "type": "main-page-banner",
+      "name": "Page Banner",
+      "settings": {
+        "show_page_content": true,
+        "show_series_page": true,
+        "color_scheme": "scheme-4",
+        "show_breadcrumbs": true,
+        "color_scheme_breadcrumbs": "scheme-4",
+        "padding_top_breadcrumbs": 8,
+        "padding_bottom_breadcrumbs": 8,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "show_breadcrumbs": false,
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_FG7Y9y": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "column_3YaeJN": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#classic-plus\" title=\"Classic+ Safety Air Guns\"><strong>Classic+ Safety Air Guns</strong></a></li><li><a href=\"#palmjet\" title=\"PalmJet Safety Air Guns\"><strong>PalmJet Safety Air Guns</strong></a></li><li><a href=\"#ultra\" title=\"Ultra Safety Air Guns\"><strong>Ultra Safety Air Guns</strong></a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3cEFfD": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#whisperjet\" title=\"WhisperJet Safety Air Guns\"><strong>WhisperJet Safety Air Guns</strong></a></li><li><a href=\"#thumbswitch\" title=\"ThumbSwitch Safety Air Guns\"><strong>ThumbSwitch Safety Air Guns</strong></a></li><li><a href=\"#lazer\" title=\"Lazer Safety Air Guns\"><strong>Lazer Safety Air Guns</strong></a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yq9ypt": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "",
+            "text": "<ul><li><a href=\"#big-guns\" title=\"Big Air Guns\"><strong>Big Air Guns</strong></a></li><li><a href=\"#specialty-guns\" title=\"Specialty Air Guns\"><strong>Specialty Air Guns</strong></a></li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_3YaeJN",
+        "column_3cEFfD",
+        "column_yq9ypt"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 14px; padding-right: 0px; padding-bottom: 10px;}",
+        "h2 {font-size: 24px;}",
+        "h3 {font-size: 18px; color: #002395;}",
+        "a {color: #002395; text-decoration: none; font-size: 20px;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 12,
+        "padding_bottom": 16,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_xezMVG": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_J8jtVp": {
+          "type": "product",
+          "settings": {
+            "product": "long-john-75lj-nylon-nozzle-safety-air-gun-12"
+          }
+        },
+        "product_R9MdPq": {
+          "type": "product",
+          "settings": {
+            "product": "xtrathrust-75xt-safety-air-gun-12"
+          }
+        },
+        "product_chEUM4": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80lj-safety-air-gun-12"
+          }
+        },
+        "product_nKmbPA": {
+          "type": "product",
+          "settings": {
+            "product": "flex-80-safety-air-gun-w-whisperjet-nozzle-12"
+          }
+        },
+        "product_JBphDH": {
+          "type": "product",
+          "settings": {
+            "product": "the-original-57s30xb-safety-air-gun"
+          }
+        },
+        "product_FQNpmR": {
+          "type": "product",
+          "settings": {
+            "product": "jetguard-74s-safety-air-gun"
+          }
+        },
+        "product_PkQhAQ": {
+          "type": "product",
+          "settings": {
+            "product": "rubber-tip-74rt-safety-air-gun"
+          }
+        },
+        "product_dmdBMb": {
+          "type": "product",
+          "settings": {
+            "product": "xtrathrust-75xxt-safety-air-gun"
+          }
+        },
+        "product_YPETAz": {
+          "type": "product",
+          "settings": {
+            "product": "airmiser-74h-safety-air-gun"
+          }
+        },
+        "product_hh4NY8": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80wj-safety-air-gun"
+          }
+        },
+        "product_KjaRme": {
+          "type": "product",
+          "settings": {
+            "product": "classic-quietforce-74g-safety-air-gun-adjustable-air-nozzle-79-dba"
+          }
+        },
+        "product_rQJNBU": {
+          "type": "product",
+          "settings": {
+            "product": "booster-76s-safety-air-gun-6"
+          }
+        },
+        "product_8kWC4d": {
+          "type": "product",
+          "settings": {
+            "product": "blind-hole-74bh-safety-air-gun-12-angled-tip"
+          }
+        }
+      },
+      "block_order": [
+        "product_J8jtVp",
+        "product_R9MdPq",
+        "product_chEUM4",
+        "product_nKmbPA",
+        "product_JBphDH",
+        "product_FQNpmR",
+        "product_PkQhAQ",
+        "product_dmdBMb",
+        "product_YPETAz",
+        "product_hh4NY8",
+        "product_KjaRme",
+        "product_rQJNBU",
+        "product_8kWC4d"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "Classic+ Safety Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "Combining our original \"classic\" design with updated safety features, Classic+ Safety Air Guns offer reliable performance for industrial cleaning. Each model—including the popular Long John—has a durable design to handle rugged tasks with ease. With OSHA-compliant nozzles and an ergonomic grip, these air guns provide dependable cleaning power while prioritizing user safety.",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "image_valign": "center",
+        "ptitle_fix": "basic",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "row_gap": 25,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_nUa7bn": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_CpHKem": {
+          "type": "product",
+          "settings": {
+            "product": "palmjet-ga44-safety-air-gun-4-straight"
+          }
+        },
+        "product_m3wUTL": {
+          "type": "product",
+          "settings": {
+            "product": "palmjet-ga44-safety-air-gun-4-bent"
+          }
+        }
+      },
+      "block_order": [
+        "product_CpHKem",
+        "product_m3wUTL"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "PalmJet Safety Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "Compact and lightweight, PalmJet Safety Air Guns are designed for tight spaces and quick cleaning tasks. Featuring a simple, squeeze-activated design, they deliver effective airflow in a highly portable size. Available with both straight and bent extensions, the built-in volume dial allows easy airflow adjustments, making these air guns a versatile solution in industrial environments.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "specific_series",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_y3RJDU": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_AiGBfM": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-xtrathrust-u75xt-safety-air-gun-6-w-1-4-fnpt-inlet-short-trigger"
+          }
+        },
+        "product_ekzdBW": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-whisperjet-u80lj-safety-air-gun-6-w-short-trigger"
+          }
+        },
+        "product_h73UUf": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-u75lj-safety-air-gun-6-w-long-trigger"
+          }
+        },
+        "product_L3cp9i": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-quietforce-u74ht37-safety-air-gun-12"
+          }
+        },
+        "product_cxaQUf": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet"
+          }
+        },
+        "product_en3UP6": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-quietforce-u74-safety-air-gun-adjustable-air-nozzle-79-dba"
+          }
+        }
+      },
+      "block_order": [
+        "product_AiGBfM",
+        "product_ekzdBW",
+        "product_h73UUf",
+        "product_L3cp9i",
+        "product_cxaQUf",
+        "product_en3UP6"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "Ultra Safety Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "Characterized by their ergonomic black handles, <a href=\"/pages/ultra-safety-air-guns\" title=\"Ultra® Safety Air Guns\">Ultra Safety Air Guns</a> deliver the ultimate in comfort and performance. With a cushioned pistol-grip for a secure hold, these air guns are built for long-lasting use in tough environments. With a range of nozzles and extension lengths, Ultra models provide powerful, precise cleaning while maintaining OSHA-compliant safety standards.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "basic_series",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_UqBAWA": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_apfYmz": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80lj-safety-air-gun-12"
+          }
+        },
+        "product_CLXzPL": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80wj-safety-air-gun"
+          }
+        },
+        "product_mtLe3r": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-80-safety-air-gun-with-volume-control"
+          }
+        },
+        "product_RnBEek": {
+          "type": "product",
+          "settings": {
+            "product": "flex-80-safety-air-gun-w-whisperjet-nozzle-12"
+          }
+        },
+        "product_77FNzq": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-whisperjet-u80lj-safety-air-gun-12-w-short-trigger"
+          }
+        },
+        "product_jcEdPC": {
+          "type": "product",
+          "settings": {
+            "product": "ultra-whisperjet-u80wj-safety-air-gun-3-8-fnpt-inlet"
+          }
+        },
+        "product_8iraeX": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-thumbswitch-980-safety-air-gun"
+          }
+        }
+      },
+      "block_order": [
+        "product_apfYmz",
+        "product_CLXzPL",
+        "product_mtLe3r",
+        "product_RnBEek",
+        "product_77FNzq",
+        "product_jcEdPC",
+        "product_8iraeX"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "WhisperJet Safety Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "WhisperJet Safety Air Guns combine effective cleaning with low-noise operation, thanks to their unique nozzle design. Ideal for noise-sensitive environments, these air guns offer powerful thrust while keeping sound levels low. Choose from several models that feature the WhisperJet nozzle to find a balance of safety, noise reduction, and cleaning power tailored to your needs.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "basic_series",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_7Ge9GP": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_TKitQ6": {
+          "type": "product",
+          "settings": {
+            "product": "thumbswitch-900-safety-air-gun"
+          }
+        },
+        "product_dBHUbL": {
+          "type": "product",
+          "settings": {
+            "product": "thumbswitch-900s-safety-air-gun-w-air-shield-nozzle"
+          }
+        },
+        "product_UEyEne": {
+          "type": "product",
+          "settings": {
+            "product": "thumbswitch-900lj-nylon-safety-air-gun-12"
+          }
+        },
+        "product_q48U6X": {
+          "type": "product",
+          "settings": {
+            "product": "whisperjet-thumbswitch-980-safety-air-gun"
+          }
+        },
+        "product_A3wcqt": {
+          "type": "product",
+          "settings": {
+            "product": "compact-thumbswitch-970-safety-air-gun"
+          }
+        },
+        "product_zRz8rA": {
+          "type": "product",
+          "settings": {
+            "product": "xtrathrust-thumbswitch-970xt-safety-air-gun"
+          }
+        }
+      },
+      "block_order": [
+        "product_TKitQ6",
+        "product_dBHUbL",
+        "product_UEyEne",
+        "product_q48U6X",
+        "product_A3wcqt",
+        "product_zRz8rA"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "ThumbSwitch Safety Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "Engineered for easy handling and precise control, Thumbswitch Safety Air Guns feature a convenient, thumb-activated trigger for effortless operation. Ideal for quick, repetitive tasks, these air guns deliver effective cleaning and debris removal while promoting user comfort and safety. Their durable design allows users to work efficiently in various industrial environments.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "basic_series",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_Cz9xRa": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_EhcJ77": {
+          "type": "product",
+          "settings": {
+            "product": "lazer-pistol-grip-650-safety-air-gun-12"
+          }
+        },
+        "product_Nmgfkk": {
+          "type": "product",
+          "settings": {
+            "product": "lazer-palmswitch-600-safety-air-gun-12"
+          }
+        }
+      },
+      "block_order": [
+        "product_EhcJ77",
+        "product_Nmgfkk"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "Lazer Safety Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "Designed for precision in demanding environments, Lazer Safety Air Guns offer compact, powerful cleaning and are available in both pistol-grip and palm switch trigger models. Lightweight and OSHA-compliant, these guns excel in detail-oriented tasks, providing controlled air flow and safe, efficient performance across various applications.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "basic_series",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_dtEXT8": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_XkhVcp": {
+          "type": "product",
+          "settings": {
+            "product": "force-5-f5-safety-air-gun-24"
+          }
+        },
+        "product_VrC4GV": {
+          "type": "product",
+          "settings": {
+            "product": "force-5-quietforce-f5-safety-air-gun-24"
+          }
+        },
+        "product_fGrLBe": {
+          "type": "product",
+          "settings": {
+            "product": "inforcer-inf5-safety-air-gun-24"
+          }
+        },
+        "product_tT6aGV": {
+          "type": "product",
+          "settings": {
+            "product": "inforcer-quietforce-inf5-safety-air-gun-24"
+          }
+        },
+        "product_zF7wqR": {
+          "type": "product",
+          "settings": {
+            "product": "inforcer-inf5-steel-safety-air-gun-w-chisel-point-nozzle-24"
+          }
+        },
+        "product_pygGBr": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_BccNBr": {
+          "type": "product",
+          "settings": {
+            "product": "hydroforce-hyd-power-wash-gun-24"
+          }
+        }
+      },
+      "block_order": [
+        "product_XkhVcp",
+        "product_VrC4GV",
+        "product_fGrLBe",
+        "product_tT6aGV",
+        "product_zF7wqR",
+        "product_pygGBr",
+        "product_BccNBr"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "Big Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "Our collection of Big Air Guns deliver the most powerful airflow for heavy-duty cleaning tasks. Built for construction and industrial applications, these guns are designed to tackle the toughest jobs with exceptional thrust and reach. Each model—including the popular Force 5—provides reliable, high-performance cleaning while prioritizing safety with OSHA-compliant nozzles.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "specific_series",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "anchor_id": ""
+      }
+    },
+    "multicolumn_QhMXfn": {
+      "type": "gua-multicolumn",
+      "blocks": {
+        "product_rCMttg": {
+          "type": "product",
+          "settings": {
+            "product": "reverseforce-75rf-air-gun-48"
+          }
+        },
+        "product_hXUDFH": {
+          "type": "product",
+          "settings": {
+            "product": "radiator-inrg-air-gun-60"
+          }
+        },
+        "product_RnyLLW": {
+          "type": "product",
+          "settings": {
+            "product": "filter-900f-cleaning-safety-air-gun-24"
+          }
+        },
+        "product_w6cgkU": {
+          "type": "product",
+          "settings": {
+            "product": "blind-hole-74bh-safety-air-gun-12-angled-tip"
+          }
+        }
+      },
+      "block_order": [
+        "product_rCMttg",
+        "product_hXUDFH",
+        "product_RnyLLW",
+        "product_w6cgkU"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {background-color: #ffffff; padding-left: 0px; padding-right: 0px;}",
+        "h2 {font-size: 28px;}",
+        "h3 {font-size: 18px; text-align: center; color: #002395;}",
+        "a {text-decoration: none;}"
+      ],
+      "settings": {
+        "block_style": "stacked",
+        "title": "Specialty Air Guns",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "Our Specialty Air Guns are built for unique industrial tasks, offering versatile for a variety of applications. From the ReverseForce's powerful reverse thrust, to the Filter Cleaning model designed for maintaining air filters, and the Radiator Air Gun optimized for cleaning hard-to-reach surfaces, these tools deliver specialized performance tailored to specific needs.",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "basic_series",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": true,
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "row_gap": 0,
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "anchor_id": ""
+      }
+    }
+  },
+  "order": [
+    "main_page_banner_8Mcrd7",
+    "main",
+    "multicolumn_FG7Y9y",
+    "multicolumn_xezMVG",
+    "multicolumn_nUa7bn",
+    "multicolumn_y3RJDU",
+    "multicolumn_UqBAWA",
+    "multicolumn_7Ge9GP",
+    "multicolumn_Cz9xRa",
+    "multicolumn_dtEXT8",
+    "multicolumn_QhMXfn"
+  ]
+}
