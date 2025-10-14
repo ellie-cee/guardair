@@ -177,7 +177,11 @@
         "row_gap": 0,
         "padding_top": 36,
         "padding_bottom": 36,
-        "anchor_id": ""
+        "anchor_id": "",
+        "show_badges": true,
+        "show_new_badge": true,
+        "new_badge_text": "New",
+        "show_custom_badge": true
       }
     },
     "gua_multicolumn_LjznnJ": {
@@ -245,7 +249,11 @@
         "row_gap": 0,
         "padding_top": 36,
         "padding_bottom": 36,
-        "anchor_id": ""
+        "anchor_id": "",
+        "show_badges": true,
+        "show_new_badge": true,
+        "new_badge_text": "New",
+        "show_custom_badge": false
       }
     },
     "gua_multicolumn_Tj6HwR": {
@@ -308,7 +316,11 @@
         "row_gap": 0,
         "padding_top": 36,
         "padding_bottom": 36,
-        "anchor_id": ""
+        "anchor_id": "",
+        "show_badges": true,
+        "show_new_badge": true,
+        "new_badge_text": "New",
+        "show_custom_badge": false
       }
     },
     "image_with_text_ec78Mz": {
@@ -797,7 +809,11 @@
         "row_gap": 0,
         "padding_top": 36,
         "padding_bottom": 16,
-        "anchor_id": ""
+        "anchor_id": "",
+        "show_badges": true,
+        "show_new_badge": true,
+        "new_badge_text": "New",
+        "show_custom_badge": false
       }
     },
     "gua_flex_section_AQxr9j": {
