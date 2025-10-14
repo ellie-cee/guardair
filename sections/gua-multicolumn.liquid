@@ -612,7 +612,82 @@
       "type": "text",
       "id": "anchor_id",
       "label": "Anchor ID"
-      }
+      },
+      {
+  "type": "header",
+  "content": "Product Badges"
+},
+{
+  "type": "checkbox",
+  "id": "show_badges",
+  "label": "Show product badges",
+  "default": true,
+  "info": "Display badges in the upper right corner of product images"
+},
+{
+  "type": "header",
+  "content": "Sale Badge"
+},
+{
+  "type": "checkbox",
+  "id": "show_sale_badge",
+  "label": "Show sale badge",
+  "default": true,
+  "info": "Shows when product has a compare at price"
+},
+{
+  "type": "text",
+  "id": "sale_badge_text",
+  "label": "Sale badge text",
+  "placeholder": "Sale",
+  "info": "Leave blank for default 'Sale' text"
+},
+{
+  "type": "header",
+  "content": "New Badge"
+},
+{
+  "type": "checkbox",
+  "id": "show_new_badge",
+  "label": "Show new badge",
+  "default": true,
+  "info": "Requires product metafield: custom.new_product (boolean)"
+},
+{
+  "type": "text",
+  "id": "new_badge_text",
+  "label": "New badge text",
+  "default": "New"
+},
+{
+  "type": "header",
+  "content": "Sold Out Badge"
+},
+{
+  "type": "checkbox",
+  "id": "show_soldout_badge",
+  "label": "Show sold out badge",
+  "default": true,
+  "info": "Shows when product is unavailable"
+},
+{
+  "type": "text",
+  "id": "soldout_badge_text",
+  "label": "Sold out badge text",
+  "placeholder": "Sold Out",
+  "info": "Leave blank for default 'Sold Out' text"
+},
+{
+  "type": "header",
+  "content": "Custom Badge"
+},
+{
+  "type": "checkbox",
+  "id": "show_custom_badge",
+  "label": "Show custom badge",
+  "default": false,
+  "info": "Requires product metafield: custom.badge_text (single line text)"
+}
   ],
   "blocks": [
     {

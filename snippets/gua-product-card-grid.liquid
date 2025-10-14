@@ -22,7 +22,7 @@
           {%- comment -%} Badge System {%- endcomment -%}
           {% if section.settings.show_badges %}
             <div class="product-badges">
-              {%- if section.settings.show_sale_badge and product.compare_at_price > product.price -%}
+              {%- if section.settings.show_sale_badge and product.compare_at_price > product.price and product.available -%}
                 <span class="product-badge product-badge--sale">
                   {% if section.settings.sale_badge_text != blank %}
                     {{ section.settings.sale_badge_text }}
@@ -152,6 +152,11 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .product-badge:hover {
+    transform: scale(1.05);
   }
   
   .product-badge--sale {
@@ -176,5 +181,18 @@
   
   .grid__image-wrapper {
     position: relative;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .product-badges {
+      top: 8px;
+      right: 8px;
+      gap: 6px;
+    }
+    
+    .product-badge {
+      padding: 5px 10px;
+      font-size: 11px;
+    }
   }
 </style>
