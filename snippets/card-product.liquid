@@ -23,11 +23,11 @@
 {%- unless skip_styles -%}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
-
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -59,6 +59,48 @@
       >
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+            
+            {%- comment -%} Badge System - Upper Right Corner {%- endcomment -%}
+            {% if show_badges %}
+              <div class="product-card-badges">
+                {%- if show_sale_badge and card_product.compare_at_price > card_product.price and card_product.available -%}
+                  <span class="product-card-badge product-card-badge--sale">
+                    {% if sale_badge_text != blank %}
+                      {{ sale_badge_text }}
+                    {% else %}
+                      {{ 'products.product.on_sale' | t }}
+                    {% endif %}
+                  </span>
+                {%- endif -%}
+                
+                {%- if show_new_badge and card_product.metafields.custom.new_product == true -%}
+                  <span class="product-card-badge product-card-badge--new">
+                    {% if new_badge_text != blank %}
+                      {{ new_badge_text }}
+                    {% else %}
+                      New
+                    {% endif %}
+                  </span>
+                {%- endif -%}
+                
+                {%- if show_soldout_badge and card_product.available == false -%}
+                  <span class="product-card-badge product-card-badge--soldout">
+                    {% if soldout_badge_text != blank %}
+                      {{ soldout_badge_text }}
+                    {% else %}
+                      {{ 'products.product.sold_out' | t }}
+                    {% endif %}
+                  </span>
+                {%- endif -%}
+                
+                {%- if show_custom_badge and card_product.metafields.custom.badge_text != blank -%}
+                  <span class="product-card-badge product-card-badge--custom">
+                    {{ card_product.metafields.custom.badge_text }}
+                  </span>
+                {%- endif -%}
+              </div>
+            {% endif %}
+            
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
@@ -618,3 +660,70 @@
     </div>
   </div>
 {%- endif -%}
+
+<style>
+  .product-card-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+  }
+  
+  .product-card-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+  
+  .product-card-badge--sale {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .product-card-badge--new {
+    background-color: #43a047;
+    color: white;
+  }
+  
+  .product-card-badge--soldout {
+    background-color: #616161;
+    color: white;
+  }
+  
+  .product-card-badge--custom {
+    background-color: #1e88e5;
+    color: white;
+  }
+  
+  .card__media {
+    position: relative;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .product-card-badges {
+      top: 8px;
+      right: 8px;
+      gap: 6px;
+    }
+    
+    .product-card-badge {
+      padding: 4px 10px;
+      font-size: 10px;
+    }
+  }
+</style>
