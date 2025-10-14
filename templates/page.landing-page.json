@@ -389,6 +389,7 @@
       "name": "GUA Featured collection with main image",
       "settings": {
         "collection": "ultra",
+        "collection_filter": "",
         "title": "Ultra Series Safety Air Guns",
         "heading_size": "h2",
         "description": "",
@@ -466,6 +467,7 @@
       "name": "GUA Featured collection with main image",
       "settings": {
         "collection": "safety-air-gun-parts-accessories",
+        "collection_filter": "",
         "title": "Replacement Parts & Accessories",
         "heading_size": "h1",
         "description": "",
@@ -479,7 +481,7 @@
         "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
