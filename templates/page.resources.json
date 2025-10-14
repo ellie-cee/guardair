@@ -25,6 +25,7 @@
         "column_gTbViH": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/i.shgcdn_10.png",
             "image_link": "",
             "title": "Corporate",
             "text": "",
@@ -35,6 +36,7 @@
         "column_zL6gUh": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/GA_catalog_2024_cover_v3_300px.png",
             "image_link": "",
             "title": "Air Guns",
             "text": "",
@@ -45,6 +47,7 @@
         "column_HciW44": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/guardair-8-page-booklet-thumbnail.png",
             "image_link": "",
             "title": "Pneumatic Vacuums",
             "text": "",
