@@ -1,0 +1,75 @@
+{% comment %}
+  Blog Tag Filter
+  Add this snippet to your blog template: {% render 'blog-tag-filter', blog: blog %}
+{% endcomment %}
+
+{% liquid
+  assign current_tag = current_tags | first
+  assign all_tags = blog.all_tags
+%}
+
+<div class="blog-filter-wrapper page-width">
+  <div class="blog-filter">
+    <a 
+      href="{{ blog.url }}" 
+      class="blog-filter__tag{% unless current_tag %} active{% endunless %}"
+    >
+      All Posts
+    </a>
+    
+    {% for tag in all_tags %}
+      <a 
+        href="{{ blog.url }}/tagged/{{ tag | handle }}" 
+        class="blog-filter__tag{% if current_tag == tag %} active{% endif %}"
+      >
+        {{ tag }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .blog-filter-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .blog-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+  }
+
+  .blog-filter__tag {
+    padding: 0.8rem 1.6rem;
+    background-color: rgba(var(--color-foreground), 0.05);
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: rgb(var(--color-foreground));
+    font-size: 1.4rem;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+
+  .blog-filter__tag:hover {
+    background-color: rgba(var(--color-foreground), 0.1);
+  }
+
+  .blog-filter__tag.active {
+    background-color: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+    border-color: rgb(var(--color-foreground));
+  }
+
+  @media screen and (max-width: 749px) {
+    .blog-filter {
+      gap: 0.8rem;
+    }
+
+    .blog-filter__tag {
+      padding: 0.6rem 1.2rem;
+      font-size: 1.2rem;
+    }
+  }
+</style>
