@@ -1,15 +1,29 @@
 {% comment %}
-  Blog Tag Filter
-  Add this snippet to your blog template: {% render 'blog-tag-filter', blog: blog %}
+  Blog Tag Filter with Custom Category Names
+  
+  Usage in your blog template:
+  {% render 'blog-tag-filter', blog: blog %}
+  
+  To customize category display names, edit the tag_mappings variable below.
+  Format: 'actual-tag:Display Name'
+  Example: 'tech-news:Technology News,travel:Travel & Lifestyle'
 {% endcomment %}
 
 {% liquid
   assign current_tag = current_tags | first
-  assign all_tags = blog.all_tags
+  
+  # CUSTOMIZE YOUR TAG NAMES HERE
+  # Format: 'tag-handle:Display Name' separated by commas
+  # The tag-handle must match your actual blog tags (lowercase, hyphenated)
+  assign tag_mappings = 'technology:Technology,lifestyle:Lifestyle,tutorials:Tutorials,news:News & Updates,tips:Tips & Tricks'
+  
+  # Split the mappings
+  assign tag_pairs = tag_mappings | split: ','
 %}
 
 <div class="blog-filter-wrapper page-width">
   <div class="blog-filter">
+    {%- comment -%} All Posts Button {%- endcomment -%}
     <a 
       href="{{ blog.url }}" 
       class="blog-filter__tag{% unless current_tag %} active{% endunless %}"
@@ -17,13 +31,43 @@
       All Posts
     </a>
     
-    {% for tag in all_tags %}
-      <a 
-        href="{{ blog.url }}/tagged/{{ tag | handle }}" 
-        class="blog-filter__tag{% if current_tag == tag %} active{% endif %}"
-      >
-        {{ tag }}
-      </a>
+    {%- comment -%} Loop through custom tag mappings {%- endcomment -%}
+    {% for tag_pair in tag_pairs %}
+      {% assign parts = tag_pair | split: ':' %}
+      {% assign tag_handle = parts[0] | strip %}
+      {% assign tag_display = parts[1] | strip %}
+      
+      {%- comment -%} Only show tag if it exists in the blog {%- endcomment -%}
+      {% if blog.all_tags contains tag_handle %}
+        <a 
+          href="{{ blog.url }}/tagged/{{ tag_handle | handle }}" 
+          class="blog-filter__tag{% if current_tag == tag_handle %} active{% endif %}"
+        >
+          {{ tag_display }}
+        </a>
+      {% endif %}
+    {% endfor %}
+    
+    {%- comment -%} Show any tags not in the custom mapping {%- endcomment -%}
+    {% for tag in blog.all_tags %}
+      {% assign tag_is_mapped = false %}
+      {% for tag_pair in tag_pairs %}
+        {% assign parts = tag_pair | split: ':' %}
+        {% assign mapped_handle = parts[0] | strip %}
+        {% if tag == mapped_handle %}
+          {% assign tag_is_mapped = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      
+      {% unless tag_is_mapped %}
+        <a 
+          href="{{ blog.url }}/tagged/{{ tag | handle }}" 
+          class="blog-filter__tag{% if current_tag == tag %} active{% endif %}"
+        >
+          {{ tag }}
+        </a>
+      {% endunless %}
     {% endfor %}
   </div>
 </div>
@@ -36,6 +80,7 @@
   .blog-filter {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     padding: 2rem 0;
     border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
@@ -50,6 +95,7 @@
     font-size: 1.4rem;
     transition: all 0.2s ease;
     border: 1px solid transparent;
+    white-space: nowrap;
   }
 
   .blog-filter__tag:hover {
