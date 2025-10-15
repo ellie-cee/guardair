@@ -11,7 +11,9 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
+      "custom_css": [
+        "h1{text-align: center;}"
+      ],
       "settings": {
         "show_title": true,
         "show_breadcrumbs": true,
@@ -124,8 +126,8 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Case Studies",
+            "text": "",
             "link_label": "",
             "link": ""
           }
