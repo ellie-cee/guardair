@@ -12,13 +12,13 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1{text-align: center;}"
+        "h1 {text-align: center;}"
       ],
       "settings": {
         "show_title": true,
         "show_breadcrumbs": true,
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 0
       }
     },
     "gua_multicolumn_Agbh3y": {
