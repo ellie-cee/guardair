@@ -28,7 +28,7 @@
             "image": "shopify://shop_images/i.shgcdn_10.png",
             "image_link": "https://cdn.shopify.com/s/files/1/2656/7586/files/corp_overview.pdf?6756165126796740293",
             "title": "GuardAir Corporation",
-            "text": "",
+            "text": "<p>Learn more about Guardair.</p>",
             "link_label": "Corporate Overview",
             "link": "https://cdn.shopify.com/s/files/1/2656/7586/files/corp_overview.pdf?6756165126796740293"
           }
@@ -37,22 +37,22 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/GA_catalog_2024_cover_v3_300px.png",
-            "image_link": "",
+            "image_link": "https://cdn.shopify.com/s/files/1/2656/7586/files/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868",
             "title": "Air Guns",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Take at a look at our safety air guns and find the right product for your needs.</p>",
+            "link_label": "Guardair Safety Air Guns Catalog",
+            "link": "https://cdn.shopify.com/s/files/1/2656/7586/files/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868"
           }
         },
         "column_HciW44": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/guardair-8-page-booklet-thumbnail.png",
-            "image_link": "",
+            "image_link": "https://cdn.shopify.com/s/files/1/2656/7586/files/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868",
             "title": "Pneumatic Vacuums",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "text": "<p>View our pneumatic vacuum series to find the product that meets your needs.</p>",
+            "link_label": "Guardair Pneumatic Vacuum Catalog",
+            "link": "https://cdn.shopify.com/s/files/1/2656/7586/files/Guardair_2024-25_Cat_v3_RGB.pdf?v=1734012868"
           }
         }
       },
