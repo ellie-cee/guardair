@@ -79,7 +79,7 @@
         "pdesc_shorten": 0,
         "alt_desc": false,
         "alt_image": false,
-        "button_label": "",
+        "button_label": "View All",
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "center",
