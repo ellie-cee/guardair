@@ -126,11 +126,11 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/case_studies.png",
-            "image_link": "",
+            "image_link": "https://guardair.com/blogs/product-literature/tagged/case-study",
             "title": "Case Studies",
             "text": "",
-            "link_label": "",
-            "link": ""
+            "link_label": "Case Studies",
+            "link": "https://guardair.com/blogs/product-literature/tagged/case-study"
           }
         }
       },
