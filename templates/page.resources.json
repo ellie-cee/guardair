@@ -165,7 +165,7 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "anchor_id": "",
-        "show_badges": true,
+        "show_badges": false,
         "show_new_badge": true,
         "new_badge_text": "New",
         "show_custom_badge": false
@@ -375,7 +375,7 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "anchor_id": "",
-        "show_badges": true,
+        "show_badges": false,
         "show_new_badge": true,
         "new_badge_text": "New",
         "show_custom_badge": false
