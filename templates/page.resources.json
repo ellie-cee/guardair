@@ -248,6 +248,7 @@
         "column_CLxEAV": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Compressed_Air_Audit.jpg",
             "image_link": "",
             "title": "Compressed Air Audit",
             "text": "",
@@ -258,6 +259,7 @@
         "column_f6GGkW": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/guardair-shop-accessories-osha-kit.png",
             "image_link": "",
             "title": "Free Compliance Kit",
             "text": "",
