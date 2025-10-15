@@ -155,7 +155,7 @@
         "alt_desc": false,
         "alt_image": false,
         "button_label": "View All",
-        "button_link": "",
+        "button_link": "shopify://blogs/product-literature",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
