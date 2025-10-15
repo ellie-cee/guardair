@@ -33,7 +33,7 @@
     width: {{ section.settings.image_wrapper_width }}%;
     max-width: {{ section.settings.image_wrapper_width }}%;
   }
-  
+
 {%- endstyle -%}
 
 {%- paginate blog.articles by 6 -%}
@@ -142,6 +142,17 @@
       "default": false,
       "label": "t:sections.main-blog.settings.show_author.label"
     },
+    {
+  "type": "range",
+  "id": "image_wrapper_width",
+  "min": 20,
+  "max": 100,
+  "step": 5,
+  "unit": "%",
+  "label": "Article image width",
+  "info": "Controls the width of all article images on the blog page",
+  "default": 100
+},
     {
       "type": "paragraph",
       "content": "t:sections.main-blog.settings.paragraph.content"
