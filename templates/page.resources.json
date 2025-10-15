@@ -303,6 +303,56 @@
         "new_badge_text": "New",
         "show_custom_badge": false
       }
+    },
+    "gua_multicolumn_video_XRBdrr": {
+      "type": "gua-multicolumn-video",
+      "blocks": {
+        "column_kDxBJG": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_kDxBJG"
+      ],
+      "name": "GUA Multicolumns",
+      "settings": {
+        "block_style": "stacked",
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "font_style": "inline-richtext",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "image_valign": "start",
+        "ptitle_fix": "none",
+        "pdesc": false,
+        "pdesc_shorten": 0,
+        "alt_desc": false,
+        "alt_image": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "row_gap": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "anchor_id": "",
+        "show_badges": false,
+        "show_new_badge": true,
+        "new_badge_text": "New",
+        "show_custom_badge": false
+      }
     }
   },
   "order": [
@@ -310,6 +360,7 @@
     "gua_multicolumn_Agbh3y",
     "gua_multicolumn_G73xmB",
     "gua_multicolumn_3bENWx",
-    "gua_multicolumn_XLUkAE"
+    "gua_multicolumn_XLUkAE",
+    "gua_multicolumn_video_XRBdrr"
   ]
 }
