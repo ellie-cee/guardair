@@ -239,8 +239,8 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "OSHA Compliance Audit",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -249,8 +249,18 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Compressed Air Audit",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f6GGkW": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "title": "Free Compliance Kit",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -258,7 +268,8 @@
       },
       "block_order": [
         "column_KQUUqq",
-        "column_CLxEAV"
+        "column_CLxEAV",
+        "column_f6GGkW"
       ],
       "name": "GUA Multicolumns",
       "settings": {
@@ -277,7 +288,7 @@
         "alt_image": false,
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "",
