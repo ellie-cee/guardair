@@ -104,7 +104,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/sell_sheet_cover_image.png",
-            "image_link": "",
+            "image_link": "https://guardair.com/blogs/product-literature/tagged/sell-sheet",
             "title": "Guardair Product Sell Sheets",
             "text": "",
             "link_label": "Guardair Sell Sheets",
@@ -115,11 +115,11 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/white_paper_cover_image.png",
-            "image_link": "",
+            "image_link": "https://guardair.com/blogs/product-literature/tagged/white-paper",
             "title": "Guardair White Papers",
             "text": "<p>Learn more about our commitment to OSHA safety standards</p>",
             "link_label": "Guardair Product White Papers",
-            "link": ""
+            "link": "https://guardair.com/blogs/product-literature/tagged/white-paper"
           }
         },
         "column_tnAVnm": {
