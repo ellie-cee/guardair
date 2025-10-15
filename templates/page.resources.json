@@ -26,11 +26,11 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/i.shgcdn_10.png",
-            "image_link": "",
-            "title": "Corporate",
+            "image_link": "https://cdn.shopify.com/s/files/1/2656/7586/files/corp_overview.pdf?6756165126796740293",
+            "title": "GuardAir Corporation",
             "text": "",
-            "link_label": "",
-            "link": ""
+            "link_label": "Corporate Overview",
+            "link": "https://cdn.shopify.com/s/files/1/2656/7586/files/corp_overview.pdf?6756165126796740293"
           }
         },
         "column_zL6gUh": {
