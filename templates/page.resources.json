@@ -178,8 +178,8 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "General Industries",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -188,8 +188,8 @@
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Shipyards",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -263,7 +263,7 @@
       "name": "GUA Multicolumns",
       "settings": {
         "block_style": "stacked",
-        "title": "Multicolumn",
+        "title": "Compliance & Audits",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
@@ -275,7 +275,7 @@
         "pdesc_shorten": 0,
         "alt_desc": false,
         "alt_image": false,
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "columns_desktop": 2,
         "column_alignment": "center",
