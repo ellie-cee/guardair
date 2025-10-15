@@ -125,6 +125,7 @@
         "column_tnAVnm": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/case_studies.png",
             "image_link": "",
             "title": "Case Studies",
             "text": "",
