@@ -304,27 +304,52 @@
         "show_custom_badge": false
       }
     },
-    "gua_multicolumn_video_XRBdrr": {
+    "gua_multicolumn_video_KerRrC": {
       "type": "gua-multicolumn-video",
       "blocks": {
-        "column_kDxBJG": {
+        "column_WHhkPt": {
           "type": "column",
           "settings": {
             "image_link": "",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "youtube_url": "https://youtu.be/nvVEpaj_3Ko?si=KqF_e3dK4E-UNlKr",
+            "title": "Air Safety in the Workplace",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LNCpUi": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "youtube_url": "https://youtu.be/ra7j8GwEXhk?si=JD9fSapAU7-fXGrw",
+            "title": "30 PSI Explained - OSHA Standard 1910.242(b)",
+            "text": "<p>eview.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TamQmD": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "youtube_url": "https://youtu.be/izo_kJM4PzM?si=tslaCYYsuBqbsVnH",
+            "title": "How to Use the OSHA Compliance Kit",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_kDxBJG"
+        "column_WHhkPt",
+        "column_LNCpUi",
+        "column_TamQmD"
       ],
       "name": "GUA Multicolumns",
       "settings": {
         "block_style": "stacked",
-        "title": "Multicolumn",
+        "title": "Safety & Training",
         "heading_size": "h1",
         "font_style": "inline-richtext",
         "description": "",
@@ -341,14 +366,14 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "",
+        "color_scheme": "scheme-07860253-4c90-4f31-b77f-a58130d5330a",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "row_gap": 0,
         "padding_top": 36,
         "padding_bottom": 36,
         "anchor_id": "",
-        "show_badges": false,
+        "show_badges": true,
         "show_new_badge": true,
         "new_badge_text": "New",
         "show_custom_badge": false
@@ -361,6 +386,6 @@
     "gua_multicolumn_G73xmB",
     "gua_multicolumn_3bENWx",
     "gua_multicolumn_XLUkAE",
-    "gua_multicolumn_video_XRBdrr"
+    "gua_multicolumn_video_KerRrC"
   ]
 }
