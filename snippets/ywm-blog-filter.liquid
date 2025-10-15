@@ -1,0 +1,114 @@
+{% comment %} SNIPPET: ywm-blog-filter.liquid {% endcomment %}
+{% comment %} https://github.com/yellowwebmonkey/shopify-features/blob/b3d242d9ec7c19897e74f16447a68cd339273683/Snippets/ywm-blog-filter.liquid {% endcomment %}
+{% comment %} LAST UPDATED: 20250711 {% endcomment %}
+
+{% comment %} TO DO {% endcomment %}
+{% comment %} 1. Add script to bottom of main-blog.liquid {% endcomment %}
+{% comment %}
+var blogFilters = document.querySelectorAll(‘.blog-filter select’);blogFilters.forEach(function(filter) { 
+filter.addEventListener(‘change’, function() {        
+window.location.href = this.value;    
+});
+});
+ {% endcomment %}
+
+{% assign current_filter = '' %}
+{% assign url_start =  blog.url | append: '/tagged/' %}
+{% assign closest_product = '' %}
+{% capture current_filter %}{% for tag in current_tags %}{{ tag | handleize }}{% unless forloop.last %}+{% endunless %}{% endfor %}{% endcapture %}
+{% assign recipe_count = 1 %}
+
+    {% capture sign_up %}
+      {%  if section.settings.show_signup == 'popup' %}
+            <p class="button__signup"><button class="klaviyo_form_trigger button">{% if section.settings.btn_label %}{{ section.settings.btn_label }}{% else %}Sign up{%  endif %}</button></p>
+            <script type="text/javascript">
+            	document.querySelector('.klaviyo_form_trigger').addEventListener('click', function (){
+            		var _klOnsite = window._klOnsite || []; 
+            		_klOnsite.push(['openForm', '{{ section.settings.form_id }}']);
+            	});
+            </script>
+        {%  elsif section.settings.show_signup == 'embed' %}
+            <div class="recipe__signup"><div class="klaviyo-form-{{ section.settings.form_id }}"></div></div>
+        {%  else %}{% endif %}
+    {% endcapture %}
+
+{%- if current_tags -%}
+     {%- assign meta_tags = current_tags | join: ', ' %}
+{%- endif -%}   
+
+
+    {% comment %}{% render 'ywm-blog-h1', protein_tags:protein_tags,prep_tags:prep_tags,cat_tags:cat_tags,cuisine_tags:cuisine_tags,product_tags:product_tags %} {% endcomment %}
+    
+          {% if section.settings.show_signup != 'no' and section.settings.form_id %} 
+              {% unless hide_signup and request.path contains 'tagged' %}{{ sign_up }}{% endunless %}
+        {% endif %}
+
+    
+          {% if blog.tags.size > 0 and section.settings.blog_show_filter %}
+
+              <div class="blog-filters">
+                <div class="blog-filter">{% comment %}<h4>Filter By</h4>{% endcomment %}</div>
+                {% if filter1_tags %}
+                    {%  render 'ywm-filter-dropdown', filter_name:section.settings.filter1_label, current_filter:current_filter,tag_list:filter1_tags,blog:blog %}
+                {% endif %}             
+                {% if filter2_tags %}
+                    {%  render 'ywm-filter-dropdown', filter_name:section.settings.filter2_label, current_filter:current_filter,tag_list:filter2_tags,blog:blog %}
+                {% endif %}            
+                {% if filter3_tags %}
+                    {%  render 'ywm-filter-dropdown', filter_name:section.settings.filter3_label, current_filter:current_filter,tag_list:filter3_tags,blog:blog %}
+                {% endif %}             
+                {% if filter4_tags %}
+                    {%  render 'ywm-filter-dropdown', filter_name:section.settings.filter4_label, current_filter:current_filter,tag_list:filter4_tags,blog:blog %}
+                {% endif %}                  
+                {% if filter5_tags %}
+                    {%  render 'ywm-filter-dropdown', filter_name:section.settings.filter5_label, current_filter:current_filter,tag_list:filter5_tags,blog:blog %}
+                {% endif %}                  
+                <div class="blog-filter blog-reset"><a href="{{ blog.url }}" class="reset-button">{% render 'icon-ui-x-circle' %}</a></div> 
+                
+              </div>
+          {% endif %}
+
+{% style %}
+body.template-blog .border-primary-section-border.main-blog__header {border-bottom:none;}
+body.template-blog .blog--header header {border-bottom:1px solid #ccc;margin-bottom:10px;}
+body.template-blog .blog-filters {max-width: 900px;margin: 0 auto;display:flex;display: -webkit-flex;display: -moz-box;
+  display: -ms-flexbox;display: -ms-flexbox;justify-content: center;border-bottom: 1px solid #ccc;padding: 15px 0px;}
+body.template-blog .blog-filter {width:300px;margin:0 auto;}
+body.template-blog .blog-filter__label {float: none;font-size: 16px;}
+body.template-blog .blog-filter select {-webkit-appearance: none;background-position: 68%;-moz-appearance: none;appearance: none;padding: 2px 30px 2px 2px;border: none;}
+body.template-blog select[id*="TagFilter"]  {width: 145px;margin-right: 20px;border: none;padding: 10px 1rem;font-size:14px;margin-top:0px;}
+body.template-blog select[id*="ProductTagFilter"]  {width: 220px;background-position: 72%;}
+body.template-blog select[id*="TagFilter"]:focus, body.template-blog .select[id*="TagFilter"]:active  {--tw-ring-color: none;}
+body.template-blog select[id*="TagFilter"]:checked ~ label {color: #F61717;}
+body.template-blog select[id*="Blog"] { }
+body.template-blog select[id*="Blog"] option:not(:checked) { }
+
+.button__signup {margin:10px auto;text-align:center;max-width:150px;}
+.button__signup button {font-size:1rem;background:#000;color:#fff;padding:6px 12px;}
+ 
+                   
+body.template-blog .tag-choice-separator:before {content:"OR";margin:1rem;text-align:center;display:block;}
+body.template-blog .blog-filter__label {display:none;}
+body.template-blog .blog-reset { max-width:50px;}
+body.template-blog .blog-reset a {text-transform:uppercase;color:#555;}
+body.template-blog .blog-reset svg.icon {height: 20px;width: 20px;opacity: 0.5;margin-top: 3px;}
+body.template-blog .reset-blog {width: 100%;margin: 2rem auto;text-align: center;}
+body.template-blog .no-recipes {margin:40px 0px auto;text-align:center;font-size:18px;}    
+body.template-blog .blog-reset svg.icon {height: 20px;width: 20px;opacity: .5;margin-top: 3px;fill:#333;}
+  
+  @media screen and (max-width: 480px) {
+  {%  assign set_width = '46' %}
+  body.template-blog .main-blog__header {display:flex;display: -webkit-flex;display: -moz-box;display: -ms-flexbox;display: -ms-flexbox;justify-content: center;flex-direction:column;-webkit-flex-direction:column;}
+  body.template-blog .main-blog__header .button__signup {}
+  body.template-blog .blog-filters {max-width: 95vw;margin: 0 auto;justify-content: start;-webkit-justify-content: start;flex-wrap:wrap;-webkit-flex-wrap:wrap;justify-items:start;}
+  body.template-blog .blog-filter {width:{{ set_width}}vw;flex:0 1 {{ set_width}}%;margin:10px auto 0 0;}
+  body.template-blog select[id*=ProductTagFilter] {}
+  body.template-blog .blog-filter select[id*=Filter] {width:100%;}
+  body.template-blog .main-blog__grid.grid-cols-1 {grid-template-columns: repeat(2,minmax(0,2fr));}
+  body.template-blog .main-blog__item.col-span-2 {grid-column: span 1 / span 1;}
+  body.template-blog .article-grid__excerpt, body.template-blog .article-grid__footer {display:none;}
+  body.template-blog .pagination.mx-auto  {grid-column: 1;}
+  body.template-article.recipe .article > div:not(.article-block__image) {padding-top: 0rem; padding-bottom: 0rem;}
+  body.template-product .recipe .article > div:not(.article-block__image) {padding-top: 0rem; padding-bottom: 0rem;}
+  }
+{% endstyle %}

@@ -44,6 +44,12 @@
       {%- endfor -%}
     </div>
 
+    var blogFilters = document.querySelectorAll(‘.blog-filter select’);blogFilters.forEach(function(filter) { 
+filter.addEventListener(‘change’, function() {        
+window.location.href = this.value;    
+});
+});
+
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
@@ -151,3 +157,4 @@
   ]
 }
 {% endschema %}
+
