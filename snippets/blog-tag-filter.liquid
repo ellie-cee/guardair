@@ -23,13 +23,13 @@
 
 <div class="blog-filter-wrapper page-width">
   <div class="blog-filter">
-    {%- comment -%} All Posts Button {%- endcomment -%}
+    {%- comment -%} All Posts Button 
     <a 
       href="{{ blog.url }}" 
       class="blog-filter__tag{% unless current_tag %} active{% endunless %}"
     >
       All Literature
-    </a>
+    </a>{%- endcomment -%}
     
     {%- comment -%} Loop through custom tag mappings {%- endcomment -%}
     {% for tag_pair in tag_pairs %}
